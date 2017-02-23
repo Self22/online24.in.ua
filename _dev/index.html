@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header__main">
-    <div class="overlay parallax-window" data-parallax="scroll" data-image-src="img/whiteblue_back.png"></div>
+<header class="header__main parallax-window" data-parallax="scroll" data-image-src="img/whiteblue_back.png">
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded hidden-lg-up">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -278,17 +277,54 @@
                         <div class="action__logo"><img src="img/LZ_middle.png" alt="" class="action__partner-logo"></div>
                         <div class="action__partner-text">Хорошо, когда стресс-полигон - это искусственно созданные декорации, где испытаниям подвергают специально подготовленных героев. А когда стресс-полигон - это вся страна и рискуют настоящие бухгалтеры, юристы, руководители бизнеса?</div>
                     </section>
-
-
-
-
-
-
                 </article>
             </div>
         </div>
     </div>
 </main>
+<footer class="footer">
+    <div class="footer__overlay"></div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="footer_aboutus col-md-4 hidden-sm-down">
+                <h2 class="footer__title">Online24 </h2>
+
+                <p>Первый украинский портал облачных решений. Специализация: информационное обеспечение и безопасность
+                    бизнеса. Основан в 2017 г.</p>
+            </div>
+            <div class="footer__contacts col-md-4 col-sm-6 col-xs-12">
+                <h2 class="footer__title">Контакты</h2>
+
+                <div class="footer__tel"></div>
+                <div class="footer__email"></div>
+                <div class="footer__workhours"></div>
+                <div class="footer__socials"></div>
+            </div>
+            <div class="footer__form col-md-4 col-sm-6 col-xs-12">
+                <h2 class="footer__title footer__title-form">Напишите нам</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Имя *">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="Email *">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea"></label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"
+                                  placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary hvr-pulse">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
