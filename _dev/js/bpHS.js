@@ -14,9 +14,9 @@
         touchSwipe: !0,
         nextText: null,
         prevText: null,
-        showControls: !0,
+          showControls: !1,
         showButtons: 0,
-        showBullets: !0,
+          showBullets: !1,
         arrowKeys: !1,
         autoPlay: 1,
         duration: 5e3

@@ -10,16 +10,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
 
 .acc__icon {
   -webkit-transition: all 0.5s;
@@ -33,14 +33,14 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
   list-style: none;
-  padding: 10px 0 25px 20%;
+  padding: 10px 0 0 20%;
   margin: 0; }
 
 .nav__sidebar-title {
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
-  border-bottom: 1px solid #c7c2f4;
-  border-left: 1px solid #c7c2f4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
   color: #63358A !important;
   font-size: 26px;

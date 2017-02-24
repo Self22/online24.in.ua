@@ -5,13 +5,13 @@
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
 }
 
@@ -27,7 +27,7 @@
   display: none;
   align-self: flex-start;
   list-style: none;
-  padding: 10px 0 25px 20%;
+  padding: 10px 0 0 20%;
   margin: 0;
 
 }
@@ -35,8 +35,8 @@
 .nav__sidebar-title {
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
-  border-bottom: 1px solid #c7c2f4;
-  border-left: 1px solid #c7c2f4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
   color: #63358A !important;
   font-size: 26px;

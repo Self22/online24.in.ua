@@ -49,6 +49,60 @@ $(document).ready(function () {
 
 });
 
-$('.bp-hs').bpHS(autoPlay = true, showButtons=true);
+//slider
 
-$('.parallax-window').parallax({imageSrc: 'img/whiteblue_back.png'});
+$('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showBullets = false);
+
+//parallaz
+
+$('.header__main').parallax({imageSrc: 'img/whiteblue_back603.png'});
+$('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
+
+//sticky header
+
+$(function () {
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() >= 350) {
+
+            $('.nav__main').addClass('nav__fixed');
+            $('.header__main').addClass('header__main-sticky');
+
+        }
+
+        else {
+
+            $('.nav__main').removeClass('nav__fixed');
+            $('.header__main').removeClass('header__main-sticky');
+        }
+
+    });
+
+});
+
+//button up
+
+$(function () {
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 50) {
+
+            $('.button__up').fadeIn();
+
+        } else {
+
+            $('.button__up').fadeOut();
+
+        }
+
+    });
+
+    $('.button__up').click(function () {
+
+        $('body,html').animate({scrollTop: 0}, 800);
+
+    });
+
+});

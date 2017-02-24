@@ -1,0 +1,149 @@
+.footer {
+  position: relative;
+  height: 45vh;
+
+}
+
+//.footer__overlay {
+//  position: absolute;
+//  background: url('../img/whiteblue_back.png') fixed;
+//  opacity: 0.2;
+//  background-position: 100% 100%;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//}
+
+.footer__contacts, .footer__form, .footer_aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 44vh;
+  padding-top: 50px;
+}
+
+.footer__title {
+  font-size: 26px;
+  margin-bottom: 25px;
+
+  &-form {
+    margin-bottom: 5px;
+  }
+}
+
+.footer_aboutus {
+  padding-left: 11%;
+}
+
+.footer__contacts > div {
+  margin-bottom: 15px;
+
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__tel {
+  display: flex;
+  flex-direction: column;
+
+  & a:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.footer__workhours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  & a {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+  }
+}
+
+.footer__form {
+
+  & form {
+    width: 90%;
+  }
+
+  & .form-group {
+    margin-bottom: 0;
+  }
+
+  & button {
+    font-weight: 500;
+    margin-top: 40px;
+    text-transform: uppercase;
+    background-color: rgba(117, 117, 242, 0.7);
+    border-color: rgba(117, 117, 242, 0.7);
+  }
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(117, 117, 242, 0.7);
+  border-color: rgba(117, 117, 242, 0.7);
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.footer__logo {
+  width: 40%;
+  margin-bottom: 25px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
