@@ -55,7 +55,7 @@ $('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showB
 
 //parallaz
 
-$('.header__main').parallax({imageSrc: 'img/whiteblue_back603.png'});
+$('.header__main').parallax({imageSrc: 'img/whiteblue_back606.png'});
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
 //sticky header
