@@ -4,6 +4,10 @@
   background: url('../img/whiteblue_back608.png') fixed;
   background-position: 100% 100%;
 
+  & a {
+    color: #25408f;
+  }
+
 }
 
 .footer__contacts, .footer__form, .footer_aboutus {
@@ -44,6 +48,11 @@
 
   & a:first-child {
     margin-bottom: 15px;
+    color: #25408f;
+  }
+
+  & a {
+    color: #25408f;
   }
 }
 
@@ -77,8 +86,8 @@
     font-weight: 500;
     margin-top: 40px;
     text-transform: uppercase;
-    background-color: rgba(117, 117, 242, 0.7);
-    border-color: rgba(117, 117, 242, 0.7);
+    background-color: #7070a3;
+    border-color: #7070a3;
   }
 }
 
