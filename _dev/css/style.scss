@@ -18,6 +18,23 @@
 /*
 	Source Sans Pro, 200, 200 italic, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 900, 900 italic
 */
+@import "../fonts/opensans.css";
+
+/*
+	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
+*/
+
+//vars
+$ligared=
+#CF112A
+
+;
+$ligablack=
+#10213D
+
+;
+
+
 
 * {
   @include box-sizing(border-box);
@@ -45,6 +62,18 @@ html, body {
   }
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 7
+}
+
+.navbar-collapse {
+  z-index: 10;
+  background: #f7f7f7;
+  padding-bottom: 20px;
+}
+
 .nav__fixed {
   width: 100vw;
   position: fixed;
@@ -63,6 +92,21 @@ html, body {
     display: flex;
   }
 }
+
+.navbar-toggler {
+  top: 14px;
+
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(112, 112, 163);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(112, 112, 163)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
 
 .stickyheader__logo {
   display: flex;
@@ -109,6 +153,9 @@ html, body {
     position: relative;
     height: 50vh;
     background: transparent;
+    @include phones {
+      height: 80vh;
+    }
   }
 
   &__about {
@@ -196,6 +243,7 @@ html, body {
 }
 
 .header_standart-contacts {
+
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -207,10 +255,19 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: #25408f;
+  }
+
+  @include desktop {
+    margin-top: 100px;
+    margin-left: 5%;
+
+    & a {
+      font-size: 18px;
+    }
   }
 
 }
@@ -237,6 +294,10 @@ html, body {
 .slider-cont {
   height: 350px;
     align-items: center;
+
+  @include tablets {
+    margin-top: 100px;
+  }
 }
 
 .slider {
@@ -264,6 +325,10 @@ html, body {
     font-weight: 300;
     font-family: "Raleway", Arial, sans-serif;
 
+    @include phones {
+      font-size: 26px;
+    }
+
     }
 
   & p {
@@ -277,6 +342,20 @@ html, body {
     text-align: center;
     line-height: 50px;
     letter-spacing: 1px;
+
+    @include phones {
+      font-size: 18px;
+    }
+  }
+
+  @include tablets {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  @include phones {
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   }
@@ -321,6 +400,10 @@ html, body {
   font-family: "Raleway", Arial, sans-serif;
   flex: 1 1 100%;
   margin: 30px 0;
+
+  @include phones {
+    font-size: 26px;
+  }
 }
 
 .action__item {
@@ -471,7 +554,32 @@ html, body {
   }
 }
 
-.about__content, .exellence__content {
+.about__content {
+  padding: 0;
+  font-size: 20px;
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & article {
+    padding: 40px;
+  }
+}
+
+.about__article1 {
+  background: rgb(254, 237, 237);
+}
+
+.about__article2 {
+  background: rgba(182, 217, 248, 0.5);
+}
+
+.about__article3 {
+  background: rgba(242, 210, 129, 0.2);
+}
+
+.exellence__content {
   padding: 0;
   background: rgb(254, 237, 237);
   font-size: 20px;
@@ -515,6 +623,43 @@ html, body {
 
 .excellence__features {
   background: rgba(143, 189, 129, 0.2);
+}
+
+//partnership
+
+.partnership__content {
+  padding: 0;
+  font-size: 20px;
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  & article {
+    padding: 40px;
+  }
+}
+
+.partn__about {
+  background: rgba(182, 217, 248, 0.5);
+}
+
+.partn__forclient {
+  background: #E1E1FF;
+}
+
+.partn__forservice {
+  background: rgba(242, 210, 129, 0.2);
+}
+
+.partn__contacts {
+  background: rgba(175, 159, 217, 0.3);
 }
 
 //svg logo

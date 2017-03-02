@@ -1,6 +1,6 @@
 .sidebar__index {
   min-height: 500px;
-  background: rgba(207, 229, 236, 0.3);
+  background: #f1f7f9;
   padding-top: 50px;
   padding-bottom: 60px;
   display: -webkit-box;
@@ -43,8 +43,9 @@
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
   color: #63358A !important;
-  font-size: 26px;
-  font-weight: 400; }
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2); }
 
 .nav__sidebar-link {
   text-decoration: none !important;
