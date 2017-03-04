@@ -21,6 +21,10 @@
   height: 44vh;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include phones {
+    height: 70vh;
+  }
 }
 
 .footer__title {
@@ -46,6 +50,12 @@
   }
 }
 
+.footer__contacts a {
+  @include phones {
+    margin-top: 30px;
+  }
+}
+
 .footer__tel {
   display: flex;
   flex-direction: column;
@@ -53,11 +63,17 @@
   & a:first-child {
     margin-bottom: 15px;
     color: #25408f;
+
+    @include phones {
+      margin-bottom: 0;
+    }
+
   }
 
   & a {
     color: #25408f;
   }
+
 }
 
 .footer__workhours {

@@ -1,0 +1,192 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+////partials
+@import "partials/animations";
+
+html, body {
+
+  font-family: Open Sans, Optima, sans-serif;;
+
+}
+
+.ligamain__menu {
+  transition: 0.5s all;
+  height: 130px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  & .hvr-rectangle-out {
+    background: transparent;
+  }
+
+  .hvr-rectangle-out:before {
+    background: #a5a5d9;
+  }
+
+  & > div {
+    padding: 0 16px;
+
+    @include desktop {
+      padding: 0 7px;
+    }
+  }
+
+  & a {
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2a4491;
+
+    .btn-4:after {
+      background: #efeff1;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      -webkit-transform: rotate(35deg);
+      transform: rotate(35deg);
+      -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: 6;
+    }
+
+    @include desktop {
+      font-size: 14px;
+    }
+
+    @include tablets {
+      display: none;
+    }
+
+  }
+
+}
+
+.logosticky__o24 {
+  margin-right: auto;
+}
+
+.ligalogosticky {
+  margin-left: 10px;
+  max-width: 130px;
+
+  @include desktop {
+    max-width: 100px;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.ligalogo__mob {
+  position: absolute;
+  left: 120px;
+  top: 30px;
+  width: 85px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.liga__mainmenu-item {
+  padding: 0 !important;
+}
+
+.liga__mainmenu-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.liga__mainmenu-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ligamain__menu-excellence {
+  transition: all 0.5s;
+  background: rgba(112, 112, 163, 0.7);
+  margin-left: 15px;
+  display: block;
+  border: 1px solid rgba(112, 112, 163, 0.5);
+  padding: 5px 20px;
+  border-radius: 4px;
+  text-align: center;
+
+  & span {
+    color: white;
+  }
+}
+
+.ligamain__menu-link {
+  padding: 15px 17px;
+
+}
+
+.liga__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.liga__header-content {
+  background: url("../img/liga_header.jpg");
+  background-size: cover;
+  height: 70vh;
+}
+
+/////////////////////////////
+//button-4
+///////////////////////////
+.btn-4 {
+
+  overflow: hidden;
+  position: relative;
+
+  span {
+    z-index: 20;
+  }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+  }
+}
+
+.btn-4:hover {
+
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+
+

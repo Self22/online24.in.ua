@@ -59,13 +59,30 @@ html, body {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 7
+  z-index: 7;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar-collapse {
   z-index: 10;
   background: #f7f7f7;
   padding-bottom: 20px;
+}
+
+.nav-item-excellence {
+  background: rgba(112, 112, 163, 0.7);
+  border: 1px solid rgba(112, 112, 163, 0.5);
+  padding: 0 10px;
+  border-radius: 4px;
+
+  & a {
+    color: white !important;
+    text-align: center;
+  }
+
 }
 
 .nav__fixed {
@@ -88,8 +105,8 @@ html, body {
 }
 
 .navbar-toggler {
-  top: 14px;
-
+  top: 24px;
+  right: 7%;
 }
 
 .navbar-light .navbar-toggler {
@@ -101,6 +118,24 @@ html, body {
 
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(112, 112, 163);
+}
+
+.navbar-brand {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.nav-link-tel, .nav-link-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-excellence {
+
+}
 
 .stickyheader__logo {
   display: flex;
