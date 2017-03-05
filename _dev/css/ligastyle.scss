@@ -23,7 +23,7 @@ html, body {
   }
 
   .hvr-rectangle-out:before {
-    background: #a5a5d9;
+    background: #787d9a;;
   }
 
   & > div {
@@ -140,6 +140,22 @@ html, body {
 
 }
 
+.liga__header {
+  position: relative;
+  //background: url("../img/liga_header.jpg");
+  //background-size: cover;
+
+}
+
+.liga__overlay {
+  position: absolute;
+  z-index: -1;
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .liga__slogan {
   display: flex;
   flex-direction: column;
@@ -148,45 +164,63 @@ html, body {
 }
 
 .liga__header-content {
-  background: url("../img/liga_header.jpg");
-  background-size: cover;
-  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
 
-/////////////////////////////
-//button-4
-///////////////////////////
-.btn-4 {
+.liga__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  overflow: hidden;
-  position: relative;
-
-  span {
-    z-index: 20;
+  & .slide {
+    height: 30vh;
   }
 
-  &:after {
-    background: #fff;
-    content: "";
-    height: 155px;
-    left: -75px;
-    opacity: .2;
-    position: absolute;
-    top: -50px;
-    transform: rotate(35deg);
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 50px;
-    z-index: 10;
-  }
 }
 
-.btn-4:hover {
+.liga__tectcont {
+  background: #e8e8ef;
 
-  &:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.liga__testbtn {
+  background: #f9e9c0 !important;
+  color: black !important;
+  padding: 12px 50px;
+  font-size: 24px;
+
+  & svg {
+    height: 57px;
+  }
+
+  & rect {
+    stroke: #9a9abe;
   }
 }
 
+.liga__slogan {
 
+  padding-left: 5%;
 
+  .partner__brand {
+    font-size: 32px;
+    color: #25408f;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .partner__slogan {
+    margin-top: 40px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  & p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+}

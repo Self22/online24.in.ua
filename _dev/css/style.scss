@@ -691,6 +691,85 @@ html, body {
   background: rgba(175, 159, 217, 0.3);
 }
 
+// landing blocks
+
+.test__block {
+  height: 100px;
+  background: rgba(182, 217, 248, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//btn
+
+.btn-4 {
+
+  overflow: hidden;
+  position: relative;
+
+  span {
+    z-index: 20;
+  }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 10;
+  }
+}
+
+.btn-4:hover {
+
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.btn-1 {
+  background: darken(#E1332D, 1.5%);
+  font-weight: 100;
+
+  & svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  & rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+  }
+}
+
+.btn-1:hover {
+  background: rgba(#E1332D, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  & rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+
+
 //svg logo
 
 .st0 {
