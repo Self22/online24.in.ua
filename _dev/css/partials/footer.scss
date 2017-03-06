@@ -40,14 +40,12 @@
   padding-left: 11%;
 }
 
-.footer__contacts > div {
-  margin-bottom: 15px;
+.footer__contacts a {
 
-  & > a {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+
 }
 
 .footer__contacts a {
@@ -59,10 +57,12 @@
 .footer__tel {
   display: flex;
   flex-direction: column;
+  margin-bottom: 45px;
+  margin-top: 50px;
 
   & a:first-child {
-    margin-bottom: 15px;
     color: #25408f;
+    margin-bottom: 28px;
 
     @include phones {
       margin-bottom: 0;
@@ -76,7 +76,12 @@
 
 }
 
+.footer__email {
+  margin-bottom: 20px;
+}
+
 .footer__workhours {
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

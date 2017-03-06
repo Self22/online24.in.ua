@@ -11,658 +11,13 @@
 
 </head>
 <body>
-<style>
-    @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
-
-    /
-    /
-    colors
-$ red: #E1332D
-
-    ;
-    $
-    white: #fff
-
-    ;
-
-    /
-    /
-    base styles
-    * {
-        box-sizing: inherit;
-        transition-property: all;
-        transition-duration: .6s;
-        transition-timing-function: ease;
-    }
-
-    html,
-    body {
-        box-sizing: border-box;
-        height: 100%;
-        width: 100%;
-    }
-
-    body {
-        background: $ red;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-    }
-
-    .buttons {
-        display: table;
-        height: 100%;
-        width: 100%;
-    }
-
-    .container {
-        display: table-cell;
-        padding: 1em;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    h1 {
-        color: $ white;
-        font-size: 1.25em;
-        font-weight: 900;
-        margin: 0 0 2em;
-
-    @media (min-width: 450px) {
-        font-size:
-
-    1.75em
-
-    ;
-    }
-
-    @media (min-width: 760px) {
-        font-size:
-
-    3.25em
-
-    ;
-    }
-
-    @media (min-width: 900px) {
-        font-size:
-
-    5.25em
-
-    ;
-        margin:
-
-    0 0 1em
-
-    ;
-    }
-
-    }
-
-    p {
-        color: $ white;
-        font-size: 12px;
-
-    @media (min-width: 600px) {
-        left:
-
-    50%;
-        position: absolute
-
-    ;
-        transform:
-
-    translate(-50%, 0);
-        top:
-
-    90%;
-    }
-
-    @media (max-height: 500px) {
-        left:
-
-    0;
-        position: relative
-
-    ;
-        top:
-
-    0;
-        transform:
-
-    translate(0, 0);
-    }
-
-    a {
-        background: rgba($ white, 0);
-        border-bottom: 1px solid;
-        color: $ white;
-        line-height: 1.4;
-        padding: .25em;
-        text-decoration: none;
-
-    &
-    :hover {
-        background: rgba($ white, 1);
-        color: $ red;
-    }
-
-    }
-    }
-    /
-    /
-    button styles
-
-    /
-    /
-    default button
-    .btn {
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 45px;
-        margin: 0 auto 2em;
-        max-width: 160px;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        vertical-align: middle;
-        width: 100%;
-
-    @media (min-width: 400px) {
-        display: inline-block
-
-    ;
-        margin-right:
-
-    2.5em
-
-    ;
-
-    &:nth-of-type(even) {
-         margin-right: 0;
-     }
-    }
-
-    @media (min-width: 600px) {
-
-    &:nth-of-type(even) {
-        margin-right: 2.5em;
-    }
-
-    &:nth-of-type(5) {
-         margin-right: 0;
-     }
-
-    }
-
-    &
-    :hover {
-        text-decoration: none;
-    }
-
-    }
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    button one
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    .btn-1 {
-        background: darken($ red, 1.5%);
-        font-weight: 100;
-
-    svg {
-        height: 45px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    rect {
-        fill: none;
-        stroke: #fff;
-        stroke-width: 2;
-        stroke-dasharray: 422, 0;
-    }
-
-    }
-
-    .btn-1:hover {
-        background: rgba($ red, 0);
-        font-weight: 900;
-        letter-spacing: 1px;
-
-    rect {
-        stroke-width: 5;
-        stroke-dasharray: 15, 310;
-        stroke-dashoffset: 48;
-        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
-    }
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    button two
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    .btn-2 {
-        letter-spacing: 0;
-    }
-
-    .btn-2:hover,
-    .btn-2:active {
-        letter-spacing: 5px;
-    }
-
-    .btn-2:after,
-    .btn-2:before {
-        backface-visibility: hidden;
-        border: 1px solid rgba(#fff, 0);
-        bottom: 0px;
-        content: " ";
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        transition: all 280ms ease-in-out;
-        width: 0;
-    }
-
-    .btn-2:hover:after,
-    .btn-2:hover:before {
-        backface-visibility: hidden;
-        border-color: #fff;
-        transition: width 350ms ease-in-out;
-        width: 70%;
-    }
-
-    .btn-2:hover:before {
-        bottom: auto;
-        top: 0;
-        width: 70%;
-    }
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    button
-
-    -
-    3
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    .btn-3 {
-        background: lighten($ red, 3%);
-        border: 1px solid darken($ red, 4%);
-        box-shadow: 0px 2px 0 darken($ red, 5%), 2px 4px 6px darken($ red, 2%);
-        font-weight: 900;
-        letter-spacing: 1px;
-        transition: all 150ms linear;
-    }
-
-    .btn-3:hover {
-        background: darken($ red, 1.5%);
-        border: 1px solid rgba(#000, .05);
-        box-shadow: 1px 1px 2px rgba(#fff, .2);
-        color: lighten($ red, 18%);
-        text-decoration: none;
-        text-shadow: -1px -1px 0 darken($ red, 9.5%);
-        transition: all 250ms linear;
-    }
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    button-4
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    .btn-4 {
-        border: 1px solid;
-        overflow: hidden;
-        position: relative;
-
-    span {
-        z-index: 20;
-    }
-
-    &
-    :after {
-        background: #fff;
-        content: "";
-        height: 155px;
-        left: -75px;
-        opacity: .2;
-        position: absolute;
-        top: -50px;
-        transform: rotate(35deg);
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        width: 50px;
-        z-index: -10;
-    }
-
-    }
-
-    .btn-4:hover {
-
-    &
-    :after {
-        left: 120%;
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
-    }
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    button-5
-
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    /
-    .btn-5 {
-        border: 0 solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-        outline: 1px solid;
-        outline-color: rgba(255, 255, 255, .5);
-        outline-offset: 0px;
-        text-shadow: none;
-        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
-    .btn-5:hover {
-        border: 1px solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-        outline-color: rgba(255, 255, 255, 0);
-        outline-offset: 15px;
-        text-shadow: 1px 1px 2px #427388;
-    }
-</style>
 <div class="button__up hvr-pulse">
     <img src="img/ic_expand_less_white_24dp_2x.png" alt="">
 </div>
 <header class="liga__header">
-    <div class="liga__overlay">
-        <img src="img/liga_header.jpg" alt="">
-    </div>
+    <!--<div class="liga__overlay">-->
+    <!--<img src="img/liga_header.jpg" alt="">-->
+    <!--</div>-->
     <nav class="hidden-md-up navbar navbar-toggleable-sm navbar-light bg-faded hidden-lg-up">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -922,15 +277,64 @@ $ red: #E1332D
     </div>
 </header>
 <main class="lz__main">
-    <div class="liga__tectcont container_btn">
+    <article class="liga__tectcont container_btn">
         <a href="" class="btn_s btn-1 liga__testbtn">
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
             Попробовать бесплатно (тест 24 часа)
         </a>
-    </div>
+    </article>
+    <article class="liga__about">
+        <h2 class="article__title">О платформе</h2>
 
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <section class="card product__feautures product__feautures-liga">
+                    <h3 class="feature__title"><i class="fa fa-info-circle" aria-hidden="true"></i> Единый источник
+                        информации</h3>
+
+                    <div class="feature__descr">Одна информационная среда для всех сотрудников, принимающих решение, для
+                        всех отделов и подразделений. Один принцип работы с информацией, один принцип поиска и
+                        классификации : любая ссылка на любой документ понятна и доступна любому члену Вашей команды.
+                        Каждый из Вас знает правила игры!
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <section class="card product__feautures product__feautures-liga">
+                    <h3 class="feature__title"><i class="fa fa-calendar" aria-hidden="true"></i> Информация на каждый
+                        день</h3>
+
+                    <div class="feature__descr">В изменчивом правовом поле Украины платформа ЛІГА - незаменимый и
+                        надёжный инструмент для ежедневной работы руководителя, бухгалтера, юриста, кадровика, студента.
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <section class="card product__feautures product__feautures-liga">
+                    <h3 class="feature__title"><i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        Доступ в облаке</h3>
+
+                    <div class="feature__descr">Гарантирует круглосуточную работу платформы - для обеспечения
+                        деятельности каждого клиента платформы ЛІГА. Теперь не нужна техподдержка и свободное место на
+                        винчестере - тратьте время и средства только на эффекивную работу с информацией!
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <section class="card product__feautures product__feautures-liga">
+                    <h3 class="feature__title"><i class="fa fa-mobile" aria-hidden="true"></i>Мобильность</h3>
+
+                    <div class="feature__descr">Мы живём в 2017 году, поэтому доступ к Платформе осуществляется без
+                        всяких проблем с разнообразных устройств, которые подключены к Интернету. Адаптивный дизайн и
+                        оптимизация сервиса позволяют работать с ЛІГОЙ с разных экранов - скорости хватит даже у
+                        2G-интернета!
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
 
     </div>
 

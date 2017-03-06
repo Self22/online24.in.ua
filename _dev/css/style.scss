@@ -23,6 +23,7 @@
 /*
 	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
 */
+@import "../fonts/font-awesome.css";
 
 //vars
 $ligared: #CF112A;
@@ -180,7 +181,7 @@ html, body {
 
   &__main {
     position: relative;
-    height: 50vh;
+    height: 70vh;
     background: transparent;
     @include phones {
       height: 80vh;
@@ -189,7 +190,7 @@ html, body {
 
   &__about {
     position: relative;
-    height: 25vh;
+    height: 35vh;
     background: transparent;
   }
 }
@@ -211,12 +212,12 @@ html, body {
   align-items: center;
 
   &-main {
-    height: 50vh;
+    height: 70vh;
 
   }
 
   &-about {
-    height: 25vh;
+    height: 35vh;
 
     & .logo__block-img {
 
@@ -291,7 +292,6 @@ html, body {
   }
 
   @include desktop {
-    margin-top: 100px;
     margin-left: 5%;
 
     & a {
@@ -321,10 +321,11 @@ html, body {
 }
 
 .slider-cont {
+  margin-top: 0;
   height: 350px;
     align-items: center;
 
-  @include tablets {
+  @include desktop {
     margin-top: 100px;
   }
 }
@@ -335,19 +336,33 @@ html, body {
 }
 
 .slide {
-
-  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
   height: 260px;
   padding-top: 15px;
   flex-flow: column;
 
+  @include desktop {
+    width: 80vw;
+    margin-left: 10vw;
+
+  }
+
+  @include tablets {
+    width: 100vw;
+    margin-left: 0;
+
+  }
+
+  @include phones {
+    width: 100vw;
+    margin-left: 0;
+  }
+
   & h3 {
     color: black;
-    flex: 1 1 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 36px;
     text-align: center;
     padding: 0 10px 0 10px;
@@ -364,9 +379,6 @@ html, body {
     color: #25408f;
     flex: 1 1 100%;
     height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
     font-size: 30px;
     text-align: center;
     line-height: 50px;
@@ -375,16 +387,6 @@ html, body {
     @include phones {
       font-size: 18px;
     }
-  }
-
-  @include tablets {
-    width: 80vw;
-    margin-left: 10vw;
-  }
-
-  @include phones {
-    width: 80vw;
-    margin-left: 10vw;
   }
 
   }
@@ -701,6 +703,16 @@ html, body {
   align-items: center;
 }
 
+.card {
+  background: transparent;
+  border: none;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.feature__title {
+  margin-bottom: 30px;
+}
 //btn
 
 .btn-4 {

@@ -6,7 +6,7 @@
 
 html, body {
 
-  font-family: Open Sans, Optima, sans-serif;;
+  font-family: Open Sans, Optima, sans-serif;
 
 }
 
@@ -73,7 +73,7 @@ html, body {
 }
 
 .ligalogosticky {
-  margin-left: 10px;
+  margin-left: 20px;
   max-width: 130px;
 
   @include desktop {
@@ -127,7 +127,6 @@ html, body {
   display: block;
   border: 1px solid rgba(112, 112, 163, 0.5);
   padding: 5px 20px;
-  border-radius: 4px;
   text-align: center;
 
   & span {
@@ -142,8 +141,9 @@ html, body {
 
 .liga__header {
   position: relative;
-  //background: url("../img/liga_header.jpg");
-  //background-size: cover;
+  background: url("../img/liga_header.jpg");
+  background-size: cover;
+  background-position-y: 50%;
 
 }
 
@@ -167,7 +167,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 .liga__slider {
@@ -177,6 +177,7 @@ html, body {
 
   & .slide {
     height: 30vh;
+    width: 50vw;
   }
 
 }
@@ -204,6 +205,7 @@ html, body {
 .liga__slogan {
 
   padding-left: 5%;
+  padding-bottom: 50px;
 
   .partner__brand {
     font-size: 32px;
@@ -214,13 +216,46 @@ html, body {
   .partner__slogan {
     margin-top: 40px;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
   }
 
   & p {
     font-size: 20px;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
   }
 
+}
+
+.liga__slider {
+
+  h3, p {
+    font-family: Open Sans, Optima, sans-serif;
+  }
+
+  h3 {
+    @include desktop {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    @include desktop {
+      font-size: 26px;
+    }
+  }
+
+}
+
+.liga__about {
+  padding: 30px 80px 30px 80px;
+  background: #feeded;
+
+  & .article__title {
+    margin-bottom: 50px;
+  }
+
+  & i {
+    margin-right: 12px;
+  }
 }
