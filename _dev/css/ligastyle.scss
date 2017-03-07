@@ -10,8 +10,18 @@ html, body {
 
 }
 
-.ligamain__menu {
-  transition: 0.5s all;
+.lnav__fixed {
+  position: fixed;
+  background: #feeded;
+  height: 100px;
+  z-index: 5;
+}
+
+.lmain__menu {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  animation-fill-mode: none;
   height: 130px;
   display: flex;
   flex-flow: row nowrap;
