@@ -6,7 +6,8 @@
 @import "partials/sidebar-nav";
 @import "partials/footer";
 @import "partials/btn";
-
+//animations
+@import "animations.css";
 
 ////fonts
 @import "../fonts/raleway.css";
@@ -728,7 +729,7 @@ html, body {
   background: transparent;
   border: none;
   margin-bottom: 30px;
-  padding: 0 15px;
+  padding: 0 10%;
 }
 
 .feature__title {

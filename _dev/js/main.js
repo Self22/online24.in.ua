@@ -81,6 +81,23 @@ $(function () {
 
 });
 
+$(function () {
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() >= 150) {
+            $('.lmain__menu').addClass('lnav__fixed');
+        }
+
+        else {
+
+            $('.lmain__menu').removeClass('lnav__fixed');
+        }
+
+    });
+
+});
+
 //button up
 
 $(function () {

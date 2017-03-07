@@ -10,12 +10,7 @@ html, body {
 
 }
 
-.lnav__fixed {
-  position: fixed;
-  background: #feeded;
-  height: 100px;
-  z-index: 5;
-}
+
 
 .lmain__menu {
   position: absolute;
@@ -78,6 +73,13 @@ html, body {
 
 }
 
+.lnav__fixed {
+  position: fixed;
+  background: rgb(232, 234, 213);
+  height: 100px;
+  z-index: 5;
+}
+
 .logosticky__o24 {
   margin-right: auto;
 }
@@ -132,7 +134,7 @@ html, body {
 
 .ligamain__menu-excellence {
   transition: all 0.5s;
-  background: rgba(112, 112, 163, 0.7);
+  background: rgb(118, 122, 152);
   margin-left: 15px;
   display: block;
   border: 1px solid rgba(112, 112, 163, 0.5);
@@ -238,6 +240,8 @@ html, body {
 }
 
 .liga__slider {
+
+  margin-top: 5vh;
 
   h3, p {
     font-family: Open Sans, Optima, sans-serif;
