@@ -200,10 +200,6 @@ html, body {
   margin-bottom: 53px;
 }
 
-.parallax-mirror {
-  opacity: 0.5;
-}
-
 .logo__block {
 
   background: rgba(255, 255, 255, 0.5);
@@ -503,6 +499,11 @@ html, body {
     height: auto;
   }
 
+}
+
+.index__btn {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #363670 !important;
 }
 
 .main__test {

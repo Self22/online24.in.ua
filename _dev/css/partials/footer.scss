@@ -27,6 +27,12 @@
   }
 }
 
+.footer__contacts {
+  justify-content: space-between;
+  height: 340px;
+}
+
+
 .footer__title {
   font-size: 26px;
   margin-bottom: 25px;
@@ -54,19 +60,15 @@
   }
 }
 
-.footer__tel {
+.footer__tel1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
-  margin-top: 50px;
-
-  & a:first-child {
-    color: #25408f;
-    margin-bottom: 28px;
+  color: #25408f;
+  margin-bottom: 5px;
 
     @include phones {
       margin-bottom: 0;
-    }
+
 
   }
 
@@ -76,20 +78,25 @@
 
 }
 
-.footer__email {
-  margin-bottom: 20px;
-}
+//.footer__email {
+//  margin-bottom: 20px;
+//}
 
 .footer__workhours {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.footer__email {
+  margin-bottom: 5px;
+}
+
 .footer__socials {
   display: flex;
   flex-direction: row;
+  margin-bottom: 5px;
   & a {
     display: flex;
     justify-content: center;
@@ -114,6 +121,10 @@
     background-color: #7070a3;
     border-color: #7070a3;
   }
+}
+
+.g-recaptcha {
+  margin-top: 15px;
 }
 
 .btn-primary:hover {

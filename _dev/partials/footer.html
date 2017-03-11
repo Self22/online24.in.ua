@@ -70,7 +70,7 @@
             <div class="footer__contacts col-md-4 col-sm-6 col-xs-12">
                 <h2 class="footer__title">Контакты</h2>
 
-                <div class="footer__tel">
+                <div class="footer__tel1">
                     <a href="tel:+380443211022" class="footer__tel-link">
                         <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
                              viewBox="0 0 24 24">
@@ -79,6 +79,8 @@
                         </svg>
                         +38 (044) 32-11-022
                     </a>
+                </div>
+                <div class="footer__tel2">
                     <a href="tel:+380504544043" class="footer__tel-link">
                         <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
                              viewBox="0 0 24 24">
@@ -122,22 +124,23 @@
             <div class="footer__form col-md-4 col-sm-6 col-xs-12">
                 <h2 class="footer__title footer__title-form">Напишите нам</h2>
 
-                <form>
+                <form id="footerform">
                     <div class="form-group">
-                        <label for="exampleInputPassword1"></label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Имя *">
+                        <label for="name"></label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Имя *" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1"></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="Email *">
+                        <label for="email"></label>
+                        <input type="email" name="email" class="form-control required" id="email"
+                               aria-describedby="emailHelp"
+                               placeholder="Email *" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea"></label>
-                        <textarea class="form-control" id="exampleTextarea" rows="3"
-                                  placeholder="Ваше сообщение"></textarea>
+                        <label for="message"></label>
+                        <textarea name="message" class="form-control" id="message" rows="3"
+                                  placeholder="Ваше сообщение" required></textarea>
                     </div>
-
+                    <!--<div class="g-recaptcha" data-sitekey="6Lf9kRgUAAAAAEHHXZd0Y0tesUPmj1gC6v4DII1v"></div>-->
                     <button type="submit" class="btn btn-primary hvr-pulse">Отправить</button>
                 </form>
             </div>
@@ -147,6 +150,8 @@
 </body>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='js/jquery.validate.js'></script>
 <script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/bpHS.js"></script>
 <script src="js/parallax.min.js"></script>
