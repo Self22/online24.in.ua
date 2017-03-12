@@ -167,26 +167,80 @@ $(document).ready(function () {
 
 });
 
-$(function () {
+/////////////////// validation
 
-    $('#footerform').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 3
-            }
+(function () {
+
+    var app = {
+
+        initialize: function () {
+            this.setUpListeners();
         },
-        messages: {
-            name: {
-                required: "Поле 'Имя' обязательно к заполнению",
 
-                minlength: "Введите не менее 3-х символов в поле 'Имя'"
-            },
-            email: {
-                required: "Поле 'Email' обязательно к заполнению",
+        setUpListeners: function () {
+            $('#footerform').on('submit', app.submitForm);
+        },
 
-                email: "Неверный формат адреса email"
-            }
-        }
-    });
-});
+        submitForm: function (e) {
+            e.preventDefault();
+
+            var form = $(this),
+                submitBtn = form.find('button[type="submit"]');
+
+            if (app.validateForm(form) === false) return false;
+
+            submitBtn.attr('disabled', 'disabled');
+
+            console.log('Form__post!');
+            var str = form.serialize();
+
+            $.ajax({
+                url: 'contact-form/contact_process.php',
+                type: 'POST',
+                data: str
+            })
+                .done(function (msg) {
+                    if (msg === "OK") {
+                        var result = "<div = 'bg-success'>Спасибо за заявку! Мы вам перезвоним!</div>"
+                        form.html(result);
+                    } else {
+                        form.html(msg);
+                    }
+                })
+                .always(function () {
+                    submitBtn.removeAttr('disabled');
+                });
+
+        },
+
+        validateForm: function (form) {
+            var inputs = form.find('input'),
+                valid = true;
+
+
+            $.each(inputs, function (index, val) {
+                var input = $(val),
+                    val = input.val(),
+                    formGroup = input.parents('.form-group');
+
+
+                if (val.length === 0) {
+                    formGroup.addClass('has-warning').removeClass('has-success');
+                    input.addClass('form-control-warning').removeClass('form-control-success');
+                    valid = false;
+                } else {
+                    formGroup.addClass('has-success').removeClass('has-warning');
+                    input.addClass('form-control-success').removeClass('form-control-warning');
+                }
+            });
+
+            return valid;
+        },
+
+
+    }
+
+    app.initialize();
+
+}());
+
