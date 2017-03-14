@@ -167,7 +167,7 @@ $(document).ready(function () {
 
 });
 
-/////////////////// validation
+/////////////////// validation footer__form
 
 (function () {
 
@@ -243,4 +243,10 @@ $(document).ready(function () {
     app.initialize();
 
 }());
+
+/////////////// mask
+$(document).ready(function () {
+    $('.footer__form-tel').mask('+38(000) 000-00-00');
+});
+
 

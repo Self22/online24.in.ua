@@ -20,7 +20,7 @@ $post = (!empty($_POST)) ? true : false;
 if ($post) {
 
     $name = stripslashes($_POST['name']);
-    $phone = stripslashes($_POST['phone']);
+    $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
     $subject = 'Заявка';
     $error = '';
