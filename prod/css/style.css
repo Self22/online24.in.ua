@@ -823,7 +823,8 @@ textarea {
   margin-top: 40px;
   text-transform: uppercase;
   background-color: #7070a3;
-  border-color: #7070a3; }
+  border-color: #7070a3;
+  margin-bottom: 5vh; }
 
 .g-recaptcha {
   margin-top: 15px; }
@@ -1389,7 +1390,7 @@ html, body {
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 300;
     color: black;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
 

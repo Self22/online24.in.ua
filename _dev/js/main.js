@@ -56,8 +56,9 @@ $('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showB
 //parallaz
 
 $('.header').parallax({imageSrc: 'img/whiteblue_back606.png'});
-$('.liga__header-content').parallax({imageSrc: 'img/liga_header.jpg'});
-$('.liga__fotoblock').parallax({imageSrc: 'img/liga__block1.jpg'});
+$('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
+$('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
+$('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
 
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
@@ -128,44 +129,6 @@ $(function () {
 
 });
 
-$(document).ready(function () {
-
-    $("#loginform").validate({
-
-        rules: {
-
-            login: {
-                required: true,
-                minlength: 4,
-                maxlength: 16,
-            },
-
-            pswd: {
-                required: true,
-                minlength: 6,
-                maxlength: 16,
-            },
-        },
-
-        messages: {
-
-            login: {
-                required: "Это поле обязательно для заполнения",
-                minlength: "Логин должен быть минимум 4 символа",
-                maxlength: "Максимальное число символо - 16",
-            },
-
-            pswd: {
-                required: "Это поле обязательно для заполнения",
-                minlength: "Пароль должен быть минимум 6 символа",
-                maxlength: "Пароль должен быть максимум 16 символов",
-            },
-
-        }
-
-    });
-
-});
 
 /////////////////// validation footer__form
 
@@ -247,6 +210,51 @@ $(document).ready(function () {
 /////////////// mask
 $(document).ready(function () {
     $('.footer__form-tel').mask('+38(000) 000-00-00');
+});
+
+////// slow scroll
+
+$(document).ready(function () {
+
+    var container = $('.liga__header');
+
+    $(".lmain__menu").on("click", ".menu__inner", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+
+        event.preventDefault();
+        //забираем идентификатор блока с атрибута href
+        var id = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top - 100;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+    $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+
+        event.preventDefault();
+        //забираем идентификатор блока с атрибута href
+        var id = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+        setTimeout(container.removeClass("in"), 500);
+    });
+
+    $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+
+        event.preventDefault();
+        //забираем идентификатор блока с атрибута href
+        var id = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    
 });
 
 

@@ -10,9 +10,8 @@ html, body {
 
 }
 
-
-
 .lmain__menu {
+  background: black;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -29,7 +28,7 @@ html, body {
   }
 
   .hvr-rectangle-out:before {
-    background: #787d9a;;
+    background: #003494;
   }
 
   & > div {
@@ -41,43 +40,14 @@ html, body {
   }
 
   & a {
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    color: #2a4491;
-
-    .btn-4:after {
-      background: #efeff1;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: .2;
-      position: absolute;
-      top: -50px;
-      -webkit-transform: rotate(35deg);
-      transform: rotate(35deg);
-      -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: 6;
-    }
-
-    @include desktop {
-      font-size: 12px;
-      text-align: center;
-    }
-
-    @include tablets {
-      display: none;
-    }
-
+    text-decoration: none !important;
   }
 
 }
 
 .lnav__fixed {
   position: fixed;
-  background: rgb(232, 234, 213);
+  background: #001148;
   height: 100px;
   z-index: 5;
 }
@@ -134,14 +104,15 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: rgb(118, 122, 152);
+  background: #003494;
   margin-left: 15px;
   display: block;
-  border: 1px solid rgba(112, 112, 163, 0.5);
+  border: 1px solid rgb(0, 53, 151);
   padding: 5px 20px;
   text-align: center;
 
@@ -152,26 +123,46 @@ html, body {
 
 .lmain__menu-link {
   padding: 15px 17px;
+  font-size: 16px;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: white;
+
+  .btn-4:after {
+    background: #efeff1;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 6;
+  }
+
+  @include desktop {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @include tablets {
+    display: none;
+  }
 
 }
 
-.liga__header {
+.ca__header {
   position: relative;
-  //background: url("../img/liga_header.jpg");
+  //background: url("../img/ca_header.jpg");
   //background-size: cover;
-  //background-position-y: 50%;
 
 }
 
-
-.liga__slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.liga__header-content {
+.ca__header-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +173,6 @@ html, body {
   }
 
 }
-
 
 .liga__slider {
   margin-top: 5vh;
@@ -195,6 +185,7 @@ html, body {
   }
 
   h3 {
+
     @include desktop {
       font-size: 32px;
     }
@@ -218,6 +209,7 @@ html, body {
 
   h3, p {
     font-family: Open Sans, Optima, sans-serif;
+    color: white;
   }
 
   & .slide {
@@ -240,9 +232,27 @@ html, body {
 
 }
 
-.liga__testcont {
+.slide1 {
+  background: #3a7bd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3a7bd5, #3a6073); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3a7bd5, #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slide2 {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slide3 {
+  background: #0575E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0575E6, #021B79); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0575E6, #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.l__testcont {
   height: 170px;
-  background: #e8e8ef;
+  background: rgb(179, 194, 223);
   flex-direction: column;
 
   &-descr {
@@ -255,10 +265,10 @@ html, body {
   text-align: center;
 }
 
-.liga__testbtn {
+.l__testbtn {
 
-  background: #f9e9c0 !important;
-  color: black !important;
+  background: #024ea6 !important;
+  color: white !important;
   padding: 12px 50px;
   font-size: 24px;
 
@@ -276,9 +286,11 @@ html, body {
   }
 }
 
-.liga__slogan {
-
-  padding-left: 5%;
+.ca__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   padding-bottom: 50px;
 
   @include tablets {
@@ -287,8 +299,8 @@ html, body {
   }
 
   .partner__brand {
-    font-size: 32px;
-    color: #25408f;
+    font-size: 52px;
+    color: white;
     margin: 0;
     margin-top: 15px;
 
@@ -309,9 +321,11 @@ html, body {
   }
 
   & p {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 300;
     color: white;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 15px;
 
     @include phones {
       text-align: center;
@@ -325,16 +339,37 @@ html, body {
   font-family: Open Sans, Optima, sans-serif;
 }
 
-.liga__about {
-  padding: 30px 1vw 30px 1vw;
-  background: #feeded;
+.l__descr {
+  padding: 50px 1vw 30px 1vw;
+  background: rgb(132, 199, 208);
 
   & .article__title {
     margin-bottom: 50px;
+    color: white;
+    text-align: right;
   }
 
   & i {
-    margin-right: 12px;
+    margin: 4%;
+    color: #022383;
+  }
+}
+
+.descr__title {
+  color: white;
+  text-align: center;
+  line-height: 32px;
+}
+
+.feature__descr {
+  color: #001148;
+}
+
+.l_features {
+  padding: 30px 5%;
+  background: #096CAB;
+  & h2, h3, div {
+    color: white;
   }
 }
 
