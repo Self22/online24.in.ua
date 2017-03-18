@@ -53,12 +53,13 @@ $(document).ready(function () {
 
 $('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showBullets = false);
 
-//parallaz
+//parallax
 
 $('.header').parallax({imageSrc: 'img/whiteblue_back606.png'});
 $('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
+$('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
 
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
@@ -257,4 +258,45 @@ $(document).ready(function () {
     
 });
 
+///////////////////////////////////// tabs contragent tariffs
 
+$(document).ready(function () {
+
+    //tabs
+
+    var flag = true;
+
+    $('.tariff__item-link').on('click', function (e) {
+        e.preventDefault();
+
+        var
+            $this = $(this),
+            item = $this.closest('.tariff__item'),
+            container = $this.closest('.ca__tariff-tabs'),
+            content = container.find('.tariff__descr-item'),
+            ndx = item.index(),
+            reqItem = content.eq(ndx),
+            activeItem = content.filter('.tariff__descr-item-active');
+
+        if (flag) {
+            flag = false;
+
+
+            item.addClass('tariff__item-active')
+                .siblings()
+                .removeClass('tariff__item-active');
+
+            activeItem.fadeOut(500, function () {
+                reqItem.fadeIn(500, function () {
+                    $(this).addClass('tariff__descr-item-active')
+                        .siblings()
+                        .removeClass('tariff__descr-item-active');
+                    flag = true
+                });
+            });
+
+        }
+
+    })
+
+});

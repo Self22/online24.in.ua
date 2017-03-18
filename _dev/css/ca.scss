@@ -2,7 +2,7 @@
 @import "_misc/mixins";
 @import "_misc/normalize";
 ////partials
-@import "partials/animations";
+@import "partials/animations_hover";
 
 html, body {
 
@@ -92,12 +92,19 @@ html, body {
 }
 
 .l__mainmenu-contacts {
-  min-width: 155px;
+  min-width: 175px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
+
+  & a {
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+
 }
 
 .l__mainmenu-tel {
@@ -109,7 +116,7 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #003494;
+  background: #088EA1;
   margin-left: 15px;
   display: block;
   border: 1px solid rgb(0, 53, 151);
@@ -173,6 +180,131 @@ html, body {
   }
 
 }
+
+.l__products {
+  background: #437BE0;
+  padding: 10px 5% 40px 5%;
+
+  & .article__title {
+    color: white;
+  }
+}
+
+.ca__tariff-text {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+
+}
+
+.ca__tariff-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tariff__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 160px;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.tariff__item-link {
+
+  &:hover {
+    color: white;
+  }
+
+  color: white;
+  text-decoration: none !important;
+  font-size: 34px;
+  padding: 15px 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+
+  & i {
+    display: none;
+    position: absolute;
+    bottom: -85px;
+    right: 39%;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.tariff__item {
+  &:hover {
+    color: white;
+    box-shadow: 0 0 1px transparent;
+  }
+
+  transition-duration: 0.9s;
+}
+
+.tariff__item-active {
+  &:hover {
+    color: white;
+    box-shadow: 0 0 1px transparent;
+  }
+
+  & a {
+    color: white;
+    border: 2px solid white;
+  }
+
+  & i {
+    display: block;
+  }
+
+}
+
+.tariff__descr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.old__price {
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.tariff__descr-item {
+  display: none;
+  text-align: center;
+
+  & h4, p {
+    color: white;
+    font-size: 22px;
+  }
+
+  & h4 {
+    margin-bottom: 15px;
+  }
+
+}
+
+.tariff__descr-item-active {
+  display: block;
+
+}
+
+
 
 .liga__slider {
   margin-top: 5vh;
@@ -271,6 +403,7 @@ html, body {
   color: white !important;
   padding: 12px 50px;
   font-size: 24px;
+  font-weight: 600;
 
   @include phones {
     padding: 26px 11px;
@@ -372,6 +505,39 @@ html, body {
     color: white;
   }
 }
+
+.product__feautures {
+  border: 1px solid white;
+  padding: 20px 5%;
+  height: 22vh;
+
+  @include desktop {
+    height: 30vh;
+  }
+
+  @include phones {
+    height: 60vh;
+  }
+
+  & i {
+    margin-right: 3%;
+  }
+}
+
+.ca__fotoblock {
+  height: 30vh;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .liga__products {
   padding: 30px 4% 50px 4%;
