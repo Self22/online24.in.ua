@@ -40,6 +40,7 @@ html, body {
   }
 
   & a {
+    font-weight: 600;
     text-decoration: none !important;
   }
 
@@ -112,11 +113,15 @@ html, body {
   justify-content: center;
   align-items: center;
   color: white;
+
+  &:hover {
+    color: white !important;
+  }
 }
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #088EA1;
+  background: #437BE0;
   margin-left: 15px;
   display: block;
   border: 1px solid rgb(0, 53, 151);
@@ -279,7 +284,7 @@ html, body {
 }
 
 .price {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 
 }
@@ -403,7 +408,8 @@ html, body {
   color: white !important;
   padding: 12px 50px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
+  border: 1px solid white;
 
   @include phones {
     padding: 26px 11px;
@@ -466,6 +472,29 @@ html, body {
     }
   }
 
+}
+
+.ca__sourse {
+  background: #096CAB;
+  padding: 60px 5%;
+
+  & p:first-child {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+  }
+
+  & p {
+    text-align: center;
+  }
+
+  & li, p {
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+
+  }
 }
 
 .article__title {
