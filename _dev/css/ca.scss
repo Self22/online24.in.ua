@@ -3,6 +3,7 @@
 @import "_misc/normalize";
 ////partials
 @import "partials/animations_hover";
+@import "animations.css";
 
 html, body {
 
@@ -177,8 +178,8 @@ html, body {
 .ca__header-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 60vh;
+  align-items: flex-end;
+  height: 70vh;
 
   @include phones {
     height: 100vh;
@@ -535,17 +536,21 @@ html, body {
   }
 }
 
+.feature__section {
+  margin-bottom: 15px;
+}
+
 .product__feautures {
   border: 1px solid white;
   padding: 20px 5%;
-  height: 22vh;
+  height: 100%;
 
   @include desktop {
-    height: 30vh;
+    height: 100%;
   }
 
   @include phones {
-    height: 60vh;
+    height: 100%;
   }
 
   & i {
