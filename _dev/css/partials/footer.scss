@@ -44,6 +44,10 @@
 
 .footer_aboutus {
   padding-left: 11%;
+
+  & p {
+    text-align: center;
+  }
 }
 
 .footer__contacts a {
