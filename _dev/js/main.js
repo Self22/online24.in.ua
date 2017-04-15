@@ -59,6 +59,7 @@ $('.header').parallax({imageSrc: 'img/whiteblue_back606.png'});
 $('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
+$('.ib__header-content').parallax({imageSrc: '../img/ib_header2.jpg'});
 $('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
 
 

@@ -386,6 +386,10 @@ html, body {
   z-index: 1;
   box-shadow: rgba(36, 58, 102, 0.2) 1.41px 1.41px 20px 0px, rgba(66, 165, 245, 0.247059) 0px 2px 15px 0px, rgba(144, 202, 249, 0.247059) 0px 15px 25px 0px;
 
+  @include tablets {
+    height: 70vh;
+  }
+
   @include phones {
     height: 78vh;
   }

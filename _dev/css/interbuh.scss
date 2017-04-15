@@ -1,0 +1,801 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+////partials
+@import "partials/animations_hover";
+@import "animations.css";
+
+html, body {
+
+  font-family: Open Sans, Optima, sans-serif;
+
+}
+
+.lmain__menu {
+  padding-left: 3%;
+  background: rgba(192, 226, 229, 0.9);
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  animation-fill-mode: none;
+  height: 130px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+
+  & .hvr-rectangle-out {
+    background: transparent;
+  }
+
+  .hvr-rectangle-out:before {
+    background: #376265;
+  }
+
+  & > div {
+    padding: 0 16px;
+
+    @include desktop {
+      padding: 0 7px;
+    }
+  }
+
+  & a {
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+
+}
+
+.lnav__fixed {
+  position: fixed;
+  background: rgba(192, 226, 229, 0.9);
+  height: 100px;
+  z-index: 5;
+}
+
+.logosticky__o24 {
+  margin-right: auto;
+  margin-left: 2%;
+}
+
+.partnerlogosticky {
+  margin-left: 20px;
+  max-width: 165px;
+
+  @include desktop {
+    max-width: 120px;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.ligalogo__mob {
+  position: absolute;
+  left: 120px;
+  top: 30px;
+  width: 85px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.l__mainmenu-item {
+  padding: 0 !important;
+}
+
+.l__mainmenu-contacts {
+  min-width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+
+  & a {
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+
+}
+
+.l__mainmenu-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
+.lmain__menu-excellence {
+  transition: all 0.5s;
+  background: #376265;
+  margin-left: 15px;
+  display: block;
+  padding: 5px 20px;
+  text-align: center;
+  border: none !important;
+
+  & span {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.lmain__menu-link {
+  padding: 15px 17px;
+  font-size: 18px;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: white;
+
+  .btn-4:after {
+    background: #efeff1;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 6;
+  }
+
+  @include desktop {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+}
+
+.ib__header {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-size: cover;
+
+}
+
+.ib__header-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 75vh;
+
+  @include phones {
+    height: 100vh;
+  }
+
+}
+
+.l__products {
+  background: #437BE0;
+  padding: 10px 5% 40px 5%;
+
+  & .article__title {
+    color: white;
+  }
+}
+
+.ca__tariff-text {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+
+}
+
+.ca__tariff-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tariff__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 160px;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.tariff__item-link {
+
+  &:hover {
+    color: white;
+  }
+
+  color: white;
+  text-decoration: none !important;
+  font-size: 34px;
+  padding: 15px 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+
+  & i {
+    display: none;
+    position: absolute;
+    bottom: -85px;
+    right: 39%;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.tariff__item {
+  &:hover {
+    color: white;
+    box-shadow: 0 0 1px transparent;
+  }
+
+  transition-duration: 0.9s;
+}
+
+.tariff__item-active {
+  &:hover {
+    color: white;
+    box-shadow: 0 0 1px transparent;
+  }
+
+  & a {
+    color: white;
+    border: 2px solid white;
+  }
+
+  & i {
+    display: block;
+  }
+
+}
+
+.tariff__descr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.old__price {
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.tariff__descr-item {
+  display: none;
+  text-align: center;
+
+  & h4, p {
+    color: white;
+    font-size: 22px;
+  }
+
+  & h4 {
+    margin-bottom: 15px;
+  }
+
+}
+
+.tariff__descr-item-active {
+  display: block;
+
+}
+
+.l__slider {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablets {
+    margin-top: 0;
+  }
+
+  h3 {
+
+    color: black;
+
+    @include desktop {
+      font-size: 32px;
+    }
+
+    @include phones {
+      font-size: 28px;
+      color: white;
+    }
+  }
+
+  p {
+    @include desktop {
+      font-size: 26px;
+    }
+
+    @include phones {
+      font-size: 22px;
+      color: white;
+    }
+  }
+
+  h3, p {
+    font-family: Open Sans, Optima, sans-serif;
+    color: white;
+  }
+
+  & .slide {
+    height: 30vh;
+    width: 50vw;
+
+    @include desktop {
+      width: 45vw;
+    }
+
+    @include tablets {
+      width: 100vw;
+    }
+
+    @include phones {
+      width: 100vw;
+    }
+
+  }
+
+}
+
+.slide1 {
+  background: rgba(192, 226, 229, 1);
+  background: -moz-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(192, 226, 229, 1)), color-stop(100%, rgba(113, 149, 152, 0.8)));
+  background: -webkit-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
+  background: -ms-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
+  background: linear-gradient(to right, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0e2e5', endColorstr='#719598', GradientType=1);
+
+}
+
+.slide2 {
+  background: rgba(165, 166, 83, 1);
+  background: -moz-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(165, 166, 83, 1)), color-stop(100%, rgba(242, 210, 3, 0.8)));
+  background: -webkit-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
+  background: -ms-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
+  background: linear-gradient(to right, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5a653', endColorstr='#f2d203', GradientType=1);
+}
+
+.slide3 {
+  background: rgba(194, 182, 174, 1);
+  background: -moz-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(194, 182, 174, 1)), color-stop(100%, rgba(209, 179, 11, 0.8)));
+  background: -webkit-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
+  background: -o-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
+  background: -ms-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
+  background: linear-gradient(to right, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2b6ae', endColorstr='#d1b30b', GradientType=1);
+}
+
+.slide4 {
+  background: rgba(120, 199, 242, 0.8);
+}
+
+.slide5 {
+  background: rgba(67, 95, 140, 0.8);
+}
+
+.l__testcont {
+  height: 170px;
+  background: #7EE1E9;
+  flex-direction: column;
+
+  &-descr {
+    margin-top: 15px;
+  }
+}
+
+.liga__testcont-descr {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.l__testbtn {
+
+  background: #376265 !important;
+  color: white !important;
+  padding: 12px 50px;
+  font-size: 24px;
+  font-weight: 400;
+  border: 1px solid white;
+
+  @include phones {
+    padding: 26px 11px;
+    font-size: 14px;
+  }
+
+  & svg {
+    height: 57px;
+  }
+
+  & rect {
+    stroke: #9a9abe;
+  }
+}
+
+.ib__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 50px;
+
+  @include tablets {
+    margin-top: 130px;
+    padding-bottom: 0;
+  }
+
+  .partner__brand {
+    font-size: 46px;
+    color: white;
+    margin: 0;
+    margin-top: 15px;
+    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+
+    @include phones {
+      text-align: center;
+    }
+  }
+  .partner__slogan {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    background: rgba(120, 199, 242, 0.8);
+    border-radius: 4px;
+    padding: 20px 40px;
+
+    @include phones {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+
+  & p {
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 15px;
+
+    @include phones {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+}
+
+.ca__sourse {
+  background: #096CAB;
+  padding: 60px 5%;
+
+  & p:first-child {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+  }
+
+  & p {
+    text-align: center;
+  }
+
+  & li, p {
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+
+  }
+}
+
+.article__title {
+  font-family: Open Sans, Optima, sans-serif;
+}
+
+.l__descr {
+  padding: 50px 1vw 30px 1vw;
+  background: rgb(132, 199, 208);
+
+  & .article__title {
+    margin-bottom: 50px;
+    color: white;
+    text-align: right;
+  }
+
+  & i {
+    margin: 4%;
+    color: #022383;
+  }
+}
+
+.descr__title {
+  color: white;
+  text-align: center;
+  line-height: 32px;
+}
+
+.feature__descr {
+  color: #001148;
+}
+
+.l_features {
+  padding: 30px 5%;
+  background: #096CAB;
+  & h2, h3, div {
+    color: white;
+  }
+}
+
+.feature__section {
+  margin-bottom: 15px;
+}
+
+.product__feautures {
+  border: 1px solid white;
+  padding: 20px 5%;
+  height: 100%;
+
+  @include desktop {
+    height: 100%;
+  }
+
+  @include phones {
+    height: 100%;
+  }
+
+  & i {
+    margin-right: 3%;
+  }
+}
+
+.ca__fotoblock {
+  height: 30vh;
+}
+
+.btn-1:hover {
+  font-weight: 400 !important;
+}
+
+.liga__products {
+  padding: 30px 4% 50px 4%;
+  background: #d7d7f6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  & h1 {
+    flex: 1 1 100%;
+  }
+
+}
+
+.liga__product-title {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 80px;
+  padding-top: 7px;
+  text-align: center;
+  background: rgb(188, 191, 251);
+  color: #FCFFC5;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.liga__product-text {
+  flex: 1 1 100%;
+  margin-bottom: 35px;
+}
+
+.liga__product-item {
+  flex: 1 1 190px;
+  max-width: 300px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 10px 13px;
+  background: #DDFFD2;
+  margin-top: 15px;
+  z-index: 1;
+  box-shadow: rgba(36, 58, 102, 0.2) 1.41px 1.41px 20px 0px, rgba(66, 165, 245, 0.247059) 0px 2px 15px 0px, rgba(144, 202, 249, 0.247059) 0px 15px 25px 0px;
+
+  @include phones {
+    height: 78vh;
+  }
+
+}
+
+.liga__product-descr {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.liga__product-price {
+  margin-top: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-top: 5px solid;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  &-grand {
+    border-color: white;
+  }
+
+  &-prime {
+    border-color: #A3FF85;
+  }
+
+  &-buhprof {
+    border-color: #C7E5BD;
+  }
+
+  &-jurprof {
+    border-color: #FFD2F8;
+  }
+
+  &-jur {
+    border-color: #EA92FF;
+  }
+}
+
+.liga__product-order {
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 16px !important;
+  border: 1px solid #767a98 !important;
+  padding: 10px 0px !important;
+  color: #767a98 !important;
+  font-weight: 900 !important;
+  margin: 0 !important;;
+  margin-top: 15px !important;
+
+  &::after {
+    opacity: 0;
+    background-image: -webkit-linear-gradient(transparent 50%, #e8e8ef 50%) !important;
+  }
+
+  &:hover {
+    color: black !important;
+  }
+}
+
+.liga__fotoblock {
+  height: 30vh;
+}
+
+.liga__periodicals-article {
+  background: #f1f7f9;
+  padding: 30px 0 0 0;
+}
+
+.article__title-lzperiod {
+  margin-bottom: 50px;
+}
+
+.periodicals__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 50px 4vw;
+
+  &-bz {
+    background: rgb(224, 227, 219);
+  }
+
+  &-uz {
+    background: rgb(247, 225, 232);
+  }
+
+  &-msfo {
+    background: rgb(212, 241, 250);
+  }
+
+  &-buhlight {
+    background: rgb(247, 217, 199);
+  }
+
+}
+
+.periodicals__section-title {
+
+}
+
+.periodicals__section-type {
+
+}
+
+.periodicals__logo {
+  margin-top: 20px;
+}
+
+.periodicals__section-descr {
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.periodicals__section-price {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 400;
+
+}
+
+.periodicals__test-button {
+  margin-top: 30px;
+  align-self: center;
+  width: 65%;
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #25408f;
+}
+
+.periodicals__buy-button {
+  margin-top: 20px;
+  align-self: center;
+  width: 65%;
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #25408f;
+}
