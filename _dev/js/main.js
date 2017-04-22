@@ -351,3 +351,7 @@ $(document).ready(function () {
     })
 
 });
+
+///////////////////////////
+
+$('#nav-main').singlePageNav();

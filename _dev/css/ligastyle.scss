@@ -87,6 +87,14 @@ html, body {
   margin-left: 2%;
 }
 
+.liga__partner-logo {
+  margin-left: 3%;
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .partnerlogosticky {
   margin-left: 20px;
   max-width: 130px;
@@ -444,7 +452,7 @@ html, body {
   font-size: 16px !important;
   border: 1px solid #767a98 !important;
   padding: 15px 0px !important;
-  color: #767a98 !important;
+  color: #25408f !important;
   font-weight: 900 !important;
   margin: 0 !important;;
   margin-top: 15px !important;
@@ -461,6 +469,9 @@ html, body {
 
 .liga__fotoblock {
   height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .liga__periodicals-article {
