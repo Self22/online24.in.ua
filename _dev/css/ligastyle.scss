@@ -130,6 +130,7 @@ html, body {
 }
 
 .l__mainmenu-contacts {
+  margin-left: 1%;
   min-width: 155px;
   display: flex;
   flex-direction: column;
@@ -142,6 +143,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+
 }
 
 .lmain__menu-excellence {
@@ -160,7 +163,30 @@ html, body {
 
 .lmain__menu-link {
   padding: 15px 17px;
+  margin-right: 5px;
 
+  &:hover {
+    outline: 1px solid;
+  }
+
+}
+
+.current {
+  outline: 1px solid;
+}
+
+.lmain__nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4% !important;
+
+  & a {
+    white-space: nowrap;
+  }
+}
+
+.null__link {
+  outline: none !important;
 }
 
 .liga__header {
@@ -183,11 +209,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 80vh;
-  padding-bottom: 8vh;
+  height: 570px;
+  padding-bottom: 55px;
 
   @include phones {
     height: 100vh;
+    align-items: flex-start;
   }
 
 }
@@ -230,7 +257,7 @@ html, body {
   }
 
   & .slide {
-    height: 30vh;
+    height: 290px;
     width: 50vw;
 
     @include desktop {
@@ -311,6 +338,7 @@ html, body {
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 
     @include phones {
+      margin-top: 16px;
       width: 100%;
       text-align: center;
       font-size: 24px;
@@ -464,6 +492,17 @@ html, body {
 
   &:hover {
     color: black !important;
+  }
+}
+
+.liga__comparison-table {
+  padding: 10px 1% 0;
+  background: rgb(239, 244, 189);
+
+  & img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
   }
 }
 

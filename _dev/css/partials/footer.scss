@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  height: 70vh;
+  height: 510px;
   background: url('../img/whiteblue_back608.png') fixed;
   background-position: 100% 100%;
 
@@ -30,6 +30,14 @@
 .footer__contacts {
   justify-content: space-between;
   height: 340px;
+
+  & a {
+    text-decoration: none;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
 }
 
 

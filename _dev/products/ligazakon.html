@@ -14,7 +14,7 @@
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png" alt="">
 </div>
-<header class="liga__header">
+<header class="liga__header" id="header">
     <nav class="hidden-md-up navbar navbar-toggleable-sm navbar-light bg-faded hidden-lg-up">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -131,7 +131,7 @@
             </ul>
         </div>
     </nav>
-    <nav class="lmain__menu" id="nav-main">
+    <nav class="lmain__menu">
         <a href="http://www.ligazakon.ua" class="partnerlogosticky" rel="nofollow">
             <img src="../../img/LZ_middle.png" alt="">
         </a>
@@ -197,18 +197,20 @@
             </div>
             </a>
 
-
-        <div class="l__mainmenu-item"><a href="#about" class="lmain__menu-link menu__inner hvr-rectangle-out">О
+        <div class="lmain__nav" id="nav-main">
+            <a href="#header" class="null__link"></a>
+            <div class="l__mainmenu-item"><a href="#about" class="lmain__menu-link menu__inner">О
             платформе</a></div>
-        <div class="l__mainmenu-item"><a href="#products" class="lmain__menu-link menu__inner hvr-rectangle-out">Продукты
+            <div class="l__mainmenu-item"><a href="#products" class="lmain__menu-link menu__inner">Продукты
             ЛІГА</a></div>
-        <div class="l__mainmenu-item"><a href="#filling" class="lmain__menu-link menu__inner hvr-rectangle-out">Наполнение</a>
+            <div class="l__mainmenu-item"><a href="#filling" class="lmain__menu-link menu__inner">Наполнение</a>
+        </div>
         </div>
         <div class="l__mainmenu-item "><a href="" class="lmain__menu-excellence btn-4">
             <span>Преимущества подключения<br>на Online24</span></a>
         </div>
         <div class="l__mainmenu-contacts">
-            <a href="tel:+380443211022" class="l__mainmenu-tel">
+            <a href="tel:+380443211022" class="l__mainmenu-tel hvr-grow">
                 <svg class="liga__mainmenu-tel" style="width:24px;height:24px;margin-right:5px;"
                      viewBox="0 0 24 24">
                     <path fill="#25408f"
@@ -216,7 +218,7 @@
                 </svg>
                 +38 (044) 32-11-022
             </a>
-            <a href="tel:+380504544043" class="l__mainmenu-tel">
+            <a href="tel:+380504544043" class="l__mainmenu-tel hvr-grow">
                 <svg class="liga__mainmenu-tel" style="width:24px;height:24px;margin-right:5px;"
                      viewBox="0 0 24 24">
                     <path fill="#25408f"
@@ -387,6 +389,10 @@
             <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
         </section>
     </article>
+    <article class="liga__comparison-table" id="filling">
+        <h2 class="article__title">Сравнение продуктов ЛІГА:ЗАКОН </h2>
+        <img src="../img/lz-compar-table-ru.jpg" alt="">
+    </article>
     <article class="liga__testcont container_btn">
         <a href="" class="btn_s btn-1 liga__testbtn">
             <svg>
@@ -401,7 +407,7 @@
             <img src="../img/lz_partner.png" alt="">
         </div>
     </section>
-    <article class="liga__periodicals-article" id="filling">
+    <article class="liga__periodicals-article">
         <h2 class="article__title article__title-lzperiod">Справочники и электронные издания</h2>
         <div class="container-fluid">
             <div class="row">
