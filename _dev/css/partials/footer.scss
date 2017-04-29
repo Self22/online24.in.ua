@@ -38,6 +38,11 @@
       font-weight: 600;
     }
   }
+
+  @include phones {
+    height: 300px;
+    padding-bottom: 0;
+  }
 }
 
 
@@ -66,11 +71,6 @@
 
 }
 
-.footer__contacts a {
-  @include phones {
-    margin-top: 30px;
-  }
-}
 
 .footer__tel1 {
   display: flex;

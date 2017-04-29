@@ -742,7 +742,7 @@ html, body {
       .lmain__menu > div {
         padding: 0 7px; } }
   .lmain__menu a {
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none !important; }
 
 .lnav__fixed {
@@ -831,7 +831,10 @@ html, body {
   font-size: 16px;
   text-decoration: none !important;
   cursor: pointer;
-  color: white; }
+  color: white;
+  margin-right: 5px; }
+  .lmain__menu-link:hover {
+    outline: 1px solid; }
   .lmain__menu-link .btn-4:after {
     background: #efeff1;
     content: "";
@@ -854,6 +857,21 @@ html, body {
     .lmain__menu-link {
       display: none; } }
 
+.current {
+  outline: 1px solid; }
+
+.lmain__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.null__link {
+  outline: none !important; }
+
 .ca__header {
   position: relative; }
 
@@ -867,7 +885,7 @@ html, body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 70vh; }
+  height: 600px; }
   @media screen and (max-width: 480px) {
     .ca__header-content {
       height: 100vh; } }
@@ -1010,7 +1028,7 @@ html, body {
     font-family: Open Sans, Optima, sans-serif;
     color: white; }
   .liga__slider .slide {
-    height: 30vh;
+    height: 280px;
     width: 50vw; }
     @media screen and (max-width: 1200px) {
       .liga__slider .slide {
@@ -1021,6 +1039,11 @@ html, body {
     @media screen and (max-width: 480px) {
       .liga__slider .slide {
         width: 100vw; } }
+
+.btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 600;
+  letter-spacing: 1px; }
 
 .slide1 {
   background: #3a7bd5;

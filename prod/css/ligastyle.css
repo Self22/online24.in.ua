@@ -808,6 +808,7 @@ html, body {
   padding: 0 !important; }
 
 .l__mainmenu-contacts {
+  margin-left: 1%;
   min-width: 155px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,7 +834,8 @@ html, body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  white-space: nowrap; }
 
 .lmain__menu-excellence {
   -webkit-transition: all 0.5s;
@@ -848,7 +850,28 @@ html, body {
     color: white; }
 
 .lmain__menu-link {
-  padding: 15px 17px; }
+  padding: 15px 17px;
+  margin-right: 5px; }
+  .lmain__menu-link:hover {
+    outline: 1px solid; }
+
+.current {
+  outline: 1px solid; }
+
+.lmain__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 4% !important; }
+  .lmain__nav a {
+    white-space: nowrap; }
+
+.null__link {
+  outline: none !important; }
 
 .liga__header {
   position: relative; }
@@ -878,11 +901,14 @@ html, body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 80vh;
-  padding-bottom: 8vh; }
+  height: 570px;
+  padding-bottom: 55px; }
   @media screen and (max-width: 480px) {
     .liga__header-content {
-      height: 100vh; } }
+      height: 100vh;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .liga__slider {
   margin-top: 5vh;
@@ -915,7 +941,7 @@ html, body {
   .liga__slider h3, .liga__slider p {
     font-family: Open Sans, Optima, sans-serif; }
   .liga__slider .slide {
-    height: 30vh;
+    height: 290px;
     width: 50vw; }
     @media screen and (max-width: 1200px) {
       .liga__slider .slide {
@@ -969,13 +995,15 @@ html, body {
     margin-top: 15px; }
     @media screen and (max-width: 480px) {
       .liga__slogan .partner__brand {
-        text-align: center; } }
+        text-align: center;
+        margin-top: 0; } }
   .liga__slogan .partner__slogan {
     margin-top: 40px;
     color: white;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 480px) {
       .liga__slogan .partner__slogan {
+        margin-top: 16px;
         width: 100%;
         text-align: center;
         font-size: 24px; } }
@@ -1117,6 +1145,14 @@ html, body {
     background-image: -webkit-linear-gradient(transparent 50%, #e8e8ef 50%) !important; }
   .liga__product-order:hover {
     color: black !important; }
+
+.liga__comparison-table {
+  padding: 10px 1% 0;
+  background: #eff4bd; }
+  .liga__comparison-table img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto; }
 
 .liga__fotoblock {
   height: 30vh;

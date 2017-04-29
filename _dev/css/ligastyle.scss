@@ -330,6 +330,7 @@ html, body {
 
     @include phones {
       text-align: center;
+      margin-top: 0;
     }
   }
   .partner__slogan {
