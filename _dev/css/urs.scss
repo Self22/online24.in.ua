@@ -5,15 +5,8 @@
 @import "partials/animations_hover";
 @import "animations.css";
 
-html, body {
-
-  font-family: Open Sans, Optima, sans-serif;
-
-}
-
 .lmain__menu {
   padding-left: 3%;
-  background: rgba(192, 226, 229, 0.9);
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -42,7 +35,7 @@ html, body {
   }
 
   & a {
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none !important;
   }
 
@@ -50,7 +43,7 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: rgba(192, 226, 229, 1);
+  background: rgb(52, 69, 89);
   height: 100px;
   z-index: 5;
 }
@@ -114,7 +107,9 @@ html, body {
   justify-content: center;
   align-items: center;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+  letter-spacing: 1px;
 
   &:hover {
     color: white !important;
@@ -123,12 +118,13 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #376265;
+  background: rgba(52, 69, 89, 0.5);
   margin-left: 15px;
   display: block;
   padding: 5px 20px;
   text-align: center;
-  border: none !important;
+  border: 1px solid white;
+  font-size: 18px;
 
   & span {
     color: white;
@@ -153,11 +149,11 @@ html, body {
 
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none !important;
   cursor: pointer;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   margin-right: 5px;
 
   &:hover {
@@ -169,7 +165,6 @@ html, body {
     outline: 1px solid;
     color: white !important;
   }
-
 
   @include desktop {
     font-size: 14px;
@@ -195,18 +190,19 @@ html, body {
   flex-direction: row;
 }
 
-.ib__header {
+.urs__header {
   position: relative;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-size: cover;
 
 }
 
-.ib__header-content {
+.urs__header-content {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  height: 600px;
+  align-items: center;
+  height: 100vh;
+  padding-top: 150px;
 
   @include phones {
     height: 100vh;
@@ -279,6 +275,10 @@ html, body {
   }
 }
 
+.slider {
+  width: 60vw;
+}
+
 .l__slider {
   margin-top: 5vh;
   display: flex;
@@ -315,8 +315,7 @@ html, body {
   }
 
   h3, p {
-    font-family: Open Sans, Optima, sans-serif;
-    color: white;
+    color: rgb(240, 244, 242);
   }
 
   & .slide {
@@ -340,37 +339,16 @@ html, body {
 }
 
 .slide1 {
-  background: rgba(192, 226, 229, 1);
-  background: -moz-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(192, 226, 229, 1)), color-stop(100%, rgba(113, 149, 152, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: linear-gradient(to right, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0e2e5', endColorstr='#719598', GradientType=1);
+  background: rgba(114, 141, 168, 0.5);
 
 }
 
 .slide2 {
-  background: rgba(165, 166, 83, 1);
-  background: -moz-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(165, 166, 83, 1)), color-stop(100%, rgba(242, 210, 3, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: linear-gradient(to right, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5a653', endColorstr='#f2d203', GradientType=1);
+  background: rgba(52, 69, 89, 0.5);
 }
 
 .slide3 {
-  background: rgba(194, 182, 174, 1);
-  background: -moz-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(194, 182, 174, 1)), color-stop(100%, rgba(209, 179, 11, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: linear-gradient(to right, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2b6ae', endColorstr='#d1b30b', GradientType=1);
+  background: rgba(155, 190, 160, 0.5)
 }
 
 .slide4 {
@@ -383,7 +361,7 @@ html, body {
 
 .l__testcont {
   height: 170px;
-  background: #7EE1E9;
+  background: rgb(239, 217, 167);
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -413,12 +391,12 @@ html, body {
 
 .l__testbtn {
 
-  background: #376265 !important;
-  color: white !important;
+  background: rgb(206, 224, 242) !important;
+  color: #344559 !important;
   padding: 12px 50px;
   font-size: 24px;
   font-weight: 400;
-  border: 1px solid white;
+  border: transparent;
 
   @include phones {
     padding: 26px 11px;
@@ -434,7 +412,7 @@ html, body {
   }
 }
 
-.ib__slogan {
+.urs__slogan {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -448,12 +426,18 @@ html, body {
   }
 
   .partner__brand {
-    font-size: 46px;
+    font-size: 56px;
     color: white;
     margin: 0;
     margin-top: 15px;
     text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
-    text-align: center;
+    text-align: left;
+    font-family: "Raleway", Arial, sans-serif;
+
+    & img {
+      width: 50%;
+      height: auto;
+    }
 
     @include desktop {
       font-size: 42px;
@@ -468,15 +452,12 @@ html, body {
     }
   }
   .partner__slogan {
-    text-align: center;
-    font-size: 28px;
+    text-align: left;
+    font-size: 38px;
     margin-top: 40px;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-    font-weight: 400;
-    background: rgba(120, 199, 242, 0.8);
-    border-radius: 4px;
-    padding: 20px 40px;
+    font-weight: 100;
+    font-family: "Raleway", Arial, sans-serif;
 
     @include desktop {
       margin-top: 20px;
@@ -493,7 +474,6 @@ html, body {
     font-size: 22px;
     font-weight: 300;
     color: white;
-    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
     margin-top: 15px;
 
     @include phones {
@@ -503,7 +483,6 @@ html, body {
   }
 
 }
-
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;

@@ -165,7 +165,7 @@ html, body {
   & a {
     font-family: "Raleway", Arial, sans-serif;
     text-decoration: none;
-    color: #25408f;
+    color: white;
     font-weight: 500;
   }
 
@@ -259,8 +259,8 @@ html, body {
   & h2 {
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
     color: black;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
@@ -279,8 +279,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 300;
     text-decoration: none;
     cursor: pointer;
     color: #25408f;
@@ -299,19 +299,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
-    color: #25408f;
+    color: black;
+    font-size: 26px;
+    text-shadow: 2px 2px 1px rgb(254, 237, 237);
+
   }
 
-  @include desktop {
-
-    & a {
-      font-size: 18px;
-    }
-  }
 
   @include tablets {
     align-items: flex-end;
@@ -403,7 +399,7 @@ html, body {
   width: 50vw;
   height: 310px;
   padding-top: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  //border: 1px solid rgb(213, 219, 93);
 
 
 
@@ -430,7 +426,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-size: 36px;
     padding: 0 10px 0 10px;
     font-weight: 400;
@@ -448,13 +444,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #25408f;
+    color: white;
     font-size: 30px;
     line-height: 45px;
     letter-spacing: 1px;
     text-align: center;
     padding: 0 3vw;
     margin-top: 20px;
+    font-weight: 300;
+    font-family: "Raleway", Arial, sans-serif;
 
     @include tablets {
       font-size: 24px;
@@ -467,19 +465,19 @@ html, body {
   }
 
 .slide1 {
-  background: rgba(242, 224, 214, 0.5);
+  background: rgba(109, 139, 5, 0.4);
 }
 
 .slide2 {
-  background: rgba(143, 189, 129, 0.1);
+  background: rgba(109, 139, 5, 0.4);
 }
 
 .slide3 {
-  background: rgba(188, 188, 240, 0.6);
+  background: rgba(210, 218, 3, 0.4);
 }
 
 .slide4 {
-  background: rgba(242, 210, 129, 0.5);
+  background: rgba(192, 217, 1, 0.4);
 
   & p {
     margin-top: 30px;
@@ -487,7 +485,7 @@ html, body {
 }
 
 .slide5 {
-  background: rgba(138, 138, 176, 0.2);
+  background: rgba(139, 124, 81, 0.4);
   }
 
 //////////////////// index main
@@ -645,7 +643,7 @@ html, body {
   position: fixed;
   z-index: 6;
   right: 10%;
-  bottom: 10%;
+  bottom: 5%;
   opacity: 1;
   text-decoration: none;
   overflow: hidden;
@@ -873,6 +871,10 @@ html, body {
 }
 //btn
 
+.hvr-shutter-out-vertical:before {
+  background: rgba(95, 95, 117, 0.3);
+}
+
 .btn-4 {
 
   overflow: hidden;
@@ -943,37 +945,93 @@ html, body {
 //svg logo
 
 .st0 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st1 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st2 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st3 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st4 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st5 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st6 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st7 {
-  fill: #7070A3;
+  fill: #000;
 }
 
 .st8 {
-  fill: #7070A3;
+  fill: #000;
+}
+
+.wt0 {
+  fill: #fff;
+}
+
+.wt1 {
+  fill: #fff;
+}
+
+.wt2 {
+  fill: #fff;
+}
+
+.wt3 {
+  fill: #fff;
+}
+
+.wt4 {
+  fill: #fff;
+}
+
+.wt5 {
+  fill: #fff;
+}
+
+.wt6 {
+  fill: #fff;
+}
+
+.wt7 {
+  fill: #fff;
+}
+
+.wt8 {
+  fill: #fff;
+}
+
+a.animated-button.gibson-four:after {
+  opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, rgb(241, 247, 249) 50%) !important;
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a.animated-button.gibson-three:after {
+  opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }

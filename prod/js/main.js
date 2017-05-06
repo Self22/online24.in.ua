@@ -55,13 +55,15 @@ $('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showB
 
 //parallax
 
-$('.header').parallax({imageSrc: 'img/whiteblue_back606.png'});
+$('.header').parallax({imageSrc: 'img/index-header.jpg'});
 $('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
 $('.ib__header-content').parallax({imageSrc: '../img/ib_header2.jpg'});
 $('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
 $('.ib__fotoblock').parallax({imageSrc: '../img/ib__photoblock.jpg'});
+$('.oc__header-content').parallax({imageSrc: '../img/1c-header.jpg'});
+$('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
@@ -71,7 +73,7 @@ $(function () {
 
     $(window).scroll(function () {
 
-        if ($(this).scrollTop() >= 350) {
+        if ($(this).scrollTop() >= 450) {
 
             $('.nav__main').addClass('nav__fixed');
             $('.header__main').addClass('header__main-sticky');
