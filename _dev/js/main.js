@@ -262,48 +262,48 @@ $(document).ready(function () {
 // });
 //
 
-$(document).ready(function () {
-
-    var container = $('.ib__header');
-
-    $(".lmain__menu").on("click", ".lmain__menu", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top - 100;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-
-    $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-        setTimeout(container.removeClass("in"), 500);
-    });
-
-    $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-
-});
+//$(document).ready(function () {
+//
+//    var container = $('.ib__header');
+//
+//    $(".lmain__menu").on("click", ".lmain__menu", function (event) {
+//        //отменяем стандартную обработку нажатия по ссылке
+//
+//        event.preventDefault();
+//        //забираем идентификатор блока с атрибута href
+//        var id = $(this).attr('href'),
+//        //узнаем высоту от начала страницы до блока на который ссылается якорь
+//            top = $(id).offset().top - 100;
+//        //анимируем переход на расстояние - top за 1500 мс
+//        $('body,html').animate({scrollTop: top}, 1500);
+//    });
+//
+//    $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
+//        //отменяем стандартную обработку нажатия по ссылке
+//
+//        event.preventDefault();
+//        //забираем идентификатор блока с атрибута href
+//        var id = $(this).attr('href'),
+//        //узнаем высоту от начала страницы до блока на который ссылается якорь
+//            top = $(id).offset().top;
+//        //анимируем переход на расстояние - top за 1500 мс
+//        $('body,html').animate({scrollTop: top}, 1500);
+//        setTimeout(container.removeClass("in"), 500);
+//    });
+//
+//    $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
+//        //отменяем стандартную обработку нажатия по ссылке
+//
+//        event.preventDefault();
+//        //забираем идентификатор блока с атрибута href
+//        var id = $(this).attr('href'),
+//        //узнаем высоту от начала страницы до блока на который ссылается якорь
+//            top = $(id).offset().top;
+//        //анимируем переход на расстояние - top за 1500 мс
+//        $('body,html').animate({scrollTop: top}, 1500);
+//    });
+//
+//});
 
 
 

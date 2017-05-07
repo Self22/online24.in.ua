@@ -37,6 +37,7 @@
   & a {
     font-weight: 400;
     text-decoration: none !important;
+    white-space: nowrap;
   }
 
 }
@@ -51,6 +52,10 @@
 .logosticky__o24 {
   margin-right: 10%;
   margin-left: 2%;
+
+  @include desktop {
+    margin-right: 2%;
+  }
 }
 
 .partnerlogosticky {
@@ -126,6 +131,10 @@
   border: 1px solid white;
   font-size: 18px;
 
+  @include laptop {
+    font-size: 16px;
+  }
+
   & span {
     color: white;
     font-weight: 500;
@@ -162,7 +171,6 @@
   }
 
   &:focus {
-    outline: 1px solid;
     color: white !important;
   }
 
@@ -361,7 +369,7 @@
 
 .l__testcont {
   height: 170px;
-  background: rgb(239, 217, 167);
+  background: rgb(179, 214, 214);
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -391,12 +399,12 @@
 
 .l__testbtn {
 
-  background: rgb(206, 224, 242) !important;
-  color: #344559 !important;
+  background: rgb(217, 201, 6) !important;
+  color: rgb(255, 255, 255) !important;
   padding: 12px 50px;
   font-size: 24px;
   font-weight: 400;
-  border: transparent;
+  border: 2px solid white;
 
   @include phones {
     padding: 26px 11px;
@@ -433,6 +441,9 @@
     text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
     text-align: left;
     font-family: "Raleway", Arial, sans-serif;
+    border-bottom: 2px solid white;
+
+    padding-bottom: 15px;
 
     & img {
       width: 50%;
@@ -456,7 +467,7 @@
     font-size: 38px;
     margin-top: 40px;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     font-family: "Raleway", Arial, sans-serif;
 
     @include desktop {
@@ -565,6 +576,10 @@
 
 .ib__fotoblock {
   height: 30vh;
+}
+
+.btn-1 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .btn-1:hover {

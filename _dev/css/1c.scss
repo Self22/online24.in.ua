@@ -109,7 +109,7 @@
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-size: 24px;
-  font-weight: 100 !important;
+  font-weight: 400 !important;
   letter-spacing: 1px;
 
   &:hover {
@@ -163,7 +163,7 @@
   }
 
   &:focus {
-    outline: 1px solid;
+
     color: white !important;
   }
 
@@ -317,6 +317,7 @@
 
   h3, p {
     color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
 
   & .slide {
@@ -392,7 +393,7 @@
 
 .l__testbtn {
 
-  background: rgb(114, 141, 168) !important;
+  background: rgb(188, 127, 2) !important;
   color: white !important;
   padding: 12px 50px;
   font-size: 24px;

@@ -43,6 +43,11 @@ html, body {
   & a {
     font-weight: 400;
     text-decoration: none !important;
+    color: white !important;
+
+    &:hover {
+      color: white !important;
+    }
   }
 
 }
@@ -175,7 +180,7 @@ html, body {
 }
 
 .current {
-  outline: 1px solid;
+  outline: 1px solid white;
 }
 
 .lmain__nav {
