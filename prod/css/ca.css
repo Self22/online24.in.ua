@@ -705,7 +705,10 @@ html, body {
         padding: 0 7px; } }
   .lmain__menu a {
     font-weight: 400;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    color: white !important; }
+    .lmain__menu a:hover {
+      color: white !important; }
 
 .lnav__fixed {
   position: fixed;
@@ -818,7 +821,7 @@ html, body {
       display: none; } }
 
 .current {
-  outline: 1px solid; }
+  outline: 1px solid white; }
 
 .lmain__nav {
   display: -webkit-box;

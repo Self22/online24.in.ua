@@ -818,7 +818,6 @@ html, body {
     outline: 1px solid;
     color: white !important; }
   .lmain__menu-link:focus {
-    outline: 1px solid;
     color: white !important; }
   @media screen and (max-width: 1200px) {
     .lmain__menu-link {
@@ -858,7 +857,7 @@ html, body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 600px; }
+  height: 100vh; }
   @media screen and (max-width: 480px) {
     .ib__header-content {
       height: 100vh; } }
