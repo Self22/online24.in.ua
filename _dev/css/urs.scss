@@ -92,18 +92,12 @@
 }
 
 .l__mainmenu-contacts {
-  min-width: 175px;
+  min-width: 21%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
-
-  & a {
-    @include desktop {
-      font-size: 14px;
-    }
-  }
 
 }
 
@@ -113,7 +107,7 @@
   align-items: center;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-  font-size: 24px;
+  font-size: 1.7vw;
   letter-spacing: 1px;
 
   &:hover {
@@ -129,7 +123,7 @@
   padding: 5px 20px;
   text-align: center;
   border: 1px solid white;
-  font-size: 18px;
+  font-size: 1.4vw;
 
   @include laptop {
     font-size: 16px;
@@ -157,8 +151,9 @@
 }
 
 .lmain__menu-link {
+  white-space: nowrap;
   padding: 15px 17px;
-  font-size: 22px;
+  font-size: 1.8vw;
   text-decoration: none !important;
   cursor: pointer;
   color: white;
@@ -299,26 +294,19 @@
   }
 
   h3 {
-
+    font-size: 3vw;
     color: black;
 
-    @include desktop {
-      font-size: 32px;
-    }
-
     @include phones {
-      font-size: 28px;
+
       color: white;
     }
   }
 
   p {
-    @include desktop {
-      font-size: 26px;
-    }
+    font-size: 2vw;
 
     @include phones {
-      font-size: 22px;
       color: white;
     }
   }
@@ -394,7 +382,7 @@
   text-align: center;
   margin-top: 15px;
   margin-bottom: 7px;
-  font-size: 18px;
+  font-size: 2vw;
   padding: 0 25px;
 }
 
@@ -435,7 +423,7 @@
   }
 
   .partner__brand {
-    font-size: 56px;
+    font-size: 4.5vw;
     color: white;
     margin: 0;
     margin-top: 15px;
@@ -451,13 +439,6 @@
       height: auto;
     }
 
-    @include desktop {
-      font-size: 42px;
-    }
-
-    @include tablets {
-      font-size: 40px;
-    }
 
     @include phones {
       text-align: center;
@@ -465,7 +446,7 @@
   }
   .partner__slogan {
     text-align: left;
-    font-size: 38px;
+    font-size: 3vw;
     margin-top: 40px;
     color: white;
     font-weight: 300;
@@ -478,7 +459,7 @@
     @include phones {
       width: 100%;
       text-align: center;
-      font-size: 24px;
+
     }
   }
 
@@ -547,7 +528,7 @@
   align-items: center;
 
   & p {
-    font-size: 24px;
+    font-size: 2.2vw;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -567,5 +548,8 @@
   font-weight: 400 !important;
 }
 
+.article__title {
+  font-size: 3vw;
+}
 
 
