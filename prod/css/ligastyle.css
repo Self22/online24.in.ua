@@ -383,8 +383,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -398,7 +401,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -415,7 +421,10 @@ textarea {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -430,9 +439,14 @@ textarea {
   height: 10px;
   width: 90%;
   opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   /* W3C */
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform; }
@@ -466,8 +480,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: right;
   transition-property: right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
@@ -482,7 +499,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: transparent;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-shutter-out-vertical:before {
@@ -498,10 +517,14 @@ textarea {
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
   transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
@@ -564,8 +587,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 4px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -581,7 +607,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: #e1e1e1;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-rectangle-out:before {
@@ -595,10 +623,14 @@ textarea {
   background: #2098D1;
   -webkit-transform: scale(0);
   transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
@@ -615,11 +647,13 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
 .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
 /* Pulse Grow */
@@ -659,7 +693,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
   transition-property: box-shadow, transform, -webkit-transform; }
@@ -675,6 +712,7 @@ html, body {
 .lmain__menu {
   position: absolute;
   width: 100%;
+  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
@@ -716,6 +754,7 @@ html, body {
       top: -50px;
       -webkit-transform: rotate(35deg);
       transform: rotate(35deg);
+      -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
       width: 50px;
       z-index: 6; }
@@ -799,6 +838,7 @@ html, body {
   white-space: nowrap; }
 
 .lmain__menu-excellence {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background: #767a98;
   margin-left: 15px;

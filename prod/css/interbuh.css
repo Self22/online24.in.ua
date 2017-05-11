@@ -384,8 +384,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -399,7 +402,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -416,7 +422,10 @@ textarea {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -431,9 +440,14 @@ textarea {
   height: 10px;
   width: 90%;
   opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   /* W3C */
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform; }
@@ -467,8 +481,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: right;
   transition-property: right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
@@ -483,7 +500,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: transparent;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-shutter-out-vertical:before {
@@ -499,10 +518,14 @@ textarea {
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
   transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
@@ -565,8 +588,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 4px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -582,7 +608,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: #e1e1e1;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-rectangle-out:before {
@@ -596,10 +624,14 @@ textarea {
   background: #2098D1;
   -webkit-transform: scale(0);
   transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
@@ -616,11 +648,13 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
 .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
 /* Pulse Grow */
@@ -660,7 +694,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
   transition-property: box-shadow, transform, -webkit-transform; }
@@ -678,6 +715,7 @@ html, body {
   background: rgba(192, 226, 229, 0.9);
   position: absolute;
   width: 100%;
+  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
@@ -778,6 +816,7 @@ html, body {
     color: white !important; }
 
 .lmain__menu-excellence {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background: #376265;
   margin-left: 15px;
@@ -844,6 +883,7 @@ html, body {
 
 .ib__header {
   position: relative;
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
   background-size: cover; }
 
@@ -978,18 +1018,21 @@ html, body {
 .slide1 {
   background: #c0e2e5;
   background: -webkit-gradient(left top, right top, color-stop(0%, #c0e2e5), color-stop(100%, rgba(113, 149, 152, 0.8)));
+  background: -webkit-linear-gradient(left, #c0e2e5 0%, rgba(113, 149, 152, 0.8) 100%);
   background: linear-gradient(to right, #c0e2e5 0%, rgba(113, 149, 152, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0e2e5', endColorstr='#719598', GradientType=1); }
 
 .slide2 {
   background: #a5a653;
   background: -webkit-gradient(left top, right top, color-stop(0%, #a5a653), color-stop(100%, rgba(242, 210, 3, 0.8)));
+  background: -webkit-linear-gradient(left, #a5a653 0%, rgba(242, 210, 3, 0.8) 100%);
   background: linear-gradient(to right, #a5a653 0%, rgba(242, 210, 3, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5a653', endColorstr='#f2d203', GradientType=1); }
 
 .slide3 {
   background: #c2b6ae;
   background: -webkit-gradient(left top, right top, color-stop(0%, #c2b6ae), color-stop(100%, rgba(209, 179, 11, 0.8)));
+  background: -webkit-linear-gradient(left, #c2b6ae 0%, rgba(209, 179, 11, 0.8) 100%);
   background: linear-gradient(to right, #c2b6ae 0%, rgba(209, 179, 11, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2b6ae', endColorstr='#d1b30b', GradientType=1); }
 

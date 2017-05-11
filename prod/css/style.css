@@ -388,8 +388,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -403,7 +406,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -420,7 +426,10 @@ textarea {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
@@ -435,9 +444,14 @@ textarea {
   height: 10px;
   width: 90%;
   opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
   /* W3C */
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform; }
@@ -471,8 +485,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 1px;
+  -webkit-transition-property: right;
   transition-property: right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
@@ -487,7 +504,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: transparent;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-shutter-out-vertical:before {
@@ -503,10 +522,14 @@ textarea {
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
   transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
@@ -569,8 +592,11 @@ textarea {
   bottom: 0;
   background: #2098D1;
   height: 4px;
+  -webkit-transition-property: left, right;
   transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
@@ -586,7 +612,9 @@ textarea {
   box-shadow: 0 0 1px transparent;
   position: relative;
   background: #e1e1e1;
+  -webkit-transition-property: color;
   transition-property: color;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
 .hvr-rectangle-out:before {
@@ -600,10 +628,14 @@ textarea {
   background: #2098D1;
   -webkit-transform: scale(0);
   transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
@@ -620,11 +652,13 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
 
 .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
 /* Pulse Grow */
@@ -664,7 +698,10 @@ textarea {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
   transition-property: box-shadow, transform, -webkit-transform; }
@@ -698,6 +735,7 @@ textarea {
   margin-bottom: 30px; }
 
 .acc__icon {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
 .transparent {
@@ -927,6 +965,7 @@ a.animated-button:link, a.animated-button:visited {
   letter-spacing: .08em;
   border-radius: 0;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
 a.animated-button:link:after, a.animated-button:visited:after {
@@ -937,6 +976,7 @@ a.animated-button:link:after, a.animated-button:visited:after {
   top: 50%;
   width: 150%;
   z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
   transition: all 0.75s ease 0s; }
 
 a.animated-button:link:hover, a.animated-button:visited:hover {
@@ -961,6 +1001,7 @@ a.animated-button:link, a.animated-button:visited {
   overflow: hidden;
   letter-spacing: .08em;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
 /* Gibson Buttons */
@@ -970,6 +1011,7 @@ a.animated-button.gibson-one {
 
 a.animated-button.gibson-one:after {
   opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-size: 10px 10px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
@@ -986,6 +1028,7 @@ a.animated-button.gibson-two {
 
 a.animated-button.gibson-two:after {
   opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-size: 10px 10px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -1002,6 +1045,7 @@ a.animated-button.gibson-three {
 
 a.animated-button.gibson-three:after {
   opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
   background-size: 10px 10px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
@@ -1017,6 +1061,7 @@ a.animated-button.gibson-four {
 
 a.animated-button.gibson-four:after {
   opacity: 0;
+  background-image: -webkit-linear-gradient(transparent 50%, #f1f7f9 50%) !important;
   background-image: -moz-linear-gradient(transparent 50%, #f1f7f9 50%);
   background-size: 10px 10px;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1039,9 +1084,12 @@ a.animated-button.gibson-four:hover:after {
       -ms-flex-align: center;
           align-items: center; }
   .container_btn a {
+    -webkit-transition-property: all;
     transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+    -webkit-transition-duration: .6s;
+            transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
     background: rgba(255, 255, 255, 0);
     color: #fff;
     line-height: 1.4;
@@ -1049,9 +1097,12 @@ a.animated-button.gibson-four:hover:after {
     text-decoration: none; }
 
 .btn_s {
+  -webkit-transition-property: all;
   transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
   color: #fff;
   cursor: pointer;
   font-weight: 400;
@@ -1073,24 +1124,33 @@ a.animated-button.gibson-four:hover:after {
     text-decoration: none; }
 
 .btn-1 {
+  -webkit-transition-property: all;
   transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
   background: #e02c26;
   font-weight: 100; }
   .btn-1 svg {
+    -webkit-transition-property: all;
     transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+    -webkit-transition-duration: .6s;
+            transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
     height: 45px;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%; }
   .btn-1 rect {
+    -webkit-transition-property: all;
     transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+    -webkit-transition-duration: .6s;
+            transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
     fill: none;
     stroke: #fff;
     stroke-width: 2;
@@ -1104,6 +1164,7 @@ a.animated-button.gibson-four:hover:after {
     stroke-width: 5;
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
 
 .btn-2 {
@@ -1123,6 +1184,7 @@ a.animated-button.gibson-four:hover:after {
   display: block;
   margin: 0 auto;
   position: relative;
+  -webkit-transition: all 280ms ease-in-out;
   transition: all 280ms ease-in-out;
   width: 0; }
 
@@ -1131,6 +1193,7 @@ a.animated-button.gibson-four:hover:after {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
   transition: width 350ms ease-in-out;
   width: 70%; }
 
@@ -1145,6 +1208,7 @@ a.animated-button.gibson-four:hover:after {
   box-shadow: 0px 2px 0 #d6251f, 2px 4px 6px #e02a24;
   font-weight: 900;
   letter-spacing: 1px;
+  -webkit-transition: all 150ms linear;
   transition: all 150ms linear; }
 
 .btn-3:hover {
@@ -1154,6 +1218,7 @@ a.animated-button.gibson-four:hover:after {
   color: #ec817d;
   text-decoration: none;
   text-shadow: -1px -1px 0 #c2211c;
+  -webkit-transition: all 250ms linear;
   transition: all 250ms linear; }
 
 .btn-4 {
@@ -1172,12 +1237,14 @@ a.animated-button.gibson-four:hover:after {
     top: -50px;
     -webkit-transform: rotate(35deg);
             transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
     z-index: -10; }
 
 .btn-4:hover:after {
   left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .btn-5 {
@@ -1187,6 +1254,7 @@ a.animated-button.gibson-four:hover:after {
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .btn-5:hover {
@@ -1227,6 +1295,7 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 25px;
+  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out; }
   .nav__main .stickyheader__logo {
     display: none; }
@@ -1793,7 +1862,9 @@ html, body {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
   box-shadow: inset 0 0 0 2px #e1e1e1, 0 0 1px transparent;
   /* Hack to improve aliasing on mobile/tablet devices */ }
@@ -1982,12 +2053,14 @@ html, body {
     top: -50px;
     -webkit-transform: rotate(35deg);
             transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
     z-index: 10; }
 
 .btn-4:hover:after {
   left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .btn-1 {
@@ -2013,6 +2086,7 @@ html, body {
     stroke-width: 5;
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
 
 .st0 {
