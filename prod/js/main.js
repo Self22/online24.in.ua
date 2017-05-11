@@ -63,6 +63,7 @@ $('.ib__header-content').parallax({imageSrc: '../img/ib_header2.jpg'});
 $('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
 $('.ib__fotoblock').parallax({imageSrc: '../img/ib__photoblock.jpg'});
 $('.oc__header-content').parallax({imageSrc: '../img/1c-header.jpg'});
+$('.oc__fotoblock').parallax({imageSrc: '../img/oc-fotoblock.jpg'});
 $('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
