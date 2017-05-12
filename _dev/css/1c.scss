@@ -519,6 +519,7 @@
 .features__block {
   border-top: 2px solid rgb(212, 215, 5);
   border-bottom: 2px solid rgb(212, 215, 5);
+  padding: 0 15px;
 }
 
 .l__feature-item {
@@ -527,6 +528,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 
   & p {
     font-size: 2vw;

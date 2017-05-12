@@ -217,100 +217,6 @@ $(document).ready(function () {
     $('.footer__form-tel').mask('+38 (000) 000-00-00');
 });
 
-////// slow scroll
-
-// $(document).ready(function () {
-//
-//     var container = $('.liga__header');
-//
-//     $(".lmain__menu").on("click", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top - 100;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-//
-//     $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//         setTimeout(container.removeClass("in"), 500);
-//     });
-//
-//     $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-//
-// });
-//
-
-//$(document).ready(function () {
-//
-//    var container = $('.ib__header');
-//
-//    $(".lmain__menu").on("click", ".lmain__menu", function (event) {
-//        //отменяем стандартную обработку нажатия по ссылке
-//
-//        event.preventDefault();
-//        //забираем идентификатор блока с атрибута href
-//        var id = $(this).attr('href'),
-//        //узнаем высоту от начала страницы до блока на который ссылается якорь
-//            top = $(id).offset().top - 100;
-//        //анимируем переход на расстояние - top за 1500 мс
-//        $('body,html').animate({scrollTop: top}, 1500);
-//    });
-//
-//    $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
-//        //отменяем стандартную обработку нажатия по ссылке
-//
-//        event.preventDefault();
-//        //забираем идентификатор блока с атрибута href
-//        var id = $(this).attr('href'),
-//        //узнаем высоту от начала страницы до блока на который ссылается якорь
-//            top = $(id).offset().top;
-//        //анимируем переход на расстояние - top за 1500 мс
-//        $('body,html').animate({scrollTop: top}, 1500);
-//        setTimeout(container.removeClass("in"), 500);
-//    });
-//
-//    $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
-//        //отменяем стандартную обработку нажатия по ссылке
-//
-//        event.preventDefault();
-//        //забираем идентификатор блока с атрибута href
-//        var id = $(this).attr('href'),
-//        //узнаем высоту от начала страницы до блока на который ссылается якорь
-//            top = $(id).offset().top;
-//        //анимируем переход на расстояние - top за 1500 мс
-//        $('body,html').animate({scrollTop: top}, 1500);
-//    });
-//
-//});
-
-
-
-
-
-
 
 ///////////////////////////////////// tabs contragent tariffs
 
@@ -355,8 +261,25 @@ $(document).ready(function () {
 
 });
 
-///////////////////////////
+/////////////////////////// Nav Landings: soft scroll
 
 $('#nav-main').singlePageNav(
     {offset: 100, speed: 1000, threshold: 150}
 );
+
+///////////////////////// URS - Ticker
+$(document).ready(function () {
+    $('.target__list').bxSlider({
+
+        minSlides: 4,
+        maxSlides: 8,
+        slideWidth: 370,
+        slideMargin: 10,
+        ticker: true,
+        speed: 48000
+
+
+    });
+});
+
+

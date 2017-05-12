@@ -740,7 +740,8 @@ textarea {
         padding: 0 7px; } }
   .lmain__menu a {
     font-weight: 400;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    white-space: nowrap; }
 
 .lnav__fixed {
   position: fixed;
@@ -777,7 +778,7 @@ textarea {
   padding: 0 !important; }
 
 .l__mainmenu-contacts {
-  min-width: 175px;
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,9 +793,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px; }
-  @media screen and (max-width: 1200px) {
-    .l__mainmenu-contacts a {
-      font-size: 14px; } }
 
 .l__mainmenu-tel {
   display: -webkit-box;
@@ -808,9 +806,10 @@ textarea {
           align-items: center;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-  font-size: 24px;
+  font-size: 1.7vw;
   font-weight: 400 !important;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  white-space: nowrap; }
   .l__mainmenu-tel:hover {
     color: white !important; }
 
@@ -823,7 +822,7 @@ textarea {
   padding: 5px 20px;
   text-align: center;
   border: 1px solid white;
-  font-size: 18px; }
+  font-size: 1.4vw; }
   .lmain__menu-excellence span {
     color: white;
     font-weight: 500; }
@@ -847,7 +846,7 @@ textarea {
 
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 24px;
+  font-size: 1.8vw;
   text-decoration: none !important;
   cursor: pointer;
   color: white;
@@ -860,7 +859,6 @@ textarea {
     color: white !important; }
   @media screen and (max-width: 1200px) {
     .lmain__menu-link {
-      font-size: 14px;
       text-align: center; } }
   @media screen and (max-width: 768px) {
     .lmain__menu-link {
@@ -990,21 +988,13 @@ textarea {
     .l__slider {
       margin-top: 0; } }
   .l__slider h3 {
+    font-size: 3vw;
     color: black; }
-    @media screen and (max-width: 1200px) {
-      .l__slider h3 {
-        font-size: 32px; } }
     @media screen and (max-width: 480px) {
       .l__slider h3 {
-        font-size: 28px;
         color: white; } }
-  @media screen and (max-width: 1200px) {
-    .l__slider p {
-      font-size: 26px; } }
-  @media screen and (max-width: 480px) {
-    .l__slider p {
-      font-size: 22px;
-      color: white; } }
+  .l__slider p {
+    font-size: 2vw; }
   .l__slider h3, .l__slider p {
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
@@ -1066,7 +1056,7 @@ textarea {
   background: #bc7f02 !important;
   color: white !important;
   padding: 12px 50px;
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: 400;
   border: 1px solid #344559; }
   @media screen and (max-width: 480px) {
@@ -1099,13 +1089,26 @@ textarea {
       margin-top: 130px;
       padding-bottom: 0; } }
   .oc__slogan .partner__brand {
-    font-size: 46px;
+    font-size: 5vw;
     color: yellow;
     margin: 0;
     margin-top: 15px;
     text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
     text-align: center;
-    font-family: "Raleway", Arial, sans-serif; }
+    font-family: "Raleway", Arial, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .oc__slogan .partner__brand img {
       width: 50%;
       height: auto; }
@@ -1120,7 +1123,7 @@ textarea {
         text-align: center; } }
   .oc__slogan .partner__slogan {
     text-align: center;
-    font-size: 44px;
+    font-size: 3vw;
     margin-top: 40px;
     color: white;
     font-weight: 400;
@@ -1173,7 +1176,8 @@ textarea {
 
 .features__block {
   border-top: 2px solid #d4d705;
-  border-bottom: 2px solid #d4d705; }
+  border-bottom: 2px solid #d4d705;
+  padding: 0 15px; }
 
 .l__feature-item {
   outline: 1px solid #d4d705;
@@ -1186,9 +1190,11 @@ textarea {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  overflow: auto; }
   .l__feature-item p {
-    font-size: 24px;
+    font-size: 2vw;
+    text-align: center;
     font-weight: 400;
     padding: 0;
     margin: 0; }
@@ -1203,13 +1209,13 @@ textarea {
 .article__title {
   font-weight: 500;
   text-align: center;
-  font-size: 36px; }
+  font-size: 3.5vw; }
   .article__title-blue {
     color: #0689a7; }
   .article__title-white {
     color: #fff;
     font-weight: 400;
-    font-size: 42px; }
+    font-size: 5vw; }
 
 .process__list {
   list-style: none;
@@ -1273,7 +1279,7 @@ textarea {
   margin-right: 3%; }
 
 .process__descr {
-  font-size: 24px;
+  font-size: 1.9vw;
   color: #000; }
 
 .process__end {
@@ -1291,7 +1297,7 @@ textarea {
   border-radius: 8px;
   background: #d1d804;
   color: white;
-  font-size: 24px; }
+  font-size: 2vw; }
 
 .process__dir {
   position: absolute;
@@ -1352,6 +1358,7 @@ textarea {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px; }
 
 .tariff__title {
+  font-size: 2.5vw;
   font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 1px;
   display: -webkit-box;
@@ -1363,7 +1370,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  padding: 1.6vw;
   text-align: center;
   background: #0486a6;
   /* Old browsers */
@@ -1381,9 +1388,10 @@ textarea {
   text-transform: uppercase; }
 
 .tariff__descr {
+  margin-top: 20px;
   margin-bottom: auto;
   color: white;
-  font-size: 22px;
+  font-size: 2vw;
   padding: 10px 4%; }
 
 .tariff__button {
@@ -1398,18 +1406,18 @@ textarea {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
 
 .tariff__price {
-  font-size: 30px;
+  font-size: 2.7vw;
   color: #024659;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   padding: 12px 0;
-  border-top: 3px solid;
+  border-top: 6px solid;
   margin-top: 20px; }
   .tariff__price-start {
     border-color: #edf1f4; }
   .tariff__price-prime {
-    border-color: #0486a6; }
+    border-color: #0488a8; }
   .tariff__price-prem {
     border-color: #024659; }
 
@@ -1418,5 +1426,47 @@ textarea {
 
 .btn-1:hover {
   font-weight: 400 !important; }
+
+.security {
+  padding: 30px 4% 50px 4%;
+  background: #a8bd02; }
+
+.article__title-secur {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .article__title-secur svg {
+    margin-left: 2%; }
+
+.security__descr {
+  font-weight: 300;
+  font-size: 1.9vw;
+  color: white; }
+
+.security__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 20px 10%; }
+
+.security__item {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  font-size: 1.9vw;
+  color: white; }
 
 /*# sourceMappingURL=1c.css.map */

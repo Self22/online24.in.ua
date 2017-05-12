@@ -451,6 +451,7 @@
     color: white;
     font-weight: 300;
     font-family: "Raleway", Arial, sans-serif;
+    margin-left: 7%;
 
     @include desktop {
       margin-top: 20px;
@@ -504,6 +505,7 @@
   padding: 7px 3%;
   margin: 0;
   text-align: center;
+  font-size: 1.2vw;
 }
 
 .l_features {
@@ -518,6 +520,7 @@
 .features__block {
   border-top: 2px solid rgb(212, 215, 5);
   border-bottom: 2px solid rgb(212, 215, 5);
+  padding: 0 15px;
 }
 
 .l__feature-item {
@@ -552,4 +555,108 @@
   font-size: 3vw;
 }
 
+.target__group {
+  padding: 10px 2% 1px;
+  background: rgb(3, 54, 89);
 
+  & h2, p {
+    color: white;
+  }
+
+}
+
+i {
+  color: rgb(244, 113, 4);;
+}
+
+.bx-wrapper {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.target__descr {
+  font-size: 1.8vw;
+  margin-bottom: 30px;
+}
+
+.target__list {
+
+}
+
+.target__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.target__title {
+  color: rgb(185, 191, 74);
+  font-size: 2.4vw;
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-bottom: 4vw;
+
+}
+
+.target__icon {
+  margin-top: auto;
+  margin-bottom: 1vw;
+}
+
+.security {
+  padding: 30px 4% 50px 4%;
+  background: rgb(168, 189, 2);
+}
+
+.article__title-secur {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1vw;
+
+  & svg {
+    margin-left: 2%;
+  }
+}
+
+.security__descr {
+  font-weight: 300;
+  font-size: 1.9vw;
+  color: white;
+  text-align: center;
+}
+
+.security__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 20px 10%;
+}
+
+.security__item {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 1.9vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7vw;
+
+  & svg {
+    margin-right: 2%;
+  }
+
+}
