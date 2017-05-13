@@ -117,7 +117,7 @@
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: rgba(52, 69, 89, 0.5);
+  background: rgba(0, 102, 143, 0.4);
   margin-left: 15px;
   display: block;
   padding: 5px 20px;
@@ -208,6 +208,10 @@
   height: 100vh;
   padding-top: 150px;
 
+  @include tablets {
+    padding-top: 0;
+  }
+
   @include phones {
     height: 100vh;
   }
@@ -281,6 +285,10 @@
 
 .slider {
   width: 60vw;
+
+  @include tablets {
+    width: 96vw;
+  }
 }
 
 .l__slider {
@@ -297,6 +305,11 @@
     font-size: 3vw;
     color: black;
 
+    @include tablets {
+      font-size: 8vw;
+      padding: 0 5%;
+    }
+
     @include phones {
 
       color: white;
@@ -305,6 +318,10 @@
 
   p {
     font-size: 2vw;
+
+    @include tablets {
+      font-size: 6vw;
+    }
 
     @include phones {
       color: white;
@@ -363,6 +380,11 @@
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
 
+  @include tablets {
+    height: 100px;
+
+  }
+
   &-big {
     height: 225px;
   }
@@ -395,13 +417,17 @@
   font-weight: 400;
   border: 2px solid white;
 
-  @include phones {
-    padding: 26px 11px;
+  @include tablets {
+    padding: 26px 11px 10px;
     font-size: 14px;
   }
 
   & svg {
     height: 57px;
+
+    @include tablets {
+      height: 41px;
+    }
   }
 
   & rect {
@@ -418,8 +444,10 @@
   padding-left: 40px;
 
   @include tablets {
-    margin-top: 130px;
     padding-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
   }
 
   .partner__brand {
@@ -439,6 +467,9 @@
       height: auto;
     }
 
+    @include tablets {
+      font-size: 7.5vw;
+    }
 
     @include phones {
       text-align: center;
@@ -455,6 +486,7 @@
 
     @include desktop {
       margin-top: 20px;
+      font-size: 6vw;
     }
 
     @include phones {
@@ -506,11 +538,17 @@
   margin: 0;
   text-align: center;
   font-size: 1.2vw;
+
+  @include tablets {
+    font-size: 3.2vw;
+  }
+
 }
 
 .l_features {
   padding: 10px 0 10px;
   background: rgb(1, 116, 117);
+
   & h2, h3, div, p {
     color: #d4d705;
   }
@@ -535,6 +573,11 @@
     font-weight: 400;
     padding: 0;
     margin: 0;
+
+    @include tablets {
+      font-size: 4.2vw;
+    }
+
   }
 }
 
@@ -553,10 +596,54 @@
 
 .article__title {
   font-size: 3vw;
+
+  @include tablets {
+    font-size: 8vw;
+  }
+
+  &-secur {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+
+    & svg {
+      margin-left: 2%;
+    }
+  }
+
+  &-mobile {
+    color: #d6ce8e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+
+    & svg {
+      margin-left: 2%;
+    }
+  }
+
+  &-tariff {
+    color: rgb(58, 62, 16);
+  }
+
+  &-test {
+    color: white;
+  }
+
 }
 
 .target__group {
-  padding: 10px 2% 1px;
+  padding: 10px 2% 10px;
   background: rgb(3, 54, 89);
 
   & h2, p {
@@ -566,7 +653,7 @@
 }
 
 i {
-  color: rgb(244, 113, 4);;
+  color: rgb(254, 134, 1);
 }
 
 .bx-wrapper {
@@ -579,11 +666,13 @@ i {
 .target__descr {
   font-size: 1.8vw;
   margin-bottom: 30px;
+
+  @include tablets {
+    font-size: 4vw;
+  }
+
 }
 
-.target__list {
-
-}
 
 .target__item {
   display: flex;
@@ -600,13 +689,28 @@ i {
   margin-top: 15px;
   text-align: center;
   font-family: "Raleway", Arial, sans-serif;
-  margin-bottom: 4vw;
+  margin-bottom: 3vw;
+
+  @include tablets {
+    font-size: 3.8vw;
+  }
 
 }
 
 .target__icon {
   margin-top: auto;
   margin-bottom: 1vw;
+
+  & svg {
+    width: 5vw;
+    height: 5vw;
+
+    @include tablets {
+      width: 10vw;
+      height: 10vw;
+    }
+
+  }
 }
 
 .security {
@@ -614,26 +718,16 @@ i {
   background: rgb(168, 189, 2);
 }
 
-.article__title-secur {
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 1vw;
-
-  & svg {
-    margin-left: 2%;
-  }
-}
 
 .security__descr {
   font-weight: 300;
   font-size: 1.9vw;
   color: white;
   text-align: center;
+
+  @include tablets {
+    font-size: 4.9vw;
+  }
 }
 
 .security__list {
@@ -641,6 +735,10 @@ i {
   margin: 0;
   list-style: none;
   padding: 20px 10%;
+
+  @include tablets {
+    padding: 20px 2%;
+  }
 }
 
 .security__item {
@@ -655,8 +753,256 @@ i {
   align-items: center;
   margin-bottom: 0.7vw;
 
+  @include tablets {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+    justify-content: flex-start;
+  }
+
   & svg {
     margin-right: 2%;
+    min-width: 3vw;
+    min-height: 3vw;
+
+    @include tablets {
+      min-width: 5vw;
+      min-height: 5vw;
+    }
+  }
+
+}
+
+.urs__fotoblock {
+  height: 40vh;
+
+  @include tablets {
+    height: 30vh;
+  }
+}
+
+.urs__mobile {
+  padding: 5px 4% 25px 4%;
+  background: rgb(93, 117, 112);
+
+  @include tablets {
+    padding-top: 20px;
+  }
+}
+
+.urs__mobile-img {
+  margin-left: 2%;
+}
+
+.urs__mobile-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh 6% 3vh;
+
+  & p {
+    color: white;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-size: 1.9vw;
+    text-align: center;
+    margin-bottom: 2vw;
+
+    @include tablets {
+      font-size: 4.9vw;
+      margin-bottom: 6vw;
+    }
+
+  }
+
+  & i {
+    color: rgb(214, 206, 142);
+    font-size: 5vw;
+  }
+
+  & img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.l__tariffs {
+  padding: 30px 4% 50px 4%;
+  background: rgb(231, 237, 244);
+}
+
+.tariffs__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+
+}
+
+.tariff__item {
+  flex: 1 1 190px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  min-height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 20px 20px 10px;
+  background: rgb(0, 56, 88);
+  border-radius: 15px;
+  margin-top: 10px;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px;
+  }
+
+}
+
+.tariff__title {
+  font-size: 2vw;
+  font-family: "Raleway", Arial, sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6vw;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 0px;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+  @include tablets {
+    font-size: 6vw;
+  }
+
+  &-start {
+    background: rgb(214, 206, 142);
+  }
+  &-prime {
+    background: #bdc161; /* Old browsers */
+    background: -moz-linear-gradient(top, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdc161', endColorstr='#8193a8', GradientType=0); /* IE6-9 */
+  }
+  &-prem {
+    background: #8193a8; /* Old browsers */
+    background: -moz-linear-gradient(top, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8193a8', endColorstr='#bdc161', GradientType=0); /* IE6-9 */
+  }
+}
+
+.tariff__descr {
+  margin-top: 20px;
+  margin-bottom: auto;
+  color: white;
+  font-size: 2vw;
+  padding: 10px 4%;
+
+  @include tablets {
+    font-size: 5vw;
+  }
+
+}
+
+.tariff__button {
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 15px;
+  font-size: 26px;
+  margin: 20px 20px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.tariff__price {
+  font-size: 3vw;
+  color: rgb(254, 134, 1);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 6px solid;
+  margin-top: 20px;
+
+  @include tablets {
+    font-size: 7vw;
+  }
+
+  &-start {
+    border-color: rgb(237, 241, 244);
+  }
+  &-prime {
+    border-color: rgb(254, 134, 1);
+  }
+  &-prem {
+    border-color: rgb(0, 102, 143);
+  }
+}
+
+.service__tar {
+  margin-top: 3vw;
+  padding: 0 5%;
+}
+
+.service__tar-title {
+  font-size: 2vw;
+  color: #003858;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2vw;
+
+  @include tablets {
+    font-size: 5vw;
+  }
+
+}
+
+.service__tar-item {
+  font-size: 1.7vw;
+  color: #003858;
+  margin-bottom: 1vw;
+
+  @include tablets {
+    font-size: 3.7vw;
+  }
+}
+
+.testing {
+  background: rgb(0, 102, 143);
+  padding: 10px 10%;
+}
+
+.test__descr {
+  color: white;
+  font-size: 1.7vw;
+
+  @include tablets {
+    font-size: 3.7vw;
+
   }
 
 }

@@ -65,6 +65,7 @@ $('.ib__fotoblock').parallax({imageSrc: '../img/ib__photoblock.jpg'});
 $('.oc__header-content').parallax({imageSrc: '../img/1c-header.jpg'});
 $('.oc__fotoblock').parallax({imageSrc: '../img/oc-fotoblock.jpg'});
 $('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
+$('.urs__fotoblock').parallax({imageSrc: '../img/uds-fotoblock.jpg'});
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
