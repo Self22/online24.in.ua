@@ -1,8 +1,8 @@
 .footer {
   position: relative;
   height: 510px;
-  background: url('../img/whiteblue_back608.png') fixed;
-  background-position: 100% 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url('../img/footer-light2.jpg') fixed;
+
 
   & a {
     color: #25408f;

@@ -1,6 +1,6 @@
 .sidebar__index {
   min-height: 500px;
-  background: #f1f7f9;
+  background: #fff;
   padding-top: 50px;
   padding-bottom: 60px;
   display: flex;
@@ -39,10 +39,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
-  color: #63358A !important;
-  font-size: 24px;
+  color: #002942 !important;
+  font-size: 1.7vw;
   font-weight: 500;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
 
   @include tablets {
     font-size: 20px;
@@ -52,7 +52,7 @@
 
 .nav__sidebar-link {
   text-decoration: none !important;
-  font-size: 21px;
+  font-size: 1.6vw;
   font-weight: 400;
 
   color: black;

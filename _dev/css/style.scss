@@ -167,6 +167,7 @@ html, body {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    font-size: 1.8vw;
   }
 
   &-active {
@@ -206,7 +207,7 @@ html, body {
 
 .logo__block {
 
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +245,9 @@ html, body {
 
 .logo__block-img {
   height: 28%;
-  width: 50%;
+  width: 56%;
+  margin-bottom: 3%;
+  margin-top: 5%;
 
   & img {
     max-width: 100%;
@@ -253,15 +256,15 @@ html, body {
   }
 
 .logo__block-slogan {
-  margin-top: 7%;
   width: 90%;
+  margin-top: 8%;
 
   & h2 {
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 400;
-    color: black;
+    color: rgb(62, 2, 89);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
     @include tablets {
@@ -273,17 +276,17 @@ html, body {
 .logo__block-contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 1vw;
 
   & a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 2vw;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
-    color: #25408f;
+    color: #002942;
   }
 }
 
@@ -465,19 +468,27 @@ html, body {
   }
 
 .slide1 {
-  background: rgba(109, 139, 5, 0.4);
+  background: rgba(0, 41, 66, 0.4);
+  border: 1px solid white;
+
 }
 
 .slide2 {
-  background: rgba(109, 139, 5, 0.4);
+  background: rgba(0, 41, 66, 0.4);
+  border: 1px solid white;
+
 }
 
 .slide3 {
-  background: rgba(210, 218, 3, 0.4);
+  background: rgba(0, 41, 66, 0.4);
+  border: 1px solid white;
+
 }
 
 .slide4 {
-  background: rgba(192, 217, 1, 0.4);
+  background: rgba(0, 41, 66, 0.4);
+  border: 1px solid white;
+
 
   & p {
     margin-top: 30px;
@@ -485,14 +496,18 @@ html, body {
 }
 
 .slide5 {
-  background: rgba(139, 124, 81, 0.4);
+  background: rgba(0, 41, 66, 0.4);
+  border: 1px solid white;
+
   }
 
 //////////////////// index main
 
 .main__action {
   padding: 10px;
-  background: rgba(252, 219, 219, 0.5);
+  background: rgb(0, 41, 66);
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .article__title {
@@ -500,10 +515,14 @@ html, body {
   text-align: center;
   font-size: 34px;
   letter-spacing: 1px;
-  color: rgba(54, 54, 112, 0.9);
+  color: rgb(235, 243, 5);
   font-family: "Raleway", Arial, sans-serif;
   flex: 1 1 100%;
   margin: 30px 0;
+
+  &-black {
+    color: black;
+  }
 
   @include phones {
     font-size: 26px;
@@ -518,21 +537,17 @@ html, body {
   height: 150px;
 }
 
-.main__action {
-  display: flex;
-  flex-flow: row wrap;
-}
 
 .action__section {
   z-index: 2;
   display: flex;
   flex-flow: row wrap;
 
-  padding: 25px;
+  padding: 2vw;
   flex: 1 1 48%;
   margin: 5px 1% 5px 1%;
-  background: #E1E1FF;
-  color: #363670;
+  background: rgb(240, 241, 163);
+  color: #002942;
 
   @include desktop {
     flex: 1 1 100%;
@@ -544,7 +559,10 @@ html, body {
   margin-top: 30px;
   flex: 1 1 60%;
   margin-bottom: 30px;
-  }
+  font-size: 2.6vw;
+  color: #25408f;
+
+}
 
 .action__logo {
   flex: 1 1 25%;
@@ -556,13 +574,18 @@ html, body {
 
 }
 
+.action__partner-text {
+  font-size: 1.3vw;
+}
+
 .index__btn {
   font-family: "Source Sans Pro", Arial, sans-serif;
   color: #363670 !important;
+  font-size: 1.3vw !important;
 }
 
 .main__test {
-  background: rgba(242, 210, 129, 0.2);
+  background: rgba(244, 226, 4, 0.6);
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -573,8 +596,10 @@ html, body {
   display: flex;
   flex-flow: row wrap;
   padding: 15px;
-  background: rgba(143, 189, 129, 0.3);
+  background: transparent;
   margin: 10px 1%;
+  border: 1px solid #002942;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .article__text {
@@ -652,6 +677,12 @@ html, body {
   width: 50px;
   height: 50px;
 }
+
+.navcont-main {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3));
+}
+
+
 
 .navbar-brand {
 
@@ -945,39 +976,39 @@ html, body {
 //svg logo
 
 .st0 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st1 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st2 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st3 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st4 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st5 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st6 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st7 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .st8 {
-  fill: #000;
+  fill: rgba(2, 55, 86, 1);
 }
 
 .wt0 {
@@ -1018,7 +1049,7 @@ html, body {
 
 a.animated-button.gibson-four:after {
   opacity: 0;
-  background-image: -webkit-linear-gradient(transparent 50%, rgb(241, 247, 249) 50%) !important;
+  background-image: -webkit-linear-gradient(transparent 50%, #c0c4c1 50%) !important;
   background-size: 10px 10px;
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);

@@ -55,7 +55,7 @@ $('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showB
 
 //parallax
 
-$('.header').parallax({imageSrc: 'img/index-header.jpg'});
+$('.header').parallax({imageSrc: 'img/index-header4.jpg'});
 $('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
