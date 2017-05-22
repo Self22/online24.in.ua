@@ -1,12 +1,11 @@
 .sidebar__index {
   min-height: 500px;
   background: #fff;
-  padding-top: 50px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 50px 0 0;
 }
 
 .sidebar__nav-block {
@@ -38,7 +37,7 @@
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-left: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 12px;
+  padding: 1.5vw;
   color: #002942 !important;
   font-size: 1.7vw;
   font-weight: 500;
@@ -58,4 +57,23 @@
   color: black;
   margin-bottom: 7px;
   margin-top: 7px;
+}
+
+.sidebar__img {
+
+  padding: 100px 0 0;
+
+  width: 100%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.sidebar__colorblock {
+  background: rgb(169, 191, 80);
+  width: 100%;
+  height: 100%;
 }

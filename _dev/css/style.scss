@@ -94,11 +94,12 @@ html, body {
   padding: 0;
   left: 1px;
   height: 90px;
-  background: #B6D9F8;
+  background: rgb(96, 161, 193);
   margin: 0;
 
   & .nav__main-item a {
     color: white;
+    text-shadow: none;
   }
 
   & .stickyheader__logo {
@@ -168,6 +169,7 @@ html, body {
     color: white;
     font-weight: 500;
     font-size: 1.8vw;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.7);
   }
 
   &-active {
@@ -207,7 +209,7 @@ html, body {
 
 .logo__block {
 
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -430,7 +432,7 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 36px;
+    font-size: 3vw;
     padding: 0 10px 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
@@ -448,7 +450,7 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     line-height: 45px;
     letter-spacing: 1px;
     text-align: center;
@@ -468,26 +470,26 @@ html, body {
   }
 
 .slide1 {
-  background: rgba(0, 41, 66, 0.4);
-  border: 1px solid white;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+
 
 }
 
 .slide2 {
-  background: rgba(0, 41, 66, 0.4);
-  border: 1px solid white;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+
 
 }
 
 .slide3 {
-  background: rgba(0, 41, 66, 0.4);
-  border: 1px solid white;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+
 
 }
 
 .slide4 {
-  background: rgba(0, 41, 66, 0.4);
-  border: 1px solid white;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+
 
 
   & p {
@@ -496,8 +498,8 @@ html, body {
 }
 
 .slide5 {
-  background: rgba(0, 41, 66, 0.4);
-  border: 1px solid white;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+
 
   }
 
@@ -505,7 +507,7 @@ html, body {
 
 .main__action {
   padding: 10px;
-  background: rgb(0, 41, 66);
+  background: rgb(75, 104, 121);
   display: flex;
   flex-flow: row wrap;
 }
@@ -604,7 +606,7 @@ html, body {
 
 .article__text {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.6vw;
   margin-top: -10px;
 }
 
@@ -623,11 +625,13 @@ html, body {
   margin-top: 15px;
   text-align: center;
   flex: 1 1 60%;
+  font-size: 2.5vw;
 }
 
 .test__text {
   padding: 25px 0;
   flex: 1 1 60%;
+  font-size: 1.6vw;
   }
 
 .test__button-cont {
@@ -642,6 +646,7 @@ html, body {
   cursor: pointer;
   padding: 14px 18% !important;
   text-transform: uppercase;
+  font-size: 1.3vw !important;
 }
 
 /* BORDER TRANSITIONS */
@@ -677,9 +682,8 @@ html, body {
   width: 50px;
   height: 50px;
 }
-
 .navcont-main {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.7);
 }
 
 
