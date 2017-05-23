@@ -166,14 +166,15 @@ html, body {
   & a {
     font-family: "Raleway", Arial, sans-serif;
     text-decoration: none;
-    color: white;
-    font-weight: 500;
+    color: black;
+    font-weight: 400;
     font-size: 1.8vw;
-    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
   }
 
   &-active {
     background: rgba(112, 112, 163, 0.6);
+    s
 
     & a {
       color: white;
@@ -209,7 +210,7 @@ html, body {
 
 .logo__block {
 
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,6 +280,7 @@ html, body {
   display: flex;
   flex-direction: column;
   margin-top: 1vw;
+  margin-bottom: 2vw;
 
   & a {
     display: flex;
@@ -362,7 +364,7 @@ html, body {
 }
 
 .slider-cont {
-  margin-top: 0;
+  margin-top: -20px;
   height: 500px;
     align-items: center;
 
@@ -545,9 +547,9 @@ html, body {
   display: flex;
   flex-flow: row wrap;
 
-  padding: 2vw;
+  padding: 3vw;
   flex: 1 1 48%;
-  margin: 5px 1% 5px 1%;
+  margin: 1vh 1%;
   background: rgb(240, 241, 163);
   color: #002942;
 
@@ -568,6 +570,11 @@ html, body {
 
 .action__logo {
   flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
+
 
   & img {
     max-width: 100%;
@@ -597,7 +604,7 @@ html, body {
   flex: 1 1 100%;
   display: flex;
   flex-flow: row wrap;
-  padding: 15px;
+  padding: 3vw;
   background: transparent;
   margin: 10px 1%;
   border: 1px solid #002942;
@@ -683,7 +690,7 @@ html, body {
   height: 50px;
 }
 .navcont-main {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 

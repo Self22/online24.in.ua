@@ -60,20 +60,34 @@
 }
 
 .sidebar__img {
-
+  //background: url("../img/index-sidebar.jpg ");
+  //background-size: cover;
+  position: relative;
   padding: 100px 0 0;
-
   width: 100%;
+  filter: blur(1px);
 
   & img {
     width: 100%;
     height: auto;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+    }
   }
 
 }
 
 .sidebar__colorblock {
-  background: rgb(169, 191, 80);
+  background: rgb(128, 156, 173);
   width: 100%;
   height: 100%;
 }
+
