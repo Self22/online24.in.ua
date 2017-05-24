@@ -972,6 +972,9 @@ textarea {
 
 .slider {
   width: 60vw; }
+  @media screen and (max-width: 480px) {
+    .slider {
+      width: 95vw; } }
 
 .l__slider {
   margin-top: 5vh;
@@ -992,9 +995,15 @@ textarea {
     color: black; }
     @media screen and (max-width: 480px) {
       .l__slider h3 {
+        font-weight: 500;
+        font-size: 7vw;
         color: white; } }
   .l__slider p {
     font-size: 2vw; }
+    @media screen and (max-width: 480px) {
+      .l__slider p {
+        font-size: 7vw;
+        letter-spacing: -1px; } }
   .l__slider h3, .l__slider p {
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
@@ -1009,7 +1018,8 @@ textarea {
         width: 100vw; } }
     @media screen and (max-width: 480px) {
       .l__slider .slide {
-        width: 100vw; } }
+        width: 100vw;
+        padding: 0 3vw; } }
 
 .slide1 {
   background: rgba(114, 141, 168, 0.5); }
@@ -1061,10 +1071,10 @@ textarea {
   border: 1px solid #344559; }
   @media screen and (max-width: 480px) {
     .l__testbtn {
-      padding: 26px 11px;
+      padding: 26px 11px 10px;
       font-size: 14px; } }
   .l__testbtn svg {
-    height: 57px; }
+    height: 41px; }
   .l__testbtn rect {
     stroke: #9a9abe; }
 
@@ -1088,6 +1098,10 @@ textarea {
     .oc__slogan {
       margin-top: 130px;
       padding-bottom: 0; } }
+  @media screen and (max-width: 480px) {
+    .oc__slogan {
+      margin-top: 0;
+      margin-bottom: 2vh; } }
   .oc__slogan .partner__brand {
     font-size: 5vw;
     color: yellow;
@@ -1198,6 +1212,9 @@ textarea {
     font-weight: 400;
     padding: 0;
     margin: 0; }
+    @media screen and (max-width: 480px) {
+      .l__feature-item p {
+        font-size: 5vw; } }
 
 .l__feature-icon {
   margin-right: 5%; }
@@ -1216,6 +1233,9 @@ textarea {
     color: #fff;
     font-weight: 400;
     font-size: 5vw; }
+  @media screen and (max-width: 480px) {
+    .article__title {
+      font-size: 8vw; } }
 
 .process__list {
   list-style: none;
@@ -1259,6 +1279,10 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 35px; }
+  @media screen and (max-width: 480px) {
+    .process__item {
+      width: 100%;
+      padding: 25px 15px; } }
 
 .process__num {
   color: #0689a7;
@@ -1281,6 +1305,11 @@ textarea {
 .process__descr {
   font-size: 1.9vw;
   color: #000; }
+  @media screen and (max-width: 480px) {
+    .process__descr {
+      font-size: 4.5vw;
+      text-align: right;
+      margin-right: 3%; } }
 
 .process__end {
   width: 12%;
@@ -1297,7 +1326,12 @@ textarea {
   border-radius: 8px;
   background: #d1d804;
   color: white;
-  font-size: 2vw; }
+  font-size: 2vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
+  @media screen and (max-width: 480px) {
+    .order__l {
+      font-size: 5.2vw;
+      padding: 10px 20px; } }
 
 .process__dir {
   position: absolute;
@@ -1316,6 +1350,7 @@ textarea {
 
 .tariffs__list {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1386,6 +1421,9 @@ textarea {
   letter-spacing: 0px;
   border-radius: 10px;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .tariff__title {
+      font-size: 7.5vw; } }
 
 .tariff__descr {
   margin-top: 20px;
@@ -1393,6 +1431,9 @@ textarea {
   color: white;
   font-size: 2vw;
   padding: 10px 4%; }
+  @media screen and (max-width: 480px) {
+    .tariff__descr {
+      font-size: 6vw; } }
 
 .tariff__button {
   text-transform: uppercase;
@@ -1414,6 +1455,9 @@ textarea {
   padding: 12px 0;
   border-top: 6px solid;
   margin-top: 20px; }
+  @media screen and (max-width: 480px) {
+    .tariff__price {
+      font-size: 8.7vw; } }
   .tariff__price-start {
     border-color: #edf1f4; }
   .tariff__price-prime {
@@ -1430,6 +1474,16 @@ textarea {
 .security {
   padding: 30px 4% 50px 4%;
   background: #a8bd02; }
+  @media screen and (max-width: 480px) {
+    .security {
+      padding: 1px 5% 1vh 5%; } }
+  .security svg {
+    width: 5vw;
+    height: 5vw; }
+    @media screen and (max-width: 480px) {
+      .security svg {
+        width: 10vw;
+        height: 10vw; } }
 
 .article__title-secur {
   color: white;
@@ -1455,12 +1509,18 @@ textarea {
   font-weight: 300;
   font-size: 1.9vw;
   color: white; }
+  @media screen and (max-width: 480px) {
+    .security__descr {
+      font-size: 6vw; } }
 
 .security__list {
   padding: 0;
   margin: 0;
   list-style: none;
   padding: 20px 10%; }
+  @media screen and (max-width: 480px) {
+    .security__list {
+      padding: 10px 2%; } }
 
 .security__item {
   font-weight: 300;
@@ -1468,5 +1528,36 @@ textarea {
   margin: 0;
   font-size: 1.9vw;
   color: white; }
+  @media screen and (max-width: 480px) {
+    .security__item {
+      font-size: 7vw;
+      margin-bottom: 4vh;
+      font-weight: 400; } }
+
+.iptel {
+  background: #03708c;
+  padding: 1vw 4% 50px 4%; }
+
+.iptel__descr {
+  color: white;
+  text-align: center;
+  font-size: 2vw; }
+  @media screen and (max-width: 480px) {
+    .iptel__descr {
+      font-size: 5vw; } }
+
+.iptel__list {
+  padding: 1vw 5vw;
+  margin: 0; }
+
+.iptel__item {
+  padding: 0;
+  margin: 0;
+  color: #f8ff00;
+  font-size: 1.7vw;
+  margin-bottom: 0.5vw; }
+  @media screen and (max-width: 480px) {
+    .iptel__item {
+      font-size: 4.7vw; } }
 
 /*# sourceMappingURL=1c.css.map */

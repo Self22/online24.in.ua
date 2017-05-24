@@ -447,7 +447,7 @@
     padding-bottom: 0;
     padding-left: 0;
     margin-bottom: 5vh;
-    margin-top: 10vh;
+    margin-top: 25vh;
   }
 
   .partner__brand {
@@ -468,7 +468,7 @@
     }
 
     @include tablets {
-      font-size: 7.5vw;
+      font-size: 8.5vw;
     }
 
     @include phones {
@@ -486,7 +486,7 @@
 
     @include desktop {
       margin-top: 20px;
-      font-size: 6vw;
+      font-size: 7.5vw;
     }
 
     @include phones {

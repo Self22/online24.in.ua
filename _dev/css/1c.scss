@@ -277,6 +277,10 @@
 
 .slider {
   width: 60vw;
+
+  @include phones {
+    width: 95vw;
+  }
 }
 
 .l__slider {
@@ -295,12 +299,19 @@
     color: black;
 
     @include phones {
+      font-weight: 500;
+      font-size: 7vw;
       color: white;
     }
   }
 
   p {
     font-size: 2vw;
+
+    @include phones {
+      font-size: 7vw;
+      letter-spacing: -1px;
+    }
   }
 
   h3, p {
@@ -322,6 +333,7 @@
 
     @include phones {
       width: 100vw;
+      padding: 0 3vw;
     }
 
   }
@@ -389,12 +401,12 @@
   border: 1px solid #344559;
 
   @include phones {
-    padding: 26px 11px;
+    padding: 26px 11px 10px;
     font-size: 14px;
   }
 
   & svg {
-    height: 57px;
+    height: 41px;
   }
 
   & rect {
@@ -413,6 +425,11 @@
   @include tablets {
     margin-top: 130px;
     padding-bottom: 0;
+  }
+
+  @include phones {
+    margin-top: 0;
+    margin-bottom: 2vh;
   }
 
   .partner__brand {
@@ -536,6 +553,10 @@
     font-weight: 400;
     padding: 0;
     margin: 0;
+
+    @include phones {
+      font-size: 5vw;
+    }
   }
 }
 
@@ -564,6 +585,9 @@
     font-size: 5vw;
   }
 
+  @include phones {
+    font-size: 8vw;
+  }
 }
 
 .process__list {
@@ -592,6 +616,11 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 35px;
+
+  @include phones {
+    width: 100%;
+    padding: 25px 15px;
+  }
 }
 
 .process__num {
@@ -610,6 +639,12 @@
 .process__descr {
   font-size: 1.9vw;
   color: #000;
+
+  @include phones {
+    font-size: 4.5vw;
+    text-align: right;
+    margin-right: 3%;
+  }
 }
 
 .process__end {
@@ -631,6 +666,13 @@
   background: rgb(209, 216, 4);
   color: white;
   font-size: 2vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+  @include phones {
+    font-size: 5.2vw;
+    padding: 10px 20px;
+
+  }
 
 }
 
@@ -659,6 +701,7 @@
 
 .tariffs__list {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,6 +759,9 @@
   border-radius: 10px;
   text-transform: uppercase;
 
+  @include phones {
+    font-size: 7.5vw;
+  }
 }
 
 .tariff__descr {
@@ -724,6 +770,10 @@
   color: white;
   font-size: 2vw;
   padding: 10px 4%;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 .tariff__button {
@@ -748,6 +798,10 @@
   border-top: 6px solid;
   margin-top: 20px;
 
+  @include phones {
+    font-size: 8.7vw;
+  }
+
   &-start {
     border-color: rgb(237, 241, 244);
   }
@@ -770,6 +824,20 @@
 .security {
   padding: 30px 4% 50px 4%;
   background: rgb(168, 189, 2);
+
+  @include phones {
+    padding: 1px 5% 1vh 5%;
+  }
+
+  & svg {
+    width: 5vw;
+    height: 5vw;
+
+    @include phones {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
 }
 
 .article__title-secur {
@@ -790,6 +858,10 @@
   font-weight: 300;
   font-size: 1.9vw;
   color: white;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 .security__list {
@@ -797,6 +869,10 @@
   margin: 0;
   list-style: none;
   padding: 20px 10%;
+
+  @include phones {
+    padding: 10px 2%;
+  }
 }
 
 .security__item {
@@ -806,4 +882,42 @@
   font-size: 1.9vw;
   color: white;
 
+  @include phones {
+    font-size: 7vw;
+    margin-bottom: 4vh;
+    font-weight: 400;
+  }
+
+}
+
+.iptel {
+  background: rgb(3, 112, 140);
+  padding: 1vw 4% 50px 4%;
+}
+
+.iptel__descr {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.iptel__list {
+  padding: 1vw 5vw;
+  margin: 0;
+}
+
+.iptel__item {
+  padding: 0;
+  margin: 0;
+  color: rgb(248, 255, 0);
+  font-size: 1.7vw;
+  margin-bottom: 0.5vw;
+
+  @include phones {
+    font-size: 4.7vw;
+  }
 }
