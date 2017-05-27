@@ -1479,11 +1479,11 @@ html, body {
 
 .logo__block-slogan {
   width: 90%;
-  margin-top: 8%; }
+  margin-top: 40px; }
   .logo__block-slogan h2 {
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
-    font-size: 3vw;
+    font-size: 2.7vw;
     font-weight: 400;
     color: #3e0259;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
@@ -1655,7 +1655,7 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: 3vw;
+    font-size: 2.7vw;
     padding: 0 10px 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
@@ -1675,7 +1675,7 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     line-height: 45px;
     letter-spacing: 1px;
     text-align: center;

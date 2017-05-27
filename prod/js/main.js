@@ -66,6 +66,9 @@ $('.oc__header-content').parallax({imageSrc: '../img/1c-header.jpg'});
 $('.oc__fotoblock').parallax({imageSrc: '../img/oc-fotoblock.jpg'});
 $('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
 $('.urs__fotoblock').parallax({imageSrc: '../img/uds-fotoblock.jpg'});
+$('.sota__header-content').parallax({imageSrc: '../img/sota-header.jpg'});
+$('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
+
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 

@@ -1066,7 +1066,7 @@ textarea {
   background: #bc7f02 !important;
   color: white !important;
   padding: 12px 50px;
-  font-size: 2vw;
+  font-size: 28px;
   font-weight: 400;
   border: 1px solid #344559; }
   @media screen and (max-width: 480px) {
@@ -1074,7 +1074,10 @@ textarea {
       padding: 26px 11px 10px;
       font-size: 14px; } }
   .l__testbtn svg {
-    height: 41px; }
+    height: 62px; }
+    @media screen and (max-width: 480px) {
+      .l__testbtn svg {
+        height: 41px; } }
   .l__testbtn rect {
     stroke: #9a9abe; }
 
