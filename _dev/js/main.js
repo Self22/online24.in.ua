@@ -68,6 +68,7 @@ $('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
 $('.urs__fotoblock').parallax({imageSrc: '../img/uds-fotoblock.jpg'});
 $('.sota__header-content').parallax({imageSrc: '../img/sota-header.jpg'});
 $('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
+$('.vchasno__fotoblock').parallax({imageSrc: '../img/vchasno-fotoblock.jpg'});
 
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
@@ -271,7 +272,7 @@ $('#nav-main').singlePageNav(
     {offset: 100, speed: 1000, threshold: 150}
 );
 
-///////////////////////// URS - Ticker
+///////////////////////// Udalenniy Office - Ticker
 $(document).ready(function () {
     $('.target__list').bxSlider({
 
@@ -287,3 +288,8 @@ $(document).ready(function () {
 });
 
 
+//////////////////////////////////// Mobile Menu Close Tap
+
+$('main').on('click', function (e) {
+    $('.navbar-collapse').removeClass('show');
+});

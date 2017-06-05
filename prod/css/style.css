@@ -773,8 +773,8 @@ textarea {
 .footer {
   position: relative;
   height: 510px;
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url("../img/footer-light2.jpg") fixed;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url("../img/footer-light2.jpg") fixed; }
+  background: -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light3.jpg") fixed;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light3.jpg") fixed; }
   .footer a {
     color: #25408f; }
   @media screen and (max-width: 480px) {

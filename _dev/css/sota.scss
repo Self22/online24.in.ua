@@ -56,6 +56,7 @@
 
 .partnerlogosticky {
   max-width: 165px;
+  min-width: 80px;
 
   @include desktop {
     max-width: 120px;
@@ -367,7 +368,7 @@
 
 .l__testcont {
   height: 170px;
-  background: rgb(227, 234, 243);
+  background: rgb(216, 200, 170);
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -397,7 +398,7 @@
 
 .l__testbtn {
 
-  background: rgb(188, 127, 2) !important;
+  background: #023756 !important;
   color: white !important;
   padding: 12px 50px;
   font-size: 28px;
@@ -527,55 +528,58 @@
 }
 
 .feature__descr {
-  color: rgb(237, 241, 244);
+  color: rgb(254, 248, 226);
   padding: 7px 3%;
   margin: 0;
   text-align: center;
 }
 
 .l_features {
-  padding: 10px 0 10px;
-  background: rgb(67, 87, 62);
+  padding: 10px 4% 10px;
+  background: rgb(249, 221, 109);;
   & h2, h3, div, p {
-    color: rgb(237, 241, 244);
+    color: black;
   }
 
 }
 
-.features__block {
-  border-top: 2px solid rgb(212, 215, 5);
-  border-bottom: 2px solid rgb(212, 215, 5);
-  padding: 0 15px;
+.lfuture__block {
+  margin-top: 20px;
+  padding: 40px 30px 20px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
-.l__feature-item {
-  outline: 1px solid rgb(212, 215, 5);
-  padding: 25px 3%;
+.features__descr {
+  font-size: 2vw;
+  margin: 30px 0;
+}
+
+.future__title {
+  font-size: 2.5vw;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.future__item {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  overflow: auto;
+  font-size: 2vw;
+  margin: 15px 0;
+  font-style: italic;
+}
 
-  & p {
-    font-size: 2vw;
-    text-align: center;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-
-    @include phones {
-      font-size: 5vw;
-    }
+.future__img {
+  width: 6vw;
+  margin-right: 3vw;
+  & img {
+    max-width: 100%;
+    height: auto;
   }
-}
 
-.l__feature-icon {
-  margin-right: 5%;
-}
-
-.oc__process {
-  background: rgb(234, 239, 243);
-  padding: 15px 3% 25px;
 }
 
 .article__title {

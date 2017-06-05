@@ -77,10 +77,10 @@ html, body {
   }
 }
 
-.ligalogo__mob {
+.partnerlogo__mob {
   position: absolute;
   left: 120px;
-  top: 30px;
+  top: 27px;
   width: 85px;
 
   & img {
@@ -88,6 +88,7 @@ html, body {
     height: auto;
   }
 }
+
 
 .l__mainmenu-item {
   padding: 0 !important;
@@ -205,7 +206,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100vh;
+  height: 80vh;
 
   @include phones {
     height: 100vh;
@@ -338,6 +339,11 @@ html, body {
 
 }
 
+.slider {
+  height: 40vh;
+  margin-bottom: 1vh;
+}
+
 .slide1 {
   background: rgba(192, 226, 229, 1);
   background: -moz-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
@@ -387,13 +393,23 @@ html, body {
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
 
-  &-big {
-    height: 225px;
-  }
 
   &-descr {
     margin-top: 15px;
   }
+
+  @include phones {
+    height: 90px;
+  }
+
+  &-big {
+    height: 225px;
+
+    @include phones {
+      height: 400px;
+    }
+  }
+
 }
 
 .liga__testcont-descr {
@@ -420,12 +436,16 @@ html, body {
   border: 1px solid white;
 
   @include phones {
-    padding: 26px 11px;
+    padding: 12px 11px;
     font-size: 14px;
   }
 
   & svg {
     height: 57px;
+
+    @include phones {
+      height: 43px;
+    }
   }
 
   & rect {
@@ -446,6 +466,10 @@ html, body {
     padding-bottom: 0;
   }
 
+  @include phones {
+    padding-left: 0;
+  }
+
   .partner__brand {
     font-size: 46px;
     color: white;
@@ -464,6 +488,8 @@ html, body {
 
     @include phones {
       text-align: center;
+      font-size: 11vw;
+      margin-bottom: 1vh;
     }
   }
   .partner__slogan {
@@ -482,9 +508,14 @@ html, body {
     }
 
     @include phones {
-      width: 100%;
+      width: 90%;
       text-align: center;
       font-size: 24px;
+      margin-left: 5%;
+      border: 3px solid #ddd;
+      background: rgba(120, 199, 242, 1);
+      border-radius: 4px;
+      padding: 5px 40px;
     }
   }
 
@@ -649,6 +680,10 @@ html, body {
 
   & li {
     margin-bottom: 10px;
+
+    @include phones {
+      margin-bottom: 0.5vw;
+    }
   }
 
   @include desktop {
@@ -689,6 +724,10 @@ html, body {
 
   &-prem {
     border-color: #E8A289;
+  }
+
+  @include phones {
+    padding-top: 8px;
   }
 
 }

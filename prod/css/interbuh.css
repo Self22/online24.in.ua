@@ -768,12 +768,12 @@ html, body {
     .partnerlogosticky {
       display: none; } }
 
-.ligalogo__mob {
+.partnerlogo__mob {
   position: absolute;
   left: 120px;
-  top: 30px;
+  top: 27px;
   width: 85px; }
-  .ligalogo__mob img {
+  .partnerlogo__mob img {
     max-width: 100%;
     height: auto; }
 
@@ -897,7 +897,7 @@ html, body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100vh; }
+  height: 80vh; }
   @media screen and (max-width: 480px) {
     .ib__header-content {
       height: 100vh; } }
@@ -1015,6 +1015,10 @@ html, body {
       .l__slider .slide {
         width: 100vw; } }
 
+.slider {
+  height: 40vh;
+  margin-bottom: 1vh; }
+
 .slide1 {
   background: #c0e2e5;
   background: -webkit-gradient(left top, right top, color-stop(0%, #c0e2e5), color-stop(100%, rgba(113, 149, 152, 0.8)));
@@ -1051,10 +1055,16 @@ html, body {
           flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff; }
-  .l__testcont-big {
-    height: 225px; }
   .l__testcont-descr {
     margin-top: 15px; }
+  @media screen and (max-width: 480px) {
+    .l__testcont {
+      height: 90px; } }
+  .l__testcont-big {
+    height: 225px; }
+    @media screen and (max-width: 480px) {
+      .l__testcont-big {
+        height: 400px; } }
 
 .liga__testcont-descr {
   margin-top: 15px;
@@ -1077,10 +1087,13 @@ html, body {
   border: 1px solid white; }
   @media screen and (max-width: 480px) {
     .l__testbtn {
-      padding: 26px 11px;
+      padding: 12px 11px;
       font-size: 14px; } }
   .l__testbtn svg {
     height: 57px; }
+    @media screen and (max-width: 480px) {
+      .l__testbtn svg {
+        height: 43px; } }
   .l__testbtn rect {
     stroke: #9a9abe; }
 
@@ -1104,6 +1117,9 @@ html, body {
     .ib__slogan {
       margin-top: 130px;
       padding-bottom: 0; } }
+  @media screen and (max-width: 480px) {
+    .ib__slogan {
+      padding-left: 0; } }
   .ib__slogan .partner__brand {
     font-size: 46px;
     color: white;
@@ -1119,7 +1135,9 @@ html, body {
         font-size: 40px; } }
     @media screen and (max-width: 480px) {
       .ib__slogan .partner__brand {
-        text-align: center; } }
+        text-align: center;
+        font-size: 11vw;
+        margin-bottom: 1vh; } }
   .ib__slogan .partner__slogan {
     text-align: center;
     font-size: 28px;
@@ -1135,9 +1153,14 @@ html, body {
         margin-top: 20px; } }
     @media screen and (max-width: 480px) {
       .ib__slogan .partner__slogan {
-        width: 100%;
+        width: 90%;
         text-align: center;
-        font-size: 24px; } }
+        font-size: 24px;
+        margin-left: 5%;
+        border: 3px solid #ddd;
+        background: #78c7f2;
+        border-radius: 4px;
+        padding: 5px 40px; } }
   .ib__slogan p {
     font-size: 22px;
     font-weight: 300;
@@ -1296,6 +1319,9 @@ html, body {
     padding-right: 15px; }
   .ib__product-item li {
     margin-bottom: 10px; }
+    @media screen and (max-width: 480px) {
+      .ib__product-item li {
+        margin-bottom: 0.5vw; } }
   @media screen and (max-width: 1200px) {
     .ib__product-item {
       min-height: 690px; } }
@@ -1324,6 +1350,9 @@ html, body {
     border-color: #A3FF85; }
   .ib__product-price-prem {
     border-color: #E8A289; }
+  @media screen and (max-width: 480px) {
+    .ib__product-price {
+      padding-top: 8px; } }
 
 .ib__product-order {
   text-align: center;
