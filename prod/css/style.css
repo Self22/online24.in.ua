@@ -779,7 +779,8 @@ textarea {
     color: #25408f; }
   @media screen and (max-width: 480px) {
     .footer {
-      background: #ffffff; } }
+      height: 100%;
+      background-size: cover; } }
 
 .footer__contacts, .footer__form, .footer_aboutus {
   display: -webkit-box;
@@ -800,7 +801,7 @@ textarea {
   padding-bottom: 50px; }
   @media screen and (max-width: 480px) {
     .footer__contacts, .footer__form, .footer_aboutus {
-      height: 70vh; } }
+      height: 83vh; } }
 
 .footer__contacts {
   -webkit-box-pack: justify;

@@ -69,7 +69,7 @@ $('.urs__fotoblock').parallax({imageSrc: '../img/uds-fotoblock.jpg'});
 $('.sota__header-content').parallax({imageSrc: '../img/sota-header.jpg'});
 $('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
 $('.vchasno__fotoblock').parallax({imageSrc: '../img/vchasno-fotoblock.jpg'});
-
+$('.sota__fotoblock').parallax({imageSrc: '../img/sota-fotoblock.jpg'});
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
