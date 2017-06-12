@@ -21,56 +21,24 @@ if($post){
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
-    $form = stripslashes($_POST['form_name']);
-    $subject = 'Заявка';
+    $product = ($_POST['product']);
+    $type = stripslashes($_POST['form_type']);
+    $subject = 'Заявка Online24 - '. $product.'';
     $error = '';
-    if($form  = 3) {
-
-        $message = '
+    $message = '
 			<html>
 					<head>
-							<title>Заявка с футера</title>
+							<title>Заявка</title>
 					</head>
 					<body>
-					        <p>Заявка с футера</p>
+					        <p>Заявка</p>
+					        <p>Тип заявки:'. $type .'</p>
+					        <p>Страница: '. $url .'</p>
 							<p>Имя: ' . $name . '</p>
 							<p>Телефон : ' . $phone . '</p>	
 							<p>Email : ' . $email . '</p>
 					</body>
 			</html>';
-    }
-
-    if($form  = 1) {
-
-        $message = '
-			<html>
-					<head>
-							<title>Заявка на покупку</title>
-					</head>
-					<body>  
-					        <p>Заявка на покупку</p>
-							<p>Имя: ' . $name . '</p>
-							<p>Телефон : ' . $phone . '</p>	
-							<p>Email : ' . $email . '</p>
-					</body>
-			</html>';
-    }
-
-    if($form  = 2) {
-
-        $message = '
-			<html>
-					<head>
-							<title>Заявка на тестирование</title>
-					</head>
-					<body>
-					        <p>Заявка на тестирование</p>
-							<p>Имя: ' . $name . '</p>
-							<p>Телефон : ' . $phone . '</p>	
-							<p>Email : ' . $email . '</p>
-					</body>
-			</html>';
-    }
 
     if (!ValidateEmail($email)){
         $error = 'Email введен неправильно!';
@@ -84,7 +52,7 @@ if($post){
             ."X-Mailer: PHP/" . phpversion());
 
         if($mail){
-            echo $form;
+            echo '<div class="message-success">Спасибо за заявку! Мы вам перезвоним!</div>';
         }
     }else{
         echo '<div class="has-danger">'.$error.'</div>';

@@ -375,6 +375,7 @@ $(function () {
 /////////////// mask
 $(document).ready(function () {
     $('.footer__form-tel').mask('+38 (000) 000-00-00');
+    $('.order__tel-input').mask('+38 (000) 000-00-00');
 });
 
 

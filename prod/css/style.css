@@ -891,7 +891,7 @@ textarea {
 .footer__form form {
   width: 90%; }
 
-.footer__form .form-group {
+.footer__form .form-group-footer {
   margin-bottom: 0; }
 
 .footer__form button {
@@ -2380,5 +2380,10 @@ a.animated-button.gibson-three:after {
     .form-group {
       width: 90%;
       margin-bottom: 0; } }
+
+.message-success {
+  text-align: center;
+  font-size: 1.6vw;
+  padding-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -49,7 +49,7 @@ if ($post) {
             . "X-Mailer: PHP/" . phpversion());
 
         if ($mail) {
-            echo 'OK';
+            echo '<div class="bg-success">Спасибо за заявку! Мы вам перезвоним!</div>';
         }
     } else {
         echo '<div class="has-danger">' . $error . '</div>';
