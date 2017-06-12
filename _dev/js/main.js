@@ -70,6 +70,7 @@ $('.sota__header-content').parallax({imageSrc: '../img/sota-header.jpg'});
 $('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
 $('.vchasno__fotoblock').parallax({imageSrc: '../img/vchasno-fotoblock.jpg'});
 $('.sota__fotoblock').parallax({imageSrc: '../img/sota-fotoblock.jpg'});
+$('.sd__fotoblock').parallax({imageSrc: '../img/sd-fotoblock.jpg'});
 
 // $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
@@ -168,7 +169,161 @@ $(function () {
             var str = form.serialize();
 
             $.ajax({
-                url: 'contact-form/contact_process.php',
+                url: '../contact-form/contact_process.php',
+                type: 'POST',
+                data: str
+            })
+                .done(function (msg) {
+                    if (msg === "OK") {
+                        var result = "<div = 'bg-success'>Спасибо за заявку! Мы вам перезвоним!</div>"
+                        form.html(result);
+                    } else {
+                        form.html(msg);
+                    }
+                })
+                .always(function () {
+                    submitBtn.removeAttr('disabled');
+                });
+
+        },
+
+        validateForm: function (form) {
+            var inputs = form.find('input'),
+                valid = true;
+
+
+            $.each(inputs, function (index, val) {
+                var input = $(val),
+                    val = input.val(),
+                    formGroup = input.parents('.form-group');
+
+
+                if (val.length === 0) {
+                    formGroup.addClass('has-warning').removeClass('has-success');
+                    input.addClass('form-control-warning').removeClass('form-control-success');
+                    valid = false;
+                } else {
+                    formGroup.addClass('has-success').removeClass('has-warning');
+                    input.addClass('form-control-success').removeClass('form-control-warning');
+                }
+            });
+
+            return valid;
+        },
+
+
+    }
+
+    app.initialize();
+
+}());
+
+////////////////// validation test__form
+
+(function () {
+
+    var app = {
+
+        initialize: function () {
+            this.setUpListeners();
+        },
+
+        setUpListeners: function () {
+            $('#popupform-test').on('submit', app.submitForm);
+        },
+
+        submitForm: function (e) {
+            e.preventDefault();
+
+            var form = $(this),
+                submitBtn = form.find('button[type="submit"]');
+
+            if (app.validateForm(form) === false) return false;
+
+            submitBtn.attr('disabled', 'disabled');
+
+            console.log('Form__post!');
+            var str = form.serialize();
+
+            $.ajax({
+                url: '../contact-form/contact_process.php',
+                type: 'POST',
+                data: str
+            })
+                .done(function (msg) {
+                    if (msg === "OK") {
+                        var result = "<div = 'bg-success'>Спасибо за заявку! Мы вам перезвоним!</div>"
+                        form.html(result);
+                    } else {
+                        form.html(msg);
+                    }
+                })
+                .always(function () {
+                    submitBtn.removeAttr('disabled');
+                });
+
+        },
+
+        validateForm: function (form) {
+            var inputs = form.find('input'),
+                valid = true;
+
+
+            $.each(inputs, function (index, val) {
+                var input = $(val),
+                    val = input.val(),
+                    formGroup = input.parents('.form-group');
+
+
+                if (val.length === 0) {
+                    formGroup.addClass('has-warning').removeClass('has-success');
+                    input.addClass('form-control-warning').removeClass('form-control-success');
+                    valid = false;
+                } else {
+                    formGroup.addClass('has-success').removeClass('has-warning');
+                    input.addClass('form-control-success').removeClass('form-control-warning');
+                }
+            });
+
+            return valid;
+        },
+
+
+    }
+
+    app.initialize();
+
+}());
+
+////////////////// validation order__form
+
+(function () {
+
+    var app = {
+
+        initialize: function () {
+            this.setUpListeners();
+        },
+
+        setUpListeners: function () {
+            $('#popupform-order').on('submit', app.submitForm);
+        },
+
+        submitForm: function (e) {
+            e.preventDefault();
+
+            var form = $(this),
+                submitBtn = form.find('button[type="submit"]');
+
+            if (app.validateForm(form) === false) return false;
+
+            submitBtn.attr('disabled', 'disabled');
+
+            console.log('Form__post!');
+            var str = form.serialize();
+
+            $.ajax({
+                url: '../contact-form/contact_process.php',
                 type: 'POST',
                 data: str
             })
@@ -293,3 +448,31 @@ $(document).ready(function () {
 $('main').on('click', function (e) {
     $('.navbar-collapse').removeClass('show');
 });
+
+/////////////////////// slow popup
+
+$('.l__testbtn').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-test').fadeIn(800);
+});
+
+$('.tariff__button').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
+});
+
+$('.overlay').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+})
+
+$('.close__popup').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+
+})
+

@@ -17,23 +17,60 @@ function ValidateEmail($value){
 $post = (!empty($_POST)) ? true : false;
 
 if($post){
-
+    $url = stripslashes($_SERVER['HTTP_REFERER']);
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
+    $form = stripslashes($_POST['form_name']);
     $subject = 'Заявка';
     $error = '';
-    $message = '
+    if($form  = 3) {
+
+        $message = '
 			<html>
 					<head>
-							<title>Заявка</title>
+							<title>Заявка с футера</title>
 					</head>
 					<body>
-							<p>Имя: '.$name.'</p>
-							<p>Телефон : '.$phone.'</p>	
-							<p>Email : '.$email.'</p>
+					        <p>Заявка с футера</p>
+							<p>Имя: ' . $name . '</p>
+							<p>Телефон : ' . $phone . '</p>	
+							<p>Email : ' . $email . '</p>
 					</body>
 			</html>';
+    }
+
+    if($form  = 1) {
+
+        $message = '
+			<html>
+					<head>
+							<title>Заявка на покупку</title>
+					</head>
+					<body>  
+					        <p>Заявка на покупку</p>
+							<p>Имя: ' . $name . '</p>
+							<p>Телефон : ' . $phone . '</p>	
+							<p>Email : ' . $email . '</p>
+					</body>
+			</html>';
+    }
+
+    if($form  = 2) {
+
+        $message = '
+			<html>
+					<head>
+							<title>Заявка на тестирование</title>
+					</head>
+					<body>
+					        <p>Заявка на тестирование</p>
+							<p>Имя: ' . $name . '</p>
+							<p>Телефон : ' . $phone . '</p>	
+							<p>Email : ' . $email . '</p>
+					</body>
+			</html>';
+    }
 
     if (!ValidateEmail($email)){
         $error = 'Email введен неправильно!';
@@ -47,7 +84,7 @@ if($post){
             ."X-Mailer: PHP/" . phpversion());
 
         if($mail){
-            echo 'OK';
+            echo $form;
         }
     }else{
         echo '<div class="has-danger">'.$error.'</div>';
@@ -55,3 +92,6 @@ if($post){
 
 }
 ?>
+
+
+

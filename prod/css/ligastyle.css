@@ -1171,7 +1171,8 @@ html, body {
   padding: 30px 0 0 0; }
 
 .article__title-lzperiod {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  color: black; }
 
 .periodicals__section {
   display: -webkit-box;

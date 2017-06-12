@@ -12,6 +12,61 @@
 
 </head>
 <body>
+<div class="overlay"></div>
+<div class="popup__form-order">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на подключение сервиса</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш менеджер свяжется с Вами
+    </div>
+    <form id="popupform-order" class="popupform-order">
+        <input type="hidden" name="form_name" value="1">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
+<div class="popup__form-test">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на тестирование сервиса</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш менеджер свяжется с Вами
+    </div>
+    <form id="popupform-test" class="popupform-test">
+        <input type="hidden" name="form_name" value="2">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png" alt="">
 </div>
@@ -256,6 +311,14 @@
                                 <p>нужен только интернет и компьютер</p>
                             </div>
                         </div>
+
+                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
+                            <div class="slide slide5">
+                                <h3>Поддержка сертификатов </h3>
+
+                                <p>разных АЦСК!</p>
+                            </div>
+                        </div>
                         <div class="bp-hs_inner__item" data-transform="scale" data-origin="bottom-left">
                             <div class="slide slide2 ">
                                 <h3>15-летний опыт работы в отрасли </h3>
@@ -331,6 +394,8 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="container-fluid">
             <div class="row">
                 <div class="lfuture__block col-md-8 col-sm-12 offset-md-2">
                     <h3 class="future__title">Электронный документооборот</h3>
@@ -346,12 +411,15 @@
                     </ul>
                 </div>
             </div>
+            </div>
+            <div class="container-fluid">
             <div class="row">
                 <div class="lfuture__block col-md-8 offset-md-4 col-sm-12">
                     <h3 class="future__title">Интуитивный веб-интерфейс</h3>
                     <div class="future__img"><img src="" alt=""></div>
             </div>
         </div>
+            </div>
             <div class="features__descr">Для предприятий и ФЛП на любой системе налогообложения. Сервис особенно удобен
                 для ФЛП и юридических лиц - плательщиков единого налога.
             </div>
@@ -362,7 +430,7 @@
 
     <article class="l__tariffs" id="tariffs">
         <h2 class="article__title article__title-brown">Тарифы</h2>
-        <ul class="tariffs__list animatedParent" data-sequence='1500'>
+        <ul class="tariffs__list animatedParent animateOnce" data-sequence='1500'>
             <li class="tariff__item animated flipInX" data-id='1'>
                 <h3 class="tariff__title">Физическое-лицо-<br>предприниматель </h3>
 

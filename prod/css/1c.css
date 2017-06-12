@@ -1198,7 +1198,7 @@ textarea {
 
 .l__feature-item {
   outline: 1px solid #d4d705;
-  padding: 25px 3%;
+  padding: 15px 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1235,7 +1235,7 @@ textarea {
   .article__title-white {
     color: #fff;
     font-weight: 400;
-    font-size: 5vw; }
+    font-size: 4vw; }
   @media screen and (max-width: 480px) {
     .article__title {
       font-size: 8vw; } }
