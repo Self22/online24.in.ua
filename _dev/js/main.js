@@ -71,8 +71,9 @@ $('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
 $('.vchasno__fotoblock').parallax({imageSrc: '../img/vchasno-fotoblock.jpg'});
 $('.sota__fotoblock').parallax({imageSrc: '../img/sota-fotoblock.jpg'});
 $('.sd__fotoblock').parallax({imageSrc: '../img/sd-fotoblock.jpg'});
+$('.oa__header-content').parallax({imageSrc: '../img/oa-header.jpg'});
+$('.oa__fotoblock').parallax({imageSrc: '../img/telephons_bg-2.jpg'});
 
-// $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
 //sticky header
 
