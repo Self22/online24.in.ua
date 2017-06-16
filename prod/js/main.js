@@ -426,7 +426,7 @@ $(document).ready(function () {
 /////////////////////////// Nav Landings: soft scroll
 
 $('#nav-main').singlePageNav(
-    {offset: 100, speed: 1000, threshold: 150}
+    {offset: 130, speed: 1000, threshold: 150}
 );
 
 ///////////////////////// Udalenniy Office - Ticker
@@ -478,5 +478,56 @@ $('.close__popup').on('click', function (e) {
 
 })
 
+///// accordeon oa
+$(document).ready(function () {
+
+    //���������
+    (function () {
+
+        var flag = true;
+
+        $('.channel-acco__trigger-link').on('click', function (e) {
+            e.preventDefault();
+
+            var
+                $this = $(this),
+                container = $this.closest('.channels__list'),
+                item = $this.closest('.channel__item'),
+                currentContent = item.find('.channel-acco__descr'),
+                accIcon = item.find('.acc__icon-oa'),
+                duration = 500;
+
+            if (flag) {
+                flag = false;
+
+
+                if (!item.hasClass('active__oa')) {
+                    item.addClass('active__oa')
+                        .find('.acc__icon-oa')
+                        .addClass('transparent')
+                        .siblings()
+                        .removeClass('active__oa')
+                        .find('.channel-acco__descr')
+                        .slideUp(duration);
+
+                    currentContent.slideDown(duration, function () {
+                        flag = true
+                    });
+                }
+                else {
+                    item.removeClass('active__oa')
+                    .find('.acc__icon-oa')
+                    .removeClass('transparent');
+                    currentContent.slideUp(function () {
+                        flag = true
+                    });
+                }
+
+            }
+        })
+    })();
+
+
+});
 
 //# sourceMappingURL=main.js.map

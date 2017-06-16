@@ -704,7 +704,7 @@
 }
 
 .l__tariffs {
-  padding: 40px 3vw 0;
+  padding: 40px 3vw 2vw;
   background: rgb(227, 231, 249);
 }
 
@@ -797,75 +797,218 @@
   font-weight: 400 !important;
 }
 
-/* Back Pulse */
-@-webkit-keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
+.l__channels {
+  padding: 40px 3vw 0;
+  background: rgb(227, 231, 249);
+}
+
+.channels__acc {
+
+}
+
+.channels__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 0 10vw;
+  margin-bottom: 5vw;
+
+}
+
+.channel__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &-1 {
+    background: #F4F5F3;
+  }
+
+  &-2 {
+    background: #D1F7AB;
+  }
+
+  &-3 {
+    background: rgb(193, 208, 218);
+  }
+
+  &-4 {
+    background: #efea99;
+  }
+
+  &-5 {
+    background: rgb(189, 215, 248);
+  }
+
+  &:hover .channel-acco__trigger-icon {
+    padding: 2vw;
+  }
+
+  &:hover svg {
+    width: 6vw;
+  }
+
+
+}
+
+.channel-acco__trigger {
+
+}
+
+.acc__icon-oa {
+  transition: all 0.5s;
+  padding: 0 2vw;
+  font-size: 3vw;
+}
+
+.channel-acco__trigger-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.channel-acco__trigger-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vw;
+
+}
+
+.channel__name {
+
+  font-weight: 600;
+  font-size: 2.1vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  color: #023756;
+}
+
+.channel-acco__trigger-icon {
+  transition: all 0.5s;
+  padding: 2.5vw;
+  margin-left: auto;
+
+  & svg {
+    transition: all 0.5s;
+    width: 5vw;
+    fill: rgba(0, 0, 0, 0.8);
   }
 }
 
-@keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba(32, 152, 209, 0.75);
-  }
+.channel-acco__descr {
+  display: none;
+  background: #e3e7f9;
+  padding: 2vw;
+  font-size: 1.7vw;
 }
 
-.hvr-back-pulse {
-  display: inline-block;
+.transparent {
+  opacity: 0;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: flex;
+  flex-direction: column;
   vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
+  position: relative;
   overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
 }
 
-.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
-  -webkit-animation-name: hvr-back-pulse;
-  animation-name: hvr-back-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-color: rgb(164, 131, 26);
-  background-color: rgb(164, 131, 26);
-  color: white;
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-.sota__support {
-  padding: 30px 5% 5vh 5%;
-  background: rgb(64, 49, 36);
-
-  @include phones {
-    padding: 1px 4% 5vh 3%;
-  }
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
 
-.support__descr {
-  color: white;
-  font-size: 1.8vw;
+.channel__decsr {
   text-align: center;
+  font-size: 2.4vw;
+  padding: 4vw;
+  margin-bottom: 0;
+}
 
-  @include phones {
-    font-size: 5vw;
+.section__title {
+  color: black;
+  margin-bottom: 3vw;
+  font-weight: 300;
+  text-align: center;
+  font-size: 3.1vw;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.numbers__descr {
+  padding: 0 10vw;
+  font-size: 2vw;
+}
+
+.aboutus {
+  padding: 3vw 5vw;
+}
+
+.concurent__item {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+
+}
+
+.concurent__item-1 {
+  color: #686950;
+}
+
+.concurent__item-2 {
+  color: #B64541;
+}
+
+.concurent__item-3 {
+  color: #5FB641;
+}
+
+.concurent__item-4 {
+  color: #65289C;
+}
+
+.aboutus__descr {
+  margin-top: 2vw;
+
+  & p {
+    text-align: center;
+    font-weight: 600;
+    margin: 2vw 1vw;
+    font-size: 1.7vw;
+  }
+
+  & li {
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
   }
 }
 
-.support__list {
-  margin-top: 3vh;
-
-}
-
-.support__item {
-  color: white;
-  font-size: 1.8vw;
-
-  @include phones {
-    font-size: 5vw;
-  }
+.aboutus__title {
+  font-size: 1.7vw;
+  border-top: 1px solid black;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 2vw;
 }
