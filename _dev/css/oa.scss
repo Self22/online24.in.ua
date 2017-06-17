@@ -581,7 +581,7 @@
   font-weight: 400;
 
   & a {
-    color: #c3ccd4;
+    color: rgb(34, 50, 243);
     text-decoration: underline;
   }
 
@@ -706,11 +706,14 @@
 .l__tariffs {
   padding: 40px 3vw 2vw;
   background: rgb(227, 231, 249);
+
 }
 
 
 .tariff__item {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 3vw;
 
 }
@@ -760,9 +763,10 @@
 
 }
 .tariff__price {
+  margin-top: auto;
   text-align: center;
   font-size: 2.9vw;
-  margin: 0 0 3vw;
+  margin-bottom: 2vw;
 
   &-1 {
     color: #3F51B5;;
@@ -777,7 +781,7 @@
   }
 }
 
-.order__button {
+.tariff__button {
   border: none;
   display: block;
   background: transparent;
@@ -840,12 +844,9 @@
     background: rgb(189, 215, 248);
   }
 
-  &:hover .channel-acco__trigger-icon {
-    padding: 2vw;
-  }
 
   &:hover svg {
-    width: 6vw;
+    fill: black;
   }
 
 
@@ -891,8 +892,13 @@
   & svg {
     transition: all 0.5s;
     width: 5vw;
-    fill: rgba(0, 0, 0, 0.8);
+    fill: rgba(0, 0, 0, 0.7);
   }
+}
+
+.tariff__descr {
+  padding: 6vw 8vw 0px;
+  font-size: 2vw;
 }
 
 .channel-acco__descr {
@@ -996,19 +1002,62 @@
     text-align: center;
     font-weight: 600;
     margin: 2vw 1vw;
-    font-size: 1.7vw;
+    font-size: 2.1vw;
   }
 
   & li {
-    font-size: 1.6vw;
+    font-size: 2vw;
     margin-bottom: 1vw;
   }
 }
 
 .aboutus__title {
-  font-size: 1.7vw;
+  font-size: 2.1vw;
   border-top: 1px solid black;
   text-align: center;
   font-weight: 600;
   padding-top: 2vw;
+}
+
+.oc__item {
+  background: #FAD6CB;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vw 2vw;
+  margin-top: 3vw;
+
+}
+
+.oc__title {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 2.7vw;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+
+}
+
+.oc__price {
+  text-align: center;
+  font-size: 2.7vw;
+  color: #3f51b5;
+  white-space: nowrap;
+  margin-right: 3vw;
+}
+
+.oc__descr {
+  font-size: 1.5vw;
+  padding: 0 1vw;
+  font-weight: 300;
+}
+
+.oc__img {
+
+  width: 10vw;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
 }

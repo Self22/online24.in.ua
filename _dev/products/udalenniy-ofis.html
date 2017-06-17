@@ -13,6 +13,63 @@
 
 </head>
 <body>
+<div class="overlay"></div>
+<div class="popup__form-order">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на подключение сервиса</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш менеджер свяжется с Вами
+    </div>
+    <form id="popupform-order" class="popupform-order">
+        <input type="hidden" name="form_type" value="order">
+        <input type="hidden" name="product" value="udalenniy_office">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
+<div class="popup__form-test">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на консультацию по сервису</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш специалист свяжется с Вами
+    </div>
+    <form id="popupform-test" class="popupform-test">
+        <input type="hidden" name="form_type" value="test">
+        <input type="hidden" name="product" value="udalenniy_office">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png" alt="">
 </div>
@@ -82,8 +139,8 @@
 </g>
 </svg>
         </a>
-        <a href="http://www.interbuh.com.ua/" class="partnerlogosticky" rel="nofollow">
-            <img src="../img/logo_ib-ru.png" alt="">
+        <a href="https://firstoffice.com.ua" class="partnerlogosticky" rel="nofollow">
+            <img src="../img/fo_logo.png" alt="">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -132,8 +189,8 @@
         </div>
     </nav>
     <nav class="lmain__menu hidden-sm-down">
-        <a href="http://www.interbuh.com.ua/" class="partnerlogosticky" rel="nofollow">
-            Логотип
+        <a href="https://firstoffice.com.ua" class="partnerlogosticky" rel="nofollow">
+            <img src="../img/fo_logo.png" alt="">
         </a>
         <a href="../../index.html" class="logosticky__o24">
             <div class="logomain">
@@ -232,7 +289,7 @@
     <div class="urs__header-content" data-positionY="500">
         <div class="row">
             <div class="urs__slogan col-md-5 col-sm-12 animatedParent" data-sequence='500'>
-                <h1 class="partner__brand">Удалённый <br> офис</h1>
+                <h1 class="partner__brand">Удалённый <br> офис от <br> <img src="../img/fo_logoblack.png" alt=""></h1>
 
                 <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Новая свобода, <br> новая безопасность
                 </h2>
@@ -292,7 +349,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Подать заявку на тест
+            Попробовать бесплатно (тест 14 дней)
         </a>
     </article>
     <article class="l_features" id="about">
@@ -363,7 +420,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Подать заявку на тест
+            Попробовать бесплатно (тест 14 дней)
         </a>
     </article>
 
@@ -500,7 +557,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Попробовать бесплатно (тест 24 часа)
+            Попробовать бесплатно (тест 14 дней)
         </a>
     </article>
     <div class="urs__fotoblock"></div>
@@ -558,73 +615,62 @@
         <h2 class="article__title article__title-tariff">Тарифы</h2>
         <ul class="tariffs__list">
             <li class="tariff__item">
-                <h3 class="tariff__title tariff__title-start">Стартовый</h3>
+                <h3 class="tariff__title tariff__title-start">Минимальный</h3>
 
-                <div class="tariff__descr">Для малого бизнеса (с 1С работают до 5-7 человек) <br>
-                    Базы: 10 GB <br>
-                    Backup: хранение 2 нед. <br>
-                    Техническая поддержка: 24/7
+                <div class="tariff__descr">Комфортная работа <br> до 2-х пользователей <br> 2ГБ RAM <br> 20ГБ для
+                    защищенного хранения документов и данных с обеспечением их резервного копирования
                 </div>
-                <div class="tariff__price tariff__price-start">от 620 грн\мес</div>
+                <div class="tariff__price tariff__price-start">600 грн\мес</div>
                 <button class="tariff__button hvr-pulse-grow ">Отправить заявку</button>
             </li>
             <li class="tariff__item">
-                <h3 class="tariff__title tariff__title-prime">Прайм</h3>
+                <h3 class="tariff__title tariff__title-prime">Оптимальный</h3>
 
-                <div class="tariff__descr">Для малого бизнеса (с 1С работают до 5-7 человек) <br>
-                    Базы: 10 GB <br>
-                    Backup: хранение 2 нед. <br>
-                    Техническая поддержка: 24/7
+                <div class="tariff__descr">Небольшой офис до 5 чел (оптимально 3 чел)
+                    <br>4ГБ RAM <br> 50ГБ для защищенного хранения документов и данных с обеспечением их резервного
+                    копирования
                 </div>
-                <div class="tariff__price tariff__price-prime">от 620 грн\мес</div>
+                <div class="tariff__price tariff__price-prime">1100 грн\мес</div>
                 <button class="tariff__button hvr-pulse-grow ">Отправить заявку</button>
             </li>
             <li class="tariff__item">
-                <h3 class="tariff__title  tariff__title-prem">Премиум</h3>
+                <h3 class="tariff__title  tariff__title-prem">Свободный</h3>
 
-                <div class="tariff__descr">Для малого бизнеса (с 1С работают до 5-7 человек) <br>
-                    Базы: 10 GB <br>
-                    Backup: хранение 2 нед. <br>
-                    Техническая поддержка: 24/7
+                <div class="tariff__descr">Офис до 20 чел (оптимально 10 чел) <br> 16ГБ RAM
+                    <br> 200ГБ для защищенного хранения документов и данных с обеспечением их резервного копирования
                 </div>
-                <div class="tariff__price tariff__price-prem">от 620 грн\мес</div>
+                <div class="tariff__price tariff__price-prem">3500 грн\мес</div>
+                <button class="tariff__button hvr-pulse-grow ">Отправить заявку</button>
+            </li>
+            <li class="tariff__item">
+                <h3 class="tariff__title  tariff__title-ans">По запросу</h3>
+
+                <div class="tariff__descr">Консультирование и выделение клиенту оптимальных ресурсов для выполнения
+                    всего круга его задач по работе с офисным ПО и данными
+                </div>
+                <div class="tariff__price tariff__price-prem">Договорная</div>
                 <button class="tariff__button hvr-pulse-grow ">Отправить заявку</button>
             </li>
         </ul>
-        <div class="service__tar">
-            <h4 class="service__tar-title">
-                Дополнительные услуги:
-            </h4>
-            <div class="service__tar-item"><strong>Переключение в режим кластера</strong> : переносит на кластер всю
-                рабочую среду, что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в
-                сутки (хранятся две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-            <div class="service__tar-item"><strong>Дополнительные снимки системы</strong> :переносит на кластер всю
-                рабочую среду, что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в
-                сутки (хранятся две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-            <div class="service__tar-item"><strong>Дополнительный диск</strong>: переносит на кластер всю рабочую среду,
-                что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в сутки (хранятся
-                две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-            <div class="service__tar-item"><strong>Облачное хранилище</strong>: переносит на кластер всю рабочую среду,
-                что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в сутки (хранятся
-                две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-            <div class="service__tar-item"><strong>Аренда программного обеспечения</strong>: переносит на кластер всю
-                рабочую среду, что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в
-                сутки (хранятся две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-            <div class="service__tar-item"><strong>Учёт рабочего времени</strong>: переносит на кластер всю рабочую
-                среду, что означает более быстрые дисковые накопители, снятие снимков системы (снапшотов) раз в сутки
-                (хранятся две последние копии) и более высокую гарантированную доступность (99,9%)
-            </div>
-        </div>
+
     </article>
     <section class="testing">
         <h2 class="article__title article__title-test">Тестирование</h2>
-        <p class="test__descr">Условия тестирования</p>
+        <p class="test__descr">Для ознакомления с особенностями работы удаленного офиса в облаке, Вам будет предоставлен
+            ярлык доступа к настроенному удаленному рабочему месту с примерами установленных офисных программ. Параметры
+            доступа к тестовой конфигурации действуют 2 недели.
+            Если Вы приняли решение подписать договор и стать нашим клиентом, мы предоставим Вам первую неделю рабочего
+            режима бесплатно, для окончательного тестирования всех нюансов.
+        </p>
     </section>
+    <article class="l__testcont container_btn">
+        <a href="" class="btn_s btn-1 l__testbtn">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Попробовать бесплатно (тест 14 дней)
+        </a>
+    </article>
 
 </main>
 

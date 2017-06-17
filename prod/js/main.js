@@ -516,8 +516,8 @@ $(document).ready(function () {
                 }
                 else {
                     item.removeClass('active__oa')
-                    .find('.acc__icon-oa')
-                    .removeClass('transparent');
+                        .find('.acc__icon-oa')
+                        .removeClass('transparent');
                     currentContent.slideUp(function () {
                         flag = true
                     });

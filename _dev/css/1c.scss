@@ -45,21 +45,19 @@
 .lnav__fixed {
   position: fixed;
   background: rgb(52, 69, 89);
-  height: 100px;
+  height: 130px;
   z-index: 5;
 }
 
 .logosticky__o24 {
-  margin-right: 10%;
+  margin-right: 6%;
   margin-left: 2%;
 }
 
 .partnerlogosticky {
-  max-width: 165px;
+  min-width: 5vw;
+  max-width: 180px;
 
-  @include desktop {
-    max-width: 120px;
-  }
 
   & img {
     max-width: 100%;
@@ -94,9 +92,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 30px;
-
-
-
+  margin-left: 2vw;
 }
 
 .l__mainmenu-tel {
@@ -699,7 +695,7 @@
 }
 
 .l__tariffs {
-  padding: 30px 4% 50px 4%;
+  padding: 30px 1% 50px 1%;
   background: rgb(0, 74, 90);
 }
 
@@ -712,30 +708,39 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-flow: row;
+  flex-flow: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-bottom: 30px;
+
+  @include tablets {
+    flex-flow: row wrap;
+  }
 
 }
 
 .tariff__item {
-  flex: 1 1 190px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 20%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   min-height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 10px;
-  padding: 20px 20px 10px;
+  padding: 20px 10px 10px;
   background: rgb(209, 218, 3);
   border-radius: 15px;
   margin-top: 10px;
   transition: all 0.5s;
+  margin: 0 0.1vw;
+
+  @include tablets {
+    width: 100%;
+  }
 
   &:hover {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px;
@@ -744,7 +749,8 @@
 }
 
 .tariff__title {
-  font-size: 2.5vw;
+  height: 8vw;
+  font-size: 1.5vw;
   font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 1px;
   display: flex;
@@ -752,11 +758,7 @@
   align-items: center;
   padding: 1.6vw;
   text-align: center;
-  background: #0486a6; /* Old browsers */
-  background: -moz-linear-gradient(top, #0486a6 0%, #93a701 100%, #207cca 100%, #40573e 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #0486a6 0%, #93a701 100%, #207cca 100%, #40573e 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #0486a6 0%, #93a701 100%, #207cca 100%, #40573e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0486a6', endColorstr='#40573e', GradientType=0); /* IE6-9 */
+  background: rgb(3, 112, 140);
   color: white;
   font-weight: 400;
   letter-spacing: 0px;
@@ -771,9 +773,10 @@
 .tariff__descr {
   margin-top: 20px;
   margin-bottom: auto;
-  color: white;
-  font-size: 2vw;
+  color: black;
+  font-size: 1.5vw;
   padding: 10px 4%;
+  text-align: center;
 
   @include phones {
     font-size: 6vw;
@@ -814,6 +817,12 @@
   }
   &-prem {
     border-color: rgb(2, 70, 89);
+  }
+  &-market {
+    border-color: #1A86E0;
+  }
+  &-ask {
+    border-color: #A71813;
   }
 }
 
@@ -924,4 +933,10 @@
   @include phones {
     font-size: 4.7vw;
   }
+}
+
+.tariff__feature {
+  color: #fff;
+  font-size: 1.6vw;
+  padding: 0 4%;
 }

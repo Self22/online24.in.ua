@@ -195,7 +195,7 @@
 
 .urs__header {
   position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   background-size: cover;
 
 }
@@ -443,6 +443,7 @@
   padding-bottom: 50px;
   padding-left: 40px;
 
+
   @include tablets {
     padding-bottom: 0;
     padding-left: 0;
@@ -459,12 +460,17 @@
     text-align: left;
     font-family: "Raleway", Arial, sans-serif;
     border-bottom: 2px solid white;
-
+    margin-left: 6vw;
     padding-bottom: 15px;
 
     & img {
-      width: 50%;
+      width: 70%;
       height: auto;
+
+      @include tablets {
+        width: 60%;
+      }
+
     }
 
     @include tablets {
@@ -486,13 +492,11 @@
 
     @include desktop {
       margin-top: 20px;
-      font-size: 7.5vw;
+      font-size: 3vw;
     }
 
-    @include phones {
-      width: 100%;
-      text-align: center;
-
+    @include tablets {
+      display: none;
     }
   }
 
@@ -830,7 +834,7 @@ i {
 }
 
 .l__tariffs {
-  padding: 30px 4% 50px 4%;
+  padding: 30px 1% 50px 1%;
   background: rgb(231, 237, 244);
 }
 
@@ -843,30 +847,37 @@ i {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-flow: row;
+  flex-flow: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
-  align-items: baseline;
+  align-items: stretch;
+
+  @include tablets {
+    flex-flow: row wrap;
+  }
 
 }
 
 .tariff__item {
-  flex: 1 1 190px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 25%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   min-height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 10px;
   padding: 20px 20px 10px;
   background: rgb(0, 56, 88);
   border-radius: 15px;
   margin-top: 10px;
   transition: all 0.5s;
+
+  @include tablets {
+    width: 100%;
+  }
 
   &:hover {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px;
@@ -910,13 +921,17 @@ i {
     background: linear-gradient(to bottom, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8193a8', endColorstr='#bdc161', GradientType=0); /* IE6-9 */
   }
+
+  &-ans {
+    background: #e7edf4;
+  }
 }
 
 .tariff__descr {
   margin-top: 20px;
   margin-bottom: auto;
   color: white;
-  font-size: 2vw;
+  font-size: 1.6vw;
   padding: 10px 4%;
 
   @include tablets {
@@ -939,7 +954,7 @@ i {
 
 .tariff__price {
   font-size: 3vw;
-  color: rgb(254, 134, 1);
+  color: #e7edf4;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;

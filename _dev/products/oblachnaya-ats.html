@@ -15,14 +15,14 @@
 <div class="overlay"></div>
 <div class="popup__form-order">
     <span class="close__popup">&times</span>
-    <div class="popup__title">Заявка на подключение сервиса</div>
+    <div class="popup__title">Заявка на подключение АТС</div>
 
     <div class="popup__text">Оставьте свои контактные данные <br>
         и наш менеджер свяжется с Вами
     </div>
     <form id="popupform-order" class="popupform-order">
         <input type="hidden" name="form_type" value="order">
-        <input type="hidden" name="product" value="sota">
+        <input type="hidden" name="product" value="oblachnaya_ats">
         <div class="popupform__order-name form-group">
             <label for="name"></label>
             <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
@@ -50,7 +50,7 @@
     </div>
     <form id="popupform-test" class="popupform-test">
         <input type="hidden" name="form_type" value="test">
-        <input type="hidden" name="product" value="sota">
+        <input type="hidden" name="product" value="oblachnaya_ats">
         <div class="popupform__order-name form-group">
             <label for="name"></label>
             <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
@@ -358,7 +358,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Заявка на консультацию по облачной АТС
+            Заявка на обратный звонок
         </a>
     </article>
     <article class="aboutus">
@@ -379,8 +379,7 @@
             </div>
         </div>
         <div class="aboutus__descr">
-            <h3 class="aboutus__title">Наша цель - не большее количество клиентов, а лучшее качество сервиса, который мы
-                предоставляем.</h3>
+            <h3 class="aboutus__title">Наша цель - не большее количество клиентов, а лучшее качество сервиса.</h3>
             <p>Наши особенности:</p>
             <ul>
                 <li>Персональный менеджер, который лично сопровождает Ваше обслуживание</li>
@@ -584,7 +583,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Заявка на консультацию по облачной АТС
+            Заявка на обратный звонок
         </a>
     </article>
     <article class="oa__fotoblock"></article>
@@ -593,55 +592,61 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="tariff__item tariff__item-1 col-md-4 col-sm-12">
-                    <h2 class="tariff__title">Базовый</h2>
+                    <h2 class="tariff__title">Минимальный</h2>
                     <ul class="tariff__features">
-                        <li class="tafiff__items">Внутренние номера</li>
-                        <li class="tafiff__items">Внешние номера</li>
-                        <li class="tafiff__items">Входящие каналы</li>
-                        <li class="tafiff__items">Исходящие каналы</li>
+                        <li class="tafiff__items">Внутренние номера - 5</li>
+                        <li class="tafiff__items">Внешние номера - 3</li>
+                        <li class="tafiff__items">Входящие каналы - 3</li>
+                        <li class="tafiff__items">Исходящие каналы - 3</li>
                         <li class="tafiff__items">Статистика звонков</li>
-                        <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
-                        <li class="tafiff__items">Интерактивное голосовое меню (IVR)</li>
-                        <li class="tafiff__items">Интеграция с 1С в облаке</li>
                     </ul>
-                    <div class="tariff__price tariff__price-1">800 грн\мес</div>
-                    <button class="order__button hvr-pulse-grow ">Отправить заявку</button>
+                    <div class="tariff__price tariff__price-1">600 грн\мес</div>
+                    <button class="tariff__button hvr-pulse-grow tariff__button">Отправить заявку</button>
                 </div>
                 <div class="tariff__item tariff__item-2 col-md-4 col-sm-12">
-                    <h2 class="tariff__title">Базовый</h2>
+                    <h2 class="tariff__title">Оптимальный</h2>
                     <ul class="tariff__features">
-                        <li class="tafiff__items">Внутренние номера</li>
-                        <li class="tafiff__items">Внешние номера</li>
-                        <li class="tafiff__items">Входящие каналы</li>
-                        <li class="tafiff__items">Исходящие каналы</li>
+                        <li class="tafiff__items">Внутренние номера - 10</li>
+                        <li class="tafiff__items">Внешние номера - 5</li>
+                        <li class="tafiff__items">Входящие каналы - 5</li>
+                        <li class="tafiff__items">Исходящие каналы - 5</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
                         <li class="tafiff__items">Интерактивное голосовое меню (IVR)</li>
-                        <li class="tafiff__items">Интеграция с 1С в облаке</li>
                     </ul>
-                    <div class="tariff__price tariff__price-2">800 грн\мес</div>
-                    <button class="order__button  hvr-pulse-grow ">Отправить заявку</button>
+                    <div class="tariff__price tariff__price-2">700 грн\мес</div>
+                    <button class="tariff__button  hvr-pulse-grow ">Отправить заявку</button>
                 </div>
                 <div class="tariff__item tariff__item-3 col-md-4 col-sm-12">
-                    <h2 class="tariff__title">Базовый</h2>
+                    <h2 class="tariff__title">Колл-центр</h2>
                     <ul class="tariff__features">
-                        <li class="tafiff__items">Внутренние номера</li>
-                        <li class="tafiff__items">Внешние номера</li>
-                        <li class="tafiff__items">Входящие каналы</li>
-                        <li class="tafiff__items">Исходящие каналы</li>
+                        <li class="tafiff__items">Внутренние номера - 50</li>
+                        <li class="tafiff__items">Внешние номера - 10</li>
+                        <li class="tafiff__items">Входящие каналы - 25</li>
+                        <li class="tafiff__items">Исходящие каналы - 25</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
                         <li class="tafiff__items">Интерактивное голосовое меню (IVR)</li>
-                        <li class="tafiff__items">Интеграция с 1С в облаке</li>
+
                     </ul>
-                    <div class="tariff__price tariff__price-3">800 грн\мес</div>
-                    <button class="order__button hvr-pulse-grow ">Отправить заявку</button>
+                    <div class="tariff__price tariff__price-3">1200 грн\мес</div>
+                    <button class="tariff__button hvr-pulse-grow ">Отправить заявку</button>
+                </div>
+                <div class="oc__item col-md-10 col-sm-12 offset-md-1">
+                    <div class="oc__title">ИНТЕГРАЦИЯ С 1С</div>
+                    <span class="oc__descr"> дополнительная стоимость</span>
+                    <span class="oc__price">900 грн\мес</span>
+                    <div class="oc__img">
+                        <img src="../img/1cbrand.png" alt="" class="oc__img">
+                    </div>
                 </div>
             </div>
         </div>
+        <p class="tariff__descr"> * Конфигурация виртуальной АТС может быть изменена в любую сторону по желанию
+            заказчика в индивидуальном порядке. </p>
     </article>
     <article class="l__channels">
         <h3 class="section__title">КАНАЛЫ</h3>
@@ -910,7 +915,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Заявка на консультацию по облачной АТС
+            Заявка на обратный звонок
         </a>
     </article>
 
