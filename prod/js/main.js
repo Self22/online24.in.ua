@@ -73,7 +73,7 @@ $('.sota__fotoblock').parallax({imageSrc: '../img/sota-fotoblock.jpg'});
 $('.sd__fotoblock').parallax({imageSrc: '../img/sd-fotoblock.jpg'});
 $('.oa__header-content').parallax({imageSrc: '../img/oa-header.jpg'});
 $('.oa__fotoblock').parallax({imageSrc: '../img/telephons_bg-2.jpg'});
-
+$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock.jpg'});
 
 //sticky header
 

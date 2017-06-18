@@ -10,7 +10,7 @@
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 30px;
+  margin-bottom: 3vw;
 
 }
 
@@ -32,16 +32,17 @@
 }
 
 .nav__sidebar-title {
-  //text-shadow: -1px 1px 5px rgba(0,0,0,0.3);
+  width: 100%;
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1.5vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.5vw 2.1vw 1vw 1.5vw;
   color: #002942 !important;
   font-size: 1.7vw;
-  font-weight: 500;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-weight: 300;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  text-align: right;
 
   @include tablets {
     font-size: 20px;
@@ -57,5 +58,11 @@
   color: black;
   margin-bottom: 7px;
   margin-top: 7px;
+}
+
+.sidebar__law-item {
+  text-align: right;
+  padding-right: 2vw;
+  padding-top: 1vw;
 }
 

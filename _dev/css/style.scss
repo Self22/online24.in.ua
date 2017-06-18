@@ -52,6 +52,7 @@ html, body {
   justify-content: center;
   margin-top: 25px;
   transition: .5s ease-in-out;
+  padding-right: 4vw;
 
   & .stickyheader__logo {
     display: none;
@@ -168,17 +169,14 @@ html, body {
     text-decoration: none;
     color: black;
     font-weight: 400;
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
   }
 
   &-active {
-    background: rgba(112, 112, 163, 0.6);
-    s
+    background: rgba(251, 251, 252, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 
-    & a {
-      color: white;
-    }
   }
 }
 
@@ -240,9 +238,7 @@ html, body {
 
     }
 
-    & .logo__block-slogan {
-      margin-top: 11%;
-    }
+
   }
   }
 
@@ -262,6 +258,10 @@ html, body {
   width: 90%;
   margin-top: 40px;
 
+  &-sec {
+    margin-top: 0;
+  }
+
   & h2 {
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
@@ -271,7 +271,12 @@ html, body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
     @include tablets {
+      font-size: 5vw;
       font-weight: 500;
+    }
+
+    @include phones {
+      font-size: 10vw;
     }
   }
 }
@@ -434,15 +439,19 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2.7vw;
+    font-size: 2.4vw;
     padding: 0 10px 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
     text-align: center;
     padding: 0 3vw;
 
+    @include tablets {
+      font-size: 5vw;
+    }
+
     @include phones {
-      font-size: 26px;
+      font-size: 8vw;
     }
 
     }
@@ -472,25 +481,25 @@ html, body {
   }
 
 .slide1 {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+  background: rgba(67, 95, 140, 0.6);
 
 
 }
 
 .slide2 {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+  background: rgba(67, 95, 140, 0.6);
 
 
 }
 
 .slide3 {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+  background: rgba(67, 95, 140, 0.6);
 
 
 }
 
 .slide4 {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+  background: rgba(67, 95, 140, 0.6);
 
 
 
@@ -500,10 +509,15 @@ html, body {
 }
 
 .slide5 {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)), rgba(109, 140, 0, 0.5);
+  background: rgba(67, 95, 140, 0.6);
 
 
   }
+
+.index__fotoblock {
+  height: 40vh;
+  background: transparent;
+}
 
 //////////////////// index main
 
@@ -594,7 +608,7 @@ html, body {
 }
 
 .main__test {
-  background: rgba(244, 226, 4, 0.6);
+  background: rgb(252, 246, 179);
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -758,17 +772,61 @@ html, body {
   }
 }
 
-.about__article1 {
-  background: rgb(254, 237, 237);
+.about__article {
+
+  padding: 3vw 4vw 2vw;
+
+  & p, li {
+    font-size: 1.6vw;
+
+    @include tablets {
+      font-size: 4vw;
+    }
+
+    @include phones {
+      font-size: 5vw;
+    }
+  }
+
+  & h3 {
+    font-size: 1.8vw;
+    font-weight: 500;
+    margin-top: 3vw;
+  }
+
+  &-1 {
+    background: rgb(254, 237, 237);
+  }
+
+  &-2 {
+    background: rgba(182, 217, 248, 0.5);
+  }
+
+  &-3 {
+    background: rgba(242, 210, 129, 0.2);
+  }
+
+  &-4 {
+    background: rgb(206, 240, 233);
+  }
 }
 
-.about__article2 {
-  background: rgba(182, 217, 248, 0.5);
+.about__title {
+  text-align: center;
+  color: #213741;
+  margin-bottom: 2vw;
+  font-size: 2.7vw;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+  @include tablets {
+    font-size: 5vw;
+  }
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
-.about__article3 {
-  background: rgba(242, 210, 129, 0.2);
-}
 
 .exellence__content {
   padding: 0;
@@ -811,11 +869,6 @@ html, body {
 
   }
 
-}
-
-.about__article {
-  padding: 50px;
-  background: rgb(254, 237, 237);
 }
 
 .excellence__convenience {
