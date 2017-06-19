@@ -164,6 +164,10 @@ html, body {
   padding-bottom: 12px;
   font-size: 20px;
 
+  &-excell {
+    flex: 2 1;
+  }
+
   & a {
     font-family: "Raleway", Arial, sans-serif;
     text-decoration: none;
@@ -259,7 +263,8 @@ html, body {
   margin-top: 40px;
 
   &-sec {
-    margin-top: 0;
+    margin-top: 4%;
+    margin-bottom: 7%;
   }
 
   & h2 {
@@ -439,7 +444,7 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2.4vw;
+    font-size: 2.3vw;
     padding: 0 10px 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
@@ -481,25 +486,25 @@ html, body {
   }
 
 .slide1 {
-  background: rgba(67, 95, 140, 0.6);
+  background: rgba(67, 95, 140, 0.7);
 
 
 }
 
 .slide2 {
-  background: rgba(67, 95, 140, 0.6);
+  background: rgba(67, 95, 140, 0.7);
 
 
 }
 
 .slide3 {
-  background: rgba(67, 95, 140, 0.6);
+  background: rgba(67, 95, 140, 0.7);
 
 
 }
 
 .slide4 {
-  background: rgba(67, 95, 140, 0.6);
+  background: rgba(67, 95, 140, 0.7);
 
 
 
@@ -509,7 +514,7 @@ html, body {
 }
 
 .slide5 {
-  background: rgba(67, 95, 140, 0.6);
+  background: rgba(67, 95, 140, 0.7);
 
 
   }
@@ -804,6 +809,7 @@ html, body {
 
   &-3 {
     background: rgba(242, 210, 129, 0.2);
+
   }
 
   &-4 {
@@ -834,7 +840,8 @@ html, body {
   font-size: 20px;
 
   & li {
-
+    font-size: 1.6vw;
+    margin-bottom: 10px;
     @include phones {
       font-size: 16px;
     }
@@ -842,6 +849,7 @@ html, body {
   }
 
   & p {
+    font-size: 1.6vw;
     margin-bottom: 0;
 
     @include phones {
@@ -909,7 +917,13 @@ html, body {
 
   }
 
+  & li {
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+  }
+
   & p {
+    font-size: 1.6vw;
     margin-bottom: 0;
 
     @include phones {
@@ -928,12 +942,13 @@ html, body {
   }
 
   & article {
-    padding: 40px;
+    padding: 3vw 4vw 2vw;
 
     @include tablets {
       padding: 20px 15px;
     }
   }
+
 }
 
 .partn__about {
@@ -975,7 +990,7 @@ html, body {
 //btn
 
 .hvr-shutter-out-vertical:before {
-  background: rgba(95, 95, 117, 0.3);
+  background: rgba(95, 95, 117, 0.2);
 }
 
 .btn-4 {
