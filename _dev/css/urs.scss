@@ -75,6 +75,18 @@
   }
 }
 
+.partnerlogosticky-mob {
+  position: absolute;
+  left: 120px;
+  top: 30px;
+  width: 85px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .ligalogo__mob {
   position: absolute;
   left: 120px;
@@ -345,7 +357,7 @@
     }
 
     @include phones {
-      width: 100vw;
+      width: 96vw;
     }
 
   }
@@ -573,7 +585,7 @@
   align-items: center;
 
   & p {
-    font-size: 2.2vw;
+    font-size: 1.8vw;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -777,7 +789,7 @@ i {
 }
 
 .urs__fotoblock {
-  height: 40vh;
+  height: 50vh;
 
   @include tablets {
     height: 30vh;

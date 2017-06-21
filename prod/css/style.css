@@ -781,8 +781,9 @@ textarea {
 
 .footer {
   position: relative;
-  background: -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light3.jpg") fixed;
-  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light3.jpg") fixed; }
+  background: -webkit-linear-gradient(top, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light4.jpg") fixed;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5)), url("../img/footer-light4.jpg") fixed;
+  background-size: cover; }
   .footer a {
     color: #25408f; }
   @media screen and (max-width: 768px) {
@@ -1393,7 +1394,7 @@ html, body {
     display: flex; }
 
 .navbar-toggler {
-  top: 24px;
+  top: 21px;
   right: 7%; }
 
 .navbar-light .navbar-toggler {
@@ -2121,12 +2122,15 @@ html, body {
   .partnership__content li {
     font-size: 1.6vw;
     margin-bottom: 1vw; }
+    @media screen and (max-width: 480px) {
+      .partnership__content li {
+        font-size: 5vw; } }
   .partnership__content p {
     font-size: 1.6vw;
     margin-bottom: 0; }
     @media screen and (max-width: 480px) {
       .partnership__content p {
-        font-size: 16px; } }
+        font-size: 5vw; } }
   .partnership__content h2 {
     margin-top: 0;
     padding-top: 0;
@@ -2488,5 +2492,14 @@ a.animated-button.gibson-three:after {
   text-align: center;
   font-size: 1.6vw;
   padding-top: 30px; }
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0; }
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

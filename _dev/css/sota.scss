@@ -49,6 +49,12 @@
   z-index: 5;
 }
 
+.navbar {
+  @include tablets {
+    width: 100vw;
+  }
+}
+
 .logosticky__o24 {
   margin-right: 3%;
   margin-left: 2%;
@@ -72,7 +78,7 @@
   }
 }
 
-.ligalogo__mob {
+.partnerlogosticky-mob {
   position: absolute;
   left: 120px;
   top: 30px;
@@ -337,7 +343,7 @@
     }
 
     @include phones {
-      width: 100vw;
+      width: 95vw;
       padding: 0 3vw;
     }
 

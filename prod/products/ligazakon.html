@@ -4,13 +4,71 @@
     <meta charset="UTF-8">
     <title>Платформа LIGA:Zakon | Online24 : Портал онлайн-сервисов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bpHS.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <link rel="stylesheet" href="../css/tether.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ligastyle.css">
 
 </head>
 <body>
+<div class="overlay"></div>
+<div class="popup__form-order">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на подключение сервиса</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш менеджер свяжется с Вами
+    </div>
+    <form id="popupform-order" class="popupform-order">
+        <input type="hidden" name="form_type" value="order">
+        <input type="hidden" name="product" value="contragent">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
+<div class="popup__form-test">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на консультацию по сервису</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш специалист свяжется с Вами
+    </div>
+    <form id="popupform-test" class="popupform-test">
+        <input type="hidden" name="form_type" value="test">
+        <input type="hidden" name="product" value="contragent">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png" alt="">
 </div>
@@ -81,7 +139,7 @@
 </svg>
         </a>
         <a class="ligalogo__mob" href="http://www.ligazakon.ua" rel="nofollow">
-            <img src="../img/LZ_middle.png" alt="">
+            <img src="../img/lz_middle.png" alt="">
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -101,16 +159,6 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="tel:+380443211022" class="nav-link nav-link-tel">
-                        <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
-                             viewBox="0 0 24 24">
-                            <path fill="#25408f"
-                                  d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                        </svg>
-                        +38 (044) 32-11-022
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="tel:+380504544043" class="nav-link nav-link-tel">
                         <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
                              viewBox="0 0 24 24">
@@ -121,19 +169,29 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="mailto:info@online24.in.ua" class="nav-link nav-link-mail" href="#">
+                    <a href="tel:+380675665331" class="nav-link nav-link-tel">
+                        <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
+                             viewBox="0 0 24 24">
+                            <path fill="#25408f"
+                                  d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                        </svg>
+                        +38 (067) 566-53-31
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:info@online24.net.ua" class="nav-link nav-link-mail" href="#">
                         <svg style="width:24px;height:24px;margin-right:5px;" viewBox="0 0 24 24">
                             <path fill="#25408f"
                                   d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z"/>
                         </svg>
-                        info@online24.in.ua</a>
+                        info@online24.net.ua</a>
                 </li>
             </ul>
         </div>
     </nav>
     <nav class="lmain__menu">
         <a href="http://www.ligazakon.ua" class="partnerlogosticky" rel="nofollow">
-            <img src="../img/LZ_middle.png" alt="">
+            <img src="../img/lz_middle.png" alt="">
         </a>
         <a href="../index.html" class="logosticky__o24">
             <div class="logomain">
@@ -210,25 +268,26 @@
             <span>Преимущества подключения<br>на Online24</span></a>
         </div>
         <div class="l__mainmenu-contacts">
-            <a href="tel:+380443211022" class="l__mainmenu-tel hvr-grow">
-                <svg class="liga__mainmenu-tel" style="width:24px;height:24px;margin-right:5px;"
-                     viewBox="0 0 24 24">
-                    <path fill="#25408f"
-                          d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                </svg>
-                +38 (044) 32-11-022
-            </a>
             <a href="tel:+380504544043" class="l__mainmenu-tel hvr-grow">
-                <svg class="liga__mainmenu-tel" style="width:24px;height:24px;margin-right:5px;"
+                <svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px;"
                      viewBox="0 0 24 24">
-                    <path fill="#25408f"
+                    <path fill="#fff"
                           d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
                 </svg>
                 +38 (050) 454-40-43
             </a>
+            <a href="tel:+380675665331" class="l__mainmenu-tel hvr-grow">
+                <svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px;"
+                     viewBox="0 0 24 24">
+                    <path fill="#fff"
+                          d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                </svg>
+                +38 (067) 566-53-31
+            </a>
         </div>
     </nav>
     <div class="liga__header-content ">
+        <div class="container-fluid">
         <div class="row">
             <div class="liga__slogan col-md-5 col-sm-12 animatedParent" data-sequence='500'>
                 <h1 class="partner__brand">Платформа LIGA:Zakon</h1>
@@ -238,52 +297,52 @@
             </div>
             <div class="liga__slider col-md-7 col-sm-12">
                 <div class="slider bp-hs">
-                    <div class="bp-hs_inner">
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
+                    <ul class="bxslider">
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
 
                             <div class="slide slide1 animatedParent">
                                 <h3 class="animated flipInY">Самая мощная </h3>
                                 <p class="animated growIn">информационная система страны</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="scale" data-origin="top-left">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="scale" data-origin="top-left">
                             <div class="slide slide2">
                                 <h3>1,2 миллиона документов</h3>
                                 <p> 24 часа в сутки</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
                             <div class="slide slide3">
                                 <h3>Быстрый интуитивный поиск,</h3>
                                 <p> связи между документами</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="scale" data-origin="top-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="scale" data-origin="top-right">
                             <div class="slide slide4">
                                 <h3>Новый уровень безопасности </h3>
                                 <p>технологии на защите бизнеса</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-left">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-left">
                             <div class="slide slide5">
                                 <h3>Полноценный офис в облаке: уже реальность</h3>
                                 <p>из любого места, <br> с любого компьютера</p>
                             </div>
-                        </div>
+                        </li>
 
 
-                    </div>
+                    </ul>
                 </div>
 
             </div>
         </div>
     </div>
-
+    </div>
     </div>
 </header>
 <main class="lz__main">
     <article class="liga__testcont container_btn">
-        <a href="" class="btn_s btn-1 liga__testbtn">
+        <a href="" class="btn_s btn-1 l__testbtn">
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
@@ -352,7 +411,7 @@
                 кадрового отделов. Включает в себя электронные издания БУХГАЛТЕР&ЗАКОН и ЮРИСТ&ЗАКОН
             </div>
             <div class="liga__product-price liga__product-price-grand">1350 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
+            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
         </section>
         <section class="liga__product-item">
             <h3 class="liga__product-title">Прайм</h3>
@@ -361,7 +420,7 @@
                 Должностные инструкции) и юриста (Судебная практика, Комментированные кодексы и др.)
             </div>
             <div class="liga__product-price liga__product-price-prime">1150 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
+            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
         </section>
         <section class="liga__product-item">
             <h3 class="liga__product-title">Бухгалтер <br>Проф</h3>
@@ -369,7 +428,7 @@
                 обеспечение информацией: законодательство, формы и бланки, Ситуации для бухгалтера, справочники
             </div>
             <div class="liga__product-price liga__product-price-buhprof">550 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
+            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
         </section>
         <section class="liga__product-item">
             <h3 class="liga__product-title">Юрист <br>Проф</h3>
@@ -377,7 +436,7 @@
                 Комментированные кодексы, европейские нормы, Судебные прецеденты и проч.
             </div>
             <div class="liga__product-price liga__product-price-jurprof">850 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
+            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
         </section>
         <section class="liga__product-item">
             <h3 class="liga__product-title">Юрист</h3>
@@ -386,15 +445,15 @@
                 Справочники и др.
             </div>
             <div class="liga__product-price liga__product-price-jur">550 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow ">Заказать</a>
+            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
         </section>
     </article>
     <article class="liga__comparison-table" id="filling">
         <h2 class="article__title article__title-black">Сравнение продуктов ЛІГА:ЗАКОН </h2>
         <img src="../img/lz-compar-table-ru.jpg" alt="">
     </article>
-    <article class="liga__testcont container_btn">
-        <a href="" class="btn_s btn-1 liga__testbtn">
+    <article class="liga__testcont liga__testcont-big container_btn">
+        <a href="" class="btn_s btn-1 l__testbtn">
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
@@ -421,7 +480,7 @@
                         практическими рекомендациями экспертов ЛИГА:ЗАКОН. Консультации с наглядными таблицами
                     </div>
                     <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow ">Заказать</button>
+                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
                     <div class="periodicals__section-price">280 грн.\мес.</div>
                 </section>
                 <section class="periodicals__section periodicals__section-uz col-md-6 col-sm-12">
@@ -433,7 +492,7 @@
                         Консультации сопровождаются таблицами, инфографикой, видео
                     </div>
                     <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow ">Заказать</button>
+                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
                     <div class="periodicals__section-price">350 грн.\мес.</div>
                 </section>
                 <section class="periodicals__section periodicals__section-msfo col-md-6 col-sm-12">
@@ -446,7 +505,7 @@
                         интегрированной отчетности и развития бизнеса.
                     </div>
                     <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow ">Заказать</button>
+                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
                     <div class="periodicals__section-price">420 грн.\мес.</div>
                 </section>
                 <section class="periodicals__section periodicals__section-buhlight col-md-6 col-sm-12">
@@ -457,7 +516,7 @@
                         справочнике. Каждая ситуация развернута в виде подборки материалов: нормативно-правовых актов,
                         консультаций, справочных материалов, форм/бланков
                     </div>
-                    <button class="periodicals__buy-button hvr-pulse-grow ">Заказать</button>
+                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
                     <div class="periodicals__section-price">380 грн.\мес.</div>
                 </section>
             </div>
@@ -687,7 +746,7 @@
                     <div class="footer__tel1">
 
 
-                    <a href="tel:+380443211022" class="footer__tel-link">
+                        <a href="tel:+380504544043" class="footer__tel-link">
 
 
                         <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
@@ -705,7 +764,7 @@
                         </svg>
 
 
-                        +38 (044) 32-11-022
+                            +38 (050) 454-40-43
 
 
                     </a>
@@ -717,7 +776,7 @@
                     <div class="footer__tel2">
 
 
-                    <a href="tel:+380504544043" class="footer__tel-link">
+                        <a href="tel:+380675665331" class="footer__tel-link">
 
 
                         <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
@@ -735,7 +794,7 @@
                         </svg>
 
 
-                        +38 (050) 454-40-43
+                            +38 (067) 566-53-31
 
 
                     </a>
@@ -747,7 +806,7 @@
                     <div class="footer__email">
 
 
-                    <a href="mailto:info@online24.in.ua" class="footer__email-link;margin-right:5px;">
+                        <a href="mailto:info@online24.net.ua" class="footer__email-link;margin-right:5px;">
 
 
                         <svg style="width:24px;height:24px;margin-right:5px;" viewBox="0 0 24 24">
@@ -762,7 +821,7 @@
                         </svg>
 
 
-                        info@online24.in.ua
+                            info@online24.net.ua
 
 
                     </a>
@@ -957,19 +1016,16 @@ window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js" type="tex
 // ]]></script>
 
 
-<script src="../js/bootstrap.js"></script>
+<script src="../js/tether.min.js"></script>
 
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="../js/bootstrap.min.js"></script>
 
 
 <script src='../js/jquery.validate.js'></script>
 
 
 <script src="../js/jquery.touchSwipe.min.js"></script>
-
-
-<script src="../js/bpHS.js"></script>
 
 
 <script src="../js/parallax.min.js"></script>
@@ -987,7 +1043,7 @@ window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js" type="tex
 <script src="../js/jquery.bxslider.min.js"></script>
 
 
-<script src="../js/main.js"></script>
+<script src="../js/land.js"></script>
 
 
 </html>

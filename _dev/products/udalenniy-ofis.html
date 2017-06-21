@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Удалённый офис | Online24 : Портал онлайн-сервисов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bpHS.min.css">
+    <!--<link rel="stylesheet" href="../css/bpHS.min.css">-->
     <link rel="stylesheet" href="../css/jquery.bxslider.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/tether.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/urs.css">
 
@@ -139,7 +140,7 @@
 </g>
 </svg>
         </a>
-        <a href="https://firstoffice.com.ua" class="partnerlogosticky" rel="nofollow">
+        <a href="https://firstoffice.com.ua" class="partnerlogosticky-mob" rel="nofollow">
             <img src="../img/fo_logo.png" alt="">
         </a>
 
@@ -287,6 +288,8 @@
         </div>
     </nav>
     <div class="urs__header-content" data-positionY="500">
+
+        <div class="container-fluid">
         <div class="row">
             <div class="urs__slogan col-md-5 col-sm-12 animatedParent" data-sequence='500'>
                 <h1 class="partner__brand">Удалённый <br> офис от <br> <img src="../img/fo_logoblack.png" alt=""></h1>
@@ -296,49 +299,50 @@
 
             </div>
             <div class="l__slider col-md-7 col-sm-12">
-                <div class="slider bp-hs">
-                    <div class="bp-hs_inner">
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
+                <div class="slider">
+                    <ul class="bp-hs bxslider">
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
 
                             <div class="slide slide1 animatedParent">
                                 <h3 class="animated flipInY">Надежная работа </h3>
 
                                 <p class="animated growIn">с привычными программами: <br> везде, где есть интернет</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
                             <div class="slide slide5">
                                 <h3>Существенная экономия </h3>
 
                                 <p>на покупке и настройке оборудования</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-right">
                             <div class="slide slide4  ">
                                 <h3>Недоступность </h3>
 
                                 <p>для контролирующих органов и конкурентов</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="top-right">
                             <div class="slide slide3">
                                 <h3>Сокращение затрат</h3>
 
                                 <p>на собственный IT персонал</p>
                             </div>
-                        </div>
-                        <div class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-right">
+                        </li>
+                        <li class="bp-hs_inner__item" data-transform="rotate" data-origin="bottom-right">
                             <div class="slide slide5">
                                 <h3>Индивидуальная защита доступа</h3>
 
                                 <p>дата-центр уровня Tier3 <br> опционально VPN-канал</p>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
         </div>
+    </div>
     </div>
 
     </div>
@@ -356,7 +360,8 @@
         <h2 class="article__title">Что мы делаем :</h2>
 
         <div class="features__block">
-            <div class="row animatedParent " data-appear-top-offset='-100'>
+            <div class="container-fluid">
+                <div class="row animatedParent animateOnce" data-appear-top-offset='-100'>
                 <div class="l__feature-item col-sm-12 col-md-7 animated fadeInLeftShort slowest">
                     <div class="l__feature-icon">
                         <svg style="width:36px;height:36px" viewBox="0 0 24 24">
@@ -374,7 +379,9 @@
                     </div>
                     <p>Помощь в настройке рабочих мест конечных пользователей удалённого офиса</p></div>
             </div>
-            <div class="row animatedParent" data-appear-top-offset='-100'>
+            </div>
+            <div class="container-fluid">
+                <div class="row animatedParent animateOnce" data-appear-top-offset='-100'>
                 <div class="l__feature-item col-sm-12 col-md-4 animated fadeInLeftShort slowest">
                     <div class="l__feature-icon">
                         <svg style="width:36px;height:36px" viewBox="0 0 24 24">
@@ -393,7 +400,9 @@
                     <p>Подключаем и настраиваем любое оборудование из офиса (принтер, USB, кассовый аппарат) &#9913</p>
                 </div>
         </div>
-            <div class="row animatedParent" data-appear-top-offset='-100'>
+            </div>
+            <div class="container-fluid">
+                <div class="row animatedParent animateOnce" data-appear-top-offset='-100'>
                 <div class="l__feature-item col-sm-12 col-md-6 animated fadeInLeftShort slowest">
                     <div class="l__feature-icon">
                         <svg style="width:36px;height:36px" viewBox="0 0 24 24">
@@ -410,6 +419,7 @@
                         </svg>
                     </div>
                     <p>Индивидуальный VPN сервер и шлюз безопасности &#9913</p></div>
+            </div>
             </div>
         </div>
         <p class="feature__descr">&#9913 - настраивается и облуживается опционально, по желанию заказчика за отдельную

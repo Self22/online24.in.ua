@@ -951,7 +951,7 @@ html, body {
         width: 100vw; } }
     @media screen and (max-width: 480px) {
       .liga__slider .slide {
-        width: 100vw; } }
+        width: 95vw; } }
 
 .liga__testcont {
   height: 170px;
@@ -960,6 +960,12 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    .liga__testcont {
+      height: 80px; } }
+  @media screen and (max-width: 480px) {
+    .liga__testcont-big {
+      height: 130px; } }
   .liga__testcont-descr {
     margin-top: 15px; }
 
@@ -967,18 +973,21 @@ html, body {
   margin-top: 15px;
   text-align: center; }
 
-.liga__testbtn {
+.l__testbtn {
   background: #f9e9c0 !important;
   color: black !important;
   padding: 12px 50px;
   font-size: 24px; }
   @media screen and (max-width: 480px) {
-    .liga__testbtn {
-      padding: 26px 11px;
+    .l__testbtn {
+      padding: 11px 11px;
       font-size: 14px; } }
-  .liga__testbtn svg {
+  .l__testbtn svg {
     height: 57px; }
-  .liga__testbtn rect {
+    @media screen and (max-width: 480px) {
+      .l__testbtn svg {
+        height: 41px; } }
+  .l__testbtn rect {
     stroke: #9a9abe; }
 
 .liga__slogan {
@@ -986,7 +995,7 @@ html, body {
   padding-bottom: 50px; }
   @media screen and (max-width: 768px) {
     .liga__slogan {
-      margin-top: 130px;
+      margin-top: 100px;
       padding-bottom: 0; } }
   .liga__slogan .partner__brand {
     font-size: 32px;
@@ -1003,10 +1012,7 @@ html, body {
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7); }
     @media screen and (max-width: 480px) {
       .liga__slogan .partner__slogan {
-        margin-top: 16px;
-        width: 100%;
-        text-align: center;
-        font-size: 24px; } }
+        display: none; } }
   .liga__slogan p {
     font-size: 20px;
     color: white;
@@ -1237,5 +1243,14 @@ html, body {
   text-transform: uppercase;
   font-weight: 600;
   color: #25408f; }
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0; }
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=ligastyle.css.map */

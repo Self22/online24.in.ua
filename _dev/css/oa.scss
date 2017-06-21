@@ -341,7 +341,7 @@
     }
 
     @include phones {
-      width: 100vw;
+      width: 95vw;
       padding: 0 3vw;
     }
 
@@ -556,7 +556,7 @@
   font-weight: 300;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6.5vw;
   }
 }
 
@@ -586,7 +586,7 @@
   }
 
   @include phones {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -977,6 +977,10 @@
   font-size: 2vw;
   margin-bottom: 1vw;
 
+  @include phones {
+    font-size: 6vw;
+  }
+
 }
 
 .concurent__item-1 {
@@ -1003,11 +1007,19 @@
     font-weight: 600;
     margin: 2vw 1vw;
     font-size: 2.1vw;
+
+    @include phones {
+      font-size: 6vw;
+    }
   }
 
   & li {
     font-size: 2vw;
     margin-bottom: 1vw;
+
+    @include phones {
+      font-size: 6vw;
+    }
   }
 }
 
@@ -1017,6 +1029,10 @@
   text-align: center;
   font-weight: 600;
   padding-top: 2vw;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 .oc__item {
@@ -1060,4 +1076,15 @@
     max-width: 100%;
     height: auto;
   }
+}
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0;
+}
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

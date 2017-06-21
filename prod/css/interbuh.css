@@ -811,6 +811,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  white-space: nowrap;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
   .l__mainmenu-tel:hover {
     color: white !important; }
@@ -1013,7 +1014,7 @@ html, body {
         width: 100vw; } }
     @media screen and (max-width: 480px) {
       .l__slider .slide {
-        width: 100vw; } }
+        width: 95vw; } }
 
 .slider {
   height: 40vh;
@@ -1237,7 +1238,16 @@ html, body {
     margin-right: 3%; }
 
 .ib__fotoblock {
-  height: 30vh; }
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .btn-1:hover {
   font-weight: 400 !important; }
@@ -1371,5 +1381,20 @@ html, body {
     background-image: -webkit-linear-gradient(transparent 50%, #e8e8ef 50%) !important; }
   .ib__product-order:hover {
     color: black !important; }
+
+.liga__partner-logo {
+  margin-left: 3%; }
+  .liga__partner-logo img {
+    max-width: 100%;
+    height: auto; }
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0; }
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=interbuh.css.map */

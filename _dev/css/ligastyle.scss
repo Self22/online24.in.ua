@@ -269,7 +269,7 @@ html, body {
     }
 
     @include phones {
-      width: 100vw;
+      width: 95vw;
     }
 
   }
@@ -280,6 +280,16 @@ html, body {
   height: 170px;
   background: #e8e8ef;
   flex-direction: column;
+
+  @include phones {
+    height: 80px;
+  }
+
+  &-big {
+    @include phones {
+      height: 130px;
+    }
+  }
 
   &-descr {
     margin-top: 15px;
@@ -299,12 +309,16 @@ html, body {
   font-size: 24px;
 
   @include phones {
-    padding: 26px 11px;
+    padding: 11px 11px;
     font-size: 14px;
   }
 
   & svg {
     height: 57px;
+
+    @include phones {
+      height: 41px;
+    }
   }
 
   & rect {
@@ -318,7 +332,7 @@ html, body {
   padding-bottom: 50px;
 
   @include tablets {
-    margin-top: 130px;
+    margin-top: 100px;
     padding-bottom: 0;
   }
 
@@ -339,10 +353,7 @@ html, body {
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 
     @include phones {
-      margin-top: 16px;
-      width: 100%;
-      text-align: center;
-      font-size: 24px;
+      display: none;
     }
   }
 
@@ -598,4 +609,15 @@ html, body {
   text-transform: uppercase;
   font-weight: 600;
   color: #25408f;
+}
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0;
+}
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
