@@ -53,11 +53,11 @@ $(document).ready(function () {
 
 
 /////////// slider 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.bxslider').bxSlider({
         auto: true,
-        pager:false,
-        controls:false
+        pager: false,
+        controls: false
     });
 });
 

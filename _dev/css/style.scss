@@ -1193,7 +1193,7 @@ a.animated-button.gibson-three:after {
   }
 
   @include tablets {
-    height: 70vh;
+    height: 90vh;
     width: 90%;
   }
 
@@ -1246,7 +1246,9 @@ a.animated-button.gibson-three:after {
   text-align: center;
 
   @include phones {
-    width: 90%;
+    font-size: 4vw;
+    width: 100%;
+    padding: 0 5%;
   }
 
 }

@@ -371,6 +371,10 @@
   &-descr {
     margin-top: 15px;
   }
+
+  @include phones {
+    height: 80px;
+  }
 }
 
 .liga__testcont-descr {
@@ -767,6 +771,7 @@
 
   @include phones {
     font-size: 7.5vw;
+    height: 90px;
   }
 }
 
@@ -793,6 +798,10 @@
   margin: 20px 20px;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 .tariff__price {
@@ -873,7 +882,7 @@
   color: white;
 
   @include phones {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 }
 
@@ -939,4 +948,8 @@
   color: #fff;
   font-size: 1.6vw;
   padding: 0 4%;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }

@@ -591,7 +591,7 @@
     margin: 0;
 
     @include tablets {
-      font-size: 4.2vw;
+      font-size: 5vw;
     }
 
   }
@@ -684,7 +684,7 @@ i {
   margin-bottom: 30px;
 
   @include tablets {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
 }
@@ -695,6 +695,12 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & i {
+    @include phones {
+      font-size: 8vw !important;
+    }
+  }
 
 }
 
@@ -770,7 +776,7 @@ i {
   margin-bottom: 0.7vw;
 
   @include tablets {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-bottom: 3vw;
     justify-content: flex-start;
   }
@@ -1028,7 +1034,7 @@ i {
   font-size: 1.7vw;
 
   @include tablets {
-    font-size: 3.7vw;
+    font-size: 5vw;
 
   }
 

@@ -3,16 +3,16 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
-    uglify = require('gulp-uglify'),
+// uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    // cleanCSS = require('gulp-clean-css'),
-// imagemin = require('gulp-imagemin'),
-// pngquant = require('imagemin-pngquant'),
+    cssnano = require('gulp-cssnano'),
+    htmlmin = require('gulp-htmlmin'),
     rimraf = require('rimraf'),
     include = require("gulp-include"),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
+
 
 var path = {
     dest: {
@@ -62,6 +62,7 @@ gulp.task('landings:build', function () {
     gulp.src(path.src.landings) //������� ����� �� ������� ����
         .pipe(include())
         .on('error', console.log)
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.landings)) //�������� �� � ����� build
         .pipe(reload({stream: true})); //� ������������ ��� ������ ��� ����������
 });
@@ -69,6 +70,7 @@ gulp.task('landings:build', function () {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
         .pipe(include())
+        .pipe(htmlmin({collapseWhitespace: true}))
         .on('error', console.log)
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .pipe(reload({stream: true})); //� ������������ ��� ������ ��� ����������
@@ -91,7 +93,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
         .pipe(prefixer()) //������� ��������� ��������
-        // .pipe(cleanCSS()) //������
+        .pipe(cssnano()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .pipe(reload({stream: true}));
