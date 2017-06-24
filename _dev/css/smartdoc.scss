@@ -284,7 +284,7 @@
 
   @include phones {
     padding: 0;
-    width: 95vw;
+    width: 93vw;
   }
 }
 
@@ -333,11 +333,11 @@
     }
 
     @include tablets {
-      width: 100vw;
+      width: 94vw;
     }
 
     @include phones {
-      width: 100vw;
+      width: 95vw;
       padding: 0 3vw;
     }
 

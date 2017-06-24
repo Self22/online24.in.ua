@@ -783,12 +783,12 @@ i {
 
   & svg {
     margin-right: 2%;
-    min-width: 3vw;
-    min-height: 3vw;
+    width: 3vw;
+    height: 3vw;
 
     @include tablets {
-      min-width: 5vw;
-      min-height: 5vw;
+      width: 5vw;
+      height: 5vw;
     }
   }
 

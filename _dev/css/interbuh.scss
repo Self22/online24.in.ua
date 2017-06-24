@@ -211,6 +211,7 @@ html, body {
 
   @include phones {
     height: 100vh;
+    align-items: center;
   }
 
 }
@@ -333,6 +334,7 @@ html, body {
     }
 
     @include phones {
+      height: 240px;
       width: 95vw;
     }
 
@@ -468,6 +470,7 @@ html, body {
   }
 
   @include phones {
+    margin-top: 55px;
     padding-left: 0;
   }
 

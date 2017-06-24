@@ -28,6 +28,12 @@
   }
 }
 
+.footer__contacts {
+  @include phones {
+    margin-top: 10vh;
+  }
+}
+
 .contact__block {
   justify-content: space-around;
 
