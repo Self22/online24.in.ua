@@ -10,8 +10,6 @@ html, body {
 
 }
 
-
-
 .lmain__menu {
   position: absolute;
   width: 100%;
@@ -197,7 +195,6 @@ html, body {
 
 }
 
-
 .liga__slogan {
   display: flex;
   flex-direction: column;
@@ -218,7 +215,6 @@ html, body {
   }
 
 }
-
 
 .liga__slider {
   margin-top: 5vh;
@@ -621,4 +617,48 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.liga__features {
+
+}
+
+.features__descr {
+
+}
+
+.module__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.module__block {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.module__item {
+
+}
+
+.module__name {
+
+}
+
+.module__predescr {
+
+}
+
+.module__icon {
+
+}
+
+.module__descr {
+
 }

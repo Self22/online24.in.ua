@@ -8,10 +8,8 @@
 @import "partials/btn";
 //animations
 @import "animations.css";
-
 ////fonts
 @import "../fonts/raleway.css";
-
 /*
 	Raleway, 100, 100 italic, 200, 200 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
 */
@@ -20,7 +18,6 @@
 	Source Sans Pro, 200, 200 italic, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 900, 900 italic
 */
 @import "../fonts/opensans.css";
-
 /*
 	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
 */
@@ -29,8 +26,6 @@
 //vars
 $ligared: #CF112A;
 $ligablack: #10213D;
-
-
 
 * {
   @include box-sizing(border-box);
@@ -41,7 +36,7 @@ html, body {
   min-height: 100%;
   width: 100%;
   line-height: 1.42;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   //font-family: "Raleway", Arial, sans-serif;
   position: relative;
 }
@@ -52,7 +47,6 @@ html, body {
   justify-content: center;
   margin-top: 25px;
   transition: .5s ease-in-out;
-  padding-right: 4vw;
 
   & .stickyheader__logo {
     display: none;
@@ -94,13 +88,14 @@ html, body {
   z-index: 5;
   padding: 0;
   left: 1px;
-  height: 90px;
-  background: rgb(96, 161, 193);
+  height: 100px;
+  background: #023756;
   margin: 0;
 
   & .nav__main-item a {
     color: white;
     text-shadow: none;
+    font-weight: 200;
   }
 
   & .stickyheader__logo {
@@ -137,10 +132,6 @@ html, body {
   align-items: center;
 }
 
-.nav-item-excellence {
-
-}
-
 .stickyheader__logo {
   display: flex;
   justify-content: flex-start;
@@ -154,7 +145,6 @@ html, body {
   }
 }
 
-
 .nav__main-item {
   display: flex;
   justify-content: center;
@@ -164,21 +154,16 @@ html, body {
   padding-bottom: 12px;
   font-size: 20px;
 
-  &-excell {
-    flex: 2 1;
-  }
-
   & a {
     font-family: "Raleway", Arial, sans-serif;
     text-decoration: none;
     color: black;
-    font-weight: 400;
-    font-size: 1.4vw;
-    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
 
   &-active {
-    background: rgba(251, 251, 252, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.3);
 
   }
@@ -188,8 +173,11 @@ html, body {
 
   &__main {
     position: relative;
-    height: 500px;
-    background: transparent;
+    height: 35vh;
+    background: #C9D6FF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     @include phones {
       height: 500px;
     }
@@ -212,14 +200,14 @@ html, body {
 
 .logo__block {
 
-  background: rgba(255, 255, 255, 0.7);
+  //background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &-main {
-    height: 500px;
+    height: 35vh;
 
     @include tablets {
       height: 170px;
@@ -242,21 +230,18 @@ html, body {
 
     }
 
-
   }
-  }
+}
 
 .logo__block-img {
   height: 28%;
-  width: 56%;
-  margin-bottom: 3%;
-  margin-top: 5%;
+  width: 210px;
 
   & img {
     max-width: 100%;
     height: auto;
   }
-  }
+}
 
 .logo__block-slogan {
   width: 90%;
@@ -269,11 +254,11 @@ html, body {
 
   & h2 {
     text-align: center;
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 2.7vw;
+    font-family: "Century Gothic";
+    font-size: 40px;
     font-weight: 400;
-    color: rgb(62, 2, 89);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #000;
+    margin-top: 10px;
 
     @include tablets {
       font-size: 5vw;
@@ -325,7 +310,6 @@ html, body {
 
   }
 
-
   @include tablets {
     align-items: flex-end;
     margin-top: 110px;
@@ -376,7 +360,7 @@ html, body {
 .slider-cont {
   margin-top: -20px;
   height: 500px;
-    align-items: center;
+  align-items: center;
 
   @include laptop {
     margin-top: 60px;
@@ -389,10 +373,8 @@ html, body {
 
 }
 
-
 .slider {
-  width: 50vw;
-  height: 370px;
+
 
   @include desktop {
     width: 50vw;
@@ -413,16 +395,14 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50vw;
-  height: 310px;
-  padding-top: 15px;
-  //border: 1px solid rgb(213, 219, 93);
+  border: 1px solid #023756;
 
+  height: 200px;
+  padding-top: 15px;
 
 
   @include desktop {
     width: 50vw;
-
 
   }
 
@@ -443,13 +423,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 2.3vw;
+    color: #023756;
+    font-size: 2vw;
     padding: 0 10px 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
     text-align: center;
     padding: 0 3vw;
+    letter-spacing: 1px;
 
     @include tablets {
       font-size: 5vw;
@@ -459,21 +440,22 @@ html, body {
       font-size: 8vw;
     }
 
-    }
+  }
 
   & p {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 2.3vw;
+    color: #023756;
+    font-size: 2vw;
     line-height: 45px;
     letter-spacing: 1px;
     text-align: center;
     padding: 0 3vw;
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
+    letter-spacing: 1px;
 
     @include tablets {
       font-size: 24px;
@@ -483,30 +465,25 @@ html, body {
     }
   }
 
-  }
+}
 
 .slide1 {
-  background: rgba(67, 95, 140, 0.7);
-
+  background: #f5f6f7;
 
 }
 
 .slide2 {
-  background: rgba(67, 95, 140, 0.7);
-
+  background: #f5f6f7;
 
 }
 
 .slide3 {
-  background: rgba(67, 95, 140, 0.7);
-
+  background: #f5f6f7;
 
 }
 
 .slide4 {
-  background: rgba(67, 95, 140, 0.7);
-
-
+  background: #f5f6f7;
 
   & p {
     margin-top: 30px;
@@ -514,13 +491,12 @@ html, body {
 }
 
 .slide5 {
-  background: rgba(67, 95, 140, 0.7);
+  background: #f5f6f7;
 
-
-  }
+}
 
 .index__fotoblock {
-  height: 40vh;
+  height: 30vh;
   background: transparent;
 }
 
@@ -534,9 +510,9 @@ html, body {
 }
 
 .article__title {
-  font-weight: 600;
+  font-size: 2.2vw;
+  font-weight: 400;
   text-align: center;
-  font-size: 2.1vw;
   letter-spacing: 1px;
   color: rgb(235, 243, 5);
   font-family: "Raleway", Arial, sans-serif;
@@ -560,7 +536,6 @@ html, body {
   height: 150px;
 }
 
-
 .action__section {
   z-index: 2;
   display: flex;
@@ -579,7 +554,6 @@ html, body {
 }
 
 .action__title {
-  margin-top: 30px;
   flex: 1 1 60%;
   margin-bottom: 30px;
   font-size: 2.6vw;
@@ -593,7 +567,6 @@ html, body {
   justify-content: center;
   align-items: center;
   margin-bottom: 1vw;
-
 
   & img {
     max-width: 100%;
@@ -617,7 +590,7 @@ html, body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  }
+}
 
 .test__section {
   flex: 1 1 100%;
@@ -658,7 +631,7 @@ html, body {
   padding: 25px 0;
   flex: 1 1 60%;
   font-size: 1.6vw;
-  }
+}
 
 .test__button-cont {
   flex: 1 1 40%;
@@ -723,11 +696,11 @@ html, body {
     height: 15vw;
   }
 }
+
 .navcont-main {
-  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .navbar-brand {
 
@@ -786,10 +759,13 @@ html, body {
 
 .about__article {
 
-  padding: 3vw 4vw 2vw;
+  padding: 4vw 4vw 3vw;
 
   & p, li {
     font-size: 1.6vw;
+    font-family: "Segoe UI";
+    letter-spacing: 0.3px;
+    line-height: 30px;
 
     @include tablets {
       font-size: 4vw;
@@ -807,20 +783,20 @@ html, body {
   }
 
   &-1 {
-    background: rgb(254, 237, 237);
+    background: rgb(239, 243, 255);
   }
 
   &-2 {
-    background: rgba(182, 217, 248, 0.5);
+    background: rgb(245, 246, 247);
   }
 
   &-3 {
-    background: rgba(242, 210, 129, 0.2);
+    background: rgb(239, 243, 255);
 
   }
 
   &-4 {
-    background: rgb(206, 240, 233);
+    background: rgb(245, 246, 247);
   }
 }
 
@@ -828,8 +804,10 @@ html, body {
   text-align: center;
   color: #213741;
   margin-bottom: 2vw;
-  font-size: 2.7vw;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 2vw;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 
   @include tablets {
     font-size: 5vw;
@@ -840,7 +818,6 @@ html, body {
   }
 }
 
-
 .exellence__content {
   padding: 0;
   background: rgb(254, 237, 237);
@@ -848,6 +825,10 @@ html, body {
 
   & li {
     font-size: 1.6vw;
+    font-family: "Segoe UI";
+    letter-spacing: 0.3px;
+    line-height: 30px;
+
     margin-bottom: 10px;
     @include phones {
       font-size: 16px;
@@ -857,6 +838,10 @@ html, body {
 
   & p {
     font-size: 1.6vw;
+    font-family: "Segoe UI";
+    letter-spacing: 0.3px;
+    line-height: 30px;
+
     margin-bottom: 0;
 
     @include phones {
@@ -865,9 +850,13 @@ html, body {
   }
 
   & h2 {
-    margin-top: 0;
-    padding-top: 0;
     text-align: center;
+    color: #213741;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
 
     @include phones {
       font-size: 26px;
@@ -876,7 +865,7 @@ html, body {
   }
 
   & article {
-    padding: 40px;
+    padding: 4vw 4vw 3vw;
 
     @include tablets {
       padding: 20px 15px;
@@ -886,24 +875,28 @@ html, body {
 
 }
 
+.excellence__money {
+  background: #eff3ff;
+}
+
 .excellence__convenience {
-  background: rgba(182, 217, 248, 0.5);
+  background: #f5f6f7;
 }
 
 .excellence__security {
-  background: #E1E1FF;
+  background: #eff3ff;
 }
 
 .excellence__adaptation {
-  background: rgba(242, 210, 129, 0.2);
+  background: #f5f6f7;
 }
 
 .excellence__news {
-  background: rgba(175, 159, 217, 0.3);
+  background: #eff3ff;
 }
 
 .excellence__features {
-  background: rgba(143, 189, 129, 0.2);
+  background: #f5f6f7;
 }
 
 //partnership
@@ -998,6 +991,7 @@ html, body {
 .feature__title {
   margin-bottom: 30px;
 }
+
 //btn
 
 .hvr-shutter-out-vertical:before {
@@ -1068,8 +1062,6 @@ html, body {
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
-
-
 
 //svg logo
 
@@ -1355,4 +1347,34 @@ a.animated-button.gibson-three:after {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.main__slogan {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    font-family: Raleway, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    text-align: right;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+  }
+
+}
+
+.main__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vw;
+  background: #f5f6f7;
 }

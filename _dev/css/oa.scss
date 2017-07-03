@@ -721,7 +721,6 @@
 
 }
 
-
 .tariff__item {
   display: flex;
   flex-direction: column;
@@ -742,7 +741,6 @@
 .tariff__item-3 {
   background: rgb(193, 208, 218);
 }
-
 
 .tariff__title {
   text-align: center;
@@ -784,6 +782,7 @@
   }
 
 }
+
 .tariff__price {
   margin-top: auto;
   text-align: center;
@@ -880,11 +879,9 @@
     background: rgb(189, 215, 248);
   }
 
-
   &:hover svg {
     fill: black;
   }
-
 
 }
 

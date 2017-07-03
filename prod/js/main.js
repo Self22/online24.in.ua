@@ -3,7 +3,6 @@
 $(document).ready(function () {
 
 
-
     (function () {
 
         var flag = true;
@@ -63,8 +62,8 @@ $(document).ready(function () {
 
 //parallax
 
-$('.header').parallax({imageSrc: 'img/index-header4.jpg'});
-$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock.jpg'});
+// $('.header').parallax({imageSrc: 'img/index-header4.jpg'});
+$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock2.jpg'});
 
 //sticky header
 
@@ -218,7 +217,6 @@ $(document).ready(function () {
 });
 
 
-
 //////////////////////////////////// Mobile Menu Close Tap
 
 $('main').on('click', function (e) {
@@ -252,5 +250,10 @@ $('.close__popup').on('click', function (e) {
 
 })
 
+/////////////////////////// Index: soft scroll
+
+$('#nav-main').singlePageNav(
+    {offset: 130, speed: 1000, threshold: 150}
+);
 
 //# sourceMappingURL=main.js.map

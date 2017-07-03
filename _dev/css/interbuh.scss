@@ -89,7 +89,6 @@ html, body {
   }
 }
 
-
 .l__mainmenu-item {
   padding: 0 !important;
 }
@@ -170,7 +169,6 @@ html, body {
   &:focus {
     color: white !important;
   }
-
 
   @include desktop {
     font-size: 14px;
@@ -396,7 +394,6 @@ html, body {
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
 
-
   &-descr {
     margin-top: 15px;
   }
@@ -537,7 +534,6 @@ html, body {
   }
 
 }
-
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
