@@ -61,9 +61,11 @@ $(document).ready(function () {
 });
 
 //parallax
-
-// $('.header').parallax({imageSrc: 'img/index-header4.jpg'});
 $('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock2.jpg'});
+$('.excellence__fotoblock').parallax({imageSrc: 'img/excellence_fotoblock.jpg'});
+$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock2.jpg'});
+$('.partn__fotoblock').parallax({imageSrc: 'img/index-header4.jpg'});
+
 
 //sticky header
 
@@ -76,12 +78,14 @@ $(function () {
             $('.nav__main').addClass('nav__fixed');
             $('.header__main').addClass('header__main-sticky');
 
+
         }
 
         else {
 
             $('.nav__main').removeClass('nav__fixed');
             $('.header__main').removeClass('header__main-sticky');
+
         }
 
     });

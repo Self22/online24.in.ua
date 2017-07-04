@@ -101,6 +101,10 @@ html, body {
   & .stickyheader__logo {
     display: flex;
   }
+
+  & .nav__main-item-active {
+    background: rgba(245, 246, 247, 0.4);
+  }
 }
 
 .navbar-toggler {
@@ -173,7 +177,7 @@ html, body {
 
   &__main {
     position: relative;
-    height: 35vh;
+    height: 45vh;
     background: #C9D6FF; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -207,7 +211,7 @@ html, body {
   align-items: center;
 
   &-main {
-    height: 35vh;
+    height: 45vh;
 
     @include tablets {
       height: 170px;
@@ -396,7 +400,8 @@ html, body {
   align-items: center;
   flex-direction: column;
   border: 1px solid #023756;
-
+  width: 90%;
+  margin: 0 auto;
   height: 200px;
   padding-top: 15px;
 
@@ -495,8 +500,8 @@ html, body {
 
 }
 
-.index__fotoblock {
-  height: 30vh;
+.index__fotoblock, .excellence__fotoblock, .partn__fotoblock {
+  height: 50vh;
   background: transparent;
 }
 
@@ -759,13 +764,13 @@ html, body {
 
 .about__article {
 
-  padding: 4vw 4vw 3vw;
+  padding: 4vw 5vw 4vw;
 
   & p, li {
     font-size: 1.6vw;
     font-family: "Segoe UI";
     letter-spacing: 0.3px;
-    line-height: 30px;
+    line-height: 2.3vw;
 
     @include tablets {
       font-size: 4vw;
@@ -783,7 +788,7 @@ html, body {
   }
 
   &-1 {
-    background: rgb(239, 243, 255);
+    background: rgb(217, 226, 255);
   }
 
   &-2 {
@@ -791,7 +796,7 @@ html, body {
   }
 
   &-3 {
-    background: rgb(239, 243, 255);
+    background: rgb(217, 226, 255);
 
   }
 
@@ -820,14 +825,13 @@ html, body {
 
 .exellence__content {
   padding: 0;
-  background: rgb(254, 237, 237);
-  font-size: 20px;
+
 
   & li {
     font-size: 1.6vw;
     font-family: "Segoe UI";
     letter-spacing: 0.3px;
-    line-height: 30px;
+    line-height: 2.3vw;
 
     margin-bottom: 10px;
     @include phones {
@@ -840,7 +844,7 @@ html, body {
     font-size: 1.6vw;
     font-family: "Segoe UI";
     letter-spacing: 0.3px;
-    line-height: 30px;
+    line-height: 2.3vw;
 
     margin-bottom: 0;
 
@@ -865,7 +869,7 @@ html, body {
   }
 
   & article {
-    padding: 4vw 4vw 3vw;
+    padding: 4vw 5vw 4vw;
 
     @include tablets {
       padding: 20px 15px;
@@ -875,8 +879,8 @@ html, body {
 
 }
 
-.excellence__money {
-  background: #eff3ff;
+.exellence__money {
+  background: rgb(217, 226, 255);
 }
 
 .excellence__convenience {
@@ -884,7 +888,7 @@ html, body {
 }
 
 .excellence__security {
-  background: #eff3ff;
+  background: rgb(217, 226, 255);
 }
 
 .excellence__adaptation {
@@ -892,7 +896,7 @@ html, body {
 }
 
 .excellence__news {
-  background: #eff3ff;
+  background: rgb(217, 226, 255);
 }
 
 .excellence__features {
@@ -920,6 +924,8 @@ html, body {
   & li {
     font-size: 1.6vw;
     margin-bottom: 1vw;
+    letter-spacing: 0.3px;
+    line-height: 2.3vw;
 
     @include phones {
       font-size: 5vw;
@@ -929,6 +935,8 @@ html, body {
   & p {
     font-size: 1.6vw;
     margin-bottom: 0;
+    letter-spacing: 0.3px;
+    line-height: 2.3vw;
 
     @include phones {
       font-size: 5vw;
@@ -939,6 +947,13 @@ html, body {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
+    color: #213741;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+
 
     @include phones {
       font-size: 26px;
@@ -946,7 +961,7 @@ html, body {
   }
 
   & article {
-    padding: 3vw 4vw 2vw;
+    padding: 4vw 5vw 4vw;
 
     @include tablets {
       padding: 20px 15px;
@@ -956,19 +971,19 @@ html, body {
 }
 
 .partn__about {
-  background: rgba(182, 217, 248, 0.5);
+  background: rgb(217, 226, 255);
 }
 
 .partn__forclient {
-  background: #E1E1FF;
+  background: #f5f6f7;
 }
 
 .partn__forservice {
-  background: rgba(242, 210, 129, 0.2);
+  background: rgb(217, 226, 255);
 }
 
 .partn__contacts {
-  background: rgba(175, 159, 217, 0.3);
+  background: #f5f6f7;
 }
 
 // landing blocks
@@ -1377,4 +1392,20 @@ a.animated-button.gibson-three:after {
   align-items: center;
   padding-top: 4vw;
   background: #f5f6f7;
+}
+
+.footer_confidential {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.conf__icon {
+
+  margin-right: 1vw;
+
+  & svg {
+    width: 2vw;
+    height: 2vw;
+  }
 }
