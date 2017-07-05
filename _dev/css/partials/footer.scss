@@ -60,11 +60,19 @@
 }
 
 .footer__title {
-  font-size: 2.3vw;
+  color: #213741;
+  font-size: 2vw;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
   margin-bottom: 25px;
 
   @include tablets {
     font-size: 10vw;
+  }
+
+  @include phones {
+    font-size: 7vw;
   }
 
   &-form {
@@ -76,7 +84,7 @@
   padding-left: 11%;
 
   & p {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     text-align: center;
   }
 }
@@ -86,7 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 
   @include tablets {
     font-size: 7vw;

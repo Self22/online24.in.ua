@@ -96,4 +96,3 @@
         })
     }
 }(jQuery, window, document);
-//# sourceMappingURL=bpHS.js.map

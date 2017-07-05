@@ -206,7 +206,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 570px;
+  height: 80vh;
   padding-bottom: 55px;
 
   @include phones {
@@ -273,7 +273,7 @@ html, body {
 }
 
 .liga__testcont {
-  height: 170px;
+  height: 20vh;
   background: #e8e8ef;
   flex-direction: column;
 
@@ -631,16 +631,16 @@ html, body {
   padding: 0;
   margin: 0;
   list-style: none;
-
+  font-size: 0;
 }
 
 .module__block {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   width: 350px;
+  font-size: 20px;
 }
 
 .module__item {
@@ -656,6 +656,11 @@ html, body {
 }
 
 .module__icon {
+
+  & svg {
+    width: 5vw;
+    height: 5vw;
+  }
 
 }
 

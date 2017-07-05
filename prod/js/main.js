@@ -259,5 +259,3 @@ $('.close__popup').on('click', function (e) {
 $('#nav-main').singlePageNav(
     {offset: 130, speed: 1000, threshold: 150}
 );
-
-//# sourceMappingURL=main.js.map

@@ -396,6 +396,17 @@ $(document).ready(function () {
         controls: false
     });
 });
+
+$(document).ready(function () {
+    $('.module__list').bxSlider({
+        auto: true,
+        slideWidth: 400,
+        minSlides: 2,
+        maxSlides: 8,
+        moveSlides: 1,
+        slideMargin: 10
+    });
+});
 //////////////////////////////////// Mobile Menu Close Tap
 
 $('main').on('click', function (e) {

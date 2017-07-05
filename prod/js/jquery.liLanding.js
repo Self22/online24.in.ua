@@ -109,4 +109,3 @@
         }
     };
 })(jQuery);
-//# sourceMappingURL=jquery.liLanding.js.map

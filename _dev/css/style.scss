@@ -91,6 +91,7 @@ html, body {
   height: 100px;
   background: #023756;
   margin: 0;
+  padding: 0 12vw;
 
   & .nav__main-item a {
     color: white;
@@ -153,7 +154,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1;
+  padding: 0 2vw;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 20px;
@@ -181,9 +182,11 @@ html, body {
     background: #C9D6FF; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0 12vw;
 
-    @include phones {
-      height: 500px;
+    @include tablets {
+      padding: 0;
+      height: 70vh;
     }
   }
 
@@ -214,7 +217,7 @@ html, body {
     height: 45vh;
 
     @include tablets {
-      height: 170px;
+
       justify-content: flex-end;
       padding-bottom: 15px;
     }
@@ -270,7 +273,7 @@ html, body {
     }
 
     @include phones {
-      font-size: 10vw;
+      font-size: 14vw;
     }
   }
 }
@@ -705,6 +708,10 @@ html, body {
 .navcont-main {
   display: flex;
   flex-direction: column;
+
+  @include phones {
+    padding-top: 15px;
+  }
 }
 
 .navbar-brand {
@@ -764,7 +771,11 @@ html, body {
 
 .about__article {
 
-  padding: 4vw 5vw 4vw;
+  padding: 4vw 12vw 4vw 4vw;
+
+  @include phones {
+    padding: 8vw 8vw 4vw 8vw;
+  }
 
   & p, li {
     font-size: 1.6vw;
@@ -778,6 +789,7 @@ html, body {
 
     @include phones {
       font-size: 5vw;
+      line-height: 7vw;
     }
   }
 
@@ -819,7 +831,8 @@ html, body {
   }
 
   @include phones {
-    font-size: 6vw;
+    font-size: 7vw;
+    margin: 10vw 0;
   }
 }
 
@@ -835,7 +848,8 @@ html, body {
 
     margin-bottom: 10px;
     @include phones {
-      font-size: 16px;
+      font-size: 5vw;
+      line-height: 7vw;
     }
 
   }
@@ -849,7 +863,8 @@ html, body {
     margin-bottom: 0;
 
     @include phones {
-      font-size: 16px;
+      font-size: 5vw;
+      line-height: 7vw;
     }
   }
 
@@ -863,16 +878,17 @@ html, body {
     letter-spacing: 1px;
 
     @include phones {
-      font-size: 26px;
+      font-size: 7vw;
+      margin: 10vw 0;
     }
 
   }
 
   & article {
-    padding: 4vw 5vw 4vw;
+    padding: 4vw 12vw 4vw 4vw;
 
-    @include tablets {
-      padding: 20px 15px;
+    @include phones {
+      padding: 8vw;
     }
 
   }
@@ -929,6 +945,7 @@ html, body {
 
     @include phones {
       font-size: 5vw;
+      line-height: 7vw;
     }
   }
 
@@ -940,6 +957,7 @@ html, body {
 
     @include phones {
       font-size: 5vw;
+      line-height: 7vw;
     }
   }
 
@@ -956,15 +974,16 @@ html, body {
 
 
     @include phones {
-      font-size: 26px;
+      font-size: 7vw;
+      margin: 10vw 0;
     }
   }
 
   & article {
-    padding: 4vw 5vw 4vw;
+    padding: 4vw 12vw 4vw 4vw;
 
-    @include tablets {
-      padding: 20px 15px;
+    @include phones {
+      padding: 8vw 8vw 4vw 8vw;
     }
   }
 
@@ -1382,6 +1401,10 @@ a.animated-button.gibson-three:after {
     letter-spacing: 4px;
     border-bottom: 1px solid black;
     padding-bottom: 15px;
+
+    @include phones {
+      font-size: 5.4vw;
+    }
   }
 
 }
@@ -1390,8 +1413,13 @@ a.animated-button.gibson-three:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4vw;
+  padding-top: 5vw;
+  padding-right: 12vw;
   background: #f5f6f7;
+
+  @include tablets {
+    padding-right: 0;
+  }
 }
 
 .footer_confidential {
