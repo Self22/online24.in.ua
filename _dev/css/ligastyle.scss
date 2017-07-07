@@ -11,6 +11,7 @@ html, body {
 }
 
 .lmain__menu {
+  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.6));
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -21,6 +22,7 @@ html, body {
   justify-content: space-around;
   align-items: center;
   z-index: 6;
+  padding: 0 2vw;
 
   & .hvr-rectangle-out {
     background: transparent;
@@ -30,19 +32,16 @@ html, body {
     background: #787d9a;;
   }
 
-  & > div {
-    padding: 0 16px;
 
-    @include desktop {
-      padding: 0 7px;
-    }
-  }
 
   & a {
-    font-size: 16px;
+    font-size: 1.5vw;
     text-decoration: none;
     cursor: pointer;
-    color: #2a4491;
+    color: white;
+    font-weight: 100;
+    white-space: nowrap;
+    letter-spacing: 0.05vw;
 
     .btn-4:after {
       background: #efeff1;
@@ -75,8 +74,12 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: rgb(232, 234, 213);
-  height: 100px;
+  background: rgb(194, 201, 223); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2c9df', endColorstr='#1b5baa', GradientType=1); /* IE6-9 */
+  height: 130px;
   z-index: 5;
 }
 
@@ -128,7 +131,7 @@ html, body {
 }
 
 .l__mainmenu-contacts {
-  margin-left: 1%;
+  margin-left: 4%;
   min-width: 155px;
   display: flex;
   flex-direction: column;
@@ -147,11 +150,10 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: rgb(118, 122, 152);
-  margin-left: 15px;
+  background: #25408f;
   display: block;
-  border: 1px solid rgba(112, 112, 163, 0.5);
-  padding: 5px 20px;
+  border: none;
+  padding: 1vw 2.5vw;
   text-align: center;
 
   & span {
@@ -177,7 +179,7 @@ html, body {
   display: flex;
   flex-direction: row;
   padding-left: 4% !important;
-
+  padding-right: 2%;
   & a {
     white-space: nowrap;
   }
@@ -189,7 +191,8 @@ html, body {
 
 .liga__header {
   position: relative;
-  //background: url("../img/liga_header.jpg");
+  background: transparent;
+  //background: url("../img/liga_header1.jpg");
   //background-size: cover;
   //background-position-y: 50%;
 
@@ -199,15 +202,19 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+
 }
 
 .liga__header-content {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  height: 80vh;
+  align-items: center;
+  height: 100vh;
   padding-bottom: 55px;
+
 
   @include phones {
     height: 100vh;
@@ -273,8 +280,8 @@ html, body {
 }
 
 .liga__testcont {
-  height: 20vh;
-  background: #e8e8ef;
+  height: 180px;
+  background: #25408f;
   flex-direction: column;
 
   @include phones {
@@ -295,12 +302,13 @@ html, body {
 .liga__testcont-descr {
   margin-top: 15px;
   text-align: center;
+  color: white;
 }
 
 .l__testbtn {
 
-  background: #f9e9c0 !important;
-  color: black !important;
+  background: #de1336 !important;
+  color: #f2f6fa !important;
   padding: 12px 50px;
   font-size: 24px;
 
@@ -324,8 +332,6 @@ html, body {
 
 .liga__slogan {
 
-  padding-left: 5%;
-  padding-bottom: 50px;
 
   @include tablets {
     margin-top: 100px;
@@ -333,10 +339,12 @@ html, body {
   }
 
   .partner__brand {
-    font-size: 32px;
-    color: #25408f;
+    font-size: 4vw;
+    color: white;
     margin: 0;
-    margin-top: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
 
     @include phones {
       text-align: center;
@@ -344,9 +352,11 @@ html, body {
     }
   }
   .partner__slogan {
+    font-size: 3vw;
+    font-weight: 100;
     margin-top: 40px;
     color: white;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+
 
     @include phones {
       display: none;
@@ -354,9 +364,18 @@ html, body {
   }
 
   & p {
-    font-size: 20px;
+    text-align: center;
     color: white;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 2.2vw;
+    font-weight: 100;
+    margin-top: 5vw;
+    border-top: 1px solid white;
+    padding-top: 2vw;
+    width: 40vw;
+    line-height: 3vw;
+    letter-spacing: 1.4px;
+    margin-bottom: 5vw;
+
 
     @include phones {
       text-align: center;
@@ -371,8 +390,8 @@ html, body {
 }
 
 .liga__about {
-  padding: 30px 1vw 30px 1vw;
-  background: #feeded;
+  padding: 4.4vw 8vw 0;
+  background: rgb(213, 232, 247);
 
   & .article__title {
     margin-bottom: 50px;
@@ -384,12 +403,12 @@ html, body {
 }
 
 .liga__products {
-  padding: 30px 4% 50px 4%;
-  background: #d7d7f6;
+  padding: 0 12vw 4vw;
+  background: #d5e8f7;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: baseline;
+  align-items: stretch;
 
   & h1 {
     flex: 1 1 100%;
@@ -401,61 +420,45 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  height: 80px;
-  padding-top: 7px;
   text-align: center;
-  background: rgb(188, 191, 251);
-  color: #FCFFC5;
+  background: #25408f;
+  color: #ffffff;
   font-weight: 500;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 2.2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+
 
 }
 
-.liga__product-text {
-  flex: 1 1 100%;
-  margin-bottom: 35px;
-}
 
 .liga__product-item {
-  flex: 1 1 190px;
-  max-width: 300px;
-
-  height: 40vw;
-  max-height: 500px;
+  flex: 0 1 auto;
+  width: 46%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 10px;
-  padding: 10px 13px;
-  background: #DDFFD2;
-  margin-top: 15px;
+  margin: 1.2vw;
+  padding: 2vw;
+  border: 2px solid #25408f;
   z-index: 1;
-  box-shadow: rgba(36, 58, 102, 0.2) 1.41px 1.41px 20px 0px, rgba(66, 165, 245, 0.247059) 0px 2px 15px 0px, rgba(144, 202, 249, 0.247059) 0px 15px 25px 0px;
 
-  @include desktop {
-    height: 55vw;
-  }
-
-  @include tablets {
-    height: 70vw;
-  }
-
-  @include phones {
-    height: 150vw;
-  }
 
 }
 
 .liga__product-descr {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  padding: 0 1vw;
+  margin-bottom: 2vw;
+
 }
 
 .liga__product-price {
   margin-top: auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 2.2vw;
   font-weight: 600;
   border-top: 5px solid;
   padding-top: 15px;
@@ -486,11 +489,11 @@ html, body {
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
-  font-size: 16px !important;
+  font-size: 2.2vw !important;
   border: 1px solid #767a98 !important;
   padding: 15px 0px !important;
   color: #25408f !important;
-  font-weight: 900 !important;
+  font-weight: 600 !important;
   margin: 0 !important;;
   margin-top: 15px !important;
 
@@ -620,10 +623,18 @@ html, body {
 }
 
 .liga__features {
-
+  padding: 4.4vw 8vw;
+  background: rgb(213, 232, 247);
 }
 
 .features__descr {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+.feature__descr {
+  font-size: 1.5vw;
 
 }
 
@@ -639,20 +650,42 @@ html, body {
   margin: 0;
   list-style: none;
   display: inline-block;
-  width: 350px;
+
   font-size: 20px;
 }
 
 .module__item {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  outline: 1px solid black;
 
+  &-1 {
+    background: white;
+  }
+
+  &-2 {
+    background: rgb(193, 217, 241);
+  }
+
+  &-3 {
+    background: rgb(171, 208, 239);
+  }
 }
 
 .module__name {
-
+  text-align: center;
 }
 
 .module__predescr {
-
+  font-size: 16px;
+  text-align: center;
 }
 
 .module__icon {
@@ -665,5 +698,23 @@ html, body {
 }
 
 .module__descr {
+  padding: 25px;
+  font-size: 18px;
+  background: rgba(37, 64, 143, 0.8) !important;
+  letter-spacing: 0.4px;
+  font-family: Open Sans, Optima, sans-serif !important;
+}
 
+.feature__title {
+  margin-bottom: 1.5vw;
+  font-size: 1.8vw;
+  font-weight: 300;
+  color: #25408f;
+  letter-spacing: 0.5px;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: 1px solid #2d8bd8;
+  border-right: 2px solid #2d8bd8;
 }

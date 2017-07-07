@@ -1,7 +1,7 @@
 //parallax
 
 
-$('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
+$('.liga__header-content').parallax({imageSrc: '../img/liga_header1.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
 $('.ib__header-content').parallax({imageSrc: '../img/ib_header3.jpg'});
@@ -404,7 +404,7 @@ $(document).ready(function () {
         minSlides: 2,
         maxSlides: 8,
         moveSlides: 1,
-        slideMargin: 10
+        speed: 6000
     });
 });
 //////////////////////////////////// Mobile Menu Close Tap
@@ -491,3 +491,6 @@ $(document).ready(function () {
 
 
 });
+
+
+
