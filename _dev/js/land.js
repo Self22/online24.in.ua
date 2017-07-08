@@ -399,12 +399,11 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.module__list').bxSlider({
-        auto: true,
+        ticker: true,
         slideWidth: 400,
-        minSlides: 2,
+        minSlides: 1,
         maxSlides: 8,
-        moveSlides: 1,
-        speed: 6000
+        speed: 150000
     });
 });
 //////////////////////////////////// Mobile Menu Close Tap

@@ -79,7 +79,7 @@ html, body {
   background: -webkit-linear-gradient(left, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2c9df', endColorstr='#1b5baa', GradientType=1); /* IE6-9 */
-  height: 130px;
+  height: 9vw;
   z-index: 5;
 }
 
@@ -153,7 +153,7 @@ html, body {
   background: #25408f;
   display: block;
   border: none;
-  padding: 1vw 2.5vw;
+  padding: 1.5vw 2.5vw;
   text-align: center;
 
   & span {
@@ -206,6 +206,13 @@ html, body {
   margin-top: 25vh;
   margin-bottom: 10vh;
 
+  @include phones {
+    margin-top: 50vw;
+    padding-bottom: 0;
+    height: 70%;
+    justify-content: space-around;
+  }
+
 }
 
 .liga__header-content {
@@ -218,7 +225,6 @@ html, body {
 
   @include phones {
     height: 100vh;
-    align-items: flex-start;
   }
 
 }
@@ -303,6 +309,11 @@ html, body {
   margin-top: 15px;
   text-align: center;
   color: white;
+  font-size: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .l__testbtn {
@@ -333,10 +344,6 @@ html, body {
 .liga__slogan {
 
 
-  @include tablets {
-    margin-top: 100px;
-    padding-bottom: 0;
-  }
 
   .partner__brand {
     font-size: 4vw;
@@ -347,6 +354,7 @@ html, body {
 
 
     @include phones {
+      font-size: 12vw;
       text-align: center;
       margin-top: 0;
     }
@@ -378,8 +386,10 @@ html, body {
 
 
     @include phones {
+      font-size: 7vw;
       text-align: center;
-      font-size: 18px;
+      width: 90%;
+      line-height: 10vw;
     }
   }
 
@@ -387,18 +397,24 @@ html, body {
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
+
+  @include phones {
+    font-size: 8vw;
+    margin-bottom: 8vw;
+  }
 }
 
 .liga__about {
   padding: 4.4vw 8vw 0;
   background: rgb(213, 232, 247);
 
-  & .article__title {
-    margin-bottom: 50px;
-  }
 
   & i {
     margin-right: 12px;
+  }
+
+  @include phones {
+    padding: 4.4vw 0 0;
   }
 }
 
@@ -412,6 +428,10 @@ html, body {
 
   & h1 {
     flex: 1 1 100%;
+  }
+
+  @include tablets {
+    padding: 0 2vw 4vw;
   }
 
 }
@@ -428,30 +448,42 @@ html, body {
   font-size: 2.2vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
+  text-transform: uppercase;
 
+  @include phones {
+    font-size: 7vw;
+    padding: 5vw 0;
+  }
 
 }
 
 
 .liga__product-item {
   flex: 0 1 auto;
-  width: 46%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1.2vw;
+  margin: 4.5%;
   padding: 2vw;
-  border: 2px solid #25408f;
+  border: 1px solid rgba(37, 64, 143, 0.4);
   z-index: 1;
 
-
+  @include tablets {
+    width: 100%;
+    padding: 5vw;
+  }
 }
 
 .liga__product-descr {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin-top: 1vw;
   padding: 0 1vw;
   margin-bottom: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 
 }
 
@@ -460,42 +492,51 @@ html, body {
   text-align: center;
   font-size: 2.2vw;
   font-weight: 600;
-  border-top: 5px solid;
+  border-top: 4px solid;
   padding-top: 15px;
   padding-bottom: 10px;
+
+  @include phones {
+    font-size: 7vw;
+  }
 
   &-grand {
     border-color: white;
   }
 
   &-prime {
-    border-color: #A3FF85;
+    border-color: rgb(181, 206, 242);
   }
 
   &-buhprof {
-    border-color: #C7E5BD;
+    border-color: #5A6DA2;
   }
 
   &-jurprof {
-    border-color: #FFD2F8;
+    border-color: #7B93DB;
   }
 
   &-jur {
-    border-color: #EA92FF;
+    border-color: #43219C;
   }
 }
 
 .liga__product-order {
+  width: 80%;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 2.2vw !important;
-  border: 1px solid #767a98 !important;
-  padding: 15px 0px !important;
-  color: #25408f !important;
-  font-weight: 600 !important;
-  margin: 0 !important;;
+  padding: 14px 0px !important;
+  color: white !important;
+  font-weight: 400 !important;
+  margin: 0 auto !important;
   margin-top: 15px !important;
+  background: #de1336;
+
+  @include phones {
+    font-size: 7vw !important;
+  }
 
   &::after {
     opacity: 0;
@@ -503,18 +544,22 @@ html, body {
   }
 
   &:hover {
-    color: black !important;
+    color: white !important;
   }
 }
 
 .liga__comparison-table {
-  padding: 10px 1% 0;
-  background: rgb(239, 244, 189);
+  padding: 1vw 10vw 3vw;
+  background: #d5e8f7;
 
   & img {
     margin-top: 10px;
     max-width: 100%;
     height: auto;
+  }
+
+  @include tablets {
+    padding: 1vw 0 3vw;
   }
 }
 
@@ -526,8 +571,12 @@ html, body {
 }
 
 .liga__periodicals-article {
-  background: #f1f7f9;
-  padding: 30px 0 0 0;
+  background: #d5e8f7;
+  padding: 4vw 12vw;
+
+  @include tablets {
+    padding: 4vw 2vw;
+  }
 }
 
 .article__title-lzperiod {
@@ -536,79 +585,126 @@ html, body {
 }
 
 .periodicals__section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 50px 4vw;
 
+  @include phones {
+    padding: 50px 10vw;
+    margin-bottom: 15px;
+  }
+
   &-bz {
-    background: rgb(224, 227, 219);
+    background: white;
   }
 
   &-uz {
-    background: rgb(247, 225, 232);
+    background: rgb(171, 208, 239);
   }
 
   &-msfo {
-    background: rgb(212, 241, 250);
+    background: rgb(171, 208, 239);
   }
 
   &-buhlight {
-    background: rgb(247, 217, 199);
+    background: white;
+
   }
 
 }
 
 .periodicals__section-title {
+  font-size: 2.2vw;
+  display: flex;
+  flex-direction: row;
 
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 .periodicals__section-type {
 
+  font-size: 2.2vw;
+
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 .periodicals__logo {
-  margin-top: 20px;
+  width: 13%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .periodicals__section-descr {
   margin-top: 20px;
   margin-bottom: auto;
+  font-size: 1.3vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .periodicals__section-price {
   align-self: center;
   margin-top: 20px;
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 2.2vw;
+  font-weight: 700;
+
+  @include phones {
+    font-size: 7vw;
+  }
 
 }
 
 .periodicals__test-button {
   margin-top: 30px;
   align-self: center;
-  width: 65%;
+  width: 80%;
   border: none;
   background: transparent;
   border: 1px solid black;
   padding: 15px 0;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   color: #25408f;
+  font-size: 2.2vw;
+
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 .periodicals__buy-button {
   margin-top: 20px;
-  align-self: center;
-  width: 65%;
-  border: none;
-  background: transparent;
-  border: 1px solid black;
-  padding: 15px 0;
+  width: 80%;
+  text-align: center;
+  text-decoration: none !important;
   text-transform: uppercase;
-  font-weight: 600;
-  color: #25408f;
+  font-size: 2.2vw !important;
+  padding: 14px 0px !important;
+  color: white !important;
+  font-weight: 400 !important;
+  margin: 0 auto !important;
+  margin-top: 15px !important;
+  background: #de1336;
+  border: none;
+
+  @include phones {
+    font-size: 7vw !important;
+  }
 }
 
 .bp-hs_inner__item {
@@ -623,18 +719,22 @@ html, body {
 }
 
 .liga__features {
-  padding: 4.4vw 8vw;
+  padding: 4.4vw 8vw 10px;
   background: rgb(213, 232, 247);
 }
 
 .features__descr {
   text-align: center;
   font-size: 1.5vw;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
 }
 
 .feature__descr {
   font-size: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 
 }
 
@@ -666,6 +766,10 @@ html, body {
   padding: 25px;
   outline: 1px solid black;
 
+  @include phones {
+    width: 95vw;
+  }
+
   &-1 {
     background: white;
   }
@@ -681,6 +785,10 @@ html, body {
 
 .module__name {
   text-align: center;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .module__predescr {
@@ -703,6 +811,10 @@ html, body {
   background: rgba(37, 64, 143, 0.8) !important;
   letter-spacing: 0.4px;
   font-family: Open Sans, Optima, sans-serif !important;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .feature__title {
@@ -711,10 +823,20 @@ html, body {
   font-weight: 300;
   color: #25408f;
   letter-spacing: 0.5px;
+
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 .bx-wrapper {
   box-shadow: none;
   border: 1px solid #2d8bd8;
   border-right: 2px solid #2d8bd8;
+}
+
+.product__feautures-liga {
+  @include phones {
+    margin-bottom: 6vw;
+  }
 }
