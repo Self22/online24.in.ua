@@ -229,61 +229,7 @@ html, body {
 
 }
 
-.liga__slider {
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  @include tablets {
-    margin-top: 0;
-  }
-
-  h3 {
-    @include desktop {
-      font-size: 32px;
-    }
-
-    @include phones {
-      font-size: 28px;
-      color: white;
-    }
-  }
-
-  p {
-    @include desktop {
-      font-size: 26px;
-    }
-
-    @include phones {
-      font-size: 22px;
-      color: white;
-    }
-  }
-
-  h3, p {
-    font-family: Open Sans, Optima, sans-serif;
-  }
-
-  & .slide {
-    height: 290px;
-    width: 50vw;
-
-    @include desktop {
-      width: 45vw;
-    }
-
-    @include tablets {
-      width: 100vw;
-    }
-
-    @include phones {
-      width: 95vw;
-    }
-
-  }
-
-}
 
 .liga__testcont {
   height: 180px;

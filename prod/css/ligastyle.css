@@ -860,43 +860,6 @@ html, body {
     .liga__header-content {
       height: 100vh; } }
 
-.liga__slider {
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media screen and (max-width: 768px) {
-    .liga__slider {
-      margin-top: 0; } }
-  @media screen and (max-width: 1200px) {
-    .liga__slider h3 {
-      font-size: 32px; } }
-  @media screen and (max-width: 480px) {
-    .liga__slider h3 {
-      font-size: 28px;
-      color: white; } }
-  @media screen and (max-width: 1200px) {
-    .liga__slider p {
-      font-size: 26px; } }
-  @media screen and (max-width: 480px) {
-    .liga__slider p {
-      font-size: 22px;
-      color: white; } }
-  .liga__slider h3, .liga__slider p {
-    font-family: Open Sans, Optima, sans-serif; }
-  .liga__slider .slide {
-    height: 290px;
-    width: 50vw; }
-    @media screen and (max-width: 1200px) {
-      .liga__slider .slide {
-        width: 45vw; } }
-    @media screen and (max-width: 768px) {
-      .liga__slider .slide {
-        width: 100vw; } }
-    @media screen and (max-width: 480px) {
-      .liga__slider .slide {
-        width: 95vw; } }
-
 .liga__testcont {
   height: 180px;
   background: #25408f;

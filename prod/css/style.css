@@ -1550,7 +1550,7 @@ html, body {
     align-items: center;
     color: #023756;
     font-size: 2vw;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
     text-align: center;
@@ -1614,7 +1614,7 @@ html, body {
   font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
-  color: #ebf305;
+  color: black;
   font-family: "Raleway", Arial, sans-serif;
   flex: 1 1 100%;
   margin: 30px 0; }
