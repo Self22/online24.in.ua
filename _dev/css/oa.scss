@@ -6,7 +6,7 @@
 @import "animations.css";
 
 .lmain__menu {
-  padding-left: 1%;
+  padding: 0 12%;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -44,19 +44,19 @@
 
 .lnav__fixed {
   position: fixed;
-  background: rgb(244, 245, 243);
+  background: #eff3f3;
   height: 120px;
   z-index: 5;
 }
 
 .logosticky__o24 {
-  margin-right: 7%;
-  margin-left: 1%;
+  margin-right: 5%;
+  margin-left: 2%;
 }
 
 .partnerlogosticky {
   max-width: 165px;
-  min-width: 80px;
+  min-width: 100px;
 
   @include desktop {
     max-width: 120px;
@@ -104,7 +104,7 @@
   justify-content: center;
   align-items: center;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
   font-size: 1.5vw;
   font-weight: 400 !important;
   letter-spacing: 1px;
@@ -112,7 +112,7 @@
 
   &:hover {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
+
 
   }
 }
@@ -122,14 +122,15 @@
   background: transparent;
 
   display: block;
-  padding: 5px 20px;
+  padding: 1.3vw 2.5vw;
   text-align: center;
   border: 1px solid black;
   font-size: 1.5vw;
+  color: black !important;
 
   & span {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
     font-weight: 500;
   }
 }
@@ -155,7 +156,7 @@
   text-decoration: none !important;
   cursor: pointer;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
   margin-right: 5px;
 
   &:hover {
@@ -279,26 +280,11 @@
   }
 }
 
-.slider {
-  width: 60vw;
+.oa__slider {
+  padding: 4vw 12vw;
 
-  @include phones {
-    width: 95vw;
-  }
-}
-
-.l__slider {
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include tablets {
-    margin-top: 0;
-  }
-
-  h3 {
-
+  & h3 {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 3vw;
     color: rgb(39, 32, 22);
 
@@ -309,9 +295,10 @@
     }
   }
 
-  p {
+  & p {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 2vw;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0;
 
     @include phones {
@@ -326,24 +313,10 @@
   }
 
   & .slide {
-    background: rgba(208, 218, 7, 0.4);
+    background: #eff3f3;
     border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 20vw;
 
-    height: 280px;
-    width: 50vw;
-
-    @include desktop {
-      width: 45vw;
-    }
-
-    @include tablets {
-      width: 100vw;
-    }
-
-    @include phones {
-      width: 95vw;
-      padding: 0 3vw;
-    }
 
   }
 
@@ -351,7 +324,7 @@
 
 .l__testcont {
   height: 170px;
-  background: rgb(227, 233, 106);
+  background: rgb(239, 243, 243);
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -377,7 +350,7 @@
 
 .l__testbtn {
 
-  background: rgb(39, 32, 22) !important;
+  background: #d91414 !important;
   color: white !important;
   padding: 12px 50px;
   font-size: 28px;
@@ -390,7 +363,7 @@
   }
 
   & svg {
-    height: 62px;
+    height: 63px;
 
     @include phones {
       height: 41px;
@@ -425,17 +398,18 @@
     color: rgb(39, 32, 22);
     margin: 0;
     margin-top: 15px;
-    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
     font-family: "Raleway", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
 
     & img {
       margin-top: 30px;
-      width: 75%;
+      width: 40%;
       height: auto;
 
       @include phones {
@@ -464,6 +438,8 @@
     color: rgb(39, 32, 22);
     font-weight: 300;
     font-family: "Raleway", Arial, sans-serif;
+    line-height: 5vw;
+    letter-spacing: 0.07vw;
 
     @include desktop {
       margin-top: 20px;
@@ -522,10 +498,10 @@
 }
 
 .l_features {
-  padding: 10px 7% 30px;
+  padding: 4vw 12vw;
   background: white;
   & h2, h3, p, li {
-    color: white;
+    color: black;
   }
 
 }
@@ -541,9 +517,10 @@
 }
 
 .features__descr {
-  font-size: 1.8vw;
+  font-size: 2vw;
   margin: 30px 0;
   color: black;
+  font-weight: 100;
 
   @include phones {
     font-size: 5vw;
@@ -563,9 +540,9 @@
 }
 
 .cfuture__block {
-  background: rgb(114, 168, 214);
-  padding: 2vw 2vw 1.5vw 5vw;
-  border-radius: 24px;
+  background: #eff3f3;
+  padding: 4vw 4vw 3.5vw 7vw;
+
 }
 
 .future__list {
@@ -578,9 +555,9 @@
   padding: 0;
   margin: 0;
   margin: 15px 0;
-  font-size: 1.8vw;
+  font-size: 2vw;
   letter-spacing: 0.4px;
-  font-weight: 400;
+  font-weight: 100;
 
   & a {
     color: rgb(34, 50, 243);
@@ -649,16 +626,17 @@
 }
 
 .ats__functions {
-
+  padding: 2vw 12vw;
 }
 
 .article__title-black {
   color: black;
-  margin-bottom: 3vw;
+  margin-bottom: 4vw;
+  text-transform: uppercase;
 }
 
 .func__item {
-  padding: 3vw;
+  padding: 4vw 5vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -686,29 +664,29 @@
 }
 
 .func__item-1 {
-  background: rgb(239, 234, 153);
+  background: #eff3f3;
 }
 
 .func__item-2 {
-  background: rgb(246, 248, 205);
+  background: rgb(250, 251, 230);
 }
 
 .func__item-3 {
-  background: rgb(233, 237, 204);
+  background: rgb(250, 251, 230);
 
 }
 
 .func__item-4 {
-  background: rgba(88, 115, 3, 0.2);
+  background: #eff3f3;
 }
 
 .func__item-5 {
-  background: rgb(246, 242, 238);
+  background: #eff3f3;
 
 }
 
 .func__item-6 {
-  background: rgb(234, 236, 229);
+  background: rgb(250, 251, 230);
 }
 
 .sota__fotoblock {
@@ -744,15 +722,11 @@
 
 .tariff__title {
   text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 3vw;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  border-bottom: 3px solid #dad5d1;
-  border-left: 3px solid #dad5d1;
   padding-bottom: 15px;
   margin-bottom: 3vw;
   text-transform: uppercase;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
 
   @include phones {
     font-size: 6vw;
@@ -1031,7 +1005,7 @@
 }
 
 .aboutus {
-  padding: 3vw 5vw;
+  padding: 4vw 12vw 2vw;
 }
 
 .concurent__item {
@@ -1065,7 +1039,7 @@
 
   & p {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     margin: 2vw 1vw;
     font-size: 2.1vw;
 
@@ -1077,6 +1051,7 @@
   & li {
     font-size: 2vw;
     margin-bottom: 1vw;
+    font-weight: 100;
 
     @include phones {
       font-size: 6vw;
@@ -1088,8 +1063,9 @@
   font-size: 2.1vw;
   border-top: 1px solid black;
   text-align: center;
-  font-weight: 600;
-  padding-top: 2vw;
+  font-weight: 400;
+  padding-top: 4vw;
+  margin-bottom: 4vw;
 
   @include phones {
     font-size: 6vw;
