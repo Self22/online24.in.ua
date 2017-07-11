@@ -381,7 +381,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  padding-left: 40px;
 
   @include tablets {
     margin-top: 130px;
@@ -390,7 +389,7 @@
 
   @include phones {
     margin-top: 0;
-    margin-bottom: 2vh;
+    margin-bottom: 50vh;
   }
 
   .partner__brand {
@@ -413,7 +412,7 @@
       height: auto;
 
       @include phones {
-        width: 50%;
+        width: 70%;
         margin-top: 10px;
       }
     }
@@ -428,6 +427,7 @@
 
     @include phones {
       color: white;
+      font-weight: 500;
       text-align: center;
     }
   }
@@ -449,8 +449,11 @@
       margin-top: 10px;
       width: 100%;
       text-align: center;
-      font-size: 24px;
+      font-size: 26px;
       color: white;
+      line-height: 10vw;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     }
   }
 
@@ -503,7 +506,9 @@
   & h2, h3, p, li {
     color: black;
   }
-
+  @include phones {
+    padding: 5vw;
+  }
 }
 
 .lfuture__block {
@@ -523,7 +528,7 @@
   font-weight: 100;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 0;
   }
 }
@@ -565,7 +570,7 @@
   }
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 15px 15px;
   }
 }
@@ -627,6 +632,10 @@
 
 .ats__functions {
   padding: 2vw 12vw;
+
+  @include phones {
+    padding: 5vw;
+  }
 }
 
 .article__title-black {
@@ -657,9 +666,10 @@
 .func__descr {
   font-size: 1.5vw;
   font-weight: 300;
+  letter-spacing: 0.02vw;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
@@ -689,22 +699,25 @@
   background: rgb(250, 251, 230);
 }
 
-.sota__fotoblock {
-  height: 40vh;
-}
 
 .l__tariffs {
-  padding: 40px 3vw 2vw;
-  background: rgb(227, 231, 249);
-
+  padding: 4vw 12vw 2vw;
+  background: white;
+  @include phones {
+    padding: 5vw;
+  }
 }
 
 .tariff__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 3vw;
-  margin-bottom: 10px;
+  padding: 4vw 1.5vw;
+
+  @include phones {
+    margin-bottom: 10px;
+  }
+
 
 }
 
@@ -713,20 +726,26 @@
 }
 
 .tariff__item-2 {
-  background: #D1F7AB;
+  background: #fafbe6;
 }
 
 .tariff__item-3 {
   background: rgb(193, 208, 218);
 }
 
+.tariff__item-4 {
+  background: #f4f5f3;
+}
+
+
 .tariff__title {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 3vw;
+  font-size: 2vw;
   padding-bottom: 15px;
   margin-bottom: 3vw;
   text-transform: uppercase;
+  font-weight: 400;
 
   @include phones {
     font-size: 6vw;
@@ -751,7 +770,7 @@
   font-weight: 300;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
     padding-left: 10%;
   }
 
@@ -760,8 +779,8 @@
 .tariff__price {
   margin-top: auto;
   text-align: center;
-  font-size: 2.9vw;
-  margin-bottom: 2vw;
+  font-size: 2vw;
+  margin-bottom: 4vw;
 
   @include phones {
     font-size: 7vw;
@@ -784,11 +803,12 @@
 .tariff__button {
   border: none;
   display: block;
-  background: transparent;
-  border: 1px solid black;
+  background: #da1616;
+  color: white;
+  border: 1px solid white;
   margin: 0 auto;
   padding: 1vw 4vw;
-  font-size: 2.1vw;
+  font-size: 2vw;
   text-transform: uppercase;
   margin-bottom: 2vw;
 
@@ -807,19 +827,20 @@
 }
 
 .l__channels {
-  padding: 40px 3vw 0;
-  background: rgb(227, 231, 249);
+  padding: 2vw 12vw;
+  background: white;
+
+  @include phones {
+    padding: 5vw;
+  }
 }
 
-.channels__acc {
 
-}
 
 .channels__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding: 0 10vw;
   margin-bottom: 5vw;
 
   @include phones {
@@ -834,23 +855,23 @@
   list-style: none;
 
   &-1 {
-    background: #F4F5F3;
+    background: #DEE7ED;
   }
 
   &-2 {
-    background: #D1F7AB;
+    background: #fafbe6;
   }
 
   &-3 {
-    background: rgb(193, 208, 218);
+    background: #DEE7ED;
   }
 
   &-4 {
-    background: #efea99;
+    background: #fafbe6;
   }
 
   &-5 {
-    background: rgb(189, 215, 248);
+    background: #DEE7ED;
   }
 
   &:hover svg {
@@ -859,9 +880,7 @@
 
 }
 
-.channel-acco__trigger {
 
-}
 
 .acc__icon-oa {
   transition: all 0.5s;
@@ -880,18 +899,22 @@
   align-items: center;
   font-size: 2vw;
 
+  @include phones {
+    padding: 5vw 0;
+  }
+
 }
 
 .channel__name {
 
   font-weight: 600;
-  font-size: 2.1vw;
+  font-size: 2vw;
   margin-right: 1vw;
   margin-left: 1vw;
   color: #023756;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
@@ -912,18 +935,18 @@
   font-size: 2vw;
 
   @include phones {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
 .channel-acco__descr {
   display: none;
-  background: #e3e7f9;
+  background: #f4f5f3;
   padding: 2vw;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 
   @include phones {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 }
 
@@ -967,7 +990,8 @@
 
 .channel__decsr {
   text-align: center;
-  font-size: 2.4vw;
+  font-size: 2vw;
+  font-weight: 300;
   padding: 4vw;
   margin-bottom: 0;
 
@@ -981,9 +1005,9 @@
 .section__title {
   color: black;
   margin-bottom: 3vw;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
-  font-size: 3.1vw;
+  font-size: 2vw;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Raleway", Arial, sans-serif;
@@ -999,13 +1023,17 @@
 
   @include phones {
     padding: 0 5vw;
-    font-size: 5vw;
+    font-size: 6vw;
 
   }
 }
 
 .aboutus {
   padding: 4vw 12vw 2vw;
+
+  @include phones {
+    padding: 5vw;
+  }
 }
 
 .concurent__item {
@@ -1073,7 +1101,7 @@
 }
 
 .oc__item {
-  background: #FAD6CB;
+  background: #f4f5f3;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1088,9 +1116,8 @@
 }
 
 .oc__title {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 2.7vw;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2vw;
   white-space: nowrap;
 
   @include phones {
@@ -1101,7 +1128,7 @@
 
 .oc__price {
   text-align: center;
-  font-size: 2.7vw;
+  font-size: 2vw;
   color: #3f51b5;
   white-space: nowrap;
   margin-right: 3vw;
@@ -1112,9 +1139,9 @@
 }
 
 .oc__descr {
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding: 0 1vw;
-  font-weight: 300;
+  font-weight: 100;
 
   @include phones {
     font-size: 6vw;
