@@ -3,16 +3,15 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
-    uglify = require('gulp-uglify'),
+// uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    // cleanCSS = require('gulp-clean-css'),
-// imagemin = require('gulp-imagemin'),
-// pngquant = require('imagemin-pngquant'),
+    cssnano = require('gulp-cssnano'),
     rimraf = require('rimraf'),
     include = require("gulp-include"),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
+
 
 var path = {
     dest: {
@@ -76,9 +75,6 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //������ ��� main ����
-        .pipe(sourcemaps.init()) //�������������� sourcemap
-        // .pipe(uglify()) //������ ��� js
-        .pipe(sourcemaps.write('.')) //�������� �����
         .pipe(gulp.dest(path.dest.js)) //�������� ������� ���� � build
         .pipe(reload({stream: true})); //� ������������ ������
 });
@@ -90,23 +86,17 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) // ������� ��� main.scss
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
-        .pipe(prefixer()) //������� ��������� ��������
-        // .pipe(cleanCSS()) //������
+
+
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .pipe(reload({stream: true}));
 });
 
+
 gulp.task('img:build', function () {
     gulp.src(path.src.img) //������� ���� ��������
-    // .pipe(imagemin({ //������ ��
-    //     progressive: true,
-    //     svgoPlugins: [{removeViewBox: false}],
-    //     use: [pngquant()],
-    //     interlaced: true
-    // }))
         .pipe(gulp.dest(path.dest.img)) //� ������ � build
-        .pipe(reload({stream: true}));
 });
 
 gulp.task('fonts:build', function () {

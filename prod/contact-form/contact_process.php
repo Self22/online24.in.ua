@@ -17,11 +17,13 @@ function ValidateEmail($value){
 $post = (!empty($_POST)) ? true : false;
 
 if($post){
-
+    $url = stripslashes($_SERVER['HTTP_REFERER']);
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
-    $subject = 'Заявка';
+    $product = ($_POST['product']);
+    $type = stripslashes($_POST['form_type']);
+    $subject = 'Заявка Online24 - '. $product.'';
     $error = '';
     $message = '
 			<html>
@@ -29,9 +31,12 @@ if($post){
 							<title>Заявка</title>
 					</head>
 					<body>
-							<p>Имя: '.$name.'</p>
-							<p>Телефон : '.$phone.'</p>	
-							<p>Email : '.$email.'</p>
+					        <p>Заявка</p>
+					        <p>Тип заявки:'. $type .'</p>
+					        <p>Страница: '. $url .'</p>
+							<p>Имя: ' . $name . '</p>
+							<p>Телефон : ' . $phone . '</p>	
+							<p>Email : ' . $email . '</p>
 					</body>
 			</html>';
 
@@ -47,7 +52,7 @@ if($post){
             ."X-Mailer: PHP/" . phpversion());
 
         if($mail){
-            echo 'OK';
+            echo '<div class="message-success">Спасибо за заявку! Мы вам перезвоним!</div>';
         }
     }else{
         echo '<div class="has-danger">'.$error.'</div>';
@@ -55,3 +60,6 @@ if($post){
 
 }
 ?>
+
+
+

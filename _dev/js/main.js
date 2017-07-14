@@ -1,6 +1,7 @@
+//sidebar accordeon__texts
+
 $(document).ready(function () {
 
-    //accordeon__texts
 
     (function () {
 
@@ -49,21 +50,22 @@ $(document).ready(function () {
 
 });
 
-//slider
 
-$('.bp-hs').bpHS(autoPlay = true, showButtons = true, showControls = true, showBullets = false);
+/////////// slider 
+$(document).ready(function () {
+    $('.bxslider').bxSlider({
+        auto: true,
+        pager: false,
+        controls: false
+    });
+});
 
 //parallax
+$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock2.jpg'});
+$('.excellence__fotoblock').parallax({imageSrc: 'img/excellence_fotoblock.jpg'});
+$('.index__fotoblock').parallax({imageSrc: 'img/index-fotoblock2.jpg'});
+$('.partn__fotoblock').parallax({imageSrc: 'img/index-header4.jpg'});
 
-$('.header').parallax({imageSrc: 'img/whiteblue_back606.png'});
-$('.liga__header-content').parallax({imageSrc: '../img/liga_header.jpg'});
-$('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
-$('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
-$('.ib__header-content').parallax({imageSrc: '../img/ib_header2.jpg'});
-$('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
-$('.ib__fotoblock').parallax({imageSrc: '../img/ib__photoblock.jpg'});
-
-// $('.footer').parallax({imageSrc: 'img/whiteblue_back602.png'});
 
 //sticky header
 
@@ -71,10 +73,11 @@ $(function () {
 
     $(window).scroll(function () {
 
-        if ($(this).scrollTop() >= 350) {
+        if ($(this).scrollTop() >= 450) {
 
             $('.nav__main').addClass('nav__fixed');
             $('.header__main').addClass('header__main-sticky');
+
 
         }
 
@@ -82,6 +85,7 @@ $(function () {
 
             $('.nav__main').removeClass('nav__fixed');
             $('.header__main').removeClass('header__main-sticky');
+
         }
 
     });
@@ -160,7 +164,7 @@ $(function () {
             var str = form.serialize();
 
             $.ajax({
-                url: 'contact-form/contact_process.php',
+                url: '../contact-form/contact_process.php',
                 type: 'POST',
                 data: str
             })
@@ -209,151 +213,49 @@ $(function () {
 
 }());
 
+
 /////////////// mask
 $(document).ready(function () {
     $('.footer__form-tel').mask('+38 (000) 000-00-00');
-});
-
-////// slow scroll
-
-// $(document).ready(function () {
-//
-//     var container = $('.liga__header');
-//
-//     $(".lmain__menu").on("click", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top - 100;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-//
-//     $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//         setTimeout(container.removeClass("in"), 500);
-//     });
-//
-//     $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//
-//         event.preventDefault();
-//         //забираем идентификатор блока с атрибута href
-//         var id = $(this).attr('href'),
-//         //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top;
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-//
-// });
-//
-
-$(document).ready(function () {
-
-    var container = $('.ib__header');
-
-    $(".lmain__menu").on("click", ".lmain__menu", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top - 100;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-
-    $(".navbar-toggleable-sm").on("click", ".menu__inner", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-        setTimeout(container.removeClass("in"), 500);
-    });
-
-    $(".navbar-toggleable-sm").on("tap", ".menu__inner", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-        //забираем идентификатор блока с атрибута href
-        var id = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-
+    $('.order__tel-input').mask('+38 (000) 000-00-00');
 });
 
 
+//////////////////////////////////// Mobile Menu Close Tap
 
-
-
-
-
-///////////////////////////////////// tabs contragent tariffs
-
-$(document).ready(function () {
-
-    //tabs
-
-    var flag = true;
-
-    $('.tariff__item-link').on('click', function (e) {
-        e.preventDefault();
-
-        var
-            $this = $(this),
-            item = $this.closest('.tariff__item'),
-            container = $this.closest('.ca__tariff-tabs'),
-            content = container.find('.tariff__descr-item'),
-            ndx = item.index(),
-            reqItem = content.eq(ndx),
-            activeItem = content.filter('.tariff__descr-item-active');
-
-        if (flag) {
-            flag = false;
-
-
-            item.addClass('tariff__item-active')
-                .siblings()
-                .removeClass('tariff__item-active');
-
-            activeItem.fadeOut(500, function () {
-                reqItem.fadeIn(500, function () {
-                    $(this).addClass('tariff__descr-item-active')
-                        .siblings()
-                        .removeClass('tariff__descr-item-active');
-                    flag = true
-                });
-            });
-
-        }
-
-    })
-
+$('main').on('click', function (e) {
+    $('.navbar-collapse').removeClass('show');
 });
 
-///////////////////////////
+/////////////////////// slow popup
+
+$('.l__testbtn').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-test').fadeIn(800);
+});
+
+$('.tariff__button').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
+});
+
+$('.overlay').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+})
+
+$('.close__popup').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+
+})
+
+/////////////////////////// Index: soft scroll
 
 $('#nav-main').singlePageNav(
-    {offset: 100, speed: 1000, threshold: 150}
+    {offset: 130, speed: 1000, threshold: 150}
 );

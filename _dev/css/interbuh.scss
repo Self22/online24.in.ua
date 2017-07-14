@@ -77,10 +77,10 @@ html, body {
   }
 }
 
-.ligalogo__mob {
+.partnerlogo__mob {
   position: absolute;
   left: 120px;
-  top: 30px;
+  top: 27px;
   width: 85px;
 
   & img {
@@ -114,6 +114,7 @@ html, body {
   justify-content: center;
   align-items: center;
   color: white;
+  white-space: nowrap;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
   &:hover {
@@ -166,10 +167,8 @@ html, body {
   }
 
   &:focus {
-    outline: 1px solid;
     color: white !important;
   }
-
 
   @include desktop {
     font-size: 14px;
@@ -206,10 +205,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 600px;
+  height: 80vh;
 
   @include phones {
     height: 100vh;
+    align-items: center;
   }
 
 }
@@ -332,11 +332,17 @@ html, body {
     }
 
     @include phones {
-      width: 100vw;
+      height: 240px;
+      width: 95vw;
     }
 
   }
 
+}
+
+.slider {
+  height: 40vh;
+  margin-bottom: 1vh;
 }
 
 .slide1 {
@@ -388,13 +394,22 @@ html, body {
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
 
-  &-big {
-    height: 225px;
-  }
-
   &-descr {
     margin-top: 15px;
   }
+
+  @include phones {
+    height: 90px;
+  }
+
+  &-big {
+    height: 225px;
+
+    @include phones {
+      height: 400px;
+    }
+  }
+
 }
 
 .liga__testcont-descr {
@@ -421,12 +436,16 @@ html, body {
   border: 1px solid white;
 
   @include phones {
-    padding: 26px 11px;
+    padding: 12px 11px;
     font-size: 14px;
   }
 
   & svg {
     height: 57px;
+
+    @include phones {
+      height: 43px;
+    }
   }
 
   & rect {
@@ -437,7 +456,7 @@ html, body {
 .ib__slogan {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding-bottom: 50px;
   padding-left: 40px;
@@ -445,6 +464,11 @@ html, body {
   @include tablets {
     margin-top: 130px;
     padding-bottom: 0;
+  }
+
+  @include phones {
+    margin-top: 55px;
+    padding-left: 0;
   }
 
   .partner__brand {
@@ -465,6 +489,8 @@ html, body {
 
     @include phones {
       text-align: center;
+      font-size: 11vw;
+      margin-bottom: 1vh;
     }
   }
   .partner__slogan {
@@ -483,9 +509,14 @@ html, body {
     }
 
     @include phones {
-      width: 100%;
+      width: 90%;
       text-align: center;
       font-size: 24px;
+      margin-left: 5%;
+      border: 3px solid #ddd;
+      background: rgba(120, 199, 242, 1);
+      border-radius: 4px;
+      padding: 5px 40px;
     }
   }
 
@@ -503,7 +534,6 @@ html, body {
   }
 
 }
-
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
@@ -586,6 +616,9 @@ html, body {
 
 .ib__fotoblock {
   height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .btn-1:hover {
@@ -650,6 +683,10 @@ html, body {
 
   & li {
     margin-bottom: 10px;
+
+    @include phones {
+      margin-bottom: 0.5vw;
+    }
   }
 
   @include desktop {
@@ -692,6 +729,10 @@ html, body {
     border-color: #E8A289;
   }
 
+  @include phones {
+    padding-top: 8px;
+  }
+
 }
 
 .ib__product-order {
@@ -717,4 +758,21 @@ html, body {
   }
 }
 
+.liga__partner-logo {
+  margin-left: 3%;
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0;
+}
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

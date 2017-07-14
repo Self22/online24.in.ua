@@ -137,7 +137,7 @@ a.animated-button.gibson-four {
 
 a.animated-button.gibson-four:after {
   opacity: 0;
-  background-image: -webkit-linear-gradient(transparent 50%, rgb(241, 247, 249) 50%);
+  background-image: -webkit-linear-gradient(transparent 50%, rgb(241, 247, 249) 50%) !important;
   background-image: -moz-linear-gradient(transparent 50%, rgb(241, 247, 249) 50%);
   background-size: 10px 10px;
   -moz-transform: translateX(-50%) translateY(-50%);

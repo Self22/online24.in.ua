@@ -1,0 +1,1040 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+////partials
+@import "partials/animations_hover";
+@import "animations.css";
+
+.lmain__menu {
+  background: transparent;
+  padding-left: 3%;
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  animation-fill-mode: none;
+  height: 130px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+
+  & .hvr-rectangle-out {
+    background: transparent;
+  }
+
+  .hvr-rectangle-out:before {
+    background: #376265;
+  }
+
+  & > div {
+    padding: 0 16px;
+
+    @include desktop {
+      padding: 0 7px;
+    }
+  }
+
+  & a {
+    font-weight: 400;
+    text-decoration: none !important;
+    white-space: nowrap;
+  }
+
+}
+
+.lnav__fixed {
+  position: fixed;
+  background: rgb(243, 238, 241);
+  height: 110px;
+  z-index: 5;
+}
+
+.logosticky__o24 {
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.partnerlogosticky {
+  max-width: 165px;
+
+  @include desktop {
+    max-width: 120px;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.partnerlogo__mob {
+  position: absolute;
+  left: 120px;
+  top: 27px;
+  width: 85px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.l__mainmenu-item {
+  padding: 0 !important;
+}
+
+.l__mainmenu-contacts {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.l__mainmenu-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #023756;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.7vw;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  &:hover {
+    color: #023756;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
+
+  }
+}
+
+.lmain__menu-excellence {
+  transition: all 0.5s;
+  background: transparent;
+
+  margin-left: 15px;
+  display: block;
+  padding: 5px 20px;
+  text-align: center;
+  border: 1px solid #023756;;
+  font-size: 1.4vw;
+
+  & span {
+    color: #023756;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+  }
+}
+
+.nav-scroll ul, .nav-scroll li {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-scroll ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.active {
+  border: 1px solid black;
+}
+
+.lmain__menu-link {
+  padding: 15px 17px;
+  font-size: 1.8vw;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #023756;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  margin-right: 5px;
+
+  &:hover {
+    outline: 1px solid #023756;
+    color: #023756 !important;
+  }
+
+  &:focus {
+
+    color: #023756 !important;
+  }
+
+  @include desktop {
+
+    text-align: center;
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+}
+
+.current {
+  outline: 1px solid;
+}
+
+.null__link {
+  outline: none !important;
+}
+
+.lmain__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.vchasno__header__header {
+  position: relative;
+
+  background: transparent;
+  background-size: cover;
+
+}
+
+.vchasno__header-content {
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 150px;
+
+  @include phones {
+    height: 100vh;
+  }
+
+}
+
+.l__products {
+  background: #437BE0;
+  padding: 10px 5% 40px 5%;
+
+  & .article__title {
+    color: white;
+  }
+}
+
+.analytics__content {
+  padding: 10px 0 0 0;
+  background: #eae4df;
+
+  & h2 {
+    color: #203048;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+}
+
+.analytics__feature {
+  padding: 35px 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  & p {
+    margin-bottom: 30px;
+  }
+
+  &-1 {
+    background: #EFFEFF;
+  }
+
+  &-2 {
+    background: #d5dce9;
+  }
+
+  &-3 {
+    background: #bff2d9;
+  }
+
+  &-4 {
+    background: #C7FCF2;
+  }
+}
+
+@keyframes growIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.slider {
+  width: 60vw;
+
+  @include phones {
+    width: 95vw;
+  }
+}
+
+.l__slider {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablets {
+    margin-top: 0;
+  }
+
+  h3 {
+
+    font-size: 3vw;
+    color: black;
+
+    @include phones {
+      font-weight: 500;
+      font-size: 7vw;
+      color: white;
+    }
+  }
+
+  p {
+    font-size: 2vw;
+
+    @include phones {
+      font-size: 7vw;
+      letter-spacing: -1px;
+    }
+  }
+
+  h3, p {
+    color: white;
+
+  }
+
+  & .slide {
+    height: 280px;
+    width: 50vw;
+
+    @include desktop {
+      width: 45vw;
+    }
+
+    @include tablets {
+      width: 95vw;
+    }
+
+    @include phones {
+      width: 95vw;
+      padding: 0 3vw;
+    }
+
+  }
+
+}
+
+.slide1 {
+  background: rgba(67, 95, 140, 0.8);
+
+}
+
+.slide2 {
+  background: rgba(67, 95, 140, 0.8);
+}
+
+.slide3 {
+  background: rgba(67, 95, 140, 0.8);
+}
+
+.slide4 {
+  background: rgba(67, 95, 140, 0.8);
+}
+
+.slide5 {
+  background: rgba(67, 95, 140, 0.8);
+}
+
+.l__testcont {
+  height: 170px;
+  background: rgb(227, 234, 243);
+  flex-direction: column;
+  border-top: 2px solid white;
+  border-bottom: 2px solid #fff;
+
+  &-big {
+    height: 225px;
+  }
+
+  &-descr {
+    margin-top: 15px;
+  }
+
+  @include phones {
+    height: 80px;
+  }
+}
+
+.liga__testcont-descr {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.l__testcont-text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+.l__testbtn {
+
+  background: #677e9a !important;
+  color: white !important;
+  padding: 12px 50px;
+  font-size: 28px;
+  font-weight: 400;
+  border: 1px solid #344559;
+
+  @include phones {
+    padding: 26px 11px 10px;
+    font-size: 14px;
+  }
+
+  & svg {
+    height: 62px;
+
+    @include phones {
+      height: 41px;
+    }
+  }
+
+  & rect {
+    stroke: #9a9abe;
+  }
+}
+
+.vchasno__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-left: 40px;
+
+  @include tablets {
+    margin-top: 130px;
+    padding-bottom: 0;
+  }
+
+  @include phones {
+    margin-top: 0;
+    margin-bottom: 2vh;
+  }
+
+  .partner__brand {
+    font-size: 5vw;
+    color: rgb(64, 93, 116);
+    margin: 0;
+    margin-top: 15px;
+    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-family: "Raleway", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      margin-top: 30px;
+      width: 75%;
+      height: auto;
+
+      @include phones {
+        margin-top: 5px;
+        width: 50%;
+      }
+    }
+
+    @include desktop {
+      font-size: 42px;
+    }
+
+    @include tablets {
+      font-size: 40px;
+    }
+
+    @include phones {
+      text-align: center;
+      color: #f8ef24;;
+    }
+  }
+  .partner__slogan {
+    text-align: center;
+    font-size: 3.2vw;
+    margin-top: 40px;
+    color: #023756;
+    font-weight: 600;
+    font-family: "Raleway", Arial, sans-serif;
+
+    @include desktop {
+      margin-top: 20px;
+    }
+
+    @include phones {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      margin-top: 0;
+    }
+  }
+
+  & p {
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    margin-top: 15px;
+
+    @include phones {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+}
+
+.l__descr {
+  padding: 50px 1vw 30px 1vw;
+  background: rgb(132, 199, 208);
+
+  & .article__title {
+    margin-bottom: 50px;
+    color: white;
+    text-align: right;
+  }
+
+  & i {
+    margin: 4%;
+    color: #022383;
+  }
+}
+
+.descr__title {
+  color: white;
+  text-align: center;
+  line-height: 32px;
+}
+
+.feature__descr {
+  color: rgb(237, 241, 244);
+  padding: 7px 3%;
+  margin: 0;
+  text-align: center;
+}
+
+.l_features {
+  padding: 10px 0 10px;
+  background: rgb(64, 93, 116);
+  & h2, div, p {
+    color: rgb(238, 243, 173);
+  }
+
+}
+
+.features__block {
+  padding: 0 4%;
+}
+
+.l__feature-section {
+
+}
+
+.l__feature-item {
+  padding: 3vh 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.c__feature-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  flex: 1.3;
+  font-size: 2.5vw;
+  color: white;
+  letter-spacing: -1px;
+
+  @include phones {
+    font-size: 6.5vw;
+  }
+}
+
+.c__feature-icon {
+  margin-bottom: 2vh;
+  & svg {
+    width: 7vw;
+  }
+
+}
+
+.c__feature-list {
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  margin-left: 7%;
+}
+
+.c__feature-item {
+  font-size: 1.8vw;
+  font-weight: 300;
+
+  & strong {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #e8f405;
+  }
+
+  @include phones {
+    font-size: 4.8vw;
+  }
+}
+
+.article__title {
+
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5vw;
+
+  &-howworks {
+    color: black;
+  }
+
+  &-dark {
+    color: rgba(0, 0, 0, .8);;
+  }
+
+  @include phones {
+    font-size: 8vw;
+  }
+}
+
+.howworks {
+  background: rgb(214, 218, 120);
+  padding: 30px 5% 40px;
+
+  @include phones {
+    padding: 10px 3% 20px;
+  }
+
+}
+
+.howworks__descr {
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: 300;
+  margin-bottom: 7vh;
+  margin-top: 5vh;
+
+  @include phones {
+    font-size: 5vw;
+  }
+
+}
+
+.howworks_tanya {
+  padding: 0 2%;
+
+}
+
+.howworks__img {
+
+  &-vchasno {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  @include phones {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+.howworks__list {
+
+}
+
+.howworks__item {
+
+  text-align: left;
+  font-size: 1.8vw;
+  font-weight: 300;
+
+  &-name {
+    text-align: center;
+    list-style: none;
+    font-weight: 600;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  @include phones {
+    font-size: 5vw;
+  }
+
+}
+
+.howworks_vchasno {
+  padding: 0 2%;
+
+}
+
+.howworks_kostya {
+  padding: 0 2%;
+
+}
+
+.order__l {
+  margin-left: 2%;
+  border: none;
+  border: 1px solid;
+  padding: 10px 40px;
+  border-radius: 8px;
+  background: rgb(209, 216, 4);
+  color: white;
+  font-size: 2vw;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+  @include phones {
+    font-size: 5.2vw;
+    padding: 10px 20px;
+
+  }
+
+}
+
+.process__dir {
+  position: absolute;
+  bottom: -46px;
+  left: 10%;
+
+  &-2 {
+    left: 25%;
+  }
+
+  &-3 {
+    left: 40%;
+  }
+
+  &-4 {
+    left: 55%;
+  }
+}
+
+.l__tariffs {
+  padding: 30px 2% 60px 2%;
+  background: rgb(239, 240, 168);
+}
+
+.tariffs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+  @include phones {
+    flex-flow: row wrap;
+  }
+}
+
+.tariff__item {
+  flex: 1 18%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0.25%;
+  padding: 20px 1% 0;
+  background: rgb(125, 140, 1);
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px;
+  }
+
+  @include phones {
+    flex: 1 100%;
+  }
+
+}
+
+.tariff__title {
+  font-size: 2.3vw;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.5);
+
+  @include phones {
+    font-size: 10vw;
+  }
+}
+
+.tariff__descr {
+  margin-top: 20px;
+  margin-bottom: auto;
+  color: rgb(236, 240, 4);
+  font-size: 1.4vw;
+  padding: 10px 0;
+  text-align: center;
+
+  @include phones {
+    margin-top: 0;
+    font-size: 7vw;
+  }
+}
+
+.tariff__button {
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #eff0a8;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 1.2vw;
+  margin: 20px 20px;
+  color: white;
+  letter-spacing: 2px;
+
+  @include phones {
+    font-size: 6.2vw;
+  }
+}
+
+.tariff__price {
+  font-size: 2.3vw;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 12px 0;
+
+  margin-top: 20px;
+
+  @include phones {
+    font-size: 8.7vw;
+    margin-top: 0;
+  }
+
+}
+
+.oc__fotoblock {
+  height: 40vh;
+}
+
+.btn-1:hover {
+  font-weight: 400 !important;
+}
+
+.wheel {
+  animation-name: spin;
+  animation-duration: 110000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  z-index: 100;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.howworks__video-descr {
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.howworks__video-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.youtube__frame {
+
+  width: 800px;
+  height: 479px;
+
+}
+
+.vchasno__fotoblock {
+  height: 40vh;
+}
+
+.vchasno__api {
+  background: rgb(241, 241, 250);
+  padding: 5px 5% 40px;
+}
+
+.article__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.api__icon {
+  & svg {
+    width: 7vw;
+  }
+}
+
+.api__descr {
+  font-size: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.api__list {
+  margin-top: 15px;
+}
+
+.api__item {
+  font-size: 2vw;
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.vchasno__stuff {
+  padding: 15px 4% 20px;
+  background: #405d74;
+
+  & h2, li {
+    color: #eef3ad;
+  }
+
+  & a {
+    color: #ddd;
+  }
+}
+
+.stuff__list {
+  @include phones {
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+.stuff__item {
+  font-size: 1.8vw;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.stuff__icon {
+
+  margin: 0 2vw;
+
+  & svg {
+    width: 6vw;
+
+    @include phones {
+      width: 15vw;
+    }
+  }
+
+  &-femida {
+    margin: 0;
+    & svg {
+      width: 10vw;
+
+      @include phones {
+        width: 20vw;
+      }
+    }
+  }
+}
+
+.ocimg__cont {
+
+  width: 13vw;
+  margin-left: 3vw;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    width: 20vw;
+  }
+}
+
+.bp-hs_inner__item {
+  padding: 0;
+  margin: 0;
+}
+
+.bxslider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

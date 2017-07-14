@@ -1,17 +1,17 @@
 .sidebar__index {
   min-height: 500px;
-  background: #f1f7f9;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  background: rgb(245, 246, 247);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 50px 0 0 7vw;
+
 }
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 30px;
+  margin-bottom: 1vw;
 
 }
 
@@ -33,16 +33,16 @@
 }
 
 .nav__sidebar-title {
-  //text-shadow: -1px 1px 5px rgba(0,0,0,0.3);
+  width: 100%;
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 12px;
-  color: #63358A !important;
-  font-size: 24px;
+  padding: .5vw 1.5vw 1vw 0vw;
+  color: #002942 !important;
+  font-size: 2vw;
   font-weight: 500;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  letter-spacing: 1px;
+  border-radius: 0 0px 5px 0;
 
   @include tablets {
     font-size: 20px;
@@ -52,10 +52,18 @@
 
 .nav__sidebar-link {
   text-decoration: none !important;
-  font-size: 21px;
+  font-size: 1.6vw;
   font-weight: 400;
 
   color: black;
   margin-bottom: 7px;
   margin-top: 7px;
+  padding-bottom: 5px;
 }
+
+.sidebar__law-item {
+  text-align: right;
+  padding-right: 2vw;
+  padding-top: 1vw;
+}
+

@@ -18,7 +18,7 @@ function ValidateEmail($value)
 $post = (!empty($_POST)) ? true : false;
 
 if ($post) {
-
+    $url = stripslashes($_SERVER['HTTP_REFERER']);
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
@@ -27,7 +27,7 @@ if ($post) {
     $message = '
 			<html>
 					<head>
-							<title>Заявка</title>
+							<title>Заявка с футера</title>
 					</head>
 					<body>
 							<p>Имя: ' . $name . '</p>
@@ -35,6 +35,7 @@ if ($post) {
 							<p>Email : ' . $email . '</p>
 					</body>
 			</html>';
+
 
     if (!ValidateEmail($email)) {
         $error = 'Email введен неправильно!';
@@ -48,7 +49,7 @@ if ($post) {
             . "X-Mailer: PHP/" . phpversion());
 
         if ($mail) {
-            echo 'OK';
+            echo '<div class="bg-success">Спасибо за заявку! Мы вам перезвоним!</div>';
         }
     } else {
         echo '<div class="has-danger">' . $error . '</div>';
@@ -56,3 +57,6 @@ if ($post) {
 
 }
 ?>
+
+
+
