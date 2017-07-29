@@ -5,8 +5,19 @@
 @import "partials/animations_hover";
 @import "animations.css";
 
+html, body {
+
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+}
+
+.btn-4:after {
+  background: #a7a7c6 !important;
+
+}
+
 .lmain__menu {
-  background: transparent;
+  background: #fff;
   padding-left: 3%;
   position: absolute;
   width: 100%;
@@ -104,7 +115,6 @@
   justify-content: center;
   align-items: center;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   font-size: 1.7vw;
   font-weight: 400 !important;
   letter-spacing: 1px;
@@ -112,7 +122,7 @@
 
   &:hover {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
+
 
   }
 }
@@ -120,17 +130,19 @@
 .lmain__menu-excellence {
   transition: all 0.5s;
   background: transparent;
-
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
   margin-left: 15px;
   display: block;
-  padding: 5px 20px;
+  padding: 1.5vw 3vw;
   text-align: center;
-  border: 1px solid #023756;;
-  font-size: 1.4vw;
+  border: 3px solid #ffffff;
+  font-size: 1.6vw;
+  letter-spacing: 0.1vw;
 
   & span {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 500;
   }
 }
@@ -156,7 +168,6 @@
   text-decoration: none !important;
   cursor: pointer;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-right: 5px;
 
   &:hover {
@@ -202,7 +213,7 @@
 }
 
 .vchasno__header-content {
-  background: rgba(255, 255, 255, 0.6);
+  background: #ffe651;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,9 +461,7 @@
     color: rgb(64, 93, 116);
     margin: 0;
     margin-top: 15px;
-    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
     text-align: center;
-    font-family: "Raleway", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
