@@ -12,7 +12,6 @@ $('.oc__fotoblock').parallax({imageSrc: '../img/oc-fotoblock.jpg'});
 $('.urs__header-content').parallax({imageSrc: '../img/urs-header.jpg'});
 $('.urs__fotoblock').parallax({imageSrc: '../img/uds-fotoblock.jpg'});
 $('.sota__header-content').parallax({imageSrc: '../img/sota-header.jpg'});
-$('.vchasno__header-content').parallax({imageSrc: '../img/vchasno-header.jpg'});
 $('.vchasno__fotoblock').parallax({imageSrc: '../img/vchasno-fotoblock.jpg'});
 $('.sota__fotoblock').parallax({imageSrc: '../img/sota-fotoblock.jpg'});
 $('.sd__fotoblock').parallax({imageSrc: '../img/sd-fotoblock.jpg'});
@@ -418,6 +417,12 @@ $('main').on('click', function (e) {
 /////////////////////// slow popup
 
 $('.l__testbtn').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-test').fadeIn(800);
+});
+
+$('.vchasno__reg').on('click', function (e) {
     e.preventDefault();
     $('.overlay').fadeIn(800);
     $('.popup__form-test').fadeIn(800);
