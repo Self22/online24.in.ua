@@ -382,6 +382,9 @@ html, body {
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 
   &-big {
     height: 225px;
@@ -422,7 +425,7 @@ html, body {
   text-decoration: none !important;
 
   @include phones {
-    padding: 26px 11px 10px;
+    padding: 21px 11px 16px;
     font-size: 14px;
   }
 
@@ -430,7 +433,7 @@ html, body {
     height: 63px;
 
     @include phones {
-      height: 41px;
+      height: 57px;
     }
   }
 
@@ -490,7 +493,8 @@ html, body {
 
     @include phones {
       text-align: center;
-      color: #f8ef24;;
+      color: black;
+      font-size: 7vw;
     }
   }
   .partner__slogan {
@@ -510,8 +514,10 @@ html, body {
     @include phones {
       width: 100%;
       text-align: center;
-      font-size: 24px;
-      margin-top: 0;
+         font-size: 5vw;
+    margin-top: 0;
+    line-height: 8vw;
+    padding: 7vw;
     }
   }
 
@@ -602,6 +608,10 @@ html, body {
   margin-bottom: 2vh;
   & svg {
     width: 7vw;
+
+    @include phones{
+    width: 20vw;
+  }
   }
 
 }
@@ -653,7 +663,7 @@ html, body {
   padding: 30px 12% 40px;
 
   @include phones {
-    padding: 10px 3% 20px;
+    padding: 3% 12%;
   }
 
 }
@@ -764,6 +774,10 @@ html, body {
 .l__tariffs {
   padding: 3% 12% 5%;
   background: #fff;
+
+  @include phones {
+    padding: 3% 8% 5%;
+  }
 }
 
 .tariffs__list {
@@ -825,7 +839,8 @@ html, body {
 
 
   @include phones {
-    font-size: 10vw;
+        font-size: 8vw;
+    margin: 0 5vw;
   }
 }
 
@@ -839,7 +854,7 @@ html, body {
 
   @include phones {
     margin-top: 0;
-    font-size: 7vw;
+    font-size: 6vw;
   }
 }
 
@@ -855,7 +870,7 @@ html, body {
   letter-spacing: 2px;
 
   @include phones {
-    font-size: 6.2vw;
+    font-size: 8vw;
   }
 }
 
@@ -870,7 +885,7 @@ html, body {
   margin-top: 20px;
 
   @include phones {
-    font-size: 8.7vw;
+    font-size: 8vw;
     margin-top: 0;
   }
 
@@ -910,6 +925,10 @@ html, body {
   display: flex;
   flex-direction: row;
   padding: 3vw 0;
+
+  @include tablets{
+    flex-flow: row wrap;
+  }
 }
 
 .howworks__video-cont {
@@ -917,6 +936,10 @@ html, body {
 
   justify-content: center;
   align-items: center;
+
+  @include tablets{
+    width: 100%;
+  }
 
 }
 
@@ -927,6 +950,10 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 1vw;
+
+  @include phones{
+    padding: 10vw 5vw;
+  }
 
 }
 
@@ -950,6 +977,11 @@ html, body {
     margin-left: 2vw;
     font-size: 2vw;
 
+    @include phones{
+          font-size: 6vw;
+    margin-bottom: 6vw;
+    }
+
   }
 }
 
@@ -969,6 +1001,10 @@ html, body {
   max-width: 594px;
   max-height: 332px;
 
+  @include tablets{
+    width: 74vw;
+    height: 50vw;
+  }
 }
 
 .vchasno__fotoblock {

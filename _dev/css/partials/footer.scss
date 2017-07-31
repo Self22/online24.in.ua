@@ -1,3 +1,7 @@
+//tools
+@import "../_misc/mixins";
+@import "../_misc/normalize";
+
 .footer {
   position: relative;
   background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5)), url('../img/footer-light4.jpg') fixed;
