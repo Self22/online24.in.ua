@@ -49,7 +49,7 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: #f6f7ee;
+  background: #effeff;
   height: 100px;
   z-index: 5;
 }
@@ -133,6 +133,7 @@ html, body {
   & span {
     color: white;
     font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 
@@ -208,6 +209,7 @@ html, body {
   height: 100vh;
 
   @include phones {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/ib_header3.jpg) !important;
     height: 100vh;
     align-items: center;
   }
@@ -224,8 +226,8 @@ html, body {
 }
 
 .analytics__content {
-  padding: 10px 0 0 0;
-  background: #eae4df;
+  padding: 3% 12%;
+    background: white;
 
   & h2 {
     color: #203048;
@@ -252,15 +254,15 @@ html, body {
   }
 
   &-2 {
-    background: #d5dce9;
+    background:rgb(223, 234, 243);
   }
 
   &-3 {
-    background: #bff2d9;
+    background: rgb(223, 234, 243);
   }
 
   &-4 {
-    background: #C7FCF2;
+    background: #effeff;
   }
 }
 
@@ -280,10 +282,11 @@ html, body {
 }
 
 .l__slider {
-  margin-top: 5vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3% 12%;
 
   @include tablets {
     margin-top: 0;
@@ -294,18 +297,18 @@ html, body {
     color: black;
 
     @include desktop {
-      font-size: 32px;
+      font-size: 24px;
     }
 
     @include phones {
-      font-size: 28px;
+      font-size: 22px;
       color: white;
     }
   }
 
   p {
     @include desktop {
-      font-size: 26px;
+      font-size: 24px;
     }
 
     @include phones {
@@ -320,76 +323,33 @@ html, body {
   }
 
   & .slide {
-    height: 280px;
-    width: 50vw;
+    height: 200px;
+    background: #5f98c2;
+    border: none;
 
-    @include desktop {
-      width: 45vw;
-    }
-
-    @include tablets {
-      width: 100vw;
-    }
-
+  
     @include phones {
       height: 240px;
-      width: 95vw;
+    
     }
 
   }
 
 }
 
+
+
+
 .slider {
-  height: 40vh;
-  margin-bottom: 1vh;
-}
+    width: 100%;}
 
-.slide1 {
-  background: rgba(192, 226, 229, 1);
-  background: -moz-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(192, 226, 229, 1)), color-stop(100%, rgba(113, 149, 152, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  background: linear-gradient(to right, rgba(192, 226, 229, 1) 0%, rgba(113, 149, 152, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0e2e5', endColorstr='#719598', GradientType=1);
-
-}
-
-.slide2 {
-  background: rgba(165, 166, 83, 1);
-  background: -moz-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(165, 166, 83, 1)), color-stop(100%, rgba(242, 210, 3, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  background: linear-gradient(to right, rgba(165, 166, 83, 1) 0%, rgba(242, 210, 3, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5a653', endColorstr='#f2d203', GradientType=1);
-}
-
-.slide3 {
-  background: rgba(194, 182, 174, 1);
-  background: -moz-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(194, 182, 174, 1)), color-stop(100%, rgba(209, 179, 11, 0.8)));
-  background: -webkit-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -o-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: -ms-linear-gradient(left, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  background: linear-gradient(to right, rgba(194, 182, 174, 1) 0%, rgba(209, 179, 11, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2b6ae', endColorstr='#d1b30b', GradientType=1);
-}
-
-.slide4 {
-  background: rgba(120, 199, 242, 0.8);
-}
-
-.slide5 {
-  background: rgba(67, 95, 140, 0.8);
+.slide {
+    width: 100%;
 }
 
 .l__testcont {
   height: 170px;
-  background: #7EE1E9;
+  background: #f6f7ee;
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -418,9 +378,9 @@ html, body {
 }
 
 .l__testcont-text {
-  color: white;
+  color: black;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 7px;
   font-size: 18px;
   padding: 0 25px;
@@ -432,19 +392,20 @@ html, body {
   color: white !important;
   padding: 12px 50px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 100;
   border: 1px solid white;
 
   @include phones {
-    padding: 12px 11px;
-    font-size: 14px;
+    padding: 11px;
+    font-size: 13px;
   }
 
   & svg {
     height: 57px;
 
     @include phones {
-      height: 43px;
+      
+      height: 40px;
     }
   }
 
@@ -509,14 +470,11 @@ html, body {
     }
 
     @include phones {
-      width: 90%;
+      margin-bottom: 20vw;
       text-align: center;
       font-size: 24px;
-      margin-left: 5%;
-      border: 3px solid #ddd;
-      background: rgba(120, 199, 242, 1);
-      border-radius: 4px;
-      padding: 5px 40px;
+
+      padding: 5px 12vw;
     }
   }
 
@@ -566,8 +524,8 @@ html, body {
 }
 
 .l_features {
-  padding: 20px 5%;
-  background: rgb(221, 253, 247);
+  padding: 3% 12%;
+    background: white;
   & h2, h3, div, p {
     color: #203048;
   }
@@ -590,7 +548,6 @@ html, body {
 
 .product__feautures {
   border: 1px solid rgba(32, 48, 72, 0.3);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   background: #EFFEFF;
   padding: 20px 5%;
@@ -626,16 +583,20 @@ html, body {
 }
 
 .ib__products {
-  padding: 30px 4% 50px 4%;
-  background: #BFD3F2;
+  padding: 3% 12%;
+    background: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: baseline;
 
   & h2 {
-    color: white;
+  
     flex: 1 1 100%;
+  }
+
+  @include phones{
+    padding: 3% 6%;
   }
 
 }
@@ -645,9 +606,8 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 60px;
-  padding-top: 7px;
   text-align: center;
-  background: #92e2e8;
+  background: #5f98c2;
   color: white;
   font-weight: 500;
   letter-spacing: 2px;
@@ -661,18 +621,17 @@ html, body {
 .ib__product-item {
   flex: 1 1 190px;
   max-width: 340px;
-  height: 50vh;
   min-height: 640px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 15px;
-  padding: 11px 13px 15px;
-  border-radius: 8px;
-  background: #f5ece6;
+  padding: 20px;
+
+  background: #dfeaf3;
   margin-top: 15px;
   z-index: 1;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  
 
   & ul {
     margin: 0;
@@ -689,17 +648,7 @@ html, body {
     }
   }
 
-  @include desktop {
-    min-height: 690px;
-  }
-
-  @include tablets {
-    min-height: 610px;
-  }
-
-  @include phones {
-    height: 78vh;
-  }
+  
 
 }
 
@@ -726,7 +675,7 @@ html, body {
   }
 
   &-prem {
-    border-color: #E8A289;
+    border-color: #2171b9;
   }
 
   @include phones {
@@ -742,11 +691,11 @@ html, body {
   font-size: 20px !important;
   border: 1px solid #767a98 !important;
   padding: 20px 0px !important;
-  color: #38547F !important;
+  color: white !important;
   font-weight: 900 !important;
   margin: 0 !important;;
   margin-top: 15px !important;
-  background: white;
+  background: #2171b9;
 
   &::after {
     opacity: 0;
@@ -754,7 +703,7 @@ html, body {
   }
 
   &:hover {
-    color: black !important;
+    color: white !important;
   }
 }
 
