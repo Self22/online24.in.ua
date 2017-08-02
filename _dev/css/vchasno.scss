@@ -5,19 +5,30 @@
 @import "partials/animations_hover";
 @import "animations.css";
 
+html, body {
+
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+}
+
+.btn-4:after {
+  background: #a7a7c6 !important;
+
+}
+
 .lmain__menu {
-  background: transparent;
-  padding-left: 3%;
+  background: #fff;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
   animation-fill-mode: none;
-  height: 130px;
+
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   z-index: 6;
+  padding: 20px 10% 20px;
 
   & .hvr-rectangle-out {
     background: transparent;
@@ -27,13 +38,7 @@
     background: #376265;
   }
 
-  & > div {
-    padding: 0 16px;
 
-    @include desktop {
-      padding: 0 7px;
-    }
-  }
 
   & a {
     font-weight: 400;
@@ -45,14 +50,14 @@
 
 .lnav__fixed {
   position: fixed;
-  background: rgb(243, 238, 241);
-  height: 110px;
   z-index: 5;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .logosticky__o24 {
-  margin-right: 3%;
-  margin-left: 2%;
+  margin-right: auto;
+  margin-left: 5%;
 }
 
 .partnerlogosticky {
@@ -104,15 +109,14 @@
   justify-content: center;
   align-items: center;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   font-weight: 400 !important;
   letter-spacing: 1px;
   white-space: nowrap;
 
   &:hover {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
+
 
   }
 }
@@ -120,17 +124,20 @@
 .lmain__menu-excellence {
   transition: all 0.5s;
   background: transparent;
-
+  position: absolute;
+  top: 15vw;
+  right: 5vw;
   margin-left: 15px;
   display: block;
-  padding: 5px 20px;
+  padding: 1.5vw 3vw;
   text-align: center;
-  border: 1px solid #023756;;
-  font-size: 1.4vw;
+  border: 3px solid #ffffff;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+  text-decoration: none !important;
 
   & span {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 500;
   }
 }
@@ -152,11 +159,10 @@
 
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   text-decoration: none !important;
   cursor: pointer;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-right: 5px;
 
   &:hover {
@@ -191,6 +197,9 @@
 .lmain__nav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2vw 0 1vw;
 }
 
 .vchasno__header__header {
@@ -202,7 +211,8 @@
 }
 
 .vchasno__header-content {
-  background: rgba(255, 255, 255, 0.6);
+  position: relative;
+  background: #ffe651;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,10 +378,13 @@
 
 .l__testcont {
   height: 170px;
-  background: rgb(227, 234, 243);
+  background: #f3f6f8;
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 
   &-big {
     height: 225px;
@@ -402,38 +415,39 @@
 
 .l__testbtn {
 
-  background: #677e9a !important;
+  background: #00c5ff !important;
   color: white !important;
   padding: 12px 50px;
   font-size: 28px;
   font-weight: 400;
-  border: 1px solid #344559;
+  box-shadow: inset 0 -2px 0 0 rgba(18, 149, 212, 0.51);
+  text-transform: lowercase;
+  text-decoration: none !important;
 
   @include phones {
-    padding: 26px 11px 10px;
+    padding: 21px 11px 16px;
     font-size: 14px;
   }
 
   & svg {
-    height: 62px;
+    height: 63px;
 
     @include phones {
-      height: 41px;
+      height: 57px;
     }
   }
 
   & rect {
-    stroke: #9a9abe;
+    stroke: #fff;
   }
 }
 
 .vchasno__slogan {
+  margin-top: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  padding-left: 40px;
 
   @include tablets {
     margin-top: 130px;
@@ -446,13 +460,11 @@
   }
 
   .partner__brand {
-    font-size: 5vw;
-    color: rgb(64, 93, 116);
+    font-size: 2.5vw;
+    color: #333333;
     margin: 0;
     margin-top: 15px;
-    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.6);
     text-align: center;
-    font-family: "Raleway", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,10 +472,12 @@
 
     & img {
       margin-top: 30px;
-      width: 75%;
+      width: 25%;
       height: auto;
+      margin-bottom: 4%;
 
       @include phones {
+        margin-top: 5px;
         margin-top: 5px;
         width: 50%;
       }
@@ -479,16 +493,19 @@
 
     @include phones {
       text-align: center;
-      color: #f8ef24;;
+      color: black;
+      font-size: 7vw;
     }
   }
   .partner__slogan {
     text-align: center;
-    font-size: 3.2vw;
-    margin-top: 40px;
-    color: #023756;
-    font-weight: 600;
-    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.5vw;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #333333;
+    font-weight: 100;
+    line-height: 3vw;
+
 
     @include desktop {
       margin-top: 20px;
@@ -497,8 +514,10 @@
     @include phones {
       width: 100%;
       text-align: center;
-      font-size: 24px;
-      margin-top: 0;
+         font-size: 5vw;
+    margin-top: 0;
+    line-height: 8vw;
+    padding: 7vw;
     }
   }
 
@@ -546,40 +565,39 @@
 }
 
 .l_features {
-  padding: 10px 0 10px;
-  background: rgb(64, 93, 116);
+  padding: 4% 8%;
+  background: #F3F6F8;
   & h2, div, p {
-    color: rgb(238, 243, 173);
+    color: #333333;
+  }
+
+  &-business {
+    background: #fff;
   }
 
 }
 
-.features__block {
-  padding: 0 4%;
-}
-
 .l__feature-section {
-
+  padding: 0 2vw;
 }
 
 .l__feature-item {
-  padding: 3vh 3%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid white;
   margin-bottom: 20px;
-  border-radius: 10px;
+
 }
 
 .c__feature-title {
   text-align: center;
   margin: 0;
   padding: 0;
-  flex: 1.3;
-  font-size: 2.5vw;
-  color: white;
-  letter-spacing: -1px;
+  flex: 1.6;
+  font-size: 1.6vw;
+  color: #333333;
+  margin-bottom: 3vw;
 
   @include phones {
     font-size: 6.5vw;
@@ -590,6 +608,10 @@
   margin-bottom: 2vh;
   & svg {
     width: 7vw;
+
+    @include phones{
+    width: 20vw;
+  }
   }
 
 }
@@ -602,7 +624,7 @@
 }
 
 .c__feature-item {
-  font-size: 1.8vw;
+  font-size: 1.2vw;
   font-weight: 300;
 
   & strong {
@@ -617,10 +639,11 @@
 }
 
 .article__title {
-
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 3vw;
+  margin-bottom: 5vw;
 
   &-howworks {
     color: black;
@@ -636,18 +659,18 @@
 }
 
 .howworks {
-  background: rgb(214, 218, 120);
-  padding: 30px 5% 40px;
+  background: #fff;
+  padding: 30px 12% 40px;
 
   @include phones {
-    padding: 10px 3% 20px;
+    padding: 3% 12%;
   }
 
 }
 
 .howworks__descr {
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   font-weight: 300;
   margin-bottom: 7vh;
   margin-top: 5vh;
@@ -664,29 +687,27 @@
 }
 
 .howworks__img {
+  width: 90%;
+  margin: 50px auto;
 
-  &-vchasno {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 20%;
+  & img {
+    width: 100%;
+    height: auto;
   }
 
   @include phones {
-    width: 50%;
-    margin: 0 auto;
+    display: none;
   }
-
 }
 
-.howworks__list {
-
+.howworks__process {
+  margin-bottom: 7vw;
 }
 
 .howworks__item {
 
   text-align: left;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   font-weight: 300;
 
   &-name {
@@ -751,8 +772,12 @@
 }
 
 .l__tariffs {
-  padding: 30px 2% 60px 2%;
-  background: rgb(239, 240, 168);
+  padding: 3% 12% 5%;
+  background: #fff;
+
+  @include phones {
+    padding: 3% 8% 5%;
+  }
 }
 
 .tariffs__list {
@@ -779,15 +804,15 @@
 }
 
 .tariff__item {
-  flex: 1 18%;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  flex: 1 1 auto;
+  width: 18%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 0.25%;
+  margin: 0 0.9%;
   padding: 20px 1% 0;
-  background: rgb(125, 140, 1);
-  border-radius: 5px;
+  background: #ffe651;
+  border-radius: 2px;
   margin-top: 10px;
   transition: all 0.5s;
 
@@ -802,55 +827,56 @@
 }
 
 .tariff__title {
-  font-size: 2.3vw;
+  font-size: 1.3vw;
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  font-weight: 300;
-  letter-spacing: -1px;
-  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.5);
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 2vw;
+
 
   @include phones {
-    font-size: 10vw;
+        font-size: 8vw;
+    margin: 0 5vw;
   }
 }
 
 .tariff__descr {
   margin-top: 20px;
   margin-bottom: auto;
-  color: rgb(236, 240, 4);
-  font-size: 1.4vw;
+  color: black;
+  font-size: 1.3vw;
   padding: 10px 0;
   text-align: center;
 
   @include phones {
     margin-top: 0;
-    font-size: 7vw;
+    font-size: 6vw;
   }
 }
 
 .tariff__button {
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid #eff0a8;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 15px;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   margin: 20px 20px;
-  color: white;
+  color: black;
   letter-spacing: 2px;
 
   @include phones {
-    font-size: 6.2vw;
+    font-size: 8vw;
   }
 }
 
 .tariff__price {
-  font-size: 2.3vw;
-  color: white;
+  font-size: 1.6vw;
+  color: black;
   font-weight: 300;
   letter-spacing: 1px;
   text-align: center;
@@ -859,7 +885,7 @@
   margin-top: 20px;
 
   @include phones {
-    font-size: 8.7vw;
+    font-size: 8vw;
     margin-top: 0;
   }
 
@@ -896,21 +922,89 @@
   font-size: 2.5vw;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 3vw 0;
 
+  @include tablets{
+    flex-flow: row wrap;
+  }
 }
 
 .howworks__video-cont {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
+  @include tablets{
+    width: 100%;
+  }
+
+}
+
+.howworks__steps {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1vw;
+
+  @include phones{
+    padding: 10vw 5vw;
+  }
+
+}
+
+.steps__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  & a {
+    text-align: left;
+    margin-left: 2vw;
+    font-size: 2vw;
+
+    @include phones{
+          font-size: 6vw;
+    margin-bottom: 6vw;
+    }
+
+  }
+}
+
+.step__num {
+  color: #f8ef24;
+  font-size: 7vw;
+  padding: 0 2vw;
+}
+
+.step__descr {
 
 }
 
 .youtube__frame {
+  width: 35vw;
+  height: 25vw;
+  max-width: 594px;
+  max-height: 332px;
 
-  width: 800px;
-  height: 479px;
-
+  @include tablets{
+    width: 74vw;
+    height: 50vw;
+  }
 }
 
 .vchasno__fotoblock {
@@ -918,8 +1012,8 @@
 }
 
 .vchasno__api {
-  background: rgb(241, 241, 250);
-  padding: 5px 5% 40px;
+  background: #f3f6f8;
+  padding: 1% 12% 4%;
 }
 
 .article__title {
@@ -937,7 +1031,7 @@
 }
 
 .api__descr {
-  font-size: 2vw;
+  font-size: 1.3vw;
 
   @include phones {
     font-size: 5vw;
@@ -945,26 +1039,27 @@
 }
 
 .api__list {
-  margin-top: 15px;
+  margin-top: 2vw;
 }
 
 .api__item {
-  font-size: 2vw;
+  font-size: 1.3vw;
+  margin-bottom: 1vw;
   @include phones {
     font-size: 5vw;
   }
 }
 
 .vchasno__stuff {
-  padding: 15px 4% 20px;
-  background: #405d74;
+  padding: 4% 12%;
+  background: #fff;
 
   & h2, li {
-    color: #eef3ad;
+    color: #333333;
   }
 
   & a {
-    color: #ddd;
+    color: #008adb;
   }
 }
 
@@ -977,8 +1072,8 @@
 }
 
 .stuff__item {
-  font-size: 1.8vw;
-  margin-bottom: 15px;
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -989,9 +1084,14 @@
   }
 }
 
+.api__block {
+  display: flex;
+  align-items: baseline;
+}
+
 .stuff__icon {
 
-  margin: 0 2vw;
+  margin: 0px 4vw 0 2vw;
 
   & svg {
     width: 6vw;
@@ -1002,7 +1102,7 @@
   }
 
   &-femida {
-    margin: 0;
+    margin: 0 2vw 0 0;
     & svg {
       width: 10vw;
 
@@ -1028,13 +1128,74 @@
   }
 }
 
-.bp-hs_inner__item {
-  padding: 0;
-  margin: 0;
+//////////// bob
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
 }
 
-.bxslider {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }

@@ -119,14 +119,13 @@
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: transparent;
-
+  background: #d91414;
   display: block;
   padding: 1.3vw 2.5vw;
   text-align: center;
-  border: 1px solid black;
+  border: none;
   font-size: 1.5vw;
-  color: black !important;
+  color: white !important;
 
   & span {
     color: #023756;
@@ -204,6 +203,7 @@
 .oa__header-content {
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -1177,5 +1177,26 @@
 .sip {
   @include phones {
     display: none;
+  }
+}
+
+.tariff__intro {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+
+  @include phones {
+    font-size: 6vw;
+    margin: 5vw;
+  }
+}
+
+.channel__price {
+  color: red;
+  font-size: 2.5vw;
+
+  @include phones {
+    font-size: 6.5vw;
+    white-space: nowrap;
   }
 }
