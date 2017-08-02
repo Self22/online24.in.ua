@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     cssnano = require('gulp-cssnano'),
+    htmlmin = require('gulp-htmlmin'),
     rimraf = require('rimraf'),
     include = require("gulp-include"),
     browserSync = require('browser-sync'),
@@ -52,7 +53,7 @@ var config = {
         server: {
             baseDir: "prod"
         },
-        tunnel: 'delivery',
+        tunnel: false,
         browser: 'Google Chrome',
         open: 'tunnel'
     };
@@ -61,22 +62,27 @@ gulp.task('landings:build', function () {
     gulp.src(path.src.landings) //������� ����� �� ������� ����
         .pipe(include())
         .on('error', console.log)
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.landings)) //�������� �� � ����� build
-        .pipe(reload({stream: true})); //� ������������ ��� ������ ��� ����������
+        .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
 });
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
         .pipe(include())
+        .pipe(htmlmin({collapseWhitespace: true}))
         .on('error', console.log)
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
-        .pipe(reload({stream: true})); //� ������������ ��� ������ ��� ����������
+        .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
 });
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //������ ��� main ����
+        .pipe(sourcemaps.init()) //�������������� sourcemap
+        // .pipe(uglify()) //������ ��� js
+        .pipe(sourcemaps.write('.')) //�������� �����
         .pipe(gulp.dest(path.dest.js)) //�������� ������� ���� � build
-        .pipe(reload({stream: true})); //� ������������ ������
+        .on('end', browserSync.reload) //� ������������ ������
 });
 
 
@@ -86,17 +92,23 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) // ������� ��� main.scss
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
-
-
+        .pipe(prefixer()) //������� ��������� ��������
+        .pipe(cssnano()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
-        .pipe(reload({stream: true}));
+        .on('end', browserSync.reload)
 });
-
 
 gulp.task('img:build', function () {
     gulp.src(path.src.img) //������� ���� ��������
+    // .pipe(imagemin({ //������ ��
+    //     progressive: true,
+    //     svgoPlugins: [{removeViewBox: false}],
+    //     use: [pngquant()],
+    //     interlaced: true
+    // }))
         .pipe(gulp.dest(path.dest.img)) //� ������ � build
+        .on('end', browserSync.reload)
 });
 
 gulp.task('fonts:build', function () {

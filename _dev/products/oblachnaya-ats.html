@@ -36,7 +36,7 @@
         </div>
         <div class="popupform__order-email form-group">
             <label for="tel"></label>
-            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
                    placeholder="E-mail" required>
         </div>
         <label for="popup__order-btn" class="form__label"></label>
@@ -64,7 +64,7 @@
         </div>
         <div class="popupform__order-email form-group">
             <label for="tel"></label>
-            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
+            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
                    placeholder="E-mail" required>
         </div>
         <label for="popup__order-btn" class="form__label"></label>
@@ -266,7 +266,7 @@
             </div>
         </div>
 
-        <div class="l__mainmenu-item "><a href="" class="lmain__menu-excellence btn-4">
+        <div class="l__mainmenu-item "><a href="../excellence.html" class="lmain__menu-excellence btn-4">
             Комплексная скидка</a>
         </div>
         <div class="l__mainmenu-contacts">
@@ -297,21 +297,19 @@
                     </h2>
 
                 </div>
-
-
-    </div>
-
-    </div>
-</header>
-<main class="lz__main">
-    <article class="l__testcont container_btn">
         <a href="" class="btn_s btn-1 l__testbtn">
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
             Заявка на обратный звонок
         </a>
-    </article>
+
+    </div>
+
+    </div>
+</header>
+<main class="lz__main">
+
     <article class="aboutus">
         <div class="container-fluid">
             <div class="row animatedParent animateOnce" data-sequence='1500'>
@@ -541,6 +539,9 @@
     <article class="oa__fotoblock"></article>
     <article class="l__tariffs" id="tariffs">
         <h2 class="article__title article__title-black">ТАРИФЫ</h2>
+        <div class="tariff__intro">Выберите конфигурацию облачной АТС и необходимые <a href="#channels">внешние
+            каналы</a> для звонков
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="tariff__item tariff__item-1 col-md-6 col-sm-12">
@@ -548,8 +549,8 @@
                     <ul class="tariff__features">
                         <li class="tafiff__items">Внутренние номера - 5</li>
                         <li class="tafiff__items">Внешние номера - 3</li>
-                        <li class="tafiff__items">Входящие каналы - 3</li>
-                        <li class="tafiff__items">Исходящие каналы - 3</li>
+                        <li class="tafiff__items"><a href="#channels">Входящие каналы</a>- 3</li>
+                        <li class="tafiff__items"><a href="#channels">Исходящие каналы</a> - 3</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Переадресация звонков</li>
                     </ul>
@@ -561,8 +562,8 @@
                     <ul class="tariff__features">
                         <li class="tafiff__items">Внутренние номера - 10</li>
                         <li class="tafiff__items">Внешние номера - 5</li>
-                        <li class="tafiff__items">Входящие каналы - 5</li>
-                        <li class="tafiff__items">Исходящие каналы - 5</li>
+                        <li class="tafiff__items"><a href="#channels">Входящие каналы</a> - 5</li>
+                        <li class="tafiff__items"><a href="#channels">Исходящие каналы</a> - 5</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
@@ -578,8 +579,8 @@
                     <ul class="tariff__features">
                         <li class="tafiff__items">Внутренние номера - 50</li>
                         <li class="tafiff__items">Внешние номера - 10</li>
-                        <li class="tafiff__items">Входящие каналы - 25</li>
-                        <li class="tafiff__items">Исходящие каналы - 25</li>
+                        <li class="tafiff__items"><a href="#channels">Входящие каналы</a> - 25</li>
+                        <li class="tafiff__items"><a href="#channels">Исходящие каналы</a> - 25</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
@@ -594,8 +595,8 @@
                     <ul class="tariff__features">
                         <li class="tafiff__items">Внутренние номера - 5</li>
                         <li class="tafiff__items">Внешние номера - 2</li>
-                        <li class="tafiff__items">Входящие каналы - 2</li>
-                        <li class="tafiff__items">Исходящие каналы - 2</li>
+                        <li class="tafiff__items"><a href="#channels">Входящие каналы</a> - 2</li>
+                        <li class="tafiff__items"><a href="#channels">Исходящие каналы</a> - 2</li>
                         <li class="tafiff__items">Статистика звонков</li>
                         <li class="tafiff__items">Аудиозапись разговоров</li>
                         <li class="tafiff__items">Переадресация звонков</li>
@@ -620,7 +621,7 @@
             заказчика в индивидуальном порядке. </p>
     </article>
     <article class="l__channels" id="channels">
-        <h3 class="section__title">КАНАЛЫ</h3>
+        <h3 class="section__title">КАНАЛЫ ДЛЯ АТС</h3>
         <div class="channels__acc">
             <ul class="channels__list">
                 <li class="channel__item channel__item-1  hvr-underline-from-center">
@@ -658,7 +659,7 @@
                         </a>
                     </div>
                     <div class="channel-acco__descr">
-                        <b>Ежемесячная абонплата:</b> 260 грн\мес. <br>
+                        <b>Ежемесячная абонплата:</b><span class="channel__price"> 260 грн\мес.</span><br>
                         <b>Кол-во минут исходящих звонков на мобильные Украина, в мес.:</b> 1000 <br>
                         <b>Тарификация:</b> поминутная <br>
                         <b>Отображаемый номер при звонках:</b> меняющиеся номера мобильных операторов. <br>
@@ -717,7 +718,7 @@
                         </a>
                     </div>
                     <div class="channel-acco__descr">
-                        <b>Ежемесячная абонплата:</b> 200 грн\мес. <br>
+                        <b>Ежемесячная абонплата:</b><span class="channel__price"> 200 грн\мес.</span> <br>
                         <b>Кол-во минут исходящих звонков на мобильные Украина, в мес.:</b> 500<br>
                         <b>Тарификация:</b> посекундная (о выгоде посекундной тарификации перед поминутной см. <a
                             href="#sec">здесь</a>)<br>
@@ -756,7 +757,7 @@
                         </a>
                     </div>
                     <div class="channel-acco__descr">
-                        <b>Ежемесячная абонплата:</b> 200 грн\мес. <br>
+                        <b>Ежемесячная абонплата:</b><span class="channel__price"> 200 грн\мес.</span> <br>
                         <b>Кол-во минут исходящих звонков на мобильные Украина, в мес.:</b> 500<br>
                         <b>Тарификация:</b> посекундная (о выгоде посекундной тарификации перед поминутной см. <a
                             href="#sec">здесь</a>)<br>
@@ -806,7 +807,7 @@
                         </a>
                     </div>
                     <div class="channel-acco__descr">
-                        <b>Ежемесячная абонплата:</b> 220 грн\мес. <br>
+                        <b>Ежемесячная абонплата:</b><span class="channel__price">  220 грн\мес.</span> <br>
                         <b>Кол-во минут исходящих звонков на мобильные Украина, в мес.:</b> 500<br>
                         <b>Тарификация:</b> посекундная (о выгоде посекундной тарификации перед поминутной см. <a
                             href="#sec">здесь</a>)<br>
@@ -849,7 +850,7 @@
                         </a>
                     </div>
                     <div class="channel-acco__descr">
-                        <b>Ежемесячная абонплата:</b> 160 грн\мес. <br>
+                        <b>Ежемесячная абонплата:</b><span class="channel__price"> 160 грн\мес.</span> <br>
                         <p>К каналу возможно подключение любых номеров мобильных операторов Украины (подробнее см. в
                             разделе <a href="">Номера</a>). В рамках услуги каждый номер можно сделать
                             многоканальным: подключить его к нескольким таким каналам и принять по SIP несколько
