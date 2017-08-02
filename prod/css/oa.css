@@ -819,7 +819,7 @@ textarea {
   transition: all 0.5s;
   background: #d91414;
   display: block;
-  padding: 1.3vw 2.5vw;
+  padding: 1.3vw 2.5vw 1.4vw;
   text-align: center;
   border: none;
   font-size: 1.5vw;
