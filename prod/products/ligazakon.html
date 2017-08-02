@@ -1,464 +1,74 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Платформа LIGA:Zakon | Cloudhub Online24 Портал облачных сервисов для бизнеса</title>
-    <meta name="description"
-          content="LIGA:Zakon - информационная система для бизнеса. При подключении скидки на облачные сервисы - до 15% в месяц. Лучшие облачные сервисы для бизнеса - консультирование, подбор, сопровождение">
-    <meta name="Keywords" content="лига закон, правовая система, облачные сервисы">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/jquery.bxslider.min.css">
-    <link rel="stylesheet" href="../css/foxhover.min.css">
-    <link rel="stylesheet" href="../css/tether.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ligastyle.css">
-
-</head>
-<body>
-<div class="overlay"></div>
-<div class="popup__form-order">
-    <span class="close__popup">&times</span>
-    <div class="popup__title">Заявка на подключение сервиса</div>
-
-    <div class="popup__text">Оставьте свои контактные данные <br>
-        и наш менеджер свяжется с Вами
-    </div>
-    <form id="popupform-order" class="popupform-order">
-        <input type="hidden" name="form_type" value="order">
-        <input type="hidden" name="product" value="contragent">
-        <div class="popupform__order-name form-group">
-            <label for="name"></label>
-            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
-        </div>
-        <div class="popupform__order-tel form-group">
-            <label for="tel"></label>
-            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
-        </div>
-        <div class="popupform__order-email form-group">
-            <label for="tel"></label>
-            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
-                   placeholder="E-mail" required>
-        </div>
-        <label for="popup__order-btn" class="form__label"></label>
-        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
-               id="popup__order-btn">
-    </form>
-</div>
-<div class="popup__form-test">
-    <span class="close__popup">&times</span>
-    <div class="popup__title">Заявка на консультацию по сервису</div>
-
-    <div class="popup__text">Оставьте свои контактные данные <br>
-        и наш специалист свяжется с Вами
-    </div>
-    <form id="popupform-test" class="popupform-test">
-        <input type="hidden" name="form_type" value="test">
-        <input type="hidden" name="product" value="contragent">
-        <div class="popupform__order-name form-group">
-            <label for="name"></label>
-            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
-        </div>
-        <div class="popupform__order-tel form-group">
-            <label for="tel"></label>
-            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
-        </div>
-        <div class="popupform__order-email form-group">
-            <label for="tel"></label>
-            <input type="email" name="email" class="order__tel-input" id="email" aria-describedby="emailHelp"
-                   placeholder="E-mail" required>
-        </div>
-        <label for="popup__order-btn" class="form__label"></label>
-        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ"
-               id="popup__order-btn">
-    </form>
-</div>
-<div class="button__up hvr-pulse">
-    <img src="../img/ic_expand_less_white_24dp_2x.png" alt="">
-</div>
-<header class="liga__header" id="header">
-    <nav class="hidden-md-up navbar navbar-toggleable-sm navbar-light bg-faded hidden-lg-up">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">
-            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6;" xml:space="preserve">
-<g>
-	<g>
-		<path class="st0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><title>Платформа LIGA:Zakon | Cloudhub Online24 Портал облачных сервисов для бизнеса</title><meta name="description" content="LIGA:Zakon - информационная система для бизнеса. При подключении скидки на облачные сервисы - до 15% в месяц. Лучшие облачные сервисы для бизнеса - консультирование, подбор, сопровождение"><meta name="Keywords" content="лига закон, правовая система, облачные сервисы"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../css/jquery.bxslider.min.css"><link rel="stylesheet" href="../css/foxhover.min.css"><link rel="stylesheet" href="../css/tether.min.css"><link rel="stylesheet" href="../css/bootstrap.min.css"><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/ligastyle.css"></head><body><div class="overlay"></div><div class="popup__form-order"><span class="close__popup">&times</span><div class="popup__title">Заявка на подключение сервиса</div><div class="popup__text">Оставьте свои контактные данные<br>и наш менеджер свяжется с Вами</div><form id="popupform-order" class="popupform-order"><input type="hidden" name="form_type" value="order"> <input type="hidden" name="product" value="contragent"><div class="popupform__order-name form-group"><label for="name"></label><input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required></div><div class="popupform__order-tel form-group"><label for="tel"></label><input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required></div><div class="popupform__order-email form-group"><label for="tel"></label><input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp" placeholder="E-mail" required></div><label for="popup__order-btn" class="form__label"></label><input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ" id="popup__order-btn"></form></div><div class="popup__form-test"><span class="close__popup">&times</span><div class="popup__title">Заявка на консультацию по сервису</div><div class="popup__text">Оставьте свои контактные данные<br>и наш специалист свяжется с Вами</div><form id="popupform-test" class="popupform-test"><input type="hidden" name="form_type" value="test"> <input type="hidden" name="product" value="contragent"><div class="popupform__order-name form-group"><label for="name"></label><input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required></div><div class="popupform__order-tel form-group"><label for="tel"></label><input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required></div><div class="popupform__order-email form-group"><label for="tel"></label><input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp" placeholder="E-mail" required></div><label for="popup__order-btn" class="form__label"></label><input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ" id="popup__order-btn"></form></div><div class="button__up hvr-pulse"><img src="../img/ic_expand_less_white_24dp_2x.png" alt=""></div><header class="liga__header" id="header"><nav class="hidden-md-up navbar navbar-toggleable-sm navbar-light bg-faded hidden-lg-up"><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <a class="navbar-brand" href="../index.html"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6" xml:space="preserve"><g><g><path class="st0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9H137c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
 			c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1c0-0.7,0.2-1.7,0.4-2.8l8.1-35.5
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/>
-		<path class="st1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/><path class="st1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l11-47.8c0.1-0.3,0.2-0.8,0.2-1.1c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
-			C184.6,152.1,184.4,152.9,184.2,153.9z"/>
-		<path class="st2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			C184.6,152.1,184.4,152.9,184.2,153.9z"/><path class="st2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l8.2-35.5c0.1-0.3,0.2-0.8,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
 			C206,164.5,205.8,165.2,205.6,166.2z M208.2,158.5h-11.9c-2.1,0-2.6-0.6-2.6-2.1c0-0.3,0.2-1.1,1.6-7.4h11.8
-			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/>
-		<path class="st3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/><path class="st3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9h-2.1c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
 			c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1c0-0.7,0.2-1.7,0.4-2.8l8.1-35.5
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/>
-		<path class="st4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/><path class="st4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
 			c5.7,0,7.8-2.5,9.6-9.8l1.3-5.3c0.7-2.5,1-4.8,1-6.5C94.2,171.8,92.7,170,88.4,170z M106.6,183.2l-1.6,6.5
 			c-3.1,12.9-7.9,16.7-21.9,16.7H81c-10,0-17.9-3.6-17.9-13.8c0-1.7,0.2-3.6,0.7-5.7l1.6-6.9c3.4-14.8,8.9-19.4,22.5-19.4h3
-			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/>
-		<path class="st5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
+			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/><path class="st5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
 			 M298.4,183.5c-0.9,1.9-3,2.4-5.2,2.4H273l-1,4.4c-0.2,1-0.3,1.7-0.3,2.3c0,3,2.1,3.6,4.5,3.6h9.4c6.1,0,7.5-0.5,8.8-2.5h1.3
 			l-1.5,6.6c-1.2,5.3-4.4,6.2-11.1,6.2h-13.1c-7.6,0-12-3.1-12-13c0-2.5,0.7-5.8,1.5-9.7c3.9-17.9,9.3-23.1,23.6-23.1h2.6
-			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/>
-	</g>
-	<g>
-		<path class="st6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
+			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/></g><g><path class="st6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
 			l-3.5,15.5c-1.4,5.9-3.4,7.6-11.8,7.6h-60.7c7-30.1,13.9-42.2,31.6-51.3l18.4-9.4c5.6-2.8,11-7.9,11-13.6c0-3-1.7-5.8-7-5.8H339
-			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/>
-		<path class="st6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
+			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/><path class="st6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
 			c0,2.4,0.8,3.8,3.2,4.1l-0.4,2.3h-23.8c-3.1,0-4.2-1.8-4.2-3.9c0-0.8,0.1-1.7,0.6-3.5l4.1-16.9H404c-3.1,0-4.6-0.8-4.6-3.4
 			c0-1.3,0.3-4.2,2.7-12.8l54.4-56.5h17c3,0,5.6,2.5,5.6,5.3C479.1,116.1,478.9,117.8,478.7,118.9z M423,165.9h20.5l6-27.1
-			L423,165.9z"/>
-	</g>
-	<g>
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147">
-			<stop  offset="0" style="stop-color:#9A75D3"/>
-			<stop  offset="1" style="stop-color:#7E55C7"/>
-		</linearGradient>
-		<path class="st7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
+			L423,165.9z"/></g><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147"><stop offset="0" style="stop-color:#9A75D3"/><stop offset="1" style="stop-color:#7E55C7"/></linearGradient><path class="st7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
 			l0.5-9.4c2.8-47.8,42.5-85.3,90.4-85.3c25.8,0,50.4,11.1,67.6,30.3L248.1,64l7-12.5c6.5-11.7,18.4-19.7,31.7-20.3
 			c21.5-1,39.3,11.8,39.3,33.1c0,7.1-2,14.1-5.9,20.2l-8.8,13.7c0,0,2.3,0.5,5.3,1.1c9.9,2,20.1-2.4,25.5-11.1
 			c0-0.1,0.1-0.1,0.1-0.2c2-3.3,3.6-6.9,4.4-10.7c2.8-12.5,1.6-21.5-4.2-34.1c-6.3-13.6-17.8-24.5-31.7-29.9
 			c-24.4-9.5-50.1-2.4-66.1,15C224.2,10.1,197.7,0,170.2,0c-56.6,0-104,42-111.6,97.2c-40.1,8.9-67.1,49.2-56,93.1
-			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/>
-		<path class="st8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
-			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/>
-		<path class="st8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
-			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/>
-	</g>
-</g>
-</svg>
-        </a>
-        <a class="ligalogo__mob" href="http://www.ligazakon.ua" rel="nofollow">
-            <img src="../img/lz_middle.png" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link menu__inner" href="#about">О платформе</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu__inner" href="#products">Продукты ЛІГА</a>
-                </li>
-                <li class="nav-item nav-item-excellence">
-                    <a class="nav-link" href="../excellence.html">Комплексная скидка</a>
-                </li>
-                <li class="nav-item  ">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="tel:+380504544043" class="nav-link nav-link-tel">
-                        <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
-                             viewBox="0 0 24 24">
-                            <path fill="#25408f"
-                                  d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                        </svg>
-                        +38 (050) 454-40-43
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="tel:+380675665331" class="nav-link nav-link-tel">
-                        <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
-                             viewBox="0 0 24 24">
-                            <path fill="#25408f"
-                                  d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                        </svg>
-                        +38 (067) 566-53-31
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="mailto:info@online24.net.ua" class="nav-link nav-link-mail" href="#">
-                        <svg style="width:24px;height:24px;margin-right:5px;" viewBox="0 0 24 24">
-                            <path fill="#25408f"
-                                  d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z"/>
-                        </svg>
-                        info@online24.net.ua</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="lmain__menu hidden-sm-down">
-        <a href="http://www.ligazakon.ua" class="partnerlogosticky" rel="nofollow">
-            <img src="../img/lz_middle.png" alt="">
-        </a>
-        <a href="../index.html" class="logosticky__o24">
-            <div class="logomain">
-                <svg version="1.1" width="85px" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6;" xml:space="preserve">
-<g>
-	<g>
-		<path class="wt0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/><path class="st8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
+			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/><path class="st8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
+			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/></g></g></svg> </a><a class="ligalogo__mob" href="http://www.ligazakon.ua" rel="nofollow"><img src="../img/lz_middle.png" alt=""></a><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link menu__inner" href="#about">О платформе</a></li><li class="nav-item"><a class="nav-link menu__inner" href="#products">Продукты ЛІГА</a></li><li class="nav-item nav-item-excellence"><a class="nav-link" href="../excellence.html">Комплексная скидка</a></li><li class="nav-item"><a class="nav-link" href="#"></a></li><li class="nav-item"><a href="tel:+380504544043" class="nav-link nav-link-tel"><svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (050) 454-40-43</a></li><li class="nav-item"><a href="tel:+380675665331" class="nav-link nav-link-tel"><svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (067) 566-53-31</a></li><li class="nav-item"><a href="mailto:info@online24.net.ua" class="nav-link nav-link-mail" href="#"><svg style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z"/></svg> info@online24.net.ua</a></li></ul></div></nav><nav class="lmain__menu hidden-sm-down"><a href="http://www.ligazakon.ua" class="partnerlogosticky" rel="nofollow"><img src="../img/lz_middle.png" alt=""> </a><a href="../index.html" class="logosticky__o24"><div class="logomain"><svg version="1.1" width="85px" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6" xml:space="preserve"><g><g><path class="wt0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9H137c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
 			c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1c0-0.7,0.2-1.7,0.4-2.8l8.1-35.5
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/>
-		<path class="wt1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/><path class="wt1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l11-47.8c0.1-0.3,0.2-0.8,0.2-1.1c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
-			C184.6,152.1,184.4,152.9,184.2,153.9z"/>
-		<path class="wt2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			C184.6,152.1,184.4,152.9,184.2,153.9z"/><path class="wt2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l8.2-35.5c0.1-0.3,0.2-0.8,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
 			C206,164.5,205.8,165.2,205.6,166.2z M208.2,158.5h-11.9c-2.1,0-2.6-0.6-2.6-2.1c0-0.3,0.2-1.1,1.6-7.4h11.8
-			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/>
-		<path class="wt3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/><path class="wt3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9h-2.1c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
 			c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1c0-0.7,0.2-1.7,0.4-2.8l8.1-35.5
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/>
-		<path class="wt4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/><path class="wt4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
 			c5.7,0,7.8-2.5,9.6-9.8l1.3-5.3c0.7-2.5,1-4.8,1-6.5C94.2,171.8,92.7,170,88.4,170z M106.6,183.2l-1.6,6.5
 			c-3.1,12.9-7.9,16.7-21.9,16.7H81c-10,0-17.9-3.6-17.9-13.8c0-1.7,0.2-3.6,0.7-5.7l1.6-6.9c3.4-14.8,8.9-19.4,22.5-19.4h3
-			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/>
-		<path class="wt5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
+			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/><path class="wt5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
 			 M298.4,183.5c-0.9,1.9-3,2.4-5.2,2.4H273l-1,4.4c-0.2,1-0.3,1.7-0.3,2.3c0,3,2.1,3.6,4.5,3.6h9.4c6.1,0,7.5-0.5,8.8-2.5h1.3
 			l-1.5,6.6c-1.2,5.3-4.4,6.2-11.1,6.2h-13.1c-7.6,0-12-3.1-12-13c0-2.5,0.7-5.8,1.5-9.7c3.9-17.9,9.3-23.1,23.6-23.1h2.6
-			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/>
-	</g>
-	<g>
-		<path class="wt6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
+			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/></g><g><path class="wt6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
 			l-3.5,15.5c-1.4,5.9-3.4,7.6-11.8,7.6h-60.7c7-30.1,13.9-42.2,31.6-51.3l18.4-9.4c5.6-2.8,11-7.9,11-13.6c0-3-1.7-5.8-7-5.8H339
-			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/>
-		<path class="wt6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
+			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/><path class="wt6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
 			c0,2.4,0.8,3.8,3.2,4.1l-0.4,2.3h-23.8c-3.1,0-4.2-1.8-4.2-3.9c0-0.8,0.1-1.7,0.6-3.5l4.1-16.9H404c-3.1,0-4.6-0.8-4.6-3.4
 			c0-1.3,0.3-4.2,2.7-12.8l54.4-56.5h17c3,0,5.6,2.5,5.6,5.3C479.1,116.1,478.9,117.8,478.7,118.9z M423,165.9h20.5l6-27.1
-			L423,165.9z"/>
-	</g>
-	<g>
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147">
-			<stop  offset="0" style="stop-color:#9A75D3"/>
-			<stop  offset="1" style="stop-color:#7E55C7"/>
-		</linearGradient>
-		<path class="wt7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
+			L423,165.9z"/></g><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147"><stop offset="0" style="stop-color:#9A75D3"/><stop offset="1" style="stop-color:#7E55C7"/></linearGradient><path class="wt7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
 			l0.5-9.4c2.8-47.8,42.5-85.3,90.4-85.3c25.8,0,50.4,11.1,67.6,30.3L248.1,64l7-12.5c6.5-11.7,18.4-19.7,31.7-20.3
 			c21.5-1,39.3,11.8,39.3,33.1c0,7.1-2,14.1-5.9,20.2l-8.8,13.7c0,0,2.3,0.5,5.3,1.1c9.9,2,20.1-2.4,25.5-11.1
 			c0-0.1,0.1-0.1,0.1-0.2c2-3.3,3.6-6.9,4.4-10.7c2.8-12.5,1.6-21.5-4.2-34.1c-6.3-13.6-17.8-24.5-31.7-29.9
 			c-24.4-9.5-50.1-2.4-66.1,15C224.2,10.1,197.7,0,170.2,0c-56.6,0-104,42-111.6,97.2c-40.1,8.9-67.1,49.2-56,93.1
-			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/>
-		<path class="wt8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
-			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/>
-		<path class="wt8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
-			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/>
-	</g>
-</g>
-</svg>
-            </div>
-        </a>
-
-        <div class="lmain__nav" id="nav-main">
-            <a href="#header" class="null__link"></a>
-            <div class="l__mainmenu-item"><a href="#about" class="lmain__menu-link menu__inner">О
-                платформе</a></div>
-            <div class="l__mainmenu-item"><a href="#products" class="lmain__menu-link menu__inner">Продукты
-                ЛІГА</a></div>
-
-        </div>
-        <div class="l__mainmenu-item "><a href="" class="lmain__menu-excellence btn-4">
-            <span>Комплексная скидка</span></a>
-        </div>
-        <div class="l__mainmenu-contacts">
-            <a href="tel:+380504544043" class="l__mainmenu-tel hvr-grow">
-                <svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px;"
-                     viewBox="0 0 24 24">
-                    <path fill="#fff"
-                          d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                </svg>
-                +38 (050) 454-40-43
-            </a>
-            <a href="tel:+380675665331" class="l__mainmenu-tel hvr-grow">
-                <svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px;"
-                     viewBox="0 0 24 24">
-                    <path fill="#fff"
-                          d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-                </svg>
-                +38 (067) 566-53-31
-            </a>
-        </div>
-    </nav>
-    <div class="liga__header-content ">
-
-        <div class="liga__slogan animatedParent" data-sequence='500'>
-                    <h1 class="partner__brand">Платформа LIGA:Zakon</h1>
-                    <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Теперь в облаке</h2>
-            <p class="animated fadeInLeftShort delay-500" data-id='2'>Информационно-правовая <br> платформа для бизнеса
-            </p>
-            <a href="" class="btn_s btn-1 l__testbtn">
-                <svg>
-                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-                </svg>
-                Попробовать бесплатно (тест 24 часа)
-            </a>
-                </div>
-
-            </div>
-
-    </div>
-</header>
-<main class="lz__main">
-    <article class="liga__about" id="about">
-        <h2 class="article__title article__title-black">О платформе</h2>
-
-        <div class="row animatedParent data-appear-top-offset='300'">
-            <div class="col-md-6 col-sm-12">
-                <section class="card product__feautures product__feautures-liga  animated fadeInUpShort">
-                    <h3 class="feature__title"><i class="fa fa-info-circle" aria-hidden="true"></i> Единый источник
-                        информации</h3>
-
-                    <div class="feature__descr">Одна информационная среда для всех сотрудников, принимающих решение, для
-                        всех отделов и подразделений. Один принцип работы с информацией, один принцип поиска и
-                        классификации : любая ссылка на любой документ понятна и доступна любому члену Вашей команды.
-                        Каждый из Вас знает правила игры!
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <section class="card product__feautures product__feautures-liga animated fadeInUpShort">
-                    <h3 class="feature__title"><i class="fa fa-calendar" aria-hidden="true"></i> Информация на каждый
-                        день</h3>
-
-                    <div class="feature__descr">В изменчивом правовом поле Украины платформа ЛІГА - незаменимый и
-                        надёжный инструмент для ежедневной работы руководителя, бухгалтера, юриста, кадровика, студента.
-                        1,2 миллиона документов доступны 24 часа в сутки.
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <section class="card product__feautures product__feautures-liga animated fadeInUpShort">
-                    <h3 class="feature__title"><i class="fa fa-cloud-download" aria-hidden="true"></i>
-                        Доступ в облаке</h3>
-
-                    <div class="feature__descr">Гарантирует круглосуточную работу платформы - для обеспечения
-                        деятельности каждого клиента платформы ЛІГА. Теперь не нужна техподдержка и свободное место на
-                        винчестере - тратьте время и средства только на эффективную работу с информацией!
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <section class="card product__feautures product__feautures-liga animated fadeInUpShort">
-                    <h3 class="feature__title"><i class="fa fa-mobile" aria-hidden="true"></i>Мобильность</h3>
-
-                    <div class="feature__descr">Быстрый доступ к Платформе с любых устройств, которые подключены к
-                        Интернету. Адаптивный дизайн и
-                        оптимизация сервиса позволяют работать с ЛІГОЙ с разных экранов - скорости хватит даже у
-                        2G-интернета!
-        </div>
-                </section>
-            </div>
-        </div>
-    </article>
-    <article class="liga__features hidden-xs-down">
-        <h2 class="article__title article__title-black">Модули ЛІГА:ЗАКОН</h2>
-        <div class="features__descr">Часть модулей доступна бесплатно, часть входит в наполнение той или иной платформы
-        </div>
-        <ul class="module__list">
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">ЗАКОНОДАТЕЛЬСТВО</h4>
-                    <div class="module__predescr">Полная база нормативно-правовых актов Украины со специальным
-                        аналитическим функционалом
-        </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 460 460" style="enable-background:new 0 0 460 460;" xml:space="preserve">
-<g>
-<g>
-<path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
+			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/><path class="wt8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
+			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/><path class="wt8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
+			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/></g></g></svg></div></a><div class="lmain__nav" id="nav-main"><a href="#header" class="null__link"></a><div class="l__mainmenu-item"><a href="#about" class="lmain__menu-link menu__inner">О платформе</a></div><div class="l__mainmenu-item"><a href="#products" class="lmain__menu-link menu__inner">Продукты ЛІГА</a></div></div><div class="l__mainmenu-item"><a href="" class="lmain__menu-excellence btn-4"><span>Комплексная скидка</span></a></div><div class="l__mainmenu-contacts"><a href="tel:+380504544043" class="l__mainmenu-tel hvr-grow"><svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px" viewBox="0 0 24 24"><path fill="#fff" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (050) 454-40-43 </a><a href="tel:+380675665331" class="l__mainmenu-tel hvr-grow"><svg class="l__mainmenu-tel" style="width:28px;height:28px;margin-right:5px" viewBox="0 0 24 24"><path fill="#fff" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (067) 566-53-31</a></div></nav><div class="liga__header-content"><div class="liga__slogan animatedParent" data-sequence="500"><h1 class="partner__brand">Платформа LIGA:Zakon</h1><h2 class="partner__slogan animated fadeInLeftShort" data-id="1">Теперь в облаке</h2><p class="animated fadeInLeftShort delay-500" data-id="2">Информационно-правовая<br>платформа для бизнеса</p><a href="" class="btn_s btn-1 l__testbtn"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg> Попробовать бесплатно (тест 24 часа)</a></div></div></header><main class="lz__main"><article class="liga__about" id="about"><h2 class="article__title article__title-black">О платформе</h2><div class="row animatedParent data-appear-top-offset='300'"><div class="col-md-6 col-sm-12"><section class="card product__feautures product__feautures-liga animated fadeInUpShort"><h3 class="feature__title"><i class="fa fa-info-circle" aria-hidden="true"></i> Единый источник информации</h3><div class="feature__descr">Одна информационная среда для всех сотрудников, принимающих решение, для всех отделов и подразделений. Один принцип работы с информацией, один принцип поиска и классификации : любая ссылка на любой документ понятна и доступна любому члену Вашей команды. Каждый из Вас знает правила игры!</div></section></div><div class="col-md-6 col-sm-12"><section class="card product__feautures product__feautures-liga animated fadeInUpShort"><h3 class="feature__title"><i class="fa fa-calendar" aria-hidden="true"></i> Информация на каждый день</h3><div class="feature__descr">В изменчивом правовом поле Украины платформа ЛІГА - незаменимый и надёжный инструмент для ежедневной работы руководителя, бухгалтера, юриста, кадровика, студента. 1,2 миллиона документов доступны 24 часа в сутки.</div></section></div><div class="col-md-6 col-sm-12"><section class="card product__feautures product__feautures-liga animated fadeInUpShort"><h3 class="feature__title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Доступ в облаке</h3><div class="feature__descr">Гарантирует круглосуточную работу платформы - для обеспечения деятельности каждого клиента платформы ЛІГА. Теперь не нужна техподдержка и свободное место на винчестере - тратьте время и средства только на эффективную работу с информацией!</div></section></div><div class="col-md-6 col-sm-12"><section class="card product__feautures product__feautures-liga animated fadeInUpShort"><h3 class="feature__title"><i class="fa fa-mobile" aria-hidden="true"></i>Мобильность</h3><div class="feature__descr">Быстрый доступ к Платформе с любых устройств, которые подключены к Интернету. Адаптивный дизайн и оптимизация сервиса позволяют работать с ЛІГОЙ с разных экранов - скорости хватит даже у 2G-интернета!</div></section></div></div></article><article class="liga__features hidden-xs-down"><h2 class="article__title article__title-black">Модули ЛІГА:ЗАКОН</h2><div class="features__descr">Часть модулей доступна бесплатно, часть входит в наполнение той или иной платформы</div><ul class="module__list"><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">ЗАКОНОДАТЕЛЬСТВО</h4><div class="module__predescr">Полная база нормативно-правовых актов Украины со специальным аналитическим функционалом</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 460 460" style="enable-background:new 0 0 460 460" xml:space="preserve"><g><g><path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
 l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h0.7c8,0,14.5-6.5,14.5-14.5c0-8-6.5-14.5-14.5-14.5h-107
 c-6-8.8-15-15.4-25.4-18.6c-1.5-16.9-15.7-30.2-33-30.2c-17.3,0-31.5,13.3-33,30.2c-10.4,3.2-19.4,9.8-25.4,18.6h-107
 c-8,0-14.5,6.5-14.5,14.5c0,8,6.5,14.5,14.5,14.5h0.7L10.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4
 c3.1,0,6.2-1.6,7.9-4.4l47.2-75l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h128.6v279.6h-30.5
-c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/>
-<path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/>
-<path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Все нормативно-правовые акты, изданные органами законодательной и
-                        исполнительной власти и местного самоуправления. Функционал: прямые ссылки, на документы,
-                        обратные связи,
-                        сравнение редакций и др.</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">ПРАВОВАЯ КАРТИНА ДНЯ</h4>
-                    <div class="module__predescr">Главная правовая информация текущего дня</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-<path id="XMLID_5_" d="M218.2,172.4v161.8l201.5,119.5c16.6,9.9,37.7-2.1,37.7-21.5V74.3c0-19.3-21-31.3-37.7-21.5L218.2,172.4z"/>
-<path id="XMLID_4_" d="M61.3,173.3c-23.1,0-41.9,18.8-41.9,41.9v76.1c0,23.1,18.8,41.9,41.9,41.9h142.2v-160L61.3,173.3L61.3,173.3
-z"/>
-<path id="XMLID_3_" d="M467.9,184.1v138.5c22.9-14.6,38.1-40.1,38.1-69.2S490.8,198.6,467.9,184.1z"/>
-<path id="XMLID_2_" d="M10.3,214.2c-2.4,0-4.3,1.9-4.3,4.3v73.9h33.5v-78.2H10.3z"/>
-<path id="XMLID_1_" d="M156.9,318c0,0-26.3,58.8,31.7,128.4c5.4,6.4,0.7,16.2-7.7,16.2h-62.1c-4.7,0-8.9-2.5-11.2-6.6
-C96.2,435.2,65,368.8,94.1,308.5"/>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr  caption">Ключевая правовая информация за сегодня: новости, события,
-                        аналитика.
-                        Обзоры главных законодательных событий дня, вступившие в силу документы, напоминание о сроках
-                        уплаты налогов и подачи отчетности</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">ИСКУСCТВО ОБОРОНЫ</h4>
-                    <div class="module__predescr">Инструкции и алгоритмы действий при проверках контролирующими
-                        органами
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr  caption">Алгоритмы действий и инструкции на случай проверок контролирующими
-                        органами
-                        и в различных стрессовых ситуациях для директора, секретаря, бухгалтера, руководителя
-                        структурного подразделения, рядового сотрудника, охранника</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">НОВАЦИИ 2017</h4>
-                    <div class="module__predescr">Путеводитель по главным нововведениям в законодательстве</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M20,4C21.11,4 22,4.89 22,6V18C22,19.11 21.11,20 20,20H4C2.89,20 2,19.11 2,18V6C2,4.89 2.89,4 4,4H20M8.5,15V9H7.25V12.5L4.75,9H3.5V15H4.75V11.5L7.3,15H8.5M13.5,10.26V9H9.5V15H13.5V13.75H11V12.64H13.5V11.38H11V10.26H13.5M20.5,14V9H19.25V13.5H18.13V10H16.88V13.5H15.75V9H14.5V14A1,1 0 0,0 15.5,15H19.5A1,1 0 0,0 20.5,14Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Главные новости законодательства, прямо касающиеся бизнеса, которые
-                        собраны
-                        в одном модуле. Ежедневно обновляемые : реформа трудового законодательства, налоговая реформа и
-                        т.д. Позволяет быть в курсе новостей, аналитики, изменение статусов документов</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">БАНКРОТСТВО</h4>
-                    <div class="module__predescr">База объявлений о банкротстве и ликвидации субъектов хозяйствования
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
-<path d="M4744.1,4989.9c-467.3-113-804.3-519-831.1-1003.4c-19.2-331.3,80.4-586,317.9-825.3c222.1-222.1,463.4-323.6,767.9-323.6
-s545.8,101.5,767.9,323.6c432.8,432.8,434.7,1091.5,7.7,1526.2C5500.5,4965,5111.7,5079.9,4744.1,4989.9z"/>
-<path d="M4353.4,2598.1C3104.9,2364.5,2291,1552.6,2247,491.7c-15.3-388.7,61.3-735.3,245.1-1104.9
+c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/><path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/><path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/></g></g></svg></div><p class="module__descr caption">Все нормативно-правовые акты, изданные органами законодательной и исполнительной власти и местного самоуправления. Функционал: прямые ссылки, на документы, обратные связи, сравнение редакций и др.</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">ПРАВОВАЯ КАРТИНА ДНЯ</h4><div class="module__predescr">Главная правовая информация текущего дня</div><div class="module__icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path id="XMLID_5_" d="M218.2,172.4v161.8l201.5,119.5c16.6,9.9,37.7-2.1,37.7-21.5V74.3c0-19.3-21-31.3-37.7-21.5L218.2,172.4z"/><path id="XMLID_4_" d="M61.3,173.3c-23.1,0-41.9,18.8-41.9,41.9v76.1c0,23.1,18.8,41.9,41.9,41.9h142.2v-160L61.3,173.3L61.3,173.3
+z"/><path id="XMLID_3_" d="M467.9,184.1v138.5c22.9-14.6,38.1-40.1,38.1-69.2S490.8,198.6,467.9,184.1z"/><path id="XMLID_2_" d="M10.3,214.2c-2.4,0-4.3,1.9-4.3,4.3v73.9h33.5v-78.2H10.3z"/><path id="XMLID_1_" d="M156.9,318c0,0-26.3,58.8,31.7,128.4c5.4,6.4,0.7,16.2-7.7,16.2h-62.1c-4.7,0-8.9-2.5-11.2-6.6
+C96.2,435.2,65,368.8,94.1,308.5"/></g></svg></div><p class="module__descr caption">Ключевая правовая информация за сегодня: новости, события, аналитика. Обзоры главных законодательных событий дня, вступившие в силу документы, напоминание о сроках уплаты налогов и подачи отчетности</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">ИСКУСCТВО ОБОРОНЫ</h4><div class="module__predescr">Инструкции и алгоритмы действий при проверках контролирующими органами</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"/></svg></div><p class="module__descr caption">Алгоритмы действий и инструкции на случай проверок контролирующими органами и в различных стрессовых ситуациях для директора, секретаря, бухгалтера, руководителя структурного подразделения, рядового сотрудника, охранника</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">НОВАЦИИ 2017</h4><div class="module__predescr">Путеводитель по главным нововведениям в законодательстве</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M20,4C21.11,4 22,4.89 22,6V18C22,19.11 21.11,20 20,20H4C2.89,20 2,19.11 2,18V6C2,4.89 2.89,4 4,4H20M8.5,15V9H7.25V12.5L4.75,9H3.5V15H4.75V11.5L7.3,15H8.5M13.5,10.26V9H9.5V15H13.5V13.75H11V12.64H13.5V11.38H11V10.26H13.5M20.5,14V9H19.25V13.5H18.13V10H16.88V13.5H15.75V9H14.5V14A1,1 0 0,0 15.5,15H19.5A1,1 0 0,0 20.5,14Z"/></svg></div><p class="module__descr caption">Главные новости законодательства, прямо касающиеся бизнеса, которые собраны в одном модуле. Ежедневно обновляемые : реформа трудового законодательства, налоговая реформа и т.д. Позволяет быть в курсе новостей, аналитики, изменение статусов документов</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">БАНКРОТСТВО</h4><div class="module__predescr">База объявлений о банкротстве и ликвидации субъектов хозяйствования</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"><path d="M4744.1,4989.9c-467.3-113-804.3-519-831.1-1003.4c-19.2-331.3,80.4-586,317.9-825.3c222.1-222.1,463.4-323.6,767.9-323.6
+s545.8,101.5,767.9,323.6c432.8,432.8,434.7,1091.5,7.7,1526.2C5500.5,4965,5111.7,5079.9,4744.1,4989.9z"/><path d="M4353.4,2598.1C3104.9,2364.5,2291,1552.6,2247,491.7c-15.3-388.7,61.3-735.3,245.1-1104.9
 c88.1-178.1,149.4-252.8,247-300.6c120.6-61.3,185.8-63.2,356.2-11.5c32.5,9.6,99.6-59.4,425.1-436.6l384.9-448.1l5.8-1300.2
 l5.7-1300.3l51.7-97.7c199.2-379.2,741.1-354.3,907.7,40.2c23,55.5,26.8,296.8,26.8,1551.1v1484.1h95.7h95.7v-1487.9
 c0-1411.3,1.9-1493.7,36.4-1568.3c134-294.9,522.8-384.9,771.7-180c38.3,32.6,93.8,107.2,124.5,168.5l53.6,109.2l5.7,1290.7
@@ -472,96 +82,16 @@ c5.8,93.8-3.8,128.3-90,312.1C3099.1-12,3064.7,118.3,3051.3,348.1c-15.3,300.7,70.
 c93.8,113,296.8,291.1,333.2,291.1C3666,1439.6,3706.2,1412.8,3744.5,1378.3z M6477.1,1349.6c337-287.2,490.2-616.6,469.2-1001.5
 c-13.4-233.6-49.8-363.8-168.5-616.6c-86.2-183.8-95.8-218.3-90-312.1c1.9-57.4,5.7-105.3,3.8-105.3c0,0-130.2-38.3-287.2-86.2
 s-291.1-86.2-298.7-86.2c-9.6,0-15.3,448.1-15.3,995.8c0,970.9,1.9,997.7,40.2,1081.9c40.2,88.1,170.4,220.2,214.5,220.2
-C6358.4,1439.6,6417.7,1399.4,6477.1,1349.6z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Все объявления о банкротствах, опубликованные с 1991 года на сайте
-                        Высшего
-                        хозсуда Украины, в официальных изданиях «Урядовый курьер», «Голос Украины», печатных изданиях
-                        областных советов</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">ТИПОВЫЕ ДОГОВОРЫ И ШАБЛОНЫ</h4>
-                    <div class="module__predescr">База типовых договоров и образцов других документов</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<path d="M174.6,771.4c0,41.1,33.3,74.5,74.5,74.5c41.1,0,74.5-33.3,74.5-74.5c0-41.1-33.3-74.5-74.5-74.5
-C208,697,174.6,730.3,174.6,771.4L174.6,771.4L174.6,771.4z"/>
-<path d="M735.2,656.2v216.2c0,32.5-26.3,58.8-58.8,58.8H127.6c-32.5,0-58.8-26.3-58.8-58.8V127.6c0-32.5,26.3-58.8,58.8-58.8h548.8
+C6358.4,1439.6,6417.7,1399.4,6477.1,1349.6z"/></g></g></svg></div><p class="module__descr caption">Все объявления о банкротствах, опубликованные с 1991 года на сайте Высшего хозсуда Украины, в официальных изданиях «Урядовый курьер», «Голос Украины», печатных изданиях областных советов</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">ТИПОВЫЕ ДОГОВОРЫ И ШАБЛОНЫ</h4><div class="module__predescr">База типовых договоров и образцов других документов</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><path d="M174.6,771.4c0,41.1,33.3,74.5,74.5,74.5c41.1,0,74.5-33.3,74.5-74.5c0-41.1-33.3-74.5-74.5-74.5
+C208,697,174.6,730.3,174.6,771.4L174.6,771.4L174.6,771.4z"/><path d="M735.2,656.2v216.2c0,32.5-26.3,58.8-58.8,58.8H127.6c-32.5,0-58.8-26.3-58.8-58.8V127.6c0-32.5,26.3-58.8,58.8-58.8h548.8
 c32.5,0,58.8,26.3,58.8,58.8v206.3l58.8-83.7V88.4c0-43.3-35.1-78.4-78.4-78.4H88.4C45.1,10,10,45.1,10,88.4v823.2
-c0,43.3,35.1,78.4,78.4,78.4h627.2c43.3,0,78.4-35.1,78.4-78.4v-339L735.2,656.2z"/>
-<path d="M147.2,204.1h509.6v47H147.2V204.1L147.2,204.1z"/>
-<path d="M147.2,498h472.6l33.1-47H147.2V498z"/>
-<path d="M147.2,327.5h509.6v47H147.2V327.5z"/>
-<path d="M961.5,285.3l22.2-31.7c10.4-14.9,7.7-34.8-7.1-45.2L923,170.9c-14.9-10.4-35.9-7.1-46.3,7.8l-22.2,31.7L961.5,285.3z"/>
-<path d="M510.4,701.3L510,816.5l108.2-39.8L510.4,701.3z"/>
-<path d="M845.5,223L518.1,690.4l107.1,75L952.6,298L845.5,223z M599.4,665.3l-9-6.3l251.4-358.8l9,6.3L599.4,665.3z M632.2,687.6
-l-8.7-6.1l250.8-358l8.7,6.1L632.2,687.6z"/>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Мощная база договоров, исковых заявлений, справок, должностных
-                        инструкций и
-                        других документов - шаблоны для заполнения в формате Word. Полностью соответствует текущему
-                        законодательству</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">CИТУАЦИИ ДЛЯ БИЗНЕСА</h4>
-                    <div class="module__predescr">Алгоритмы для действий в разных бизнес-ситуаций</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Пошаговые алгоритмы, которые помогут разобраться в правовых и
-                        практических
-                        аспектах, рассмотреть разные варианты. Темы ситуаций: управление активами, финансами,
-                        персоналом, отношения с контрагентами и госорганами и др.</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">ВЛАСТЬ УКРАИНЫ</h4>
-                    <div class="module__predescr">Сведения о структуре органов исполнительной власти</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<path d="M500,302.6c-35.6,0-64.6,29-64.6,64.6s29,64.6,64.6,64.6s64.6-29,64.6-64.6S535.6,302.6,500,302.6z"/>
-<path d="M770.5,98.8C670.4,98.8,575.9,66.3,500,10c-75.9,56.3-170.4,88.8-270.5,88.8c-34.8,0-70.8-6.5-107.9-19.3v425
+c0,43.3,35.1,78.4,78.4,78.4h627.2c43.3,0,78.4-35.1,78.4-78.4v-339L735.2,656.2z"/><path d="M147.2,204.1h509.6v47H147.2V204.1L147.2,204.1z"/><path d="M147.2,498h472.6l33.1-47H147.2V498z"/><path d="M147.2,327.5h509.6v47H147.2V327.5z"/><path d="M961.5,285.3l22.2-31.7c10.4-14.9,7.7-34.8-7.1-45.2L923,170.9c-14.9-10.4-35.9-7.1-46.3,7.8l-22.2,31.7L961.5,285.3z"/><path d="M510.4,701.3L510,816.5l108.2-39.8L510.4,701.3z"/><path d="M845.5,223L518.1,690.4l107.1,75L952.6,298L845.5,223z M599.4,665.3l-9-6.3l251.4-358.8l9,6.3L599.4,665.3z M632.2,687.6
+l-8.7-6.1l250.8-358l8.7,6.1L632.2,687.6z"/></g></svg></div><p class="module__descr caption">Мощная база договоров, исковых заявлений, справок, должностных инструкций и других документов - шаблоны для заполнения в формате Word. Полностью соответствует текущему законодательству</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">CИТУАЦИИ ДЛЯ БИЗНЕСА</h4><div class="module__predescr">Алгоритмы для действий в разных бизнес-ситуаций</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg></div><p class="module__descr caption">Пошаговые алгоритмы, которые помогут разобраться в правовых и практических аспектах, рассмотреть разные варианты. Темы ситуаций: управление активами, финансами, персоналом, отношения с контрагентами и госорганами и др.</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">ВЛАСТЬ УКРАИНЫ</h4><div class="module__predescr">Сведения о структуре органов исполнительной власти</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><path d="M500,302.6c-35.6,0-64.6,29-64.6,64.6s29,64.6,64.6,64.6s64.6-29,64.6-64.6S535.6,302.6,500,302.6z"/><path d="M770.5,98.8C670.4,98.8,575.9,66.3,500,10c-75.9,56.3-170.4,88.8-270.5,88.8c-34.8,0-70.8-6.5-107.9-19.3v425
 c0,39.4,14.1,87.9,40.7,140c27.7,54.3,69,112.6,119.4,168.8c44.8,49.9,97.1,98.2,147.4,136c22.1,16.6,40.5,28.8,54.9,37.5
 c7.1,4.3,16,4.2,23.1-0.2c14.6-9.2,33.2-21.8,55.5-38.8c51.8-39.4,105.4-88.4,151-138c52.3-56.9,94.9-115.3,123.4-169.1
 c27.2-51.3,41.6-98.5,41.6-136.2v-425C841.4,92.3,805.3,98.8,770.5,98.8z M540.8,539.3v185.5c0,22.5-18.3,40.8-40.8,40.8l0,0
 c-22.5,0-40.8-18.3-40.8-40.8V539.3c-77.9-18.5-136-88.6-136-172c0-97.5,79.3-176.8,176.8-176.8s176.8,79.3,176.8,176.8
-C676.8,450.7,618.7,520.8,540.8,539.3z"/>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">База данных об органах власти, руководителях, официальных сайтах и
-                        профилях
-                        в соцсетях, а также Ссылки на нормативные документы, регулирующие деятельность органов
-                        власти</p>
-                </div>
-
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">КАЛЕНДАРЬ ЮРИСТА</h4>
-                    <div class="module__predescr">Вступление и утрата силы документами, официальное опубликование
-                        нормативно-правовых актов
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:space="preserve">
-<g>
-<g id="_x32_22._Calender">
-<g>
-<path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
+C676.8,450.7,618.7,520.8,540.8,539.3z"/></g></svg></div><p class="module__descr caption">База данных об органах власти, руководителях, официальных сайтах и профилях в соцсетях, а также Ссылки на нормативные документы, регулирующие деятельность органов власти</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">КАЛЕНДАРЬ ЮРИСТА</h4><div class="module__predescr">Вступление и утрата силы документами, официальное опубликование нормативно-правовых актов</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3" xml:space="preserve"><g><g id="_x32_22._Calender"><g><path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
     C188.4,164,181.4,157,172.7,157z M125.6,141.3c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7c-8.7,0-15.7,7-15.7,15.7
     C109.9,134.3,116.9,141.3,125.6,141.3z M172.7,109.9L172.7,109.9c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0
     c8.7,0,15.7-7,15.7-15.7C188.4,116.9,181.4,109.9,172.7,109.9z M188.4,31.4h-78.5v31.4h78.5V31.4z M219.8,141.3
@@ -575,67 +105,12 @@ viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:spa
     c-8.7,0-15.7,7-15.7,15.7C62.8,134.3,69.8,141.3,78.5,141.3z M125.6,235.5c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7
     c-8.7,0-15.7,7-15.7,15.7C109.9,228.5,116.9,235.5,125.6,235.5z M78.5,62.8c8.7,0,15.7-7,15.7-15.7V15.7C94.2,7,87.2,0,78.5,0
     c-8.7,0-15.7,7-15.7,15.7v31.4C62.8,55.8,69.8,62.8,78.5,62.8z M219.8,62.8c8.7,0,15.7-7,15.7-15.7V15.7c0-8.7-7-15.7-15.7-15.7
-    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/>
-</g>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Информация о вступлении и утрате силы документами; официальном
-                        опубликовании нормативных актов. Отслеживание правового статуса нормативных актов и других
-                        важных событий</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">CИТУАЦИИ ДЛЯ БИЗНЕСА</h4>
-                    <div class="module__predescr">Алгоритмы для действий в разных бизнес-ситуаций</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Пошаговые алгоритмы, которые помогут разобраться в правовых и
-                        практических
-                        аспектах, рассмотреть разные варианты. Темы ситуаций: управление активами, финансами,
-                        персоналом, отношения с контрагентами и госорганами и др.</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">ВЛАСТЬ УКРАИНЫ</h4>
-                    <div class="module__predescr">Сведения о структуре органов исполнительной власти</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<path d="M500,302.6c-35.6,0-64.6,29-64.6,64.6s29,64.6,64.6,64.6s64.6-29,64.6-64.6S535.6,302.6,500,302.6z"/>
-<path d="M770.5,98.8C670.4,98.8,575.9,66.3,500,10c-75.9,56.3-170.4,88.8-270.5,88.8c-34.8,0-70.8-6.5-107.9-19.3v425
+    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/></g></g></g></svg></div><p class="module__descr caption">Информация о вступлении и утрате силы документами; официальном опубликовании нормативных актов. Отслеживание правового статуса нормативных актов и других важных событий</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">CИТУАЦИИ ДЛЯ БИЗНЕСА</h4><div class="module__predescr">Алгоритмы для действий в разных бизнес-ситуаций</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg></div><p class="module__descr caption">Пошаговые алгоритмы, которые помогут разобраться в правовых и практических аспектах, рассмотреть разные варианты. Темы ситуаций: управление активами, финансами, персоналом, отношения с контрагентами и госорганами и др.</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">ВЛАСТЬ УКРАИНЫ</h4><div class="module__predescr">Сведения о структуре органов исполнительной власти</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><path d="M500,302.6c-35.6,0-64.6,29-64.6,64.6s29,64.6,64.6,64.6s64.6-29,64.6-64.6S535.6,302.6,500,302.6z"/><path d="M770.5,98.8C670.4,98.8,575.9,66.3,500,10c-75.9,56.3-170.4,88.8-270.5,88.8c-34.8,0-70.8-6.5-107.9-19.3v425
 c0,39.4,14.1,87.9,40.7,140c27.7,54.3,69,112.6,119.4,168.8c44.8,49.9,97.1,98.2,147.4,136c22.1,16.6,40.5,28.8,54.9,37.5
 c7.1,4.3,16,4.2,23.1-0.2c14.6-9.2,33.2-21.8,55.5-38.8c51.8-39.4,105.4-88.4,151-138c52.3-56.9,94.9-115.3,123.4-169.1
 c27.2-51.3,41.6-98.5,41.6-136.2v-425C841.4,92.3,805.3,98.8,770.5,98.8z M540.8,539.3v185.5c0,22.5-18.3,40.8-40.8,40.8l0,0
 c-22.5,0-40.8-18.3-40.8-40.8V539.3c-77.9-18.5-136-88.6-136-172c0-97.5,79.3-176.8,176.8-176.8s176.8,79.3,176.8,176.8
-C676.8,450.7,618.7,520.8,540.8,539.3z"/>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">База данных об органах власти, руководителях, официальных сайтах и
-                        профилях
-                        в соцсетях, а также Ссылки на нормативные документы, регулирующие деятельность органов
-                        власти</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">КАЛЕНДАРЬ ЮРИСТА</h4>
-                    <div class="module__predescr">Вступление и утрата силы документами, официальное опубликование
-                        нормативно-правовых актов
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:space="preserve">
-<g>
-<g id="_x32_22._Calender">
-<g>
-<path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
+C676.8,450.7,618.7,520.8,540.8,539.3z"/></g></svg></div><p class="module__descr caption">База данных об органах власти, руководителях, официальных сайтах и профилях в соцсетях, а также Ссылки на нормативные документы, регулирующие деятельность органов власти</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">КАЛЕНДАРЬ ЮРИСТА</h4><div class="module__predescr">Вступление и утрата силы документами, официальное опубликование нормативно-правовых актов</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3" xml:space="preserve"><g><g id="_x32_22._Calender"><g><path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
     C188.4,164,181.4,157,172.7,157z M125.6,141.3c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7c-8.7,0-15.7,7-15.7,15.7
     C109.9,134.3,116.9,141.3,125.6,141.3z M172.7,109.9L172.7,109.9c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0
     c8.7,0,15.7-7,15.7-15.7C188.4,116.9,181.4,109.9,172.7,109.9z M188.4,31.4h-78.5v31.4h78.5V31.4z M219.8,141.3
@@ -649,28 +124,7 @@ viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:spa
     c-8.7,0-15.7,7-15.7,15.7C62.8,134.3,69.8,141.3,78.5,141.3z M125.6,235.5c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7
     c-8.7,0-15.7,7-15.7,15.7C109.9,228.5,116.9,235.5,125.6,235.5z M78.5,62.8c8.7,0,15.7-7,15.7-15.7V15.7C94.2,7,87.2,0,78.5,0
     c-8.7,0-15.7,7-15.7,15.7v31.4C62.8,55.8,69.8,62.8,78.5,62.8z M219.8,62.8c8.7,0,15.7-7,15.7-15.7V15.7c0-8.7-7-15.7-15.7-15.7
-    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/>
-</g>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Информация о вступлении и утрате силы документами; официальном
-                        опубликовании нормативных актов. Отслеживание правового статуса нормативных актов и других
-                        важных событий</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3  module__item-1">
-                    <h4 class="module__name">КАЛЕНДАРЬ БУХГАЛТЕРА</h4>
-                    <div class="module__predescr">Сроки сдачи отчетности, уплаты налогов</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:space="preserve">
-<g>
-<g id="_x32_22._Calender">
-<g>
-<path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
+    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/></g></g></g></svg></div><p class="module__descr caption">Информация о вступлении и утрате силы документами; официальном опубликовании нормативных актов. Отслеживание правового статуса нормативных актов и других важных событий</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">КАЛЕНДАРЬ БУХГАЛТЕРА</h4><div class="module__predescr">Сроки сдачи отчетности, уплаты налогов</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3" xml:space="preserve"><g><g id="_x32_22._Calender"><g><path d="M172.7,157L172.7,157c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0c8.7,0,15.7-7,15.7-15.7
     C188.4,164,181.4,157,172.7,157z M125.6,141.3c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7c-8.7,0-15.7,7-15.7,15.7
     C109.9,134.3,116.9,141.3,125.6,141.3z M172.7,109.9L172.7,109.9c-8.7,0-15.7,7-15.7,15.7c0,8.7,7,15.7,15.7,15.7l0,0
     c8.7,0,15.7-7,15.7-15.7C188.4,116.9,181.4,109.9,172.7,109.9z M188.4,31.4h-78.5v31.4h78.5V31.4z M219.8,141.3
@@ -684,153 +138,23 @@ viewBox="0 0 298.3 298.3" style="enable-background:new 0 0 298.3 298.3;" xml:spa
     c-8.7,0-15.7,7-15.7,15.7C62.8,134.3,69.8,141.3,78.5,141.3z M125.6,235.5c8.7,0,15.7-7,15.7-15.7c0-8.7-7-15.7-15.7-15.7
     c-8.7,0-15.7,7-15.7,15.7C109.9,228.5,116.9,235.5,125.6,235.5z M78.5,62.8c8.7,0,15.7-7,15.7-15.7V15.7C94.2,7,87.2,0,78.5,0
     c-8.7,0-15.7,7-15.7,15.7v31.4C62.8,55.8,69.8,62.8,78.5,62.8z M219.8,62.8c8.7,0,15.7-7,15.7-15.7V15.7c0-8.7-7-15.7-15.7-15.7
-    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/>
-</g>
-</g>
-</g>
-</svg>
-                </div>
-                    <p class="module__descr caption">Информация о предельных сроках уплаты налогов, взносов,
-                        обязательных
-                        платежей и сдачи всех отчетов – финансовых, статистических и других, количестве календарных,
-                        рабочих и выходных дней и рабочих часов в месяце</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">СИТУАЦИИ ДЛЯ БУХГАЛТЕРА</h4>
-                    <div class="module__predescr">Проверенные алгоритмы действий в реальных ситуациях из жизни
-                        бухгалтера
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Подборки по темам: нормативные документы, консультации,
-                        разъяснительные и
-                        аналитические материалы из издания «БУХГАЛТЕР&ЗАКОН», формы отчетности, материалы из судебной
-                        практики для бухгалтера, Базы налоговых знаний (“ЗІР”)</p>
-                </div>
-
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">ФОРМЫ И БЛАНКИ</h4>
-                    <div class="module__predescr">Бухгалтерские формы и бланки отчетности с примерами заполнения</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Подборка бухгалтерских форм и бланков отчетности с формулами,
-                        примерами
-                        заполнения и ссылками на консультационные материалы, бланки первичных документов, регистры
-                        бухгалтерского учета, учетные и расчетные документы и др.
-                    </p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">КОНСУЛЬТАЦИИ</h4>
-                    <div class="module__predescr">База консультационных материалов для бухгалтеров от авторитетных
-                        экспертов
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g id="consultation">
-<path d="M501.3,202.7H362.7v-160c0-5.9-4.8-10.7-10.7-10.7H10.7C4.8,32,0,36.8,0,42.7V320c0,5.9,4.8,10.7,10.7,10.7h32v64l115.2-64
+    c-8.7,0-15.7,7-15.7,15.7v31.4C204.1,55.8,211.1,62.8,219.8,62.8z"/></g></g></g></svg></div><p class="module__descr caption">Информация о предельных сроках уплаты налогов, взносов, обязательных платежей и сдачи всех отчетов – финансовых, статистических и других, количестве календарных, рабочих и выходных дней и рабочих часов в месяце</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">СИТУАЦИИ ДЛЯ БУХГАЛТЕРА</h4><div class="module__predescr">Проверенные алгоритмы действий в реальных ситуациях из жизни бухгалтера</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg></div><p class="module__descr caption">Подборки по темам: нормативные документы, консультации, разъяснительные и аналитические материалы из издания «БУХГАЛТЕР&ЗАКОН», формы отчетности, материалы из судебной практики для бухгалтера, Базы налоговых знаний (“ЗІР”)</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">ФОРМЫ И БЛАНКИ</h4><div class="module__predescr">Бухгалтерские формы и бланки отчетности с примерами заполнения</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/></svg></div><p class="module__descr caption">Подборка бухгалтерских форм и бланков отчетности с формулами, примерами заполнения и ссылками на консультационные материалы, бланки первичных документов, регистры бухгалтерского учета, учетные и расчетные документы и др.</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">КОНСУЛЬТАЦИИ</h4><div class="module__predescr">База консультационных материалов для бухгалтеров от авторитетных экспертов</div><div class="module__icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g id="consultation"><path d="M501.3,202.7H362.7v-160c0-5.9-4.8-10.7-10.7-10.7H10.7C4.8,32,0,36.8,0,42.7V320c0,5.9,4.8,10.7,10.7,10.7h32v64l115.2-64
 h55.5v96c0,5.9,4.8,10.7,10.7,10.7h170.7l74.7,42.7v-42.7h32c5.9,0,10.7-4.8,10.7-10.7V213.3C512,207.4,507.2,202.7,501.3,202.7z
 M152.3,309.3l-4.8,2.7L64,358.4v-27.8v-21.3H42.7H21.3v-256h320v256H157.9H152.3z M490.7,416h-21.3H448v21.3v5.9l-42.8-24.4
-l-4.9-2.8h-5.7h-160v-85.3H352c5.9,0,10.7-4.8,10.7-10.7v-96h128V416z"/>
-<path d="M181.4,96c-16.7,0-30,5.1-39.5,15.1c-15,15.8-13.9,37.9-13.9,38.9l0,0c0.3,5.6,4.9,10.1,10.6,10.1
+l-4.9-2.8h-5.7h-160v-85.3H352c5.9,0,10.7-4.8,10.7-10.7v-96h128V416z"/><path d="M181.4,96c-16.7,0-30,5.1-39.5,15.1c-15,15.8-13.9,37.9-13.9,38.9l0,0c0.3,5.6,4.9,10.1,10.6,10.1
 c5.9,0,10.7-4.8,10.7-10.7c0-0.2,0-0.3,0-0.5h0c0-0.1-0.5-14.2,8.2-23.2c5.3-5.5,13.3-8.3,23.9-8.3c12.7,0,21.2,3.1,26.1,9.4
 c3.9,5,5.8,12.6,5.9,22.6c0,7.1-6.1,16.3-17.3,25.9c-9.7,8.3-19.7,13.8-19.8,13.9l-5.6,3l0,31.9h0v0c0,5.9,4.8,10.7,10.7,10.7
-S192,229.9,192,224c0-0.2,0-0.4,0-0.6l0-18.8c13-8.1,42.7-29.4,42.7-55.2C234.6,114.9,215.7,96,181.4,96z"/>
-<path d="M181.3,245.3c-5.9,0-10.7,4.8-10.7,10.7c0,5.9,4.8,10.7,10.7,10.7S192,261.9,192,256S187.2,245.3,181.3,245.3z"/>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">База консультационных материалов от авторитетных экспертов в сфере
-                        бухгалтерского учета и налогообложения, представителей аудиторских компаний, а также экспертов
-                        ЛИГА:ЗАКОН</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">СИТУАЦИИ ДЛЯ ЮРИСТА</h4>
-                    <div class="module__predescr">Алгоритмы действий в конкретных ситуациях юридической практики</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Подборки различных видов информации по юридическим вопросам:
-                        нормативно-правовые акты, разъяснения, научно-практические комментарии, законопроекты, судебные
-                        решения. Систематизированы по тематикам юридической практики</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">ЗАКОНОПРОЕКТЫ</h4>
-                    <div class="module__predescr">Проекты законов и постановлений Верховной Рады Украины, сравнительные
-                        таблицы, пояснительные записки
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 460 460" style="enable-background:new 0 0 460 460;" xml:space="preserve">
-<g>
-<g>
-<path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
+S192,229.9,192,224c0-0.2,0-0.4,0-0.6l0-18.8c13-8.1,42.7-29.4,42.7-55.2C234.6,114.9,215.7,96,181.4,96z"/><path d="M181.3,245.3c-5.9,0-10.7,4.8-10.7,10.7c0,5.9,4.8,10.7,10.7,10.7S192,261.9,192,256S187.2,245.3,181.3,245.3z"/></g></svg></div><p class="module__descr caption">База консультационных материалов от авторитетных экспертов в сфере бухгалтерского учета и налогообложения, представителей аудиторских компаний, а также экспертов ЛИГА:ЗАКОН</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">СИТУАЦИИ ДЛЯ ЮРИСТА</h4><div class="module__predescr">Алгоритмы действий в конкретных ситуациях юридической практики</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg></div><p class="module__descr caption">Подборки различных видов информации по юридическим вопросам: нормативно-правовые акты, разъяснения, научно-практические комментарии, законопроекты, судебные решения. Систематизированы по тематикам юридической практики</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">ЗАКОНОПРОЕКТЫ</h4><div class="module__predescr">Проекты законов и постановлений Верховной Рады Украины, сравнительные таблицы, пояснительные записки</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 460 460" style="enable-background:new 0 0 460 460" xml:space="preserve"><g><g><path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
 l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h0.7c8,0,14.5-6.5,14.5-14.5c0-8-6.5-14.5-14.5-14.5h-107
 c-6-8.8-15-15.4-25.4-18.6c-1.5-16.9-15.7-30.2-33-30.2c-17.3,0-31.5,13.3-33,30.2c-10.4,3.2-19.4,9.8-25.4,18.6h-107
 c-8,0-14.5,6.5-14.5,14.5c0,8,6.5,14.5,14.5,14.5h0.7L10.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4
 c3.1,0,6.2-1.6,7.9-4.4l47.2-75l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h128.6v279.6h-30.5
-c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/>
-<path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/>
-<path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Проекты законов и постановлений Верховной Рады Украины,
-                        сравнительные
-                        таблицы, пояснительные записки авторов, замечания и предложения Президента Украины,
-                        аналитические комментарии и экспертные заключения</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">СУДЕБНАЯ ПРАКТИКА</h4>
-                    <div class="module__predescr">Документы высших судов Украины, Конституционного Суда, Европейского
-                        суда по правам человека
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4;" xml:space="preserve">
-<path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
+c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/><path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/><path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/></g></g></svg></div><p class="module__descr caption">Проекты законов и постановлений Верховной Рады Украины, сравнительные таблицы, пояснительные записки авторов, замечания и предложения Президента Украины, аналитические комментарии и экспертные заключения</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">СУДЕБНАЯ ПРАКТИКА</h4><div class="module__predescr">Документы высших судов Украины, Конституционного Суда, Европейского суда по правам человека</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4" xml:space="preserve"><path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
 l57.3-17.1l19.2,64.4L146.3,126L139.7,104.1z M152.6,143.5c0.6,2.1,2.6,3.6,4.8,3.6c0.5,0,1-0.1,1.4-0.2l45.7-13.7
 c1.3-0.4,2.3-1.2,3-2.4c0.6-1.2,0.8-2.5,0.4-3.8l-2.4-8.2l-55.3,16.5L152.6,143.5z M178.5,28.6c-0.6-2.1-2.6-3.6-4.8-3.6
 c-0.5,0-1,0.1-1.4,0.2l-45.7,13.7c-1.3,0.4-2.3,1.2-3,2.4c-0.6,1.2-0.8,2.5-0.4,3.8l2,6.6l55.3-16.5L178.5,28.6z M213.4,183.3h-5.2
 v-5.5c0-2.8-2.2-5-5-5h-74c-2.8,0-5,2.2-5,5v5.5H119c-2.8,0-5,2.2-5,5s2.2,5,5,5h10.2h74h10.2c2.8,0,5-2.2,5-5
-S216.1,183.3,213.4,183.3z"/>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Подборки материалов по конкретным делам: решения, которые были
-                        официально
-                        опубликованы, определения и постановления судов Украины всех инстанций и Конституционного Суда
-                        Украины, решения Европейского суда по правам человека. Структурированы по отраслям
-                        судопроизводства
-                    </p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">КОММЕНТИРОВАННЫЕ КОДЕКСЫ</h4>
-                    <div class="module__predescr">Действующие кодексы Украины с научно-практическими комментариями</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
-<path d="M1576.3,4963.9c-286.6-117.7-486.2-348-570.6-657.6c-35.8-138.2-43.5-8134.3-5.1-8315.9c71.7-358.2,214.9-575.7,458-696
+S216.1,183.3,213.4,183.3z"/></svg></div><p class="module__descr caption">Подборки материалов по конкретным делам: решения, которые были официально опубликованы, определения и постановления судов Украины всех инстанций и Конституционного Суда Украины, решения Европейского суда по правам человека. Структурированы по отраслям судопроизводства</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">КОММЕНТИРОВАННЫЕ КОДЕКСЫ</h4><div class="module__predescr">Действующие кодексы Украины с научно-практическими комментариями</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M1576.3,4963.9c-286.6-117.7-486.2-348-570.6-657.6c-35.8-138.2-43.5-8134.3-5.1-8315.9c71.7-358.2,214.9-575.7,458-696
 l145.9-71.6l3203.6-7.7l3203.6-5.1l76.8,69.1c43.5,40.9,271.2,422.2,506.6,852.1l429.9,780.4l-7.7,3991.6L9007,4894.8l-61.4,58.8
 l-64,56.3l-3600.2-2.6C1957.6,5007.4,1673.6,5004.9,1576.3,4963.9z M8147.2,4024.9l-319.8-575.7l-3062.8,5.1l-3062.8,7.7
 l-89.6,69.1c-332.6,253.3-301.9,831.6,51.2,1018.4c92.1,48.6,171.4,48.6,3449.2,51.2h3357.1L8147.2,4024.9z M8392.8-3400.6
@@ -842,70 +166,15 @@ h-499V-478.5V-1873h115.1c217.5,0,322.4-204.7,179.1-345.4c-61.4-64-69.1-64-506.6-
 c-71.7,69.1-94.7,158.6-53.7,235.4c48.6,92.1,102.3,120.3,235.4,122.8h120.3v1394.5V916h-499c-273.8,0-499-2.6-499-7.7
 c0-5.1,166.3-381.3,371-836.7c350.6-780.4,371-839.3,358.2-946.7c-74.2-524.5-647.4-864.8-1246.1-739.5
 c-414.5,87-736.9,422.2-736.9,765.1c0,66.5,115.1,358.2,383.8,967.2c348,793.2,381.2,877.7,355.6,949.3
-c-20.5,56.3-17.9,92.1,5.1,135.6c64,120.2,74.2,120.2,811.1,122.8h696v97.2C4380.7,1637.6,4590.6,1724.6,4733.8,1565.9z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Тексты 20-ти действующих кодексов Украины и комментарии к ним,
-                        составленные
-                        ведущими научными коллективами Украины. Комментарии размещены непосредственно в тексте кодексов,
-                        у соответствующих статей</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">КАЛЬКУЛЯТОР ОТПУСКОВ</h4>
-                    <div class="module__predescr">Инструмент для расчета продолжительности отпуска сотрудников</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Поможет рассчитать продолжительность отпуска для пятидневной
-                        рабочей недели
-                        с учетом праздничных дней</p>
-                </div>
-                <div class="module__item  effect eff-3 module__item-2">
-                    <h4 class="module__name">БАЗА НАЛОГОВЫХ ЗНАНИЙ</h4>
-                    <div class="module__predescr">База ответов ГФСУ на вопросы налогоплательщиков</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">База ответов информационно-справочного департамента Государственной
-                        фискальной службы Украины на вопросы налогоплательщиков, в которой представлена официальная
-                        позиция органа. Структурированы по тематическим направлениям и кодам ГФСУ</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item  effect eff-3 module__item-3">
-                    <h4 class="module__name">НАЛОГОВАЯ РЕФОРМА</h4>
-                    <div class="module__predescr">Навигатор по законодательству, судебным решениям по налоговым
-                        вопросам
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 962.5 962.5" style="enable-background:new 0 0 962.5 962.5;" xml:space="preserve">
-<g>
-<g>
-<path d="M333.3,603.5c-4.1,0-8.3,0.1-12.5,0.1c-87.2,0-169.5-10.2-231.8-28.7c-32.1-9.5-57.8-20.9-76.4-34
+c-20.5,56.3-17.9,92.1,5.1,135.6c64,120.2,74.2,120.2,811.1,122.8h696v97.2C4380.7,1637.6,4590.6,1724.6,4733.8,1565.9z"/></g></g></svg></div><p class="module__descr caption">Тексты 20-ти действующих кодексов Украины и комментарии к ним, составленные ведущими научными коллективами Украины. Комментарии размещены непосредственно в тексте кодексов, у соответствующих статей</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">КАЛЬКУЛЯТОР ОТПУСКОВ</h4><div class="module__predescr">Инструмент для расчета продолжительности отпуска сотрудников</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/></svg></div><p class="module__descr caption">Поможет рассчитать продолжительность отпуска для пятидневной рабочей недели с учетом праздничных дней</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">БАЗА НАЛОГОВЫХ ЗНАНИЙ</h4><div class="module__predescr">База ответов ГФСУ на вопросы налогоплательщиков</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z"/></svg></div><p class="module__descr caption">База ответов информационно-справочного департамента Государственной фискальной службы Украины на вопросы налогоплательщиков, в которой представлена официальная позиция органа. Структурированы по тематическим направлениям и кодам ГФСУ</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">НАЛОГОВАЯ РЕФОРМА</h4><div class="module__predescr">Навигатор по законодательству, судебным решениям по налоговым вопросам</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 962.5 962.5" style="enable-background:new 0 0 962.5 962.5" xml:space="preserve"><g><g><path d="M333.3,603.5c-4.1,0-8.3,0.1-12.5,0.1c-87.2,0-169.5-10.2-231.8-28.7c-32.1-9.5-57.8-20.9-76.4-34
 c-2.7-1.9-5.2-3.8-7.6-5.7v144.4c0,51.7,141.4,93.6,315.8,93.6c8.9,0,17.7-0.1,26.4-0.3c-12.7-35.4-19.1-72.6-19.1-110.7
-C328,642.3,329.8,622.7,333.3,603.5z"/>
-<path d="M424.5,429.4c12.9-12.9,26.7-24.6,41.3-35c-44.6,6.6-94,10.1-145,10.1c-87.2,0-169.5-10.2-231.8-28.7
+C328,642.3,329.8,622.7,333.3,603.5z"/><path d="M424.5,429.4c12.9-12.9,26.7-24.6,41.3-35c-44.6,6.6-94,10.1-145,10.1c-87.2,0-169.5-10.2-231.8-28.7
 c-32.1-9.5-57.8-20.9-76.4-34c-2.7-1.9-5.2-3.8-7.6-5.7v143.8c0,4.2,1,8.3,2.8,12.4c20.5,45.9,152.8,81.2,313,81.2
-c6.5,0,13-0.1,19.4-0.2c3.7-13.3,8.3-26.5,13.8-39.3c6.1-14.5,13.2-28.4,21.3-41.7C388.9,469.6,405.4,448.5,424.5,429.4z"/>
-<path d="M320.8,217.2c-87.2,0-169.5-10.2-231.8-28.7c-32.1-9.5-57.8-20.9-76.4-34c-2.7-1.9-5.2-3.8-7.6-5.7v113.9v15v3.2
+c6.5,0,13-0.1,19.4-0.2c3.7-13.3,8.3-26.5,13.8-39.3c6.1-14.5,13.2-28.4,21.3-41.7C388.9,469.6,405.4,448.5,424.5,429.4z"/><path d="M320.8,217.2c-87.2,0-169.5-10.2-231.8-28.7c-32.1-9.5-57.8-20.9-76.4-34c-2.7-1.9-5.2-3.8-7.6-5.7v113.9v15v3.2
 c0,4,0.9,8,2.5,11.8c19.6,46.1,152.4,81.8,313.3,81.8c160.9,0,293.7-35.7,313.3-81.8c1.6-3.9,2.5-7.8,2.5-11.8v-3.2v-15V148.8
-c-2.4,2-4.9,3.9-7.6,5.7c-18.6,13-44.3,24.4-76.4,34C490.3,207,408,217.2,320.8,217.2z"/>
-<path d="M636.5,93.6c0-5.1-1.4-10.1-4.1-15c-2.8-5.2-7-10.2-12.5-15C577.8,26.6,459.8,0,320.8,0S63.6,26.6,21.5,63.6
+c-2.4,2-4.9,3.9-7.6,5.7c-18.6,13-44.3,24.4-76.4,34C490.3,207,408,217.2,320.8,217.2z"/><path d="M636.5,93.6c0-5.1-1.4-10.1-4.1-15c-2.8-5.2-7-10.2-12.5-15C577.8,26.6,459.8,0,320.8,0S63.6,26.6,21.5,63.6
 c-5.5,4.8-9.7,9.8-12.5,15c-2.7,4.9-4.1,9.9-4.1,15l0,0c0,51.7,141.4,93.6,315.8,93.6C495.1,187.2,636.5,145.3,636.5,93.6
-L636.5,93.6z"/>
-<path d="M666.5,361.9c-3.1-0.1-6.2-0.2-9.4-0.2c-1.9,0-3.8,0-5.6,0.1c-5,0.1-10,0.3-15,0.6c-94.3,6.4-176.7,56.3-227.2,129.9
+L636.5,93.6z"/><path d="M666.5,361.9c-3.1-0.1-6.2-0.2-9.4-0.2c-1.9,0-3.8,0-5.6,0.1c-5,0.1-10,0.3-15,0.6c-94.3,6.4-176.7,56.3-227.2,129.9
 c-16.7,24.3-30,51.3-39,80.1c-1.6,5-3,10.1-4.3,15.2c-1.3,5-2.4,10.1-3.4,15.1c-3.9,19.2-5.9,39.1-5.9,59.4
 c0,38.7,7.3,75.6,20.6,109.5C421.1,883.3,530,962.5,657.1,962.5c165.9,0,300.4-134.5,300.4-300.4
 C957.6,499.4,828.1,366.9,666.5,361.9z M745.1,806.8c-15.1,15.9-35.7,26.4-59.3,30.6v12c0,11-8.9,19.9-19.9,19.9h-10.8
@@ -920,421 +189,27 @@ c10.7,0.3,19.3,9.1,19.3,19.8v16.5c17.9,3.5,33.8,10.5,45.8,20.4c12.7,10.5,21.9,23
 l-10.5,1.6c-9.5,1.4-18.7-4.2-21.7-13.2c-2.5-7.4-5.9-13.5-10.1-18.2c-9.5-10.6-24.4-16.7-40.9-16.7c-5,0-9.9,0.6-14.6,1.6
 c-3.1,0.7-6.1,1.6-9,2.7c-8.2,3.2-15.4,7.9-20.9,14c-2.6,2.9-4.7,5.9-6.5,9.1c-4,7.2-6,15.2-6,24.1c0,12.6,3.5,23.3,10.5,31.8
 c6.2,7.4,14,12.6,22.8,16.4c12,5.2,25.6,8,39,10.7c13.5,2.7,27.5,5.5,39.7,10.9c12.9,5.7,23.7,12.8,31.9,21
-c8.3,8.3,14.7,18.2,19.2,29.6c4.4,11.3,6.7,23.7,6.7,36.8C772.9,763,763.5,787.4,745.1,806.8z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Навигатор для отслеживания и анализа основных изменений в области
-                        налоговой
-                        реформы: Налоговый кодекс, законопроекты, новости, актуальная информациия по видам налогов с
-                        аналитическими материалами (НДС, налог на прибыль, ЕСВ и т.д.)</p>
-                </div>
-                <div class="module__item  effect eff-3 module__item-4">
-                    <h4 class="module__name">ТЕРМИНОЛОГИЧЕСКИЙ СЛОВАРЬ</h4>
-                    <div class="module__predescr">База терминов и понятий, которые встречаются в нормативно-правовых
-                        актах
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">База терминов и понятий, которые встречаются в нормативно-правовых
-                        актах</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">ЕВРОПЕЙСКОЕ ЗАКОНОДАТЕЛЬСТВО</h4>
-                    <div class="module__predescr">Европейские законодательные акты в украинском переводе</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 460 460" style="enable-background:new 0 0 460 460;" xml:space="preserve">
-<g>
-<g>
-<path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
+c8.3,8.3,14.7,18.2,19.2,29.6c4.4,11.3,6.7,23.7,6.7,36.8C772.9,763,763.5,787.4,745.1,806.8z"/></g></g></svg></div><p class="module__descr caption">Навигатор для отслеживания и анализа основных изменений в области налоговой реформы: Налоговый кодекс, законопроекты, новости, актуальная информациия по видам налогов с аналитическими материалами (НДС, налог на прибыль, ЕСВ и т.д.)</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">ТЕРМИНОЛОГИЧЕСКИЙ СЛОВАРЬ</h4><div class="module__predescr">База терминов и понятий, которые встречаются в нормативно-правовых актах</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z"/></svg></div><p class="module__descr caption">База терминов и понятий, которые встречаются в нормативно-правовых актах</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">ЕВРОПЕЙСКОЕ ЗАКОНОДАТЕЛЬСТВО</h4><div class="module__predescr">Европейские законодательные акты в украинском переводе</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 460 460" style="enable-background:new 0 0 460 460" xml:space="preserve"><g><g><path d="M279.3,392.2h-30.5V112.6h128.6L322.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4c3.1,0,6.2-1.6,7.9-4.4l47.2-75
 l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h0.7c8,0,14.5-6.5,14.5-14.5c0-8-6.5-14.5-14.5-14.5h-107
 c-6-8.8-15-15.4-25.4-18.6c-1.5-16.9-15.7-30.2-33-30.2c-17.3,0-31.5,13.3-33,30.2c-10.4,3.2-19.4,9.8-25.4,18.6h-107
 c-8,0-14.5,6.5-14.5,14.5c0,8,6.5,14.5,14.5,14.5h0.7L10.9,199c-2.8,4.4-1.4,10.2,2.9,12.9c1.6,1,3.3,1.4,5,1.4
 c3.1,0,6.2-1.6,7.9-4.4l47.2-75l47.2,75c2.8,4.4,8.6,5.7,12.9,2.9c4.4-2.8,5.7-8.6,2.9-12.9l-54.5-86.4h128.6v279.6h-30.5
-c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/>
-<path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/>
-<path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Европейское законодательство, актуальное для адаптации украинского
-                        права, в
-                        сферах: предпринимательство, транспорт, связь, налогообложение, энергетика, интеллектуальная
-                        собственность, стандартизация, таможенное право, агрополитика и др.</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">СПРАВОЧНИКИ</h4>
-                    <div class="module__predescr">Систематизированные подборки документов, содержащие справочную
-                        информацию
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Индексы инфляции, учетные, ломбардные ставки НБУ, индексы
-                        потребительских
-                        цен нарастающим итогом, коэффициенты для проведения индексации и компенсации зарплаты,
-                        ответственность за нарушения действующего законодательства и т. п.</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">КАЛЬКУЛЯТОР ИНДЕКСАЦИИ ЗАРПЛАТЫ</h4>
-                    <div class="module__predescr">Инструмент для расчета суммы индексации зарплаты</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Предназначен как для бухгалтеров, которые cмогут значительно
-                        упростить себе
-                        процесс расчета индексации, так и для работников, желающих самостоятельно определить
-                        причитающуюся им заработную плату с учетом суммы индексации</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">КАЛЬКУЛЯТОР ОТПУСКОВ</h4>
-                    <div class="module__predescr">Инструмент для расчета продолжительности отпуска сотрудников</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Поможет рассчитать продолжительность отпуска для пятидневной
-                        рабочей недели
-                        с учетом праздничных дней</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">СУДЕБНАЯ ПРАКТИКА ДЛЯ БУХГАЛТЕРА</h4>
-                    <div class="module__predescr">Подборка решений, постановлений, разъяснений судов Украины</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4;" xml:space="preserve">
-<path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
+c-18.3,0-33.1,14.8-33.1,33.1h164.7C312.3,407,297.5,392.2,279.3,392.2z"/><path d="M143,223.4H5c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C148,225.6,145.8,223.4,143,223.4z"/><path d="M455,223.4H317c-2.8,0-5,2.2-5,5c0,40.8,33.2,74,74,74c40.8,0,74-33.2,74-74C460,225.6,457.8,223.4,455,223.4z"/></g></g></svg></div><p class="module__descr caption">Европейское законодательство, актуальное для адаптации украинского права, в сферах: предпринимательство, транспорт, связь, налогообложение, энергетика, интеллектуальная собственность, стандартизация, таможенное право, агрополитика и др.</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">СПРАВОЧНИКИ</h4><div class="module__predescr">Систематизированные подборки документов, содержащие справочную информацию</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg></div><p class="module__descr caption">Индексы инфляции, учетные, ломбардные ставки НБУ, индексы потребительских цен нарастающим итогом, коэффициенты для проведения индексации и компенсации зарплаты, ответственность за нарушения действующего законодательства и т. п.</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">КАЛЬКУЛЯТОР ИНДЕКСАЦИИ ЗАРПЛАТЫ</h4><div class="module__predescr">Инструмент для расчета суммы индексации зарплаты</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/></svg></div><p class="module__descr caption">Предназначен как для бухгалтеров, которые cмогут значительно упростить себе процесс расчета индексации, так и для работников, желающих самостоятельно определить причитающуюся им заработную плату с учетом суммы индексации</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">КАЛЬКУЛЯТОР ОТПУСКОВ</h4><div class="module__predescr">Инструмент для расчета продолжительности отпуска сотрудников</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/></svg></div><p class="module__descr caption">Поможет рассчитать продолжительность отпуска для пятидневной рабочей недели с учетом праздничных дней</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">СУДЕБНАЯ ПРАКТИКА ДЛЯ БУХГАЛТЕРА</h4><div class="module__predescr">Подборка решений, постановлений, разъяснений судов Украины</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4" xml:space="preserve"><path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
 l57.3-17.1l19.2,64.4L146.3,126L139.7,104.1z M152.6,143.5c0.6,2.1,2.6,3.6,4.8,3.6c0.5,0,1-0.1,1.4-0.2l45.7-13.7
 c1.3-0.4,2.3-1.2,3-2.4c0.6-1.2,0.8-2.5,0.4-3.8l-2.4-8.2l-55.3,16.5L152.6,143.5z M178.5,28.6c-0.6-2.1-2.6-3.6-4.8-3.6
 c-0.5,0-1,0.1-1.4,0.2l-45.7,13.7c-1.3,0.4-2.3,1.2-3,2.4c-0.6,1.2-0.8,2.5-0.4,3.8l2,6.6l55.3-16.5L178.5,28.6z M213.4,183.3h-5.2
 v-5.5c0-2.8-2.2-5-5-5h-74c-2.8,0-5,2.2-5,5v5.5H119c-2.8,0-5,2.2-5,5s2.2,5,5,5h10.2h74h10.2c2.8,0,5-2.2,5-5
-S216.1,183.3,213.4,183.3z"/>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Подборки решений, разъяснений, постановлений всех судов Украины по
-                        конкретным делам, которые показывают действие того или иного нормативного документа по тематикам
-                        бухгалтерского направления</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">СИТУАЦИИ ДЛЯ КАДРОВИКА</h4>
-                    <div class="module__predescr">Информация для надлежащего оформления кадровых документов</div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Информация для надлежащего оформления приема на работу, увольнения,
-                        отпусков, больничных и др. документов: нормативные документы, консультации, материалы судебной
-                        практики по трудовым спорам, шаблоны форм документов</p>
-                </div>
-            </li>
-            <li class="module__block">
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">ИНСТРУКЦИИ И ШАБЛОНЫ ДЛЯ КАДРОВИКА</h4>
-                    <div class="module__predescr">Должностные и рабочие инструкции для наиболее востребованных и
-                        массовых специальностей
-                </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
-                        </svg>
-                </div>
-                    <p class="module__descr caption">Должностные и рабочие инструкции для наиболее востребованных и
-                        массовых
-                        специальностей (руководители, менеджеры-управленцы, специалисты, технические служащие и
-                        квалифицированные рабочие)</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">ИСКУСCТВО ОБОРОНЫ</h4>
-                    <div class="module__predescr">Инструкции и алгоритмы действий при проверках контролирующими
-                        органами
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Алгоритмы действий и инструкции на случай проверок контролирующими
-                        органами
-                        и в различных стрессовых ситуациях для директора, секретаря, бухгалтера, руководителя
-                        структурного подразделения, рядового сотрудника, охранника</p>
-                </div>
-
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-1">
-                    <h4 class="module__name">СУДЕБНЫЕ ПРЕЦЕДЕНТЫ</h4>
-                    <div class="module__predescr">Подборки наиболее интересных судебных решений с историей рассмотрения
-                        дела
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4;" xml:space="preserve">
-<path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
+S216.1,183.3,213.4,183.3z"/></svg></div><p class="module__descr caption">Подборки решений, разъяснений, постановлений всех судов Украины по конкретным делам, которые показывают действие того или иного нормативного документа по тематикам бухгалтерского направления</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">СИТУАЦИИ ДЛЯ КАДРОВИКА</h4><div class="module__predescr">Информация для надлежащего оформления кадровых документов</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg></div><p class="module__descr caption">Информация для надлежащего оформления приема на работу, увольнения, отпусков, больничных и др. документов: нормативные документы, консультации, материалы судебной практики по трудовым спорам, шаблоны форм документов</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">ИНСТРУКЦИИ И ШАБЛОНЫ ДЛЯ КАДРОВИКА</h4><div class="module__predescr">Должностные и рабочие инструкции для наиболее востребованных и массовых специальностей</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/></svg></div><p class="module__descr caption">Должностные и рабочие инструкции для наиболее востребованных и массовых специальностей (руководители, менеджеры-управленцы, специалисты, технические служащие и квалифицированные рабочие)</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">ИСКУСCТВО ОБОРОНЫ</h4><div class="module__predescr">Инструкции и алгоритмы действий при проверках контролирующими органами</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"/></svg></div><p class="module__descr caption">Алгоритмы действий и инструкции на случай проверок контролирующими органами и в различных стрессовых ситуациях для директора, секретаря, бухгалтера, руководителя структурного подразделения, рядового сотрудника, охранника</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-1"><h4 class="module__name">СУДЕБНЫЕ ПРЕЦЕДЕНТЫ</h4><div class="module__predescr">Подборки наиболее интересных судебных решений с историей рассмотрения дела</div><div class="module__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 218.4 218.4" style="enable-background:new 0 0 218.4 218.4" xml:space="preserve"><path d="M139.7,104.1l-126,37.6c-1,0.3-2,0.4-3.1,0.4c-4.7,0-8.9-3.1-10.2-7.6c-1.7-5.7,1.5-11.6,7.2-13.3l126-37.6l-6.6-22
 l57.3-17.1l19.2,64.4L146.3,126L139.7,104.1z M152.6,143.5c0.6,2.1,2.6,3.6,4.8,3.6c0.5,0,1-0.1,1.4-0.2l45.7-13.7
 c1.3-0.4,2.3-1.2,3-2.4c0.6-1.2,0.8-2.5,0.4-3.8l-2.4-8.2l-55.3,16.5L152.6,143.5z M178.5,28.6c-0.6-2.1-2.6-3.6-4.8-3.6
 c-0.5,0-1,0.1-1.4,0.2l-45.7,13.7c-1.3,0.4-2.3,1.2-3,2.4c-0.6,1.2-0.8,2.5-0.4,3.8l2,6.6l55.3-16.5L178.5,28.6z M213.4,183.3h-5.2
 v-5.5c0-2.8-2.2-5-5-5h-74c-2.8,0-5,2.2-5,5v5.5H119c-2.8,0-5,2.2-5,5s2.2,5,5,5h10.2h74h10.2c2.8,0,5-2.2,5-5
-S216.1,183.3,213.4,183.3z"/>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Ресурс, вмещающий подборки наиболее интересных судебных решений с
-                        историей
-                        рассмотрения дела во всех инстанциях. Предназначен для подготовки юриста или адвоката к
-                        судебному заседанию</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-2">
-                    <h4 class="module__name">КАЛЬКУЛЯТОР ШТРАФОВ</h4>
-                    <div class="module__predescr">Инструмент для расчета задолженности и штрафных санкций по договору
-                    </div>
-                    <div class="module__icon">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="#000000"
-                                  d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/>
-                        </svg>
-                    </div>
-                    <p class="module__descr caption">Позволяет рассчитать сумму задолженности с учетом инфляции и
-                        различных
-                        видов штрафных санкций по договору, за один или несколько периодов</p>
-                </div>
-            </li>
-            <li class="module__block">
-
-                <div class="module__item effect eff-3 module__item-3">
-                    <h4 class="module__name">БУХГАЛТЕРСКИЕ ПРОВОДКИ</h4>
-                    <div class="module__predescr">Типовые корреспонденции счетов по самым распространенным хозяйственным
-                        операциям
-                    </div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 322 322" style="enable-background:new 0 0 322 322;" xml:space="preserve">
-<g transform="translate(0 -562.36)">
-<g>
-<g>
-<path d="M111.8,807.3H14.3c-18.9,0-18.9,28,0,28h97.6C130.8,835.3,130.8,807.3,111.8,807.3z"/>
-<path d="M210.1,688.4h64l-24.7,24.7c-13.6,13.1,6.3,33.6,19.4,19.9l49.3-48.8c5.2-5.8,5.2-14.2,0-19.9l-49.3-48.8
-    c-2.7-2.6-5.8-4.2-10-4.2c-12.6,0-18.4,15.2-9.4,24.1l24.7,24.7h-64C191.1,660.1,191.1,688.4,210.1,688.4z"/>
-<path d="M307.5,807h-90.2l-93.4-140.6c-2.6-3.7-7.3-6.3-12.1-6.3h-64L73,635.4c8.9-8.9,2.6-24.6-10.5-24.1l0,0
+S216.1,183.3,213.4,183.3z"/></svg></div><p class="module__descr caption">Ресурс, вмещающий подборки наиболее интересных судебных решений с историей рассмотрения дела во всех инстанциях. Предназначен для подготовки юриста или адвоката к судебному заседанию</p></div><div class="module__item effect eff-3 module__item-2"><h4 class="module__name">КАЛЬКУЛЯТОР ШТРАФОВ</h4><div class="module__predescr">Инструмент для расчета задолженности и штрафных санкций по договору</div><div class="module__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z"/></svg></div><p class="module__descr caption">Позволяет рассчитать сумму задолженности с учетом инфляции и различных видов штрафных санкций по договору, за один или несколько периодов</p></div></li><li class="module__block"><div class="module__item effect eff-3 module__item-3"><h4 class="module__name">БУХГАЛТЕРСКИЕ ПРОВОДКИ</h4><div class="module__predescr">Типовые корреспонденции счетов по самым распространенным хозяйственным операциям</div><div class="module__icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 322 322" style="enable-background:new 0 0 322 322" xml:space="preserve"><g transform="translate(0 -562.36)"><g><g><path d="M111.8,807.3H14.3c-18.9,0-18.9,28,0,28h97.6C130.8,835.3,130.8,807.3,111.8,807.3z"/><path d="M210.1,688.4h64l-24.7,24.7c-13.6,13.1,6.3,33.6,19.4,19.9l49.3-48.8c5.2-5.8,5.2-14.2,0-19.9l-49.3-48.8
+    c-2.7-2.6-5.8-4.2-10-4.2c-12.6,0-18.4,15.2-9.4,24.1l24.7,24.7h-64C191.1,660.1,191.1,688.4,210.1,688.4z"/><path d="M307.5,807h-90.2l-93.4-140.6c-2.6-3.7-7.3-6.3-12.1-6.3h-64L73,635.4c8.9-8.9,2.6-24.6-10.5-24.1l0,0
     c-3.7,0-6.8,1.6-9.4,4.2L4.3,664.3c-5.8,5.8-5.8,14.2,0,19.9L53.1,733c13.1,13.6,33.6-6.8,19.9-19.9l-25.2-24.7h56.7L198.4,829
-    c2.6,3.7,6.8,6.3,11.5,6.3h97.6C326.5,835.3,326.5,807,307.5,807z"/>
-</g>
-</g>
-</g>
-</svg>
-                    </div>
-                    <p class="module__descr caption">Модуль содержит систематизированные сведения по отражению в
-                        бухгалтерском
-                        учете хозяйственных операций. Имеет удобный функционал, который позволяет быстро произвести
-                        поиск нужной корреспонденции счетов</p>
-                </div>
-                <div class="module__item effect eff-3 module__item-4">
-                    <h4 class="module__name">ОТРАСЛИ ЭКОНОМИКИ</h4>
-                    <div class="module__predescr">Специальные подборки документов в разрезе определенной отрасли</div>
-                    <div class="module__icon">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<g>
-<path d="M256.4,567.1v322h146.2v-320l-73.1-60.8L256.4,567.1z M10.8,889.1H157V647.3L10.8,765.1V889.1z M502,651.8v237.4h146.2
+    c2.6,3.7,6.8,6.3,11.5,6.3h97.6C326.5,835.3,326.5,807,307.5,807z"/></g></g></g></svg></div><p class="module__descr caption">Модуль содержит систематизированные сведения по отражению в бухгалтерском учете хозяйственных операций. Имеет удобный функционал, который позволяет быстро произвести поиск нужной корреспонденции счетов</p></div><div class="module__item effect eff-3 module__item-4"><h4 class="module__name">ОТРАСЛИ ЭКОНОМИКИ</h4><div class="module__predescr">Специальные подборки документов в разрезе определенной отрасли</div><div class="module__icon"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000" xml:space="preserve"><g><path d="M256.4,567.1v322h146.2v-320l-73.1-60.8L256.4,567.1z M10.8,889.1H157V647.3L10.8,765.1V889.1z M502,651.8v237.4h146.2
 V577.9l-116.8,98.3L502,651.8z M747.6,889.1h146.2V371.2l-146.2,123V889.1z M709.6,110.9l119,114.3L531.3,475.3l-201.8-168L10,565
-v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
-</g>
-</svg>
-        </div>
-                    <p class="module__descr caption">Актуальные отраслевые новости, нормативные документы, ситуации,
-                        консультации, формы и бланки, справочники и шаблоны договоров, аналитические материалы из
-                        изданий и других модулей, специализированная судебная практика</p>
-                </div>
-            </li>
-        </ul>
-    </article>
-    <article class="liga__comparison-table">
-        <h2 class="article__title article__title-black">Сравнение продуктов ЛІГА:ЗАКОН </h2>
-        <img src="../img/lz-compar-table-ru.jpg" alt="">
-    </article>
-    <article class="liga__products" id="products">
-        <h2 class="article__title article__title-black">Продукты LIGA:Zakon</h2>
-        <section class="liga__product-item">
-            <h3 class="liga__product-title">Гранд</h3>
-            <div class="liga__product-descr">Пакет для ключевых отделов крупной организации: бухгалтерии, юридического и
-                кадрового отделов. Включает в себя электронные издания БУХГАЛТЕР&ЗАКОН и ЮРИСТ&ЗАКОН
-            </div>
-            <div class="liga__product-price liga__product-price-grand">1700 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
-        </section>
-        <section class="liga__product-item">
-            <h3 class="liga__product-title">Прайм</h3>
-            <div class="liga__product-descr">Универсальная система. Исчерпывающая информация для:
-                руководителя, бухгалтера (Ситуации для бухгалтера, консультации), кадровика (Ситуации для кадровика,
-                Должностные инструкции) и юриста (Судебная практика, Комментированные кодексы и др.)
-            </div>
-            <div class="liga__product-price liga__product-price-prime">1400 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
-        </section>
-        <section class="liga__product-item">
-            <h3 class="liga__product-title">Бухгалтер Проф</h3>
-            <div class="liga__product-descr">Самая мощная специализированная система для бухгалтера Украины. Полное
-                обеспечение информацией: законодательство, формы и бланки, Ситуации для бухгалтера, справочники
-            </div>
-            <div class="liga__product-price liga__product-price-buhprof">650 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
-        </section>
-        <section class="liga__product-item">
-            <h3 class="liga__product-title">Юрист Проф</h3>
-            <div class="liga__product-descr">Пакет для профессиональных юридических компаний. Полное законодательство,
-                Комментированные кодексы, европейские нормы, Судебные прецеденты и проч.
-            </div>
-            <div class="liga__product-price liga__product-price-jurprof">900 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
-        </section>
-        <section class="liga__product-item">
-            <h3 class="liga__product-title">Юрист</h3>
-            <div class="liga__product-descr">Специализированный пакет для практикующего юриста и адвоката:
-                Терминологический словарь, Законопроекты, Ситуации для юриста, полное Законодательство Украины,
-                Справочники и др.
-            </div>
-            <div class="liga__product-price liga__product-price-jur">650 грн./мес.</div>
-            <a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a>
-        </section>
-    </article>
-
-    <article class="liga__testcont liga__testcont-big container_btn">
-        <a href="" class="btn_s btn-1 l__testbtn">
-            <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-            </svg>
-            Попробовать бесплатно (тест 24 часа)
-        </a>
-        <div class="liga__testcont-descr">Свободный доступ к максимально полному пакету "ГРАНД"</div>
-    </article>
-    <section class="liga__fotoblock">
-        <div class="liga__partner-logo">
-            <img src="../img/lz_partner.png" alt="">
-        </div>
-    </section>
-    <article class="liga__periodicals-article">
-        <h2 class="article__title article__title-lzperiod">Справочники и электронные издания</h2>
-        <div class="container-fluid">
-            <div class="row">
-                <section class="periodicals__section periodicals__section-bz col-md-6 col-sm-12">
-                    <h3 class="periodicals__section-title">БУХГАЛТЕР&ЗАКОН</h3>
-                    <h4 class="periodicals__section-type">Еженедельное издание</h4>
-                    <div class="periodicals__logo"><img src="../img/lz/bz_icon.png" alt=""></div>
-                    <div class="periodicals__section-descr">Электронное издание для бухгалтеров
-                        предприятий разного уровня. Специализировано для бухгалтеров, ведущих бухучет в нескольких
-                        предприятиях, аудиторов, юристов, бизнес-консультантов.Содержит аналитические материалы с
-                        практическими рекомендациями экспертов ЛИГА:ЗАКОН. Консультации с наглядными таблицами
-        </div>
-                    <div class="periodicals__section-price">280 грн.\мес.</div>
-                    <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
-
-    </section>
-                <section class="periodicals__section periodicals__section-uz col-md-6 col-sm-12">
-                    <h3 class="periodicals__section-title">ЮРИСТ&ЗАКОН</h3>
-                    <h4 class="periodicals__section-type">Еженедельное издание</h4>
-                    <div class="periodicals__logo"><img src="../img/lz/uz_icon.png" alt=""></div>
-                    <div class="periodicals__section-descr">Интерактивное издание для юриста: включает аналитику с
-                        практическими рекомендациями экспертов ЛИГА:ЗАКОН и профессиональных юристов-практиков.
-                        Консультации сопровождаются таблицами, инфографикой, видео
-        </div>
-                    <div class="periodicals__section-price">350 грн.\мес.</div>
-                    <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
-
-                </section>
-                <section class="periodicals__section periodicals__section-msfo col-md-6 col-sm-12">
-                    <h3 class="periodicals__section-title">ВЕСТНИК МСФО</h3>
-                    <h4 class="periodicals__section-type">Ежемесячное издание</h4>
-                    <div class="periodicals__logo"><img src="../img/lz/msfo_icon.png" alt=""></div>
-                    <div class="periodicals__section-descr">Уникальное специализированное издание о практике
-                        использования международных стандартов финансовой отчетности. Обзор новых и изменённых МСФО,
-                        анализ типичных ошибок при подготовке финансовой отчетности. Рассмотрены вопросы подготовки
-                        интегрированной отчетности и развития бизнеса.
-                    </div>
-                    <div class="periodicals__section-price">420 грн.\мес.</div>
-                    <button class="periodicals__test-button hvr-pulse-grow ">Попробовать</button>
-                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
-
-                </section>
-                <section class="periodicals__section periodicals__section-buhlight col-md-6 col-sm-12">
-                    <h3 class="periodicals__section-title">БУХГАЛТЕР ЛАЙТ
-                        <div class="periodicals__logo"><img src="../img/lz/buhlight_icon.png" alt=""></div>
-                    </h3>
-                    <h4 class="periodicals__section-type">Справочник</h4>
-
-                    <div class="periodicals__section-descr">Ситуации для бухгалтера, которые разбиты по тематике в одном
-                        справочнике. Каждая ситуация развернута в виде подборки материалов: нормативно-правовых актов,
-                        консультаций, справочных материалов, форм/бланков
-                    </div>
-                    <div class="periodicals__section-price">380 грн.\мес.</div>
-                    <button class="periodicals__buy-button hvr-pulse-grow  tariff__button">Заказать</button>
-
-                </section>
-            </div>
-        </div>
-
-    </article>
-
-</main>
-
-
-<footer class="footer">
-
-
-    <div class="container-fluid ">
-
-
-        <div class="row">
-
-
-            <div class="footer_aboutus col-md-4 hidden-sm-down">
-
-
-                <div class="footer__logo">
-
-
-                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-
-
-	 viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6;" xml:space="preserve">
-
-
-
-
-
-<g>
-
-
-	<g>
-
-
-		<path class="st0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/></g></svg></div><p class="module__descr caption">Актуальные отраслевые новости, нормативные документы, ситуации, консультации, формы и бланки, справочники и шаблоны договоров, аналитические материалы из изданий и других модулей, специализированная судебная практика</p></div></li></ul></article><article class="liga__comparison-table"><h2 class="article__title article__title-black">Сравнение продуктов ЛІГА:ЗАКОН</h2><img src="../img/lz-compar-table-ru.jpg" alt=""></article><article class="liga__products" id="products"><h2 class="article__title article__title-black">Продукты LIGA:Zakon</h2><section class="liga__product-item"><h3 class="liga__product-title">Гранд</h3><div class="liga__product-descr">Пакет для ключевых отделов крупной организации: бухгалтерии, юридического и кадрового отделов. Включает в себя электронные издания БУХГАЛТЕР&ЗАКОН и ЮРИСТ&ЗАКОН</div><div class="liga__product-price liga__product-price-grand">1700 грн./мес.</div><a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a></section><section class="liga__product-item"><h3 class="liga__product-title">Прайм</h3><div class="liga__product-descr">Универсальная система. Исчерпывающая информация для: руководителя, бухгалтера (Ситуации для бухгалтера, консультации), кадровика (Ситуации для кадровика, Должностные инструкции) и юриста (Судебная практика, Комментированные кодексы и др.)</div><div class="liga__product-price liga__product-price-prime">1400 грн./мес.</div><a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a></section><section class="liga__product-item"><h3 class="liga__product-title">Бухгалтер Проф</h3><div class="liga__product-descr">Самая мощная специализированная система для бухгалтера Украины. Полное обеспечение информацией: законодательство, формы и бланки, Ситуации для бухгалтера, справочники</div><div class="liga__product-price liga__product-price-buhprof">650 грн./мес.</div><a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a></section><section class="liga__product-item"><h3 class="liga__product-title">Юрист Проф</h3><div class="liga__product-descr">Пакет для профессиональных юридических компаний. Полное законодательство, Комментированные кодексы, европейские нормы, Судебные прецеденты и проч.</div><div class="liga__product-price liga__product-price-jurprof">900 грн./мес.</div><a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a></section><section class="liga__product-item"><h3 class="liga__product-title">Юрист</h3><div class="liga__product-descr">Специализированный пакет для практикующего юриста и адвоката: Терминологический словарь, Законопроекты, Ситуации для юриста, полное Законодательство Украины, Справочники и др.</div><div class="liga__product-price liga__product-price-jur">650 грн./мес.</div><a href="#" class="liga__product-order hvr-pulse-grow tariff__button">Заказать</a></section></article><article class="liga__testcont liga__testcont-big container_btn"><a href="" class="btn_s btn-1 l__testbtn"><svg><rect x="0" y="0" fill="none" width="100%" height="100%"/></svg> Попробовать бесплатно (тест 24 часа)</a><div class="liga__testcont-descr">Свободный доступ к максимально полному пакету "ГРАНД"</div></article><section class="liga__fotoblock"><div class="liga__partner-logo"><img src="../img/lz_partner.png" alt=""></div></section><article class="liga__periodicals-article"><h2 class="article__title article__title-lzperiod">Справочники и электронные издания</h2><div class="container-fluid"><div class="row"><section class="periodicals__section periodicals__section-bz col-md-6 col-sm-12"><h3 class="periodicals__section-title">БУХГАЛТЕР&ЗАКОН</h3><h4 class="periodicals__section-type">Еженедельное издание</h4><div class="periodicals__logo"><img src="../img/lz/bz_icon.png" alt=""></div><div class="periodicals__section-descr">Электронное издание для бухгалтеров предприятий разного уровня. Специализировано для бухгалтеров, ведущих бухучет в нескольких предприятиях, аудиторов, юристов, бизнес-консультантов.Содержит аналитические материалы с практическими рекомендациями экспертов ЛИГА:ЗАКОН. Консультации с наглядными таблицами</div><div class="periodicals__section-price">280 грн.\мес.</div><button class="periodicals__test-button hvr-pulse-grow">Попробовать</button> <button class="periodicals__buy-button hvr-pulse-grow tariff__button">Заказать</button></section><section class="periodicals__section periodicals__section-uz col-md-6 col-sm-12"><h3 class="periodicals__section-title">ЮРИСТ&ЗАКОН</h3><h4 class="periodicals__section-type">Еженедельное издание</h4><div class="periodicals__logo"><img src="../img/lz/uz_icon.png" alt=""></div><div class="periodicals__section-descr">Интерактивное издание для юриста: включает аналитику с практическими рекомендациями экспертов ЛИГА:ЗАКОН и профессиональных юристов-практиков. Консультации сопровождаются таблицами, инфографикой, видео</div><div class="periodicals__section-price">350 грн.\мес.</div><button class="periodicals__test-button hvr-pulse-grow">Попробовать</button> <button class="periodicals__buy-button hvr-pulse-grow tariff__button">Заказать</button></section><section class="periodicals__section periodicals__section-msfo col-md-6 col-sm-12"><h3 class="periodicals__section-title">ВЕСТНИК МСФО</h3><h4 class="periodicals__section-type">Ежемесячное издание</h4><div class="periodicals__logo"><img src="../img/lz/msfo_icon.png" alt=""></div><div class="periodicals__section-descr">Уникальное специализированное издание о практике использования международных стандартов финансовой отчетности. Обзор новых и изменённых МСФО, анализ типичных ошибок при подготовке финансовой отчетности. Рассмотрены вопросы подготовки интегрированной отчетности и развития бизнеса.</div><div class="periodicals__section-price">420 грн.\мес.</div><button class="periodicals__test-button hvr-pulse-grow">Попробовать</button> <button class="periodicals__buy-button hvr-pulse-grow tariff__button">Заказать</button></section><section class="periodicals__section periodicals__section-buhlight col-md-6 col-sm-12"><h3 class="periodicals__section-title">БУХГАЛТЕР ЛАЙТ<div class="periodicals__logo"><img src="../img/lz/buhlight_icon.png" alt=""></div></h3><h4 class="periodicals__section-type">Справочник</h4><div class="periodicals__section-descr">Ситуации для бухгалтера, которые разбиты по тематике в одном справочнике. Каждая ситуация развернута в виде подборки материалов: нормативно-правовых актов, консультаций, справочных материалов, форм/бланков</div><div class="periodicals__section-price">380 грн.\мес.</div><button class="periodicals__buy-button hvr-pulse-grow tariff__button">Заказать</button></section></div></div></article></main><footer class="footer"><div class="container-fluid"><div class="row"><div class="footer_aboutus col-md-4 hidden-sm-down"><div class="footer__logo"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6" xml:space="preserve"><g><g><path class="st0" d="M155.2,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 
 
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9H137c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
@@ -1346,19 +221,13 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
 
 
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/>
-
-
-		<path class="st1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C156.4,170.4,156,172.7,155.2,176.3z"/><path class="st1" d="M184.2,153.9l-11,47.8c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3H162c-1.9,0-2.5-0.8-2.5-2.1
 
 
 			c0-0.7,0.2-1.7,0.4-2.8l11-47.8c0.1-0.3,0.2-0.8,0.2-1.1c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
 
 
-			C184.6,152.1,184.4,152.9,184.2,153.9z"/>
-
-
-		<path class="st2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			C184.6,152.1,184.4,152.9,184.2,153.9z"/><path class="st2" d="M205.6,166.2l-8.2,35.5c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 
 
 			c0-0.7,0.2-1.7,0.4-2.8l8.2-35.5c0.1-0.3,0.2-0.8,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5
@@ -1367,10 +236,7 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			C206,164.5,205.8,165.2,205.6,166.2z M208.2,158.5h-11.9c-2.1,0-2.6-0.6-2.6-2.1c0-0.3,0.2-1.1,1.6-7.4h11.8
 
 
-			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/>
-
-
-		<path class="st3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
+			c1.6,0,2.6,0.3,2.6,1.9C209.8,151.5,209.5,152.9,208.2,158.5z"/><path class="st3" d="M253.4,176.3l-5.7,25.4c-0.1,0.4-0.2,0.9-0.2,1.2c0,1,0.5,1.6,1.8,1.6l-0.2,1.3h-12.6c-1.9,0-2.5-0.8-2.5-2.1
 
 
 			c0-0.7,0.2-1.7,0.4-2.8l5.6-24.4c0.2-1.2,0.3-2.1,0.3-2.8c0-2.1-1.2-2.9-3.1-2.9h-2.1c-2.7,0-5.4,0.7-6.3,4.3l-6.4,26.5
@@ -1382,10 +248,7 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			c0.1-0.3,0.2-0.9,0.2-1.2c0-1-0.5-1.6-1.8-1.6l0.2-1.3h12.6c2.1,0,2.5,1.3,2.5,2.5c0,0.7-0.2,1.6-0.6,3l0.7,0.1l2.6-3.8
 
 
-			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/>
-
-
-		<path class="st4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
+			c1.5-2.1,3-2.5,10.4-2.5c7.9,0,10.5,3.1,10.5,7.8C254.6,170.4,254.2,172.7,253.4,176.3z"/><path class="st4" d="M88.4,170c-5.5,0-7.6,1.6-9.8,10.9l-1.4,6.1c-0.4,1.8-0.7,3.3-0.7,4.6c0,3.7,1.8,5.3,5.7,5.3
 
 
 			c5.7,0,7.8-2.5,9.6-9.8l1.3-5.3c0.7-2.5,1-4.8,1-6.5C94.2,171.8,92.7,170,88.4,170z M106.6,183.2l-1.6,6.5
@@ -1394,10 +257,7 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			c-3.1,12.9-7.9,16.7-21.9,16.7H81c-10,0-17.9-3.6-17.9-13.8c0-1.7,0.2-3.6,0.7-5.7l1.6-6.9c3.4-14.8,8.9-19.4,22.5-19.4h3
 
 
-			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/>
-
-
-		<path class="st5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
+			c14,0,16.7,7.1,16.7,15C107.7,177.7,107.2,181,106.6,183.2z"/><path class="st5" d="M283.4,169.2c-5.7,0-7.2,3.2-8.2,8h12.9l0.4-1.6c0.2-1,0.4-2.1,0.4-2.5C288.9,170.6,287.4,169.2,283.4,169.2z
 
 
 			 M298.4,183.5c-0.9,1.9-3,2.4-5.2,2.4H273l-1,4.4c-0.2,1-0.3,1.7-0.3,2.3c0,3,2.1,3.6,4.5,3.6h9.4c6.1,0,7.5-0.5,8.8-2.5h1.3
@@ -1406,25 +266,13 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			l-1.5,6.6c-1.2,5.3-4.4,6.2-11.1,6.2h-13.1c-7.6,0-12-3.1-12-13c0-2.5,0.7-5.8,1.5-9.7c3.9-17.9,9.3-23.1,23.6-23.1h2.6
 
 
-			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/>
-
-
-	</g>
-
-
-	<g>
-
-
-		<path class="st6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
+			c8.8,0,15,3,15,11.9C300.9,175,299.7,180.6,298.4,183.5z"/></g><g><path class="st6" d="M396.9,135.5c-3.7,15.9-10.5,20.8-19.8,26l-19,10.5c-10.1,5.6-13.8,7.7-16.2,16h33.7c4.9,0,7-1.1,9.7-4.8h2.5
 
 
 			l-3.5,15.5c-1.4,5.9-3.4,7.6-11.8,7.6h-60.7c7-30.1,13.9-42.2,31.6-51.3l18.4-9.4c5.6-2.8,11-7.9,11-13.6c0-3-1.7-5.8-7-5.8H339
 
 
-			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/>
-
-
-		<path class="st6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
+			c-3.4,0-4.9-1-4.9-3.5c0-1.1,0.3-3.1,3-13.4h38.4c11,0,22.2,7.9,22.2,20.2C397.6,131,397.4,133.4,396.9,135.5z"/><path class="st6" d="M478.7,118.9l-10.8,47h10.8l-3.1,13.2c-0.4,1.8-1.5,3-4.8,3h-6.6l-3.5,14.6c-0.3,1.3-0.4,2.4-0.4,3.4
 
 
 			c0,2.4,0.8,3.8,3.2,4.1l-0.4,2.3h-23.8c-3.1,0-4.2-1.8-4.2-3.9c0-0.8,0.1-1.7,0.6-3.5l4.1-16.9H404c-3.1,0-4.6-0.8-4.6-3.4
@@ -1433,28 +281,7 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			c0-1.3,0.3-4.2,2.7-12.8l54.4-56.5h17c3,0,5.6,2.5,5.6,5.3C479.1,116.1,478.9,117.8,478.7,118.9z M423,165.9h20.5l6-27.1
 
 
-			L423,165.9z"/>
-
-
-	</g>
-
-
-	<g>
-
-
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147">
-
-
-			<stop  offset="0" style="stop-color:#9A75D3"/>
-
-
-			<stop  offset="1" style="stop-color:#7E55C7"/>
-
-
-		</linearGradient>
-
-
-		<path class="st7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
+			L423,165.9z"/></g><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.818989e-12" y1="122.8147" x2="371.234" y2="122.8147"><stop offset="0" style="stop-color:#9A75D3"/><stop offset="1" style="stop-color:#7E55C7"/></linearGradient><path class="st7" d="M296.5,223.4L296.5,223.4l-5.4,0l-216,0.2c-30.3,0-54.8-25.6-52.9-56.4c1.6-26.3,23.1-47,49.3-49.6l7.7-0.8
 
 
 			l0.5-9.4c2.8-47.8,42.5-85.3,90.4-85.3c25.8,0,50.4,11.1,67.6,30.3L248.1,64l7-12.5c6.5-11.7,18.4-19.7,31.7-20.3
@@ -1469,337 +296,13 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
 			c-24.4-9.5-50.1-2.4-66.1,15C224.2,10.1,197.7,0,170.2,0c-56.6,0-104,42-111.6,97.2c-40.1,8.9-67.1,49.2-56,93.1
 
 
-			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/>
+			c8.3,32.9,38.7,55.3,72.6,55.3h0l240.9-0.2c21.3,0,40.6-8.2,55.2-21.5L296.5,223.4z"/><path class="st8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
 
 
-		<path class="st8" d="M107.7,97.6c-3.6-0.5-7,2.1-7.4,5.7c-0.2,1.7-0.4,3.4-0.5,5.1c-0.2,3.7,2.6,6.8,6.2,7c0.1,0,0.3,0,0.4,0
+			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/><path class="st8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
 
 
-			c3.5,0,6.4-2.7,6.6-6.2c0.1-1.4,0.2-2.8,0.4-4.2C113.8,101.4,111.3,98.1,107.7,97.6z"/>
-
-
-		<path class="st8" d="M170.6,41.5c-24.7,0-47.3,12.5-60.3,33.5c-1.9,3.1-1,7.2,2.1,9.1c1.1,0.7,2.3,1,3.5,1c2.2,0,4.4-1.1,5.6-3.1
-
-
-			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/>
-
-
-	</g>
-
-
-</g>
-
-
-</svg>
-
-
-                </div>
-
-
-
-
-
-                <p>Первый украинский портал облачных решений <br><br> Информационное обеспечение, офис "в облаке",
-
-
-                    электронный документооборот, безопасность
-
-
-                    бизнеса<br><br> &#169; 2017 г.</p>
-
-
-            </div>
-
-
-            <div class="footer__contacts col-md-4 col-sm-12">
-
-
-                <h2 class="footer__title">Контакты</h2>
-
-
-                <div class="contact__block">
-
-
-                    <div class="footer__tel1">
-
-
-                        <a href="tel:+380504544043" class="footer__tel-link">
-
-
-                            <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
-
-
-                                 viewBox="0 0 24 24">
-
-
-                                <path fill="#25408f"
-
-
-                                      d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-
-
-                            </svg>
-
-
-                            +38 (050) 454-40-43
-
-
-                        </a>
-
-
-                    </div>
-
-
-                    <div class="footer__tel2">
-
-
-                        <a href="tel:+380675665331" class="footer__tel-link">
-
-
-                            <svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px;"
-
-
-                                 viewBox="0 0 24 24">
-
-
-                                <path fill="#25408f"
-
-
-                                      d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-
-
-                            </svg>
-
-
-                            +38 (067) 566-53-31
-
-
-                        </a>
-
-
-                    </div>
-
-
-                    <div class="footer__email">
-
-
-                        <a href="mailto:info@online24.net.ua" class="footer__email-link;margin-right:5px;">
-
-
-                            <svg style="width:24px;height:24px;margin-right:5px;" viewBox="0 0 24 24">
-
-
-                                <path fill="#25408f"
-
-
-                                      d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z"/>
-
-
-                            </svg>
-
-
-                            info@online24.net.ua
-
-
-                        </a>
-
-
-                    </div>
-
-
-                    <div class="footer__workhours">
-
-
-                        <svg viewBox="0 0 24 24">
-
-
-                            <path fill="#25408f"
-
-
-                                  d="M11,17A1,1 0 0,0 12,18A1,1 0 0,0 13,17A1,1 0 0,0 12,16A1,1 0 0,0 11,17M11,3V7H13V5.08C16.39,5.57 19,8.47 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12C5,10.32 5.59,8.78 6.58,7.58L12,13L13.41,11.59L6.61,4.79V4.81C4.42,6.45 3,9.05 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M18,12A1,1 0 0,0 17,11A1,1 0 0,0 16,12A1,1 0 0,0 17,13A1,1 0 0,0 18,12M6,12A1,1 0 0,0 7,13A1,1 0 0,0 8,12A1,1 0 0,0 7,11A1,1 0 0,0 6,12Z"/>
-
-
-                        </svg>
-
-
-                        10-00 : 18-00
-
-
-                    </div>
-
-
-                    <div class="footer__socials">
-
-
-                        <a href="" class="footer__socials-link">
-
-
-                            <svg viewBox="0 0 24 24">
-
-
-                                <path fill="#25408f"
-
-
-                                      d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
-
-
-                            </svg>
-
-
-                        </a>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="footer__form col-md-4 col-sm-12">
-
-
-                <h2 class="footer__title footer__title-form">Напишите нам</h2>
-
-
-
-
-
-                <form id="footerform">
-
-
-                    <input type="hidden" name="form_type" value="footer">
-
-
-                    <input type="hidden" name="product" value="footer">
-
-
-                    <div class="form-group-footer">
-
-
-                        <label for="name"></label>
-
-
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Имя *" required>
-
-
-                    </div>
-
-
-                    <div class="form-group-footer">
-
-
-                        <label for="email"></label>
-
-
-                        <input type="email" name="email" class="form-control required" id="email"
-
-
-                               aria-describedby="emailHelp"
-
-
-                               placeholder="Email *" required>
-
-
-                    </div>
-
-
-                    <div class="form-group-footer">
-
-
-                        <label for="tel"></label>
-
-
-                        <input type="text" name="tel" class="form-control required footer__form-tel" id="tel"
-
-
-                               aria-describedby="emailHelp"
-
-
-                               placeholder="Телефон">
-
-
-                    </div>
-
-
-                    <div class="form-group-footer">
-
-
-                        <label for="message"></label>
-
-
-                        <textarea name="message" class="form-control" id="message" rows="3"
-
-
-                                  placeholder="Ваше сообщение" required></textarea>
-
-
-                    </div>
-
-
-                    <!--<div class="g-recaptcha" data-sitekey="6Lf9kRgUAAAAAEHHXZd0Y0tesUPmj1gC6v4DII1v"></div>-->
-
-
-                    <button name="fb" type="submit" class="btn btn-primary hvr-pulse">Отправить</button>
-
-
-                </form>
-
-
-                <div class="footer_confidential">
-
-
-                    <div class="conf__icon">
-
-
-                        <svg viewBox="0 0 24 24">
-
-
-                            <path fill="#000000"
-
-
-                                  d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"/>
-
-
-                        </svg>
-
-
-                    </div>
-
-
-                    <p>
-
-
-                        Портал Online24 гарантирует полную конфиденциальность Ваших персональных данных.
-
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-</footer>
-
-
-</body>
-
-
-<script>
-
-
-    (function (i, s, o, g, r, a, m) {
+			c10.6-17.1,29-27.3,49.1-27.3c3.7,0,6.6-3,6.6-6.6C177.2,44.5,174.3,41.5,170.6,41.5z"/></g></g></svg></div><p>Первый украинский портал облачных решений<br><br>Информационное обеспечение, офис "в облаке", электронный документооборот, безопасность бизнеса<br><br>&#169; 2017 г.</p></div><div class="footer__contacts col-md-4 col-sm-12"><h2 class="footer__title">Контакты</h2><div class="contact__block"><div class="footer__tel1"><a href="tel:+380504544043" class="footer__tel-link"><svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (050) 454-40-43</a></div><div class="footer__tel2"><a href="tel:+380675665331" class="footer__tel-link"><svg class="footer__tel-link" style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +38 (067) 566-53-31</a></div><div class="footer__email"><a href="mailto:info@online24.net.ua" class="footer__email-link;margin-right:5px;"><svg style="width:24px;height:24px;margin-right:5px" viewBox="0 0 24 24"><path fill="#25408f" d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z"/></svg> info@online24.net.ua</a></div><div class="footer__workhours"><svg viewBox="0 0 24 24"><path fill="#25408f" d="M11,17A1,1 0 0,0 12,18A1,1 0 0,0 13,17A1,1 0 0,0 12,16A1,1 0 0,0 11,17M11,3V7H13V5.08C16.39,5.57 19,8.47 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12C5,10.32 5.59,8.78 6.58,7.58L12,13L13.41,11.59L6.61,4.79V4.81C4.42,6.45 3,9.05 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M18,12A1,1 0 0,0 17,11A1,1 0 0,0 16,12A1,1 0 0,0 17,13A1,1 0 0,0 18,12M6,12A1,1 0 0,0 7,13A1,1 0 0,0 8,12A1,1 0 0,0 7,11A1,1 0 0,0 6,12Z"/></svg> 10-00 : 18-00</div><div class="footer__socials"><a href="" class="footer__socials-link"><svg viewBox="0 0 24 24"><path fill="#25408f" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/></svg></a></div></div></div><div class="footer__form col-md-4 col-sm-12"><h2 class="footer__title footer__title-form">Напишите нам</h2><form id="footerform"><input type="hidden" name="form_type" value="footer"> <input type="hidden" name="product" value="footer"><div class="form-group-footer"><label for="name"></label><input type="text" name="name" class="form-control" id="name" placeholder="Имя *" required></div><div class="form-group-footer"><label for="email"></label><input type="email" name="email" class="form-control required" id="email" aria-describedby="emailHelp" placeholder="Email *" required></div><div class="form-group-footer"><label for="tel"></label><input type="text" name="tel" class="form-control required footer__form-tel" id="tel" aria-describedby="emailHelp" placeholder="Телефон"></div><div class="form-group-footer"><label for="message"></label><textarea name="message" class="form-control" id="message" rows="3" placeholder="Ваше сообщение" required></textarea></div><!--<div class="g-recaptcha" data-sitekey="6Lf9kRgUAAAAAEHHXZd0Y0tesUPmj1gC6v4DII1v"></div>--> <button name="fb" type="submit" class="btn btn-primary hvr-pulse">Отправить</button></form><div class="footer_confidential"><div class="conf__icon"><svg viewBox="0 0 24 24"><path fill="#000000" d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"/></svg></div><p>Портал Online24 гарантирует полную конфиденциальность Ваших персональных данных.</p></div></div></div></div></footer></body><script>(function (i, s, o, g, r, a, m) {
 
 
         i['GoogleAnalyticsObject'] = r;
@@ -1838,55 +341,10 @@ v111.3l319.5-257.6l201.8,168l359-302.1l99.7,95.8V110.9H709.6z"/>
     ga('create', 'UA-42666121-5', 'auto');
 
 
-    ga('send', 'pageview');
-
-
-
-
-
-</script>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-<script>// <![CDATA[
+    ga('send', 'pageview');</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>// <![CDATA[
 
 
 window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js" type="text/javascript"><\/script>')
 
 
-// ]]></script>
-
-
-<script src="../js/tether.min.js"></script>
-
-
-<script src="../js/bootstrap.min.js"></script>
-
-
-<script src='../js/jquery.validate.js'></script>
-
-
-<script src="../js/jquery.touchSwipe.min.js"></script>
-
-
-<script src="../js/parallax.min.js"></script>
-
-
-<script src="../js/css3-animate-it.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-
-
-<script src="../js/jquery.singlePageNav.min.js"></script>
-
-
-<script src="../js/jquery.bxslider.min.js"></script>
-
-
-<script src="../js/land.js"></script>
-
-
-</html>
+// ]]></script><script src="../js/tether.min.js"></script><script src="../js/bootstrap.min.js"></script><script src="../js/jquery.validate.js"></script><script src="../js/jquery.touchSwipe.min.js"></script><script src="../js/parallax.min.js"></script><script src="../js/css3-animate-it.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script><script src="../js/jquery.singlePageNav.min.js"></script><script src="../js/jquery.bxslider.min.js"></script><script src="../js/land.js"></script></html>

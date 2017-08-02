@@ -483,3 +483,5 @@ $(document.body).on('disappear', '.animatedParent', function (e, $affected) {
 $(window).on('load', function () {
     $.force_appear();
 });
+
+//# sourceMappingURL=css3-animate-it.js.map
