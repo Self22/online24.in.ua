@@ -55,7 +55,6 @@ html, body {
 .lnav__fixed {
   position: fixed;
   background: #001148;
-  height: 100px;
   z-index: 5;
 }
 
@@ -238,9 +237,9 @@ html, body {
 .ca__tariff-text {
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 2.5vw;
   letter-spacing: 2px;
-
+  font-weight: 100;
 }
 
 .ca__tariff-tabs {
@@ -275,7 +274,7 @@ html, body {
 
   color: white;
   text-decoration: none !important;
-  font-size: 34px;
+  font-size: 2.5vw;
   padding: 15px 40px;
   border: 1px solid white;
   border-radius: 10px;
@@ -337,7 +336,7 @@ html, body {
 }
 
 .price {
-  font-size: 30px;
+  font-size: 2.5vw;
   font-weight: bold;
 
 }
@@ -348,7 +347,7 @@ html, body {
 
   & h4, p {
     color: white;
-    font-size: 22px;
+    font-size: 1.7vw;
 
     @include phones {
       font-size: 5vw;
@@ -370,72 +369,59 @@ html, body {
 
 }
 
-.slider {
-  width: 60vw;
 
-  @include phones {
-    width: 95vw;
-    height: 45vh;
-    margin-bottom: 1vh;
-  }
-}
 
-.liga__slider {
-  margin-top: 5vh;
+.slide {
+  width: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 35vh;
+    margin-bottom: 1vh;
 
   @include tablets {
+    width: 100% !important;
     margin-top: 0;
   }
 
   h3 {
-
+    letter-spacing: 0.1vw;
     @include desktop {
-      font-size: 32px;
+      font-size: 2.5vw;
+      
     }
 
     @include phones {
       font-size: 28px;
-      color: white;
+      color: black;
     }
   }
 
   p {
+    margin-top: 0.6vw;
+    letter-spacing: 0.1vw;
+
     @include desktop {
-      font-size: 26px;
+      font-size: 2.5vw;
     }
 
     @include phones {
       font-size: 22px;
-      color: white;
+      color: black;
     }
   }
 
   h3, p {
     font-family: Open Sans, Optima, sans-serif;
-    color: white;
+    color: black;
   }
 
-  & .slide {
-    width: 50vw;
-
-    @include desktop {
-      width: 45vw;
-    }
-
-    @include tablets {
-      width: 100vw;
-    }
-
-    @include phones {
-      width: 100vw;
-    }
-
-  }
-
+  
 }
+
+ 
+  
+
 
 .btn-1:hover {
   background: rgba(225, 51, 45, 0);
@@ -443,27 +429,10 @@ html, body {
   letter-spacing: 1px;
 }
 
-.slide1 {
-  background: #3a7bd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3a7bd5, #3a6073); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3a7bd5, #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.slide2 {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.slide3 {
-  background: #0575E6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #0575E6, #021B79); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #0575E6, #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 .l__testcont {
   height: 170px;
-  background: rgb(179, 194, 223);
+  background: #f0f2f4;
   flex-direction: column;
 
   @include phones {
@@ -564,12 +533,12 @@ html, body {
 }
 
 .ca__sourse {
-  background: #096CAB;
-  padding: 60px 5%;
+      background: #437BE0;
+    padding: 5% 12%;
 
   & p:first-child {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.7vw;
     font-weight: 400;
     color: white;
   }
@@ -580,7 +549,7 @@ html, body {
 
   & li, p {
     color: white;
-    font-size: 22px;
+    font-size: 1.7vw;
     font-weight: 100;
 
   }
@@ -588,21 +557,23 @@ html, body {
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
+  font-size: 2.5vw;
+  text-transform: uppercase;
 }
 
 .l__descr {
-  padding: 50px 1vw 30px 1vw;
-  background: rgb(132, 199, 208);
+      padding: 4% 12%;
+    background: white;
 
   & .article__title {
-    margin-bottom: 50px;
-    color: white;
+    margin-bottom: 2vw;
+    color: black;
     text-align: right;
   }
 
   & i {
-    margin: 4%;
-    color: #022383;
+    margin: 3vw 0;
+    color: #024ea6;
   }
 
   @include phones {
@@ -611,9 +582,10 @@ html, body {
 }
 
 .descr__title {
-  color: white;
+  color: black;
   text-align: center;
-  line-height: 32px;
+  font-size: 1.7vw;
+    line-height: 2.2vw;
 
   @include phones {
     font-size: 6vw;
@@ -621,23 +593,25 @@ html, body {
 }
 
 .feature__descr {
-  color: #001148;
+  font-size: 1.7vw;
 }
 
 .l_features {
-  padding: 30px 5%;
-  background: #096CAB;
+  padding: 3% 12%;
+  background: #437be0;
   & h2, h3, div {
     color: white;
   }
 }
 
 .feature__section {
-  margin-bottom: 15px;
+  margin-bottom: 3vw;
 }
 
 .feature__title {
-  font-size: 3vw;
+  font-size: 2vw;
+      text-align: center;
+    margin-bottom: 3vw;
 
   @include phones {
     font-size: 8vw;
@@ -646,7 +620,7 @@ html, body {
 
 .product__feautures {
   border: 1px solid white;
-  padding: 20px 5%;
+  padding: 10%;
   height: 100%;
 
   @include desktop {
@@ -677,6 +651,15 @@ html, body {
   }
 }
 
+.slider__block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 12% 0;
+  background: #f0f2f4;
+}
+
+
 .bp-hs_inner__item {
   padding: 0;
   margin: 0;
@@ -686,4 +669,76 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+//////////// bob
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
