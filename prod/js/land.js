@@ -3,7 +3,7 @@
 
 $('.liga__header-content').parallax({imageSrc: '../img/liga_header1.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
-$('.ca__header-content').parallax({imageSrc: '../img/ca_header.jpg'});
+$('.ca__header-content').parallax({imageSrc: '../img/ca_header1.jpg'});
 $('.ib__header-content').parallax({imageSrc: '../img/ib_header3.jpg'});
 $('.ca__fotoblock').parallax({imageSrc: '../img/ca_photoblock.jpg'});
 $('.ib__fotoblock').parallax({imageSrc: '../img/ib__photoblock.jpg'});

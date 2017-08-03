@@ -12,7 +12,7 @@ html, body {
 }
 
 .lmain__menu {
-  background: black;
+  background: transparent;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -107,9 +107,10 @@ html, body {
   margin-right: 30px;
 
   & a {
-    @include desktop {
-      font-size: 14px;
-    }
+    
+     font-size: 1.5vw;
+      white-space: nowrap;
+    
   }
 
 }
@@ -127,21 +128,29 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #437BE0;
+  background: rgb(240, 242, 244);
   margin-left: 15px;
   display: block;
-  border: 1px solid rgb(0, 53, 151);
-  padding: 5px 20px;
+  border: none;
+  padding: 1vw 4vw;
   text-align: center;
 
   & span {
-    color: white;
+    color: #2162a9;
+    font-size: 1.5vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
   }
 }
 
+.btn-4:after {
+    background: #024ea6 !important;
+    height: 11vw !important;
+  }
+
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 16px;
+  font-size: 1.5vw;
   text-decoration: none !important;
   cursor: pointer;
   color: white;
@@ -199,10 +208,12 @@ html, body {
 }
 
 .ca__header-content {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  height: 600px;
+  align-items: center;
+  height: 100vh;
 
   @include phones {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
@@ -484,7 +495,7 @@ html, body {
   }
 
   & svg {
-    height: 57px;
+    height: 58px;
 
     @include phones {
       height: 43px;
@@ -500,7 +511,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 50px;
 
   @include tablets {
@@ -509,10 +520,10 @@ html, body {
   }
 
   .partner__brand {
-    font-size: 52px;
+    font-size: 6vw;
     color: white;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 6vw;
 
     @include phones {
       margin: 0 auto;
@@ -522,7 +533,12 @@ html, body {
   .partner__slogan {
     margin-top: 40px;
     color: white;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 3vw;
+    font-weight: 300;
+    text-align: center;
+    line-height: 5vw;
+
+    
 
     @include phones {
       width: 100%;
@@ -532,10 +548,10 @@ html, body {
   }
 
   & p {
-    font-size: 22px;
+    font-size: 3vw;
     font-weight: 300;
     color: white;
-    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
+   
     margin-top: 15px;
 
     @include phones {
