@@ -339,6 +339,10 @@ html, body {
   font-size: 2.5vw;
   font-weight: bold;
 
+  @include phones {
+      font-size: 6vw;
+    }
+
 }
 
 .tariff__descr-item {
@@ -392,7 +396,7 @@ html, body {
     }
 
     @include phones {
-      font-size: 28px;
+      font-size: 7vw;
       color: black;
     }
   }
@@ -406,7 +410,7 @@ html, body {
     }
 
     @include phones {
-      font-size: 22px;
+      font-size: 7vw;
       color: black;
     }
   }
@@ -495,6 +499,7 @@ html, body {
     margin-top: 6vw;
 
     @include phones {
+      font-size: 15vw;
       margin: 0 auto;
 
     }
@@ -512,7 +517,9 @@ html, body {
     @include phones {
       width: 100%;
       text-align: center;
-      font-size: 24px;
+      font-size: 4.5vw;
+    line-height: 10vw;
+    margin-bottom: 15vw;
     }
   }
 
@@ -536,11 +543,19 @@ html, body {
       background: #437BE0;
     padding: 5% 12%;
 
+    @include phones{
+      padding: 5%;
+    }
+
   & p:first-child {
     text-align: center;
     font-size: 1.7vw;
     font-weight: 400;
     color: white;
+
+    @include phones{
+      font-size: 5vw;
+    }
   }
 
   & p {
@@ -551,7 +566,9 @@ html, body {
     color: white;
     font-size: 1.7vw;
     font-weight: 100;
-
+    @include phones{
+      font-size: 5vw;
+    }
   }
 }
 
@@ -559,6 +576,10 @@ html, body {
   font-family: Open Sans, Optima, sans-serif;
   font-size: 2.5vw;
   text-transform: uppercase;
+
+  @include phones{
+    font-size: 7vw;
+  }
 }
 
 .l__descr {
@@ -589,11 +610,18 @@ html, body {
 
   @include phones {
     font-size: 6vw;
+        line-height: 8.2vw;
+    margin-bottom: 10vw;
   }
 }
 
 .feature__descr {
   font-size: 1.7vw;
+
+  @include phones {
+    font-size: 6vw;
+      
+  }
 }
 
 .l_features {
@@ -601,6 +629,10 @@ html, body {
   background: #437be0;
   & h2, h3, div {
     color: white;
+  }
+
+  @include phones {
+    padding: 3%;
   }
 }
 
@@ -614,7 +646,9 @@ html, body {
     margin-bottom: 3vw;
 
   @include phones {
-    font-size: 8vw;
+    font-size: 7vw;
+        display: flex;
+    align-items: center;
   }
 }
 
@@ -628,6 +662,7 @@ html, body {
   }
 
   @include phones {
+    padding: 5%;
     height: 100%;
   }
 
@@ -669,6 +704,10 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.bg-faded {
+    background-color: #ffffff !important;
 }
 
 //////////// bob

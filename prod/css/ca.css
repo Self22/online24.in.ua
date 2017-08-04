@@ -1014,6 +1014,9 @@ html, body {
 .price {
   font-size: 2.5vw;
   font-weight: bold; }
+  @media screen and (max-width: 480px) {
+    .price {
+      font-size: 6vw; } }
 
 .tariff__descr-item {
   display: none;
@@ -1057,7 +1060,7 @@ html, body {
         font-size: 2.5vw; } }
     @media screen and (max-width: 480px) {
       .slide h3 {
-        font-size: 28px;
+        font-size: 7vw;
         color: black; } }
   .slide p {
     margin-top: 0.6vw;
@@ -1067,7 +1070,7 @@ html, body {
         font-size: 2.5vw; } }
     @media screen and (max-width: 480px) {
       .slide p {
-        font-size: 22px;
+        font-size: 7vw;
         color: black; } }
   .slide h3, .slide p {
     font-family: Open Sans, Optima, sans-serif;
@@ -1140,6 +1143,7 @@ html, body {
     margin-top: 6vw; }
     @media screen and (max-width: 480px) {
       .ca__slogan .partner__brand {
+        font-size: 15vw;
         margin: 0 auto; } }
   .ca__slogan .partner__slogan {
     margin-top: 40px;
@@ -1152,7 +1156,9 @@ html, body {
       .ca__slogan .partner__slogan {
         width: 100%;
         text-align: center;
-        font-size: 24px; } }
+        font-size: 4.5vw;
+        line-height: 10vw;
+        margin-bottom: 15vw; } }
   .ca__slogan p {
     font-size: 3vw;
     font-weight: 300;
@@ -1167,22 +1173,34 @@ html, body {
 .ca__sourse {
   background: #437BE0;
   padding: 5% 12%; }
+  @media screen and (max-width: 480px) {
+    .ca__sourse {
+      padding: 5%; } }
   .ca__sourse p:first-child {
     text-align: center;
     font-size: 1.7vw;
     font-weight: 400;
     color: white; }
+    @media screen and (max-width: 480px) {
+      .ca__sourse p:first-child {
+        font-size: 5vw; } }
   .ca__sourse p {
     text-align: center; }
   .ca__sourse li, .ca__sourse p {
     color: white;
     font-size: 1.7vw;
     font-weight: 100; }
+    @media screen and (max-width: 480px) {
+      .ca__sourse li, .ca__sourse p {
+        font-size: 5vw; } }
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
   font-size: 2.5vw;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .article__title {
+      font-size: 7vw; } }
 
 .l__descr {
   padding: 4% 12%;
@@ -1205,16 +1223,24 @@ html, body {
   line-height: 2.2vw; }
   @media screen and (max-width: 480px) {
     .descr__title {
-      font-size: 6vw; } }
+      font-size: 6vw;
+      line-height: 8.2vw;
+      margin-bottom: 10vw; } }
 
 .feature__descr {
   font-size: 1.7vw; }
+  @media screen and (max-width: 480px) {
+    .feature__descr {
+      font-size: 6vw; } }
 
 .l_features {
   padding: 3% 12%;
   background: #437be0; }
   .l_features h2, .l_features h3, .l_features div {
     color: white; }
+  @media screen and (max-width: 480px) {
+    .l_features {
+      padding: 3%; } }
 
 .feature__section {
   margin-bottom: 3vw; }
@@ -1225,7 +1251,13 @@ html, body {
   margin-bottom: 3vw; }
   @media screen and (max-width: 480px) {
     .feature__title {
-      font-size: 8vw; } }
+      font-size: 7vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .product__feautures {
   border: 1px solid white;
@@ -1236,6 +1268,7 @@ html, body {
       height: 100%; } }
   @media screen and (max-width: 480px) {
     .product__feautures {
+      padding: 5%;
       height: 100%; } }
   .product__feautures i {
     margin-right: 3%; }
@@ -1279,6 +1312,9 @@ html, body {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.bg-faded {
+  background-color: #ffffff !important; }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {
