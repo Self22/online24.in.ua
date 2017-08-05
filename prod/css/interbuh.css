@@ -892,9 +892,9 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh; }
   @media screen and (max-width: 480px) {
     .ib__header-content {
@@ -1095,14 +1095,12 @@ html, body {
       margin-top: 55px;
       padding-left: 0; } }
   .ib__slogan .partner__brand {
-    font-size: 46px;
+    font-size: 4.5vw;
     color: black;
-    margin: 0;
-    margin-top: 15px;
     text-align: center; }
     @media screen and (max-width: 1200px) {
       .ib__slogan .partner__brand {
-        font-size: 42px; } }
+        font-size: 4.5vw; } }
     @media screen and (max-width: 768px) {
       .ib__slogan .partner__brand {
         font-size: 40px; } }
@@ -1113,7 +1111,8 @@ html, body {
         margin-bottom: 1vh; } }
   .ib__slogan .partner__slogan {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.8vw;
+    line-height: 4vw;
     margin-top: 40px;
     margin-bottom: 5vw;
     color: black;
@@ -1128,7 +1127,8 @@ html, body {
       .ib__slogan .partner__slogan {
         margin-bottom: 20vw;
         text-align: center;
-        font-size: 24px;
+        font-size: 8vw;
+        line-height: 10vw;
         padding: 5px 12vw; } }
   .ib__slogan p {
     font-size: 22px;

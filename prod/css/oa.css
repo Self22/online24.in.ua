@@ -819,7 +819,7 @@ textarea {
   transition: all 0.5s;
   background: #d91414;
   display: block;
-  padding: 1.3vw 2.5vw;
+  padding: 1.3vw 2.5vw 1.4vw;
   text-align: center;
   border: none;
   font-size: 1.5vw;
@@ -1512,7 +1512,7 @@ textarea {
     fill: rgba(0, 0, 0, 0.7); }
 
 .tariff__descr {
-  padding: 6vw 0px 0px;
+  padding: 6vw 8vw 0px;
   font-size: 2vw; }
   @media screen and (max-width: 480px) {
     .tariff__descr {
@@ -1569,7 +1569,7 @@ textarea {
 .channel__decsr {
   text-align: center;
   font-size: 2vw;
-  font-weight: 400;
+  font-weight: 300;
   padding: 4vw;
   margin-bottom: 0; }
   @media screen and (max-width: 480px) {
@@ -1591,6 +1591,7 @@ textarea {
       font-size: 6vw; } }
 
 .numbers__descr {
+  padding: 0 10vw;
   font-size: 2vw; }
   @media screen and (max-width: 480px) {
     .numbers__descr {
