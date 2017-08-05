@@ -6,7 +6,7 @@
 @import "animations.css";
 
 .lmain__menu {
-  padding: 2vw;
+  padding: 1vw;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -111,7 +111,7 @@
   transition: all 0.5s;
   background: #d91414;
   display: block;
-  padding: 1.5vw 2.5vw;
+  padding: 1vw 2.5vw;
   text-align: center;
   border: none;
   font-size: 1.5vw;
@@ -327,8 +327,6 @@
   height: 170px;
   background: rgb(227, 234, 243);
   flex-direction: column;
-  border-top: 2px solid white;
-  border-bottom: 2px solid #fff;
 
   &-big {
     height: 225px;
@@ -521,7 +519,7 @@
 }
 
 .l__feature-icon {
-      margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .oc__process {
@@ -564,16 +562,14 @@
 
 .process__item {
   padding: 0;
-  margin: 0;
+  margin: 4vw 0 35px 0;
   position: relative;
   display: flex;
   flex-direction: row;
   width: 80%;
-  padding: 1vw 0;
-  border-radius: 5px;
+  padding: 1vw 0;;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 35px;
 
   @include phones {
     width: 100%;
@@ -646,8 +642,8 @@
 }
 
 .l__tariffs {
-  padding: 30px 1% 50px 1%;
-  background: rgb(0, 74, 90);
+  padding: 3% 12%;
+  background: white;
 }
 
 .tariffs__list {
@@ -660,7 +656,7 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row;
-  flex-flow: row;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -676,18 +672,20 @@
 }
 
 .tariff__item {
-  width: 20%;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  min-height: 325px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 10px 10px;
-  background: rgb(209, 218, 3);
-  border-radius: 15px;
-  margin-top: 10px;
+  padding: 2vw;
   transition: all 0.5s;
-  margin: 0 0.1vw;
+
+  &-1 {
+    background: #eaeff3;
+  }
+
+  &-2 {
+    background: rgb(214, 218, 222);
+  }
 
   @include tablets {
     width: 100%;
@@ -701,20 +699,19 @@
 }
 
 .tariff__title {
-  height: 8vw;
   font-size: 1.5vw;
   font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.6vw;
+  padding: 1.2vw;
   text-align: center;
-  background: rgb(3, 112, 140);
+  background: #344559;
   color: white;
-  font-weight: 400;
-  letter-spacing: 0px;
-  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  border-radius: 6px;
   text-transform: uppercase;
 
   @include phones {
@@ -738,14 +735,13 @@
 
 .tariff__button {
   text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #0486a6;
-  border-radius: 7px;
-  padding: 15px;
-  font-size: 2vw;
-  margin: 20px 20px;
+  background: #d91414;
+  padding: 1vw;
+  border: none;
+  font-size: 1.5vw;
+  margin: 1vw;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1vw;
 
   @include phones {
     font-size: 6vw;
@@ -753,33 +749,34 @@
 }
 
 .tariff__price {
-  font-size: 2.7vw;
-  color: rgb(2, 70, 89);
+  font-size: 2.5vw;
+  color: black;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   padding: 12px 0;
   border-top: 6px solid;
-  margin-top: 20px;
+  width: 70%;
+  margin: 20px auto 0;
 
   @include phones {
     font-size: 8.7vw;
   }
 
   &-start {
-    border-color: rgb(237, 241, 244);
+    border-color: #8597AC;
   }
   &-prime {
-    border-color: rgb(4, 136, 168);
+    border-color: #11243A;
   }
   &-prem {
-    border-color: rgb(2, 70, 89);
+    border-color: #583F18;
   }
   &-market {
-    border-color: #1A86E0;
+    border-color: #817BAF;
   }
   &-ask {
-    border-color: #A71813;
+    border-color: #C3B193;
   }
 }
 
@@ -792,8 +789,8 @@
 }
 
 .security {
-  padding: 30px 4% 50px 4%;
-  background: rgb(168, 189, 2);
+  padding: 3% 12%;
+  background: white;
 
   @include phones {
     padding: 1px 5% 1vh 5%;
@@ -811,8 +808,6 @@
 }
 
 .article__title-secur {
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -825,9 +820,8 @@
 }
 
 .security__descr {
-  font-weight: 300;
-  font-size: 1.9vw;
-  color: white;
+  font-size: 1.5vw;
+  color: black;
 
   @include phones {
     font-size: 7vw;
@@ -846,11 +840,9 @@
 }
 
 .security__item {
-  font-weight: 300;
   padding: 0;
-  margin: 0;
-  font-size: 1.9vw;
-  color: white;
+  margin: 1.5vw 0;
+  font-size: 1.5vw;
 
   @include phones {
     font-size: 7vw;
@@ -893,8 +885,8 @@
 }
 
 .tariff__feature {
-  color: #fff;
-  font-size: 1.6vw;
+  color: black;
+  font-size: 1.5vw;
   padding: 0 4%;
 
   @include phones {
