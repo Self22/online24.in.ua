@@ -434,6 +434,13 @@ $('.tariff__button').on('click', function (e) {
     $('.popup__form-order').fadeIn(800);
 });
 
+$('.order__l').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
+});
+
+
 $('.overlay').on('click', function (e) {
     $('.overlay').fadeOut(800);
     $('.popup__form-order').fadeOut(800);
