@@ -6,7 +6,7 @@
 @import "animations.css";
 
 .lmain__menu {
-  padding: 1vw 3%;
+  padding: 1vw 1%;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
@@ -43,7 +43,7 @@
 
 .lnav__fixed {
   position: fixed;
-  background: #eff3f3;
+  background: white;
   z-index: 5;
 }
 
@@ -99,6 +99,7 @@
 
 .l__mainmenu-item {
   padding: 0 !important;
+  margin: 0 0.2vw;
 }
 
 .l__mainmenu-contacts {
@@ -107,7 +108,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
 
 }
 
@@ -160,7 +160,7 @@
 
 .lmain__menu-link {
   white-space: nowrap;
-  padding: 1.5vw 2vw;
+  padding: 1.3vw 2vw 1.5vw;
   font-size: 1.5vw;
   text-decoration: none !important;
   cursor: pointer;
@@ -223,46 +223,7 @@
   }
 }
 
-.analytics__content {
-  padding: 10px 0 0 0;
-  background: #eae4df;
 
-  & h2 {
-    color: #203048;
-    margin-bottom: 40px;
-    font-weight: 400;
-  }
-
-}
-
-.analytics__feature {
-  padding: 35px 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-
-  & p {
-    margin-bottom: 30px;
-  }
-
-  &-1 {
-    background: #EFFEFF;
-  }
-
-  &-2 {
-    background: #d5dce9;
-  }
-
-  &-3 {
-    background: #bff2d9;
-  }
-
-  &-4 {
-    background: #C7FCF2;
-  }
-}
 
 @keyframes growIn {
   0% {
@@ -288,7 +249,8 @@
 }
 
 .l__slider {
-  margin-top: 5vh;
+  padding: 1% 12%;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,7 +260,8 @@
   }
 
   h3 {
-    font-size: 3vw;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 2.5vw;
     color: black;
 
     @include tablets {
@@ -313,7 +276,9 @@
   }
 
   p {
-    font-size: 2vw;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 2.5vw;
+    margin-top: 0;
 
     @include tablets {
       font-size: 6vw;
@@ -325,56 +290,37 @@
   }
 
   h3, p {
-    color: rgb(240, 244, 242);
+    color: black;
   }
 
-  & .slide {
-    height: 280px;
-    width: 50vw;
 
-    @include desktop {
-      width: 45vw;
-    }
+}
 
-    @include tablets {
-      width: 100vw;
-    }
+.slide {
+  background: #f5f6f7;
+  border: none;
+  height: 200px;
+  width: 100%;
 
-    @include phones {
-      width: 96vw;
-    }
+  @include desktop {
+    width: 100%;
+  }
 
+  @include tablets {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 100%;
   }
 
 }
 
-.slide1 {
-  background: rgba(114, 141, 168, 0.5);
-
-}
-
-.slide2 {
-  background: rgba(52, 69, 89, 0.5);
-}
-
-.slide3 {
-  background: rgba(155, 190, 160, 0.5)
-}
-
-.slide4 {
-  background: rgba(120, 199, 242, 0.8);
-}
-
-.slide5 {
-  background: rgba(67, 95, 140, 0.8);
-}
 
 .l__testcont {
   height: 170px;
-  background: rgb(179, 214, 214);
+  background: #60C1C1;
   flex-direction: column;
-  border-top: 2px solid white;
-  border-bottom: 2px solid #fff;
 
   @include tablets {
     height: 100px;
@@ -540,7 +486,7 @@
   padding: 7px 3%;
   margin: 0;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 
   @include tablets {
     font-size: 3.2vw;
@@ -549,30 +495,29 @@
 }
 
 .l_features {
-  padding: 10px 0 10px;
-  background: rgb(1, 116, 117);
+  padding: 3% 12% 5%;
+  background: white;
 
   & h2, h3, div, p {
-    color: #d4d705;
+    color: black;
   }
 
 }
 
 .features__block {
-  border-top: 2px solid rgb(212, 215, 5);
-  border-bottom: 2px solid rgb(212, 215, 5);
+
   padding: 0 15px;
 }
 
 .l__feature-item {
-  outline: 1px solid rgb(212, 215, 5);
   padding: 25px 3%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   & p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -585,7 +530,7 @@
 }
 
 .l__feature-icon {
-  margin-right: 5%;
+  margin-bottom: 1vw;
 }
 
 .btn-1 {
@@ -604,8 +549,6 @@
   }
 
   &-secur {
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -620,7 +563,7 @@
   }
 
   &-mobile {
-    color: #d6ce8e;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -635,18 +578,19 @@
   }
 
   &-tariff {
-    color: rgb(58, 62, 16);
+    margin-bottom: 5vw;
   }
 
   &-test {
-    color: white;
+    color: black;
+    margin-bottom: 5vw;
   }
 
 }
 
 .target__group {
-  padding: 10px 2% 10px;
-  background: rgb(3, 54, 89);
+  padding: 3% 12%;
+  background: #60C1C1;
 
   & h2, p {
     color: white;
@@ -655,7 +599,7 @@
 }
 
 i {
-  color: rgb(254, 134, 1);
+  color: white;
 }
 
 .bx-wrapper {
@@ -666,7 +610,7 @@ i {
 }
 
 .target__descr {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   margin-bottom: 30px;
 
   @include tablets {
@@ -690,12 +634,11 @@ i {
 }
 
 .target__title {
-  color: rgb(185, 191, 74);
-  font-size: 2.4vw;
+  color: white;
+  font-size: 2vw;
   font-weight: 400;
   margin-top: 15px;
   text-align: center;
-  font-family: "Raleway", Arial, sans-serif;
   margin-bottom: 3vw;
 
   @include tablets {
@@ -721,13 +664,13 @@ i {
 }
 
 .security {
-  padding: 30px 4% 50px 4%;
-  background: rgb(168, 189, 2);
+  padding: 3% 12%;
+  background: white;
 }
 
 .security__descr {
   font-weight: 300;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
   color: white;
   text-align: center;
 
@@ -751,8 +694,8 @@ i {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  font-size: 1.9vw;
-  color: white;
+  font-size: 1.5vw;
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -787,8 +730,8 @@ i {
 }
 
 .urs__mobile {
-  padding: 5px 4% 25px 4%;
-  background: rgb(93, 117, 112);
+  padding: 3% 12%;
+  background: #60c1c1;
 
   @include tablets {
     padding-top: 20px;
@@ -811,7 +754,7 @@ i {
     font-weight: 400;
     padding: 0;
     margin: 0;
-    font-size: 1.9vw;
+    font-size: 1.5vw;
     text-align: center;
     margin-bottom: 2vw;
 
@@ -823,7 +766,7 @@ i {
   }
 
   & i {
-    color: rgb(214, 206, 142);
+    color: #fff;
     font-size: 5vw;
   }
 
@@ -836,8 +779,8 @@ i {
 }
 
 .l__tariffs {
-  padding: 30px 1% 50px 1%;
-  background: rgb(231, 237, 244);
+  padding: 3% 12%;
+  background: white;
 }
 
 .tariffs__list {
@@ -849,8 +792,8 @@ i {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -865,17 +808,22 @@ i {
 }
 
 .tariff__item {
-  width: 25%;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  min-height: 325px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px 10px;
-  background: rgb(0, 56, 88);
-  border-radius: 15px;
-  margin-top: 10px;
+  padding: 1.5vw;
+
+
   transition: all 0.5s;
+
+  &-1 {
+    background: #60c1c1;
+  }
+
+  &-2 {
+    background: #8CE0E0;
+  }
 
   @include tablets {
     width: 100%;
@@ -883,6 +831,10 @@ i {
 
   &:hover {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px;
+  }
+
+  @include phones {
+    margin-top: 10px;
   }
 
 }
@@ -896,10 +848,9 @@ i {
   align-items: center;
   padding: 1.6vw;
   text-align: center;
-  color: black;
-  font-weight: 400;
-  letter-spacing: 0px;
-  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.1vw;
   text-transform: uppercase;
 
   @include tablets {
@@ -907,34 +858,27 @@ i {
   }
 
   &-start {
-    background: rgb(214, 206, 142);
+    background: #8ce0e0;
   }
   &-prime {
-    background: #bdc161; /* Old browsers */
-    background: -moz-linear-gradient(top, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #bdc161 0%, #207cca 0%, #2989d8 0%, #8193a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdc161', endColorstr='#8193a8', GradientType=0); /* IE6-9 */
+    background: #60c1c1;
   }
   &-prem {
-    background: #8193a8; /* Old browsers */
-    background: -moz-linear-gradient(top, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #8193a8 0%, #d6ce8e 100%, #207cca 100%, #bdc161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8193a8', endColorstr='#bdc161', GradientType=0); /* IE6-9 */
+    background: #60c1c1;
   }
 
   &-ans {
-    background: #e7edf4;
+    background: #8ce0e0;
   }
 }
 
 .tariff__descr {
-  margin-top: 20px;
+
   margin-bottom: auto;
   color: white;
-  font-size: 1.6vw;
-  padding: 10px 4%;
+  font-size: 1.5vw;
+  padding: 1vw 3vw;
+  letter-spacing: 0.02vw;
 
   @include tablets {
     font-size: 5vw;
@@ -944,25 +888,25 @@ i {
 
 .tariff__button {
   text-transform: uppercase;
-  background: transparent;
-  border: 2px solid white;
-  border-radius: 7px;
-  padding: 15px;
-  font-size: 26px;
-  margin: 20px 20px;
+  background: #d91414;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.1vw;
+  padding: 1.5vw;
+  font-size: 2vw;
+  margin: 1vw 2vw;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .tariff__price {
-  font-size: 3vw;
-  color: #e7edf4;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 2.5vw;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.15vw;
   text-align: center;
-  padding: 12px 0;
+  padding: 1vw 0;
   border-top: 6px solid;
-  margin-top: 20px;
+  margin-top: 1vw;
 
   @include tablets {
     font-size: 7vw;
@@ -972,10 +916,10 @@ i {
     border-color: rgb(237, 241, 244);
   }
   &-prime {
-    border-color: rgb(254, 134, 1);
+    border-color: #60c1c1;
   }
   &-prem {
-    border-color: rgb(0, 102, 143);
+    border-color: #5A9191;
   }
 }
 
@@ -1009,13 +953,31 @@ i {
 }
 
 .testing {
-  background: rgb(0, 102, 143);
-  padding: 10px 10%;
+  background: white;
+  padding: 3% 12%;
+}
+
+.testing_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.test__img {
+  flex: 1;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .test__descr {
-  color: white;
-  font-size: 1.7vw;
+  flex: 1;
+  padding: 0 3vw 0 0;
+  color: black;
+  font-size: 1.5vw;
 
   @include tablets {
     font-size: 5vw;

@@ -6,12 +6,11 @@
 @import "animations.css";
 
 .lmain__menu {
-  padding: 0 12%;
+  padding: 1vw 12%;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
   animation-fill-mode: none;
-  height: 130px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -44,8 +43,7 @@
 
 .lnav__fixed {
   position: fixed;
-  background: #eff3f3;
-  height: 120px;
+  background: white;
   z-index: 5;
 }
 
