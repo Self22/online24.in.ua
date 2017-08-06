@@ -900,7 +900,8 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  padding-top: 150px; }
+  padding-top: 150px;
+  padding-bottom: 3vw; }
   @media screen and (max-width: 480px) {
     .oa__header-content {
       height: 100vh; } }
