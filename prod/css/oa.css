@@ -1498,7 +1498,8 @@ textarea {
   color: #023756; }
   @media screen and (max-width: 480px) {
     .channel__name {
-      font-size: 6vw; } }
+      font-size: 6vw;
+      margin-left: 5vw; } }
 
 .channel-acco__trigger-icon {
   -webkit-transition: all 0.5s;

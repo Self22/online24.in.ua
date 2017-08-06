@@ -79,6 +79,10 @@
   }
 }
 
+.container_btn a {
+  padding: 0;
+}
+
 .l__mainmenu-item {
   padding: 0 !important;
 }
@@ -200,55 +204,7 @@
 
 }
 
-.l__products {
-  background: #437BE0;
-  padding: 10px 5% 40px 5%;
 
-  & .article__title {
-    color: white;
-  }
-}
-
-.analytics__content {
-  padding: 10px 0 0 0;
-  background: #eae4df;
-
-  & h2 {
-    color: #203048;
-    margin-bottom: 40px;
-    font-weight: 400;
-  }
-
-}
-
-.analytics__feature {
-  padding: 35px 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-
-  & p {
-    margin-bottom: 30px;
-  }
-
-  &-1 {
-    background: #EFFEFF;
-  }
-
-  &-2 {
-    background: #d5dce9;
-  }
-
-  &-3 {
-    background: #bff2d9;
-  }
-
-  &-4 {
-    background: #C7FCF2;
-  }
-}
 
 @keyframes growIn {
   0% {
@@ -311,7 +267,7 @@
 
     @include phones {
       font-size: 7vw;
-    
+      line-height: 8vw;
     }
   }
 
@@ -365,7 +321,7 @@
   border: 1px solid white;
 
   @include phones {
-    padding: 26px 11px 10px;
+    padding: 26px 11px 10px !important;
     font-size: 14px;
   }
 
@@ -373,7 +329,7 @@
     height: 62px;
 
     @include phones {
-      height: 41px;
+      height: 56px;
     }
   }
 
@@ -397,6 +353,7 @@
   @include phones {
     margin-top: 0;
     margin-bottom: 2vh;
+
   }
 
   .partner__brand {
@@ -415,6 +372,15 @@
     & img{
       width: 30%;
     margin-left: 2vw;
+
+      @include phones {
+        width: 50%;
+      }
+    }
+
+    @include phones {
+      font-size: 8vw;
+      margin-bottom: 10vw;
     }
   
 
@@ -435,7 +401,8 @@
     @include phones {
       width: 100%;
       text-align: center;
-      font-size: 24px;
+      font-size: 6vw;
+      margin-bottom: 20vw;
     }
   }
 
@@ -481,6 +448,10 @@
   margin: 0;
   text-align: center;
   font-size: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .l_features {
@@ -599,6 +570,11 @@
   width: 12%;
   margin-left: 15%;
 
+  @include phones {
+    width: 40%;
+    margin-left: 0;
+  }
+
   & img {
     max-width: 100%;
     height: auto;
@@ -644,6 +620,10 @@
 .l__tariffs {
   padding: 3% 12%;
   background: white;
+
+  @include phones {
+    padding: 3% 8%;
+  }
 }
 
 .tariffs__list {
@@ -690,6 +670,7 @@
   @include tablets {
     width: 100%;
     margin: 10px .1vw;
+    padding: 6vw;
   }
 
   &:hover {
@@ -745,6 +726,7 @@
 
   @include phones {
     font-size: 6vw;
+    padding: 5vw;
   }
 }
 
@@ -793,7 +775,7 @@
   background: white;
 
   @include phones {
-    padding: 1px 5% 1vh 5%;
+    padding: 3% 8%;
   }
 
   & svg {
@@ -824,7 +806,7 @@
   color: black;
 
   @include phones {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 }
 
@@ -845,7 +827,7 @@
   font-size: 1.5vw;
 
   @include phones {
-    font-size: 7vw;
+    font-size: 6vw;
     margin-bottom: 4vh;
     font-weight: 400;
   }
@@ -861,6 +843,7 @@
   color: black;
   text-align: center;
   font-size: 1.5vw;
+  margin-bottom: 3vw;
 
   @include phones {
     font-size: 5vw;
@@ -868,6 +851,7 @@
 }
 
 .iptel__list {
+  flex: 1;
   padding: 1vw 5vw;
   margin: 0;
 }
@@ -901,6 +885,25 @@
   justify-content: center;
   align-items: center;
   background: #eaeff3;
+}
+
+.iptel__cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.iptel__img {
+  flex: 3;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    display: none;
+  }
 }
 
 /////////// bob
