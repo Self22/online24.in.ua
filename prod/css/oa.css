@@ -708,14 +708,13 @@ textarea {
   transform: scale(1.1); }
 
 .lmain__menu {
-  padding: 0 12%;
+  padding: 1vw 12%;
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
-  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,8 +744,7 @@ textarea {
 
 .lnav__fixed {
   position: fixed;
-  background: #eff3f3;
-  height: 120px;
+  background: white;
   z-index: 5; }
 
 .logosticky__o24 {

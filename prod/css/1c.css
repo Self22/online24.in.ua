@@ -996,7 +996,7 @@ textarea {
 .l__testbtn {
   background: #d91414 !important;
   color: white !important;
-  padding: 12px 50px;
+  padding: 12px 50px !important;
   font-size: 28px;
   font-weight: 400;
   border: 1px solid white; }
