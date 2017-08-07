@@ -259,6 +259,10 @@
     margin-top: 0;
   }
 
+  @include phones {
+    padding: 0;
+  }
+
   h3 {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 2.5vw;
@@ -271,7 +275,7 @@
 
     @include phones {
 
-      color: white;
+      font-size: 6vw;
     }
   }
 
@@ -285,7 +289,7 @@
     }
 
     @include phones {
-      color: white;
+      font-size: 6vw;
     }
   }
 
@@ -360,7 +364,7 @@
   border: 2px solid white;
 
   @include tablets {
-    padding: 26px 11px 10px;
+    padding: 19px 11px 16px;
     font-size: 14px;
   }
 
@@ -368,7 +372,7 @@
     height: 57px;
 
     @include tablets {
-      height: 41px;
+      height: 56px;
     }
   }
 
@@ -413,8 +417,10 @@
       height: auto;
       }
 
-      @include tablets {
+      @include phones {
         width: 60%;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
       }
 
     }
@@ -425,6 +431,7 @@
 
     @include phones {
       text-align: center;
+      flex-direction: column;
     }
   }
   .partner__slogan {
@@ -492,6 +499,10 @@
     font-size: 3.2vw;
   }
 
+  @include phones {
+    font-size: 5vw;
+  }
+
 }
 
 .l_features {
@@ -531,6 +542,12 @@
 
 .l__feature-icon {
   margin-bottom: 1vw;
+  width: 3vw;
+
+  @include phones {
+    margin-bottom: 5vw;
+    width: 15vw;
+  }
 }
 
 .btn-1 {
@@ -641,8 +658,8 @@ i {
   text-align: center;
   margin-bottom: 3vw;
 
-  @include tablets {
-    font-size: 3.8vw;
+  @include phones {
+    font-size: 6vw;
   }
 
 }
@@ -759,7 +776,7 @@ i {
     margin-bottom: 2vw;
 
     @include tablets {
-      font-size: 4.9vw;
+      font-size: 5vw;
       margin-bottom: 6vw;
     }
 
@@ -781,6 +798,10 @@ i {
 .l__tariffs {
   padding: 3% 12%;
   background: white;
+
+  @include phones {
+    padding: 3% 8%;
+  }
 }
 
 .tariffs__list {
@@ -834,7 +855,8 @@ i {
   }
 
   @include phones {
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 6vw;
   }
 
 }
@@ -854,7 +876,8 @@ i {
   text-transform: uppercase;
 
   @include tablets {
-    font-size: 6vw;
+    font-size: 7vw;
+    padding: 6vw;
   }
 
   &-start {
@@ -882,6 +905,7 @@ i {
 
   @include tablets {
     font-size: 5vw;
+    padding: 5vw 3vw;
   }
 
 }
@@ -896,6 +920,10 @@ i {
   font-size: 2vw;
   margin: 1vw 2vw;
   color: white;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 .tariff__price {
@@ -910,6 +938,9 @@ i {
 
   @include tablets {
     font-size: 7vw;
+    font-weight: 700;
+    padding: 5vw 0;
+
   }
 
   &-start {
@@ -955,6 +986,10 @@ i {
 .testing {
   background: white;
   padding: 3% 12%;
+
+  @include phones {
+    padding: 3% 12% 12%;
+  }
 }
 
 .testing_cont {
@@ -962,6 +997,10 @@ i {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .test__img {

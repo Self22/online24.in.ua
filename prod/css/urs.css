@@ -960,6 +960,9 @@ textarea {
   @media screen and (max-width: 768px) {
     .l__slider {
       margin-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .l__slider {
+      padding: 0; } }
   .l__slider h3 {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 2.5vw;
@@ -970,7 +973,7 @@ textarea {
         padding: 0 5%; } }
     @media screen and (max-width: 480px) {
       .l__slider h3 {
-        color: white; } }
+        font-size: 6vw; } }
   .l__slider p {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 2.5vw;
@@ -980,7 +983,7 @@ textarea {
         font-size: 6vw; } }
     @media screen and (max-width: 480px) {
       .l__slider p {
-        color: white; } }
+        font-size: 6vw; } }
   .l__slider h3, .l__slider p {
     color: black; }
 
@@ -1035,13 +1038,13 @@ textarea {
   border: 2px solid white; }
   @media screen and (max-width: 768px) {
     .l__testbtn {
-      padding: 26px 11px 10px;
+      padding: 19px 11px 16px;
       font-size: 14px; } }
   .l__testbtn svg {
     height: 57px; }
     @media screen and (max-width: 768px) {
       .l__testbtn svg {
-        height: 41px; } }
+        height: 56px; } }
   .l__testbtn rect {
     stroke: #9a9abe; }
 
@@ -1091,15 +1094,21 @@ textarea {
       .urs__slogan .partner__brand .partner__img img {
         width: 100%;
         height: auto; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 480px) {
         .urs__slogan .partner__brand .partner__img {
-          width: 60%; } }
+          width: 60%;
+          margin-top: 10vw;
+          margin-bottom: 10vw; } }
     @media screen and (max-width: 768px) {
       .urs__slogan .partner__brand {
         font-size: 8.5vw; } }
     @media screen and (max-width: 480px) {
       .urs__slogan .partner__brand {
-        text-align: center; } }
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .urs__slogan .partner__slogan {
     text-align: center;
     font-size: 3vw;
@@ -1148,6 +1157,9 @@ textarea {
   @media screen and (max-width: 768px) {
     .feature__descr {
       font-size: 3.2vw; } }
+  @media screen and (max-width: 480px) {
+    .feature__descr {
+      font-size: 5vw; } }
 
 .l_features {
   padding: 3% 12% 5%;
@@ -1183,7 +1195,12 @@ textarea {
         font-size: 5vw; } }
 
 .l__feature-icon {
-  margin-bottom: 1vw; }
+  margin-bottom: 1vw;
+  width: 3vw; }
+  @media screen and (max-width: 480px) {
+    .l__feature-icon {
+      margin-bottom: 5vw;
+      width: 15vw; } }
 
 .btn-1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
@@ -1288,9 +1305,9 @@ i {
   margin-top: 15px;
   text-align: center;
   margin-bottom: 3vw; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .target__title {
-      font-size: 3.8vw; } }
+      font-size: 6vw; } }
 
 .target__icon {
   margin-top: auto;
@@ -1402,7 +1419,7 @@ i {
     margin-bottom: 2vw; }
     @media screen and (max-width: 768px) {
       .urs__mobile-item p {
-        font-size: 4.9vw;
+        font-size: 5vw;
         margin-bottom: 6vw; } }
   .urs__mobile-item i {
     color: #fff;
@@ -1415,6 +1432,9 @@ i {
 .l__tariffs {
   padding: 3% 12%;
   background: white; }
+  @media screen and (max-width: 480px) {
+    .l__tariffs {
+      padding: 3% 8%; } }
 
 .tariffs__list {
   padding: 0;
@@ -1466,7 +1486,8 @@ i {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px; }
   @media screen and (max-width: 480px) {
     .tariff__item {
-      margin-top: 10px; } }
+      margin-top: 20px;
+      padding: 6vw; } }
 
 .tariff__title {
   font-size: 2vw;
@@ -1489,7 +1510,8 @@ i {
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .tariff__title {
-      font-size: 6vw; } }
+      font-size: 7vw;
+      padding: 6vw; } }
   .tariff__title-start {
     background: #8ce0e0; }
   .tariff__title-prime {
@@ -1507,7 +1529,8 @@ i {
   letter-spacing: 0.02vw; }
   @media screen and (max-width: 768px) {
     .tariff__descr {
-      font-size: 5vw; } }
+      font-size: 5vw;
+      padding: 5vw 3vw; } }
 
 .tariff__button {
   text-transform: uppercase;
@@ -1519,6 +1542,9 @@ i {
   font-size: 2vw;
   margin: 1vw 2vw;
   color: white; }
+  @media screen and (max-width: 480px) {
+    .tariff__button {
+      font-size: 6vw; } }
 
 .tariff__price {
   font-size: 2.5vw;
@@ -1531,7 +1557,9 @@ i {
   margin-top: 1vw; }
   @media screen and (max-width: 768px) {
     .tariff__price {
-      font-size: 7vw; } }
+      font-size: 7vw;
+      font-weight: 700;
+      padding: 5vw 0; } }
   .tariff__price-start {
     border-color: #edf1f4; }
   .tariff__price-prime {
@@ -1565,6 +1593,9 @@ i {
 .testing {
   background: white;
   padding: 3% 12%; }
+  @media screen and (max-width: 480px) {
+    .testing {
+      padding: 3% 12% 12%; } }
 
 .testing_cont {
   display: -webkit-box;
@@ -1580,6 +1611,12 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 480px) {
+    .testing_cont {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .test__img {
   -webkit-box-flex: 1;
