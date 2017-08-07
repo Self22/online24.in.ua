@@ -6,12 +6,11 @@
 @import "animations.css";
 
 .lmain__menu {
-  padding-left: 3%;
+  padding: 1vw 3%;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in;
   animation-fill-mode: none;
-  height: 130px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -46,17 +45,16 @@
   position: fixed;
   background: linear-gradient(135deg, rgb(248, 251, 252) 0%, rgb(242, 248, 253) 41%, rgb(148, 169, 188) 65%, rgb(224, 233, 240) 65%, rgb(148, 169, 188) 65%);
 
-  height: 100px;
   z-index: 5;
 }
 
 .logosticky__o24 {
-  margin-right: 10%;
-  margin-left: 2%;
+  margin-right: 3%;
 }
 
 .partnerlogosticky {
   max-width: 165px;
+  min-width: 120px;
 
   @include desktop {
     max-width: 120px;
@@ -79,7 +77,7 @@
   width: 85px;
 
   & img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -89,12 +87,10 @@
 }
 
 .l__mainmenu-contacts {
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
 
 }
 
@@ -102,34 +98,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  font-size: 1.7vw;
+  color: #fff;
+  font-size: 1.5vw;
   font-weight: 400 !important;
   letter-spacing: 1px;
   white-space: nowrap;
 
   &:hover {
     color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);;
 
   }
 }
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: linear-gradient(135deg, rgba(244, 237, 217, 0.1) 0%, rgba(186, 221, 255, 0.3) 41%, rgba(76, 111, 144, 0.6) 65%, rgba(76, 111, 144, 0.5) 65%, rgba(76, 111, 144, 0.6) 65%);
+  background: #94a9bc;
 
   margin-left: 15px;
   display: block;
-  padding: 5px 20px;
+  padding: 1vw 2vw;
   text-align: center;
-  border: 1px solid rgb(148, 169, 188);
-  font-size: 1.4vw;
+  border: 1px solid #dae4ed;
+  font-size: 1.5vw;
 
   & span {
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 500;
   }
 }
@@ -151,11 +144,10 @@
 
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   text-decoration: none !important;
   cursor: pointer;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-right: 5px;
 
   &:hover {
@@ -205,7 +197,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   padding-top: 150px;
 
   @include phones {
@@ -311,7 +303,7 @@
   }
 
   p {
-    font-size: 2vw;
+    font-size: 3vw;
 
     @include phones {
       font-size: 7vw;
@@ -327,6 +319,8 @@
   & .slide {
     height: 280px;
     width: 50vw;
+    background: transparent !important;
+    border: 1px solid white;
 
     @include desktop {
       width: 45vw;
@@ -337,7 +331,7 @@
     }
 
     @include phones {
-      width: 95vw;
+      width: 100%;
       padding: 0 3vw;
     }
 
@@ -345,26 +339,6 @@
 
 }
 
-.slide1 {
-  background: #8DDDF4;
-
-}
-
-.slide2 {
-  background: #6B8BAA;
-}
-
-.slide3 {
-  background: rgba(155, 190, 160, 0.5)
-}
-
-.slide4 {
-  background: rgba(120, 199, 242, 0.8);
-}
-
-.slide5 {
-  background: rgba(67, 95, 140, 0.8);
-}
 
 .l__testcont {
   height: 170px;
@@ -478,6 +452,8 @@
     color: #023756;
     font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
+    line-height: 4vw;
+    letter-spacing: 0.03vw;
 
     @include desktop {
       margin-top: 20px;
@@ -487,6 +463,7 @@
       width: 100%;
       text-align: center;
       font-size: 24px;
+      line-height: 10vw;
     }
   }
 
@@ -534,22 +511,17 @@
 }
 
 .l_features {
-  padding: 50px 0 50px;
-  background: #7BA0C3;
+  padding: 3% 12%;
+  background: #94a9bc;
   & h2, h3, div, p {
     color: rgb(237, 241, 244);
   }
 
 }
 
-.features__block {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 0 15px;
-}
+
 
 .l__feature-item {
-  outline: 1px solid white;
   padding: 2vw 2% 3vw;
   display: flex;
   justify-content: center;
@@ -567,7 +539,7 @@
   }
 
   & p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     text-align: center;
     font-weight: 400;
     padding: 0;
@@ -582,14 +554,14 @@
 
 .smartdoc__screen {
   width: 90%;
-  margin-top: 20px;
+  margin-top: 4vw;
 }
 
 .l__feature-icon {
   margin-right: 5%;
 
   & i {
-    color: #E1D3C6;
+    color: white;
   }
 
   & svg {
@@ -603,7 +575,7 @@
   }
 
   & path {
-    fill: #E1D3C6;
+    fill: #fff;
   }
 }
 
@@ -648,8 +620,12 @@
 }
 
 .l__tariffs {
-  padding: 10px 4% 50px 4%;
-  background: rgb(248, 245, 241);
+  padding: 3% 12%;
+  background: white;
+
+  @include phones {
+    padding: 3% 6%;
+  }
 }
 
 .tariffs__list {
@@ -674,16 +650,13 @@
 
 .tariff__item {
   flex: 1 1 190px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
   min-height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 20px 10px;
   padding: 20px 20px 10px;
-  background: rgb(149, 187, 223);
-  border-radius: 15px;
-  margin-top: 10px;
+  background: #94a9bc;
   transition: all 0.5s;
 
   &:hover {
@@ -693,8 +666,8 @@
 }
 
 .tariff__title {
-  font-size: 2.5vw;
-  font-family: "Raleway", Arial, sans-serif;
+  font-size: 2vw;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   letter-spacing: 1px;
   display: flex;
   flex-direction: column;
@@ -702,11 +675,8 @@
   align-items: center;
   padding: 1.6vw;
   text-align: center;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(186, 221, 255, 1) 0%, rgba(186, 221, 255, 0.98) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(186, 221, 255, 1) 0%, rgba(186, 221, 255, 0.98) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(186, 221, 255, 1) 0%, rgba(186, 221, 255, 0.98) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#baddff', endColorstr='#fabaddff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-  color: #024677;
+  background: white;
+  color: black;
   font-weight: 400;
   letter-spacing: 0px;
   border-radius: 10px;
@@ -718,12 +688,12 @@
 }
 
 .tariff__month {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #1D1B77;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: black;
   font-weight: 500;
-  font-size: 2.8vw;
+  font-size: 2vw;
   margin-top: 1vh;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
 
   @include phones {
     font-size: 8vw;
@@ -735,7 +705,7 @@
   margin-top: 20px;
   margin-bottom: auto;
   color: white;
-  font-size: 2.4vw;
+  font-size: 1.5vw;
   padding: 10px 4%;
   font-weight: 300;
 
@@ -747,24 +717,37 @@
 .tariff__button {
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid #0486a6;
+  border: 2px solid white;
   border-radius: 7px;
-  padding: 15px;
-  font-size: 26px;
+  padding: 1vw 2vw;
+  font-size: 2vw;
   margin: 20px 20px;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  @include phones {
+    font-size: 7vw;
+  }
+
 }
 
 .tariff__price {
-  font-size: 3.5vw;
-  color: #1d1b77;
+  font-size: 2vw;
+  color: white;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   padding: 12px 0;
   border-top: 6px solid;
   margin-top: 20px;
+
+  &-2 {
+    border-color: #C4D1DE;
+  }
+
+  &-3 {
+    border-color: black;
+  }
+
 
   @include phones {
     font-size: 8.7vw;
@@ -781,12 +764,16 @@
 }
 
 .video {
-  padding: 10px 4% 50px 4%;
+  padding: 3% 12%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(221, 212, 197);
+  background: white;
+
+  @include phones {
+    padding: 3% 6% 13%;
+  }
 }
 
 .video__iframe {
