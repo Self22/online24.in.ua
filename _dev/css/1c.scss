@@ -232,7 +232,7 @@
 
 .slide {
   border: none;
-    height: 200px;
+  height: 250px;
     width: 100%;
     background: #ffffff !important;
 
@@ -264,6 +264,7 @@
   & p {
     margin-top: 0;
     font-size: 2.5vw;
+    line-height: 4vw;
 
     @include phones {
       font-size: 7vw;
@@ -533,7 +534,7 @@
 
 .process__item {
   padding: 0;
-  margin: 4vw 0 35px 0;
+  margin: 0 0 35px 0;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -652,7 +653,8 @@
 }
 
 .tariff__item {
-  width: 50%;
+  width: 48%;
+  margin: 1%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -690,7 +692,7 @@
   text-align: center;
   background: #344559;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2vw;
   border-radius: 6px;
   text-transform: uppercase;
@@ -723,6 +725,7 @@
   margin: 1vw;
   color: white;
   letter-spacing: 0.1vw;
+  font-weight: 100;
 
   @include phones {
     font-size: 6vw;

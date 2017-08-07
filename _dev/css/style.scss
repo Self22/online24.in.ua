@@ -1168,6 +1168,13 @@ html, body {
   fill: #fff;
 }
 
+.logomain {
+
+  & svg {
+    width: 7vw;
+  }
+}
+
 a.animated-button.gibson-four:after {
   opacity: 0;
   background-image: -webkit-linear-gradient(transparent 50%, #c0c4c1 50%) !important;

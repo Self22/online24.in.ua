@@ -581,6 +581,13 @@ html, body {
   }
 }
 
+.logomain {
+
+  & svg {
+    width: 7vw;
+  }
+}
+
 .periodicals__logo {
   width: 13%;
   position: absolute;

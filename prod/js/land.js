@@ -380,12 +380,12 @@ $('#nav-main').singlePageNav(
 $(document).ready(function () {
     $('.target__list').bxSlider({
 
-        minSlides: 4,
+        minSlides: 2,
         maxSlides: 8,
         slideWidth: 370,
         slideMargin: 10,
         ticker: true,
-        speed: 48000
+        speed: 58000
 
 
     });

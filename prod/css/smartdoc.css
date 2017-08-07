@@ -708,14 +708,13 @@ textarea {
   transform: scale(1.1); }
 
 .lmain__menu {
-  padding-left: 3%;
+  padding: 1vw 3%;
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
-  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,15 +746,14 @@ textarea {
   position: fixed;
   background: -webkit-linear-gradient(315deg, #f8fbfc 0%, #f2f8fd 41%, #94a9bc 65%, #e0e9f0 65%, #94a9bc 65%);
   background: linear-gradient(135deg, #f8fbfc 0%, #f2f8fd 41%, #94a9bc 65%, #e0e9f0 65%, #94a9bc 65%);
-  height: 100px;
   z-index: 5; }
 
 .logosticky__o24 {
-  margin-right: 10%;
-  margin-left: 2%; }
+  margin-right: 3%; }
 
 .partnerlogosticky {
-  max-width: 165px; }
+  max-width: 165px;
+  min-width: 120px; }
   @media screen and (max-width: 1200px) {
     .partnerlogosticky {
       max-width: 120px; } }
@@ -772,14 +770,13 @@ textarea {
   top: 30px;
   width: 85px; }
   .partnerlogosticky-mob img {
-    max-width: 100%;
+    width: 100%;
     height: auto; }
 
 .l__mainmenu-item {
   padding: 0 !important; }
 
 .l__mainmenu-contacts {
-  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,8 +789,7 @@ textarea {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-right: 30px; }
+          align-items: center; }
 
 .l__mainmenu-tel {
   display: -webkit-box;
@@ -805,30 +801,26 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  font-size: 1.7vw;
+  color: #fff;
+  font-size: 1.5vw;
   font-weight: 400 !important;
   letter-spacing: 1px;
   white-space: nowrap; }
   .l__mainmenu-tel:hover {
-    color: #023756;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+    color: #023756; }
 
 .lmain__menu-excellence {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background: -webkit-linear-gradient(315deg, rgba(244, 237, 217, 0.1) 0%, rgba(186, 221, 255, 0.3) 41%, rgba(76, 111, 144, 0.6) 65%, rgba(76, 111, 144, 0.5) 65%, rgba(76, 111, 144, 0.6) 65%);
-  background: linear-gradient(135deg, rgba(244, 237, 217, 0.1) 0%, rgba(186, 221, 255, 0.3) 41%, rgba(76, 111, 144, 0.6) 65%, rgba(76, 111, 144, 0.5) 65%, rgba(76, 111, 144, 0.6) 65%);
+  background: #94a9bc;
   margin-left: 15px;
   display: block;
-  padding: 5px 20px;
+  padding: 1vw 2vw;
   text-align: center;
-  border: 1px solid #94a9bc;
-  font-size: 1.4vw; }
+  border: 1px solid #dae4ed;
+  font-size: 1.5vw; }
   .lmain__menu-excellence span {
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: 500; }
 
 .nav-scroll ul, .nav-scroll li {
@@ -850,11 +842,10 @@ textarea {
 
 .lmain__menu-link {
   padding: 15px 17px;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   text-decoration: none !important;
   cursor: pointer;
   color: #023756;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-right: 5px; }
   .lmain__menu-link:hover {
     outline: 1px solid #023756;
@@ -899,7 +890,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 100vh;
   padding-top: 150px; }
   @media screen and (max-width: 480px) {
     .sd__header-content {
@@ -1002,7 +993,7 @@ textarea {
         font-size: 7vw;
         color: white; } }
   .l__slider p {
-    font-size: 2vw; }
+    font-size: 3vw; }
     @media screen and (max-width: 480px) {
       .l__slider p {
         font-size: 7vw;
@@ -1011,7 +1002,9 @@ textarea {
     color: white; }
   .l__slider .slide {
     height: 280px;
-    width: 50vw; }
+    width: 50vw;
+    background: transparent !important;
+    border: 1px solid white; }
     @media screen and (max-width: 1200px) {
       .l__slider .slide {
         width: 45vw; } }
@@ -1020,23 +1013,8 @@ textarea {
         width: 94vw; } }
     @media screen and (max-width: 480px) {
       .l__slider .slide {
-        width: 95vw;
+        width: 100%;
         padding: 0 3vw; } }
-
-.slide1 {
-  background: #8DDDF4; }
-
-.slide2 {
-  background: #6B8BAA; }
-
-.slide3 {
-  background: rgba(155, 190, 160, 0.5); }
-
-.slide4 {
-  background: rgba(120, 199, 242, 0.8); }
-
-.slide5 {
-  background: rgba(67, 95, 140, 0.8); }
 
 .l__testcont {
   height: 170px;
@@ -1146,7 +1124,9 @@ textarea {
     margin-top: 40px;
     color: #023756;
     font-weight: 400;
-    font-family: "Raleway", Arial, sans-serif; }
+    font-family: "Raleway", Arial, sans-serif;
+    line-height: 4vw;
+    letter-spacing: 0.03vw; }
     @media screen and (max-width: 1200px) {
       .sd__slogan .partner__slogan {
         margin-top: 20px; } }
@@ -1154,7 +1134,8 @@ textarea {
       .sd__slogan .partner__slogan {
         width: 100%;
         text-align: center;
-        font-size: 24px; } }
+        font-size: 24px;
+        line-height: 10vw; } }
   .sd__slogan p {
     font-size: 22px;
     font-weight: 300;
@@ -1188,18 +1169,12 @@ textarea {
   text-align: center; }
 
 .l_features {
-  padding: 50px 0 50px;
-  background: #7BA0C3; }
+  padding: 3% 12%;
+  background: #94a9bc; }
   .l_features h2, .l_features h3, .l_features div, .l_features p {
     color: #edf1f4; }
 
-.features__block {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 0 15px; }
-
 .l__feature-item {
-  outline: 1px solid white;
   padding: 2vw 2% 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1224,7 +1199,7 @@ textarea {
       width: 100%;
       height: auto; }
   .l__feature-item p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     text-align: center;
     font-weight: 400;
     padding: 0;
@@ -1236,12 +1211,12 @@ textarea {
 
 .smartdoc__screen {
   width: 90%;
-  margin-top: 20px; }
+  margin-top: 4vw; }
 
 .l__feature-icon {
   margin-right: 5%; }
   .l__feature-icon i {
-    color: #E1D3C6; }
+    color: white; }
   .l__feature-icon svg {
     width: 4vw;
     height: 4vw; }
@@ -1250,7 +1225,7 @@ textarea {
         width: 15vw;
         height: 15vw; } }
   .l__feature-icon path {
-    fill: #E1D3C6; }
+    fill: #fff; }
 
 .article__title {
   font-weight: 300;
@@ -1282,8 +1257,11 @@ textarea {
       padding: 10px 20px; } }
 
 .l__tariffs {
-  padding: 10px 4% 50px 4%;
-  background: #f8f5f1; }
+  padding: 3% 12%;
+  background: white; }
+  @media screen and (max-width: 480px) {
+    .l__tariffs {
+      padding: 3% 6%; } }
 
 .tariffs__list {
   margin: 0;
@@ -1307,7 +1285,6 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 190px;
           flex: 1 1 190px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
   min-height: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1319,19 +1296,17 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 10px;
+  margin: 20px 10px;
   padding: 20px 20px 10px;
-  background: #95bbdf;
-  border-radius: 15px;
-  margin-top: 10px;
+  background: #94a9bc;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   .tariff__item:hover {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px; }
 
 .tariff__title {
-  font-size: 2.5vw;
-  font-family: "Raleway", Arial, sans-serif;
+  font-size: 2vw;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1348,15 +1323,8 @@ textarea {
           align-items: center;
   padding: 1.6vw;
   text-align: center;
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #baddff 0%, rgba(186, 221, 255, 0.98) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-radial-gradient(center ellipse, #baddff 0%, rgba(186, 221, 255, 0.98) 100%);
-  background: radial-gradient(ellipse at center, #baddff 0%, rgba(186, 221, 255, 0.98) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#baddff', endColorstr='#fabaddff', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  color: #024677;
+  background: white;
+  color: black;
   font-weight: 400;
   letter-spacing: 0px;
   border-radius: 10px;
@@ -1366,12 +1334,11 @@ textarea {
       font-size: 7.5vw; } }
 
 .tariff__month {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #1D1B77;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: black;
   font-weight: 500;
-  font-size: 2.8vw;
-  margin-top: 1vh;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  font-size: 2vw;
+  margin-top: 1vh; }
   @media screen and (max-width: 480px) {
     .tariff__month {
       font-size: 8vw; } }
@@ -1381,7 +1348,7 @@ textarea {
   margin-top: 20px;
   margin-bottom: auto;
   color: white;
-  font-size: 2.4vw;
+  font-size: 1.5vw;
   padding: 10px 4%;
   font-weight: 300; }
   @media screen and (max-width: 480px) {
@@ -1391,23 +1358,29 @@ textarea {
 .tariff__button {
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid #0486a6;
+  border: 2px solid white;
   border-radius: 7px;
-  padding: 15px;
-  font-size: 26px;
+  padding: 1vw 2vw;
+  font-size: 2vw;
   margin: 20px 20px;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  color: white; }
+  @media screen and (max-width: 480px) {
+    .tariff__button {
+      font-size: 7vw; } }
 
 .tariff__price {
-  font-size: 3.5vw;
-  color: #1d1b77;
+  font-size: 2vw;
+  color: white;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   padding: 12px 0;
   border-top: 6px solid;
   margin-top: 20px; }
+  .tariff__price-2 {
+    border-color: #C4D1DE; }
+  .tariff__price-3 {
+    border-color: black; }
   @media screen and (max-width: 480px) {
     .tariff__price {
       font-size: 8.7vw; } }
@@ -1419,7 +1392,7 @@ textarea {
   font-weight: 400 !important; }
 
 .video {
-  padding: 10px 4% 50px 4%;
+  padding: 3% 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1433,7 +1406,10 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ddd4c5; }
+  background: white; }
+  @media screen and (max-width: 480px) {
+    .video {
+      padding: 3% 6% 13%; } }
 
 .video__iframe {
   width: 80%;

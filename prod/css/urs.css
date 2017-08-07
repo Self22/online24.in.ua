@@ -990,7 +990,7 @@ textarea {
 .slide {
   background: #f5f6f7;
   border: none;
-  height: 200px;
+  height: 250px;
   width: 100%; }
   @media screen and (max-width: 1200px) {
     .slide {
@@ -1461,7 +1461,8 @@ i {
               flex-flow: row wrap; } }
 
 .tariff__item {
-  width: 50%;
+  width: 48%;
+  margin: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1636,61 +1637,5 @@ i {
   @media screen and (max-width: 768px) {
     .test__descr {
       font-size: 5vw; } }
-
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px); }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); } }
-
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px); }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); } }
-
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); } }
-
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px); } }
-
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent; }
-
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate; }
 
 /*# sourceMappingURL=urs.css.map */
