@@ -365,12 +365,20 @@
     height: 63px;
 
     @include phones {
-      height: 41px;
+      height: 54px;
     }
   }
 
   & rect {
     stroke: #9a9abe;
+  }
+}
+
+.container_btn a {
+
+  @include phones {
+
+    padding: 26px 11px 10px !important;
   }
 }
 
@@ -388,7 +396,7 @@
 
   @include phones {
     margin-top: 0;
-    margin-bottom: 50vh;
+    margin-bottom: 50px;
   }
 
   .partner__brand {
@@ -1032,7 +1040,7 @@
   padding: 4vw 12vw 2vw;
 
   @include phones {
-    padding: 5vw;
+    padding: 10vw 5vw;
   }
 }
 
@@ -1072,6 +1080,7 @@
     font-size: 2.1vw;
 
     @include phones {
+      margin-top: 10vw;
       font-size: 6vw;
     }
   }

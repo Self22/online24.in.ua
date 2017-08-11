@@ -1123,7 +1123,7 @@ textarea {
   font-size: 2vw;
   font-weight: 500;
   text-align: right;
-  letter-spacing: 1px;
+  letter-spacing: 0.07vw;
   border-radius: 0 0px 5px 0; }
   @media screen and (max-width: 768px) {
     .nav__sidebar-title {
@@ -1133,7 +1133,7 @@ textarea {
   text-decoration: none !important;
   font-size: 1.6vw;
   font-weight: 400;
-  letter-spacing: 0.15vw;
+  letter-spacing: 0.1vw;
   color: black;
   margin-bottom: 7px;
   margin-top: 7px;
