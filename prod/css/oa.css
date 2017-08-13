@@ -1038,9 +1038,13 @@ textarea {
     height: 63px; }
     @media screen and (max-width: 480px) {
       .l__testbtn svg {
-        height: 41px; } }
+        height: 54px; } }
   .l__testbtn rect {
     stroke: #9a9abe; }
+
+@media screen and (max-width: 480px) {
+  .container_btn a {
+    padding: 26px 11px 10px !important; } }
 
 .oa__slogan {
   display: -webkit-box;
@@ -1064,7 +1068,7 @@ textarea {
   @media screen and (max-width: 480px) {
     .oa__slogan {
       margin-top: 0;
-      margin-bottom: 50vh; } }
+      margin-bottom: 50px; } }
   .oa__slogan .partner__brand {
     font-size: 4vw;
     color: #272016;
@@ -1601,7 +1605,7 @@ textarea {
   padding: 4vw 12vw 2vw; }
   @media screen and (max-width: 480px) {
     .aboutus {
-      padding: 5vw; } }
+      padding: 10vw 5vw; } }
 
 .concurent__item {
   font-size: 2vw;
@@ -1631,6 +1635,7 @@ textarea {
     font-size: 2.1vw; }
     @media screen and (max-width: 480px) {
       .aboutus__descr p {
+        margin-top: 10vw;
         font-size: 6vw; } }
   .aboutus__descr li {
     font-size: 2vw;

@@ -921,7 +921,8 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  padding-bottom: 55px; }
+  padding-bottom: 55px;
+  padding-top: 13vh; }
   @media screen and (max-width: 480px) {
     .liga__header-content {
       height: 100vh; } }

@@ -19,6 +19,7 @@ $('.oa__header-content').parallax({imageSrc: '../img/oa-header.jpg'});
 $('.oa__fotoblock').parallax({imageSrc: '../img/telephons_bg-2.jpg'});
 $('.report__header-content').parallax({imageSrc: '../img/report-main.jpg'});
 $('.report__fotoblock').parallax({imageSrc: '../img/report_fotoblock.jpg'});
+$('.office__header-content').parallax({imageSrc: '../img/office__header.jpg'});
 
 
 
