@@ -279,29 +279,84 @@
 
 .about {
 
-  padding: 5% 12%;
+  padding: 8% 12% 0;
 
 }
 
 .about__icon {
+  text-align: center;
+  margin-bottom: 2vw;
 
   & img {
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 9vw;
   }
 
   & svg {
-    width: 10vw;
+    width: 8vw;
+    fill: #00a5f0;
   }
 
 }
 
-.about__title {
+.about__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5vw;
+  padding: 0 3vw;
+}
 
+.about__title {
+  padding: 0 10%;
 }
 
 .about__content {
+  font-size: 1.5vw;
+}
 
+.components {
+  padding: 2% 12%;
+}
+
+.article__title {
+
+}
+
+.components__descr {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 3vw 0;
+}
+
+.component__cont {
+  margin: 2vw 0;
+
+}
+
+.component__item {
+  margin-bottom: 2vw;
+}
+
+.component__icon {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & svg {
+    width: 6vw;
+  }
+
+}
+
+.component__descr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5vw;
+  padding: 2vw;
 }
 
 .oa__slider {
@@ -373,12 +428,14 @@
 
 .l__testbtn {
 
-  background: #ffba00 !important;
-  color: black !important;
+  background: #00a5f0 !important;
+  color: white !important;
   padding: 12px 50px;
   font-size: 28px;
   font-weight: 400;
-  border: 1px solid white;
+  border: 1px solid #00a5f0;
+  text-decoration: none;
+  letter-spacing: 1px;
 
   @include phones {
     padding: 26px 11px 10px;
