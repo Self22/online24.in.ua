@@ -321,7 +321,7 @@
 }
 
 .article__title {
-
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 .components__descr {
@@ -356,7 +356,96 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 1.5vw;
-  padding: 2vw;
+  padding: 1vw;
+}
+
+.tariffs {
+  padding: 5% 10%;
+}
+
+.tariff__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tariff__cont {
+  background: rgb(229, 246, 254);
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1%;
+  padding: 3% 3%;
+
+}
+
+.price__cont {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1vw;
+
+}
+
+.tariff__title {
+  text-align: center;
+  line-height: 3vw;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  letter-spacing: 0.1vw;
+  font-weight: 600;
+
+}
+
+.tariff__descr {
+  font-size: 1.1vw;
+
+}
+
+.tariff__item {
+  font-size: 1.1vw;
+  margin-right: auto;
+  margin-top: 0.5vw;
+}
+
+.tariff__price {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.tariff__price-num {
+  margin: 0.5vw 0;
+  font-size: 2.2vw;
+  color: #eb3c00;
+}
+
+.dollar__icon {
+  font-size: 2.2vw;;
+}
+
+.cents {
+  font-size: 1.5vw;
+}
+
+.tariff__button {
+  padding: 1vw 1.5vw;
+  background: #00a5f0;
+  color: white;
+  font-size: 1.3vw;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .oa__slider {
@@ -435,7 +524,6 @@
   font-weight: 400;
   border: 1px solid #00a5f0;
   text-decoration: none;
-  letter-spacing: 1px;
 
   @include phones {
     padding: 26px 11px 10px;
@@ -733,176 +821,11 @@
   text-transform: uppercase;
 }
 
-.func__item {
-  padding: 4vw 5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.func__title {
-  font-size: 2vw;
-  margin-bottom: 1.7vw;
-  align-self: flex-start;
 
-  @include phones {
-    font-size: 6vw;
-    align-self: center;
-  }
-}
 
-.func__descr {
-  font-size: 1.5vw;
-  font-weight: 300;
-  letter-spacing: 0.02vw;
 
-  @include phones {
-    font-size: 6vw;
-  }
-}
 
-.func__item-1 {
-  background: #eff3f3;
-}
-
-.func__item-2 {
-  background: rgb(250, 251, 230);
-}
-
-.func__item-3 {
-  background: rgb(250, 251, 230);
-
-}
-
-.func__item-4 {
-  background: #eff3f3;
-}
-
-.func__item-5 {
-  background: #eff3f3;
-
-}
-
-.func__item-6 {
-  background: rgb(250, 251, 230);
-}
-
-.l__tariffs {
-  padding: 4vw 12vw 2vw;
-  background: white;
-  @include phones {
-    padding: 5vw;
-  }
-}
-
-.tariff__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4vw 1.5vw;
-
-  @include phones {
-    margin-bottom: 10px;
-  }
-
-}
-
-.tariff__item-1 {
-  background: #F4F5F3;
-}
-
-.tariff__item-2 {
-  background: #fafbe6;
-}
-
-.tariff__item-3 {
-  background: rgb(193, 208, 218);
-}
-
-.tariff__item-4 {
-  background: #f4f5f3;
-}
-
-.tariff__title {
-  text-align: center;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 2vw;
-  padding-bottom: 15px;
-  margin-bottom: 3vw;
-  text-transform: uppercase;
-  font-weight: 400;
-
-  @include phones {
-    font-size: 6vw;
-  }
-}
-
-.tariff__features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding: 0 2vw;
-  margin-bottom: 3vw;
-
-}
-
-.tafiff__items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.6vw;
-  letter-spacing: 0px;
-  font-weight: 300;
-
-  @include phones {
-    font-size: 6vw;
-    padding-left: 10%;
-  }
-
-}
-
-.tariff__price {
-  margin-top: auto;
-  text-align: center;
-  font-size: 2vw;
-  margin-bottom: 4vw;
-
-  @include phones {
-    font-size: 7vw;
-    padding-bottom: 10px;
-  }
-
-  &-1 {
-    color: #3F51B5;;
-  }
-
-  &-2 {
-    color: black;
-  }
-
-  &-3 {
-    color: white;
-  }
-}
-
-.tariff__button {
-  border: none;
-  display: block;
-  background: #da1616;
-  color: white;
-  border: 1px solid white;
-  margin: 0 auto;
-  padding: 1vw 4vw;
-  font-size: 2vw;
-  text-transform: uppercase;
-  margin-bottom: 2vw;
-
-  @include phones {
-    font-size: 7vw;
-    margin-bottom: 5vw;
-  }
-}
 
 .oa__fotoblock {
   height: 40vh;
@@ -1013,14 +936,7 @@
   }
 }
 
-.tariff__descr {
-  padding: 6vw 0px 0px;
-  font-size: 2vw;
 
-  @include phones {
-    font-size: 6vw;
-  }
-}
 
 .channel-acco__descr {
   display: none;
