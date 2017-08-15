@@ -40,9 +40,9 @@
   width: 100%;
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
-  padding: .5vw 1.5vw 1vw 0vw;
+  padding: .5vw 1.5vw 0 0vw;
   color: #002942 !important;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-weight: 500;
   text-align: right;
   letter-spacing: 0.07vw;
@@ -60,8 +60,8 @@
   font-weight: 400;
   letter-spacing: 0.1vw;
   color: black;
-  margin-bottom: 7px;
-  margin-top: 7px;
+  line-height: 2vw;
+
   padding-bottom: 5px;
 }
 
@@ -69,5 +69,15 @@
   text-align: right;
   padding-right: 2vw;
   padding-top: 1vw;
+}
+
+.sidebar__intro {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 2vw;
+  margin-bottom: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  margin-left: 1.5vw;
 }
 
