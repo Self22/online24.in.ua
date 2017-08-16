@@ -1097,11 +1097,14 @@ textarea {
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 1vw; }
+  margin-bottom: 0.5vw;
+  padding: 0.5vw; }
 
 .acc__icon {
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  font-size: 1.8vw;
+  margin-right: 0.5vw; }
 
 .transparent {
   opacity: 0; }
@@ -1118,13 +1121,15 @@ textarea {
   width: 100%;
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
-  padding: .5vw 1.5vw 1vw 0vw;
-  color: #002942 !important;
-  font-size: 2vw;
-  font-weight: 500;
+  padding: .5vw 1.5vw 0 0vw;
+  color: #002942;
+  font-size: 1.7vw;
+  font-weight: 600;
   text-align: right;
   letter-spacing: 0.07vw;
-  border-radius: 0 0px 5px 0; }
+  border-radius: 0 0px 5px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
   @media screen and (max-width: 768px) {
     .nav__sidebar-title {
       font-size: 20px; } }
@@ -1134,15 +1139,26 @@ textarea {
   font-size: 1.6vw;
   font-weight: 400;
   letter-spacing: 0.1vw;
-  color: black;
-  margin-bottom: 7px;
-  margin-top: 7px;
+  color: #5550A1;
+  line-height: 2vw;
   padding-bottom: 5px; }
 
 .sidebar__law-item {
   text-align: right;
   padding-right: 2vw;
   padding-top: 1vw; }
+
+.sidebar__intro {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 2vw;
+  margin-bottom: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  margin-left: 1.5vw; }
+
+.active {
+  outline: 1px solid rgba(0, 0, 0, 0.1); }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2938,7 +2954,7 @@ html, body {
     padding: 4vw 12vw 4vw 4vw; }
     @media screen and (max-width: 480px) {
       .partnership__content article {
-        padding: 8vw 8vw 4vw 8vw; } }
+        padding: 8vw 10vw; } }
 
 .partn__about {
   background: #d9e2ff; }
@@ -3138,7 +3154,7 @@ a.animated-button.gibson-three:after {
       height: 60vw; } }
   @media screen and (max-width: 768px) {
     .popup__form-test, .popup__form-order {
-      height: 90vh;
+      height: 95vh;
       width: 90%; } }
 
 .popup__title {

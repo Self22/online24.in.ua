@@ -24,8 +24,11 @@ $(document).ready(function () {
 
                 if (!item.hasClass('active')) {
                     item.addClass('active')
+                        .find('.nav__sidebar-title')
+                        .addClass('sidebar__title-active')
                         .find('.acc__icon')
                         .addClass('transparent')
+
                         .siblings()
                         .removeClass('active')
                         .find('.nav__sidebar-law')
@@ -37,6 +40,8 @@ $(document).ready(function () {
                 }
                 else {
                     item.removeClass('active')
+                        .find('.nav__sidebar-title')
+                        .removeClass('sidebar__title-active')
                         .find('.acc__icon')
                         .removeClass('transparent');
                     currentContent.slideUp(function () {

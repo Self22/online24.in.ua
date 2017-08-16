@@ -15,12 +15,16 @@
 
 .sidebar__nav-block {
   width: 85%;
-  margin-bottom: 1vw;
+  margin-bottom: 0.5vw;
+  padding: 0.5vw;
+
 
 }
 
 .acc__icon {
   transition: all 0.5s;
+  font-size: 1.8vw;
+  margin-right: 0.5vw;
 }
 
 .transparent {
@@ -41,12 +45,13 @@
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
   padding: .5vw 1.5vw 0 0vw;
-  color: #002942 !important;
+  color: #002942;
   font-size: 1.7vw;
-  font-weight: 500;
+  font-weight: 600;
   text-align: right;
   letter-spacing: 0.07vw;
   border-radius: 0 0px 5px 0;
+  transition: all 0.5s;
 
   @include tablets {
     font-size: 20px;
@@ -59,7 +64,7 @@
   font-size: 1.6vw;
   font-weight: 400;
   letter-spacing: 0.1vw;
-  color: black;
+  color: #5550A1;
   line-height: 2vw;
 
   padding-bottom: 5px;
@@ -79,5 +84,9 @@
   font-weight: 400;
   letter-spacing: 0.1vw;
   margin-left: 1.5vw;
+}
+
+.active {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
