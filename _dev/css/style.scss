@@ -1443,25 +1443,47 @@ a.animated-button.gibson-three:after {
 }
 
 .discount {
-  font-size: 0;
+  display: flex;
+  flex-flow: row wrap;
   padding: 2% 12%;
+
+  @include phones {
+    padding: 12%;
+  }
 
 }
 
 .discount__intro {
-  display: inline-block;
-  width: 50%;
+  flex: 4;
+  width: 40%;
   font-size: 1.5vw;
-  vertical-align: top;
-  padding-top: 3vw;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  @include phones {
+    flex: 100%;
+    width: 100%;
+    font-size: 5vw;
+  }
 
 }
 
 .discount__links {
-  display: inline-block;
-  width: 50%;
+  flex: 6;
+  width: 60%;
   font-size: 1.5vw;
 
+  @include phones {
+    flex: 100%;
+    width: 100%;
+    font-size: 5vw;
+  }
+
+}
+
+.intro__cont {
+  text-align: center;
 }
 
 .discount__link {
@@ -1473,12 +1495,33 @@ a.animated-button.gibson-three:after {
   align-items: flex-end;
   margin-bottom: 1vw;
 
+  @include phones {
+    justify-content: space-between;
+    font-size: 5vw;
+  }
+}
+
+.discount__arr {
+  font-size: 3vw;
+  margin: 0 1vw;
+}
+
+
   .discount__img {
     width: 20%;
     margin-left: 4%;
+    margin-bottom: 0.5%;
+
+    @include phones {
+      width: 40%;
+    }
 
     &-off365 {
       width: 15%;
+
+      @include phones {
+        width: 20%;
+      }
     }
 
     & img {
@@ -1487,7 +1530,7 @@ a.animated-button.gibson-three:after {
     }
   }
 
-}
+
 
 .discount__page {
   display: inline-block;
@@ -1496,6 +1539,11 @@ a.animated-button.gibson-three:after {
   text-align: center;
   margin-top: 2vw;
   margin-bottom: 3vw;
+
+  @include phones {
+    font-size: 5vw;
+    font-weight: 600;
+  }
 
 }
 
