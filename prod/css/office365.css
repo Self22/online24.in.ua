@@ -792,7 +792,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 20px;
-  margin-left: 30px; }
+  margin-left: 4vw; }
 
 .l__mainmenu-tel {
   display: -webkit-box;
@@ -1261,8 +1261,8 @@ textarea {
   padding: 0 25px; }
 
 .l__testbtn {
-  background: #00a5f0 !important;
-  color: white !important;
+  background: #ffba00 !important;
+  color: black !important;
   padding: 12px 50px;
   font-size: 28px;
   font-weight: 400;

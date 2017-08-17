@@ -445,6 +445,6 @@ textarea {
   margin-left: 1.5vw; }
 
 .active {
-  outline: 1px solid rgba(0, 0, 0, 0.1); }
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=sidebar-nav.css.map */
