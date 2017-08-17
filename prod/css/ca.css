@@ -1317,4 +1317,10 @@ html, body {
 .bg-faded {
   background-color: #ffffff !important; }
 
+.discount {
+  padding: 5% 12% 0; }
+  @media screen and (max-width: 480px) {
+    .discount {
+      padding: 12%; } }
+
 /*# sourceMappingURL=ca.css.map */

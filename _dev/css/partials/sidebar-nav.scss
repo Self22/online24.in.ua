@@ -35,7 +35,7 @@
   display: none;
   align-self: flex-start;
   list-style: none;
-  padding: 10px 0 0 20%;
+  padding: 10px 3% 5% 20%;
   margin: 0;
 
 }
@@ -88,13 +88,9 @@
 
 .active {
 
-  @include desktop {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  }
 
   @include phones {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
   }
 }

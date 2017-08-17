@@ -1114,7 +1114,7 @@ textarea {
   -ms-flex-item-align: start;
       align-self: flex-start;
   list-style: none;
-  padding: 10px 0 0 20%;
+  padding: 10px 3% 5% 20%;
   margin: 0; }
 
 .nav__sidebar-title {
@@ -1159,6 +1159,9 @@ textarea {
 
 .active {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  @media screen and (max-width: 480px) {
+    .active {
+      box-shadow: none; } }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -3378,20 +3381,50 @@ a.animated-button.gibson-three:after {
     height: 2vw; }
 
 .discount {
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   padding: 2% 12%; }
+  @media screen and (max-width: 480px) {
+    .discount {
+      padding: 12%; } }
 
 .discount__intro {
-  display: inline-block;
-  width: 50%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  width: 40%;
   font-size: 1.5vw;
-  vertical-align: top;
-  padding-top: 3vw; }
+  display: inline-block;
+  vertical-align: middle; }
+  @media screen and (max-width: 480px) {
+    .discount__intro {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
+      width: 100%;
+      font-size: 5vw; } }
 
 .discount__links {
-  display: inline-block;
-  width: 50%;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  width: 60%;
   font-size: 1.5vw; }
+  @media screen and (max-width: 480px) {
+    .discount__links {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
+      width: 100%;
+      font-size: 5vw; } }
+
+.intro__cont {
+  text-align: center; }
 
 .discount__link {
   font-size: 1.5vw;
@@ -3410,14 +3443,35 @@ a.animated-button.gibson-three:after {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 1vw; }
-  .discount__link .discount__img {
-    width: 20%;
-    margin-left: 4%; }
-    .discount__link .discount__img-off365 {
-      width: 15%; }
-    .discount__link .discount__img img {
-      width: 100%;
-      height: auto; }
+  @media screen and (max-width: 480px) {
+    .discount__link {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 5vw; } }
+
+.discount__arr {
+  font-size: 3vw;
+  margin: 0 1vw; }
+  @media screen and (max-width: 480px) {
+    .discount__arr {
+      font-size: 7vw; } }
+
+.discount__img {
+  width: 20%;
+  margin-left: 4%;
+  margin-bottom: 0.5%; }
+  @media screen and (max-width: 480px) {
+    .discount__img {
+      width: 40%; } }
+  .discount__img-off365 {
+    width: 15%; }
+    @media screen and (max-width: 480px) {
+      .discount__img-off365 {
+        width: 32%; } }
+  .discount__img img {
+    width: 100%;
+    height: auto; }
 
 .discount__page {
   display: inline-block;
@@ -3426,6 +3480,10 @@ a.animated-button.gibson-three:after {
   text-align: center;
   margin-top: 2vw;
   margin-bottom: 3vw; }
+  @media screen and (max-width: 480px) {
+    .discount__page {
+      font-size: 5vw;
+      font-weight: 600; } }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {

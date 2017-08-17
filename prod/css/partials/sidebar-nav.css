@@ -401,7 +401,7 @@ textarea {
   -ms-flex-item-align: start;
       align-self: flex-start;
   list-style: none;
-  padding: 10px 0 0 20%;
+  padding: 10px 3% 5% 20%;
   margin: 0; }
 
 .nav__sidebar-title {
@@ -446,5 +446,8 @@ textarea {
 
 .active {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  @media screen and (max-width: 480px) {
+    .active {
+      box-shadow: none; } }
 
 /*# sourceMappingURL=sidebar-nav.css.map */

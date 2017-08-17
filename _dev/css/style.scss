@@ -1504,6 +1504,10 @@ a.animated-button.gibson-three:after {
 .discount__arr {
   font-size: 3vw;
   margin: 0 1vw;
+
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 
@@ -1520,7 +1524,7 @@ a.animated-button.gibson-three:after {
       width: 15%;
 
       @include phones {
-        width: 20%;
+        width: 32%;
       }
     }
 
