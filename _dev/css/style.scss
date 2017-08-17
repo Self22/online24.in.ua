@@ -1442,6 +1442,63 @@ a.animated-button.gibson-three:after {
   }
 }
 
+.discount {
+  font-size: 0;
+  padding: 2% 12%;
+
+}
+
+.discount__intro {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5vw;
+  vertical-align: top;
+  padding-top: 3vw;
+
+}
+
+.discount__links {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5vw;
+
+}
+
+.discount__link {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1vw;
+
+  .discount__img {
+    width: 20%;
+    margin-left: 4%;
+
+    &-off365 {
+      width: 15%;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+.discount__page {
+  display: inline-block;
+  width: 100%;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+
+}
+
 ////////// bob
 
 /* Bob */
@@ -1513,3 +1570,4 @@ a.animated-button.gibson-three:after {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+

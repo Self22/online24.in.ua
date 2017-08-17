@@ -3377,6 +3377,56 @@ a.animated-button.gibson-three:after {
     width: 2vw;
     height: 2vw; }
 
+.discount {
+  font-size: 0;
+  padding: 2% 12%; }
+
+.discount__intro {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5vw;
+  vertical-align: top;
+  padding-top: 3vw; }
+
+.discount__links {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5vw; }
+
+.discount__link {
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1vw; }
+  .discount__link .discount__img {
+    width: 20%;
+    margin-left: 4%; }
+    .discount__link .discount__img-off365 {
+      width: 15%; }
+    .discount__link .discount__img img {
+      width: 100%;
+      height: auto; }
+
+.discount__page {
+  display: inline-block;
+  width: 100%;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 3vw; }
+
 /* Bob */
 @-webkit-keyframes hvr-bob {
   0% {
