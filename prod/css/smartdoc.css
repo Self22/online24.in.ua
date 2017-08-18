@@ -1301,6 +1301,10 @@ textarea {
   transition: all 0.5s; }
   .tariff__item:hover {
     box-shadow: rgba(19, 121, 215, 0.2) 1.41px 1.41px 20px 0px, rgba(70, 171, 255, 0.25) 0px 2px 15px 0px, rgba(61, 153, 249, 0.25) 0px 15px 25px 0px; }
+  @media screen and (max-width: 480px) {
+    .tariff__item {
+      width: 100%;
+      margin: 10px 0; } }
 
 .tariff__title {
   font-size: 1.5vw;
@@ -1333,7 +1337,8 @@ textarea {
     line-height: 1.8vw; }
     @media screen and (max-width: 480px) {
       .tariff__title-once {
-        font-size: 7.5vw; } }
+        font-size: 7.5vw;
+        line-height: 10vw; } }
   @media screen and (max-width: 480px) {
     .tariff__title {
       font-size: 7.5vw; } }
