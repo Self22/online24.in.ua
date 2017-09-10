@@ -278,6 +278,10 @@
 
 .footer__postal {
   font-size: 1.6vw;
+
+  @include phones {
+    font-size: 7vw;
+  }
 }
 
 .postal__title {

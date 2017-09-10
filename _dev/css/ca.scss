@@ -566,6 +566,8 @@ html, body {
     color: white;
     font-size: 1.7vw;
     font-weight: 100;
+    margin-bottom: 0.7vw;
+
     @include phones{
       font-size: 5vw;
     }
@@ -628,8 +630,14 @@ html, body {
 .l_features {
   padding: 3% 12%;
   background: #437be0;
+
   & h2, h3, div {
     color: white;
+  }
+
+  & a {
+    color: white !important;
+    text-decoration: underline;
   }
 
   @include phones {
@@ -718,4 +726,22 @@ html, body {
     padding: 12%;
   }
 
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 12% 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.liga__video1 {
+  width: 800px;
+  height: 400px;
+
+  @include phones {
+    width: 250px;
+    height: 150px;
+  }
 }

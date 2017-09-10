@@ -550,6 +550,11 @@
       font-size: 5vw;
     }
   }
+
+  & a {
+    color: white !important;
+    text-decoration: underline;
+  }
 }
 
 .smartdoc__screen {

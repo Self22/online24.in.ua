@@ -1283,7 +1283,8 @@ a.animated-button.gibson-three:after {
   text-align: center;
 
   @include phones {
-    font-size: 4vw;
+    font-size: 6vw;
+    margin-top: 5vw;
     width: 100%;
     padding: 0 5%;
   }
@@ -1311,6 +1312,10 @@ a.animated-button.gibson-three:after {
   text-align: center;
   width: 100%;
 
+  &:focus {
+    outline: none;
+  }
+
   @include desktop {
     font-size: 20px;
   }
@@ -1324,6 +1329,10 @@ a.animated-button.gibson-three:after {
   border: 1px solid #b5b5b5;
   text-align: center;
   width: 100%;
+
+  &:focus {
+    outline: none;
+  }
 
   @include desktop {
     font-size: 20px;
@@ -1373,6 +1382,11 @@ a.animated-button.gibson-three:after {
   text-align: center;
   font-size: 1.6vw;
   padding-top: 30px;
+
+  @include phones {
+    font-size: 6vw;
+    margin-bottom: 5vw;
+  }
 
 }
 
