@@ -21,6 +21,7 @@ if($post){
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
     $email = stripslashes($_POST['email']);
+    $message = stripslashes($_POST['message']);
     $product = ($_POST['product']);
     $type = stripslashes($_POST['form_type']);
     $subject = 'Заявка Online24 - '. $product.'';
@@ -37,6 +38,7 @@ if($post){
 							<p>Имя: ' . $name . '</p>
 							<p>Телефон : ' . $phone . '</p>	
 							<p>Email : ' . $email . '</p>
+							<p>Сообщение : ' . $message . '</p>
 					</body>
 			</html>';
 
