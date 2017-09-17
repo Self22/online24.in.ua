@@ -17,6 +17,7 @@ function ValidateEmail($value){
 $post = (!empty($_POST)) ? true : false;
 
 if($post){
+    $titlemail = ('order@online24.net.ua');
     $url = stripslashes($_SERVER['HTTP_REFERER']);
     $name = stripslashes($_POST['name']);
     $phone = stripslashes($_POST['tel']);
@@ -48,7 +49,7 @@ if($post){
 
     if(!$error){
         $mail = mail(CONTACT_FORM, $subject, $message,
-            "From: ".$name." <".$email.">\r\n"
+            "From: ".$name." <".$titlemail.">\r\n"
             ."Reply-To: ".$email."\r\n"
             ."Content-type: text/html; charset=utf-8 \r\n"
             ."X-Mailer: PHP/" . phpversion());

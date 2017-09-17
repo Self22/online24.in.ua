@@ -199,6 +199,20 @@ html, body {
       height: 230px;
     }
   }
+
+  &__ob {
+    position: relative;
+    height: 35vh;
+    background: #C9D6FF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0 12vw;
+
+    @include tablets {
+      padding: 0;
+      height: 70vh;
+    }
+  }
 }
 
 .header__main-sticky {
@@ -215,6 +229,21 @@ html, body {
 
   &-main {
     height: 45vh;
+
+    @include tablets {
+
+      justify-content: flex-end;
+      padding-bottom: 15px;
+    }
+
+    @include phones {
+      padding-bottom: 10px;
+    }
+
+  }
+
+  &-ob {
+    height: 35vh;
 
     @include tablets {
 
@@ -1562,6 +1591,110 @@ a.animated-button.gibson-three:after {
     font-size: 5vw;
     font-weight: 600;
   }
+
+}
+
+/// облачный бухгалтер
+
+.ob__index {
+
+  padding: 4% 8%;
+
+}
+
+.discount_button {
+  border: 1px solid;
+  padding: .5vw 1.5vw .6vw;
+  border-radius: 5px;
+  margin-left: 0.8vw;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.ob__intro {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  line-height: 4vw;
+}
+
+.ob__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
+  text-decoration: none !important;
+  transition: all 0.5s;
+
+  &:hover {
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.04);
+  }
+}
+
+.ob__item-title {
+  font-family: Raleway, Arial, sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0.05vw;
+  text-align: center;
+  min-height: 4vw;
+  margin-bottom: 0.5vw;
+}
+
+.ob__item-descr {
+  margin-bottom: auto;
+  font-size: 1.1vw;
+  min-height: 4vw;
+  text-align: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.ob__partner {
+
+  & img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+.ob__item-logo {
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 10%;
+  & img {
+    width: 90%;
+    height: auto;
+  }
+
+}
+
+.ob__item-price {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+
+}
+
+.price__num {
+  font-size: 2vw;
+  font-weight: 800;
 
 }
 
