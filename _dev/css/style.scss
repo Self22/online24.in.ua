@@ -1600,6 +1600,10 @@ a.animated-button.gibson-three:after {
 
   padding: 4% 8%;
 
+  @include phones {
+    padding: 8%;
+  }
+
 }
 
 .discount_button {
@@ -1609,6 +1613,12 @@ a.animated-button.gibson-three:after {
   margin-left: 0.8vw;
   font-weight: 600;
   text-decoration: none !important;
+  cursor: pointer;
+
+  @include phones {
+    margin-top: 2vw;
+    padding: 2.5vw 5.5vw 2.6vw;
+  }
 }
 
 .ob__intro {
@@ -1616,6 +1626,11 @@ a.animated-button.gibson-three:after {
   font-size: 1.5vw;
   margin-bottom: 1vw;
   line-height: 4vw;
+
+  @include phones {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
 }
 
 .ob__group {
@@ -1631,6 +1646,13 @@ a.animated-button.gibson-three:after {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     background: rgba(0, 0, 0, 0.04);
   }
+
+  @include phones {
+    margin: 8vw 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 10vw;
+
+  }
 }
 
 .ob__item-title {
@@ -1643,6 +1665,11 @@ a.animated-button.gibson-three:after {
   text-align: center;
   min-height: 4vw;
   margin-bottom: 0.5vw;
+
+  @include phones {
+    font-size: 8vw;
+    font-weight: 500;
+  }
 }
 
 .ob__item-descr {
@@ -1650,10 +1677,18 @@ a.animated-button.gibson-three:after {
   font-size: 1.1vw;
   min-height: 4vw;
   text-align: center;
+  padding-bottom: 1.5vw;
+
+
 
   & img {
     width: 100%;
     height: auto;
+  }
+
+  @include phones {
+    margin: 5vw 0;
+    font-size: 5vw;
   }
 
 }
@@ -1668,7 +1703,7 @@ a.animated-button.gibson-three:after {
 }
 
 .ob__item-logo {
-  margin-bottom: auto;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1690,11 +1725,20 @@ a.animated-button.gibson-three:after {
   font-size: 1.5vw;
   margin-top: 1vw;
 
+  @include phones {
+    font-size: 5.5vw;
+    margin-top: 5vw;
+  }
+
 }
 
 .price__num {
   font-size: 2vw;
   font-weight: 800;
+
+  @include phones {
+    font-size: 7vw;
+  }
 
 }
 
