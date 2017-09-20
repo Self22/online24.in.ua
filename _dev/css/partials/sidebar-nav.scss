@@ -52,6 +52,7 @@
   letter-spacing: 0.07vw;
   border-radius: 0 0px 5px 0;
   transition: all 0.5s;
+  text-decoration: none !important;
 
   @include tablets {
     font-size: 20px;
