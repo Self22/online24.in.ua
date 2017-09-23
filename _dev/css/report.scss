@@ -198,8 +198,9 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 28vh;
+  margin-top: 35vh;
   margin-bottom: 10vh;
+  width: 100%;
 
   @include phones {
     margin-top: 50vw;
@@ -232,8 +233,8 @@ html, body {
 }
 
 .liga__secur-icon {
-
-  & svg {
+  width: 10vw;
+  & img {
     max-width: 100%;
     height: auto;
   }
@@ -323,12 +324,12 @@ html, body {
     }
   }
   .partner__slogan {
-    font-size: 2.7vw;
+    font-size: 2vw;
     font-weight: 100;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
-    line-height: 4vw;
+    line-height: 3vw;
 
     @include phones {
       display: none;
@@ -338,15 +339,15 @@ html, body {
   & p {
     text-align: center;
     color: white;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     font-weight: 100;
-    margin-top: 40px;
+    margin-top: 25px;
     border-top: 1px solid white;
-    padding-top: 30px;
+    padding-top: 25px;
     width: 60%;
-    line-height: 2vw;
+    line-height: 1.7vw;
     letter-spacing: 1.4px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 
     @include phones {
       font-size: 5vw;

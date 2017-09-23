@@ -1607,7 +1607,8 @@ textarea {
   padding-left: 11%; }
   .footer_aboutus p {
     font-size: 1.6vw;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
 .footer__contacts a {
   display: -webkit-box;
@@ -3425,6 +3426,8 @@ a.animated-button.gibson-three:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  .footer_confidential p {
+    width: 30vw; }
 
 .conf__icon {
   margin-right: 1vw; }
@@ -3433,45 +3436,28 @@ a.animated-button.gibson-three:after {
     height: 2vw; }
 
 .discount {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding: 2% 12%; }
+  padding: 2% 12%;
+  font-size: 0; }
   @media screen and (max-width: 480px) {
     .discount {
       padding: 12%; } }
 
 .discount__intro {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  width: 40%;
-  font-size: 1.5vw;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: top;
+  width: 40%;
+  font-size: 1.5vw; }
   @media screen and (max-width: 480px) {
     .discount__intro {
-      -webkit-box-flex: 100%;
-          -ms-flex: 100%;
-              flex: 100%;
       width: 100%;
       font-size: 5vw; } }
 
 .discount__links {
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  display: inline-block;
   width: 60%;
   font-size: 1.5vw; }
   @media screen and (max-width: 480px) {
     .discount__links {
-      -webkit-box-flex: 100%;
-          -ms-flex: 100%;
-              flex: 100%;
       width: 100%;
       font-size: 5vw; } }
 

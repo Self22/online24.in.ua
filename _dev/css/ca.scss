@@ -739,6 +739,7 @@ html, body {
 .liga__video1 {
   width: 800px;
   height: 400px;
+  margin-top: 2vw;
 
   @include phones {
     width: 250px;
