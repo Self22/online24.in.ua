@@ -46,23 +46,14 @@ var path = {
 var config = {
         server: {
             baseDir: "prod"
-        },
-        open: false
-    },
-    configTunnel = {
-        server: {
-            baseDir: "prod"
-        },
-        tunnel: false,
-        browser: 'Google Chrome',
-        open: 'tunnel'
+        }
     };
 
 gulp.task('landings:build', function () {
     gulp.src(path.src.landings) //������� ����� �� ������� ����
         .pipe(include())
         .on('error', console.log)
-        .pipe(htmlmin({collapseWhitespace: true}))
+        // .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.landings)) //�������� �� � ����� build
         .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
 });

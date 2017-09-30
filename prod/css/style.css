@@ -3524,7 +3524,7 @@ a.animated-button.gibson-three:after {
       font-weight: 600; } }
 
 .ob__index {
-  padding: 2% 8%; }
+  padding: 3% 8%; }
   @media screen and (max-width: 480px) {
     .ob__index {
       padding: 8%; } }
@@ -3545,10 +3545,26 @@ a.animated-button.gibson-three:after {
 .ob__intro {
   text-align: center;
   font-size: 1.5vw;
-  margin-bottom: 1vw;
-  line-height: 4vw; }
+  margin-bottom: 3vw;
+  line-height: 2.5vw; }
   @media screen and (max-width: 480px) {
     .ob__intro {
+      font-size: 5vw;
+      line-height: 7vw; } }
+
+.ob__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5vw; }
+  @media screen and (max-width: 480px) {
+    .ob__content {
       font-size: 5vw;
       line-height: 7vw; } }
 
@@ -3563,13 +3579,16 @@ a.animated-button.gibson-three:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1%;
+  padding: 2% 1%;
   text-decoration: none !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
+  .ob__group-1 {
+    background: #f3f3f3; }
   .ob__group:hover {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.04); }
+    box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.4); }
+    .ob__group:hover .ob__item-title {
+      color: #0275d8; }
   @media screen and (max-width: 480px) {
     .ob__group {
       margin: 8vw 0;
@@ -3593,10 +3612,10 @@ a.animated-button.gibson-three:after {
 
 .ob__item-descr {
   margin-bottom: auto;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   min-height: 4vw;
   text-align: center;
-  padding-bottom: 1.5vw; }
+  padding-bottom: 1.1vw; }
   .ob__item-descr img {
     width: 100%;
     height: auto; }
@@ -3649,10 +3668,21 @@ a.animated-button.gibson-three:after {
 
 .price__num {
   font-size: 2vw;
-  font-weight: 800; }
+  font-weight: 400; }
   @media screen and (max-width: 480px) {
     .price__num {
       font-size: 7vw; } }
+
+.ob__more {
+  text-align: center;
+  margin-top: 1vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgba(2, 117, 216, 0.1);
+  font-size: 1.5vw;
+  padding: 1vw 0 1.4vw;
+  font-weight: 400;
+  color: #0275db; }
 
 .o__block {
   background: #f5f6f7;
@@ -3674,6 +3704,9 @@ a.animated-button.gibson-three:after {
   text-decoration: none !important;
   text-transform: uppercase;
   font-weight: 100; }
+  @media screen and (max-width: 480px) {
+    .o__link {
+      font-size: 4vw; } }
   .o__link-buh {
     background: rgba(226, 226, 226, 0.6); }
 

@@ -1598,7 +1598,7 @@ a.animated-button.gibson-three:after {
 
 .ob__index {
 
-  padding: 2% 8%;
+  padding: 3% 8%;
 
   @include phones {
     padding: 8%;
@@ -1624,8 +1624,20 @@ a.animated-button.gibson-three:after {
 .ob__intro {
   text-align: center;
   font-size: 1.5vw;
-  margin-bottom: 1vw;
-  line-height: 4vw;
+  margin-bottom: 3vw;
+  line-height: 2.5vw;
+
+  @include phones {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
+
+.ob__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
 
   @include phones {
     font-size: 5vw;
@@ -1637,14 +1649,24 @@ a.animated-button.gibson-three:after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1%;
+  padding: 2% 1%;
   text-decoration: none !important;
   transition: all 0.5s;
 
+  &-1 {
+    background: rgb(243, 243, 243);
+  }
+
   &:hover {
 
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.04);
+    box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.4);
+
+    & .ob__item-title {
+      color: #0275d8;
+    }
+
+
+
   }
 
   @include phones {
@@ -1674,10 +1696,10 @@ a.animated-button.gibson-three:after {
 
 .ob__item-descr {
   margin-bottom: auto;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   min-height: 4vw;
   text-align: center;
-  padding-bottom: 1.5vw;
+  padding-bottom: 1.1vw;
 
 
 
@@ -1735,12 +1757,23 @@ a.animated-button.gibson-three:after {
 
 .price__num {
   font-size: 2vw;
-  font-weight: 800;
+  font-weight: 400;
 
   @include phones {
     font-size: 7vw;
   }
 
+}
+
+.ob__more {
+  text-align: center;
+  margin-top: 1vw;
+  transition: all 0.5s;
+  background: rgba(2, 117, 216, 0.1);
+  font-size: 1.5vw;
+  padding: 1vw 0 1.4vw;
+  font-weight: 400;
+  color: #0275db;
 }
 
 .o__block {
@@ -1758,6 +1791,10 @@ a.animated-button.gibson-three:after {
   text-decoration: none !important;
   text-transform: uppercase;
   font-weight: 100;
+
+  @include phones {
+    font-size: 4vw;
+  }
 
   &-buh {
     background: rgba(226, 226, 226, 0.6);;
