@@ -8,7 +8,7 @@ html, body {
   position: relative;
 }
 
-.inlife__block {
+.inlife__block, .online24__block-web, .online24__block-seo {
 
   padding: 5% 8%;
 
@@ -16,11 +16,13 @@ html, body {
 
     background: rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 6vw 0;
+    padding: 3vw 0;
+    margin-bottom: 5vw;
 
     @include phones {
       margin-bottom: 9vw;
       font-size: 5vw;
+      padding: 6vw 0;
     }
   }
 
@@ -60,7 +62,7 @@ html, body {
 
 .webinar__item {
   width: 26%;
-  padding: 1.5% 1.5% 1.5%;
+  padding: 2vh 1.5% 1.5vh;
   margin: 0 2%;
   display: flex;
   flex-flow: row wrap;
@@ -97,7 +99,6 @@ html, body {
   font-size: 2vw;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3%;
 
   @include phones {
     font-size: 12vw;
@@ -124,7 +125,7 @@ html, body {
 .web__title {
   padding-left: 2%;
   font-weight: 600;
-  font-size: 1.3vw;
+  font-size: 1vw;
   margin-bottom: 5%;
 
   @include phones {
@@ -134,7 +135,7 @@ html, body {
 }
 
 .web__subtitle {
-  font-size: 1.1vw;
+  font-size: 1vw;
   padding-left: 2%;
   margin-bottom: 5%;
 
@@ -169,7 +170,7 @@ html, body {
 }
 
 .speaker__photo {
-  width: 70%;
+  width: 50%;
 
   & img {
     width: 100%;
@@ -185,6 +186,196 @@ html, body {
 
   @include phones {
     font-size: 5vw;
+  }
+}
+
+.block__web-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1vw 1vw;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.brand__block {
+  width: 20%;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include phones {
+    width: 100%;
+  }
+
+}
+
+.brand__buh {
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  @include phones {
+    font-size: 8vw;
+  }
+}
+
+.brand__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    width: 80%;
+
+    @include phones {
+      width: 50%;
+    }
+  }
+
+}
+
+.st0 {
+
+}
+
+.st1 {
+
+}
+
+.st2 {
+
+}
+
+.st3 {
+
+}
+
+.st4 {
+
+}
+
+.st5 {
+
+}
+
+.st6 {
+
+}
+
+.st7 {
+
+}
+
+.st8 {
+
+}
+
+.slogan__block {
+  width: 20%;
+  text-align: center;
+  font-size: 1.2vw;
+  padding: 0 5%;
+
+  @include phones {
+    width: 100%;
+    padding: 5vw 0 0;
+  }
+
+  & h3 {
+    font-size: 1.5vw;
+    color: #551a8b;
+    padding: 0 5vw;
+
+    @include phones {
+      font-size: 8vw;
+      padding: 0 5vw;
+    }
+
+  }
+
+  & p {
+    font-size: 1.2vw;
+
+    @include phones {
+      font-size: 5vw;
+      padding: 0 5vw;
+    }
+
+  }
+
+}
+
+.link__block {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.link__block-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 1vw;
+
+  @include phones {
+    margin-top: 0;
+    font-size: 5vw;
+    padding: 0 5vw;
+  }
+}
+
+.link__item {
+  width: 27%;
+  padding: 2% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  @include phones {
+    width: 100%;
+    margin: 8vw 0 3vw;
+  }
+
+}
+
+.link__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: auto;
+    height: 4vw;
+
+    @include phones {
+      width: 50vw;
+      height: auto;
+    }
+  }
+}
+
+.link__descr {
+  font-size: 1.2vw;
+  text-align: center;
+  margin-top: 1vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin-top: 3vw;
+    font-weight: 600;
   }
 }
 
@@ -207,4 +398,116 @@ html, body {
   @include phones {
     right: -5%;
   }
+}
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: flex;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
