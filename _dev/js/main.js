@@ -78,7 +78,7 @@ $(function () {
 
     $(window).scroll(function () {
 
-        if ($(this).scrollTop() >= 450) {
+        if ($(this).scrollTop() >= 250) {
 
             $('.nav__main').addClass('nav__fixed');
             $('.header__main').addClass('header__main-sticky');

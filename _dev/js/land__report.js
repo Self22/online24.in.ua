@@ -163,6 +163,46 @@ $('main').on('click', function (e) {
     $('.navbar-collapse').removeClass('show');
 });
 
+/////////////////////// slow popup
+
+$('.l__testbtn').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-test').fadeIn(800);
+});
+
+$('.vchasno__reg').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-test').fadeIn(800);
+});
+
+$('.tariff__button').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
+});
+
+$('.order__l').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
+});
+
+
+$('.overlay').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+})
+
+$('.close__popup').on('click', function (e) {
+    $('.overlay').fadeOut(800);
+    $('.popup__form-order').fadeOut(800);
+    $('.popup__form-test').fadeOut(800);
+
+})
+
 
 
 

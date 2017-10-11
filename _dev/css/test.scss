@@ -8,7 +8,7 @@ html, body {
   position: relative;
 }
 
-.inlife__block, .online24__block-web, .online24__block-seo {
+.inlife__block, .online24__block-web, .online24__block-seo, .procom__section {
 
   padding: 5% 8%;
 
@@ -195,7 +195,7 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  padding: 1vw 1vw;
+  padding: 1vw 1vw 2vw;
 
   @include phones {
     flex-direction: column;
@@ -203,9 +203,11 @@ html, body {
 }
 
 .brand__block {
+  flex-direction: column;
   width: 20%;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 3vw;
 
   @include phones {
     width: 100%;
@@ -215,9 +217,11 @@ html, body {
 
 .brand__buh {
   text-align: center;
-  font-size: 1.5vw;
-  font-weight: 100;
+  font-size: 1.7vw;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.06vw;
+  margin-top: 3vw;
 
   @include phones {
     font-size: 8vw;
@@ -230,13 +234,36 @@ html, body {
   align-items: center;
 
   & svg {
-    width: 80%;
+    width: 50%;
 
     @include phones {
       width: 50%;
     }
   }
 
+}
+
+.brand__more {
+
+  position: relative;
+
+}
+
+.brand__more-text {
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.brand__more-img {
+  position: absolute;
+  width: 20%;
+  right: 10%;
+  bottom: -55%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .st0 {
@@ -294,6 +321,8 @@ html, body {
     @include phones {
       font-size: 8vw;
       padding: 0 5vw;
+      margin-bottom: 2vw;
+      margin-top: 2vw;
     }
 
   }
@@ -306,6 +335,15 @@ html, body {
       padding: 0 5vw;
     }
 
+  }
+
+  & a {
+    font-size: 1.2vw;
+
+    @include phones {
+      font-size: 7vw;
+      padding: 0 5vw;
+    }
   }
 
 }
@@ -324,10 +362,11 @@ html, body {
   width: 100%;
   text-align: center;
   font-weight: 100;
-  margin-bottom: 1vw;
+  margin-bottom: 1.2vw;
+  font-size: 1.2vw;
 
   @include phones {
-    margin-top: 0;
+    margin-top: 15vw;
     font-size: 5vw;
     padding: 0 5vw;
   }
@@ -358,7 +397,7 @@ html, body {
 
   & img {
     width: auto;
-    height: 4vw;
+    height: 3.5vw;
 
     @include phones {
       width: 50vw;
@@ -400,6 +439,191 @@ html, body {
   }
 }
 
+//// procom block
+
+.procom__block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  @include phones {
+    flex-flow: row wrap;
+  }
+}
+
+.brand__block-procom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1.5vw;
+
+  @include phones {
+    flex: 100%;
+    flex-direction: row;
+  }
+}
+
+.brand__logo {
+
+  width: 75%;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    margin-top: 3vw;
+    width: 40%;
+  }
+}
+
+.brand__status {
+  text-align: right;
+  font-size: 1.5vw;
+  text-align: left;
+  margin-top: 1vw;
+
+  @include phones {
+    font-size: 5vw;
+    padding-left: 10vw;
+  }
+}
+
+.slogan__block-procom {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  padding-top: 2vw;
+  text-align: center;
+
+  @include phones {
+    margin-top: 1vw;
+    flex-flow: row wrap;
+    flex: 100%;
+  }
+}
+
+.slogan__main {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  padding: 0 2vw;
+  line-height: 3vw;
+  font-weight: 700;
+
+  @include phones {
+    width: 55%;
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
+
+.towns__block {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  color: #996914;
+  font-weight: 700;
+
+  @include phones {
+    width: 40%;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  & span {
+    margin: 0.3vw 0;
+    justify-content: center;
+
+    @include phones {
+      margin: 1vw 0;
+    }
+  }
+}
+
+.procom__link {
+  color: #996914;
+  font-size: 1.2vw;
+  margin-top: 0.5vw;
+
+  @include phones {
+    width: 100%;
+    font-size: 5vw;
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.courses__block {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+
+  @include phones {
+    flex: 100%;
+  }
+}
+
+.links__block {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1vw;
+}
+
+.course__link {
+  outline: 1px solid #4a39a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  width: 39%;
+  text-decoration: none;
+  font-size: 1.2vw;
+  padding: 0.9vw 5%;
+  text-align: center;
+  background: white;
+
+  @include phones {
+    width: 100%;
+    font-size: 4vw;
+    padding: 4vw 0;
+    font-weight: 600;
+  }
+
+  &-viol {
+    color: white;
+    background: #4A39A3;
+
+    @include phones {
+      color: #4A39A3;
+      background: white;
+    }
+  }
+
+  &:hover {
+    outline-width: 1px !important;
+  }
+
+}
+
+.ukraine__block {
+  text-align: center;
+  font-size: 1.5vw;
+  color: #996914;
+
+  margin-top: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin: 5vw 0;
+  }
+}
+
+
 /* Pulse */
 @-webkit-keyframes hvr-pulse {
   25% {
@@ -424,7 +648,7 @@ html, body {
 }
 
 .hvr-pulse {
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -510,4 +734,21 @@ html, body {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+/* Grow */
+.hvr-grow {
+  display: flex;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
 }

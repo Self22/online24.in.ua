@@ -1735,4 +1735,20 @@ html, body {
     .ocimg__cont {
       width: 20vw; } }
 
+.tariffs__action-title {
+  text-align: center;
+  font-size: 2vw; }
+  @media screen and (max-width: 480px) {
+    .tariffs__action-title {
+      font-size: 6vw; } }
+
+.tariffs__action-descr {
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 2vw; }
+  @media screen and (max-width: 480px) {
+    .tariffs__action-descr {
+      font-size: 5vw;
+      margin: 4vw 0 4vw; } }
+
 /*# sourceMappingURL=vchasno.css.map */

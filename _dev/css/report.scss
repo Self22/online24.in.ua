@@ -316,6 +316,7 @@ html, body {
     margin: 0;
     font-weight: 500;
     letter-spacing: 2px;
+    margin-bottom: 5vw;
 
     @include phones {
       font-size: 12vw;
@@ -324,15 +325,17 @@ html, body {
     }
   }
   .partner__slogan {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 5vw;
     color: white;
     text-align: center;
     line-height: 3vw;
 
     @include phones {
-      display: none;
+      font-size: 6.5vw;
+      padding: 0 10vw;
+      line-height: 10vw;
     }
   }
 
@@ -591,7 +594,7 @@ html, body {
 
 .report__logomain {
   & svg {
-    width: 15vw;
+    width: 20vw;
 
     @include phones {
       width: 30vw;
@@ -601,5 +604,74 @@ html, body {
 
 .discount {
 
-  padding: 6% 12% 2%;
+  padding: 3% 12% 2%;
+}
+
+.tariffs {
+
+  padding: 0 12% 2%;
+
+  @include phones {
+    padding: 0 3% 5%;
+  }
+
+}
+
+.price__col {
+
+  color: blue;
+
+}
+
+.tariffs__table {
+  width: 100%;
+  margin-top: 3vw;
+
+  & td, th {
+    text-align: center;
+
+    font-size: 1.3vw;
+
+    @include phones {
+      font-size: 3vw;
+      padding: 2vw 0;
+    }
+  }
+
+  & tr {
+    border-bottom: 1px solid #80b2b2;
+  }
+
+  & th {
+    padding-bottom: 1vw;
+    font-weight: 500;
+  }
+}
+
+.price__td {
+  color: #1476E5;
+
+}
+
+.order__btn {
+  border: none;
+  padding: 1vw 2.5vw;
+  transition: all 0.5s;
+  background: none;
+
+  &:hover {
+    background: #1476e5;
+    color: white;
+  }
+}
+
+.tariffs__descr {
+  text-align: center;
+  font-size: 1.3vw;
+  margin-top: 3vw;
+
+  @include phones {
+    font-size: 3vw;
+    margin-top: 5vw;
+  }
 }

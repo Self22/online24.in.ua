@@ -996,7 +996,8 @@ html, body {
   color: white;
   margin: 0;
   font-weight: 500;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 5vw; }
   @media screen and (max-width: 480px) {
     .report__slogan .partner__brand {
       font-size: 12vw;
@@ -1004,15 +1005,17 @@ html, body {
       margin-top: 0; } }
 
 .report__slogan .partner__slogan {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 100;
-  margin-bottom: 20px;
+  margin-bottom: 5vw;
   color: white;
   text-align: center;
   line-height: 3vw; }
   @media screen and (max-width: 480px) {
     .report__slogan .partner__slogan {
-      display: none; } }
+      font-size: 6.5vw;
+      padding: 0 10vw;
+      line-height: 10vw; } }
 
 .report__slogan p {
   text-align: center;
@@ -1232,12 +1235,59 @@ html, body {
       margin-bottom: 10vw; } }
 
 .report__logomain svg {
-  width: 15vw; }
+  width: 20vw; }
   @media screen and (max-width: 480px) {
     .report__logomain svg {
       width: 30vw; } }
 
 .discount {
-  padding: 6% 12% 2%; }
+  padding: 3% 12% 2%; }
+
+.tariffs {
+  padding: 0 12% 2%; }
+  @media screen and (max-width: 480px) {
+    .tariffs {
+      padding: 0 3% 5%; } }
+
+.price__col {
+  color: blue; }
+
+.tariffs__table {
+  width: 100%;
+  margin-top: 3vw; }
+  .tariffs__table td, .tariffs__table th {
+    text-align: center;
+    font-size: 1.3vw; }
+    @media screen and (max-width: 480px) {
+      .tariffs__table td, .tariffs__table th {
+        font-size: 3vw;
+        padding: 2vw 0; } }
+  .tariffs__table tr {
+    border-bottom: 1px solid #80b2b2; }
+  .tariffs__table th {
+    padding-bottom: 1vw;
+    font-weight: 500; }
+
+.price__td {
+  color: #1476E5; }
+
+.order__btn {
+  border: none;
+  padding: 1vw 2.5vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: none; }
+  .order__btn:hover {
+    background: #1476e5;
+    color: white; }
+
+.tariffs__descr {
+  text-align: center;
+  font-size: 1.3vw;
+  margin-top: 3vw; }
+  @media screen and (max-width: 480px) {
+    .tariffs__descr {
+      font-size: 3vw;
+      margin-top: 5vw; } }
 
 /*# sourceMappingURL=report.css.map */

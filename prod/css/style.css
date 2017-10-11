@@ -3178,7 +3178,6 @@ a.animated-button.gibson-three:after {
   padding: 0 4%;
   position: fixed;
   width: 57%;
-  height: 44vw;
   background: white;
   border-radius: 15px;
   z-index: 30;
@@ -3206,7 +3205,7 @@ a.animated-button.gibson-three:after {
 
 .popup__title {
   text-transform: uppercase;
-  font-size: 2.7vw;
+  font-size: 2vw;
   -webkit-box-flex: 649;
       -ms-flex: 649;
           flex: 649;
@@ -3221,7 +3220,8 @@ a.animated-button.gibson-three:after {
           align-items: center;
   text-align: center;
   padding: 20px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-top: 2vw; }
   @media screen and (max-width: 1200px) {
     .popup__title {
       font-size: 4vw; } }
@@ -3254,7 +3254,7 @@ a.animated-button.gibson-three:after {
   -webkit-box-flex: 538;
       -ms-flex: 538;
           flex: 538;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3265,7 +3265,8 @@ a.animated-button.gibson-three:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin-top: 2vw; }
   @media screen and (max-width: 480px) {
     .popup__text {
       font-size: 6vw;
@@ -3330,8 +3331,9 @@ a.animated-button.gibson-three:after {
   padding: 1.2vh 0;
   font-size: 2vw;
   border-radius: 33px;
-  background: white;
-  border: 2px solid rgba(0, 0, 0, 0.7); }
+  border: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 768px) {
     .form__button-popup {
       margin-top: 10px;
@@ -3428,6 +3430,9 @@ a.animated-button.gibson-three:after {
           flex-direction: row; }
   .footer_confidential p {
     width: 30vw; }
+    @media screen and (max-width: 480px) {
+      .footer_confidential p {
+        width: 75vw; } }
 
 .conf__icon {
   margin-right: 1vw; }
@@ -3579,12 +3584,14 @@ a.animated-button.gibson-three:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2% 1%;
+  padding: 2vh 1%;
   text-decoration: none !important;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  border: 1px solid #dae6f0; }
   .ob__group-1 {
-    background: #f3f3f3; }
+    background: #f3f3f3;
+    border: none; }
   .ob__group:hover {
     box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.4); }
     .ob__group:hover .ob__item-title {
@@ -3683,6 +3690,11 @@ a.animated-button.gibson-three:after {
   padding: 1vw 0 1.4vw;
   font-weight: 400;
   color: #0275db; }
+  @media screen and (max-width: 480px) {
+    .ob__more {
+      margin-top: 4vw;
+      font-size: 6vw;
+      padding: 4vw 0 4.4vw; } }
 
 .o__block {
   background: #f5f6f7;
@@ -3709,6 +3721,59 @@ a.animated-button.gibson-three:after {
       font-size: 4vw; } }
   .o__link-buh {
     background: rgba(226, 226, 226, 0.6); }
+
+.ob__odds {
+  margin-top: 8vw; }
+
+.odds__item {
+  margin: 4vw 0; }
+  @media screen and (max-width: 480px) {
+    .odds__item {
+      margin: 15vw 0; } }
+
+.odds__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .odds__icon img {
+    width: 40%;
+    height: auto; }
+
+.odds__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.odds__title {
+  font-size: 1.5vw;
+  font-weight: 400; }
+  @media screen and (max-width: 480px) {
+    .odds__title {
+      font-size: 5vw;
+      margin-top: 5vw;
+      font-weight: 600; } }
+
+.odds__descr {
+  font-size: 1.2vw; }
+  @media screen and (max-width: 480px) {
+    .odds__descr {
+      font-size: 4vw; } }
 
 /* Bob */
 @-webkit-keyframes hvr-bob {

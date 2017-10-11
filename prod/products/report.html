@@ -41,6 +41,36 @@
     <!-- End Facebook Pixel Code -->
 </head>
 <body>
+<div class="overlay"></div>
+<div class="popup__form-order">
+    <span class="close__popup">&times</span>
+    <div class="popup__title">Заявка на подключение сервиса</div>
+
+    <div class="popup__text">Оставьте свои контактные данные <br>
+        и наш менеджер свяжется с Вами
+    </div>
+    <form id="popupform-order" class="popupform-order">
+        <input type="hidden" name="form_type" value="order">
+        <input type="hidden" name="product" value="report">
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+               id="popup__order-btn">
+    </form>
+</div>
+
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png" alt="электронная отчетность, обновление медок">
 </div>
@@ -121,7 +151,7 @@
                         сервисе</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu__inner" href="#video">Как это работает</a>
+                    <a class="nav-link menu__inner" href="#tariffs">Тарифы</a>
                 </li>
                 <li class="nav-item nav-item-excellence">
                     <a class="nav-link" href="../excellence.html">Комплексная скидка</a>
@@ -230,7 +260,7 @@
             <a href="#header" class="null__link"></a>
             <div class="l__mainmenu-item"><a href="#about" class="lmain__menu-link menu__inner">О
                 сервисе</a></div>
-            <div class="l__mainmenu-item"><a href="#video" class="lmain__menu-link menu__inner">Как это работает</a>
+            <div class="l__mainmenu-item"><a href="#tariffs" class="lmain__menu-link menu__inner">Тарифы</a>
             </div>
 
         </div>
@@ -259,7 +289,7 @@
     <div class="report__header-content ">
 
         <div class="report__slogan animatedParent" data-sequence='500'>
-            <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Сдача отчетности <br> регистрация налоговых
+            <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Сдача и хранение отчетности <br> регистрация налоговых
                 накладных</h2>
             <h1 class="partner__brand">
                 <div class="report__logomain">
@@ -304,17 +334,13 @@
                 </div>
             </h1>
 
-            <p class="animated fadeInLeftShort delay-500" data-id='2'>Облачный сервис для формирования, представления,
-                хранения электронной отчетности,
-                регистрации налоговых накладных для компаний любых сфер деятельности, ФОП на любой системе
-                налогообложения
-            </p>
+
             <a rel="nofollow" href="https://platforma.ligazakon.net/testd-report-ua/?dealerId=143615"
                class="btn_s btn-1 l__testbtn animated flipInX slowest" data-id='3'>
                 <svg>
                     <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                 </svg>
-                Попробовать бесплатно (до 01.10.2017)
+                Протестируйте бесплатно 
             </a>
         </div>
         <a href="ligazakon.html" class="liga__secur">
@@ -331,6 +357,7 @@
     <article class="report__about" id="about">
         <div class="about__block">
             <ul class="about__list">
+                <li class="about__item">Подача отчётности во все контролирующие органы: ГФС, ПФУ, ГССУ</li>
                 <li class="about__item">Простой, понятный и функциональный интерфейс</li>
                 <li class="about__item">Полная безопасность передачи данных</li>
                 <li class="about__item">Работает с любыми электронными ключами Украины</li>
@@ -339,7 +366,8 @@
                 <li class="about__item">Удобные подсказки из <a href="ligazakon.html">платформы ЛИГА:ЗАКОН</a> при
                     заполнении форм
                 </li>
-                <li class="about__item">Из одного аккаунта подача отчетности от 5 налогоплательщиков</li>
+                <li class="about__item">Неограниченное количество компаний-плательщиков в одном кабинете пользователя</li>
+                <li class="about__item">Бесплатная техническая, информационная поддержка. Консультации от профессиональных бухгалтеров (с 9:00 до 21:00 по телефону, онлайн и в чате)</li>
                 <li class="about__item">Профессиональная техническая поддержка, консультации и помощь в работе</li>
             </ul>
         </div>
@@ -414,7 +442,7 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Попробовать бесплатно (до 01.10.2017)
+            Протестируйте бесплатно 
         </a>
     </article>
     <section class="report__fotoblock">
@@ -469,6 +497,94 @@
                     rel="nofollow">здесь</a>.</p>
         </div>
     </article>
+    <article class="tariffs" id="tariffs">
+        <h2 class="article__title">Тарифы</h2>
+        <table class="tariffs__table">
+            <tr>
+                <th>Кол-во <br>ОКПО (ИНН)</th>
+                <th>Кол-во <br> рабочих мест</th>
+                <th>Стоимость лицензии <br>грн\мес</th>
+                <th>Заказать счёт</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td class="price__td">100</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>25</td>
+                <td class="price__td">450</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>50</td>
+                <td class="price__td">850</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>75</td>
+                <td class="price__td">1275</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>100</td>
+                <td class="price__td">1600</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>125</td>
+                <td class="price__td">2000</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>250</td>
+                <td class="price__td">2750</td>
+                <td>
+                    <button class="order__btn order__l">Заказать</button>
+                </td>
+            </tr>
+        </table>
+        <div class="tariffs__descr">Заказ осуществляется на период 6 или 12 месяцев. При заказе на 12 месяцев - скидка 10%. Дополнительно оплачивается стоимость подключения - 1 грн. <br>
+ВНИМАНИЕ! На один логин можно приобрести только одну конфигурацию.</div>
+    </article>
+    <article class="discount">
+        <div class="discount__intro">Экономьте с Online24 ! Клиенты получают
+            постоянную <b>скидку (до 15%)</b> на обслуживание сервисов:
+        </div>
+        <div class="discount__links">
+            <a href="office365.html" class="discount__link">&#8226; Microsoft Office 365 <span
+                    class="discount__img discount__img-off365"><img src="../img/office365-logo.jpg" alt=""></span></a>
+            <a href="udalenniy-ofis.html" class="discount__link">&#8226; Удалённый офис FirstOffice<span
+                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
+            <a href="1c.html" class="discount__link">&#8226; 1С в облаке FirstOffice<span class="discount__img"><img
+                    src="../img/fo_logo.png" alt=""></span></a>
+            <a href="oblachnaya-ats.html" class="discount__link">&#8226; Облачная АТС FirstOffice<span
+                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
+            <a href="smartdoc.html" class="discount__link">&#8226; Сервис составления договоров SmartDoc<span
+                    class="discount__img"><img src="../img/smartdoc-logo.png" alt=""></span></a>
+        </div>
+        <a href="../excellence.html" class="discount__page"><span class="discount__arr">&#8594;</span> ознакомьтесь с
+            условиями комплексной скидки здесь <span class="discount__arr">&#8592;</span></a>
+    </article>
     <article class="report__video">
         <h2 class="article__title">Видео о работе сервиса</h2>
         <div class="container-fluid">
@@ -497,32 +613,13 @@
             </div>
         </div>
     </article>
-    <article class="discount">
-        <div class="discount__intro">Экономьте вместе с Online24 ! Клиенты нашего портала получают
-            постоянную <b>скидку (до 15%)</b> на обслуживание следующих сервисов:
-        </div>
-        <div class="discount__links">
-            <a href="office365.html" class="discount__link">&#8226; Microsoft Office 365 <span
-                    class="discount__img discount__img-off365"><img src="../img/office365-logo.jpg" alt=""></span></a>
-            <a href="udalenniy-ofis.html" class="discount__link">&#8226; Удалённый офис FirstOffice<span
-                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
-            <a href="1c.html" class="discount__link">&#8226; 1С в облаке FirstOffice<span class="discount__img"><img
-                    src="../img/fo_logo.png" alt=""></span></a>
-            <a href="oblachnaya-ats.html" class="discount__link">&#8226; Облачная АТС FirstOffice<span
-                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
-            <a href="smartdoc.html" class="discount__link">&#8226; Сервис составления договоров SmartDoc<span
-                    class="discount__img"><img src="../img/smartdoc-logo.png" alt=""></span></a>
-        </div>
-        <a href="../excellence.html" class="discount__page"><span class="discount__arr">&#8594;</span> ознакомьтесь с
-            условиями комплексной скидки здесь <span class="discount__arr">&#8592;</span></a>
-    </article>
     <article class="liga__testcont liga__testcont-big container_btn">
         <a rel="nofollow" href="https://platforma.ligazakon.net/testd-report-ua/?dealerId=143615"
            class="btn_s btn-1 l__testbtn">
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Попробовать бесплатно (до 01.10.2017)
+            Протестируйте бесплатно 
         </a>
     </article>
 

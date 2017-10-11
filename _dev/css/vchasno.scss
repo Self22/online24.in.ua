@@ -1129,3 +1129,27 @@ html, body {
   }
 }
 
+.tariffs__action {
+
+}
+
+.tariffs__action-title {
+  text-align: center;
+  font-size: 2vw;
+
+  @include phones {
+    font-size: 6vw;
+  }
+}
+
+.tariffs__action-descr {
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin: 4vw 0 4vw;
+  }
+}
+

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /maket-inlife.html
+Disallow: /maket-procom.html

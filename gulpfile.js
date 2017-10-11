@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     rimraf = require('rimraf'),
     include = require("gulp-include"),
+    gulpSequence = require('gulp-sequence'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
@@ -78,7 +79,7 @@ gulp.task('js:build', function () {
 
 
 gulp.task('css:build', function () {
-
+    gulpSequence(
 
     gulp.src(path.src.css) // ������� ��� main.scss
         .pipe(sourcemaps.init()) //�������������� sourcemap
@@ -88,6 +89,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload)
+    )
 });
 
 gulp.task('img:build', function () {

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["test.js"],"sourcesContent":["/**\r\n * Created by USER on 30.09.2017.\r\n */\r\n$(document).ready(function () {\r\n    $('.inlife__list').bxSlider({\r\n        speed: 3000,\r\n        pause: 12000,\r\n        auto: true\r\n    });\r\n});"],"file":"test.js"}
