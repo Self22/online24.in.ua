@@ -266,41 +266,7 @@ html, body {
   }
 }
 
-.st0 {
 
-}
-
-.st1 {
-
-}
-
-.st2 {
-
-}
-
-.st3 {
-
-}
-
-.st4 {
-
-}
-
-.st5 {
-
-}
-
-.st6 {
-
-}
-
-.st7 {
-
-}
-
-.st8 {
-
-}
 
 .slogan__block {
   width: 20%;
@@ -457,7 +423,7 @@ html, body {
   flex-direction: column;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
 
   @include phones {
     flex: 100%;
@@ -483,7 +449,7 @@ html, body {
   text-align: right;
   font-size: 1.5vw;
   text-align: left;
-  margin-top: 1vw;
+  margin-top: 3vw;
 
   @include phones {
     font-size: 5vw;
@@ -508,7 +474,7 @@ html, body {
 }
 
 .slogan__main {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-bottom: 1vw;
   padding: 0 2vw;
   line-height: 3vw;
@@ -525,7 +491,7 @@ html, body {
 
   display: flex;
   flex-direction: column;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #996914;
   font-weight: 700;
 
@@ -548,7 +514,7 @@ html, body {
 .procom__link {
   color: #996914;
   font-size: 1.2vw;
-  margin-top: 0.5vw;
+  margin-top: 0.7vw;
 
   @include phones {
     width: 100%;

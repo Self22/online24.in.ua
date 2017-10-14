@@ -227,6 +227,7 @@ html, body {
 
   & .article__title {
     color: white;
+    margin-bottom: 0;
   }
 
   @include phones {
@@ -257,9 +258,10 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 160px;
+  height: 6vw;
   margin-top: 60px;
   width: 100%;
+  padding-left: 3%;
 
   @include phones {
     height: 100px;
@@ -315,7 +317,8 @@ html, body {
 
   & a {
     color: white;
-    border: 2px solid white;
+    border: none;
+    background: #164292;
   }
 
   & i {
@@ -359,7 +362,7 @@ html, body {
   }
 
   & h4 {
-    margin-bottom: 15px;
+    margin-bottom: 0.2vw;
 
     @include phones {
       font-size: 5vw;
@@ -372,7 +375,6 @@ html, body {
   display: block;
 
 }
-
 
 
 .slide {
@@ -439,6 +441,12 @@ html, body {
   background: #f0f2f4;
   flex-direction: column;
 
+  &-order {
+    height: 70px;
+    background: #437be0;
+    padding-bottom: 3vw;
+  }
+
   @include phones {
     height: 90px;
   }
@@ -453,7 +461,7 @@ html, body {
   text-align: center;
 }
 
-.l__testbtn, .tariff__button {
+.l__testbtn {
 
   background: #024ea6 !important;
   color: white !important;
@@ -478,6 +486,24 @@ html, body {
   & rect {
     stroke: #9a9abe;
   }
+}
+
+.tariff__button {
+
+  background: #437be0 !important;
+  color: #ffffff !important;
+  padding: 1vw 3vw;
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 600;
+  border: 3px solid #fefeff;
+  letter-spacing: 0.2vw;
+
+  @include phones {
+    padding: 12px 11px;
+    font-size: 14px;
+  }
+
 }
 
 .ca__slogan {
@@ -745,4 +771,8 @@ html, body {
     width: 250px;
     height: 150px;
   }
+}
+
+.tarif__features {
+  margin-bottom: 0.6vw;
 }

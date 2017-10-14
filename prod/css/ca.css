@@ -911,7 +911,8 @@ html, body {
   background: #437BE0;
   padding: 10px 5% 40px 5%; }
   .l__products .article__title {
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
   @media screen and (max-width: 480px) {
     .l__products {
       padding: 10px 2% 15px 2%; } }
@@ -951,9 +952,10 @@ html, body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 160px;
+  height: 6vw;
   margin-top: 60px;
-  width: 100%; }
+  width: 100%;
+  padding-left: 3%; }
   @media screen and (max-width: 480px) {
     .tariff__item-list {
       height: 100px; } }
@@ -995,7 +997,8 @@ html, body {
 
 .tariff__item-active a {
   color: white;
-  border: 2px solid white; }
+  border: none;
+  background: #164292; }
 
 .tariff__item-active i {
   display: block; }
@@ -1028,7 +1031,7 @@ html, body {
       .tariff__descr-item h4, .tariff__descr-item p {
         font-size: 5vw; } }
   .tariff__descr-item h4 {
-    margin-bottom: 15px; }
+    margin-bottom: 0.2vw; }
     @media screen and (max-width: 480px) {
       .tariff__descr-item h4 {
         font-size: 5vw; } }
@@ -1088,6 +1091,10 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .l__testcont-order {
+    height: 70px;
+    background: #437be0;
+    padding-bottom: 3vw; }
   @media screen and (max-width: 480px) {
     .l__testcont {
       height: 90px; } }
@@ -1098,7 +1105,7 @@ html, body {
   margin-top: 15px;
   text-align: center; }
 
-.l__testbtn, .tariff__button {
+.l__testbtn {
   background: #024ea6 !important;
   color: white !important;
   padding: 12px 50px;
@@ -1106,16 +1113,30 @@ html, body {
   font-weight: 400;
   border: 1px solid white; }
   @media screen and (max-width: 480px) {
-    .l__testbtn, .tariff__button {
+    .l__testbtn {
       padding: 12px 11px;
       font-size: 14px; } }
-  .l__testbtn svg, .tariff__button svg {
+  .l__testbtn svg {
     height: 58px; }
     @media screen and (max-width: 480px) {
-      .l__testbtn svg, .tariff__button svg {
+      .l__testbtn svg {
         height: 43px; } }
-  .l__testbtn rect, .tariff__button rect {
+  .l__testbtn rect {
     stroke: #9a9abe; }
+
+.tariff__button {
+  background: #437be0 !important;
+  color: #ffffff !important;
+  padding: 1vw 3vw;
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 600;
+  border: 3px solid #fefeff;
+  letter-spacing: 0.2vw; }
+  @media screen and (max-width: 480px) {
+    .tariff__button {
+      padding: 12px 11px;
+      font-size: 14px; } }
 
 .ca__slogan {
   display: -webkit-box;
@@ -1351,5 +1372,8 @@ html, body {
     .liga__video1 {
       width: 250px;
       height: 150px; } }
+
+.tarif__features {
+  margin-bottom: 0.6vw; }
 
 /*# sourceMappingURL=ca.css.map */

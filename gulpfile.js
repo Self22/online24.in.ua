@@ -47,7 +47,15 @@ var path = {
 var config = {
         server: {
             baseDir: "prod"
-        }
+        },
+        open: false
+    },
+    configTunnel = {
+        server: {
+            baseDir: "prod"
+        },
+        browser: 'Google Chrome',
+        open: 'local'
     };
 
 gulp.task('landings:build', function () {
