@@ -1009,7 +1009,8 @@ html, body {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 1vw; }
 
 .old__price {
   text-decoration: line-through; }
