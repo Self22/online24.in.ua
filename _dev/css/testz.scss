@@ -8,7 +8,7 @@ html, body {
   position: relative;
 }
 
-.inlife__block, .online24__block-web, .online24__block-seo, .procom__section {
+.procom__section {
 
   padding: 5% 8%;
 
@@ -21,6 +21,7 @@ html, body {
 
     @include phones {
       margin-bottom: 9vw;
+      font-family: Roboto, Arial, sans-serif;
       font-size: 5vw;
       padding: 6vw 0;
     }
@@ -28,198 +29,13 @@ html, body {
 
 }
 
-.inlife__cont {
-  font-size: 0;
-
-}
-
-.inlife__head {
-  font-size: 2vw;
-  text-align: center;
-  font-weight: 400;
-  margin-top: 4vw;
-
-  @include phones {
-    font-size: 5vw;
-  }
-}
-
-.inlife__list {
-
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-}
-
-.inlife__section {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.webinar__item {
-  width: 26%;
-  padding: 2vh 1.5% 1.5vh;
-  margin: 0 2%;
-  display: flex;
-  flex-flow: row wrap;
-  border: 1px solid #2B90D9;
-
-  &:hover {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  }
-
-  @include phones {
-    width: 100%;
-    margin: 0;
-    padding: 5%;
-    border-left: none;
-    border-right: none;
-  }
-}
-
-.item__link {
-  display: flex;
-  flex-flow: row wrap;
-  text-decoration: none !important;
-  cursor: pointer;
-
-}
-
-.date__block {
-
-  width: 30%;
-
-}
-
-.date__num {
-  font-size: 2vw;
-  font-weight: 600;
-  text-align: center;
-
-  @include phones {
-    font-size: 12vw;
-  }
-
-}
-
-.date__attr {
-  font-size: 1.2vw;
-  font-weight: 600;
-  text-align: center;
-
-  @include phones {
-    font-size: 5vw;
-  }
-}
-
-.title__block {
-
-  width: 70%;
-
-}
-
-.web__title {
-  padding-left: 2%;
-  font-weight: 600;
-  font-size: 1vw;
-  margin-bottom: 5%;
-
-  @include phones {
-    font-size: 5vw;
-    padding-left: 6%;
-  }
-}
-
-.web__subtitle {
-  font-size: 1vw;
-  padding-left: 2%;
-  margin-bottom: 5%;
-
-  @include phones {
-    font-size: 4vw;
-    padding-left: 6%;
-  }
-}
-
-.price__block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  font-size: 1.5vw;
-  color: #2B90D9;
-  font-weight: 600;
-
-  @include phones {
-    font-size: 5vw;
-  }
-
-}
-
-.speaker__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-
-}
-
-.speaker__photo {
-  width: 50%;
-
-  & img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.speaker__name {
-  font-size: 1.1vw;
-  text-align: center;
-  margin-top: 4%;
-  font-weight: 600;
-
-  @include phones {
-    font-size: 5vw;
-  }
-}
-
-.bx-wrapper {
-  border: none;
-  box-shadow: none;
-}
-
-.bx-wrapper .bx-prev {
-  left: -2%;
-
-  @include phones {
-    left: -5%;
-  }
-}
-
-.bx-wrapper .bx-next {
-  right: -2%;
-
-  @include phones {
-    right: -5%;
-  }
-}
-
-/////// online24 block
-
-
 .block__web-cont {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  padding: 1vw 1vw 2vw;
+  padding: 10px 10px 20px;
 
   @include phones {
     flex-direction: column;
@@ -241,15 +57,15 @@ html, body {
 
 .brand__buh {
   text-align: center;
-  font-size: 1.7vw;
+  font-size: 22px;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06vw;
-  margin-top: 3vw;
+  letter-spacing: 1px;
+  margin-top: 30px;
 
   @include phones {
-    font-size: 8vw;
+    font-size: 22px;
   }
 }
 
@@ -276,7 +92,7 @@ html, body {
 
 .brand__more-text {
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -292,8 +108,6 @@ html, body {
   }
 }
 
-
-
 .slogan__block {
   width: 20%;
   text-align: center;
@@ -307,38 +121,39 @@ html, body {
   }
 
   & h3 {
-    font-size: 1.5vw;
+    font-size: 18px;
     font-family: Roboto, Arial, sans-serif;
     color: #551a8b;
-    padding: 0 5vw;
+    padding: 0 10px;
 
     @include phones {
-      font-size: 8vw;
-      padding: 0 5vw;
-      margin-bottom: 2vw;
-      margin-top: 2vw;
+      font-size: 22px;
+
+      padding: 0 10px;
+      margin-bottom: 10px;
+      margin-top: 20px;
     }
 
   }
 
   & p {
-    font-size: 1.2vw;
+    font-size: 16px;
     font-family: Roboto, Arial, sans-serif;
 
     @include phones {
-      font-size: 5vw;
-      padding: 0 5vw;
+      font-size: 18px;
+      padding: 0 15px;
     }
 
   }
 
   & a {
-    font-size: 1.2vw;
+    font-size: 16px;
     font-family: Roboto, Arial, sans-serif;
 
     @include phones {
-      font-size: 7vw;
-      padding: 0 5vw;
+      font-size: 20px;
+      padding: 0 10px;
     }
   }
 
@@ -358,14 +173,14 @@ html, body {
   width: 100%;
   text-align: center;
   font-weight: 100;
+  margin-bottom: 15px;
+  font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
-  margin-bottom: 1.2vw;
-  font-size: 1.2vw;
 
   @include phones {
-    margin-top: 15vw;
-    font-size: 5vw;
-    padding: 0 5vw;
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 0 15px;
   }
 }
 
@@ -394,7 +209,7 @@ html, body {
 
   & img {
     width: auto;
-    height: 3.5vw;
+    height: 40px;
 
     @include phones {
       width: 50vw;
@@ -404,19 +219,38 @@ html, body {
 }
 
 .link__descr {
-  font-size: 1.2vw;
+  font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
   text-align: center;
-  margin-top: 1vw;
+  margin-top: 12px;
 
   @include phones {
-    font-size: 5vw;
-    margin-top: 3vw;
+    font-size: 16px;
+    margin-top: 14px;
     font-weight: 600;
   }
 }
 
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+}
 
+.bx-wrapper .bx-prev {
+  left: -2%;
+
+  @include phones {
+    left: -5%;
+  }
+}
+
+.bx-wrapper .bx-next {
+  right: -2%;
+
+  @include phones {
+    right: -5%;
+  }
+}
 
 //// procom block
 
@@ -601,7 +435,6 @@ html, body {
     margin: 5vw 0;
   }
 }
-
 
 /* Pulse */
 @-webkit-keyframes hvr-pulse {

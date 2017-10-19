@@ -38,7 +38,7 @@ html, body {
     font-size: 1.5vw;
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: black;
     font-weight: 100;
     white-space: nowrap;
     letter-spacing: 0.05vw;
@@ -74,11 +74,12 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: rgb(194, 201, 223); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(194, 201, 223, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(27, 91, 170, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2c9df', endColorstr='#1b5baa', GradientType=1); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfe0da+0,2989d8+100,7db9e8+100,d5e8f7+100 */
+  background: rgb(223, 224, 218); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe0da', endColorstr='#d5e8f7', GradientType=1); /* IE6-9 */
   height: 9vw;
   z-index: 5;
 }
@@ -216,6 +217,7 @@ html, body {
 }
 
 .liga__header-content {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,7 +267,7 @@ html, body {
 
 .l__testbtn {
 
-  background: #de1336 !important;
+  background: #25408f !important;
   color: #f2f6fa !important;
   padding: 12px 50px;
   font-size: 24px;
@@ -294,7 +296,7 @@ html, body {
 
   .partner__brand {
     font-size: 4vw;
-    color: white;
+    color: black;
     margin: 0;
     font-weight: 500;
     letter-spacing: 2px;
@@ -310,7 +312,7 @@ html, body {
     font-size: 3vw;
     font-weight: 100;
     margin-top: 40px;
-    color: white;
+    color: black;
 
 
     @include phones {
@@ -319,16 +321,16 @@ html, body {
   }
 
   & p {
-    text-align: center;
-    color: white;
     font-size: 2.2vw;
-    font-weight: 100;
+    text-align: center;
+    color: black;
+    font-weight: 400;
     margin-top: 5vw;
-    border-top: 1px solid white;
+    border-top: 1px solid black;
     padding-top: 2vw;
     width: 40vw;
     line-height: 3vw;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.05vw;
     margin-bottom: 5vw;
 
 

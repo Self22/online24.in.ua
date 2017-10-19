@@ -1,7 +1,7 @@
 //parallax
 
 
-$('.liga__header-content').parallax({imageSrc: '../img/liga_header1.jpg'});
+$('.liga__header-content').parallax({imageSrc: '../img/liga__back1.jpg'});
 $('.liga__fotoblock').parallax({imageSrc: '../img/liga__block1.jpg'});
 $('.ca__header-content').parallax({imageSrc: '../img/ca_header1.jpg'});
 $('.ib__header-content').parallax({imageSrc: '../img/ib_header3.jpg'});

@@ -1866,6 +1866,200 @@ a.animated-button.gibson-three:after {
   }
 }
 
+//// procom block
+
+.procom__block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3% 12%;
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+
+  & a {
+    text-decoration: none !important;
+  }
+
+  @include phones {
+    flex-flow: row wrap;
+  }
+}
+
+.brand__block-procom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1vw;
+
+  @include phones {
+    flex: 100%;
+    flex-direction: row;
+  }
+}
+
+.brand__logo {
+
+  width: 75%;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    margin-top: 3vw;
+    width: 40%;
+  }
+}
+
+.brand__status {
+  text-align: right;
+  font-size: 1.5vw;
+  text-align: left;
+  margin-top: 3vw;
+
+  @include phones {
+    font-size: 5vw;
+    padding-left: 10vw;
+  }
+}
+
+.slogan__block-procom {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  padding-top: 2vw;
+  text-align: center;
+
+  @include phones {
+    margin-top: 1vw;
+    flex-flow: row wrap;
+    flex: 100%;
+  }
+}
+
+.slogan__main {
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  padding: 0 2vw;
+  line-height: 3vw;
+  font-weight: 700;
+
+  @include phones {
+    width: 55%;
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
+
+.towns__block {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+  color: #996914;
+  font-weight: 700;
+
+  @include phones {
+    width: 40%;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  & span {
+    margin: 0.3vw 0;
+    justify-content: center;
+
+    @include phones {
+      margin: 1vw 0;
+    }
+  }
+}
+
+.procom__link {
+  color: #996914;
+  font-size: 1.2vw;
+  margin-top: 0.7vw;
+
+  @include phones {
+    width: 100%;
+    font-size: 5vw;
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.courses__block {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+
+  @include phones {
+    flex: 100%;
+  }
+}
+
+.links__block {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1vw;
+}
+
+.course__link {
+  outline: 1px solid #4a39a3;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  width: 50%;
+  text-decoration: none;
+  font-size: 1.2vw;
+  padding: 0.9vw 5%;
+  text-align: center;
+  background: white;
+
+  @include phones {
+    width: 100%;
+    font-size: 4vw;
+    padding: 4vw 0;
+    font-weight: 600;
+  }
+
+  &-viol {
+    color: white;
+    background: #4A39A3;
+
+    &:hover {
+      color: white !important;
+    }
+
+    @include phones {
+      color: #4A39A3;
+      background: white;
+    }
+  }
+
+  &:hover {
+    outline-width: 1px !important;
+  }
+
+}
+
+.ukraine__block {
+  text-align: center;
+  font-size: 1.5vw;
+  color: #996914;
+
+  margin-top: 2vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin: 5vw 0;
+  }
+}
 
 
 ////////// bob

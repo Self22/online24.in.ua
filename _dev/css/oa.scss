@@ -913,6 +913,7 @@
   justify-content: space-around;
   align-items: center;
   font-size: 2vw;
+  border-bottom: 1px solid black;
 
   @include phones {
     padding: 5vw 0;
