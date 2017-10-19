@@ -1494,7 +1494,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2vw; }
+  font-size: 2vw;
+  border-bottom: 1px solid black; }
   @media screen and (max-width: 480px) {
     .channel-acco__trigger-title {
       padding: 5vw 0; } }

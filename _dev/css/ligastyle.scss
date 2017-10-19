@@ -217,7 +217,7 @@ html, body {
 }
 
 .liga__header-content {
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -802,6 +802,10 @@ html, body {
 
 }
 
+.logomain {
+  display: none;
+}
+
 .video {
   display: flex;
   flex-direction: column;
@@ -818,5 +822,50 @@ html, body {
   @include phones {
     width: 250px;
     height: 150px;
+  }
+}
+
+//// линк на главную
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 4%;
+  top: 24%;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 60%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 100;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
   }
 }

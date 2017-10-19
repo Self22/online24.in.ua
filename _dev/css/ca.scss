@@ -64,7 +64,7 @@ html, body {
 }
 
 .partnerlogosticky {
-  margin-left: 20px;
+  margin-left: 4%;
   max-width: 130px;
 
   @include desktop {
@@ -776,4 +776,54 @@ html, body {
 
 .tarif__features {
   margin-bottom: 0.6vw;
+}
+
+//// линк на главную
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  width: 18%;
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 1%;
+  bottom: 8%;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 12%;
+  bottom: -25%;
+  right: 19%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }

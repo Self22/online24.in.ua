@@ -533,6 +533,22 @@ html, body {
     .speaker__name {
       font-size: 5vw; } }
 
+.bx-wrapper {
+  border: none;
+  box-shadow: none; }
+
+.bx-wrapper .bx-prev {
+  left: -2%; }
+  @media screen and (max-width: 480px) {
+    .bx-wrapper .bx-prev {
+      left: -5%; } }
+
+.bx-wrapper .bx-next {
+  right: -2%; }
+  @media screen and (max-width: 480px) {
+    .bx-wrapper .bx-next {
+      right: -5%; } }
+
 .block__web-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +588,7 @@ html, body {
 .brand__buh {
   text-align: center;
   font-size: 1.7vw;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06vw;
@@ -601,7 +618,8 @@ html, body {
 
 .brand__more-text {
   text-align: center;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  font-family: Roboto, Arial, sans-serif; }
 
 .brand__more-img {
   position: absolute;
@@ -616,6 +634,7 @@ html, body {
   width: 20%;
   text-align: center;
   font-size: 1.2vw;
+  font-family: Roboto, Arial, sans-serif;
   padding: 0 5%; }
   @media screen and (max-width: 480px) {
     .slogan__block {
@@ -623,6 +642,7 @@ html, body {
       padding: 5vw 0 0; } }
   .slogan__block h3 {
     font-size: 1.5vw;
+    font-family: Roboto, Arial, sans-serif;
     color: #551a8b;
     padding: 0 5vw; }
     @media screen and (max-width: 480px) {
@@ -632,13 +652,15 @@ html, body {
         margin-bottom: 2vw;
         margin-top: 2vw; } }
   .slogan__block p {
-    font-size: 1.2vw; }
+    font-size: 1.2vw;
+    font-family: Roboto, Arial, sans-serif; }
     @media screen and (max-width: 480px) {
       .slogan__block p {
         font-size: 5vw;
         padding: 0 5vw; } }
   .slogan__block a {
-    font-size: 1.2vw; }
+    font-size: 1.2vw;
+    font-family: Roboto, Arial, sans-serif; }
     @media screen and (max-width: 480px) {
       .slogan__block a {
         font-size: 7vw;
@@ -661,6 +683,7 @@ html, body {
   width: 100%;
   text-align: center;
   font-weight: 100;
+  font-family: Roboto, Arial, sans-serif;
   margin-bottom: 1.2vw;
   font-size: 1.2vw; }
   @media screen and (max-width: 480px) {
@@ -714,6 +737,7 @@ html, body {
 
 .link__descr {
   font-size: 1.2vw;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   margin-top: 1vw; }
   @media screen and (max-width: 480px) {
@@ -721,22 +745,6 @@ html, body {
       font-size: 5vw;
       margin-top: 3vw;
       font-weight: 600; } }
-
-.bx-wrapper {
-  border: none;
-  box-shadow: none; }
-
-.bx-wrapper .bx-prev {
-  left: -2%; }
-  @media screen and (max-width: 480px) {
-    .bx-wrapper .bx-prev {
-      left: -5%; } }
-
-.bx-wrapper .bx-next {
-  right: -2%; }
-  @media screen and (max-width: 480px) {
-    .bx-wrapper .bx-next {
-      right: -5%; } }
 
 .procom__block {
   display: -webkit-box;
