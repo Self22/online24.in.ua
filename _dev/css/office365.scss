@@ -198,7 +198,7 @@
 }
 
 .office__header-content {
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -923,19 +923,7 @@
   right: 0;
 }
 
-.channel__decsr {
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 400;
-  padding: 4vw;
-  margin-bottom: 0;
 
-  @include phones {
-    font-size: 5.4vw;
-    padding: 20px 0vw;
-
-  }
-}
 
 .section__title {
   color: black;
@@ -952,187 +940,51 @@
   }
 }
 
-.numbers__descr {
-
-  font-size: 2vw;
-
-  @include phones {
-    padding: 0 5vw;
-    font-size: 6vw;
-
-  }
+//// линк на главную
+.logomain {
+  display: none;
 }
 
-.aboutus {
-  padding: 4vw 12vw 2vw;
-
-  @include phones {
-    padding: 10vw 5vw;
-  }
-}
-
-.concurent__item {
-  font-size: 2vw;
-  margin-bottom: 1vw;
-
-  @include phones {
-    font-size: 6vw;
-  }
-
-}
-
-.concurent__item-1 {
-  color: #686950;
-}
-
-.concurent__item-2 {
-  color: #B64541;
-}
-
-.concurent__item-3 {
-  color: #5FB641;
-}
-
-.concurent__item-4 {
-  color: #65289C;
-}
-
-.aboutus__descr {
-  margin-top: 2vw;
-
-  & p {
-    text-align: center;
-    font-weight: 400;
-    margin: 2vw 1vw;
-    font-size: 2.1vw;
-
-    @include phones {
-      margin-top: 10vw;
-      font-size: 6vw;
-    }
-  }
-
-  & li {
-    font-size: 2vw;
-    margin-bottom: 1vw;
-    font-weight: 100;
-
-    @include phones {
-      font-size: 6vw;
-    }
-  }
-}
-
-.aboutus__title {
-  font-size: 2.1vw;
-  border-top: 1px solid black;
-  text-align: center;
-  font-weight: 400;
-  padding-top: 4vw;
-  margin-bottom: 4vw;
-
-  @include phones {
-    font-size: 6vw;
-  }
-}
-
-.oc__item {
-  background: #f4f5f3;
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  padding: 3vw 2vw;
-  margin-top: 3vw;
+  right: 8vw;
+  top: 10vw;
 
-  @include phones {
-    flex-direction: column;
-  }
-
-}
-
-.oc__title {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 2vw;
-  white-space: nowrap;
-
-  @include phones {
-    font-size: 7vw;
-  }
-
-}
-
-.oc__price {
-  text-align: center;
-  font-size: 2vw;
-  color: #3f51b5;
-  white-space: nowrap;
-  margin-right: 3vw;
-
-  @include phones {
-    font-size: 7vw;
-  }
-}
-
-.oc__descr {
-  font-size: 2vw;
-  padding: 0 1vw;
-  font-weight: 100;
-
-  @include phones {
-    font-size: 6vw;
-  }
-}
-
-.oc__img {
-
-  width: 10vw;
-
-  & img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @include phones {
-    width: 30vw;
-    margin-top: 10px;
-  }
-}
-
-.bp-hs_inner__item {
-  padding: 0;
-  margin: 0;
-}
-
-.bxslider {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sip {
   @include phones {
     display: none;
   }
+
 }
 
-.tariff__intro {
-  text-align: center;
-  font-size: 1.5vw;
-  margin-bottom: 2vw;
-
-  @include phones {
-    font-size: 6vw;
-    margin: 5vw;
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
   }
 }
 
-.channel__price {
-  color: red;
-  font-size: 2.5vw;
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
 
-  @include phones {
-    font-size: 6.5vw;
-    white-space: nowrap;
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
   }
 }

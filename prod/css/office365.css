@@ -884,6 +884,7 @@ textarea {
   background-size: cover; }
 
 .office__header-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1561,17 +1562,6 @@ textarea {
   left: 0;
   right: 0; }
 
-.channel__decsr {
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 400;
-  padding: 4vw;
-  margin-bottom: 0; }
-  @media screen and (max-width: 480px) {
-    .channel__decsr {
-      font-size: 5.4vw;
-      padding: 20px 0vw; } }
-
 .section__title {
   color: black;
   margin-bottom: 3vw;
@@ -1585,155 +1575,49 @@ textarea {
     .section__title {
       font-size: 6vw; } }
 
-.numbers__descr {
-  font-size: 2vw; }
-  @media screen and (max-width: 480px) {
-    .numbers__descr {
-      padding: 0 5vw;
-      font-size: 6vw; } }
+.logomain {
+  display: none; }
 
-.aboutus {
-  padding: 4vw 12vw 2vw; }
-  @media screen and (max-width: 480px) {
-    .aboutus {
-      padding: 10vw 5vw; } }
-
-.concurent__item {
-  font-size: 2vw;
-  margin-bottom: 1vw; }
-  @media screen and (max-width: 480px) {
-    .concurent__item {
-      font-size: 6vw; } }
-
-.concurent__item-1 {
-  color: #686950; }
-
-.concurent__item-2 {
-  color: #B64541; }
-
-.concurent__item-3 {
-  color: #5FB641; }
-
-.concurent__item-4 {
-  color: #65289C; }
-
-.aboutus__descr {
-  margin-top: 2vw; }
-  .aboutus__descr p {
-    text-align: center;
-    font-weight: 400;
-    margin: 2vw 1vw;
-    font-size: 2.1vw; }
-    @media screen and (max-width: 480px) {
-      .aboutus__descr p {
-        margin-top: 10vw;
-        font-size: 6vw; } }
-  .aboutus__descr li {
-    font-size: 2vw;
-    margin-bottom: 1vw;
-    font-weight: 100; }
-    @media screen and (max-width: 480px) {
-      .aboutus__descr li {
-        font-size: 6vw; } }
-
-.aboutus__title {
-  font-size: 2.1vw;
-  border-top: 1px solid black;
-  text-align: center;
-  font-weight: 400;
-  padding-top: 4vw;
-  margin-bottom: 4vw; }
-  @media screen and (max-width: 480px) {
-    .aboutus__title {
-      font-size: 6vw; } }
-
-.oc__item {
-  background: #f4f5f3;
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3vw 2vw;
-  margin-top: 3vw; }
+  right: 8vw;
+  top: 10vw; }
   @media screen and (max-width: 480px) {
-    .oc__item {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+    .mainlink__block {
+      display: none; } }
 
-.oc__title {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 2vw;
-  white-space: nowrap; }
-  @media screen and (max-width: 480px) {
-    .oc__title {
-      font-size: 7vw; } }
-
-.oc__price {
-  text-align: center;
-  font-size: 2vw;
-  color: #3f51b5;
-  white-space: nowrap;
-  margin-right: 3vw; }
-  @media screen and (max-width: 480px) {
-    .oc__price {
-      font-size: 7vw; } }
-
-.oc__descr {
-  font-size: 2vw;
-  padding: 0 1vw;
-  font-weight: 100; }
-  @media screen and (max-width: 480px) {
-    .oc__descr {
-      font-size: 6vw; } }
-
-.oc__img {
-  width: 10vw; }
-  .oc__img img {
-    max-width: 100%;
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px; }
+  .mainlink__img img {
+    width: 100%;
     height: auto; }
-  @media screen and (max-width: 480px) {
-    .oc__img {
-      width: 30vw;
-      margin-top: 10px; } }
 
-.bp-hs_inner__item {
-  padding: 0;
-  margin: 0; }
-
-.bxslider {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-@media screen and (max-width: 480px) {
-  .sip {
-    display: none; } }
-
-.tariff__intro {
-  text-align: center;
+.mainlink__text {
   font-size: 1.5vw;
-  margin-bottom: 2vw; }
-  @media screen and (max-width: 480px) {
-    .tariff__intro {
-      font-size: 6vw;
-      margin: 5vw; } }
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400; }
 
-.channel__price {
-  color: red;
-  font-size: 2.5vw; }
-  @media screen and (max-width: 480px) {
-    .channel__price {
-      font-size: 6.5vw;
-      white-space: nowrap; } }
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%; }
+  .mainlink__coursor img {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=office365.css.map */

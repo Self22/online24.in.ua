@@ -884,6 +884,7 @@ textarea {
   background-size: cover; }
 
 .oa__header-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1755,5 +1756,50 @@ textarea {
 .discount {
   background: #eff3f3;
   padding: 6% 12% 0; }
+
+.logomain {
+  display: none; }
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 3vw;
+  top: 10vw; }
+  @media screen and (max-width: 480px) {
+    .mainlink__block {
+      display: none; } }
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px; }
+  .mainlink__img img {
+    width: 100%;
+    height: auto; }
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400; }
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%; }
+  .mainlink__coursor img {
+    width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=oa.css.map */

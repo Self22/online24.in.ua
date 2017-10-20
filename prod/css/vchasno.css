@@ -1751,4 +1751,49 @@ html, body {
       font-size: 5vw;
       margin: 4vw 0 4vw; } }
 
+.logomain {
+  display: none; }
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 5vw;
+  top: 15vw; }
+  @media screen and (max-width: 480px) {
+    .mainlink__block {
+      display: none; } }
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px; }
+  .mainlink__img img {
+    width: 100%;
+    height: auto; }
+
+.mainlink__text {
+  font-size: 1.3vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400; }
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%; }
+  .mainlink__coursor img {
+    width: 100%;
+    height: auto; }
+
 /*# sourceMappingURL=vchasno.css.map */

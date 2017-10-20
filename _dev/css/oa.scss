@@ -199,7 +199,7 @@
 }
 
 .oa__header-content {
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1222,4 +1222,53 @@
 .discount {
   background: #eff3f3;
   padding: 6% 12% 0;
+}
+
+//// линк на главную
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 3vw;
+  top: 10vw;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }

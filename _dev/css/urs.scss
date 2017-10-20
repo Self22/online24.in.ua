@@ -197,7 +197,7 @@
 }
 
 .urs__header-content {
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1029,4 +1029,54 @@ i {
 .discount {
 
   padding: 2% 12% 0;
+}
+
+//// линк на главную
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  width: 18%;
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 2%;
+  bottom: 7%;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 12%;
+  bottom: -25%;
+  right: 19%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }

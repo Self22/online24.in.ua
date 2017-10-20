@@ -193,7 +193,7 @@
 }
 
 .sd__header-content {
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,6 +304,8 @@
 
   p {
     font-size: 3vw;
+    display: flex;
+    flex-direction: column;
 
     @include phones {
       font-size: 7vw;
@@ -810,4 +812,53 @@
 .bp-hs_inner__item {
   padding: 0;
   margin: 0;
+}
+
+//// линк на главную
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 6vw;
+  top: 9vw;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.5vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -1153,3 +1153,52 @@ html, body {
   }
 }
 
+//// линк на главную
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 5vw;
+  top: 15vw;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 50%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 1.3vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 15%;
+  bottom: -25%;
+  right: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
