@@ -366,7 +366,7 @@ textarea {
 
 .sidebar__index {
   min-height: 500px;
-  background: #f5f6f7;
+  background: #124872;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,9 +409,9 @@ textarea {
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
   padding: .5vw 1.5vw 0 0vw;
-  color: #002942;
+  color: white !important;
   font-size: 1.7vw;
-  font-weight: 600;
+  font-weight: 500;
   text-align: right;
   letter-spacing: 0.07vw;
   border-radius: 0 0px 5px 0;
@@ -427,7 +427,7 @@ textarea {
   font-size: 1.6vw;
   font-weight: 400;
   letter-spacing: 0.1vw;
-  color: #5550A1;
+  color: white !important;
   line-height: 2vw;
   padding-bottom: 5px; }
 
@@ -440,13 +440,18 @@ textarea {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 2vw;
   margin-bottom: 1.5vw;
-  text-transform: uppercase;
-  font-weight: 400;
+  text-transform: lowercase;
+  font-weight: 600;
   letter-spacing: 0.1vw;
-  margin-left: 1.5vw; }
+  margin-left: 1.5vw;
+  color: white !important;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 14%; }
 
 .active {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+  border-bottom: 1px solid white;
+  border-right: 1px solid white; }
   @media screen and (max-width: 480px) {
     .active {
       box-shadow: none; } }

@@ -93,7 +93,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
         .pipe(prefixer()) //������� ��������� ��������
-        //.pipe(cssnano()) //������
+        .pipe(cssnano()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload)

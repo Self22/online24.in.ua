@@ -390,10 +390,10 @@ html, body {
   justify-content: center;
   align-items: baseline;
   text-align: center;
-  background: #25408f;
+  background: #2f8cd8;
   color: #ffffff;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 0.05vw;
   font-size: 2vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -414,8 +414,9 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   margin: 4.5%;
-  padding: 1vw;
-  border: 1px solid rgba(37, 64, 143, 0.4);
+  padding: 2vw;
+  border: 3px solid rgb(255, 255, 248);
+  border-radius: 10px;
   z-index: 1;
 
   @include tablets {
@@ -440,7 +441,7 @@ html, body {
   margin-top: auto;
   text-align: center;
   font-size: 2.2vw;
-  font-weight: 600;
+  font-weight: 400;
   border-top: 4px solid;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -476,7 +477,7 @@ html, body {
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 2.2vw !important;
-  padding: 14px 0px !important;
+  padding: 0.5vw 0px !important;
   color: white !important;
   font-weight: 400 !important;
   margin: 0 auto !important;

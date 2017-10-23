@@ -34,6 +34,7 @@ $(function () {
 
             $('.nav__main').addClass('nav__fixed');
             $('.header__main').addClass('header__main-sticky');
+            $('.logomain').css('display', 'block');
 
         }
 
@@ -41,6 +42,7 @@ $(function () {
 
             $('.nav__main').removeClass('nav__fixed');
             $('.header__main').removeClass('header__main-sticky');
+            $('.logomain').css('display', 'none');
         }
 
     });
