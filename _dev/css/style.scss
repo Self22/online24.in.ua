@@ -181,7 +181,7 @@ html, body {
   &__main {
     position: relative;
     height: 40vh;
-    background: #DEF4FC; /* fallback for old browsers */
+    background: #DEF4FC;
     padding: 0 12vw;
 
     @include tablets {
@@ -203,9 +203,7 @@ html, body {
   &__ob {
     position: relative;
     height: 30vh;
-    background: #C9D6FF; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #DEF4FC;
     padding: 0 12vw;
 
     @include tablets {
@@ -1418,13 +1416,13 @@ a.animated-button.gibson-three:after {
   flex: 1;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   & h1 {
     font-family: Raleway, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     text-align: right;
     font-weight: 400;
     margin: 0;
