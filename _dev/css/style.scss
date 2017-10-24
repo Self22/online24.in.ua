@@ -88,16 +88,16 @@ html, body {
   z-index: 5;
   padding: 0;
   left: 1px;
-  height: 100px;
   background: #124872;
   margin: 0;
-  padding: 0 12vw;
+  padding: 2vh 12vw;
 
   & .nav__main-item a {
     color: white;
     text-shadow: none;
     font-weight: 500;
     text-transform: uppercase;
+    font-size: 1.2vw;
   }
 
   & .stickyheader__logo {
@@ -155,9 +155,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2vw;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 1vw 2vw;
   font-size: 20px;
 
   & a {
@@ -425,7 +423,7 @@ html, body {
 }
 
 .slide {
-  background: white;
+  background: #def4fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,16 +811,16 @@ html, body {
   }
 
   &-2 {
-    background: white;
+    background: #def4fc;
   }
 
   &-3 {
-    background: #def4fc;
+    background: white;
 
   }
 
   &-4 {
-    background: white;
+    background: #def4fc;
   }
 }
 
@@ -1445,7 +1443,7 @@ a.animated-button.gibson-three:after {
   align-items: center;
   padding-top: 5vw;
   padding-right: 12vw;
-  background: white;
+  background: #def4fc;
 
   @include tablets {
     padding-right: 0;
@@ -2050,7 +2048,6 @@ a.animated-button.gibson-three:after {
   }
 }
 
-.hvr-bounce-to-left:before {
-  background: #2098D1;
+.padding__main {
+  background: #def4fc;
 }
-
