@@ -74,12 +74,8 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfe0da+0,2989d8+100,7db9e8+100,d5e8f7+100 */
-  background: rgb(223, 224, 218); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(223, 224, 218, 1) 0%, rgba(41, 137, 216, 1) 100%, rgba(125, 185, 232, 1) 100%, rgba(213, 232, 247, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe0da', endColorstr='#d5e8f7', GradientType=1); /* IE6-9 */
+
+  background: white;
   height: 9vw;
   z-index: 5;
 }
@@ -151,7 +147,7 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #25408f;
+  background: #716F71;
   display: block;
   border: none;
   padding: 1.5vw 2.5vw;
@@ -267,10 +263,11 @@ html, body {
 
 .l__testbtn {
 
-  background: #25408f !important;
+  background: #de1336 !important;
   color: #f2f6fa !important;
   padding: 12px 50px;
   font-size: 24px;
+  font-weight: 500;
 
   @include phones {
     padding: 11px 11px;
@@ -355,7 +352,7 @@ html, body {
 
 .liga__about {
   padding: 4.4vw 8vw 0;
-  background: rgb(213, 232, 247);
+  background: white;
 
 
   & i {
@@ -369,7 +366,7 @@ html, body {
 
 .liga__products {
   padding: 0 12vw 4vw;
-  background: #d5e8f7;
+  background: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -390,7 +387,7 @@ html, body {
   justify-content: center;
   align-items: baseline;
   text-align: center;
-  background: #2f8cd8;
+  background: #274290;
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.05vw;
@@ -415,8 +412,8 @@ html, body {
   justify-content: space-between;
   margin: 4.5%;
   padding: 2vw;
-  border: 3px solid rgb(255, 255, 248);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   z-index: 1;
 
   @include tablets {
@@ -445,13 +442,14 @@ html, body {
   border-top: 4px solid;
   padding-top: 15px;
   padding-bottom: 10px;
+  color: #2f8cd8;
 
   @include phones {
     font-size: 7vw;
   }
 
   &-grand {
-    border-color: white;
+    border-color: #618641;
   }
 
   &-prime {
@@ -500,7 +498,7 @@ html, body {
 
 .liga__comparison-table {
   padding: 1vw 10vw 3vw;
-  background: #d5e8f7;
+  background: white;
 
   & img {
     margin-top: 10px;
@@ -521,7 +519,7 @@ html, body {
 }
 
 .liga__periodicals-article {
-  background: #d5e8f7;
+  background: white;
   padding: 4vw 12vw;
 
   @include tablets {
@@ -632,7 +630,6 @@ html, body {
   width: 80%;
   border: none;
   background: transparent;
-  border: 1px solid black;
   padding: 15px 0;
   text-transform: uppercase;
   font-weight: 400;
@@ -677,7 +674,7 @@ html, body {
 
 .liga__features {
   padding: 4.4vw 8vw 10px;
-  background: rgb(213, 232, 247);
+  background: white;
 }
 
 .features__descr {
@@ -732,11 +729,11 @@ html, body {
   }
 
   &-2 {
-    background: rgb(193, 217, 241);
+    background: #DFE0DA;
   }
 
   &-3 {
-    background: rgb(171, 208, 239);
+    background: #DFE0DA;
   }
 }
 

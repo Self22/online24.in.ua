@@ -62,7 +62,7 @@ gulp.task('landings:build', function () {
     gulp.src(path.src.landings) //������� ����� �� ������� ����
         .pipe(include())
         .on('error', console.log)
-        // .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.dest.landings)) //�������� �� � ����� build
         .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
 });
@@ -70,7 +70,7 @@ gulp.task('landings:build', function () {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
         .pipe(include())
-        //.pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .on('error', console.log)
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������

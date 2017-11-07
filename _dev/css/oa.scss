@@ -1235,8 +1235,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 3vw;
-  top: 10vw;
+  left: 8vw;
+  bottom: 5vw;
 
   @include phones {
     display: none;
