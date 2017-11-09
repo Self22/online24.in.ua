@@ -376,6 +376,51 @@ $(document).ready(function () {
 
 });
 
+////////////////////////////////////////////// tabs sms-mayak tariffs
+
+$(document).ready(function () {
+
+    //tabs
+
+    var flag = true;
+
+    $('.tariff__name-link').on('click', function (e) {
+        e.preventDefault();
+
+        var
+            $this = $(this),
+            item = $this.closest('.tariff__name'),
+            container = $this.closest('.tab__container'),
+            content = container.find('.tarif__item'),
+            ndx = item.index(),
+            reqItem = content.eq(ndx),
+            activeItem = content.filter('.tarif__item-active');
+
+        if (flag) {
+            flag = false;
+
+
+            item.addClass('tariff__name-active')
+                .removeClass('hvr-back-pulse')
+                .siblings()
+                .removeClass('tariff__name-active')
+                .addClass('hvr-back-pulse');
+
+            activeItem.fadeOut(500, function () {
+                reqItem.fadeIn(500, function () {
+                    $(this).addClass('tarif__item-active')
+                        .siblings()
+                        .removeClass('tarif__item-active');
+                    flag = true
+                });
+            });
+
+        }
+
+    })
+
+});
+
 /////////////////////////// Nav Landings: soft scroll
 
 $('#nav-main').singlePageNav(
