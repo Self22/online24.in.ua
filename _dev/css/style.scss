@@ -1556,6 +1556,12 @@ a.animated-button.gibson-three:after {
       }
     }
 
+    &-sd {
+      @include phones {
+        width: 80%;
+      }
+    }
+
     & img {
       width: 100%;
       height: auto;

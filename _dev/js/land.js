@@ -22,6 +22,8 @@ $('.report__fotoblock').parallax({imageSrc: '../img/report_fotoblock.jpg'});
 $('.office__header-content').parallax({imageSrc: '../img/office__header.jpg'});
 $('.office__fotoblock').parallax({imageSrc: '../img/office365__fotoblock.jpg'});
 $('.sm__header-content').parallax({imageSrc: '../img/sm__header.jpg'});
+$('.sm__fotoblock').parallax({imageSrc: '../img/sm__fotoblock.jpg'});
+
 
 
 
@@ -477,6 +479,13 @@ $('.vchasno__reg').on('click', function (e) {
     e.preventDefault();
     $('.overlay').fadeIn(800);
     $('.popup__form-test').fadeIn(800);
+});
+
+
+$('.bye__button').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn(800);
+    $('.popup__form-order').fadeIn(800);
 });
 
 $('.tariff__button').on('click', function (e) {

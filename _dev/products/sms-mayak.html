@@ -52,7 +52,7 @@
     </div>
     <form id="popupform-order" class="popupform-order">
         <input type="hidden" name="form_type" value="order">
-        <input type="hidden" name="product" value="contragent">
+        <input type="hidden" name="product" value="sms-mayak">
         <div class="popupform__order-name form-group">
             <label for="name"></label>
             <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
@@ -71,34 +71,7 @@
                id="popup__order-btn">
     </form>
 </div>
-<div class="popup__form-test">
-    <span class="close__popup">&times</span>
-    <div class="popup__title">Заявка на тестовое включение</div>
 
-    <div class="popup__text">Оставьте свои контактные данные <br>
-        и наш специалист свяжется с Вами
-    </div>
-    <form id="popupform-test" class="popupform-test">
-        <input type="hidden" name="form_type" value="test">
-        <input type="hidden" name="product" value="contragent">
-        <div class="popupform__order-name form-group">
-            <label for="name"></label>
-            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
-        </div>
-        <div class="popupform__order-tel form-group">
-            <label for="tel"></label>
-            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
-        </div>
-        <div class="popupform__order-email form-group">
-            <label for="tel"></label>
-            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
-                   placeholder="E-mail" required>
-        </div>
-        <label for="popup__order-btn" class="form__label"></label>
-        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ОТПРАВИТЬ"
-               id="popup__order-btn">
-    </form>
-</div>
 <div class="button__up hvr-pulse">
     <img src="../img/ic_expand_less_white_24dp_2x.png"
          alt="лига законов, интерактивная бухгалтерия - консультации для бухгалтера">
@@ -218,7 +191,7 @@
     </nav>
     <nav class="lmain__menu  hidden-sm-down">
         <a target="_blank" href="http://smsmayak.com.ua/" class="partnerlogosticky" rel="nofollow">
-            <img src="../img/sms-mayak-logo-1.svg" alt="лига закон скачать, справочники для бухгалтера">
+            <img src="../img/sms-mayak-logo-1.svg" alt="лига закон скачать бесплатно, справочники для бухгалтера">
         </a>
         <a href="/" class="logosticky__o24">
             <div class="logomain">
@@ -313,8 +286,10 @@
     <div class="sm__header-content">
         <a href="../index.html" class="mainlink__block hvr-bob">
             <span class="mainlink__text">смотреть другие <br> сервисы портала</span>
-            <span class="mainlink__img"><img src="../img/logo_w.png" alt=""></span>
-            <span class="mainlink__coursor"><img src="../img/coursor-hand-w.png" alt=""></span>
+            <span class="mainlink__img"><img src="../img/logo_w.png"
+                                             alt="сайт ліга закон: электронный документооборот в облаке"></span>
+            <span class="mainlink__coursor"><img src="../img/coursor-hand-w.png"
+                                                 alt="форум лига закон: закон про відходи, цивільний кодекс"></span>
         </a>
 
         <div class="sm__slogan animatedParent" data-sequence='500'>
@@ -338,7 +313,7 @@
 <main class="sm__main">
 
 
-    <article class="sm__tariffs">
+    <article class="sm__tariffs" id="tariffs">
         <h2 class="article__title">Выберите СВОЙ УРОВЕНЬ контроля</h2>
         <div class="tab__container">
             <ul class="tariffs__tab">
@@ -353,7 +328,8 @@
             <div class="tariffs__content">
                 <div class="tarif__item tarif__item-active">
                     <div class="tarif__item-cont">
-                        <div class="tarif__img"><img src="../img/sms1.svg" alt=""></div>
+                        <div class="tarif__img"><img src="../img/sms1.svg"
+                                                     alt="бухгалтерские бланки, правовые новости для учёта"></div>
                         <div class="tarif__text"><p>1. Мгновенное оповещение об изменении статуса</p>
                             <p>2. Возможность мгновенной реакции на изменения: Вы сможете сразу обратиться к
                                 регистратору, правоохранительным органам и в суд для отмены направленных против Вас
@@ -367,7 +343,8 @@
                 </div>
                 <div class="tarif__item">
                     <div class="tarif__item-cont">
-                        <div class="tarif__img"><img src="../img/sms2.svg" alt=""></div>
+                        <div class="tarif__img"><img src="../img/sms2.svg"
+                                                     alt="проверка контрагента по инн - реестр юридических лиц"></div>
                         <div class="tarif__text">
                             <p>1. Мгновенное сообщение при начале регистрационных действий</p>
                             <p>2. Детальное оповещение о конкретных действиях регистрационной процедуры и принимаемых
@@ -404,6 +381,14 @@
             </div>
         </div>
     </article>
+    <article class="l__testcont container_btn">
+        <a href="" class="btn_s btn-1 tariff__button">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Оформить заявку на подключение
+        </a>
+    </article>
     <article class="provider__block">
         <div class="provider_info">Услуга предоставляется физическим и юридическим лицам компанией ЛІГА:ЗАКОН совместно
             с Государственным предприятием «Национальные информационные системы» Министерства юстиции Украины
@@ -413,7 +398,7 @@
     <article class="sm__fotoblock" id="action">
         <div class="liga__partner-logo">
             <img src="../img/lz_partner.png"
-                 alt="консультации лига закон, интерактивная бухгалтерия в облаке, бесплатные консультации для бухгалтеров">
+                 alt="лига законов онлайн - подключение бухгалтерских облачных сервисов, учёт налоговой разницы">
         </div>
     </article>
 
@@ -424,30 +409,26 @@
         </div>
         <div class="discount__links">
             <a href="office365.html" class="discount__link">&#8226; Microsoft Office 365 <span
-                    class="discount__img discount__img-off365"><img src="../img/office365-logo.jpg" alt=""></span></a>
+                    class="discount__img discount__img-off365"><img src="../img/office365-logo.jpg"
+                                                                    alt="електронний документообіг"></span></a>
             <a href="udalenniy-ofis.html" class="discount__link">&#8226; Удалённый офис FirstOffice<span
-                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
+                    class="discount__img"><img src="../img/fo_logo.png" alt="защита от рейдерства: смс маяк"></span></a>
             <a href="1c.html" class="discount__link">&#8226; 1С в облаке FirstOffice<span class="discount__img"><img
                     src="../img/fo_logo.png" alt=""></span></a>
             <a href="oblachnaya-ats.html" class="discount__link">&#8226; Облачная АТС FirstOffice<span
-                    class="discount__img"><img src="../img/fo_logo.png" alt=""></span></a>
+                    class="discount__img"><img src="../img/fo_logo.png"
+                                               alt="рейдерский захват: пути предотвращения с лига закон"></span></a>
             <a href="smartdoc.html" class="discount__link">&#8226; Сервис составления договоров SmartDoc<span
-                    class="discount__img"><img src="../img/smartdoc-logo.png" alt=""></span></a>
+                    class="discount__img discount__img-sd"><img src="../img/smartdoc-logo.png"
+                                                                alt="безопасность компании - проверка контрагента, защита прав на недвижимое имущество"></span></a>
         </div>
         <a href="../excellence.html" class="discount__page"><span class="discount__arr">&#8594;</span> ознакомьтесь с
             условиями комплексной скидки здесь <span class="discount__arr">&#8592;</span></a>
     </article>
-    <article class="l__testcont l__testcont-big container_btn">
-        <a href="" class="btn_s btn-1 l__testbtn">
-            <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-            </svg>
-            Попробовать бесплатно (тест 24 часа)
-        </a>
-    </article>
+
     <section class="video">
-        <h2 class="article__title">Интерактивная бухгалтерия (видео презентация)</h2>
-        <iframe class="liga__video1" src="https://www.youtube.com/watch?v=NHMJdG7Hqsw?rel=0" frameborder="0"
+        <h2 class="article__title">SMS-Маяк от ЛІГА:ЗАКОН (видео презентация)</h2>
+        <iframe class="liga__video1" src="https://www.youtube.com/embed/NHMJdG7Hqsw" frameborder="0"
                 allowfullscreen></iframe>
     </section>
 

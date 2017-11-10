@@ -50,7 +50,7 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: #182b27;
+  background: #A64E4C;
   height: 100px;
   z-index: 5;
 }
@@ -123,7 +123,7 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #9b9cb8;
+  background: #84A24A;
   margin-left: 15px;
   display: block;
   padding: 10px 35px;
@@ -167,7 +167,7 @@ html, body {
   }
 
   &:focus {
-    color: #023756 !important;
+    color: white !important;
   }
 
   @include desktop {
@@ -208,7 +208,7 @@ html, body {
   height: 100vh;
 
   @include phones {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/ib_header3.jpg) !important;
+    background-image: url(../img/sm__header.jpg) !important;
     height: 100vh;
     align-items: center;
   }
@@ -245,7 +245,7 @@ html, body {
 
 .l__testcont {
   height: 170px;
-  background: #f6f7ee;
+  background: #A64E4C;
   flex-direction: column;
   border-top: 2px solid white;
   border-bottom: 2px solid #fff;
@@ -258,13 +258,7 @@ html, body {
     height: 90px;
   }
 
-  &-big {
-    height: 225px;
 
-    @include phones {
-      height: 400px;
-    }
-  }
 
 }
 
@@ -288,9 +282,9 @@ html, body {
   color: blue;
 }
 
-.l__testbtn {
+.l__testbtn, .tariff__button {
 
-  background: rgb(33, 113, 185) !important;
+  background: #84A24A !important;
   color: white !important;
   padding: 12px 50px;
   font-size: 24px;
@@ -330,8 +324,9 @@ html, body {
   }
 
   @include phones {
-    margin-top: 150px;
+
     padding-left: 0;
+    align-items: center;
   }
 
   .partner__brand {
@@ -371,7 +366,7 @@ html, body {
     }
 
     @include phones {
-      margin-bottom: 20vw;
+      margin-bottom: 6vw;
       text-align: center;
       font-size: 8vw;
       line-height: 10vw;
@@ -400,6 +395,13 @@ html, body {
   line-height: 3vw;
   text-align: right;
   color: white;
+
+  @include phones {
+    font-size: 5vw;
+    width: 90%;
+    line-height: 7vw;
+    text-align: center;
+  }
 }
 
 .article__title {
@@ -408,16 +410,24 @@ html, body {
 }
 
 .provider__block {
-  padding: 5% 12%;
+  padding: 4% 12% 6%;
 }
 
 .provider_info {
   font-size: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .sm__tariffs {
   padding: 3% 12%;
   background: #DAEFDB;
+
+  @include phones {
+    padding: 3% 2%;
+  }
 }
 
 .tariffs__tab {
@@ -447,6 +457,10 @@ html, body {
     text-align: center;
     cursor: pointer;
     display: flex;
+
+    @include phones {
+      font-size: 4vw;
+    }
   }
 
   &-active {
@@ -479,6 +493,10 @@ html, body {
   border-radius: 0 0 10px 10px;
   border-top-color: transparent;
   padding: 3% 3% 0 5%;
+
+  @include phones {
+    padding: 3% 3% 5% 5%;
+  }
 }
 
 .tarif__img {
@@ -499,6 +517,10 @@ html, body {
   & p {
     font-size: 1.3vw;
     margin-bottom: 0.5vw;
+
+    @include phones {
+      font-size: 4vw;
+    }
   }
 
 }
@@ -514,31 +536,60 @@ html, body {
   text-align: center;
   font-size: 2vw;
 
+  @include phones {
+    font-size: 4vw;
+  }
+
 }
 
 .price__num {
   text-align: center;
   font-size: 3vw;
 
+  @include phones {
+    font-size: 8vw;
+  }
+
 }
 
 .process__block {
   padding: 1% 12% 5%;
   background: #DAEFDB;
+
+  @include phones {
+    padding: 1% 5% 5%;
+  }
 }
 
 .process__cont {
   display: flex;
   flex-direction: row;
   margin-top: 5vw;
+
+  @include phones {
+    flex-flow: row wrap;
+  }
 }
 
 .action__block {
   flex: 1;
   margin: 0 2%;
-  padding: 2vw 7%;
+  padding: 2vw 5%;
   background: #F2FAE4;
   border-radius: 10px;
+  transition: all 1s;
+
+  &:hover {
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  @include phones {
+    flex: 100%;
+    margin: 0 2% 10vw;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+    padding: 5vw 9%;
+  }
+
 }
 
 .action__name {
@@ -550,11 +601,22 @@ html, body {
   align-items: flex-start;
   text-align: center;
   margin-bottom: 1.5vw;
+  line-height: 1.9vw;
+
+  @include phones {
+    font-size: 5vw;
+    line-height: 5vw;
+    height: 28vw;
+  }
 }
 
 .action__step {
   font-size: 1.3vw;
   margin-bottom: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
@@ -572,7 +634,12 @@ html, body {
   background-color: #28483e;
 }
 
-
+.sm__fotoblock {
+  height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 
 
@@ -657,13 +724,6 @@ html, body {
   & i {
     margin-right: 3%;
   }
-}
-
-.ib__fotoblock {
-  height: 30vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .btn-1:hover {
@@ -933,4 +993,9 @@ html, body {
   background: #131d14;
   padding: 1vw 5vw;
   align-self: center;
+
+  @include phones {
+    font-size: 6vw;
+    padding: 3vw 12vw;
+  }
 }
