@@ -1031,7 +1031,7 @@ html, body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9d6d7', endColorstr='#207cca', GradientType=1);
   /* IE6-9 */
-  height: 9vw;
+  height: 80px;
   z-index: 5; }
 
 .logosticky__o24 {

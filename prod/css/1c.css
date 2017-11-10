@@ -998,7 +998,8 @@ textarea {
 .lnav__fixed {
   position: fixed;
   background: #344559;
-  z-index: 5; }
+  z-index: 5;
+  height: 80px; }
 
 .logosticky__o24 {
   margin-right: 6%;
@@ -1051,7 +1052,7 @@ textarea {
   transition: all 0.5s;
   background: #d91414;
   display: block;
-  padding: 1vw 2.5vw;
+  padding: 0.3vw 2.5vw;
   text-align: center;
   border: none;
   font-size: 1.5vw; }

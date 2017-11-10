@@ -51,7 +51,7 @@ html, body {
 .lnav__fixed {
   position: fixed;
   background: #A64E4C;
-  height: 100px;
+  height: 80px;
   z-index: 5;
 }
 
@@ -391,6 +391,7 @@ html, body {
 
 .partner__descr {
   font-size: 2vw;
+  font-weight: 100;
   width: 50%;
   line-height: 3vw;
   text-align: right;

@@ -1259,7 +1259,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 0.2vw; }
     .oa__slogan .partner__brand img {
       margin-top: 30px;
@@ -1282,14 +1282,14 @@ textarea {
         text-align: center; } }
   .oa__slogan .partner__slogan {
     text-align: center;
-    font-size: 3vw;
-    margin-top: 40px;
+    font-size: 2.5vw;
+    margin-top: 60px;
     color: #272016;
     font-weight: 300;
     font-family: "Raleway", Arial, sans-serif;
-    line-height: 5vw;
+    line-height: 3vw;
     letter-spacing: 0.07vw;
-    margin-bottom: 10vw; }
+    margin-bottom: 4vw; }
     @media screen and (max-width: 1200px) {
       .oa__slogan .partner__slogan {
         margin-top: 20px; } }

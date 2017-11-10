@@ -998,7 +998,8 @@ textarea {
 .lnav__fixed {
   position: fixed;
   background: linear-gradient(135deg, #f8fbfc 0%, #f2f8fd 41%, #94a9bc 65%, #e0e9f0 65%, #94a9bc 65%);
-  z-index: 5; }
+  z-index: 5;
+  height: 80px; }
 
 .logosticky__o24 {
   margin-right: 3%; }
@@ -1051,7 +1052,7 @@ textarea {
   background: #94a9bc;
   margin-left: 15px;
   display: block;
-  padding: 1vw 2vw;
+  padding: 0.4vw 2vw;
   text-align: center;
   border: 1px solid #dae4ed;
   font-size: 1.5vw; }

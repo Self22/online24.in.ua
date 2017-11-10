@@ -50,7 +50,7 @@ html, body {
 .lnav__fixed {
   position: fixed;
   background: #effeff;
-  height: 100px;
+  height: 80px;
   z-index: 5;
 }
 
@@ -226,7 +226,7 @@ html, body {
 }
 
 .analytics__content {
-  padding: 3% 12%;
+  padding: 1% 12%;
     background: white;
 
   & h2 {
@@ -238,7 +238,7 @@ html, body {
 }
 
 .analytics__feature {
-  padding: 35px 4%;
+  padding: 20px 4%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +349,7 @@ html, body {
 }
 
 .l__testcont {
-  height: 170px;
+  height: 100px;
   background: #f6f7ee;
   flex-direction: column;
   border-top: 2px solid white;
@@ -611,12 +611,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 50px;
   text-align: center;
   background: #5f98c2;
   color: white;
   font-weight: 500;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 .ib__product-text {
@@ -627,7 +628,7 @@ html, body {
 .ib__product-item {
   flex: 1 1 190px;
   max-width: 340px;
-  min-height: 640px;
+  min-height: 540px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -647,7 +648,7 @@ html, body {
   }
 
   & li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     @include phones {
       margin-bottom: 0.5vw;
@@ -669,7 +670,7 @@ html, body {
   font-size: 26px;
   font-weight: 600;
   border-top: 5px solid;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 10px;
 
   &-gaz {
@@ -696,11 +697,11 @@ html, body {
   text-transform: uppercase;
   font-size: 20px !important;
   border: 1px solid #767a98 !important;
-  padding: 20px 0px !important;
+  padding: 15px 0px !important;
   color: white !important;
   font-weight: 900 !important;
   margin: 0 !important;;
-  margin-top: 15px !important;
+  margin-top: 5px !important;
   background: #2171b9;
 
   &::after {

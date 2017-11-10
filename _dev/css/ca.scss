@@ -56,6 +56,7 @@ html, body {
   position: fixed;
   background: #001148;
   z-index: 5;
+  height: 90px;
 }
 
 .logosticky__o24 {
@@ -131,7 +132,7 @@ html, body {
   margin-left: 15px;
   display: block;
   border: none;
-  padding: 1vw 4vw;
+  padding: 0.5vw 4vw;
   text-align: center;
 
   & span {
@@ -223,7 +224,7 @@ html, body {
 
 .l__products {
   background: #437BE0;
-  padding: 10px 5% 40px 5%;
+  padding: 10px 5% 20px 5%;
 
   & .article__title {
     color: white;
@@ -301,6 +302,13 @@ html, body {
 }
 
 .tariff__item {
+  &-left {
+    margin-right: 20%;
+
+    @include phones {
+      margin-right: 0;
+    }
+  }
   &:hover {
     color: white;
     box-shadow: 0 0 1px transparent;
@@ -333,6 +341,7 @@ html, body {
   padding: 0;
   display: flex;
   margin-bottom: 1vw;
+  margin-top: -6vw;
 }
 
 .old__price {
@@ -356,6 +365,7 @@ html, body {
   & h4, p {
     color: white;
     font-size: 1.5vw;
+    margin-bottom: 1vw;
 
     @include phones {
       font-size: 5vw;
@@ -443,7 +453,7 @@ html, body {
   flex-direction: column;
 
   &-order {
-    height: 70px;
+    height: 90px;
     background: #437be0;
     padding-bottom: 3vw;
   }
@@ -612,7 +622,7 @@ html, body {
 }
 
 .l__descr {
-      padding: 4% 12%;
+  padding: 0 12%;
     background: white;
 
   & .article__title {
@@ -655,7 +665,7 @@ html, body {
 }
 
 .l_features {
-  padding: 3% 12%;
+  padding: 2% 12%;
   background: #437be0;
 
   & h2, h3, div {
@@ -679,7 +689,7 @@ html, body {
 .feature__title {
   font-size: 2vw;
       text-align: center;
-    margin-bottom: 3vw;
+  margin-bottom: 1vw;
 
   @include phones {
     font-size: 7vw;
@@ -688,10 +698,24 @@ html, body {
   }
 }
 
+.card {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
 .product__feautures {
   border: 1px solid white;
-  padding: 10%;
+  padding: 5% 10% 0;
   height: 100%;
+
+  & p {
+    font-weight: 100;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw;
+    @include phones {
+      font-size: 5vw;
+    }
+  }
 
   @include desktop {
     height: 100%;

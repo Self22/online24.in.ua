@@ -76,7 +76,7 @@ html, body {
   position: fixed;
 
   background: white;
-  height: 9vw;
+  height: 90px;
   z-index: 5;
 }
 
@@ -150,7 +150,7 @@ html, body {
   background: #716F71;
   display: block;
   border: none;
-  padding: 1.5vw 2.5vw;
+  padding: 1.2vw 2.5vw;
   text-align: center;
 
   & span {
@@ -351,7 +351,7 @@ html, body {
 }
 
 .liga__about {
-  padding: 4.4vw 8vw 0;
+  padding: 3% 8vw 0;
   background: white;
 
 
@@ -410,8 +410,8 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 4.5%;
-  padding: 2vw;
+  margin: 1vw;
+  padding: 1vw;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   z-index: 1;
@@ -441,7 +441,6 @@ html, body {
   font-weight: 400;
   border-top: 4px solid;
   padding-top: 15px;
-  padding-bottom: 10px;
   color: #2f8cd8;
 
   @include phones {
@@ -497,7 +496,7 @@ html, body {
 }
 
 .liga__comparison-table {
-  padding: 1vw 10vw 3vw;
+  padding: 1vw 15% 3vw;
   background: white;
 
   & img {
@@ -538,7 +537,7 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 50px 4vw;
+  padding: 25px 3vw;
 
   @include phones {
     padding: 50px 10vw;
@@ -625,16 +624,16 @@ html, body {
 }
 
 .periodicals__test-button {
-  margin-top: 30px;
+  margin-top: 20px;
   align-self: center;
   width: 80%;
   border: none;
   background: transparent;
-  padding: 15px 0;
+  padding: 10px 0;
   text-transform: uppercase;
   font-weight: 400;
   color: #25408f;
-  font-size: 2.2vw;
+  font-size: 2vw;
 
   @include phones {
     font-size: 7vw;
@@ -647,12 +646,12 @@ html, body {
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
-  font-size: 2.2vw !important;
-  padding: 14px 0px !important;
+  font-size: 2vw !important;
+  padding: 10px 0px !important;
   color: white !important;
   font-weight: 400 !important;
   margin: 0 auto !important;
-  margin-top: 15px !important;
+  margin-top: 10px !important;
   background: #de1336;
   border: none;
 
@@ -673,7 +672,7 @@ html, body {
 }
 
 .liga__features {
-  padding: 4.4vw 8vw 10px;
+  padding: 0 8vw 10px;
   background: white;
 }
 
@@ -684,7 +683,7 @@ html, body {
 }
 
 .feature__descr {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 
   @include phones {
     font-size: 5vw;
@@ -773,7 +772,7 @@ html, body {
 
 .feature__title {
   margin-bottom: 1.5vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 300;
   color: #25408f;
   letter-spacing: 0.5px;

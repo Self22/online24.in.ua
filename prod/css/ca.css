@@ -1004,7 +1004,8 @@ html, body {
 .lnav__fixed {
   position: fixed;
   background: #001148;
-  z-index: 5; }
+  z-index: 5;
+  height: 90px; }
 
 .logosticky__o24 {
   margin-right: auto;
@@ -1060,7 +1061,7 @@ html, body {
   margin-left: 15px;
   display: block;
   border: none;
-  padding: 1vw 4vw;
+  padding: 0.5vw 4vw;
   text-align: center; }
   .lmain__menu-excellence span {
     color: black;
@@ -1130,7 +1131,7 @@ html, body {
 
 .l__products {
   background: #437BE0;
-  padding: 10px 5% 40px 5%; }
+  padding: 10px 5% 20px 5%; }
   .l__products .article__title {
     color: white;
     margin-bottom: 0; }
@@ -1192,6 +1193,11 @@ html, body {
 
 .tariff__item {
   transition-duration: 0.9s; }
+  .tariff__item-left {
+    margin-right: 20%; }
+    @media screen and (max-width: 480px) {
+      .tariff__item-left {
+        margin-right: 0; } }
   .tariff__item:hover {
     color: white;
     box-shadow: 0 0 1px transparent; }
@@ -1213,7 +1219,8 @@ html, body {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 1vw; }
+  margin-bottom: 1vw;
+  margin-top: -6vw; }
 
 .old__price {
   text-decoration: line-through; }
@@ -1230,7 +1237,8 @@ html, body {
   text-align: center; }
   .tariff__descr-item h4, .tariff__descr-item p {
     color: white;
-    font-size: 1.5vw; }
+    font-size: 1.5vw;
+    margin-bottom: 1vw; }
     @media screen and (max-width: 480px) {
       .tariff__descr-item h4, .tariff__descr-item p {
         font-size: 5vw; } }
@@ -1287,7 +1295,7 @@ html, body {
   background: #f0f2f4;
   flex-direction: column; }
   .l__testcont-order {
-    height: 70px;
+    height: 90px;
     background: #437be0;
     padding-bottom: 3vw; }
   @media screen and (max-width: 480px) {
@@ -1411,7 +1419,7 @@ html, body {
       font-size: 7vw; } }
 
 .l__descr {
-  padding: 4% 12%;
+  padding: 0 12%;
   background: white; }
   .l__descr .article__title {
     margin-bottom: 2vw;
@@ -1443,7 +1451,7 @@ html, body {
       font-size: 6vw; } }
 
 .l_features {
-  padding: 3% 12%;
+  padding: 2% 12%;
   background: #437be0; }
   .l_features h2, .l_features h3, .l_features div {
     color: white; }
@@ -1460,17 +1468,28 @@ html, body {
 .feature__title {
   font-size: 2vw;
   text-align: center;
-  margin-bottom: 3vw; }
+  margin-bottom: 1vw; }
   @media screen and (max-width: 480px) {
     .feature__title {
       font-size: 7vw;
       display: flex;
       align-items: center; } }
 
+.card {
+  margin-bottom: 1vw;
+  margin-top: 1vw; }
+
 .product__feautures {
   border: 1px solid white;
-  padding: 10%;
+  padding: 5% 10% 0;
   height: 100%; }
+  .product__feautures p {
+    font-weight: 100;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw; }
+    @media screen and (max-width: 480px) {
+      .product__feautures p {
+        font-size: 5vw; } }
   @media screen and (max-width: 1200px) {
     .product__feautures {
       height: 100%; } }

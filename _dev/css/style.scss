@@ -686,7 +686,7 @@ html, body {
   cursor: pointer;
   position: fixed;
   z-index: 6;
-  right: 10%;
+  right: 4%;
   bottom: 5%;
   opacity: 1;
   text-decoration: none;
@@ -1221,6 +1221,7 @@ a.animated-button.gibson-three:after {
   width: 57%;
   background: white;
   border-radius: 15px;
+  height: 90vh;
   z-index: 30;
   top: 50%;
   left: 50%;
@@ -1252,7 +1253,7 @@ a.animated-button.gibson-three:after {
   text-align: center;
   padding: 20px;
   padding-bottom: 0;
-  margin-top: 2vw;
+  margin-top: 1vw;
 
   @include desktop {
     font-size: 4vw;
@@ -1313,7 +1314,7 @@ a.animated-button.gibson-three:after {
 }
 
 .order__name-input {
-  font-size: 2vw;
+  font-size: 1.7vw;
   padding: 12px;
   border-radius: 33px;
   border: 1px solid #b5b5b5;
@@ -1325,13 +1326,13 @@ a.animated-button.gibson-three:after {
   }
 
   @include desktop {
-    font-size: 20px;
+    font-size: 1.7vw;
   }
 
 }
 
 .order__tel-input {
-  font-size: 2vw;
+  font-size: 1.7vw;
   padding: 12px;
   border-radius: 33px;
   border: 1px solid #b5b5b5;
@@ -1357,7 +1358,7 @@ a.animated-button.gibson-three:after {
   border-radius: 33px;
   border: none;
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
 
   @include tablets {
     margin-top: 10px;
@@ -1376,7 +1377,7 @@ a.animated-button.gibson-three:after {
 }
 
 .form-group {
-  margin: 1.5vw 2% 0;
+  margin: 1vw 2% 0;
   width: 55%;
   text-align: center;
 
