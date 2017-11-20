@@ -179,7 +179,7 @@ html, body {
   &__main {
     position: relative;
     height: 40vh;
-    background: #DEF4FC;
+    background: rgb(242, 251, 254);
     padding: 0 12vw;
 
     @include tablets {
@@ -807,11 +807,11 @@ html, body {
   }
 
   &-1 {
-    background: #def4fc;
+    background: rgb(242, 251, 254);
   }
 
   &-2 {
-    background: #def4fc;
+    background: rgb(242, 251, 254);
   }
 
   &-3 {
@@ -820,7 +820,7 @@ html, body {
   }
 
   &-4 {
-    background: #def4fc;
+    background: rgb(242, 251, 254);
   }
 }
 
@@ -911,7 +911,7 @@ html, body {
 }
 
 .excellence__security {
-  background: #DEF4FC;
+  background: rgb(242, 251, 254);
 }
 
 .excellence__adaptation {
@@ -919,7 +919,7 @@ html, body {
 }
 
 .excellence__news {
-  background: #DEF4FC;
+  background: rgb(242, 251, 254);
 }
 
 .excellence__features {
@@ -1005,7 +1005,7 @@ html, body {
 }
 
 .partn__forservice {
-  background: #DEF4FC;
+  background: rgb(242, 251, 254);
 }
 
 .partn__contacts {
@@ -1418,6 +1418,10 @@ a.animated-button.gibson-three:after {
   justify-content: flex-end;
   align-items: center;
 
+  @include phones {
+    justify-content: center;
+  }
+
   & h1 {
     font-family: Raleway, Arial, sans-serif;
     text-transform: uppercase;
@@ -1444,7 +1448,7 @@ a.animated-button.gibson-three:after {
   align-items: center;
   padding-top: 5vw;
   padding-right: 12vw;
-  background: #def4fc;
+  background: rgb(242, 251, 254);
 
   @include tablets {
     padding-right: 0;
@@ -1781,6 +1785,10 @@ a.animated-button.gibson-three:after {
   display: flex;
   flex-direction: row;
 
+  @include phones {
+    flex-direction: column;
+  }
+
 }
 
 .o__link {
@@ -1796,11 +1804,16 @@ a.animated-button.gibson-three:after {
 
   @include phones {
     font-size: 4vw;
+    padding: 7vw 0;
   }
 
   &-buh {
     color: #4151A2;
-    background: #def4fc;
+    background: rgb(242, 251, 254);
+
+    @include phones {
+      border-top: 1px solid;
+    }
   }
 
   &-ur {
@@ -2056,5 +2069,5 @@ a.animated-button.gibson-three:after {
 }
 
 .padding__main {
-  background: #def4fc;
+  background: rgb(242, 251, 254);
 }
