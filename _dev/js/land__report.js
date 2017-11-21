@@ -203,6 +203,15 @@ $('.close__popup').on('click', function (e) {
 
 })
 
+/////////// slider inlife
+
+$(document).ready(function () {
+    $('.inlife__list').bxSlider({
+        speed: 3000,
+        pause: 12000,
+        auto: true
+    });
+});
 
 
 

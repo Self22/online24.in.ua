@@ -1236,12 +1236,6 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    .oc__slogan .partner__brand img {
-      width: 30%;
-      margin-left: 2vw; }
-      @media screen and (max-width: 480px) {
-        .oc__slogan .partner__brand img {
-          width: 50%; } }
     @media screen and (max-width: 480px) {
       .oc__slogan .partner__brand {
         font-size: 8vw;
@@ -1269,6 +1263,12 @@ textarea {
       .oc__slogan p {
         text-align: center;
         font-size: 18px; } }
+  .oc__slogan img {
+    width: 30%;
+    margin-top: 3vw; }
+    @media screen and (max-width: 480px) {
+      .oc__slogan img {
+        width: 50%; } }
 
 .l__descr {
   padding: 50px 1vw 30px 1vw;
@@ -1544,7 +1544,7 @@ textarea {
   font-weight: 400 !important; }
 
 .security {
-  padding: 3% 12%;
+  padding: 3% 12% 0;
   background: white; }
   @media screen and (max-width: 480px) {
     .security {

@@ -264,3 +264,13 @@ $('.close__popup').on('click', function (e) {
 $('#nav-main').singlePageNav(
     {offset: 130, speed: 1000, threshold: 150}
 );
+
+/////////// slider inlife
+
+$(document).ready(function () {
+    $('.inlife__list').bxSlider({
+        speed: 3000,
+        pause: 12000,
+        auto: true
+    });
+});

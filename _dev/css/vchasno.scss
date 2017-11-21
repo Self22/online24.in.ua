@@ -803,6 +803,7 @@ html, body {
   align-items: stretch;
 
   @include phones {
+    padding: 0;
     flex-flow: row wrap;
   }
 }

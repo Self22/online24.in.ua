@@ -2071,3 +2071,217 @@ a.animated-button.gibson-three:after {
 .padding__main {
   background: rgb(242, 251, 254);
 }
+
+//////////// inlife block
+
+.inlife__block {
+
+  padding: 5% 8%;
+
+  & h2 {
+
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 3vw 0;
+    margin-bottom: 5vw;
+
+    @include phones {
+      margin-bottom: 9vw;
+      font-size: 5vw;
+      padding: 6vw 0;
+    }
+  }
+
+}
+
+.inlife__cont {
+  padding: 0 8%;
+  font-size: 0;
+  margin-bottom: 5vw;
+
+  @include phones {
+    padding: 0 4%;
+  }
+}
+
+.inlife__head {
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 8vw;
+  margin-bottom: 4vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.inlife__list {
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.inlife__section {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.webinar__item {
+  transition: all 0.5s;
+  width: 29%;
+  padding: 2vh 1.5% 1.5vh;
+  margin: 1px 2%;
+  display: flex;
+  flex-flow: row wrap;
+  outline: 1px solid #2B90D9;
+
+  &:hover {
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  @include phones {
+    width: 100%;
+    margin: 3px 0;
+    padding: 5%;
+    border-left: none;
+    border-right: none;
+    height: 55vh;
+  }
+}
+
+.item__link {
+  display: flex;
+  flex-flow: row wrap;
+  text-decoration: none !important;
+  cursor: pointer;
+
+}
+
+.date__block {
+
+  width: 30%;
+
+}
+
+.date__num {
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+
+  @include phones {
+    font-size: 12vw;
+  }
+
+}
+
+.date__attr {
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-align: center;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.title__block {
+
+  width: 70%;
+
+}
+
+.web__title {
+  padding-left: 2%;
+  font-weight: 600;
+  font-size: 1vw;
+  margin-bottom: 5%;
+
+  @include phones {
+    font-size: 5vw;
+    padding-left: 6%;
+  }
+}
+
+.web__subtitle {
+  font-size: 1vw;
+  padding-left: 2%;
+  margin-bottom: 5%;
+
+  @include phones {
+    font-size: 3.8vw;
+    padding-left: 6%;
+  }
+}
+
+.price__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 1.5vw;
+  color: #2B90D9;
+  font-weight: 600;
+
+  @include phones {
+    font-size: 5vw;
+  }
+
+}
+
+.speaker__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+
+}
+
+.speaker__photo {
+  width: 50%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.speaker__name {
+  font-size: 1.1vw;
+  text-align: center;
+  margin-top: 4%;
+  font-weight: 600;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+}
+
+.bx-wrapper .bx-prev {
+  left: -2%;
+
+  @include phones {
+    left: -5%;
+  }
+}
+
+.bx-wrapper .bx-next {
+  right: -2%;
+
+  @include phones {
+    right: -5%;
+  }
+}
+
+
