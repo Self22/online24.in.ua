@@ -18,7 +18,6 @@ var gulp = require('gulp'),
 var path = {
     dest: {
         html: 'prod/',
-        landings: 'prod/products/*.html',
         css: 'prod/css/',
         js: 'prod/js/',
         img: 'prod/img/',
@@ -35,7 +34,6 @@ var path = {
     },
     watch: {
         html: '_dev/**/*.html',
-        landings: '_dev/products/*.html',
         css: '_dev/css/**/*.scss',
         js: '_dev/js/**/*.js',
         img: '_dev/img/**/*.*',
@@ -58,14 +56,6 @@ var config = {
         open: 'local'
     };
 
-gulp.task('landings:build', function () {
-    gulp.src(path.src.landings) //������� ����� �� ������� ����
-        .pipe(include())
-        .on('error', console.log)
-        //.pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(path.dest.landings)) //�������� �� � ����� build
-        .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
-});
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
@@ -119,7 +109,6 @@ gulp.task('fonts:build', function () {
 
 gulp.task('build', [
     'html:build',
-    'landings:build',
     'css:build',
     'fonts:build',
     'img:build',
@@ -129,9 +118,6 @@ gulp.task('build', [
 gulp.task('watch', function () {
     watch([path.watch.html], function (event, cb) {
         gulp.start('html:build');
-    });
-    watch([path.watch.landings], function (event, cb) {
-        gulp.start('landings:build');
     });
     watch([path.watch.css], function (event, cb) {
         gulp.start('css:build');

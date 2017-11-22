@@ -23,6 +23,8 @@ $('.office__header-content').parallax({imageSrc: '../img/office__header.jpg'});
 $('.office__fotoblock').parallax({imageSrc: '../img/office365__fotoblock.jpg'});
 $('.sm__header-content').parallax({imageSrc: '../img/sm__header.jpg'});
 $('.sm__fotoblock').parallax({imageSrc: '../img/sm__fotoblock.jpg'});
+$('.vd__header-content').parallax({imageSrc: '../img/vd__header.jpg'});
+$('.vd__fotoblock').parallax({imageSrc: '../img/vd__fotoblock.jpg'});
 
 
 
