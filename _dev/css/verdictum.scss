@@ -49,7 +49,7 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: #effeff;
+  background: #090502;
   height: 80px;
   z-index: 5;
 }
@@ -122,12 +122,11 @@ html, body {
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: rgb(95, 152, 194);
+  background: #4151a2;
   margin-left: 15px;
   display: block;
-  padding: 10px 35px;
+  padding: 15px 35px;
   text-align: center;
-  border: 1px solid #f9fbfb !important;
 
   & span {
     color: white;
@@ -147,8 +146,8 @@ html, body {
   flex-direction: row;
 }
 
-.active {
-  border: 1px solid black;
+.nav-tabs {
+  border-bottom: none;
 }
 
 .lmain__menu-link {
@@ -224,7 +223,7 @@ html, body {
   }
 }
 
-.analytics__content {
+.target__content {
   padding: 1% 12%;
   background: white;
 
@@ -236,113 +235,6 @@ html, body {
 
 }
 
-.analytics__feature {
-  padding: 20px 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-
-  & p {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-
-  &-1 {
-    background: #EFFEFF;
-  }
-
-  &-2 {
-    background: rgb(223, 234, 243);
-  }
-
-  &-3 {
-    background: rgb(223, 234, 243);
-  }
-
-  &-4 {
-    background: #effeff;
-  }
-}
-
-@keyframes growIn {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.l__slider {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3% 12%;
-
-  @include tablets {
-    margin-top: 0;
-  }
-
-  h3 {
-
-    color: black;
-
-    @include desktop {
-      font-size: 24px;
-    }
-
-    @include phones {
-      font-size: 22px;
-      color: white;
-    }
-  }
-
-  p {
-    @include desktop {
-      font-size: 24px;
-    }
-
-    @include phones {
-      font-size: 22px;
-      color: white;
-    }
-  }
-
-  h3, p {
-    font-family: Open Sans, Optima, sans-serif;
-    color: white;
-  }
-
-  & .slide {
-    height: 200px;
-    background: #5f98c2;
-    border: none;
-
-    @include phones {
-      height: 240px;
-
-    }
-
-  }
-
-}
-
-.slider {
-  width: 100%;
-}
-
-.slide {
-  width: 100%;
-}
 
 .l__testcont {
   height: 100px;
@@ -391,12 +283,12 @@ html, body {
 
 .l__testbtn {
 
-  background: rgb(33, 113, 185) !important;
-  color: white !important;
+  background: #eeece9 !important;
+  color: black !important;
   padding: 12px 50px;
   font-size: 24px;
-  font-weight: 100;
-  border: 1px solid white;
+  font-weight: 400;
+  border: 1px solid #4151a2;
 
   @include phones {
     padding: 11px;
@@ -404,7 +296,7 @@ html, body {
   }
 
   & svg {
-    height: 57px;
+    height: 58px;
 
     @include phones {
 
@@ -518,6 +410,25 @@ html, body {
   font-family: Open Sans, Optima, sans-serif;
 }
 
+.target__list1 {
+  justify-content: center;
+
+  & li {
+    text-align: center;
+  }
+}
+
+.target__name {
+  padding: 2vw 5vw;
+  font-size: 2vw;
+  font-weight: 500;
+  border: none !important;
+}
+
+.target__content {
+
+}
+
 .l__descr {
   padding: 50px 1vw 30px 1vw;
   background: rgb(132, 199, 208);
@@ -561,6 +472,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.7vw !important;
+  margin-top: 0.7vw !important;
 }
 
 .feature__section {
@@ -568,11 +481,12 @@ html, body {
 }
 
 .product__feautures {
-  border: 1px solid rgba(32, 48, 72, 0.3);
-  border-radius: 0;
-  background: #EFFEFF;
+
+  background: rgb(239, 239, 239);
   padding: 20px 5%;
   height: 100%;
+  margin-bottom: 0.7vw !important;
+  margin-top: 0.7vw !important;
 
   & p {
     margin: 0;
