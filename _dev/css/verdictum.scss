@@ -237,10 +237,9 @@ html, body {
 
 .l__testcont {
   height: 100px;
-  background: #f6f7ee;
+  background: #4151a2;
   flex-direction: column;
-  border-top: 2px solid white;
-  border-bottom: 2px solid #fff;
+
 
   &-descr {
     margin-top: 15px;
@@ -387,8 +386,8 @@ html, body {
 }
 
 .partner__logo {
-  width: 40%;
-  margin-top: 2vw;
+  width: 35%;
+  margin-top: 3vw;
 
   & img {
     width: 100%;
@@ -425,18 +424,18 @@ html, body {
 
 .target__name {
   padding: 1vw 5vw;
-  font-size: 2.2vw;
-  font-weight: 500;
+  font-size: 1.3vw;
+  font-weight: 600;
   border: none !important;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 0.2vw;
   width: 100%;
   height: 100%;
 }
 
 .tab__content {
-  padding: 20px 16% 0;
-  height: 25vw;
+  padding: 30px 16% 0;
+  height: 34vw;
 
 }
 
@@ -547,7 +546,7 @@ html, body {
 }
 
 .vd__fotoblock {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -557,18 +556,9 @@ html, body {
   font-weight: 400 !important;
 }
 
-.ib__products {
+.vd__products {
   padding: 3% 12%;
   background: white;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-
-  & h2 {
-
-    flex: 1 1 100%;
-  }
 
   @include phones {
     padding: 3% 6%;
@@ -576,108 +566,82 @@ html, body {
 
 }
 
-.ib__product-title {
+.vd__tariffs {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  text-align: center;
-  background: #5f98c2;
-  color: white;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-}
-
-.ib__product-text {
-  flex: 1 1 100%;
-  margin-bottom: 35px;
-}
-
-.ib__product-item {
-  flex: 1 1 190px;
-  max-width: 340px;
-  min-height: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 15px;
-  padding: 20px;
-
-  background: #dfeaf3;
-  margin-top: 15px;
-  z-index: 1;
-
-  & ul {
-    margin: 0;
-    padding: 0;
-    padding-left: 27px;
-    padding-right: 15px;
-  }
-
-  & li {
-    margin-bottom: 5px;
-
-    @include phones {
-      margin-bottom: 0.5vw;
-    }
-  }
-
-}
-
-.ib__product-descr {
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.ib__product-price {
-  margin-top: auto;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 600;
-  border-top: 5px solid;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  &-gaz {
-    border-color: white;
-  }
-
-  &-stan {
-    border-color: #A3FF85;
-  }
-
-  &-prem {
-    border-color: #2171b9;
-  }
+  flex-direction: row;
 
   @include phones {
-    padding-top: 8px;
+    flex-direction: column;
+  }
+}
+
+.vd__tarif {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex: 1;
+  padding: 1%;
+  margin: 0 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @include phones {
+    flex: 100%;
   }
 
 }
 
-.ib__product-order {
+.vd__service {
   text-align: center;
-  text-decoration: none !important;
-  text-transform: uppercase;
-  font-size: 20px !important;
-  border: 1px solid #767a98 !important;
-  padding: 15px 0px !important;
-  color: white !important;
-  font-weight: 900 !important;
-  margin: 0 !important;;
-  margin-top: 5px !important;
-  background: #2171b9;
+  font-size: 2vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+  line-height: 3vw;
+  width: 100%;
+  background: #4151a2;
+  color: white;
+  padding: 3%;
+}
 
-  &::after {
-    opacity: 0;
-    background-image: -webkit-linear-gradient(transparent 50%, #e8e8ef 50%) !important;
-  }
+.vd__price {
+  text-align: center;
+  margin-bottom: auto;
+  font-size: 2.5vw;
+  margin-top: 0.5vw;
+  color: #4151a2;
+  font-weight: 600;
+}
 
-  &:hover {
-    color: white !important;
+.vd__descr {
+  text-align: center;
+  margin-bottom: auto;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+}
+
+.vd__order {
+  border: none;
+  background: #9A8918;
+  color: white;
+  padding: 0.5vw 3.5vw 0.7vw;
+  font-size: 2.5vw;
+  margin-top: 2vw;
+  text-transform: lowercase;
+  letter-spacing: 0.06vw;
+}
+
+.vd__info {
+  padding: 0 12% 3%;
+
+  & p {
+    font-size: 1.3vw;
   }
+}
+
+.vd__info-title {
+  text-align: left;
+  margin-bottom: 1vw;
+  font-size: 2vw;
 }
 
 .liga__partner-logo {
@@ -686,17 +650,6 @@ html, body {
     max-width: 100%;
     height: auto;
   }
-}
-
-.bp-hs_inner__item {
-  padding: 0;
-  margin: 0;
-}
-
-.bxslider {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .video {
