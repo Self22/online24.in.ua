@@ -25,7 +25,7 @@ var path = {
     },
     src: {
         html: '_dev/**/*.html',
-        landings: '_dev/products/*.html',
+        // landings: '_dev/products/*.html',
         css: '_dev/css/**/*.scss',
         js: '_dev/js/*.js',
         img: '_dev/img/**/*.*',
