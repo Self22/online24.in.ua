@@ -23,8 +23,6 @@ $('.office__header-content').parallax({imageSrc: '../img/office__header.jpg'});
 $('.office__fotoblock').parallax({imageSrc: '../img/office365__fotoblock.jpg'});
 $('.sm__header-content').parallax({imageSrc: '../img/sm__header.jpg'});
 $('.sm__fotoblock').parallax({imageSrc: '../img/sm__fotoblock.jpg'});
-$('.vd__header-content').parallax({imageSrc: '../img/vd__header.jpg'});
-$('.vd__fotoblock').parallax({imageSrc: '../img/vd__fotoblock.jpg'});
 
 
 
@@ -457,7 +455,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.module__list').bxSlider({
         ticker: true,
-        slideWidth: 400,
+        slideWidth: 350,
         minSlides: 1,
         maxSlides: 8,
         speed: 150000

@@ -644,9 +644,9 @@ html, body {
 .descr__title {
   color: black;
   text-align: center;
-  font-size: 1.7vw;
+  font-size: 1.3vw;
   letter-spacing: 0.1vw;
-  line-height: 2.4vw;
+  line-height: 2vw;
 
   @include phones {
     font-size: 6vw;
@@ -689,7 +689,7 @@ html, body {
 .feature__title {
   font-size: 2vw;
       text-align: center;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
 
   @include phones {
     font-size: 7vw;

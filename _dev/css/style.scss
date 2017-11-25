@@ -1325,8 +1325,8 @@ a.animated-button.gibson-three:after {
     outline: none;
   }
 
-  @include desktop {
-    font-size: 1.7vw;
+  @include phones {
+    font-size: 5vw;
   }
 
 }
@@ -1344,7 +1344,7 @@ a.animated-button.gibson-three:after {
   }
 
   @include desktop {
-    font-size: 20px;
+    font-size: 5vw;
   }
 
 }
@@ -1381,9 +1381,9 @@ a.animated-button.gibson-three:after {
   width: 55%;
   text-align: center;
 
-  @include tablets {
+  @include phones {
     width: 90%;
-    margin-bottom: 0;
+    margin: 0 2%;
   }
 
 }
