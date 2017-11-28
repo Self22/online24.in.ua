@@ -60,7 +60,7 @@ var config = {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //������� ����� �� ������� ����
         .pipe(include())
-        .pipe(htmlmin({collapseWhitespace: true}))
+        // .pipe(htmlmin({collapseWhitespace: true}))
         .on('error', console.log)
         .pipe(gulp.dest(path.dest.html)) //�������� �� � ����� build
         .on('end', browserSync.reload) //� ������������ ��� ������ ��� ����������
@@ -82,8 +82,8 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) // ������� ��� main.scss
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
-        .pipe(prefixer()) //������� ��������� ��������
-        .pipe(cssnano()) //������
+        // .pipe(prefixer()) //������� ��������� ��������
+        // .pipe(cssnano()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload)

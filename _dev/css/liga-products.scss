@@ -12,7 +12,7 @@ html, body {
 }
 
 .lmain__menu {
-  background: rgba(0, 0, 0, 0.5);
+  background: white;
   padding: 3%;
   position: absolute;
   width: 100%;
@@ -50,7 +50,7 @@ html, body {
 
 .lnav__fixed {
   position: fixed;
-  background: #A64E4C;
+  background: white;
   height: 80px;
   z-index: 5;
 }
@@ -113,17 +113,17 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   white-space: nowrap;
 
   &:hover {
-    color: white !important;
+    color: black !important;
   }
 }
 
 .lmain__menu-excellence {
   transition: all 0.5s;
-  background: #84A24A;
+  background: #25408f;
   margin-left: 15px;
   display: block;
   padding: 10px 35px;
@@ -157,7 +157,7 @@ html, body {
   font-size: 18px;
   text-decoration: none !important;
   cursor: pointer;
-  color: white;
+  color: black;
 
   margin-right: 5px;
 
@@ -194,24 +194,17 @@ html, body {
   flex-direction: row;
 }
 
-.sm__header {
+.lz__header {
   position: relative;
 
   background-size: cover;
 
 }
 
-.sm__header-content {
+.lz__header-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
-  @include phones {
-    background-image: url(../img/sm__header.jpg) !important;
-    height: 100vh;
-    align-items: center;
-  }
 
 }
 
@@ -223,8 +216,6 @@ html, body {
     color: white;
   }
 }
-
-
 
 @keyframes growIn {
   0% {
@@ -241,8 +232,6 @@ html, body {
   }
 }
 
-
-
 .l__testcont {
   height: 170px;
   background: #A64E4C;
@@ -257,8 +246,6 @@ html, body {
   @include phones {
     height: 90px;
   }
-
-
 
 }
 
@@ -282,41 +269,12 @@ html, body {
   color: blue;
 }
 
-.l__testbtn, .tariff__button {
-
-  background: #84A24A !important;
-  color: white !important;
-  padding: 12px 50px;
-  font-size: 24px;
-  font-weight: 100;
-  border: 1px solid white;
-
-  @include phones {
-    padding: 11px;
-    font-size: 13px;
-  }
-
-  & svg {
-    height: 57px;
-
-    @include phones {
-
-      height: 40px;
-    }
-  }
-
-  & rect {
-    stroke: #9a9abe;
-  }
-}
-
 .sm__slogan {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 5vw;
-  margin-top: 5vw;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0 12% 5vh;
+  margin-top: 140px;
 
   @include tablets {
     margin-top: 130px;
@@ -325,26 +283,23 @@ html, body {
 
   @include phones {
 
-    padding-left: 0;
+    padding: 0 8%;
     align-items: center;
   }
 
   .partner__brand {
+    width: 50%;
     font-size: 4vw;
-    font-weight: 100;
-    color: white;
-    margin-bottom: 1vw;
+    font-weight: 400;
+    color: black;
     text-align: center;
-
-    @include desktop {
-      font-size: 4.5vw;
-    }
 
     @include tablets {
       font-size: 40px;
     }
 
     @include phones {
+      width: 100%;
       text-align: center;
       font-size: 11vw;
       margin-bottom: 1vh;
@@ -356,7 +311,7 @@ html, body {
     line-height: 4vw;
     margin-top: 1vw;
     margin-bottom: 2vw;
-    color: white;
+    color: black;
     font-weight: 500;
     letter-spacing: 0.2vw;
     text-transform: uppercase;
@@ -374,32 +329,22 @@ html, body {
     }
   }
 
-  & p {
-    font-size: 22px;
-    font-weight: 300;
-    color: white;
-    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
-    margin-top: 15px;
-
-    @include phones {
-      text-align: center;
-      font-size: 18px;
-    }
-  }
-
 }
 
 .partner__descr {
   font-size: 2vw;
   font-weight: 100;
-  width: 50%;
+  width: 100%;
   line-height: 3vw;
-  text-align: right;
-  color: white;
+  text-align: left;
+  color: black;
+  margin-bottom: 3vw;
 
   @include phones {
-    font-size: 5vw;
-    width: 90%;
+    font-weight: 500;
+    font-size: 6vw;
+    margin-bottom: 6vw;
+    width: 100%;
     line-height: 7vw;
     text-align: center;
   }
@@ -611,15 +556,6 @@ html, body {
   }
 }
 
-.action__step {
-  font-size: 1.3vw;
-  margin-bottom: 1.5vw;
-
-  @include phones {
-    font-size: 5vw;
-  }
-}
-
 .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
   -webkit-animation-name: hvr-back-pulse;
   animation-name: hvr-back-pulse;
@@ -641,17 +577,6 @@ html, body {
   justify-content: flex-start;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .l__descr {
   padding: 50px 1vw 30px 1vw;
@@ -702,45 +627,9 @@ html, body {
   margin-bottom: 15px;
 }
 
-.product__feautures {
-  border: 1px solid rgba(32, 48, 72, 0.3);
-  border-radius: 0;
-  background: #EFFEFF;
-  padding: 20px 5%;
-  height: 100%;
-
-  & p {
-    margin: 0;
-    padding: 0;
-  }
-
-  @include desktop {
-    height: 100%;
-  }
-
-  @include phones {
-    height: 100%;
-  }
-
-  & i {
-    margin-right: 3%;
-  }
-}
-
 .btn-1:hover {
   font-weight: 400 !important;
 }
-
-
-.liga__partner-logo {
-  margin-left: 3%;
-  & img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
 
 .video {
   display: flex;
@@ -772,7 +661,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 4%;
+  right: 12%;
   bottom: 6%;
   width: 15%;
 
@@ -795,7 +684,7 @@ html, body {
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: black;
   font-weight: 100;
 }
 
@@ -855,18 +744,78 @@ html, body {
 }
 
 .bye__button {
-  font-size: 2vw;
+  font-size: 1.3vw;
   text-transform: uppercase;
-  margin-top: 3vw;
+
   text-decoration: none !important;
-  color: #a7a7c6;
+  color: #ffffff !important;
   letter-spacing: 0.15vw;
-  background: #131d14;
-  padding: 1vw 5vw;
-  align-self: center;
+  background: #de1336;
+  padding: 0.6vw 2vw;
+  text-align: center;
+  margin: 1vw 0 1vw 5%;
+  width: 50%;
 
   @include phones {
     font-size: 6vw;
     padding: 3vw 12vw;
   }
+}
+
+.btn__block {
+  width: 60%;
+}
+
+.system__price {
+  width: 40%;
+}
+
+.system__img {
+  width: 15%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    width: 20%;
+    margin: 6vw 0;
+  }
+}
+
+.system__info {
+
+  margin-bottom: 3vw;
+}
+
+.system__price-bye {
+
+  margin: 2vw 0 1vw;
+
+  & p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  & span {
+    font-size: 2vw;
+    color: #de1336;
+  }
+}
+
+.system__price-num {
+
+  & p {
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  & span {
+    font-size: 2vw;
+    color: #de1336;
+  }
+
 }
