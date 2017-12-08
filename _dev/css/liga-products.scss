@@ -163,11 +163,11 @@ html, body {
 
   &:hover {
     outline: 1px solid white;
-    color: white !important;
+    color: black !important;
   }
 
   &:focus {
-    color: white !important;
+    color: black !important;
   }
 
   @include desktop {
@@ -274,7 +274,7 @@ html, body {
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 0 12% 5vh;
-  margin-top: 140px;
+  margin-top: 130px;
 
   @include tablets {
     margin-top: 130px;
@@ -289,9 +289,9 @@ html, body {
 
   .partner__brand {
     width: 50%;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 400;
-    color: black;
+    color: #25408f;
     text-align: center;
 
     @include tablets {
@@ -333,7 +333,7 @@ html, body {
 
 .partner__descr {
   font-size: 2vw;
-  font-weight: 100;
+  font-weight: 500;
   width: 100%;
   line-height: 3vw;
   text-align: left;
@@ -759,15 +759,26 @@ html, body {
   @include phones {
     font-size: 6vw;
     padding: 3vw 12vw;
+    width: 100%;
+    margin: 0 0 6vw;
   }
 }
 
 .btn__block {
   width: 60%;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .system__price {
   width: 40%;
+
+  @include phones {
+    width: 100%;
+    margin-bottom: 7vh;
+  }
 }
 
 .system__img {
@@ -785,23 +796,52 @@ html, body {
 }
 
 .system__info {
+  font-size: 1.3vw;
+  margin-bottom: 1vw;
+  margin-top: 2vw;
 
-  margin-bottom: 3vw;
+  @include phones {
+    font-size: 5vw;
+  }
+
+  & li {
+    margin-bottom: 0.7vw;
+
+    @include phones {
+      margin-bottom: 1vw;
+    }
+  }
 }
 
 .system__price-bye {
 
-  margin: 2vw 0 1vw;
+  margin: 1vw 0;
 
   & p {
     font-size: 1.3vw;
     font-weight: 600;
     margin-bottom: 0;
+
+    @include phones {
+      font-size: 6vw;
+      text-align: center;
+    }
   }
 
   & span {
-    font-size: 2vw;
+
+    font-size: 2.5vw;
     color: #de1336;
+
+    @include phones {
+      font-size: 9vw;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  @include phones {
+    margin: 1vw 0 5vw;
   }
 }
 
@@ -811,11 +851,23 @@ html, body {
     font-size: 1.3vw;
     font-weight: 600;
     margin-bottom: 0;
+
+    @include phones {
+      font-size: 6vw;
+      text-align: center;
+    }
   }
 
   & span {
-    font-size: 2vw;
+
+    font-size: 2.5vw;
     color: #de1336;
+
+    @include phones {
+      font-size: 9vw;
+      text-align: center;
+      display: block;
+    }
   }
 
 }

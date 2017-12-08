@@ -1576,6 +1576,16 @@ html, body {
       width: 250px;
       height: 150px; } }
 
+.top__themes {
+  padding: 3% 12%;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.top__themes-btn {
+  font-size: 1.3vw;
+  cursor: pointer; }
+
 .mainlink__block {
   text-decoration: none !important;
   position: absolute;

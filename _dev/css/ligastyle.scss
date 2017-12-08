@@ -823,6 +823,18 @@ html, body {
   }
 }
 
+.top__themes {
+  padding: 3% 12%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.top__themes-btn {
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
 //// линк на главную
 .mainlink__block {
   text-decoration: none !important;
