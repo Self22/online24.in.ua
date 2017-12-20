@@ -367,155 +367,9 @@ html, body {
   }
 }
 
-.sm__tariffs {
-  padding: 3% 12%;
-  background: #DAEFDB;
 
-  @include phones {
-    padding: 3% 2%;
-  }
-}
 
-.tariffs__tab {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
 
-.tariff__name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1vw 2%;
-  margin: 0;
-  font-size: 2.5vw;
-  flex: 1;
-  background: rgb(230, 230, 230);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px 10px 0 0;
-  border-bottom-color: transparent;
-
-  & a {
-    font-size: 1.5vw;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-
-    @include phones {
-      font-size: 4vw;
-    }
-  }
-
-  &-active {
-    background: white;
-  }
-}
-
-.tariffs__content {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.tarif__item {
-  background: white;
-  display: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: row;
-
-  &-active {
-    display: flex;
-  }
-}
-
-.tarif__item-cont {
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 10px 10px;
-  border-top-color: transparent;
-  padding: 3% 3% 0 5%;
-
-  @include phones {
-    padding: 3% 3% 5% 5%;
-  }
-}
-
-.tarif__img {
-  flex: 2;
-  margin-bottom: 50px;
-  & img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.tarif__text {
-  padding-left: 10%;
-  flex: 4;
-  display: flex;
-  flex-direction: column;
-
-  & p {
-    font-size: 1.3vw;
-    margin-bottom: 0.5vw;
-
-    @include phones {
-      font-size: 4vw;
-    }
-  }
-
-}
-
-.tarif__price {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2vw;
-
-}
-
-.price__text {
-  text-align: center;
-  font-size: 2vw;
-
-  @include phones {
-    font-size: 4vw;
-  }
-
-}
-
-.price__num {
-  text-align: center;
-  font-size: 3vw;
-
-  @include phones {
-    font-size: 8vw;
-  }
-
-}
-
-.process__block {
-  padding: 1% 12% 5%;
-  background: #DAEFDB;
-
-  @include phones {
-    padding: 1% 5% 5%;
-  }
-}
-
-.process__cont {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5vw;
-
-  @include phones {
-    flex-flow: row wrap;
-  }
-}
 
 .action__block {
   flex: 1;
@@ -571,34 +425,6 @@ html, body {
   background-color: #28483e;
 }
 
-.sm__fotoblock {
-  height: 30vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.l__descr {
-  padding: 50px 1vw 30px 1vw;
-  background: rgb(132, 199, 208);
-
-  & .article__title {
-    margin-bottom: 50px;
-    color: white;
-    text-align: right;
-  }
-
-  & i {
-    margin: 4%;
-    color: #022383;
-  }
-}
-
-.descr__title {
-  color: white;
-  text-align: center;
-  line-height: 32px;
-}
 
 .feature__descr {
   color: #001148;
@@ -665,6 +491,10 @@ html, body {
   bottom: 6%;
   width: 15%;
 
+  &-theme {
+    bottom: 80px;
+  }
+
   @include phones {
     display: none;
   }
@@ -722,9 +552,7 @@ html, body {
   font-size: 18px;
 }
 
-.ib__action {
-  padding: 5% 0 0;
-}
+
 
 .action__slogan {
   font-size: 2.2vw;
@@ -756,6 +584,10 @@ html, body {
   margin: 1vw 0 1vw 5%;
   width: 50%;
 
+  &-theme {
+    width: 47%;
+  }
+
   @include phones {
     font-size: 6vw;
     padding: 3vw 12vw;
@@ -769,6 +601,16 @@ html, body {
 
   @include phones {
     width: 100%;
+  }
+
+  &-theme {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 }
 
@@ -868,6 +710,145 @@ html, body {
       text-align: center;
       display: block;
     }
+  }
+
+}
+
+.theme__main {
+  padding-bottom: 160px;
+  position: relative;
+}
+
+.theme__title {
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 500;
+  color: #25408f;
+  padding: 0 15%;
+  margin-bottom: 5vw;
+
+  @include phones {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+}
+
+.target__block, .archivelink__block {
+  padding: 1% 12%;
+
+  @include phones {
+    padding: 1% 8%;
+  }
+}
+
+.target__name {
+  font-size: 2vw;
+  text-align: left;
+  margin-bottom: 2vw;
+  font-weight: 600;
+
+  @include phones {
+    font-size: 6vw;
+    margin-bottom: 3vw;
+  }
+}
+
+.target__info {
+
+  & p, li {
+    font-size: 1.3vw;
+
+    @include phones {
+      font-size: 5vw;
+    }
+  }
+}
+
+.target__title {
+  font-size: 1.5vw;
+  text-align: left;
+  font-weight: 600;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.archiveblock__title {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  font-weight: 400;
+  color: blue;
+}
+
+.archiveblock__link {
+  cursor: pointer;
+  text-align: center;
+}
+
+///////////// liga links block
+
+.liga__links {
+
+  padding: 5% 12%;
+
+}
+
+.liga__links-title {
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+  font-weight: 400;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.liga__links-cont {
+  display: flex;
+  flex-direction: row;
+
+  @include phones {
+    flex-direction: column;
+  }
+
+}
+
+.liga__link {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+
+  @include phones {
+    width: 100%;
+    margin: 10% 0;
+
+  }
+}
+
+.liga__link-title {
+  font-size: 1.3vw;
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: auto;
+
+  @include phones {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  }
+}
+
+.liga__link-img {
+  width: 60%;
+  & img {
+    width: 100%;
+    height: auto;
   }
 
 }

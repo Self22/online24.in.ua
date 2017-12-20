@@ -305,44 +305,7 @@ $(document).ready(function () {
 });
 
 
-/////////////////////////// Nav Landings: soft scroll
 
-$('#nav-main').singlePageNav(
-    {offset: 130, speed: 1000, threshold: 150}
-);
-
-///////////////////////// Udalenniy Office - Ticker
-$(document).ready(function () {
-    $('.target__list').bxSlider({
-
-        minSlides: 2,
-        maxSlides: 8,
-        slideWidth: 370,
-        slideMargin: 10,
-        ticker: true,
-        speed: 58000
-
-
-    });
-});
-
-$(document).ready(function () {
-    $('.bxslider').bxSlider({
-        auto: true,
-        pager: false,
-        controls: false
-    });
-});
-
-$(document).ready(function () {
-    $('.module__list').bxSlider({
-        ticker: true,
-        slideWidth: 350,
-        minSlides: 1,
-        maxSlides: 8,
-        speed: 150000
-    });
-});
 //////////////////////////////////// Mobile Menu Close Tap
 
 $('main').on('click', function (e) {
@@ -395,5 +358,6 @@ $('.close__popup').on('click', function (e) {
     $('.popup__form-test').fadeOut(800);
 
 })
+
 
 
