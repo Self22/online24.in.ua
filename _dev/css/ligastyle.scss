@@ -756,6 +756,7 @@ html, body {
 
 .module__name {
   text-align: center;
+  text-transform: uppercase;
 
   @include phones {
     font-size: 5vw;
