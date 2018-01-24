@@ -1210,3 +1210,21 @@ html, body {
   }
 }
 
+.action__uklon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 12%;
+
+  @include phones {
+    padding: 3% 1%;
+  }
+}
+
+.uklon__img {
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+

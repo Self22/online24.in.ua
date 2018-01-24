@@ -171,6 +171,21 @@
 
 }
 
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: 3%;
+  bottom: -5vw;
+  border: 1px solid #b7c1cc;
+  color: #b7c1cc;
+  padding: 0.5vw 1.7vw;
+
+  @include phones {
+    display: none;
+  }
+}
+
 .current {
   outline: 1px solid;
 }
@@ -199,6 +214,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding-bottom: 10vh;
 
   @include phones {
     height: 100vh;
@@ -322,9 +338,20 @@
   font-size: 28px;
   font-weight: 400;
   border: 1px solid white;
+  margin-right: 0 !important;
+
+  &-1st {
+    align-self: flex-start;
+    margin-left: 25%;
+
+    @include phones {
+      align-self: center;
+      margin-left: 0;
+    }
+  }
 
   @include phones {
-    padding: 26px 11px 10px !important;
+    padding: 19px 11px 15px !important;
     font-size: 14px;
   }
 
@@ -345,8 +372,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: flex-start;
+  padding-left: 5%;
+
 
   @include tablets {
     
@@ -356,6 +384,8 @@
   @include phones {
     margin-top: 0;
     margin-bottom: 2vh;
+    align-items: center;
+    padding-left: 0;
 
   }
 
@@ -385,11 +415,11 @@
   .partner__slogan {
     text-align: center;
     font-size: 2.8vw;
-    margin-top: 5vw;
+    margin-top: 2vw;
     color: white;
     font-weight: 300;
     letter-spacing: 0.1vw;
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
 
 
     
@@ -968,3 +998,14 @@
   }
 }
 
+.slogan__img {
+  width: 30%;
+
+  @include phones {
+    width: 70%;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}

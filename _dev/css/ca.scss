@@ -43,10 +43,10 @@ html, body {
   & a {
     font-weight: 400;
     text-decoration: none !important;
-    color: white !important;
+    color: white important;
 
     &:hover {
-      color: white !important;
+      color: white important;
     }
   }
 
@@ -185,6 +185,21 @@ html, body {
     display: none;
   }
 
+}
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: 3%;
+  bottom: -5vw;
+  border: 1px solid #b7c1cc;
+  color: #b7c1cc;
+  padding: 0.5vw 1.7vw;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .current {
