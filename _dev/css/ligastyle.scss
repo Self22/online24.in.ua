@@ -879,7 +879,8 @@ html, body {
 
   @include phones {
     width: 100%;
-    flex: 1;
+    flex: none;
+    margin-bottom: 5vh;
     font-size: 5vw;
   }
 
