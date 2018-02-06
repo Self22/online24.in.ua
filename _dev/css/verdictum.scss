@@ -94,6 +94,7 @@ html, body {
 }
 
 .l__mainmenu-contacts {
+  position: relative;
   min-width: 175px;
   display: flex;
   flex-direction: column;
@@ -106,6 +107,21 @@ html, body {
     }
   }
 
+}
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: 3%;
+  bottom: -7vw;
+  border: 1px solid #b7c1cc;
+  color: #b7c1cc;
+  padding: 0.5vw 1.7vw;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .l__mainmenu-tel {
