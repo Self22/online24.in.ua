@@ -2,10 +2,10 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>SMS Маяк от ЛИГА Закон | Cloudhub Online24</title>
+    <title>SMS Маяк від ЛІГА Закон | Cloudhub Online24</title>
     <meta name="description"
-          content="Мониторинг регистрационных действий по недвижимости физических и юридических лиц Украины">
-    <meta name="Keywords" content="ліга законов, лз, безопасность недвижимости">
+          content="Моніторинг реєстраційних дій по нерухомості фізичних та юридичних осіб України">
+    <meta name="Keywords" content="ліга законів, ЛЗ, безпека нерухомості">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="../css/tether.min.css">
@@ -46,17 +46,19 @@
 <div class="overlay"></div>
 <div class="popup__form-order">
     <span class="close__popup">&times</span>
-    <div class="popup__title">Заявка на подключение сервиса</div>
 
-    <div class="popup__text">Оставьте свои контактные данные <br>
-        и наш менеджер свяжется с Вами
+    <div class="popup__title">Заявка на підключення сервіса</div>
+
+    <div class="popup__text">Залиште свої контактні дані <br>
+                 і наш менеджер зв'яжеться з Вами
     </div>
     <form id="popupform-order" class="popupform-order">
         <input type="hidden" name="form_type" value="order">
-        <input type="hidden" name="product" value="sms-mayak">
+        <input type="hidden" name="product" value="sms mayak">
+
         <div class="popupform__order-name form-group">
             <label for="name"></label>
-            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше имя" required>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше ім'я" required>
         </div>
         <div class="popupform__order-tel form-group">
             <label for="tel"></label>
@@ -68,14 +70,43 @@
                    placeholder="E-mail" required>
         </div>
         <label for="popup__order-btn" class="form__label"></label>
-        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ОТПРАВИТЬ"
+        <input class="form__button form__button-popup hvr-pulse-grow" name="ob" type="submit" value="ВІДПРАВИТИ"
+               id="popup__order-btn">
+    </form>
+</div>
+<div class="popup__form-test">
+    <span class="close__popup">&times</span>
+
+    <div class="popup__title">Заявка на консультацію по сервісу</div>
+
+    <div class="popup__text">Залиште свої контактні дані <br>
+                 і наш фахівець зв'яжеться з Вами
+    </div>
+    <form id="popupform-test" class="popupform-test">
+        <input type="hidden" name="form_type" value="test">
+        <input type="hidden" name="product" value="sms mayak">
+
+        <div class="popupform__order-name form-group">
+            <label for="name"></label>
+            <input type="text" name="name" class="order__name-input" id="name" placeholder="Ваше ім'я" required>
+        </div>
+        <div class="popupform__order-tel form-group">
+            <label for="tel"></label>
+            <input type="text" name="tel" class="order__tel-input" id="tel" placeholder="Телефон" required>
+        </div>
+        <div class="popupform__order-email form-group">
+            <label for="tel"></label>
+            <input type="email" name="email" class="order__name-input" id="email" aria-describedby="emailHelp"
+                   placeholder="E-mail" required>
+        </div>
+        <label for="popup__order-btn" class="form__label"></label>
+        <input class="form__button form__button-popup hvr-pulse-grow" type="submit" name="tb" value="ВІДПРАВИТИ"
                id="popup__order-btn">
     </form>
 </div>
 
 <div class="button__up hvr-pulse">
-    <img src="../img/ic_expand_less_white_24dp_2x.png"
-         alt="лига законов, интерактивная бухгалтерия - консультации для бухгалтера">
+    <img src="../img/ic_expand_less_white_24dp_2x.png">
 </div>
 <header class="sm__header" id="header">
     <nav class="hidden-md-up navbar navbar-toggleable-sm navbar-light bg-faded hidden-lg-up">
@@ -84,7 +115,7 @@
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="../index-ukr.html">
             <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 479.1 245.6" style="enable-background:new 0 0 479.1 245.6;" xml:space="preserve">
 <g>
@@ -145,16 +176,16 @@
         </a>
         <a target="_blank" href="http://smsmayak.com.ua/" class="partnerlogo__mob" rel="nofollow">
             <img src="../img/sms-mayak-logo-1.svg"
-                 alt="права на недвижимое имущество">
+                 alt="логотип смс маяк">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#tariffs">Тарифы</a>
+                    <a class="nav-link" href="#tariffs">Тарифи</a>
                 </li>
                 <li class="nav-item nav-item-excellence">
-                    <a class="nav-link" href="../excellence.html">Преимущества подключения<br>на Online24</a>
+                    <a class="nav-link" href="../excellence-ukr.html">Знижка<br>на Online24</a>
                 </li>
                 <li class="nav-item  ">
                     <a class="nav-link" href="#"></a>
@@ -192,7 +223,7 @@
     </nav>
     <nav class="lmain__menu  hidden-sm-down">
         <a target="_blank" href="http://smsmayak.com.ua/" class="partnerlogosticky" rel="nofollow">
-            <img src="../img/sms-mayak-logo-1.svg" alt="справочники для бухгалтера">
+            <img src="../img/sms-mayak-logo-1.svg" alt="логотип смс маяк">
         </a>
         <a href="/" class="logosticky__o24">
             <div class="logomain">
@@ -258,12 +289,12 @@
         <div class="lmain__nav" id="nav-main">
             <a href="#header" class="null__link"></a>
             <div class="l__mainmenu-item "><a href="#tariffs"
-                                              class="lmain__menu-link menu__inner">Тарифы</a>
+                                              class="lmain__menu-link menu__inner">Тарифи</a>
             </div>
         </div>
 
-        <div class="l__mainmenu-item "><a href="../excellence.html" class="lmain__menu-excellence hvr-bob">
-            <span>Комплексная скидка<br>на Online24</span></a>
+        <div class="l__mainmenu-item "><a href="../excellence-ukr.html" class="lmain__menu-excellence hvr-bob">
+            <span>Знижка<br>на Online24</span></a>
         </div>
         <div class="l__mainmenu-contacts">
             <a href="tel:+380504544043" class="l__mainmenu-tel hvr-grow">
@@ -282,27 +313,27 @@
                 </svg>
                 +38 (067) 566-53-31
             </a>
+            <a href="sms-mayak.html" class="langbutton__land">RU</a>
         </div>
     </nav>
     <div class="sm__header-content">
-        <a href="/" class="mainlink__block hvr-bob">
-            <span class="mainlink__text">смотреть другие <br> сервисы портала</span>
+        <a href="../index-ukr.html" class="mainlink__block hvr-bob">
+            <span class="mainlink__text">дивитися інші <br> сервіси порталу</span>
             <span class="mainlink__img"><img src="../img/logo_w.png"
-                                             alt="сайт ліга закон: электронный документооборот в облаке"></span>
-            <span class="mainlink__coursor"><img src="../img/coursor-hand-w.png"
-                                                 alt="закон про відходи, цивільний кодекс"></span>
+                                             alt="логотип online24"></span>
+            <span class="mainlink__coursor"><img src="../img/coursor-hand-w.png"></span>
         </a>
 
         <div class="sm__slogan animatedParent" data-sequence='500'>
-            <h1 class="partner__brand">SMS-Маяк от ЛІГА:Закон</h1>
+            <h1 class="partner__brand">SMS-Маяк від ЛІГА: Закон</h1>
 
-            <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Защищай себя!</h2>
+            <h2 class="partner__slogan animated fadeInLeftShort" data-id='1'>Захищай себе!</h2>
 
-            <h2 class="partner__descr animated fadeInLeftShort" data-id='2'>Сервис отслеживания регистрационных действий
-                по объектам недвижимого имущества физических и юридических лиц Украины</h2>
+            <h2 class="partner__descr animated fadeInLeftShort" data-id='2'>Сервіс відстеження реєстраційних дій по
+                об'єктах нерухомого майна фізичних і юридичних осіб України</h2>
 
             <a href="#tariffs" class="bye__button element move-up animated fadeInLeftShort" data-id='3'>
-                Оформить заявку
+                Оформити заявку
             </a>
 
         </div>
@@ -315,30 +346,30 @@
 
 
     <article class="sm__tariffs" id="tariffs">
-        <h2 class="article__title">Выберите СВОЙ УРОВЕНЬ контроля</h2>
+        <h2 class="article__title">Оберіть СВІЙ РІВЕНЬ контролю</h2>
         <div class="tab__container">
             <ul class="tariffs__tab">
                 <li class="tariff__name tariff__name-active">
-                    <a class=" tariff__name-link">Оповещение об изменении статуса объекта недвижимого имущества</a>
+                    <a class=" tariff__name-link">Оповіщення про зміну статусу об'єкта нерухомого майна</a>
                 </li>
                 <li class="tariff__name hvr-back-pulse">
-                    <a class="tariff__name-link">Оповещение о начале и событиях регистрационной процедуры по объекту
-                        недвижимого имущества</a>
+                    <a class="tariff__name-link">Оповіщення про початок і події реєстраційної процедури по об'єкту
+                        нерухомого майна</a>
                 </li>
             </ul>
             <div class="tariffs__content">
                 <div class="tarif__item tarif__item-active">
                     <div class="tarif__item-cont">
                         <div class="tarif__img"><img src="../img/sms1.svg"
-                                                     alt="бухгалтерские бланки, правовые новости для учёта"></div>
-                        <div class="tarif__text"><p>1. Мгновенное оповещение об изменении статуса</p>
+                                                     alt="экран системи захисту нерухомості"></div>
+                        <div class="tarif__text"><p>1. Миттєве сповіщення про зміну статусу</p>
 
-                            <p>2. Возможность немедленной реакции на изменения: Вы сможете сразу обратиться к
-                                регистратору, правоохранительным органам и в суд для отмены направленных против Вас
-                                регистрационных действий</p>
-                            <div class="tarif__price"><span class="price__text">Стоимость сервиса в месяц</span><span
-                                    class="price__num">30 гривен</span><span
-                                    class="price__text">за 1 объект</span></div>
+                            <p>2. Можливість негайної реакції на зміни: Ви зможете відразу звернутися до реєстратора, у
+                                правоохоронні органи та в суд для скасування спрямованих проти Вас реєстраційних дій</p>
+
+                            <div class="tarif__price"><span class="price__text">Вартість сервісу на місяць</span><span
+                                    class="price__num">30 гривень</span><span
+                                    class="price__text">за 1 об'єкт</span></div>
                         </div>
                     </div>
 
@@ -346,15 +377,17 @@
                 <div class="tarif__item">
                     <div class="tarif__item-cont">
                         <div class="tarif__img"><img src="../img/sms2.svg"
-                                                     alt="проверка контрагента по инн - реестр юридических лиц"></div>
+                                                     alt="екран системи захисту майнових прав"></div>
                         <div class="tarif__text">
-                            <p>1. Мгновенное сообщение при начале регистрационных действий</p>
-                            <p>2. Детальное оповещение о конкретных действиях регистрационной процедуры и принимаемых
-                                решениях решения</p>
-                            <p>3. Возможность опережения и предотвращения незаконных регистрационных действий</p>
-                            <div class="tarif__price"><span class="price__text">Стоимость сервиса в месяц</span><span
-                                    class="price__num">300 гривен</span><span
-                                    class="price__text">за 1 объект</span></div>
+                            <p>1. Миттєве повідомлення при початку реєстраційних дій</p>
+
+                            <p>2. Детальний оповіщення про конкретні дії реєстраційної процедури та прийняті рішення</p>
+
+                            <p>3.Можливість випередження і запобігання незаконним реєстраційних дій</p>
+
+                            <div class="tarif__price"><span class="price__text">Вартість сервісу на місяць</span><span
+                                    class="price__num">300 гривень</span><span
+                                    class="price__text">за 1 об'єкт</span></div>
                         </div>
                     </div>
 
@@ -363,22 +396,24 @@
         </div>
     </article>
     <article class="process__block">
-        <h2 class="article__title">3 простых действия:</h2>
+        <h2 class="article__title">3 простих дії:</h2>
         <div class="process__cont">
             <div class="action__block">
-                <h3 class="action__name">Оповещение об изменении статуса объекта недвижимого имущества</h3>
-                <div class="action__step"><b>1.</b> Определите регистрационный номер имущества</div>
-                <div class="action__step"><b>2.</b> Проверьте наличие номера в Реестре</div>
-                <div class="action__step"><b>3.</b> Активируйте «охрану» объекта</div>
+                <h3 class="action__name">Оповіщення про зміну статусу об'єкта нерухомого майна</h3>
+
+                <div class="action__step"><b>1.</b> Визначте реєстраційний номер майна</div>
+                <div class="action__step"><b>2.</b> Перевірте наявність номера в Реєстрі</div>
+                <div class="action__step"><b>3.</b> Активуйте «охорону» об'єкта</div>
             </div>
             <div class="action__block">
-                <h3 class="action__name">Оповещение о начале и действиях регистрационной процедуры по объекту
-                    недвижимого имущества</h3>
-                <div class="action__step"><b>1.</b> Используйте Ваш ключ электронной цифровой подписи или печати (ЭЦП)
+                <h3 class="action__name">Оповіщення про початок і діях реєстраційної процедури по об'єкту нерухомого
+                    майна</h3>
+
+                <div class="action__step"><b>1.</b> Використовуйте Ваш ключ електронного цифрового підпису або печатки
+                    (ЕЦП)
                 </div>
-                <div class="action__step"><b>2.</b> Введите ключ ЭЦП и пароль</div>
-                <div class="action__step"><b>3.</b> Выберите Ваши объекты недвижимости имущества и включите их
-                    мониторинг
+                <div class="action__step"><b>2.</b> Введіть ключ ЕЦП і пароль</div>
+                <div class="action__step"><b>3.</b> Виберіть Ваші об'єкти нерухомості майна і активуйте їх моніторинг
                 </div>
             </div>
         </div>
@@ -388,48 +423,49 @@
             <svg>
                 <rect x="0" y="0" fill="none" width="100%" height="100%"/>
             </svg>
-            Оформить заявку на подключение
+            Оформити заявку на підключення
         </a>
     </article>
     <article class="provider__block">
-        <div class="provider_info">Услуга предоставляется физическим и юридическим лицам компанией ЛІГА:ЗАКОН совместно
-            с Государственным предприятием «Национальные информационные системы» Министерства юстиции Украины
+        <div class="provider_info">Послуга надається фізичним та юридичним особам компанією ЛІГА: ЗАКОН спільно з
+            Державним підприємством «Національні інформаційні системи» Міністерства юстиції України
         </div>
     </article>
 
     <article class="sm__fotoblock" id="action">
         <div class="liga__partner-logo">
             <img src="../img/lz_partner.png"
-                 alt="лига законов онлайн - подключение бухгалтерских облачных сервисов, учёт налоговой разницы">
+                 alt="логотип дилера ліга закон">
         </div>
     </article>
 
 
     <article class="discount">
-        <div class="discount__intro">Экономьте с Online24 ! Клиенты получают
-            постоянную <b>скидку (до 15%)</b> на обслуживание сервисов:
+        <div class="discount__intro"><b>Краща пропозиція в Україні! </b> При підключенні клієнти отримують постійну <b>
+            знижку (до 15%) </b> на обслуговування сервісів:
         </div>
         <div class="discount__links">
             <a href="office365.html" class="discount__link">&#8226; Microsoft Office 365 <span
                     class="discount__img discount__img-off365"><img src="../img/office365-logo.jpg"
-                                                                    alt="електронний документообіг"></span></a>
-            <a href="udalenniy-ofis.html" class="discount__link">&#8226; Удалённый офис FirstOffice<span
-                    class="discount__img"><img src="../img/fo_logo.png" alt="защита от рейдерства: смс маяк"></span></a>
-            <a href="1c.html" class="discount__link">&#8226; 1С в облаке FirstOffice<span class="discount__img"><img
-                    src="../img/fo_logo.png" alt=""></span></a>
-            <a href="oblachnaya-ats.html" class="discount__link">&#8226; Облачная АТС FirstOffice<span
+                                                                    alt="логотип office365"></span></a>
+            <a href="udalenniy-ofis.html" class="discount__link">&#8226; Віддалений офіс FirstOffice<span
                     class="discount__img"><img src="../img/fo_logo.png"
-                                               alt="рейдерский захват: пути предотвращения"></span></a>
-            <a href="smartdoc.html" class="discount__link">&#8226; Сервис составления договоров SmartDoc<span
+                                               alt="логотип firstoffice"></span></a>
+            <a href="1c.html" class="discount__link">&#8226; 1С в хмарі FirstOffice<span class="discount__img"><img
+                    src="../img/fo_logo.png" alt="логотип 1С в хмарі"></span></a>
+            <a href="oblachnaya-ats.html" class="discount__link">&#8226; Віртуальна АТС FirstOffice<span
+                    class="discount__img"><img src="../img/fo_logo.png"
+                                               alt="логотип Віртуальна АТС"></span></a>
+            <a href="smartdoc.html" class="discount__link">&#8226; Сервіс складання договорів SmartDoc<span
                     class="discount__img discount__img-sd"><img src="../img/smartdoc-logo.png"
-                                                                alt="безопасность компании - проверка контрагента, защита прав на недвижимое имущество"></span></a>
+                                                                alt="шаблони і типові договори"></span></a>
         </div>
-        <a href="../excellence.html" class="discount__page"><span class="discount__arr">&#8594;</span> ознакомьтесь с
-            условиями комплексной скидки здесь <span class="discount__arr">&#8592;</span></a>
+        <a href="../excellence-ukr.html" class="discount__page"><span class="discount__arr">&#8594;</span>ознайомтеся з
+            умовами комплексної знижки тут<span class="discount__arr">&#8592;</span></a>
     </article>
 
     <section class="video">
-        <h2 class="article__title">SMS-Маяк от ЛІГА:ЗАКОН (видео презентация)</h2>
+        <h2 class="article__title">SMS-Маяк від ЛІГА: ЗАКОН (відео презентація)</h2>
         <iframe class="liga__video1" src="https://www.youtube.com/embed/NHMJdG7Hqsw" frameborder="0"
                 allowfullscreen></iframe>
     </section>
