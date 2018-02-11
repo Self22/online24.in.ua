@@ -88,6 +88,7 @@
 }
 
 .l__mainmenu-contacts {
+  position: relative;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -97,6 +98,22 @@
   margin-left: 4vw;
 
 }
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: -30%;
+  bottom: -4vw;
+  border: 1px solid #010101;
+  padding: 0.5vw 1.5vw;
+  color: #010101;
+
+  @include phones {
+    display: none;
+  }
+}
+
 
 .l__mainmenu-tel {
   display: flex;
@@ -952,8 +969,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  right: 8vw;
-  top: 10vw;
+  right: 4vw;
+  top: 14vw;
 
   @include phones {
     display: none;

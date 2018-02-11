@@ -1030,10 +1030,24 @@ textarea {
   padding: 0 !important; }
 
 .l__mainmenu-contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: -20%;
+  bottom: 0;
+  border: 1px solid white;
+  padding: 0.5vw 1.1vw;
+  color: white; }
+  @media screen and (max-width: 480px) {
+    .langbutton__land {
+      display: none; } }
 
 .l__mainmenu-tel {
   display: flex;
@@ -1194,7 +1208,6 @@ textarea {
     color: white; }
   .l__slider .slide {
     height: 280px;
-    width: 50vw;
     background: transparent !important;
     border: 1px solid white; }
     @media screen and (max-width: 1200px) {
@@ -1578,7 +1591,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   right: 6vw;
-  top: 9vw; }
+  top: 8vw; }
   @media screen and (max-width: 480px) {
     .mainlink__block {
       display: none; } }
@@ -1594,7 +1607,7 @@ textarea {
   font-size: 1.5vw;
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: white;
   font-weight: 400; }
 
 .mainlink__coursor {
