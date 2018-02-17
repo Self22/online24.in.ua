@@ -87,6 +87,7 @@
 }
 
 .l__mainmenu-contacts {
+  position: relative;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -95,6 +96,21 @@
   margin-right: 20px;
   margin-left: 4vw;
 
+}
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: -40%;
+  bottom: -50px;
+  border: 1px solid #023756;
+  color: #023756;
+  padding: 0.5vw 1.7vw;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .l__mainmenu-tel {
@@ -498,7 +514,7 @@
 }
 
 .l_features {
-  padding: 4vw 12vw 0;
+  padding: 0 12vw 0;
   background: white;
   & h2, h3, p, li {
     color: black;
@@ -940,7 +956,8 @@
 }
 
 .tariff__descr {
-  padding: 6vw 0px 0px;
+  margin-top: 3%;
+  text-align: center;
   font-size: 1.5vw;
 
   @include phones {
@@ -1027,7 +1044,7 @@
 }
 
 .numbers__descr {
-
+  font-weight: 300;
   font-size: 1.5vw;
 
   @include phones {
@@ -1098,10 +1115,10 @@
 }
 
 .aboutus__title {
-  font-size: 2vw;
+  font-size: 1.7vw;
   border-top: 1px solid black;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   padding-top: 4vw;
   margin-bottom: 4vw;
 
@@ -1278,4 +1295,85 @@
 
 .channel-acco__trigger {
   margin-bottom: 1px;
+}
+
+////// ip pbx
+
+.pbx__price {
+  border-collapse: collapse;
+  font-size: 1.3vw;
+  table-layout: fixed;
+  margin-right: 10%;
+  margin-left: 3%;
+
+  @include desktop {
+    margin-left: 0;
+    font-size: 1.3vw;
+  }
+
+  border: 1px solid #ccc; /* граница всей таблицы */
+
+  & tr {
+    border: 1px solid #ccc; /* границы между строками */
+    padding: 5px 10px;
+
+  }
+  & td, th {
+    border: 1px solid #ccc; /* границы между столбцами */
+    padding: 5px 10px;
+    white-space: nowrap;
+    text-align: center;
+
+  }
+
+  & th {
+    font-weight: 700;
+    background: #1e4f7a;
+    color: white;
+    border-color: #1e4f7a;
+
+  }
+
+  & tr {
+    height: 47px;
+  }
+}
+
+.item__col {
+  text-align: left !important;
+}
+
+.pbx__name {
+  font-size: 1.3vw;
+  color: #111f44;
+  white-space: normal !important;
+
+  font-weight: 600;
+
+}
+
+.item__col-price {
+  font-size: 1.3vw;
+  text-align: center;
+  font-weight: 700;
+  background: #1e4f7a;
+  color: white;
+  border-color: #1e4f7a;
+}
+
+.td__price {
+  font-size: 1.3vw;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  background: #1e4f7a;
+  border-color: #1e4f7a;
+}
+
+.st__col {
+  width: 52%;
+}
+
+.nd__col {
+  width: 12%;
 }
