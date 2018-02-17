@@ -350,7 +350,7 @@
   background: #d91414 !important;
   color: white !important;
   padding: 12px 50px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
   border: 1px solid #344559;
 
@@ -360,7 +360,7 @@
   }
 
   & svg {
-    height: 63px;
+    height: 55px;
 
     @include phones {
       height: 54px;
@@ -398,7 +398,7 @@
   }
 
   .partner__brand {
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgb(39, 32, 22);
     margin: 0;
     margin-top: 15px;
@@ -408,19 +408,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 0.2vw;
 
-    & img {
-      margin-top: 30px;
-      width: 40%;
-      height: auto;
 
-      @include phones {
-        width: 70%;
-        margin-top: 10px;
-      }
-    }
 
     @include desktop {
       font-size: 42px;
@@ -438,10 +429,10 @@
   }
   .partner__slogan {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     margin-top: 60px;
-    color: rgb(39, 32, 22);
-    font-weight: 300;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
     font-family: "Raleway", Arial, sans-serif;
     line-height: 3vw;
     letter-spacing: 0.07vw;
@@ -507,7 +498,7 @@
 }
 
 .l_features {
-  padding: 4vw 12vw;
+  padding: 4vw 12vw 0;
   background: white;
   & h2, h3, p, li {
     color: black;
@@ -528,7 +519,7 @@
 }
 
 .features__descr {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 30px 0;
   color: black;
   font-weight: 100;
@@ -540,7 +531,7 @@
 }
 
 .future__title {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
   margin-bottom: 10px;
   font-weight: 300;
@@ -552,7 +543,7 @@
 
 .cfuture__block {
   background: #eff3f3;
-  padding: 4vw 4vw 3.5vw 7vw;
+  padding: 2vw 2vw 2vw 5vw;
 
 }
 
@@ -566,7 +557,7 @@
   padding: 0;
   margin: 0;
   margin: 15px 0;
-  font-size: 2vw;
+  font-size: 1.5vw;
   letter-spacing: 0.4px;
   font-weight: 100;
 
@@ -596,7 +587,7 @@
 
   font-weight: 500;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 2vw;
 
   &-blue {
     color: rgb(6, 137, 167);
@@ -651,7 +642,7 @@
 }
 
 .func__item {
-  padding: 4vw 5vw;
+  padding: 2vw 3vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -659,9 +650,10 @@
 }
 
 .func__title {
-  font-size: 2vw;
-  margin-bottom: 1.7vw;
+  font-size: 1.5vw;
+  margin-bottom: 1.2vw;
   align-self: flex-start;
+  text-transform: uppercase;
 
   @include phones {
     font-size: 6vw;
@@ -670,7 +662,7 @@
 }
 
 .func__descr {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 300;
   letter-spacing: 0.02vw;
 
@@ -1054,7 +1046,7 @@
 }
 
 .concurent__item {
-  font-size: 2vw;
+  font-size: 1.7vw;
   margin-bottom: 1vw;
 
   @include phones {
@@ -1095,7 +1087,7 @@
   }
 
   & li {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 1vw;
     font-weight: 100;
 
@@ -1106,10 +1098,10 @@
 }
 
 .aboutus__title {
-  font-size: 2.1vw;
+  font-size: 2vw;
   border-top: 1px solid black;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 4vw;
   margin-bottom: 4vw;
 
@@ -1271,4 +1263,19 @@
     width: 100%;
     height: auto;
   }
+}
+
+.logo__cont {
+
+  width: 50%;
+  margin-top: 7%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.channel-acco__trigger {
+  margin-bottom: 1px;
 }
