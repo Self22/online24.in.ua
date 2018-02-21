@@ -90,6 +90,12 @@
   margin-right: 14%;
 }
 
+.nav-item {
+  @include phones {
+    line-height: 1 !important;
+  }
+}
+
 .active {
 
   border-bottom: 1px solid white;
@@ -101,7 +107,14 @@
 
   @include phones {
     box-shadow: none;
+    border-bottom: none;
+    border-right: none;
   }
+}
+
+.nav-link {
+  font-size: 14px;
+  padding: 7px 0;
 }
 
 
