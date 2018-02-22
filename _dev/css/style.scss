@@ -45,7 +45,7 @@ html, body {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: 25px;
   transition: .5s ease-in-out;
 
@@ -58,12 +58,13 @@ html, body {
   position: absolute;
 
   cursor: pointer;
-  right: -15%;
-  bottom: 1vw;
-  border: 1px solid rgba(0, 0, 0, .3);
-  padding: .5vw 1.7vw;
+  right: -12%;
+  bottom: 0vw;
+  border: 1px solid rgb(65, 81, 162);
+  padding: .5vw 1vw;
 
   & a {
+    color: rgb(65, 81, 162);
     text-decoration: none !important;
   }
 }
@@ -176,8 +177,8 @@ html, body {
   & a {
     font-family: "Raleway", Arial, sans-serif;
     text-decoration: none;
-    color: #a0774b;
-    font-size: 1.6vw;
+    color: #4151a2;
+    font-size: 1.3vw;
     font-weight: 500;
     letter-spacing: 0.05vw;
     text-transform: capitalize;
@@ -194,8 +195,8 @@ html, body {
   &__main {
     position: relative;
     height: 40vh;
-    background: rgb(242, 251, 254);
-    padding: 0 12vw;
+    background: white;
+    padding: 0 8%;
 
     @include tablets {
       padding: 0;
@@ -398,11 +399,13 @@ html, body {
 }
 
 .main__content {
-  min-height: 500px;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0 8%;
 
 }
+
+//.main__index{
+//  background: white;
+//}
 
 .slider-cont {
   margin-top: -20px;
@@ -526,8 +529,9 @@ html, body {
 
 
 .index__fotoblock, .excellence__fotoblock, .partn__fotoblock {
-  height: 50vh;
+  height: 40vh;
   background: transparent;
+  margin-top: 7%;
 }
 
 //////////////////// index main
@@ -793,17 +797,17 @@ html, body {
 
 .about__article {
 
-  padding: 4vw 12vw 4vw 4vw;
+  padding: 5%;
 
   @include phones {
     padding: 8vw 8vw 4vw 8vw;
   }
 
   & p, li {
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-family: "Segoe UI";
-    letter-spacing: 0.3px;
-    line-height: 2.3vw;
+
+    line-height: 2vw;
 
     @include tablets {
       font-size: 4vw;
@@ -822,7 +826,7 @@ html, body {
   }
 
   &-1 {
-    background: rgb(242, 251, 254);
+    background: white;
   }
 
   &-2 {
@@ -1462,7 +1466,7 @@ a.animated-button.gibson-three:after {
   justify-content: center;
   align-items: center;
   padding-top: 5vw;
-  padding-right: 12vw;
+
   background: rgb(242, 251, 254);
 
   @include tablets {
@@ -1796,9 +1800,11 @@ a.animated-button.gibson-three:after {
 }
 
 .o__block {
-  background: #f5f6f7;
+  background: white;
   display: flex;
   flex-direction: row;
+  padding: 0 1%;
+  margin: 2% 0;
 
   @include phones {
     flex-direction: column;
@@ -1816,6 +1822,8 @@ a.animated-button.gibson-three:after {
   text-decoration: none !important;
   text-transform: uppercase;
   font-weight: 500;
+  background: white;
+  outline: 1px solid #5c95aa;
 
   @include phones {
     font-size: 4vw;
@@ -1832,7 +1840,7 @@ a.animated-button.gibson-three:after {
   }
 
   &-ur {
-    background: #124872;
+    background: #337A95;
     color: white;
   }
 }

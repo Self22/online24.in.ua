@@ -1,59 +1,59 @@
-//sidebar accordeon__texts
-
-$(document).ready(function () {
-
-
-    (function () {
-
-        var flag = true;
-
-        $('.nav__sidebar-title').on('click', function (e) {
-
-
-            var
-                $this = $(this),
-                container = $this.closest('.sidebar__index'),
-                item = $this.closest('.sidebar__nav-block'),
-                currentContent = item.find('.nav__sidebar-law'),
-                accIcon = item.find('.acc__icon'),
-                duration = 500;
-
-            if (flag) {
-                flag = false;
-
-
-                if (!item.hasClass('active')) {
-                    item.addClass('active')
-                        .find('.nav__sidebar-title')
-                        .addClass('sidebar__title-active')
-                        .find('.acc__icon')
-                        .addClass('transparent')
-
-                        .siblings()
-                        .removeClass('active')
-                        .find('.nav__sidebar-law')
-                        .slideUp(duration);
-
-                    currentContent.slideDown(duration, function () {
-                        flag = true
-                    });
-                }
-                else {
-                    item.removeClass('active')
-                        .find('.nav__sidebar-title')
-                        .removeClass('sidebar__title-active')
-                        .find('.acc__icon')
-                        .removeClass('transparent');
-                    currentContent.slideUp(function () {
-                        flag = true
-                    });
-                }
-
-            }
-        })
-    })();
-
-});
+// //sidebar accordeon__texts
+//
+// $(document).ready(function () {
+//
+//
+//     (function () {
+//
+//         var flag = true;
+//
+//         $('.nav__sidebar-title').on('click', function (e) {
+//
+//
+//             var
+//                 $this = $(this),
+//                 container = $this.closest('.sidebar__index'),
+//                 item = $this.closest('.sidebar__nav-block'),
+//                 currentContent = item.find('.nav__sidebar-law'),
+//                 accIcon = item.find('.acc__icon'),
+//                 duration = 500;
+//
+//             if (flag) {
+//                 flag = false;
+//
+//
+//                 if (!item.hasClass('active')) {
+//                     item.addClass('active')
+//                         .find('.nav__sidebar-title')
+//                         .addClass('sidebar__title-active')
+//                         .find('.acc__icon')
+//                         .addClass('transparent')
+//
+//                         .siblings()
+//                         .removeClass('active')
+//                         .find('.nav__sidebar-law')
+//                         .slideUp(duration);
+//
+//                     currentContent.slideDown(duration, function () {
+//                         flag = true
+//                     });
+//                 }
+//                 else {
+//                     item.removeClass('active')
+//                         .find('.nav__sidebar-title')
+//                         .removeClass('sidebar__title-active')
+//                         .find('.acc__icon')
+//                         .removeClass('transparent');
+//                     currentContent.slideUp(function () {
+//                         flag = true
+//                     });
+//                 }
+//
+//             }
+//         })
+//     })();
+//
+// });
 
 
 /////////// slider 
