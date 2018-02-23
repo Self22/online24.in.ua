@@ -3,7 +3,8 @@
 @import "_misc/normalize";
 ////partials
 @import "partials/animations_hover";
-@import "partials/sidebar-nav";
+@import "partials/sidebar-nav-main";
+@import "partials/sidebar-nav-sec";
 @import "partials/footer";
 @import "partials/btn";
 //animations
@@ -398,6 +399,10 @@ html, body {
   opacity: 0.5;
 }
 
+.main__index {
+  padding: 0 0 4% 0;
+}
+
 .main__content {
   margin: 0 8%;
 
@@ -531,17 +536,12 @@ html, body {
 .index__fotoblock, .excellence__fotoblock, .partn__fotoblock {
   height: 40vh;
   background: transparent;
-  margin-top: 7%;
+  margin: 10% 0 6%;
 }
 
 //////////////////// index main
 
-.main__action {
-  padding: 10px;
-  background: rgb(75, 104, 121);
-  display: flex;
-  flex-flow: row wrap;
-}
+
 
 .article__title {
   font-size: 2.2vw;
@@ -562,56 +562,6 @@ html, body {
   }
 }
 
-.action__item {
-  margin-bottom: 25px;
-}
-
-.card-img-top {
-  height: 150px;
-}
-
-.action__section {
-  z-index: 2;
-  display: flex;
-  flex-flow: row wrap;
-
-  padding: 3vw;
-  flex: 1 1 48%;
-  margin: 1vh 1%;
-  background: rgb(240, 241, 163);
-  color: #002942;
-
-  @include desktop {
-    flex: 1 1 100%;
-
-  }
-}
-
-.action__title {
-  flex: 1 1 60%;
-  margin-bottom: 30px;
-  font-size: 2.6vw;
-  color: #25408f;
-
-}
-
-.action__logo {
-  flex: 1 1 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1vw;
-
-  & img {
-    max-width: 100%;
-    height: auto;
-  }
-
-}
-
-.action__partner-text {
-  font-size: 1.3vw;
-}
 
 .index__btn {
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -619,23 +569,7 @@ html, body {
   font-size: 1.3vw !important;
 }
 
-.main__test {
-  background: rgb(252, 246, 179);
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
 
-.test__section {
-  flex: 1 1 100%;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 3vw;
-  background: transparent;
-  margin: 10px 1%;
-  border: 1px solid #002942;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
 
 .article__text {
   text-align: center;
@@ -643,44 +577,7 @@ html, body {
   margin-top: -10px;
 }
 
-.test__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 40%;
-  &img {
-    min-width: 100%;
-    height: auto;
-  }
-}
 
-.test__title {
-  margin-top: 15px;
-  text-align: center;
-  flex: 1 1 60%;
-  font-size: 2.5vw;
-}
-
-.test__text {
-  padding: 25px 0;
-  flex: 1 1 60%;
-  font-size: 1.6vw;
-}
-
-.test__button-cont {
-  flex: 1 1 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.test__button {
-  text-decoration: none !important;
-  cursor: pointer;
-  padding: 14px 18% !important;
-  text-transform: uppercase;
-  font-size: 1.3vw !important;
-}
 
 /* BORDER TRANSITIONS */
 /* Border Fade */
@@ -796,8 +693,8 @@ html, body {
 }
 
 .about__article {
-
-  padding: 5%;
+  background: white;
+  padding: 2% 5%;
 
   @include phones {
     padding: 8vw 8vw 4vw 8vw;
@@ -825,22 +722,7 @@ html, body {
     margin-top: 3vw;
   }
 
-  &-1 {
-    background: white;
-  }
 
-  &-2 {
-    background: rgb(242, 251, 254);
-  }
-
-  &-3 {
-    background: white;
-
-  }
-
-  &-4 {
-    background: rgb(242, 251, 254);
-  }
 }
 
 .about__title {
@@ -1465,9 +1347,9 @@ a.animated-button.gibson-three:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5vw;
+  padding: 4% 12%;
 
-  background: rgb(242, 251, 254);
+  background: white;
 
   @include tablets {
     padding-right: 0;
@@ -2092,7 +1974,7 @@ a.animated-button.gibson-three:after {
 }
 
 .padding__main {
-  background: rgb(242, 251, 254);
+  background: white;
 }
 
 //////////// inlife block
