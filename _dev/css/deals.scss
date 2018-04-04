@@ -1,0 +1,862 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+////partials
+@import "partials/animations_hover";
+@import "animations.css";
+
+html, body {
+
+  font-family: Open Sans, Optima, sans-serif;
+
+}
+
+.lmain__menu {
+  padding: 3%;
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  animation-fill-mode: none;
+  height: 130px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+
+  & .hvr-rectangle-out {
+    background: transparent;
+  }
+
+  .hvr-rectangle-out:before {
+    background: #376265;
+  }
+
+  & > div {
+    padding: 0 16px;
+
+    @include desktop {
+      padding: 0 7px;
+    }
+  }
+
+  & a {
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+
+}
+
+.lnav__fixed {
+  position: fixed;
+  background: white;
+  height: 90px;
+  z-index: 5;
+}
+
+.logosticky__o24 {
+  margin-right: 10%;
+  margin-left: 2%;
+}
+
+.partnerlogosticky {
+  max-width: 165px;
+  min-width: 100px;
+
+  @include desktop {
+    max-width: 120px;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.partnerlogo__mob {
+  position: absolute;
+  left: 120px;
+  top: 27px;
+  width: 85px;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.l__mainmenu-item {
+  padding: 0 !important;
+}
+
+.l__mainmenu-contacts {
+  position: relative;
+  min-width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+
+}
+
+.langbutton__land {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  right: 3%;
+  bottom: -7vw;
+  border: 1px solid rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
+  padding: 0.5vw 1.7vw;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.l__mainmenu-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  white-space: nowrap;
+
+  &:hover {
+    color: black !important;
+  }
+}
+
+.lmain__menu-excellence {
+  transition: all 0.5s;
+  background: #4a90e2;
+  margin-left: 15px;
+  display: block;
+  padding: 15px 35px;
+  text-align: center;
+
+  & span {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.nav-scroll ul, .nav-scroll li {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-scroll ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.lmain__menu-link {
+  padding: 15px 17px;
+  font-size: 18px;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: black;
+
+  margin-right: 5px;
+
+  &:hover {
+    outline: 1px solid;
+    color: black !important;
+  }
+
+  &:focus {
+    color: black !important;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+}
+
+.current {
+  outline: 1px solid;
+}
+
+.null__link {
+  outline: none !important;
+}
+
+.lmain__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.deals__header {
+  position: relative;
+
+  background-size: cover;
+
+}
+
+.deals__header-content {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @include phones {
+
+    height: 100vh;
+    align-items: center;
+  }
+
+}
+
+.bg-faded {
+  background-color: rgba(187, 180, 180, 1) !important;
+}
+
+.l__products {
+  background: #437BE0;
+  padding: 10px 5% 40px 5%;
+
+  & .article__title {
+    color: white;
+  }
+}
+
+.target__content {
+  background: white;
+
+  & h2 {
+    color: #203048;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+}
+
+.l__testcont {
+  height: 100px;
+  background: #4151a2;
+  flex-direction: column;
+
+  &-descr {
+    margin-top: 15px;
+  }
+
+  @include phones {
+    height: 90px;
+  }
+
+  &-big {
+    height: 225px;
+
+    @include phones {
+      height: 400px;
+    }
+  }
+
+}
+
+.liga__testcont-descr {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.l__testcont-text {
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  padding: 0 25px;
+  width: 100%;
+
+}
+
+.container_btn a {
+  color: blue;
+}
+
+.l__testbtn {
+
+  background: #eeece9 !important;
+  color: black !important;
+  padding: 12px 50px;
+  font-size: 24px;
+  font-weight: 400;
+  border: 1px solid #4151a2;
+
+  @include phones {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  & svg {
+    height: 58px;
+
+    @include phones {
+
+      height: 40px;
+    }
+  }
+
+  & rect {
+    stroke: #9a9abe;
+  }
+}
+
+.vd__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+
+  @include tablets {
+
+    padding-bottom: 0;
+  }
+
+  @include phones {
+
+    padding-left: 0;
+  }
+
+  .partner__brand {
+    font-size: 4.5vw;
+    color: black;
+
+    text-align: center;
+
+    @include desktop {
+      font-size: 4.5vw;
+    }
+
+    @include tablets {
+      font-size: 40px;
+    }
+
+    @include phones {
+      text-align: center;
+      font-size: 11vw;
+      margin-bottom: 1vh;
+    }
+  }
+  .partner__slogan {
+    text-align: center;
+    font-size: 30px;
+    line-height: 4vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: black;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @include desktop {
+      margin-top: 20px;
+    }
+
+    @include phones {
+      margin-bottom: 4vw;
+      text-align: center;
+      font-size: 6vw;
+      line-height: 10vw;
+      padding: 5px 12vw;
+    }
+  }
+
+  & p {
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 15px;
+
+    @include phones {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+}
+
+.partner__logo {
+  width: 35%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    width: 70%;
+  }
+}
+
+.partner__descr {
+  color: black;
+  font-size: 26px;
+  padding: 0 12%;
+  text-align: center;
+  margin-bottom: 3vw;
+  font-weight: 100;
+  line-height: 1.7;
+  margin-top: 20px;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.article__title {
+  font-family: Open Sans, Optima, sans-serif;
+}
+
+.target__content {
+  padding: 0 0 30px;
+
+  & p {
+    font-size: 1.3vw;
+
+    @include phones {
+      font-size: 4vw;
+    }
+  }
+}
+
+.target__list1 {
+  justify-content: center;
+  background: rgba(9, 5, 2, 0.1);
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.target__name {
+  padding: 1vw 5vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  border: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  width: 100%;
+  height: 100%;
+
+  @include phones {
+    font-size: 5vw;
+    padding: 4vw 5vw;
+  }
+}
+
+.tab__content {
+  padding: 30px 16% 0;
+  height: 34vw;
+
+  @include phones {
+    padding: 15px 4% 0;
+    height: 80vh;
+  }
+
+}
+
+.nav-item__jur {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+  &:hover, .active {
+    background: rgb(242, 242, 242);
+  }
+
+  &-1 {
+    text-align: right;
+    @include phones {
+      text-align: center;
+    }
+  }
+
+  &-2 {
+    text-align: center;
+    width: 25%;
+    @include phones {
+      width: 100%;
+    }
+  }
+
+  &-3 {
+    text-align: left;
+    @include phones {
+      text-align: center;
+    }
+
+  }
+
+}
+
+.l__descr {
+  padding: 50px 1vw 30px 1vw;
+  background: rgb(132, 199, 208);
+
+  & .article__title {
+    margin-bottom: 50px;
+    color: white;
+    text-align: right;
+  }
+
+  & i {
+    margin: 4%;
+    color: #022383;
+  }
+}
+
+.descr__title {
+  color: white;
+  text-align: center;
+  line-height: 32px;
+}
+
+.feature__descr {
+  color: #001148;
+}
+
+.l_features {
+  padding: 3% 12%;
+  background: white;
+  & div, p {
+    color: #203048;
+    font-size: 1.3vw;
+  }
+
+  & > p {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  @include phones {
+    & p {
+      font-size: 5vw;
+    }
+  }
+}
+
+.icon__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7vw !important;
+  margin-top: 0.7vw !important;
+}
+
+.feature__section {
+  margin-bottom: 15px;
+}
+
+.product__feautures {
+
+  border: 1px solid black;
+  padding: 25px 5%;
+  height: 100%;
+  margin-bottom: 0.7vw !important;
+  margin-top: 0.7vw !important;
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include desktop {
+    height: 100%;
+  }
+
+  @include phones {
+    height: 100%;
+  }
+
+  & i {
+    margin-right: 3%;
+  }
+}
+
+.vd__fotoblock {
+  height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn-1:hover {
+  font-weight: 400 !important;
+}
+
+.vd__products {
+  padding: 3% 12%;
+  background: white;
+
+  @include phones {
+    padding: 3% 6%;
+  }
+
+}
+
+.vd__tariffs {
+  display: flex;
+  flex-direction: row;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.vd__tarif {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex: 1;
+  padding: 1%;
+  margin: 0 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @include phones {
+    flex: 100%;
+    padding: 5%;
+    margin-bottom: 3vh;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+}
+
+.vd__service {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+  line-height: 3vw;
+  width: 100%;
+  background: #4151a2;
+  color: white;
+  padding: 3%;
+
+  @include phones {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
+
+.vd__price {
+  text-align: center;
+  margin-bottom: auto;
+  font-size: 2.5vw;
+  margin-top: 0.5vw;
+  color: #4151a2;
+  font-weight: 600;
+
+  @include phones {
+    font-size: 8vw;
+    margin-top: 3vw;
+  }
+}
+
+.vd__descr {
+  text-align: center;
+  margin-bottom: auto;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin-top: 3vw;
+    padding: 0 7%;
+  }
+}
+
+.vd__order {
+  border: none;
+  background: #9A8918;
+  color: white;
+  padding: 0.5vw 3.5vw 0.7vw;
+  font-size: 2.5vw;
+  margin-top: 2vw;
+  text-transform: lowercase;
+  letter-spacing: 0.06vw;
+
+  @include phones {
+    padding: 1vw 9.5vw 1.6vw;
+    font-size: 8vw;
+    margin-top: 6vw;
+  }
+}
+
+.vd__info {
+  padding: 0 12% 3%;
+
+  & p {
+    font-size: 1.3vw;
+
+    @include phones {
+      font-size: 5vw;
+    }
+  }
+
+  @include phones {
+    padding: 0 6% 3%;
+  }
+}
+
+.vd__info-title {
+  text-align: left;
+  margin-bottom: 1vw;
+  font-weight: 600;
+  font-size: 1.3vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.liga__partner-logo {
+  margin-left: 3%;
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 12% 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.liga__video1 {
+  width: 800px;
+  height: 400px;
+  margin-top: 2vw;
+
+  @include phones {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+//// ���� �� �������
+.logomain {
+  display: none;
+}
+
+.mainlink__block {
+  text-decoration: none !important;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -8%;
+  bottom: 8%;
+
+  @include phones {
+    display: none;
+  }
+
+}
+
+.mainlink__img {
+  width: 20%;
+  margin-top: 10px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mainlink__text {
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 100;
+}
+
+.mainlink__coursor {
+  position: absolute;
+  width: 8%;
+  bottom: -25%;
+  right: 28%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.action__button-fst {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+
+  @include phones {
+    top: 17%;
+    left: 21%;
+  }
+}
+
+.action__title {
+  font-size: 18px;
+  margin-bottom: 1vw;
+  letter-spacing: 0.06vw;
+  font-weight: 600;
+}
+
+.action__more {
+  font-size: 18px;
+}
+
+.ib__action {
+  padding: 5% 0 0;
+}
+
+.action__slogan {
+  font-size: 2.2vw;
+  font-weight: 400;
+  text-align: center;
+  color: red;
+  margin-bottom: 2vw;
+
+  @include phones {
+    font-size: 8vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.action__descr {
+  line-height: 25px;
+}

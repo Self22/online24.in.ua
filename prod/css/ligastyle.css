@@ -1675,13 +1675,4 @@ html, body {
     width: 100%;
     height: auto; }
 
-.top__links-liga {
-  padding: 3% 12%; }
-
-.archiveblock__link {
-  font-size: 1.5vw; }
-  @media screen and (max-width: 480px) {
-    .archiveblock__link {
-      font-size: 5vw; } }
-
 /*# sourceMappingURL=ligastyle.css.map */
