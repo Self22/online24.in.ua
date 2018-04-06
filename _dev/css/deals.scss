@@ -230,6 +230,22 @@ html, body {
 
 }
 
+.about {
+  padding: 4% 12% 0;
+  p {
+    font-size: 1.3vw;
+  }
+}
+
+.responsibility {
+  padding: 2% 12% 1%;
+}
+
+.responsibility__item {
+  font-size: 1.3vw;
+  margin-bottom: 0.5vw;
+}
+
 .bg-faded {
   background-color: rgba(187, 180, 180, 1) !important;
 }
@@ -548,7 +564,7 @@ html, body {
 }
 
 .l_features {
-  padding: 3% 12%;
+  padding: 1% 12%;
   background: white;
   & div, p {
     color: #203048;
