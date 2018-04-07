@@ -449,93 +449,10 @@ html, body {
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
+  font-size: 2vw;
 }
 
-.target__content {
-  padding: 0 0 30px;
 
-  & p {
-    font-size: 1.3vw;
-
-    @include phones {
-      font-size: 4vw;
-    }
-  }
-}
-
-.target__list1 {
-  justify-content: center;
-  background: rgba(9, 5, 2, 0.1);
-
-  @include phones {
-    flex-direction: column;
-    align-items: center;
-  }
-
-}
-
-.target__name {
-  padding: 1vw 5vw;
-  font-size: 1.3vw;
-  font-weight: 600;
-  border: none !important;
-  text-transform: uppercase;
-  letter-spacing: 0.2vw;
-  width: 100%;
-  height: 100%;
-
-  @include phones {
-    font-size: 5vw;
-    padding: 4vw 5vw;
-  }
-}
-
-.tab__content {
-  padding: 30px 16% 0;
-  height: 34vw;
-
-  @include phones {
-    padding: 15px 4% 0;
-    height: 80vh;
-  }
-
-}
-
-.nav-item__jur {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-
-  &:hover, .active {
-    background: rgb(242, 242, 242);
-  }
-
-  &-1 {
-    text-align: right;
-    @include phones {
-      text-align: center;
-    }
-  }
-
-  &-2 {
-    text-align: center;
-    width: 25%;
-    @include phones {
-      width: 100%;
-    }
-  }
-
-  &-3 {
-    text-align: left;
-    @include phones {
-      text-align: center;
-    }
-
-  }
-
-}
 
 .l__descr {
   padding: 50px 1vw 30px 1vw;
@@ -597,8 +514,8 @@ html, body {
 
 .product__feautures {
 
-  border: 1px solid black;
-  padding: 25px 5%;
+  border: 1px solid #4a90e2;
+  padding: 13px 4%;
   height: 100%;
   margin-bottom: 0.7vw !important;
   margin-top: 0.7vw !important;
@@ -632,86 +549,36 @@ html, body {
   font-weight: 400 !important;
 }
 
-.vd__products {
+.offer {
   padding: 3% 12%;
-  background: white;
-
-  @include phones {
-    padding: 3% 6%;
-  }
-
+  background: rgba(212, 218, 226, 0.3);
 }
 
-.vd__tariffs {
+.offer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 
-  @include phones {
-    flex-direction: column;
-  }
 }
 
-.vd__tarif {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  flex: 1;
-  padding: 1%;
-  margin: 0 7%;
+.offer__icon {
+  margin-top: 30px;
+}
+
+.offer__item {
+  margin: 0;
+  flex: 40%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  @include phones {
-    flex: 100%;
-    padding: 5%;
-    margin-bottom: 3vh;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-  }
-
-}
-
-.vd__service {
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 300;
-  letter-spacing: 0.05vw;
-  line-height: 3vw;
-  width: 100%;
-  background: #4151a2;
-  color: white;
-  padding: 3%;
-
-  @include phones {
-    font-size: 5vw;
-    line-height: 7vw;
-  }
-}
-
-.vd__price {
-  text-align: center;
-  margin-bottom: auto;
-  font-size: 2.5vw;
-  margin-top: 0.5vw;
-  color: #4151a2;
-  font-weight: 600;
-
-  @include phones {
-    font-size: 8vw;
-    margin-top: 3vw;
-  }
-}
-
-.vd__descr {
-  text-align: center;
-  margin-bottom: auto;
-  font-size: 1.3vw;
-  margin-top: 1vw;
-
-  @include phones {
-    font-size: 5vw;
-    margin-top: 3vw;
-    padding: 0 7%;
-  }
+  margin-bottom: 30px;
+  padding: 15px 4% 10px;
+  border: 1px solid #4a90e2;
+  margin: 15px 5%;
+  border-radius: 5px;
 }
 
 .vd__order {
