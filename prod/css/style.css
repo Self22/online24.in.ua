@@ -3405,8 +3405,7 @@ html, body {
   background: transparent;
   border: none;
   margin-bottom: 2vw;
-  margin-top: 2vw;
-  padding: 0 10%; }
+  margin-top: 2vw; }
 
 .hvr-shutter-out-vertical:before {
   background: rgba(95, 95, 117, 0.2); }
