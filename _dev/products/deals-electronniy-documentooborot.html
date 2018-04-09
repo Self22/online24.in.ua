@@ -452,7 +452,22 @@
         </ul>
     </article>
     <article class="tariffs">
-        <input type="range" list="tickmarks" min="0" max="8" step="1">
+        <h2 class="article__title">Тарифы</h2>
+        <div class="price__cont">
+            <div class="price__cont-items">
+                <p>Кол-во документов в пакете</p>
+                <p>Стоимость пакета</p>
+                <p>Стоимость одного документа</p>
+            </div>
+            <div class="price__cont-values">
+                <p class="summ__documents">1000</p>
+                <p class="summ__plan">1600 грн</p>
+                <p class="singledocument__cost">1.6 грн</p>
+            </div>
+        </div>
+        <div class="range__cont">
+            <input class="tariff__range" type="range" list="tickmarks" min="0" max="7" step="1" value="3"
+                   oninput="fun1()">
 
         <datalist id="tickmarks">
             <option value="0" label="0%">
@@ -466,6 +481,7 @@
             <option value="80" label="80%">
 
         </datalist>
+        </div>
     </article>
 
 
@@ -671,7 +687,7 @@ window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js" type="tex
 <script src="../js/css3-animate-it.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script src="../js/jquery.singlePageNav.min.js"></script>
-<script src="../js/land.js"></script>
+<script src="../js/land_deals.js"></script>
 </html>
 
 </html>
