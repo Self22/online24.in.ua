@@ -596,6 +596,55 @@ html, body {
   border-radius: 5px;
 }
 
+.target__tabs {
+  padding: 3% 12%;
+}
+
+.target__tabs-cont {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.target__tabs-list {
+  flex: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.target__tabs-item {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  & a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & span {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.tabitem-img {
+  margin-bottom: 15px;
+
+  & img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.target__content-list {
+  flex: 100%;
+}
+
 .price__cont {
   display: flex;
   flex-direction: row;

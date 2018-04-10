@@ -234,19 +234,19 @@ function fun1() {
 
     if (tariffRange.value == 0) {
         summDocuments.innerText = 50;
-        summPlan.innerText = '0 грн.';
+        summPlan.innerText = '0 грн';
         singledocumentCost.innerText = '0,0 грн';
     }
 
     if (tariffRange.value == 1) {
         summDocuments.innerText = 100;
-        summPlan.innerText = '200 грн.';
+        summPlan.innerText = '200 грн';
         singledocumentCost.innerText = '2,0 грн';
     }
 
     if (tariffRange.value == 2) {
         summDocuments.innerText = 500;
-        summPlan.innerText = '900 грн.';
+        summPlan.innerText = '900 грн';
         singledocumentCost.innerText = '1.8 грн';
     }
 
@@ -258,25 +258,25 @@ function fun1() {
 
     if (tariffRange.value == 4) {
         summDocuments.innerText = 2000;
-        summPlan.innerText = '2800 грн.';
+        summPlan.innerText = '2800 грн';
         singledocumentCost.innerText = '1.4 грн';
     }
 
     if (tariffRange.value == 5) {
         summDocuments.innerText = 5000;
-        summPlan.innerText = '6000 грн.';
+        summPlan.innerText = '6000 грн';
         singledocumentCost.innerText = '1.2 грн';
     }
 
     if (tariffRange.value == 6) {
         summDocuments.innerText = 1100;
-        summPlan.innerText = '1100 грн.';
+        summPlan.innerText = '1100 грн';
         singledocumentCost.innerText = '1,0 грн';
     }
 
     if (tariffRange.value == 7) {
         summDocuments.innerText = 50000;
-        summPlan.innerText = '40000 грн.';
+        summPlan.innerText = '40000 грн';
         singledocumentCost.innerText = '0.8 грн';
     }
 }

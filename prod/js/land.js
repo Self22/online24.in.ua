@@ -22,10 +22,6 @@ $('.office__fotoblock').parallax({imageSrc: '../img/office365__fotoblock.jpg'});
 $('.sm__header-content').parallax({imageSrc: '../img/sm__header.jpg'});
 
 
-
-
-
-
 //sticky header
 
 $(function () {
