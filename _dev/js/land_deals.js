@@ -238,45 +238,68 @@ function fun1() {
         singledocumentCost.innerText = '0,0 грн';
     }
 
-    if (tariffRange.value == 1) {
+    if (tariffRange.value == 14.28) {
         summDocuments.innerText = 100;
         summPlan.innerText = '200 грн';
         singledocumentCost.innerText = '2,0 грн';
     }
 
-    if (tariffRange.value == 2) {
+    if (tariffRange.value == 28.56) {
         summDocuments.innerText = 500;
         summPlan.innerText = '900 грн';
         singledocumentCost.innerText = '1.8 грн';
     }
 
-    if (tariffRange.value == 3) {
+    if (tariffRange.value == 42.84) {
         summDocuments.innerText = 1000;
         summPlan.innerText = '1600 грн.';
         singledocumentCost.innerText = '1.6 грн';
     }
 
-    if (tariffRange.value == 4) {
+    if (tariffRange.value == 57.12) {
         summDocuments.innerText = 2000;
         summPlan.innerText = '2800 грн';
         singledocumentCost.innerText = '1.4 грн';
     }
 
-    if (tariffRange.value == 5) {
+    if (tariffRange.value == 71.4) {
         summDocuments.innerText = 5000;
         summPlan.innerText = '6000 грн';
         singledocumentCost.innerText = '1.2 грн';
     }
 
-    if (tariffRange.value == 6) {
+    if (tariffRange.value == 85.68) {
         summDocuments.innerText = 1100;
         summPlan.innerText = '1100 грн';
         singledocumentCost.innerText = '1,0 грн';
     }
 
-    if (tariffRange.value == 7) {
+    if (tariffRange.value == 99.96) {
         summDocuments.innerText = 50000;
         summPlan.innerText = '40000 грн';
         singledocumentCost.innerText = '0.8 грн';
     }
 }
+
+//////////// interval stadies
+
+var items = document.querySelectorAll(".how_it_works-item");
+
+
+setInterval(function () {
+
+
+    for (i = 0; i < items.length; ++i) {
+        if (items[i].classList.contains('how_active')) {
+            items[i].classList.remove('how_active');
+            if (i < items.length - 1) {
+                items[++i].classList.add('how_active');
+            }
+
+            else {
+                items[0].classList.add('how_active');
+            }
+        }
+    }
+
+}, 5000);

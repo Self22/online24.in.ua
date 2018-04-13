@@ -271,7 +271,7 @@ html, body {
 }
 
 .tariff__range {
-  width: 60%;
+  width: 600px;
 }
 
 .target__content {
@@ -287,7 +287,7 @@ html, body {
 
 .l__testcont {
   height: 100px;
-  background: #4151a2;
+  background: #4a90e2;
   flex-direction: column;
 
   &-descr {
@@ -335,7 +335,7 @@ html, body {
   padding: 12px 50px;
   font-size: 24px;
   font-weight: 400;
-  border: 1px solid #4151a2;
+  border: 1px solid rgba(65, 81, 162, 0.2);
 
   @include phones {
     padding: 11px;
@@ -529,7 +529,7 @@ html, body {
 
 .product__feautures {
 
-  border: 1px solid #4a90e2;
+  background: rgb(237, 244, 252);
   padding: 13px 4%;
   height: 100%;
   margin-bottom: 0.7vw !important;
@@ -594,10 +594,11 @@ html, body {
   border: 1px solid #4a90e2;
   margin: 15px 5%;
   border-radius: 5px;
+  font-size: 1.3vw;
 }
 
 .target__tabs {
-  padding: 3% 12%;
+  padding: 3% 12% 4%;
 }
 
 .target__tabs-cont {
@@ -605,7 +606,8 @@ html, body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height: 300px;
 }
 
 .target__tabs-list {
@@ -620,7 +622,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.3vw;
   & a {
     display: flex;
     flex-direction: column;
@@ -628,7 +630,8 @@ html, body {
 
   & span {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.3vw;
+    font-weight: 600;
   }
 }
 
@@ -636,24 +639,87 @@ html, body {
   margin-bottom: 15px;
 
   & img {
+    filter: grayscale(100%);
     width: 50%;
     height: auto;
   }
 }
 
-.target__content-list {
+.target__content-block {
   flex: 100%;
+  padding-left: 5%;
+}
+
+.target__content-list {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0 0 5%;
+  margin: 0;
+
+}
+
+.target__content-point {
+
+  margin: 0;
+  font-size: 1.3vw;
+  flex: 1;
+  padding: 0 5% 0 0;
+}
+
+.nav-link {
+  padding: 8%;
+
+  &:hover {
+    border-radius: 30px;
+
+    & img {
+      filter: grayscale(1%);
+    }
+  }
+}
+
+.nav-tabs .nav-link.active {
+
+  border-radius: 30px;
+
+  & img {
+    filter: grayscale(1%);
+  }
+}
+
+.tariffs__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10%;
+  margin: 40px 0 30px;
+  font-size: 1.3vw;
+}
+
+.tariffs__slogan {
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-bottom: 1.5vw;
 }
 
 .price__cont {
   display: flex;
   flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 0 0 5%;
 }
 
 .price__cont-items {
   flex: 50%;
   display: flex;
   flex-direction: column;
+  font-size: 1.3vw;
+
+  & p {
+    color: #1818ff;
+  }
 }
 
 .price__cont-values {
@@ -662,18 +728,113 @@ html, body {
   flex-direction: column;
 }
 
-.summ__documents {
+.range__scale-list {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 1%;
 
+}
+
+.range__scale-item {
+  list-style: none;
+  flex: 1;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -1%;
+    width: 1px;
+    height: 13px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:last-child {
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 100%;
+      width: 1px;
+      height: 13px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+  }
+
+}
+
+.range__scale-numbers {
+  display: flex;
+  flex-direction: row;
+  width: 679px;
+  margin: 0 auto;
+  padding: 0 0 0 3%;
+
+}
+
+.summ__documents {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.range__num-item {
+  list-style: none;
+  flex: 1;
 }
 
 .summ__plan {
-
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
 .singledocument__cost {
-
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
+.how_it_works {
+  padding: 3% 12%;
+}
+
+.how_it_works-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.how_it_works-img {
+  flex: 3;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.how_it_works-stadies {
+  flex: 2;
+}
+
+.how_it_works-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.how_it_works-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.how_active {
+  background: green;
+}
 
 .vd__order {
   border: none;
@@ -779,7 +940,7 @@ html, body {
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: #4a90e2;
   font-weight: 100;
 }
 

@@ -76,13 +76,13 @@
 <div class="popup__form-test">
     <span class="close__popup">&times</span>
 
-    <div class="popup__title">Заявка на тестовое включение</div>
+    <div class="popup__title">Заявка на подключение сервиса</div>
 
     <div class="popup__text">Оставьте свои контактные данные <br>
         и наш специалист свяжется с Вами
     </div>
     <form id="popupform-test" class="popupform-test">
-        <input type="hidden" name="form_type" value="test">
+        <input type="hidden" name="form_type" value="order">
         <input type="hidden" name="product" value="deals">
 
         <div class="popupform__order-name form-group">
@@ -343,7 +343,7 @@
                 <svg>
                     <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                 </svg>
-                Попробовать бесплатно (тест 24 часа)
+                Бесплатная регистрация (до 50 документов в мес.)
             </a>
 
         </div>
@@ -356,7 +356,8 @@
     <article class="about">
 
         <p>Простой, быстрый и удобный сервис для защищённого документооборота : подписание договоров, обмен
-            бухгалтерскими и юридически значимыми документами с контрагентами. Разработчик: компания InBASE (более 15
+            бухгалтерскими и юридически значимыми документами с контрагентами. <br>Разработчик: компания InBASE (более
+            15
             лет работы на рынке систем электронного документооборота Украины)</p>
 
     </article>
@@ -481,27 +482,112 @@
                             src="../img/deals_lawyer.svg" alt=""></span><span>Юрист</span></a>
                 </li>
             </ul>
-            <div class="target__content-list tab-content" id="myTabContent">
+            <div class="target__content-block tab-content" id="myTabContent">
                 <div class="target__content-item tab-pane fade show active" id="boss" role="tabpanel"
-                     aria-labelledby="home-tab">1
+                     aria-labelledby="home-tab">
+                    <ul class="target__content-list">
+                        <li class="target__content-point">Скорость взаимодействия с партнёрами и принятия решений</li>
+                        <li class="target__content-point">Новый уровень доверия и понятности процессов</li>
+                        <li class="target__content-point">Существенное снижение затрат на документооборот</li>
+                    </ul>
+
                 </div>
                 <div class="target__content-item tab-pane fade" id="account" role="tabpanel"
-                     aria-labelledby="profile-tab">2
+                     aria-labelledby="profile-tab">
+                    <ul class="target__content-list">
+                        <li class="target__content-point">Быстрая доставка документов контрагенту</li>
+                        <li class="target__content-point">Не тратятся время и нервы на поиск документов: теперь они в
+                            принципе не теряются
+                        </li>
+                        <li class="target__content-point">Больше свободного от документооборота времени</li>
+                    </ul>
                 </div>
                 <div class="target__content-item tab-pane fade" id="finansist" role="tabpanel"
-                     aria-labelledby="contact-tab">3
+                     aria-labelledby="contact-tab">
+                    <ul class="target__content-list">
+                        <li class="target__content-point">Прозрачная простая работа с финансовыми обязательствами</li>
+                        <li class="target__content-point">Удобный поиск и анализ финансовой документации</li>
+                        <li class="target__content-point">Взаимоотношения с контрагентами предсказуемы и отслеживаются
+                            онлайн
+                        </li>
+                    </ul>
                 </div>
                 <div class="target__content-item tab-pane fade" id="itman" role="tabpanel"
-                     aria-labelledby="contact-tab">4
+                     aria-labelledby="contact-tab">
+                    <ul class="target__content-list">
+                        <li class="target__content-point">Значительная экономия IT-ресурсов компании</li>
+                        <li class="target__content-point">Обеспечение круглосуточной работы документооборота</li>
+                        <li class="target__content-point">Существенная модернизация принципа работы компании</li>
+                    </ul>
                 </div>
                 <div class="target__content-item tab-pane fade" id="lawyer" role="tabpanel"
-                     aria-labelledby="contact-tab">5
+                     aria-labelledby="contact-tab">
+                    <ul class="target__content-list">
+                        <li class="target__content-point">Удобный канал связи с клиентом</li>
+                        <li class="target__content-point">Безопасная работа с юридически значимыи документами</li>
+                        <li class="target__content-point">Простой удобный документооборот</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </article>
+    <article class="how_it_works">
+        <h2 class="article__title">Как это работает</h2>
+        <div class="how_it_works-cont">
+            <div class="how_it_works-img"><img src="../img/deals_img.jpg" alt=""></div>
+            <div class="how_it_works-stadies">
+                <ul class="how_it_works-list" data-sequence='2500'>
+                    <li class="how_it_works-item how_active">
+                        <div class="process__num">1</div>
+                        <div class="process__descr">Подключитесь к сервису
+
+                        </div>
+                        <button class="order__l hvr-pulse-grow">Нажмите ТУТ</button>
+                        <div class="process__dir animated fadeInDownShort slowest" data-id='1'>
+                            <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                <path fill="rgb(3, 133, 167)" d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="how_it_works-item">
+                        <div class="process__num">2</div>
+                        <div class="process__descr">Подключите Вашего контрагента</div>
+                        <div class="process__dir process__dir-2 animated fadeInDownShort slowest" data-id='2'>
+                            <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                <path fill="rgb(3, 133, 167)" d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="how_it_works-item">
+                        <div class="process__num">3</div>
+                        <div class="process__descr">Обменивайтесь и подписывайте документы онлайн
+                        </div>
+                        <div class="process__dir process__dir-3 animated fadeInDownShort slowest" data-id='3'>
+                            <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                <path fill="rgb(3, 133, 167)" d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z"/>
+                            </svg>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article class="l__testcont container_btn">
+        <a href="" class="btn_s btn-1 l__testbtn">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Бесплатная регистрация (до 50 документов в мес.)
+        </a>
+    </article>
     <article class="tariffs">
         <h2 class="article__title">Тарифы</h2>
+        <div class="tariffs__text">
+            <h3 class="tariffs__slogan">Чем больше подписываете - тем меньше платите!</h3>
+            <p>Стоимость наших услуг зависит от количества документов, которые Вы подписываете в течении одного
+                года. </p>
+        </div>
         <div class="price__cont">
             <div class="price__cont-items">
                 <p>Кол-во документов в пакете</p>
@@ -515,7 +601,7 @@
             </div>
         </div>
         <div class="range__cont">
-            <input class="tariff__range" type="range" list="tickmarks" min="0" max="7" step="1" value="3"
+            <input class="tariff__range" type="range" list="tickmarks" min="0" max="100" step="14.28" value="42.85"
                    oninput="fun1()">
 
         <datalist id="tickmarks">
@@ -531,6 +617,27 @@
 
         </datalist>
         </div>
+        <ul class="range__scale-list">
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+            <li class="range__scale-item"></li>
+
+        </ul>
+        <ul class="range__scale-numbers">
+            <li class="range__num-item">50</li>
+            <li class="range__num-item">100</li>
+            <li class="range__num-item">500</li>
+            <li class="range__num-item">1000</li>
+            <li class="range__num-item">2000</li>
+            <li class="range__num-item">5000</li>
+            <li class="range__num-item">11000</li>
+            <li class="range__num-item">40000</li>
+        </ul>
+
     </article>
 
 
