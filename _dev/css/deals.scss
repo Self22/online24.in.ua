@@ -81,7 +81,7 @@ html, body {
 .partnerlogo__mob {
   position: absolute;
   left: 120px;
-  top: 27px;
+  top: 20px;
   width: 85px;
 
   & img {
@@ -232,24 +232,57 @@ html, body {
 }
 
 .about {
-  padding: 4% 12% 0;
+  padding: 5% 12% 1%;
+
+  @include phones {
+    padding: 8% 8% 1%;
+  }
+
   p {
     font-size: 1.3vw;
+    letter-spacing: 0.005vw;
+    font-weight: 500;
+
+    @include phones {
+      font-size: 5vw;
+      letter-spacing: 0.01vw;
+    }
   }
+
+
 }
 
 .responsibility {
-  padding: 2% 12% 1%;
+  padding: 2% 12% 3%;
+
+  @include phones {
+    padding: 2% 7% 3%;
+  }
+
 }
 
 .responsibility__item {
   font-size: 1.3vw;
   margin-bottom: 0.5vw;
+
+  @include phones {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
 }
 
 .bg-faded {
-  background-color: rgba(187, 180, 180, 1) !important;
+  background-color: #f1f1f3 !important;
 }
+
+.nav-item {
+
+  @include phones {
+    line-height: 1.5 !important;
+  }
+
+}
+
 
 .l__products {
   background: #437BE0;
@@ -262,6 +295,10 @@ html, body {
 
 .tariffs {
   padding: 3% 8%;
+
+  @include phones {
+    padding: 3% 5%;
+  }
 }
 
 .range__cont {
@@ -272,6 +309,10 @@ html, body {
 
 .tariff__range {
   width: 600px;
+
+  @include phones {
+    width: 300px;
+  }
 }
 
 .target__content {
@@ -330,8 +371,8 @@ html, body {
 
 .l__testbtn {
 
-  background: #eeece9 !important;
-  color: black !important;
+  background: white !important;
+  color: #4151a2 !important;
   padding: 12px 50px;
   font-size: 24px;
   font-weight: 400;
@@ -411,7 +452,7 @@ html, body {
     }
 
     @include phones {
-      margin-bottom: 4vw;
+      margin-top: 0;
       text-align: center;
       font-size: 6vw;
       line-height: 10vw;
@@ -459,12 +500,18 @@ html, body {
 
   @include phones {
     font-size: 5vw;
+    font-weight: 500;
+    margin-bottom: 9vw;
   }
 }
 
 .article__title {
   font-family: Open Sans, Optima, sans-serif;
   font-size: 2vw;
+
+  @include phones {
+    font-size: 6vw;
+  }
 }
 
 
@@ -498,6 +545,11 @@ html, body {
 .l_features {
   padding: 1% 12%;
   background: white;
+
+  @include phones {
+    padding: 1% 7%;
+  }
+
   & div, p {
     color: #203048;
     font-size: 1.3vw;
@@ -567,6 +619,10 @@ html, body {
 .offer {
   padding: 3% 12%;
   background: rgba(212, 218, 226, 0.3);
+
+  @include phones {
+    padding: 3% 7%;
+  }
 }
 
 .offer__list {
@@ -582,6 +638,11 @@ html, body {
   margin-top: 30px;
 }
 
+.nav-tabs .nav-link {
+
+  width: 100%;
+}
+
 .offer__item {
   margin: 0;
   flex: 40%;
@@ -590,15 +651,24 @@ html, body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
-  padding: 15px 4% 10px;
+  padding: 20px 4% 10px;
   border: 1px solid #4a90e2;
   margin: 15px 5%;
-  border-radius: 5px;
+  border-radius: 1vw;
   font-size: 1.3vw;
+
+  @include phones {
+    font-size: 5vw;
+    padding: 20px 8% 10px;
+  }
 }
 
 .target__tabs {
   padding: 3% 12% 4%;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .target__tabs-cont {
@@ -623,6 +693,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   font-size: 1.3vw;
+  margin: 0 0.5%;
   & a {
     display: flex;
     flex-direction: column;
@@ -667,7 +738,7 @@ html, body {
 }
 
 .nav-link {
-  padding: 8%;
+
 
   &:hover {
     border-radius: 30px;
@@ -692,15 +763,25 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 10%;
+  padding: 0 7%;
   margin: 40px 0 30px;
   font-size: 1.3vw;
+
+  @include phones {
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .tariffs__slogan {
   font-size: 1.3vw;
   font-weight: 600;
   margin-bottom: 1.5vw;
+
+  @include phones {
+    font-size: 5vw;
+  }
 }
 
 .price__cont {
@@ -709,6 +790,10 @@ html, body {
   width: 70%;
   margin: 0 auto;
   padding: 0 0 0 5%;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .price__cont-items {
@@ -716,6 +801,11 @@ html, body {
   display: flex;
   flex-direction: column;
   font-size: 1.3vw;
+
+  @include phones {
+    font-size: 4vw;
+    flex: 70%;
+  }
 
   & p {
     color: #1818ff;
@@ -726,6 +816,9 @@ html, body {
   flex: 50%;
   display: flex;
   flex-direction: column;
+  @include phones {
+    flex: 30%;
+  }
 }
 
 .range__scale-list {
@@ -733,7 +826,12 @@ html, body {
   flex-direction: row;
   width: 600px;
   margin: 0 auto;
-  padding: 0 1%;
+  padding: 0 15px;
+
+  @include phones {
+    width: 300px;
+    padding: 0 25px 0 14px
+  }
 
 }
 
@@ -768,6 +866,32 @@ html, body {
 
 }
 
+.process__num {
+  margin-right: 9%;
+  font-size: 3vw;
+
+  @include phones {
+    font-size: 8vw;
+  }
+}
+
+.process__descr {
+  font-size: 1.3vw;
+  @include phones {
+    font-size: 5vw;
+  }
+}
+
+.order__l {
+  font-size: 1.3vw;
+  margin-left: 4%;
+  background: white;
+  border: none;
+  box-shadow: none;
+  padding: 10px 4%;
+  border-radius: 5vw;
+}
+
 .range__scale-numbers {
   display: flex;
   flex-direction: row;
@@ -775,39 +899,84 @@ html, body {
   margin: 0 auto;
   padding: 0 0 0 3%;
 
+  @include phones {
+    width: 300px;
+  }
+
 }
 
 .summ__documents {
   font-size: 1.3vw;
   font-weight: 600;
+  @include phones {
+    font-size: 4vw;
+  }
 }
 
 .range__num-item {
   list-style: none;
   flex: 1;
+  font-size: 1.3vw;
+
+  @include phones {
+    font-size: 3vw;
+  }
 }
 
 .summ__plan {
   font-size: 1.3vw;
   font-weight: 600;
+  @include phones {
+    font-size: 4vw;
+  }
 }
 
 .singledocument__cost {
   font-size: 1.3vw;
   font-weight: 600;
+  @include phones {
+    font-size: 4vw;
+  }
 }
 
 .how_it_works {
-  padding: 3% 12%;
+  padding: 3% 12% 5%;
+  background: #4a90e2;
+
+  & .article__title {
+    color: white;
+  }
 }
 
 .how_it_works-cont {
   display: flex;
   flex-direction: row;
+
+  @include phones {
+    flex-direction: column;
+  }
+
 }
 
 .how_it_works-img {
-  flex: 3;
+  position: relative;
+  flex: 1;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.how_it_works-img-mobile {
+  position: absolute;
+  bottom: -42px;
+  right: 10px;
+  width: 40%;
+
   & img {
     width: 100%;
     height: auto;
@@ -815,25 +984,33 @@ html, body {
 }
 
 .how_it_works-stadies {
-  flex: 2;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .how_it_works-list {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 10%;
   list-style: none;
 }
 
 .how_it_works-item {
   list-style: none;
-  padding: 0;
+  padding: 7px 8%;
+  border-radius: 42px;
   margin: 0;
   display: flex;
   flex-direction: row;
+  color: white;
+  align-items: center;
 }
 
 .how_active {
-  background: green;
+  background: white;
+  color: black;
+  transition: 1s all;
 }
 
 .vd__order {

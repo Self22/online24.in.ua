@@ -82,8 +82,8 @@ gulp.task('css:build', function () {
     gulp.src(path.src.css) // ������� ��� main.scss
         .pipe(sourcemaps.init()) //�������������� sourcemap
         .pipe(sass().on('error', sass.logError)) //������������
-        // .pipe(prefixer()) //������� ��������� ��������
-        // .pipe(cssnano()) //������
+        .pipe(prefixer()) //������� ��������� ��������
+        .pipe(cssnano()) //������
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .on('end', browserSync.reload)

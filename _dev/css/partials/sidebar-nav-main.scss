@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: stretch;
   border-radius: 5px;
+  align-items: center;
 
 }
 
@@ -84,7 +85,7 @@
 }
 
 .sidebar__law-item {
-  text-align: left;
+  text-align: center;
   padding-right: 1.3vw;
   padding-left: 1.3vw;
 }
