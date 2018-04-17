@@ -438,7 +438,7 @@ html, body {
     text-align: center;
     font-size: 30px;
     line-height: 4vw;
-    margin-top: 20px;
+
     margin-bottom: 0;
     color: black;
     font-weight: 400;
@@ -446,10 +446,6 @@ html, body {
     padding: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-
-    @include desktop {
-      margin-top: 20px;
-    }
 
     @include phones {
       margin-top: 0;
@@ -477,6 +473,7 @@ html, body {
 
 .partner__logo {
   width: 35%;
+  margin-top: 35px;
 
   & img {
     width: 100%;
