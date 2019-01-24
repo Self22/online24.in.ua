@@ -862,3 +862,17 @@ html, body {
 .action__descr {
   line-height: 25px;
 }
+
+.tariffs__descr{
+  width: 70%;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 1.5vw;
+
+  @include phones{
+    width: 90%;
+    font-size: 5vw;
+  }
+
+
+}
